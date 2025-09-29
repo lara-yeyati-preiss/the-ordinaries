@@ -3,10 +3,11 @@
 **Live demo:** [https://lara-yeyati-preiss.github.io/the-ordinaries/](https://lara-yeyati-preiss.github.io/the-ordinaries/)
 
 ## Concept
-This project shifts attention from monuments and heroes to the material traces of everyday life — from cooking pots and card games to stitched samplers and nursing bottles.
+This project approaches the American Revolutionary period (1765 – 1783) by shifting attention from monuments and heroes to the material traces of everyday life — from cooking pots and card games to stitched samplers and nursing bottles.
 
 Objects are grouped in a **zoomable treemap by how they were used** — cooking, dressing up, performing music, decorating, and more.  
-A lower **carousel** highlights selected artifacts.
+
+The treemap is paired with a **carousel** that spotlights selected artifacts, giving visitors an entry point to micro-stories that reveal the lived experiences behind the grand historical narrative.
 
 ## How it works
 - **Treemap hierarchy:** first by **action family**, then by **object type**.  
