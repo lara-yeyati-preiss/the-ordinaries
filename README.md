@@ -16,11 +16,13 @@ The treemap is paired with a **carousel** that spotlights selected artifacts, gi
 - **Carousel:** showcases featured artifacts with images and captions.
 <br> 
 
-<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/c5307a69-fae2-4cc9-ae2d-38319b86441c" />
-<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/0cc6b143-f9be-421f-af34-c789c590622f" />
-<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/440b9e2e-effa-42b6-95f6-a6500649602f" />
-<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/540b502f-7cf5-4996-a930-5f81539fd602" />
-<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/1c8c0fb8-1c74-48d4-a0b4-c292b704da3a" />
+<img width="1200" height="856" alt="image" src="https://github.com/user-attachments/assets/7f5a81a6-a139-40b1-9d6f-bbfa82295eca" />
+<img width="1200" height="856" alt="image" src="https://github.com/user-attachments/assets/25220e69-5299-439a-9dcd-868a2bf11ebf" />
+<img width="1200" height="856" alt="image" src="https://github.com/user-attachments/assets/7acbb221-24a6-41c0-8e31-043943ab0915" />
+<img width="1200" height="856" alt="image" src="https://github.com/user-attachments/assets/6013fb33-9175-48d0-adf6-a3077284a9c0" />
+<img width="1200" height="856" alt="image" src="https://github.com/user-attachments/assets/89639023-9846-40b2-abb3-41b75dd86e3f" />
+
+
 <br> 
 
 ## Data
