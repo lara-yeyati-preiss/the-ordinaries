@@ -102,5 +102,13 @@ original_label,canonical_type_manual
 "['tinder box; fire making apparatus', 'box, tinder']",tinderboxes
 "['tool, millinery']",pusher downers
 "['trumpet, speaking']",trumpets
+"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",waistcoats
+"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",waistcoats
+"['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",waistcoats
+"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",waistcoats
+"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",waistcoats
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",waistcoats
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",waistcoats
+"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",waistcoats
 "['watch paper', 'watch paper; male', 'accessories for the care of clothing']",watch papers
 "['worker, butter']",butter scoops

@@ -160,7 +160,11 @@
       "children": [
         {
           "name": "dresses",
-          "value": 105
+          "value": 73
+        },
+        {
+          "name": "waistcoats",
+          "value": 40
         },
         {
           "name": "fashion plates",
@@ -204,10 +208,6 @@
         },
         {
           "name": "chemises",
-          "value": 8
-        },
-        {
-          "name": "waistcoats",
           "value": 8
         },
         {
