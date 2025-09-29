@@ -1,0 +1,865 @@
+canonical_type,count_by_canontype,action_family,multi_action
+pistols,56,Fight,FALSE
+muskets,42,Fight,FALSE
+swords,17,Fight,FALSE
+bows,12,Fight,FALSE
+rifles,10,Fight,FALSE
+bayonets,9,Fight,FALSE
+"shotgun, flintlocks",4,Fight,FALSE
+sabers,4,Fight,FALSE
+"musket, flintlocks",3,Fight,FALSE
+"scabbard, bayonets",2,Fight,FALSE
+powder horns,1,Fight,FALSE
+"cannon, revolutionary wars",1,Fight,FALSE
+maul clubs,1,Fight,FALSE
+"grenade; ammunition, artillery; hands",1,Fight,FALSE
+pistol swords,1,Fight,FALSE
+"launcher, grenades",1,Fight,FALSE
+mace; edged weapons,1,Fight,FALSE
+"saber, dragoons",1,Fight,FALSE
+gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; ps,1,Fight,FALSE
+medals,247,Commemorate & symbolize,FALSE
+badges,59,Commemorate & symbolize,FALSE
+calendar medals,2,Commemorate & symbolize,FALSE
+medal; personal; commemoratives,1,Commemorate & symbolize,FALSE
+"medal, politicals",1,Commemorate & symbolize,FALSE
+clock movement in wooden cases,1,Decorate & furnish,TRUE
+"clock movement, tall cases",1,Decorate & furnish,TRUE
+tall case clocks,1,Decorate & furnish,TRUE
+"clock, cases",1,Decorate & furnish,TRUE
+sewing cases,1,Textile making,TRUE
+box chronometer without cases,1,Other,TRUE
+book with boxes,1,Other,TRUE
+cigarette boxes,1,Smoke,TRUE
+jars,286,"Contain, store & preserve",FALSE
+boxes,11,"Contain, store & preserve",FALSE
+syrup jars,9,"Contain, store & preserve",FALSE
+chests,9,"Contain, store & preserve",FALSE
+jar; pharmaceutical containers,7,"Contain, store & preserve",FALSE
+cases,6,"Contain, store & preserve",FALSE
+cabinets,5,"Contain, store & preserve",FALSE
+"caddy, teas",3,"Contain, store & preserve",FALSE
+medicine chests,3,"Contain, store & preserve",FALSE
+"box, snufves",3,"Contain, store & preserve",FALSE
+"jar, leech, apothecaries",2,"Contain, store & preserve",FALSE
+field telescope and cases,2,"Contain, store & preserve",FALSE
+"box, walls",2,"Contain, store & preserve",FALSE
+"box, candles",2,"Contain, store & preserve",FALSE
+type cases,2,"Contain, store & preserve",FALSE
+trunks,2,"Contain, store & preserve",FALSE
+"jar, apothecary, syrups",2,"Contain, store & preserve",FALSE
+"box, alms",1,"Contain, store & preserve",FALSE
+"canister, teas",1,"Contain, store & preserve",FALSE
+"box, doughs",1,"Contain, store & preserve",FALSE
+box chronometers,1,"Contain, store & preserve",FALSE
+ceramic jars,1,"Contain, store & preserve",FALSE
+oyster jars,1,"Contain, store & preserve",FALSE
+vial; containers,1,"Contain, store & preserve",FALSE
+"chest, blankets",1,"Contain, store & preserve",FALSE
+dispatch cases,1,"Contain, store & preserve",FALSE
+"box, stamps",1,"Contain, store & preserve",FALSE
+ballot boxes,1,"Contain, store & preserve",FALSE
+striker boxes,1,"Contain, store & preserve",FALSE
+"chair, sides",36,Decorate & furnish,FALSE
+andirons,32,Decorate & furnish,FALSE
+bed coverings,23,Decorate & furnish,FALSE
+mirrors,14,Decorate & furnish,TRUE
+chairs,10,Decorate & furnish,FALSE
+clocks,7,Decorate & furnish,TRUE
+"pan, close stools",4,Decorate & furnish,FALSE
+tables,4,Decorate & furnish,FALSE
+"chair, rockings",4,Decorate & furnish,FALSE
+armchairs,4,Decorate & furnish,FALSE
+"bed valance, printeds",3,Decorate & furnish,FALSE
+lamps,3,Decorate & furnish,FALSE
+shelves,3,Decorate & furnish,FALSE
+desks,3,Decorate & furnish,FALSE
+chair; furniture; arms,2,Decorate & furnish,TRUE
+bed warmers,2,Decorate & furnish,FALSE
+"chair, child's",2,Decorate & furnish,FALSE
+"lamp, hangings",1,Decorate & furnish,FALSE
+"frame, butter molds",1,Decorate & furnish,FALSE
+"table, smalls",1,Decorate & furnish,FALSE
+cupboards,1,Decorate & furnish,FALSE
+lantern slides,1,Decorate & furnish,FALSE
+lanterns,1,Decorate & furnish,FALSE
+side chairs,1,Decorate & furnish,FALSE
+"bed hanging, hosptials",1,Decorate & furnish,FALSE
+flowerpots,1,Decorate & furnish,FALSE
+pillowcases,1,Decorate & furnish,FALSE
+"furniture, kilns",1,Decorate & furnish,FALSE
+spinning frames,1,Decorate & furnish,FALSE
+"micrometer, benches",1,Decorate & furnish,FALSE
+"bed cover, appliques",1,Decorate & furnish,FALSE
+"hook, shelves",1,Decorate & furnish,FALSE
+"mirror frame, part oves",1,Decorate & furnish,TRUE
+"frame, mirror, parts oves",1,Decorate & furnish,TRUE
+sofas,1,Decorate & furnish,FALSE
+"chair, arms",1,Decorate & furnish,TRUE
+portable desks,1,Decorate & furnish,FALSE
+stools,1,Decorate & furnish,FALSE
+"clock, wall, factories",1,Other,TRUE
+tower clock movements,1,Other,TRUE
+quilts,48,Decorate & furnish,FALSE
+samplers,40,Textile making,FALSE
+coverlets,8,Decorate & furnish,FALSE
+"coverlet, geometrics",7,Decorate & furnish,FALSE
+"needle, knittings",6,Textile making,FALSE
+coverlet fragments,4,Decorate & furnish,FALSE
+quilt blocks,2,Decorate & furnish,FALSE
+"coverlet, summer and winters",2,Decorate & furnish,FALSE
+"needlework, embroideries",1,Textile making,FALSE
+"quilt, wholecloths",1,Decorate & furnish,FALSE
+"coverlet panels, overshots",1,Decorate & furnish,FALSE
+"coverlet panel, summer and winters",1,Decorate & furnish,FALSE
+"coverlet, twills",1,Decorate & furnish,FALSE
+"embroidery, white works",1,Textile making,FALSE
+thimble eyes,1,Textile making,FALSE
+"embroidery, pictures",1,Textile making,FALSE
+"needle, crochets",1,Textile making,FALSE
+quilt segments,1,Decorate & furnish,FALSE
+quilt models,1,Decorate & furnish,FALSE
+"embroidery, lace, ecclesiaticals",1,Textile making,TRUE
+"pattern, laces",1,Textile making,TRUE
+"lace pillow, laces",1,Textile making,TRUE
+weaver's pattern books,1,Textile making,TRUE
+"pattern book, weaver's",1,Textile making,TRUE
+"coverlet, multi harness",1,Decorate & furnish,TRUE
+shields,2,Fight,FALSE
+nipple shields,1,Heal & care,FALSE
+fire marks,40,Ignite & manage fire,FALSE
+flags,25,Commemorate & symbolize,FALSE
+banners,6,Commemorate & symbolize,FALSE
+"flag, revolutionary wars",3,Commemorate & symbolize,FALSE
+shop signs,3,Commemorate & symbolize,FALSE
+"regimental flag, 2nd south carolina regiments",1,Commemorate & symbolize,FALSE
+"flag, fragment of",1,Commemorate & symbolize,FALSE
+dresses,105,Dress & accessorize,FALSE
+laces,32,Dress & accessorize,FALSE
+shoes,27,Dress & accessorize,FALSE
+costume accessories worns,22,Dress & accessorize,FALSE
+caps,18,Dress & accessorize,FALSE
+accessories carrieds,18,Dress & accessorize,FALSE
+buttons,15,Dress & accessorize,FALSE
+"button, politicals",12,Dress & accessorize,FALSE
+waistcoats,8,Dress & accessorize,FALSE
+aprons,7,Dress & accessorize,FALSE
+rings,5,Dress & accessorize,FALSE
+"print, fashion plates",5,Dress & accessorize,TRUE
+petticoats,5,Dress & accessorize,FALSE
+hats,5,Dress & accessorize,FALSE
+"chemise, shifts",5,Dress & accessorize,FALSE
+brooch; jewelry; accessories worn on the body; females,4,Dress & accessorize,FALSE
+coats,4,Dress & accessorize,FALSE
+stockings,4,Dress & accessorize,FALSE
+"buckles, shoe, pair oves",4,Dress & accessorize,FALSE
+breeches,3,Dress & accessorize,FALSE
+veils,3,Dress & accessorize,FALSE
+gloves,3,Dress & accessorize,FALSE
+chemises,3,Dress & accessorize,FALSE
+belts,3,Dress & accessorize,FALSE
+fire hats,3,Dress & accessorize,FALSE
+"pin, rollings",2,Dress & accessorize,FALSE
+ribbons,2,Dress & accessorize,TRUE
+handkerchiefs,2,Dress & accessorize,FALSE
+fans,2,Dress & accessorize,FALSE
+buckles,2,Dress & accessorize,FALSE
+eyeglasses; opticals; accessories worn on the body; unknowns,2,Dress & accessorize,FALSE
+purses,2,Dress & accessorize,FALSE
+jackets,2,Dress & accessorize,FALSE
+suspenders,2,Dress & accessorize,FALSE
+neckwears,2,Dress & accessorize,FALSE
+necklaces,2,Dress & accessorize,FALSE
+jewelries,2,Dress & accessorize,FALSE
+"apron, fraternals",2,Dress & accessorize,FALSE
+bracelets,2,Dress & accessorize,FALSE
+pins,2,Dress & accessorize,FALSE
+"lace, border, fragments",2,Dress & accessorize,TRUE
+vests,1,Dress & accessorize,FALSE
+trousers,1,Dress & accessorize,FALSE
+"mold, buttons",1,Dress & accessorize,FALSE
+mitten; clothing; early 19th centuries,1,Dress & accessorize,FALSE
+capes,1,Dress & accessorize,FALSE
+combs,1,Dress & accessorize,FALSE
+"button, politcals",1,Dress & accessorize,FALSE
+quilted petticoats,1,Dress & accessorize,FALSE
+earrings,1,Dress & accessorize,FALSE
+"ceiling ornament, churches",1,Dress & accessorize,FALSE
+sash and pendants,1,Dress & accessorize,FALSE
+"bag, salvages",1,Dress & accessorize,FALSE
+"ornament, flagstafves",1,Dress & accessorize,FALSE
+"buckle, knee; jewelry; accessories worn on the body; males",1,Dress & accessorize,FALSE
+"buckle, shoes",1,Dress & accessorize,FALSE
+"comb, ornamental; headwear; accessories worn on the body; females",1,Dress & accessorize,FALSE
+sunglasses,1,Dress & accessorize,FALSE
+jewelry fragments,1,Dress & accessorize,FALSE
+"beads, prayers",1,Dress & accessorize,FALSE
+shirt fragments,1,Dress & accessorize,FALSE
+sweat shirts,1,Dress & accessorize,FALSE
+shawls,1,Dress & accessorize,FALSE
+corset waist; upper body; underwear; females,1,Dress & accessorize,FALSE
+cloak; outerwear; females,1,Dress & accessorize,FALSE
+bonnets,1,Dress & accessorize,FALSE
+undershirt; upper body; underwear; males,1,Dress & accessorize,FALSE
+drawers; lower body; underwear; males,1,Dress & accessorize,TRUE
+powder belts,1,Dress & accessorize,TRUE
+"cap, miters",1,Dress & accessorize,FALSE
+flatwares,221,"Eat, cook & drink",FALSE
+bottles,183,"Eat, cook & drink",FALSE
+plates,58,"Eat, cook & drink",FALSE
+cups,34,"Eat, cook & drink",FALSE
+measures,28,"Eat, cook & drink",FALSE
+pitchers,26,"Eat, cook & drink",FALSE
+ladles,25,"Eat, cook & drink",FALSE
+spoons,24,"Eat, cook & drink",FALSE
+teapots,21,"Eat, cook & drink",FALSE
+bowls,17,"Eat, cook & drink",FALSE
+dishes,15,"Eat, cook & drink",FALSE
+mugs,15,"Eat, cook & drink",FALSE
+porringers,13,"Eat, cook & drink",FALSE
+jugs,13,"Eat, cook & drink",FALSE
+"bowl, sugars",11,"Eat, cook & drink",FALSE
+pots,9,"Eat, cook & drink",FALSE
+creamers,7,"Eat, cook & drink",FALSE
+forks,7,"Eat, cook & drink",FALSE
+"hook, pots",6,"Eat, cook & drink",FALSE
+"glass, jellies",6,"Eat, cook & drink",FALSE
+"cup, punches",5,"Eat, cook & drink",FALSE
+teakettles,4,"Eat, cook & drink",FALSE
+coffeepots,4,"Eat, cook & drink",FALSE
+toasters,4,"Eat, cook & drink",FALSE
+"dish, soups",3,"Eat, cook & drink",FALSE
+"bowl, teas",3,"Eat, cook & drink",FALSE
+license plates,3,"Eat, cook & drink",FALSE
+"oven, dutches",3,"Eat, cook & drink",FALSE
+"glass, sodas",2,"Eat, cook & drink",FALSE
+"plate, soups",2,"Eat, cook & drink",FALSE
+"pot, chocolates",2,"Eat, cook & drink",FALSE
+kettles,2,"Eat, cook & drink",FALSE
+"bowl, wastes",2,"Eat, cook & drink",FALSE
+"pot, mustards",2,"Eat, cook & drink",FALSE
+"lifter, pots",2,"Eat, cook & drink",FALSE
+pans,2,"Eat, cook & drink",FALSE
+decanters,2,"Eat, cook & drink",FALSE
+"soda glass, holders",2,"Eat, cook & drink",FALSE
+sugar bowls,2,"Eat, cook & drink",FALSE
+"bottle, nursings",2,"Eat, cook & drink",FALSE
+musical glasses,1,"Eat, cook & drink",FALSE
+mills,1,"Eat, cook & drink",FALSE
+"bowl, covereds",1,"Eat, cook & drink",FALSE
+"cup, two handleds",1,"Eat, cook & drink",FALSE
+"dish, soaps",1,"Eat, cook & drink",FALSE
+"pot, hot waters",1,"Eat, cook & drink",FALSE
+"stand, teapots",1,"Eat, cook & drink",FALSE
+"coaster, bottles",1,"Eat, cook & drink",FALSE
+"cup, standings",1,"Eat, cook & drink",FALSE
+"dish, salts",1,"Eat, cook & drink",FALSE
+magnifying glasses,1,"Eat, cook & drink",FALSE
+"bowl, porringers",1,"Eat, cook & drink",FALSE
+"fabric length, plate printeds",1,"Eat, cook & drink",FALSE
+"fork, hearths",1,"Eat, cook & drink",FALSE
+"ladle, snufves",1,"Eat, cook & drink",FALSE
+"pot, milks",1,"Eat, cook & drink",FALSE
+"bowl, punches",1,"Eat, cook & drink",FALSE
+"plate, fire engines",1,"Eat, cook & drink",FALSE
+"spoon, souvenirs",1,"Eat, cook & drink",FALSE
+"bottle, scents",1,"Eat, cook & drink",FALSE
+ale bottles,1,"Eat, cook & drink",FALSE
+"pot, stews",1,"Eat, cook & drink",FALSE
+tea bowls & saucers,1,"Eat, cook & drink",FALSE
+"dish, desserts",1,"Eat, cook & drink",FALSE
+"pitcher, creams",1,"Eat, cook & drink",FALSE
+cup and saucers,1,"Eat, cook & drink",FALSE
+punch bowls,1,"Eat, cook & drink",FALSE
+"bowl, sweemeats",1,"Eat, cook & drink",FALSE
+"fragment, pitchers",1,"Eat, cook & drink",FALSE
+"fragments, bottles",1,"Eat, cook & drink",FALSE
+"ladle, saltings",1,"Eat, cook & drink",FALSE
+printing plates,1,"Eat, cook & drink",FALSE
+"rack, spoons",1,"Eat, cook & drink",FALSE
+"cutter, cookies",1,"Eat, cook & drink",FALSE
+"plate, doors",1,"Eat, cook & drink",FALSE
+cork driver; kitchen utensils,1,"Eat, cook & drink",FALSE
+"spoon, stirrings",1,"Eat, cook & drink",FALSE
+perfume bottles,1,"Eat, cook & drink",FALSE
+"painting, glass transfers",3,"Portray, display & decorate",TRUE
+plate impression for paper currencies,1,Other,TRUE
+"clock, tall cases",2,Other,TRUE
+tinderboxes,22,Ignite & manage fire,FALSE
+watches,18,Dress & accessorize,FALSE
+"watch movement; mechanical, spring driven; pocket watches",9,Dress & accessorize,FALSE
+surveyor's vernier compass,2,Measure & navigate,FALSE
+nautical compass,1,Measure & navigate,FALSE
+"watch, pockets",1,Dress & accessorize,FALSE
+"scale, balances",1,Measure & navigate,FALSE
+"sundial, quadrants",1,Measure & navigate,FALSE
+"watch, ladies",1,Dress & accessorize,FALSE
+"sundial, equinoctials",1,Measure & navigate,FALSE
+scale rules,1,Measure & navigate,FALSE
+thickness gauges,1,Measure & navigate,FALSE
+trough compass,1,Measure & navigate,FALSE
+"calipers, linear, set oves",1,Measure & navigate,FALSE
+"sundial, horizontal pedestals",1,Measure & navigate,FALSE
+"sundial, diptyches",1,Measure & navigate,FALSE
+pocket compass,1,Measure & navigate,FALSE
+"scale rule, foldings",1,Measure & navigate,FALSE
+"compass, pockets",1,Measure & navigate,FALSE
+watch fobs,1,Dress & accessorize,FALSE
+drawing compass,1,Measure & navigate,TRUE
+"spinning wheel, flaxes",5,Other,FALSE
+"wheel cutting engine, clockmakings",1,Other,FALSE
+"spinning wheel, wools",1,Other,FALSE
+"bit; equipment, horse; armies",1,Other,TRUE
+"stamp, butters",27,"Eat, cook & drink",FALSE
+cutleries,12,"Eat, cook & drink",FALSE
+balances,12,Other,FALSE
+santos,11,Worship,FALSE
+employee gears,9,Other,FALSE
+fire steel; fire making apparatuses,9,Ignite & manage fire,FALSE
+"mold, cookies",9,"Eat, cook & drink",FALSE
+mortars,8,Other,FALSE
+punches,8,Other,FALSE
+sundials,8,Other,FALSE
+"fabric, fragment, printeds",8,Other,FALSE
+sheet ; manuscripts,8,"Read, write & record",FALSE
+artists' materials,8,Other,FALSE
+octants,8,Other,FALSE
+"bucket, fires",7,Ignite & manage fire,FALSE
+models,7,Other,FALSE
+electrostatic generators,7,Other,FALSE
+props,7,Other,FALSE
+horns,7,Other,FALSE
+fabric; accessories for the manufacturing of clothings,6,Other,FALSE
+works of arts,6,Other,FALSE
+basins,6,Other,FALSE
+astrolabes,6,Other,FALSE
+skimmers,6,Other,FALSE
+sheets,6,Other,FALSE
+microscopes,6,Other,FALSE
+snuffboxes,6,Other,FALSE
+mangle boards,6,Other,FALSE
+telescopes,6,Other,FALSE
+aquatints,6,Other,FALSE
+tankards,5,"Eat, cook & drink",FALSE
+candles,5,Ignite & manage fire,FALSE
+shots,5,Other,FALSE
+dippers,5,Other,FALSE
+carbines,5,Other,FALSE
+"mold, butters",5,"Eat, cook & drink",FALSE
+saucers,5,Other,FALSE
+knives,5,Other,FALSE
+"warmer, feet",5,Other,FALSE
+stays,5,Other,FALSE
+mail processing equipments,5,Other,FALSE
+sectors,4,Other,FALSE
+beakers,4,Other,FALSE
+silk pictures,4,Other,FALSE
+"iron, waffles",4,Other,FALSE
+sauceboats,4,Other,FALSE
+tax stamps,4,Other,FALSE
+candleholders,4,Ignite & manage fire,FALSE
+wood blocks,4,Other,FALSE
+tureens,4,Other,FALSE
+bells,4,Other,FALSE
+bloodlettings,4,Heal & care,FALSE
+batteries,4,Other,FALSE
+weights,4,Other,FALSE
+funnels,3,Other,FALSE
+blunderbuss,3,Other,FALSE
+"valance, printeds",3,Other,FALSE
+"engine, steam, models",3,Other,FALSE
+"hanging, printeds",3,Other,FALSE
+graters,3,Other,FALSE
+insignias,3,Other,FALSE
+viols,3,Perform music,FALSE
+platters,3,Other,FALSE
+cutlasses,3,Other,FALSE
+cradles,3,Decorate & furnish,FALSE
+orreries,3,Other,FALSE
+"mold, butter cheese, part oves",3,Other,FALSE
+pennants,3,Other,FALSE
+pestles,3,Other,FALSE
+"figurine, groups",3,Other,FALSE
+"bell, cows",3,Other,FALSE
+booklets,3,Other,FALSE
+figurines,3,Other,FALSE
+casters,3,Other,FALSE
+windows,3,Other,FALSE
+spectacles,3,Other,FALSE
+pendants,3,Other,FALSE
+"iron, wafers",3,Other,FALSE
+"carder, hands",3,Other,FALSE
+scrimshaws,3,Other,FALSE
+roasters,3,Other,FALSE
+broilers,3,Other,FALSE
+baskets,3,Other,FALSE
+surgical sets,3,Heal & care,FALSE
+tongs,3,Other,FALSE
+"handle, doors",3,Other,FALSE
+almanacs,3,Other,FALSE
+tiles,3,Other,FALSE
+trivets,3,Other,FALSE
+fabric fragments,3,Other,FALSE
+trays,2,Other,FALSE
+canteens,2,Other,FALSE
+bellows,2,Ignite & manage fire,FALSE
+"worker, butters",2,Other,FALSE
+spatulas,2,Other,FALSE
+"masher, potatos",2,Other,FALSE
+cords,2,Other,FALSE
+canes,2,Other,FALSE
+"mold, butter, handles",2,Other,FALSE
+"stick, swizzles",2,Other,FALSE
+pay orders,2,Other,FALSE
+sanders,2,Other,FALSE
+hooks,2,Other,FALSE
+"pan, fryings",2,Other,FALSE
+sheet musics,2,Other,FALSE
+beam balances,2,Other,FALSE
+"tongs, fires",2,Ignite & manage fire,FALSE
+umbrellas,2,Other,FALSE
+prosthesis,2,Heal & care,FALSE
+snuffers and trays,2,Ignite & manage fire,FALSE
+trammels,2,Other,FALSE
+flagons,2,Other,FALSE
+pantographs,2,Other,FALSE
+skewers,2,Other,FALSE
+"cooler, wines",2,Other,FALSE
+matchbooks,2,Other,FALSE
+salts,2,Other,FALSE
+inkstands,2,Other,FALSE
+printing presses,2,Other,FALSE
+highchairs,2,Other,FALSE
+commissions,2,Other,FALSE
+busks,2,Other,FALSE
+skillets,2,Other,FALSE
+griddles,2,Other,FALSE
+canns,2,Other,FALSE
+crayon holders,2,"Read, write & record",FALSE
+reliquaries,2,Other,FALSE
+harps,2,Perform music,FALSE
+"stamp, butter molds",2,Other,FALSE
+fabric samples,2,Other,FALSE
+harpoons,2,Other,FALSE
+bassoons,2,Perform music,FALSE
+spherometers,2,Other,FALSE
+"mold, gingerbreads",2,Other,FALSE
+publisher's notices,2,Other,FALSE
+shears,2,Other,FALSE
+vases,2,Other,FALSE
+backstafves,2,Other,FALSE
+postage stamps,2,"Read, write & record",FALSE
+hydrometers,2,Other,FALSE
+viola d'amores,2,Perform music,FALSE
+consoles,2,Other,FALSE
+dental instruments,2,Heal & care,FALSE
+retablos,2,Other,FALSE
+prescription labels,2,Other,FALSE
+medallions,2,Other,FALSE
+ivories,2,Other,FALSE
+engine jacks,2,Other,FALSE
+"mould, lead and slugs",1,Other,FALSE
+"paddle, butters",1,Other,FALSE
+needleholder pincushions,1,Other,FALSE
+unidentifieds,1,Other,FALSE
+"burner, sulfurs",1,Other,FALSE
+hanging balances,1,Other,FALSE
+hurdy gurdies,1,Perform music,FALSE
+thermal cyclers,1,Other,FALSE
+fragrances,1,Other,FALSE
+camera lucidas,1,Other,FALSE
+optical flats,1,Other,FALSE
+"bells, goat, pair oves",1,Other,FALSE
+reaper cutters,1,Other,FALSE
+copes,1,Other,FALSE
+"stand, cruets",1,Other,FALSE
+reflecting circles,1,Other,FALSE
+masticators,1,Other,FALSE
+"mold, sugars",1,Other,FALSE
+franchises,1,Other,FALSE
+paddles,1,Other,FALSE
+stove; heating equipments,1,Other,FALSE
+"panel, religiouses",1,Other,FALSE
+"legging, lowers",1,Other,FALSE
+"globe, celestial, french, 18th cs",1,Other,FALSE
+celestial globes,1,Other,FALSE
+terrestrial globes,1,Other,FALSE
+"stick, mixings",1,Other,FALSE
+"holder, whetstones",1,Other,FALSE
+"cutter, cakes",1,"Eat, cook & drink",FALSE
+irons,1,Other,FALSE
+"paddle, stirrings",1,Other,FALSE
+"carding machine, parts",1,Other,FALSE
+tablecloths,1,Decorate & furnish,FALSE
+langrages,1,Other,FALSE
+slave leg irons,1,Other,FALSE
+field hand's calls,1,Other,FALSE
+transportation equipment & models,1,Other,FALSE
+"picture, embroidereds",1,Other,FALSE
+"silk, embroideries",1,Other,FALSE
+"double fireplace, delaware log houses",1,Other,FALSE
+tubs,1,Other,FALSE
+"rack, hangings",1,Other,FALSE
+wrought iron bridge spikes,1,Other,FALSE
+"chemistry set, portables",1,Other,FALSE
+orrery tellurians,1,Other,FALSE
+seam rubbers,1,Other,FALSE
+jesse ramsdens,1,Other,FALSE
+counterpanes,1,Other,FALSE
+"fabric, fragments",1,Other,FALSE
+tractors,1,Other,FALSE
+"fabric,fragments",1,Other,FALSE
+worms,1,Other,FALSE
+"page, workbooks",1,Other,FALSE
+"rattle, baby's",1,Other,FALSE
+distilleries,1,Other,FALSE
+"materials, constructions",1,Other,FALSE
+potsherds,1,Other,FALSE
+curfews,1,Ignite & manage fire,FALSE
+"deed, lands",1,Other,FALSE
+frakturs,1,Other,FALSE
+firesteels,1,Ignite & manage fire,FALSE
+hornbooks,1,Other,FALSE
+food warmers,1,Other,FALSE
+pharmaceutical measures,1,Heal & care,FALSE
+hand pumpers,1,Other,FALSE
+dies,1,Other,FALSE
+surgical instruments,1,Heal & care,FALSE
+labels,1,Other,FALSE
+maagazine covers,1,Other,FALSE
+"section, water mains",1,Other,FALSE
+"hatchet, small hands",1,Other,FALSE
+thermometers,1,Other,FALSE
+stickers,1,Other,FALSE
+"paperweight, footeds",1,Other,FALSE
+"insurance policy, flies",1,Other,FALSE
+"iron, brandings",1,Other,FALSE
+land deeds,1,Other,FALSE
+runic calendars,1,Other,FALSE
+bridge spikes,1,Other,FALSE
+photographs,1,Other,FALSE
+muster rolls,1,Other,FALSE
+designs,1,Other,FALSE
+tabernacles,1,Other,FALSE
+"milestone, philadelphia pittsburghs",1,Other,FALSE
+eyecups,1,Heal & care,FALSE
+blocks,1,Other,FALSE
+syringes,1,Heal & care,FALSE
+school tax records,1,Other,FALSE
+patent licenses,1,Other,FALSE
+azimuth circles,1,Other,FALSE
+signatures,1,Other,FALSE
+letterpress,1,Other,FALSE
+washboards,1,Other,FALSE
+viewers,1,Other,FALSE
+coquillages,1,Other,FALSE
+slide rules,1,Other,FALSE
+spurs,1,Other,FALSE
+revenue measures sets,1,Other,FALSE
+geography assignments,1,Other,FALSE
+chemical furnaces,1,Other,FALSE
+lecterns,1,Other,FALSE
+plaques,1,Other,FALSE
+flasks,1,Other,FALSE
+semi circles,1,Other,FALSE
+"pan, bakings",1,Other,FALSE
+knife sharperners,1,Other,FALSE
+sunglass,1,Other,FALSE
+periodicals,1,Other,FALSE
+"photograph, black and whites",1,Other,FALSE
+prisms,1,Other,FALSE
+"vessel, with lids",1,Other,FALSE
+pothooks,1,Other,FALSE
+spigots,1,Other,FALSE
+zithers,1,Perform music,FALSE
+quintons,1,Other,FALSE
+safes,1,Other,FALSE
+"plow, careys",1,Other,FALSE
+"basket, winnowings",1,Other,FALSE
+trumpets,1,Perform music,FALSE
+serpents,1,Other,FALSE
+organs,1,Other,FALSE
+pochettes,1,Other,FALSE
+clavichords,1,Perform music,FALSE
+harpsichords,1,Perform music,FALSE
+barrel organs,1,Perform music,FALSE
+nyckelharpas,1,Other,FALSE
+fiddles,1,Other,FALSE
+chronometers,1,Other,FALSE
+steam jacks,1,Other,FALSE
+mortising machines,1,Other,FALSE
+blankets,1,Other,FALSE
+towels,1,Other,FALSE
+patents,1,Other,FALSE
+"counterpane, printeds",1,Other,FALSE
+"panel, printeds",1,Other,FALSE
+"carpet, ingrains",1,Other,FALSE
+rebecs,1,Other,FALSE
+violas,1,Other,FALSE
+"stand, pickles",1,Other,FALSE
+chamberpots,1,Other,FALSE
+"pad, kilns",1,Other,FALSE
+"trivet, stackings",1,Other,FALSE
+"cooler, waters",1,Other,FALSE
+jelly mold cores,1,Other,FALSE
+circulars,1,Other,FALSE
+"stand, sweetmeats",1,Other,FALSE
+harrows,1,Other,FALSE
+molds,1,Other,FALSE
+troughs,1,Other,FALSE
+"fragment, pans",1,Other,FALSE
+"scraper, ivories",1,Other,FALSE
+flails,1,Other,FALSE
+trimmings,1,Other,FALSE
+covers,1,Other,FALSE
+"wallet, fishings",1,Other,FALSE
+"window, churches",1,Other,FALSE
+"fabric length, knitteds",1,Other,FALSE
+"contract, indentures",1,Other,FALSE
+"weight and hooks, codfish; maritimes",1,Other,FALSE
+applications,1,Other,FALSE
+mauls,1,Other,FALSE
+"entablature fragment, churches",1,Other,FALSE
+"model, semaphore telegraphs",1,Other,FALSE
+dividing engines,1,Other,FALSE
+automatons,1,Other,FALSE
+electrostatic demonstration apparatuses,1,Other,FALSE
+electrostatic devices,1,Other,FALSE
+"kit, obstetricals",1,Heal & care,FALSE
+metallic tractors,1,Other,FALSE
+medalets,1,Other,FALSE
+handles,1,Other,FALSE
+"handkerchief, printed, copperplates",1,Other,FALSE
+tape looms,1,Other,FALSE
+"carding machine, wool, scholfields",1,Other,FALSE
+hackles,1,Other,FALSE
+fliers,1,Other,FALSE
+housewives,1,Other,FALSE
+"boiler, steam, models",1,Other,FALSE
+"engine, internal combustion, models",1,Other,FALSE
+yardages,1,Other,FALSE
+spindles,1,Other,FALSE
+"carpet, fragments",1,Other,FALSE
+beetles,1,Other,FALSE
+amulets,1,Other,FALSE
+"plaque, bas relieves",1,Other,FALSE
+announcements,1,Other,FALSE
+invitations,1,Other,FALSE
+"reamer, lemons",1,Other,FALSE
+turners,1,Other,FALSE
+"sheets, set oves",1,Other,FALSE
+"photographs, set oves",1,Other,FALSE
+wimpoles,1,Other,FALSE
+"device, liftings",1,Other,FALSE
+"lock, well buckets",1,Other,FALSE
+"hook, fireplaces",1,Other,FALSE
+"hook, ox yokes",1,Other,FALSE
+"hanger, pigeons",1,Other,FALSE
+pokers,1,Other,FALSE
+"wrench, barrels",1,Other,FALSE
+ledgers,1,Other,FALSE
+mousetraps,1,Other,FALSE
+protractors,1,Other,FALSE
+dividers,1,Other,FALSE
+cuff links,1,Other,FALSE
+"stud, collars",1,Other,FALSE
+"stand, roasters",1,Other,FALSE
+neckcloths,1,Other,FALSE
+churns,1,Other,FALSE
+slates,1,Other,FALSE
+"dipper, snufves",1,Smoke,FALSE
+"dipper, wells",1,Other,FALSE
+tinder box; fire making apparatuses,1,Ignite & manage fire,FALSE
+bedsteads,1,Other,FALSE
+"holder, crayons",1,Other,FALSE
+"shrine, pockets",1,Other,FALSE
+firebacks,1,Ignite & manage fire,FALSE
+sheet; manuscripts,1,Other,FALSE
+buckets,1,Other,FALSE
+"stick, puddings",1,Other,FALSE
+"stone, sharpenings",1,Other,FALSE
+orders,1,Other,FALSE
+"husker, corns",1,Other,FALSE
+retorts,1,Other,FALSE
+impressions,1,Other,FALSE
+piggins,1,Other,FALSE
+reciept; sheet ; manuscripts,1,Other,FALSE
+studs,1,Other,FALSE
+electoral tickets,1,Other,FALSE
+spear heads,1,Other,FALSE
+ecuelles,1,Other,FALSE
+main garments,1,Other,FALSE
+"streamers, set oves",1,Other,FALSE
+"tent; equipment, individuals",1,Other,FALSE
+shells,1,Other,FALSE
+broadsword; edged weapons; army; officers,1,Other,FALSE
+mess kits,1,Other,FALSE
+lancets,1,Heal & care,FALSE
+building fragments,1,Other,FALSE
+napkins,1,Other,FALSE
+bumper stickers,1,Other,FALSE
+rugs,1,Other,FALSE
+"suit, 2 pieces",1,Other,FALSE
+tumblers,1,Other,FALSE
+carpet segments,1,Other,FALSE
+"fabric, printeds",1,Other,FALSE
+"mitts, pair of; handwear; accessories worn on the body; females",1,Other,FALSE
+weathervanes,1,Other,FALSE
+neckcloth?; neckwear; accessories worn on the body; females,1,Other,FALSE
+"cuffs, pair oves",1,Other,FALSE
+fabric pieces; accessories for the manufacturing of clothings,1,Other,FALSE
+"undersleeves, pair oves",1,Other,FALSE
+dickey; neckwear; accessories worn on the body; males,1,Other,FALSE
+walking stick; accessories carried; males,1,Other,FALSE
+accessories for the care of clothings,1,Other,FALSE
+muff; accessories carried; females,1,Other,FALSE
+"gaiters, pair of; footwear; accessories worn on the body; males",1,Other,FALSE
+calashes,1,Other,FALSE
+"picture, mournings",1,Other,FALSE
+"epaulets, pair oves",1,Other,FALSE
+"casing; ammunition, artillery; center fire; 25 mms",1,Other,FALSE
+"bullet, molds",1,Other,FALSE
+cannons,1,Other,FALSE
+oath of allegiances,1,Other,FALSE
+scutching knives,1,Other,FALSE
+coins,1122,Pay & exchange,FALSE
+checks,33,Pay & exchange,FALSE
+bill of exchanges,19,Pay & exchange,TRUE
+bank notes,14,Pay & exchange,FALSE
+receipts,14,Pay & exchange,FALSE
+tokens,9,Pay & exchange,FALSE
+lottery tickets,8,Pay & exchange,FALSE
+bonds,3,Pay & exchange,FALSE
+certificates,3,Pay & exchange,FALSE
+"token, commemoratives",2,Pay & exchange,FALSE
+"ticket, lotteries",1,Pay & exchange,FALSE
+"feather money, o'o bird; oceania; polynesia, hawaiian islands",1,Pay & exchange,FALSE
+"check, cashier's",1,Pay & exchange,FALSE
+vouchers,1,Pay & exchange,FALSE
+naturalization certificates,1,Pay & exchange,FALSE
+coin balances,1,Pay & exchange,FALSE
+"coin, modifieds",1,Pay & exchange,FALSE
+"painting, certificates",1,Other,TRUE
+bill of sales,1,Pay & exchange,TRUE
+"certificate, naturalizations",1,"Read, write & record",TRUE
+"certificate, discharges",1,"Read, write & record",TRUE
+pianos,43,Perform music,FALSE
+guitars,10,Perform music,FALSE
+flutes,9,Perform music,FALSE
+violins,7,Perform music,FALSE
+surveying instruments,6,Perform music,FALSE
+"sheets , set of music manuscripts",4,Perform music,FALSE
+bagpipes,4,Perform music,FALSE
+drums,3,Perform music,FALSE
+"sheet , set of music manuscripts",3,Perform music,FALSE
+clarinets,2,Perform music,FALSE
+cellos,2,Perform music,FALSE
+english guitars,2,Perform music,FALSE
+drum heads,2,Perform music,FALSE
+fifes,2,Perform music,FALSE
+oboes,2,Perform music,FALSE
+"trumpet, speakings",2,Perform music,FALSE
+"harp, jaws",1,Perform music,FALSE
+music books,1,Perform music,TRUE
+instrument cases,1,Perform music,TRUE
+banjos,1,Perform music,FALSE
+"drawing instruments, set oves",3,Other,TRUE
+chess sets,5,Play,FALSE
+cards,3,Play,FALSE
+"card, playings",3,Play,FALSE
+"doll, women",1,Play,FALSE
+"card, prayers",1,Other,FALSE
+"vaccination card, commemoratives",1,Other,FALSE
+games,1,Play,FALSE
+bow and arrows; toys,1,Play,FALSE
+prints,1884,"Portray, display & decorate",FALSE
+silhouettes,1852,"Portray, display & decorate",FALSE
+paintings,346,"Portray, display & decorate",FALSE
+decorative arts,127,"Portray, display & decorate",FALSE
+posters,61,"Portray, display & decorate",FALSE
+uncut sheets,53,"Portray, display & decorate",FALSE
+drawings,51,"Portray, display & decorate",FALSE
+fashion plates,33,Dress & accessorize,FALSE
+graphic arts,25,"Portray, display & decorate",FALSE
+sculptures,24,"Portray, display & decorate",FALSE
+figures,11,"Portray, display & decorate",FALSE
+engravings,11,"Portray, display & decorate",FALSE
+anatomical prints,7,"Portray, display & decorate",FALSE
+lithographs,7,"Portray, display & decorate",FALSE
+mezzotints,5,"Portray, display & decorate",FALSE
+relief processes,3,Other,FALSE
+portraits,3,"Portray, display & decorate",FALSE
+wood engravings,2,"Portray, display & decorate",FALSE
+busts,2,"Portray, display & decorate",FALSE
+sculpture fragments,1,"Portray, display & decorate",FALSE
+"statuette, religiouses",1,"Portray, display & decorate",FALSE
+"print, physicians",1,"Portray, display & decorate",FALSE
+etchings,1,Other,FALSE
+"painting, portraits",1,"Portray, display & decorate",FALSE
+"stove, miniatures",1,Other,FALSE
+figure groups,1,Other,FALSE
+correspondences,204,"Read, write & record",FALSE
+books,84,"Read, write & record",FALSE
+newspapers,52,"Read, write & record",FALSE
+documents,33,"Read, write & record",FALSE
+archival materials,27,"Read, write & record",FALSE
+maps,22,"Read, write & record",FALSE
+pamphlets,14,"Read, write & record",FALSE
+paper moneys,9,Pay & exchange,FALSE
+paper currencies,6,Pay & exchange,FALSE
+manuscripts,6,"Read, write & record",FALSE
+obsolete paper moneys,5,Pay & exchange,FALSE
+sheet of papers,4,Other,FALSE
+pens,3,"Read, write & record",FALSE
+inkwells,2,"Read, write & record",FALSE
+broadsides,2,"Read, write & record",FALSE
+book pages,2,"Read, write & record",FALSE
+"cutter, quill pens",1,"Read, write & record",FALSE
+postcards,1,"Read, write & record",FALSE
+journals,1,"Read, write & record",FALSE
+"document, broadsides",1,"Read, write & record",FALSE
+letter or accounts,1,"Read, write & record",FALSE
+newspaper page; printeds,1,"Read, write & record",FALSE
+newspaper sheets,1,"Read, write & record",FALSE
+newspaper clippings,1,"Read, write & record",FALSE
+chalices,1,Other,FALSE
+pipes,58,Smoke,FALSE
+"box, tobaccos",4,Smoke,FALSE
+lighter; fire making apparatuses,1,Smoke,FALSE
+"holder, cigars",1,Smoke,FALSE
+match box; fire making apparatuses,1,Smoke,TRUE
+icons,23,Commemorate & symbolize,FALSE
+"emblem, radiator; road; automobiles",1,Other,FALSE
+crests,1,Other,FALSE
+"engine, steam, boats",2,Other,FALSE
+"saddle, sides",2,Other,FALSE
+pap boats,1,"Eat, cook & drink",FALSE
+"stirrup, equestrians",1,Other,FALSE
+"carriage, 1810s",1,Other,FALSE
+wagon jack; roads,1,Other,FALSE
+saddles,1,Other,FALSE
+spade; maritime; boats,1,Other,TRUE
+nails,3,Work & build,FALSE
+shovels,2,Work & build,FALSE
+axes,2,Work & build,FALSE
+mallets,1,Work & build,FALSE
+"mixer, drink, bow drills",1,Work & build,FALSE
+"nippers, sugars",1,Other,FALSE
+"tool, millineries",1,Work & build,FALSE
+protractor and geometric squares,1,Work & build,FALSE
+saws,1,Work & build,FALSE
+"lathe, jeweler's",1,Other,FALSE
+planes,1,Other,FALSE
+nail files,1,Work & build,FALSE
+levels,1,Work & build,FALSE
+swage block; hand tools,1,Work & build,FALSE
+vises,1,Work & build,FALSE
+hand tools,1,Work & build,FALSE
+adze heads,1,Work & build,FALSE
+"machine tool, metalworking, lathe, poles",1,Work & build,FALSE
+precision screw cutting lathes,1,Work & build,FALSE
+set squares,1,Work & build,FALSE
+bolts,1,Work & build,FALSE
+crosses,5,Worship,FALSE
+"cross, roundeds",2,Worship,FALSE
+"finial, altar screens",1,Worship,FALSE

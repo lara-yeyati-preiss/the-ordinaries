@@ -1,0 +1,425 @@
+/* ===== basics ===== */
+
+/* default system font, font color, and background color */
+body{
+  font-family: "Public Sans", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#fcf9f4;
+  color:#1d2328;
+  margin:0;  /* removes that default margin so that the layout touches the edges precisely, to avoid unwanted white frame */
+}
+
+/* ===== header section layout ===== */
+
+/* header is defined as a flex container with a two-column layout on wide screens (text / illustration) */
+/* this means that its direct children (.header-text and .header-illustration) will become flex items */
+
+.header{
+  display: flex;
+  flex-wrap: wrap; /* flex items move to a new line if there isn’t enough horizontal space */
+  justify-content:space-between; /* pushes text and image to opposite ends of the flex row */
+  align-items:flex-start; /* flex items align to the top of the flex container */
+  max-width:1150px; /* keep the header readable on very wide screens */
+  margin:60px auto 0px; /* centers the header horizontally and gives it space above */
+  padding:0 24px; /* side padding so content doesn't touch the edges */
+}
+
+.header-text{ 
+  flex: 1; /* allows title to expand to take leftover space, while the image stays fixed */
+  min-width:0; /* allows text to shrink and wrap (overwriting the default minimum size given to the flex item) */
+}
+
+.header-illustration{
+  width: 160px;
+  margin-top: 2px;
+}
+
+/* the image itself (chair.svg) fills the header-illustration box */
+.header-illustration img{
+  width:100%;
+  height:auto;
+  opacity:.95;
+}
+
+/* ===== typography inside header section ===== */
+
+h1{
+  margin: 0 0 20px; /* space below the heading to separate it from subtitle */
+  font-weight: 600;
+  font-size: 48px;
+  color: #2F3E46;
+}
+
+.subtitle{
+  max-width: 64ch; /* line length */
+  color: #51646a;
+  font-size: 20px;
+  line-height: 1.5; /* space between lines */
+  opacity: .95;
+}
+
+/* ===== viz wrap ===== */
+
+.viz-wrap{
+  position: relative; /* makes the viz-wrap the positioning reference for all the children that are positioned inside it, like a padding box */
+  max-width: 1150px; /* matches header width */
+  margin: 0 auto 20px; /* centers the block horizontally and gives it space below */
+  padding-top: 8px 0; /* small padding on top and bottom */
+  border-top: 1px solid #dcd7cd; /* serves as subtle line separating header and viz */
+}
+
+/* section title above the treemap */
+.section-title{
+  font-weight: 500;
+  font-size: 26px;
+  color: #3B474C;
+  opacity: .90;
+  margin: 24px 0 10px;
+}
+
+/* small helper line under the section title */
+.viz-hint{
+  font-size: 14px;
+  color: #6a737a;
+  margin-bottom: 32px;
+}
+
+/* to ensure initial hidden state for all elements marked [hidden] */
+[hidden] { display: none !important; }
+
+
+/* ===== "back to all" button ===== */
+
+/* button row aligns the button (its children) to the right */
+.button-row{
+  display: flex;
+  justify-content: flex-end; /* push children to the right edge */
+  align-items: center;
+  margin: 10px 0; /* small margin on top and bottom */
+}
+
+.back-to-all{
+  padding: 10px;
+  border-radius: 6px;
+  background: #2f3e46;
+  color: #fff;
+  font-family: "PT Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: .2px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+.back-to-all:hover{ 
+  filter:brightness(1.4); /* button turns brighter on hover */
+}
+
+
+/* ===== treemap ===== */
+
+/* treemap svg */
+.treemap{ 
+  display:block; /* removes default inline format in SVGs, which leaves a tiny gap under the element */
+  width:100%; /* fills the width of the .viz-wrap column */
+  height:auto; /* maintains aspect ratio */
+}
+
+/* tooltip */
+.treemap-tooltip{
+  position: fixed;
+  display: none;
+  pointer-events: none;
+  max-width: 320px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #303537;
+  color: #F8F8F8; 
+  box-shadow: 0 6px 20px rgba(0,0,0,.45);
+  font-family: "PT Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+  z-index: 99999; /* above everything else on the page */
+}
+
+
+/* labels */
+
+/* styling text in action family labels */
+/* using html labels in order to allow for text wrapping - this html label is created as a foreignObject inside the svg in the js script */
+.family-labels-html{
+  font-family:"PT Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size:14px;
+  color:#2F3E46;
+  white-space:normal; /* allows wrapping */
+  pointer-events: none; /* to avoid labels interacting with the mouse */
+  background-color: #f8f4ecdb;
+  padding: 6px;
+  border-radius: 6px;
+  display: inline-block; /* so that the background color wraps the text closely */
+}
+
+/* object type labels (without background rectangle) */
+.leaf-html{
+  font-family: "PT Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 13px;
+  line-height: 14px;
+  color: #f9f9f9;
+  pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leaf-fo{ 
+  pointer-events: none; 
+}
+
+/* note under viz */
+.viz-note{
+  font-size: 14px;
+  line-height: 1.35;
+  color: #56636a;
+  max-width: 80ch;
+  margin-top: 30px;
+}
+
+.viz-stage{
+  position: relative; /* makes this the reference point for absolutely positioned children of .viz-stage */
+}
+
+/* zoom card */
+.zoom-card{
+  display: block; /* so margin-left:auto works */
+  width: max-content;  /* shrink-wrap to text */
+  margin: 10px 0 10px auto; /* push to the right */
+  padding: 10px 14px;
+  background: #2f3e46;
+  color: #fff;
+  border: 1px solid #00000014;
+  border-radius: 12px;
+  font-family: "PT Mono", ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: .2px;
+  position: relative;
+  text-align: right; /* aligns the text inside to the right */
+}
+
+/* keep the title clean */
+.zoom-title{
+  margin: 0;
+  line-height: 1.25;
+  white-space: nowrap; 
+}
+
+/* ===== treemap details panel ===== */
+
+/* full-panel overlay that sits on top of the SVG when an object type is opened */
+/* positioned inside .viz-stage so it covers the treemap area */
+#details.details-panel{
+  position: absolute; /* anchor to .viz-stage */
+  inset: 0; /* shorthand way of writing top:0; right:0; bottom:0; left:0; it stretches to all edges of the parent */
+  margin: 0;
+  padding: 0;
+  height: 100%; /* fill the treemap height */
+  overflow-y: auto; /* scroll content if it grows taller than the panel */
+  background: #e9e9e5;
+  border: 1px solid #9a9a91;
+}
+
+/* sticky header bar inside the details panel (title + close) */
+.details-header{
+  position: sticky; /* stays visible while the list scrolls */
+  top: 0; /* stick to the top edge of the panel */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin: 0;
+  background: #cfcfca;
+  border-bottom: 1px dashed #9a9a91;
+}
+
+/* “×” close button in the header */
+.details-close{
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #6e6e66; 
+}
+
+.details-close:hover{ color: #2F3E46; }
+
+/* panel title (object type name) */
+.details-title{
+  margin: 0;
+  font-weight: 600;
+  font-size: 19px;
+  color: #2e2e2b;             
+}
+
+/* sticky subheader showing the count */
+.details-subtitle{
+  position: sticky;
+  top: 55px; /* sits just beneath the header bar */
+  margin: 0;
+  padding: 8px 16px;
+  background: #d8d8d3;    
+  color: #3a3a36;  
+  font-size: 15px;
+  border-bottom: 1px dashed #9a9a91;
+}
+
+/* list of items (title + unit + link) */
+.details-list{
+  margin: 0;
+  padding: 8px 16px 16px 16px;
+}
+
+/* each row separated by a dashed line */
+.details-list li{
+  padding: 10px 0;
+  border-bottom: 1px dashed #9a9a91; 
+  color: #2e2e2b;            
+}
+
+/* links */
+.details-list li a{
+  color: #3a3a36;           
+  text-decoration: underline;
+}
+
+/* row layout when a thumbnail is present */
+.details-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* breathing room between image and text */
+}
+
+/* image thumbnail on details panel */
+.details-thumb{
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* crop when needed while filling the box */
+  border-radius: 3px;
+  flex: 0 0 auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+  transition: opacity .25s ease; /* smooth fade-in */
+  display: block;
+}
+
+/* ===== carousel with highlighted objects ===== */
+
+/* heading that introduces the carousel below the treemap note */
+.carousel-heading{
+  font-size: 22px;
+  font-weight: 500;
+  color: #3B474C;
+  margin: 60px 0 40px;
+  border-top: 1px solid #e8e3da;
+  padding-top: 24px;
+  line-height: 1.8;
+}
+
+/* overall frame for the carousel */
+.carousel-container{
+  max-width: 1150px; /* in sync with .header / .viz-wrap */
+  margin: 0 auto 64px; /* center + space below */
+  position: relative; /* for the nav buttons to anchor to the track */
+}
+
+/* the viewport that clips the moving track */
+.carousel-track-container{
+  overflow: hidden; /* hides overflow while sliding the track */
+  border-radius: 12px;
+}
+
+/* the horizontal row of cards that slides left/right */
+.carousel-track{
+  display: flex;
+  gap: 20px; /* space between cards */
+  padding: 0 16px 0 8px;
+  transition: transform .35s ease; /* sliding animation */
+}
+
+/* individual cards in the carousel */
+.card{
+  flex: 0 0 320px; /* shorthand for flex-grow:0; flex-shrink:0; flex-basis:320px; fixed width, no growing or shrinking */
+  max-width: 320px;
+  background: #fdfcf9;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  border: #00000014 1px solid;
+  display: flex;
+  flex-direction: column; /* stack image and text vertically */
+  align-items: center;
+  text-align: center;
+  padding: 22px;
+  gap: 10px;
+  color: #2e2e2b;
+}
+
+/* image block inside each card */
+.card img{
+  width: 100%;
+  height: 160px;
+  object-fit: contain; /* never crop */
+  display: block;
+}
+
+/* card title + link styling */
+.card-title{
+  margin: 0; /* remove default margin */
+  font-weight: 600;
+  font-size: 17px;
+  color: #2F3E46;
+}
+
+.card-title a{
+  color: inherit;
+  text-decoration: none;
+}
+.card-title a:hover,
+.card-title a:focus{
+  text-decoration: underline; /* underline on hover */
+}
+
+/* card description */
+.card-text{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #56636a;
+  max-width: 34ch;
+}
+
+/* navigation buttons that sit outside the clipped viewport */
+.carousel-btn{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* vertical centering */
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  border: 1px solid #cfcac0;
+  background: #f3eee5;
+  color: #2f3e46;
+  display: grid; place-items: center;
+  box-shadow: 0 1px 2px #00000014;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* how buttons appear when disabled (left button inactive when carousel is at start, and right button inactive when at end) */
+.carousel-btn[disabled]{
+  opacity: .28; /* visually deemphasized when unusable */
+  filter: grayscale(100%);
+  pointer-events: none;
+  box-shadow: none;
+}
+
+/* positioning the "previous" button 20px from the left edge and the "next" button 20px from the right edge */
+.carousel-btn[data-dir="prev"]{ left: -20px; }
+.carousel-btn[data-dir="next"]{ right: -20px; }
+
+/* single-column fallback for the carousel on small screens (buttons are unnecessary in this case) */
+@media (max-width: 700px){
+  .card{ flex: 0 0 100%; max-width: 100%; }
+  .card img{ height: 160px; }
+  .carousel-btn{ display: none; }
+}

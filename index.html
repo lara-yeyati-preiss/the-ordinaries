@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The Ordinaries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <!-- linking to styles in CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- linking to CDN for D3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+  <!-- header section (title + subtitle + image) -->
+  <div class="header">
+
+    <!-- left column: title + subtitle -->
+    <div class="header-text">
+      <h1>The Ordinaries</h1>
+      <p class="subtitle">
+        An archive of objects from the Smithsonian’s Revolutionary Crossroads collection: traces of use, fragments of life. These are the remnants of the ordinary.
+      </p>
+    </div>
+    <!-- right column: illustration -->
+    <div class="header-illustration">
+    <img src="chair-header.png" alt="Photo of a chair">
+  </div>
+  </div>
+
+  <!-- tooltip for displaying information about each tile -->
+  <div class="treemap-tooltip"></div>
+  
+  <!-- main content / viz area (section title + treemap) -->
+  <main class="viz-wrap">
+
+    <!-- section title works as the title for the treemap -->
+    <h2 class="section-title">How were these objects used?</h2>
+
+    <!-- small note with instructions for interactivity -->
+    <p class="viz-hint">Click a group to zoom.</p>
+
+    <!-- "back to all" button: it appears when zoomed-in after clicking on a category from the treemap.
+     It is hidden by default, and js will toggle the "hidden" attribute on the zoomed-in level). 
+     The button is inside a row (button-row) that acts as a flex container for the button-->
+    <div class="button-row" hidden>
+    <button class="back-to-all" hidden>← Back to all actions</button>
+    </div>
+
+    <!-- small card showing the current zoomed-in level after clicking on a category on the treemap 
+     (js will toggle the "hidden" attribute on the zoomed-in level)-->
+    <div class="zoom-card" hidden></div>
+    <!-- viz stage to wrap the treemap and details panel -->
+    <div class="viz-stage">
+    <!-- svg canvas for treemap -->
+    <svg class="treemap" viewBox="0 0 1150 560" role="img"
+     aria-label="Treemap of objects grouped by action"></svg>
+
+     <!-- details panel overlay to show more information about a selected object -->
+    <div id="details" class="details-panel" hidden>
+      <div class="details-header">
+        <h3 id="details-title" class="details-title"></h3>
+        <button type="button" class="details-close">×</button>
+      </div>
+      <p class="details-subtitle"></p>
+      <ul id="details-list" class="details-list"></ul>
+    </div>
+    </div>
+
+    
+
+    <!-- short note under the chart documenting exclusions from viz -->
+<p class="viz-note">
+  Note: Categories ‘Pay & exchange’ (mostly banknotes and coins) and ‘Portray, display & decorate’ (mostly silhouettes and prints) have been
+  excluded from this visualization.
+</p>
+
+<!-- carousel for displaying highlighted objects -->
+<h3 class="carousel-heading">
+  Artifacts of the everyday: some made to endure, others lasted by chance
+</h3>
+
+<div class="carousel-container">
+  <div class="carousel-track-container">
+    <div class="carousel-track">
+<div class="card">
+  <img src="./cards/sampler.png"
+       alt="Betsy Bucklin’s 1781 needlework sampler from Providence, with a house, floral borders, and stitched verse.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_1341531"
+       target="_blank" rel="noopener">
+      Betsy Bucklin’s 1781 sampler
+    </a>
+  </h4>
+  <p class="card-text">
+    A linen sampler stitched in silk by a New England schoolgirl, featuring a verse in praise of George Washington.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/unidentified-virgen.png"
+       alt="Small carved wooden Virgin-and-Child santo from 18th-century Puerto Rico.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_1317029"
+       target="_blank" rel="noopener"
+       aria-label="Wooden Virgin-and-Child santo (18th-century Puerto Rico)">
+      18th-century Puerto Rican santo
+    </a>
+  </h4>
+  <p class="card-text">
+    A small carved Virgin-and-Child figure once kept in Puerto Rican households for daily devotion.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/fire-hat.png"
+       alt="Early-19th-century pressed-felt stovepipe parade hat painted red with a fire-company emblem.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_1318715"
+       target="_blank" rel="noopener"
+       aria-label="Parade hat of the Allegheny volunteer firemen (1807-1850)">
+      Parade hat of the Allegheny firemen (1807-1850)
+    </a>
+  </h4>
+  <p class="card-text">
+    A hand-painted hat worn by volunteers of the Allegheny Engine Co., used in service at fires and carried with pride in civic parades.
+  </p>
+</div>
+
+<div class="card">
+  <img
+    src="./cards/courting-mirror.png"
+    alt="Early-19th-century courting mirror with painted crest and rectangular glass.">
+  <h4 class="card-title">
+    <a
+      href="https://collections.si.edu/search/detail/edanmdm:nmah_308141"
+      target="_blank"
+      rel="noopener"
+      aria-label="Courting mirror, New England, c. 1800">
+      Courting mirror (c. 1800)
+    </a>
+  </h4>
+  <p class="card-text">
+    A painted wooden mirror, given by a suitor to a prospective partner in New England as a sign of affection and promise.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/tavern-sign.png"
+       alt="Carved and painted wooden tavern sign with a fleur-de-lis, framed for hanging.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_661987"
+       target="_blank" rel="noopener"
+       aria-label="Tavern Sign, carved and painted wood, c. 1770">
+      Tavern Sign (1770)
+    </a>
+  </h4>
+  <p class="card-text">
+    A carved wooden sign that marked a roadside inn and guided travelers along early American routes.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/postal.png"
+       alt="Printed 1773 postmaster’s bill from the Philadelphia Post Office with columns and ink annotations.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.9"
+       target="_blank" rel="noopener"
+       aria-label="Postmaster’s bill from the Philadelphia post office (1773)">
+      Postmaster’s bill (1773)
+    </a>
+  </h4>
+  <p class="card-text">
+    A printed sheet tracking three letters leaving Philadelphia for Rhode Island, 
+    witness to how news and private words moved through the colonies on the eve of revolution.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/drug-jar.png"
+       alt="Late-18th-century ceramic apothecary jar labeled for quassia bark.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_994542"
+       target="_blank" rel="noopener"
+       aria-label="Apothecary jar for quassia bark, about 1790–1810">
+      Apothecary jar (c. 1790–1810)
+    </a>
+  </h4>
+  <p class="card-text">
+    A ceramic apothecary jar that held bitter-wood bark prepared as a household tonic to reduce fevers.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/viola-damore.png"
+       alt="Viola d’amore with dark varnish, carved head, and 19th-century alterations.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:nmah_605616"
+       target="_blank" rel="noopener"
+       aria-label="Viola d’amore (18th-century body, 19th-century alterations)">
+      Viola d’amore (18th c., altered)
+    </a>
+  </h4>
+  <p class="card-text">
+    An 18th-century viola d’amore, believed re-assembled in the late 1800s by Leopoldo Franciolini 
+    — an Italian dealer infamous for his faked antique instruments.
+  </p>
+</div>
+
+<div class="card">
+  <img src="./cards/mourning-lock.png"
+       alt="Oval mourning locket with watercolor miniature of a grieving figure beneath a willow tree beside a funerary urn.">
+  <h4 class="card-title">
+    <a href="https://collections.si.edu/search/detail/edanmdm:saam_1938.7.1"
+       target="_blank" rel="noopener"
+       aria-label="Mourning locket for A. R. (c. 1780)">
+      Mourning locket for A.R. (c. 1780)
+    </a>
+  </h4>
+  <p class="card-text">
+    A small locket marked “A. R.”, carried as an intimate token of grief.
+  </p>
+</div>
+
+    </div>
+  </div>
+<!-- carousel navigation buttons -->
+  <button id="prevBtn" data-dir="prev" class="carousel-btn" aria-label="Previous">‹</button>
+  <button id="nextBtn" data-dir="next" class="carousel-btn" aria-label="Next">›</button>
+</div>
+
+
+<!-- linking to js code in a separate file -->
+<!-- "defer" ensures the js script runs after the HTML has been fully parsed and the DOM is ready -->
+<script defer src="ordinaries.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+original_label,canonical_type_manual
+"[""pattern book, weaver's""]",pattern books
+"[""weaver's pattern book""]",pattern books
+['book pages'],books
+"['bottle, nursing']",nursing bottles
+"['bucket, fire', 'buckets (vessels)']",fire buckets
+"['bucket, fire']",fire buckets
+"['cannon, revolutionary war']",cannons
+"['certificate, discharge']",certificates
+"['certificate, naturalization']",certificates
+"['cross, rounded', 'cross, rounded; historical']",crosses
+"['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",tinderboxes
+"['cutter, straw', 'fire steel; fire making apparatus']",firesteels
+"['document, broadside']",broadsides
+"['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",embroideries
+"['embroidery, picture']",embroideries
+"['embroidery, white work', 'pocket, white work']",embroideries
+"['fire steel; fire making apparatus', 'firesteel']",firesteels
+"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",flags
+"['flag, revolutionary war']",flags
+"['fragment, pan']",pans
+"['fragment, pitcher']",pitchers
+"['fragments, bottle']",bottles
+"['frame, butter mold']",molds
+"['fusil', 'musket, flintlock']",flintlocks
+"['glass, jelly']",glasses
+"['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']",glasses
+"['glass, soda']",glasses
+"['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",muskets
+"['jar, butter', 'butter jar', 'jars']",jars
+"['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers
+"['medal, political']",medals
+"['medal; personal; commemorative', 'medallions (medals)']",medals
+"['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",flintlocks
+"['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",flintlocks
+"['oven, dutch']",dutch ovens
+"['pan, baking']",pans
+"['plate, soup']",plates
+['punch bowls'],bowls
+"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']",flags
+"['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']",sabers
+"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']",bayonets
+"['scabbard, bayonet', 'scabbards']",bayonets
+"['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",manuscripts
+"['sheet (paper)', 'sheet (paper); manuscript']",manuscripts
+"['sheet (paper); manuscript', 'deed']",manuscripts
+"['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",manuscripts
+"['sheet (paper); manuscript', 'receipt']",manuscripts
+"['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",flintlocks
+"['tinder box; fire making apparatus', 'box, tinder']",tinderboxes

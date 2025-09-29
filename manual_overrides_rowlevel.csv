@@ -1,0 +1,527 @@
+EDANurl,object_types_str,canonical_type_auto,action_family_auto,canonical_type_manual,action_family_manual
+edanmdm:npm_2025.2004.10,['mail processing equipment'],mail processing equipments,Other,mail processing equipments,"Read, write & record"
+edanmdm:npm_2024.2004.5.2,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npm_2024.2004.2,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npm_1986.0913.1,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npm_0.283371.5,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npm_0.283371.3,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npm_0.283371.1,['works of art'],works of arts,Other,works of arts,"Portray, display & decorate"
+edanmdm:npg_AD_NPG.77.5,['periodicals'],periodicals,Other,periodicals,"Read, write & record"
+edanmdm:nmah_999249,['pestles'],pestles,Other,pestles,Heal & care
+edanmdm:nmah_999233,['pestles'],pestles,Other,pestles,Heal & care
+edanmdm:nmah_998380,"['bandages, lint', 'medicine chest', 'medicine chest']",medicine chests,"Contain, store & preserve",medicine chests,Heal & care
+edanmdm:nmah_997145,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_997142,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_997135,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_997061,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_997059,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_997058,['astrolabe'],astrolabes,Other,astrolabes,Measure & navigate
+edanmdm:nmah_994577,['balances (scales)'],balances,Other,balances,Measure & navigate
+edanmdm:nmah_994574,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994573,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994572,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994543,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994542,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994541,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994540,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994539,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994537,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994535,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994534,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994532,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994451,['balances (scales)'],balances,Other,balances,Measure & navigate
+edanmdm:nmah_994435,['boxes (containers)'],boxes,"Contain, store & preserve",boxes (containers),Heal & care
+edanmdm:nmah_994411,"['medicine chest', 'medical chest']",medicine chests,"Contain, store & preserve",medicine chests,Heal & care
+edanmdm:nmah_994344,['telescope (spyglass)'],telescopes,Other,telescopes,Heal & care
+edanmdm:nmah_994336,['balances (scales)'],balances,Other,balances,Measure & navigate
+edanmdm:nmah_994335,['balances (scales)'],balances,Other,balances,Measure & navigate
+edanmdm:nmah_994326,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994325,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994323,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994322,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994314,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994313,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994312,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994311,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994309,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994308,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994307,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994300,"['bottles', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994299,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994291,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994290,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994289,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994286,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994285,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994284,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994283,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994282,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994281,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994279,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994276,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994274,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994270,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994269,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994268,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994267,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994266,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_994264,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994262,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994260,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_994258,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994257,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_994255,"['syrup jar', 'jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994254,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994253,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994252,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994251,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994250,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994249,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994247,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994246,"['jar; pharmaceutical container; syrup', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994245,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994244,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994243,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994242,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994240,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994239,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994237,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994234,"['syrup jar', 'syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994233,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994232,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994231,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994230,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994229,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994219,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994218,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994213,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994209,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994208,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994189,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994187,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994185,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994184,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994182,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994181,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994167,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994166,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994165,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994164,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994156,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994151,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994144,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994143,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994142,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994141,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994140,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994137,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994136,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994135,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994134,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994114,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_994111,"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",mortars,Other,mortars,Heal & care
+edanmdm:nmah_994104,"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",mortars,Other,mortars,Heal & care
+edanmdm:nmah_994072,"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",mortars,Other,mortars,Heal & care
+edanmdm:nmah_993959,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993958,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993957,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993956,"['jars', 'bottle; jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993955,"['jars', 'jar; bottle; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993954,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993953,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993952,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993951,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993943,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993938,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993922,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993827,"['bottles', 'jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993826,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993810,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993809,"['bottles', 'jars', 'jar; bottle; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993808,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993799,"['jar; bottle; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993794,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993791,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993762,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993755,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993754,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993753,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993752,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993751,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993750,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993749,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993748,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993747,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993746,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993745,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993744,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993743,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993742,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993741,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993740,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993739,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993738,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993737,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993736,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993735,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993734,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993733,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993732,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993731,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993730,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993729,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993728,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993727,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993726,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993725,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993724,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993723,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993722,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993721,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993720,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993719,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993718,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993717,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993716,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993715,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993714,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993713,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993712,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993711,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993710,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993709,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993708,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993707,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993706,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993705,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993704,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993703,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993702,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993701,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993695,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993694,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993693,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993691,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993682,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993681,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993675,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993674,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993673,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993672,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993669,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993668,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993667,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993661,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993660,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993659,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993657,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993656,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993655,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993654,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993653,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993651,['syrup jar'],syrup jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993649,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993648,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993646,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993642,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993640,['syrup jar'],syrup jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993636,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993635,"['jars', 'jar, albarello']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993633,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993632,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993631,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993630,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993628,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993626,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993619,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993617,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993616,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993614,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993611,"['jars', 'jar, albarello']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993610,"['jars', 'jar, albarello']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993608,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993607,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993606,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993605,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993601,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993600,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993599,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993598,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993591,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993590,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993589,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993585,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993584,"['syrup jar, pitcher', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993582,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_993581,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993580,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_993579,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_993578,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993572,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993571,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993564,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993563,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993562,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993561,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993560,"['syrup jar', 'jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993559,"['syrup jar', 'jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993548,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993543,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993542,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993539,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993533,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993530,['tureens'],tureens,Other,tureens,"Eat, cook & drink"
+edanmdm:nmah_993529,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993528,"['flask; pharmaceutical container', 'flasks (bottles)', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993526,['tureens'],tureens,Other,tureens,"Eat, cook & drink"
+edanmdm:nmah_993525,"['medicine', 'syrup jar', 'jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993524,['syrup jar'],syrup jars,"Contain, store & preserve",syrup jars,Heal & care
+edanmdm:nmah_993523,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993520,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993519,"['syrup jar', 'jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993506,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993502,"['syrup jar', 'jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993497,['tureens'],tureens,Other,tureens,"Eat, cook & drink"
+edanmdm:nmah_993493,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993492,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993490,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993489,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993485,"['jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993484,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993482,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993469,"['syrup jar', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993468,"['pitchers (vessels)', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993466,"['jars', 'jar, albarello', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993463,"['albarello', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993457,"['flask; jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993456,"['flask; jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993455,"['flask; jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993452,"['albarello', 'jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993451,"['syrup jar', 'jar; pharmaceutical container']",jar; pharmaceutical containers,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993450,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993449,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993448,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993447,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_993445,['jars'],jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_905174,"['photographs, set of']","photographs, set oves",Other,"photographs, set of","Portray, display & decorate"
+edanmdm:nmah_905173,"['sheets, set of']","sheets, set oves",Other,"sheets, set of",Other
+edanmdm:nmah_904462,"['protractor', 'protractor and parallel rule', 'protractor; semi circular, with parallel rule']",protractors,Other,protractors,Measure & navigate
+edanmdm:nmah_882271,"['printing presses', 'press, printing; printing; relief; flatbed platen']",printing presses,Other,printing presses,"Read, write & record"
+edanmdm:nmah_882265,['printing presses'],printing presses,Other,printing presses,"Read, write & record"
+edanmdm:nmah_881578,"['vests (garments)', 'upper body', 'main garments']",main garments,Other,main garments,Dress & accessorize
+edanmdm:nmah_881543,"['ecuelle', 'ecuelle stand', 'ecuelle cover', 'stand']",ecuelles,Other,ecuelles,"Eat, cook & drink"
+edanmdm:nmah_881417,['field telescope and case'],field telescope and cases,"Contain, store & preserve",field telescope and cases,Other
+edanmdm:nmah_881338,"['accessories for the selling of clothing', 'boxes (containers)']",boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_875582,['ballot box'],ballot boxes,"Contain, store & preserve",ballot boxes,Other
+edanmdm:nmah_875351,"['suit, 2 piece']","suit, 2 pieces",Other,"suit, 2 pieces",Dress & accessorize
+edanmdm:nmah_875039,"['cutlass; edged weapons; navy', 'cutlasses']",cutlasses,Other,cutlasses,Fight
+edanmdm:nmah_874576,"['jar, leech, apothecary', 'leech jar; materia medica; containers', 'leech jars']","jar, leech, apothecaries","Contain, store & preserve","jar, leech, apothecaries",Heal & care
+edanmdm:nmah_874575,"['jar, leech, apothecary', 'leech jar; materia medica; containers', 'leech jars']","jar, leech, apothecaries","Contain, store & preserve","jar, leech, apothecaries",Heal & care
+edanmdm:nmah_856464,['sundial'],sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_854085,['sundial'],sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_854084,['sundial'],sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_851206,"['chronometer', 'pocket chronometer movement & dial; chronometer; mechanical, spring driven; english chronometer movement']",chronometers,Other,chronometers,Measure & navigate
+edanmdm:nmah_790656,['type case'],type cases,"Contain, store & preserve",type cases,Other
+edanmdm:nmah_790652,['type case'],type cases,"Contain, store & preserve",type cases,Other
+edanmdm:nmah_728391,"['vial; containers', 'vials']",vial; containers,"Contain, store & preserve",vial; containers,Other
+edanmdm:nmah_720734,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_683309,['pendants (jewelry)'],pendants,Other,pendants,Dress & accessorize
+edanmdm:nmah_661236,['cabinets (case furniture)'],cabinets,"Contain, store & preserve",cabinets,Decorate & furnish
+edanmdm:nmah_659512,"['chest, blanket']","chest, blankets","Contain, store & preserve","chest, blankets",Other
+edanmdm:nmah_659208,['trunks (containers)'],trunks,"Contain, store & preserve",trunks,Other
+edanmdm:nmah_649855,"['carpet, fragment', 'picture, woven']","carpet, fragments",Other,"carpet, fragments",Decorate & furnish
+edanmdm:nmah_641703,"['housewife', 'needlework kit']",housewives,Other,needlework kit,Textile making
+edanmdm:nmah_621063,['blankets (coverings)'],blankets,Other,blankets,Decorate & furnish
+edanmdm:nmah_609430,['cases (containers)'],cases,"Contain, store & preserve",cases,Other
+edanmdm:nmah_605600,['pochette'],pochettes,Other,pochettes,Perform music
+edanmdm:nmah_605503,['viola'],violas,Other,violas,Perform music
+edanmdm:nmah_599109,"['bowl, tea', 'saucers (plates)']",saucers,Other,saucers,"Eat, cook & drink"
+edanmdm:nmah_599108,"['bowl, tea', 'saucers (plates)']",saucers,Other,saucers,"Eat, cook & drink"
+edanmdm:nmah_599107,"['bowl, tea', 'saucers (plates)']",saucers,Other,saucers,"Eat, cook & drink"
+edanmdm:nmah_596321,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_593824,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_583792,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_580925,['saucers (plates)'],saucers,Other,saucers,"Eat, cook & drink"
+edanmdm:nmah_580225,['vases'],vases,Other,vases,"Eat, cook & drink"
+edanmdm:nmah_579954,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_579918,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_579917,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_579340,"['caddy, tea']","caddy, teas","Contain, store & preserve","caddies, tea","Eat, cook & drink"
+edanmdm:nmah_575254,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_575239,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_575208,"['stand, pickle', 'dish, sweetmeat']","stand, pickles",Other,"stand, pickles","Eat, cook & drink"
+edanmdm:nmah_574344,"['jar, butter', 'butter jar', 'jars']",jars,"Contain, store & preserve",butter jars,"Eat, cook & drink"
+edanmdm:nmah_574280,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_574242,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_574240,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_574239,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_574176,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_573618,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_573387,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_573301,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_572405,"['caddy, tea']","caddy, teas","Contain, store & preserve","caddies, tea","Eat, cook & drink"
+edanmdm:nmah_519730,"['invitation', 'invitation; manuscript, printed']",invitations,Other,invitations,"Read, write & record"
+edanmdm:nmah_515675,['dispatch case'],dispatch cases,"Contain, store & preserve",dispatch cases,Other
+edanmdm:nmah_514896,['sheet music'],sheet musics,Other,sheet music,Other
+edanmdm:nmah_514677,['electoral ticket'],electoral tickets,Other,electoral tickets,Perform music
+edanmdm:nmah_513750,"['fabric, printed']","fabric, printeds",Other,"fabric, printed",Other
+edanmdm:nmah_496382,['rugs'],rugs,Other,rugs,Decorate & furnish
+edanmdm:nmah_492668,['napkins'],napkins,Other,napkins,"Eat, cook & drink"
+edanmdm:nmah_457499,"['cutlass; edged weapons; navy', 'cutlasses']",cutlasses,Other,cutlasses,Fight
+edanmdm:nmah_444079,"['booklets', 'booklet; documents']",booklets,Other,booklets,"Read, write & record"
+edanmdm:nmah_440859,"['cutlasses', 'cutlass; edged weapons; navy; enlisted man']",cutlasses,Other,cutlasses,Fight
+edanmdm:nmah_433461,"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']","flag, fragment oves",,"flag, fragment of",Commemorate & symbolize
+edanmdm:nmah_432861,['striker box'],striker boxes,"Contain, store & preserve",striker boxes,Other
+edanmdm:nmah_395065,"['epaulets, pair of', 'epaulets, pair of; insignia; army; holder, epaulet; officer', 'epaulettes, pair of']","epaulets, pair oves",Other,"epaulets, pair of",Other
+edanmdm:nmah_375809,"['busk', 'busk; upper body; underwear; female']",busks,Other,busks,Dress & accessorize
+edanmdm:nmah_374390,"['calash', 'calash; headwear; accessories worn on the body; female']",calashes,Other,calashes,Dress & accessorize
+edanmdm:nmah_373980,"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']","gaiters, pair of; footwear; accessories worn on the body; males",Other,"gaiters, pair of; footwear; accessories worn on the body; males",Dress & accessorize
+edanmdm:nmah_373271,"['busk', 'busk; underwear; female']",busks,Other,busks,Dress & accessorize
+edanmdm:nmah_372675,"['stays; upper body; underwear; girl', 'stays']",stays,Other,stays,Dress & accessorize
+edanmdm:nmah_372018,"['muff; accessories carried; female', 'muffs']",muff; accessories carried; females,Other,muff; accessories carried; females,Dress & accessorize
+edanmdm:nmah_371895,"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",accessories for the care of clothings,Other,accessories for the care of clothings,Dress & accessorize
+edanmdm:nmah_371894,"['accessories for the care of clothing', 'boxes (containers)']",boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_371892,['snuffboxes'],snuffboxes,Other,snuffboxes,Smoke
+edanmdm:nmah_371891,['snuffboxes'],snuffboxes,Other,snuffboxes,Smoke
+edanmdm:nmah_371890,['snuffbox'],snuffboxes,Other,snuffboxes,Smoke
+edanmdm:nmah_371889,['snuffbox'],snuffboxes,Other,snuffboxes,Smoke
+edanmdm:nmah_371884,"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",neckcloth?; neckwear; accessories worn on the body; females,Other,neckcloth?; neckwear; accessories worn on the body; females,Dress & accessorize
+edanmdm:nmah_371882,"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']","cuffs, pair oves",Other,"cuffs, pair of",Dress & accessorize
+edanmdm:nmah_371676,"['stays; upper body; underwear; female', 'stays']",stays,Other,stays,Dress & accessorize
+edanmdm:nmah_371675,"['stays; upper body; underwear; female', 'stays']",stays,Other,stays,Dress & accessorize
+edanmdm:nmah_370177,"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']","undersleeves, pair oves",Other,"undersleeves, pair of",Dress & accessorize
+edanmdm:nmah_369235,"['dickey; neckwear; accessories worn on the body; male', 'dickeys']",dickey; neckwear; accessories worn on the body; males,Other,dickey; neckwear; accessories worn on the body; males,Dress & accessorize
+edanmdm:nmah_368749,"['walking stick; accessories carried; male', 'walking sticks']",walking stick; accessories carried; males,Other,walking stick; accessories carried; males,Dress & accessorize
+edanmdm:nmah_368165,"['umbrellas', 'umbrella; parasols; accessories carried; female']",umbrellas,Other,umbrellas,Dress & accessorize
+edanmdm:nmah_368110,"['umbrellas', 'umbrella; parasols; accessories carried; unknown', 'parasols']",umbrellas,Other,umbrellas,Dress & accessorize
+edanmdm:nmah_365703,"['mitts, pair of; handwear; accessories worn on the body; female', 'mitts, pair of']","mitts, pair of; handwear; accessories worn on the body; females",Other,"mitts, pair of; handwear; accessories worn on the body; females",Dress & accessorize
+edanmdm:nmah_364281,"['neckcloth; neckwear; accessories worn on the body; male', 'neckcloth']",neckcloths,Other,neckcloths,Dress & accessorize
+edanmdm:nmah_362533,"['stays; upper body; underwear; female', 'stays']",stays,Other,stays,Dress & accessorize
+edanmdm:nmah_362532,"['stays; upper body; underwear; female', 'stays']",stays,Other,stays,Dress & accessorize
+edanmdm:nmah_362044,"['stud', 'stud; jewelry; accessories worn on the body; male']",studs,Other,studs,Dress & accessorize
+edanmdm:nmah_362043,"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']","stud, collars",Other,"stud, collars",Dress & accessorize
+edanmdm:nmah_362041,"['cuff links', 'cuff links', 'cuff links; jewelry; accessories worn on the body; male']",cuff links,Other,cuff links,Dress & accessorize
+edanmdm:nmah_360135,"['pendant; jewelry; accessories worn on the body; female', 'pendants (jewelry)']",pendants,Other,pendants,Dress & accessorize
+edanmdm:nmah_356211,"['pendant; jewelry; accessories worn on the body; female', 'pendants (jewelry)']",pendants,Other,pendants,Dress & accessorize
+edanmdm:nmah_319093,"['chest; furniture', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_319092,"['chest; furniture', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_319091,"['chest; furniture', 'furniture', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_318622,['roasters (cookware)'],roasters,Other,roasters,"Eat, cook & drink"
+edanmdm:nmah_318611,"['stand, roaster']","stand, roasters",Other,"stand, roasters","Eat, cook & drink"
+edanmdm:nmah_318378,"['box, candle']","box, candles","Contain, store & preserve","box, candles",Other
+edanmdm:nmah_317096,"['worker, butter']","worker, butters",Other,"worker, butters","Eat, cook & drink"
+edanmdm:nmah_317050,"['husker, corn']","husker, corns",Other,"husker, corns","Eat, cook & drink"
+edanmdm:nmah_316850,['spatulas (culinary tools)'],spatulas,Other,spatulas,"Eat, cook & drink"
+edanmdm:nmah_316846,"['stick, pudding']","stick, puddings",Other,"stick, puddings","Eat, cook & drink"
+edanmdm:nmah_316835,"['box, wall', 'candle box; lighting accessories']","box, walls","Contain, store & preserve","box, walls",Other
+edanmdm:nmah_315944,"['box, snuff']","box, snufves","Contain, store & preserve","box, snuff",Other
+edanmdm:nmah_315593,"['box, stamp']","box, stamps","Contain, store & preserve","box, stamps",Other
+edanmdm:nmah_315571,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_313913,['churns'],churns,Other,churns,"Eat, cook & drink"
+edanmdm:nmah_313209,"['dippers (serving utensils)', 'cup, drinking']",dippers,Other,dippers,"Eat, cook & drink"
+edanmdm:nmah_313206,['spatulas (culinary tools)'],spatulas,Other,spatulas,"Eat, cook & drink"
+edanmdm:nmah_312895,"['chest; furniture', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_312869,"['bedstead', 'bedstead; furniture; cradle']",bedsteads,Other,bedsteads,Decorate & furnish
+edanmdm:nmah_312141,"['pestle; kitchen utensils', 'pestles']",pestles,Other,pestles,"Eat, cook & drink"
+edanmdm:nmah_312138,"['masher, potato', 'potato masher; kitchen utensils']","masher, potatos",Other,"masher, potatos","Eat, cook & drink"
+edanmdm:nmah_312133,"['reamer, lemon', 'lemon reamer; kitchen utensils']","reamer, lemons",Other,"reamer, lemons","Eat, cook & drink"
+edanmdm:nmah_312130,"['spigot', 'spigot; kitchen utensils']",spigots,Other,spigots,"Eat, cook & drink"
+edanmdm:nmah_312121,"['grater, potato; kitchen utensils', 'graters']",graters,Other,graters,"Eat, cook & drink"
+edanmdm:nmah_311219,"['chest, blanket', 'chest; furniture', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_309981,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_309729,['roasters (cookware)'],roasters,Other,roasters,"Eat, cook & drink"
+edanmdm:nmah_309727,['roasters (cookware)'],roasters,Other,roasters,"Eat, cook & drink"
+edanmdm:nmah_309659,['trunks (containers)'],trunks,"Contain, store & preserve",trunks,Other
+edanmdm:nmah_309616,"['box, alms']","box, alms","Contain, store & preserve","box, alms",Other
+edanmdm:nmah_309607,"['canister, tea', 'canisters']","canister, teas","Contain, store & preserve","canister, teas",Other
+edanmdm:nmah_309556,['skimmers (culinary tools)'],skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_309554,['skimmers (culinary tools)'],skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_309552,['skimmers (culinary tools)'],skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_309551,['skimmers (culinary tools)'],skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_309524,"['balances (scales)', 'beam balance']",balances,Other,balances,Measure & navigate
+edanmdm:nmah_308494,"['pan, frying']","pan, fryings",Other,"pan, fryings","Eat, cook & drink"
+edanmdm:nmah_308264,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_308260,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_307140,['dippers (serving utensils)'],dippers,Other,dippers,"Eat, cook & drink"
+edanmdm:nmah_307137,"['box, candle']","box, candles","Contain, store & preserve","box, candles",Other
+edanmdm:nmah_307136,['dippers (serving utensils)'],dippers,Other,dippers,"Eat, cook & drink"
+edanmdm:nmah_306503,"['chest of drawers', 'chests']",chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_305537,"['strainers (culinary tools)', 'skimmers (culinary tools)']",skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_305360,"['worker, butter']","worker, butters",Other,"worker, butters","Eat, cook & drink"
+edanmdm:nmah_304690,['skimmers (culinary tools)'],skimmers,Other,skimmers,"Eat, cook & drink"
+edanmdm:nmah_304687,"['masher, potato']","masher, potatos",Other,"masher, potatos","Eat, cook & drink"
+edanmdm:nmah_304107,"['pan, frying']","pan, fryings",Other,"pan, fryings","Eat, cook & drink"
+edanmdm:nmah_304079,"['box, dough', 'dough trough table']","box, doughs","Contain, store & preserve","box, dough","Eat, cook & drink"
+edanmdm:nmah_303997,['highchair'],highchairs,Other,highchairs,Decorate & furnish
+edanmdm:nmah_303870,"['box, wall']","box, walls","Contain, store & preserve","box, walls",Other
+edanmdm:nmah_303869,['highchair'],highchairs,Other,highchairs,Decorate & furnish
+edanmdm:nmah_303793,['salt (inorganic material)'],salts,Other,salts,"Eat, cook & drink"
+edanmdm:nmah_303792,['salt (inorganic material)'],salts,Other,salts,"Eat, cook & drink"
+edanmdm:nmah_303605,['basins'],basins,Other,basins,"Eat, cook & drink"
+edanmdm:nmah_303599,['saucers (plates)'],saucers,Other,saucers,"Eat, cook & drink"
+edanmdm:nmah_302720,"['box, snuff']","box, snufves","Contain, store & preserve","box, snufves",Other
+edanmdm:nmah_302718,['graters'],graters,Other,graters,"Eat, cook & drink"
+edanmdm:nmah_301113,['funnels'],funnels,Other,funnels,"Eat, cook & drink"
+edanmdm:nmah_301099,"['caddy, tea']","caddy, teas","Contain, store & preserve","caddy, teas",Other
+edanmdm:nmah_301082,"['cooler, wine']","cooler, wines",Other,"cooler, wines","Eat, cook & drink"
+edanmdm:nmah_301081,"['cooler, wine']","cooler, wines",Other,"cooler, wines","Eat, cook & drink"
+edanmdm:nmah_300617,"['shaker', 'casters (vessels)']",casters,Other,casters,"Eat, cook & drink"
+edanmdm:nmah_300558,['basins'],basins,Other,basins,"Eat, cook & drink"
+edanmdm:nmah_300488,['flagon'],flagons,Other,flagons,"Eat, cook & drink"
+edanmdm:nmah_300390,['flagon'],flagons,Other,flagons,"Eat, cook & drink"
+edanmdm:nmah_300027,"['shaker', 'casters (vessels)']",casters,Other,casters,"Eat, cook & drink"
+edanmdm:nmah_2968,"['balances (scales)', 'hand balance']",balances,Other,balances,Measure & navigate
+edanmdm:nmah_2540,"['weights', 'balances (scales)', 'balance set with weights']",balances,Other,balances,Measure & navigate
+edanmdm:nmah_2442,"['weights', 'weights (scale components)']",weights,Other,weights,Measure & navigate
+edanmdm:nmah_2441,"['weights', 'weights (scale components)']",weights,Other,weights,Measure & navigate
+edanmdm:nmah_2440,"['weights', 'weights (scale components)']",weights,Other,weights,Measure & navigate
+edanmdm:nmah_1848369,['chests'],chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_1822447,['vases'],vases,Other,vases,"Eat, cook & drink"
+edanmdm:nmah_1803020,['oyster jar'],oyster jars,"Contain, store & preserve",oyster jars,Other
+edanmdm:nmah_1802581,['cases (containers)'],cases,"Contain, store & preserve",cases,Other
+edanmdm:nmah_1802518,['booklets'],booklets,Other,booklets,Perform music
+edanmdm:nmah_1800324,['cases (containers)'],cases,"Contain, store & preserve",cases,Other
+edanmdm:nmah_1460668,"['potsherds', 'sherds, pan, milk']",potsherds,Other,potsherds,"Eat, cook & drink"
+edanmdm:nmah_1452245,"['mold, butter, handle']","mold, butter, handles",Other,"mold, butter, handles","Eat, cook & drink"
+edanmdm:nmah_1452166,"['mold, butter cheese, part of']","mold, butter cheese, part oves",Other,"mold, butter cheese, part oves","Eat, cook & drink"
+edanmdm:nmah_1452165,"['mold, butter cheese, part of']","mold, butter cheese, part oves",Other,"mold, butter cheese, part oves","Eat, cook & drink"
+edanmdm:nmah_1450812,"['box, snuff']","box, snufves","Contain, store & preserve","box, snufves",Other
+edanmdm:nmah_1449523,"['food warmer', 'infant feeder']",food warmers,Other,food warmers,"Eat, cook & drink"
+edanmdm:nmah_1404173,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_1384345,"['jar, apothecary, syrup']","jar, apothecary, syrups","Contain, store & preserve","jar, apothecary, syrups",Heal & care
+edanmdm:nmah_1384344,"['jar, apothecary, syrup']","jar, apothecary, syrups","Contain, store & preserve","jar, apothecary, syrups",Heal & care
+edanmdm:nmah_1380038,['jars'],jars,"Contain, store & preserve",jars,Other
+edanmdm:nmah_1379778,"['jars', 'pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1326052,"['pan, baking']","pan, bakings",Other,"pan, baking","Eat, cook & drink"
+edanmdm:nmah_1277056,['box chronometer'],box chronometers,"Contain, store & preserve",box chronometers,Other
+edanmdm:nmah_1219987,"['jars', 'jar; pharmaceutical container']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1218834,['cases (containers)'],cases,"Contain, store & preserve",cases,Other
+edanmdm:nmah_1217334,"['bottle; jar; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1216158,"['ceramic jar', 'jar, olive, ceramic']",ceramic jars,"Contain, store & preserve",ceramic jars,Other
+edanmdm:nmah_1199181,['field telescope and case'],field telescope and cases,"Contain, store & preserve",field telescope and cases,Other
+edanmdm:nmah_1191780,['cabinets (case furniture)'],cabinets,"Contain, store & preserve",cabinets,Decorate & furnish
+edanmdm:nmah_1191777,"['cabinets (case furniture)', 'counter with drawers, ancient pharmacy']",cabinets,"Contain, store & preserve",cabinets,Decorate & furnish
+edanmdm:nmah_1191775,['cabinets (case furniture)'],cabinets,"Contain, store & preserve",cabinets,Decorate & furnish
+edanmdm:nmah_1191774,['cabinets (case furniture)'],cabinets,"Contain, store & preserve",cabinets,Decorate & furnish
+edanmdm:nmah_1190334,['chests'],chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_1190333,['chests'],chests,"Contain, store & preserve",chests,Other
+edanmdm:nmah_1174950,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_1174767,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_1174692,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_1174687,['boxes (containers)'],boxes,"Contain, store & preserve",boxes,Other
+edanmdm:nmah_1156888,"['mold, gingerbread']","mold, gingerbreads",Other,"mold, gingerbreads","Eat, cook & drink"
+edanmdm:nmah_1156887,"['mold, gingerbread']","mold, gingerbreads",Other,"mold, gingerbreads","Eat, cook & drink"
+edanmdm:nmah_1135811,"['medicine chest; medicine case', 'medicine case', 'medicine chest']",medicine chests,"Contain, store & preserve",medicine chests,Heal & care
+edanmdm:nmah_1133694,['hanging balance (beam)'],hanging balances,Other,hanging balances,Measure & navigate
+edanmdm:nmah_1129189,"['cases (containers)', 'case; surgical set']",cases,"Contain, store & preserve","case, surgical set",Heal & care
+edanmdm:nmah_1122364,"['case; bloodletting instruments; spring lancet', 'bloodletting', 'spring lancet, bloodletting', 'lancet, set', 'cases (containers)']",cases,"Contain, store & preserve",bloodlettings,Heal & care
+edanmdm:nmah_1065311,"['molds (shaping tools)', 'mold, butter cheese, part of']","mold, butter cheese, part oves",Other,"mold, butter cheese, part oves","Eat, cook & drink"
+edanmdm:nmah_1065310,"['mold, sugar']","mold, sugars",Other,"mold, sugars","Eat, cook & drink"
+edanmdm:nmah_1065296,"['stamp, butter mold']","stamp, butter molds",Other,"stamp, butter molds","Eat, cook & drink"
+edanmdm:nmah_1065295,"['stamp, butter mold']","stamp, butter molds",Other,"stamp, butter molds","Eat, cook & drink"
+edanmdm:nmah_1065280,"['mold, butter, handle']","mold, butter, handles",Other,"mold, butter, handles","Eat, cook & drink"
+edanmdm:nmah_1022969,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1022967,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1022966,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1022965,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care
+edanmdm:nmah_1022957,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",jars,"Contain, store & preserve","jars, pharmaceutical containers",Heal & care

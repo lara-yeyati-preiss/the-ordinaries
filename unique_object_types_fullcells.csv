@@ -1,0 +1,1737 @@
+,count,count
+0,['note'],2470
+1,['silhouettes'],1845
+2,['prints'],1422
+3,['coins (money)'],1075
+4,['paintings'],297
+5,"['spoons', 'flatware']",191
+6,['medals'],170
+7,"['bottles', 'bottle; pharmaceutical container']",145
+8,['decorative arts'],114
+9,"['jars', 'jar; pharmaceutical container']",111
+10,"['sheet (paper); manuscript', 'correspondence']",95
+11,['jars'],87
+12,"['correspondence', 'covers & letters']",84
+13,"['engravings (prints)', 'prints']",82
+14,['books'],71
+15,['posters'],60
+16,"['badges', 'badge; award']",53
+17,['uncut sheet'],52
+18,"['exterior views', 'prints']",48
+19,"['maps', 'prints']",47
+20,['pianos'],43
+21,['quilts'],40
+22,['fire mark'],40
+23,['drawings'],40
+24,"['coins (money)', 'tokens']",39
+25,"['note', 'paper money']",35
+26,['plate'],33
+27,"['jar; pharmaceutical container', 'jars']",32
+28,['newspapers'],31
+29,"['engravings (prints)', 'print; intaglio; engraving', 'prints']",30
+30,"['fashion plate', 'fashion plate; female']",30
+31,"['cups', 'saucers (plates)']",29
+32,['bottles'],28
+33,['samplers (embroidery)'],27
+34,['archival materials'],27
+35,"['stamp, butter']",26
+36,['graphic arts'],25
+37,['check'],25
+38,['pitchers (vessels)'],25
+39,['ladles'],24
+40,"['mezzotints (prints)', 'prints']",24
+41,['measure'],24
+42,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",24
+43,['icon'],22
+44,['sculpture'],22
+45,['teapots'],21
+46,['correspondence'],20
+47,"['miniatures', 'paintings']",20
+48,['spoons'],20
+49,"['aquatints', 'prints']",19
+50,['andiron'],19
+51,['bill of exchange'],19
+52,['documents'],18
+53,"['medal; commemorative', 'medals']",17
+54,['bowls (vessels)'],17
+55,"['print; water color', 'prints']",17
+56,"['note', 'bank note; 1780 05 05', 'bank note']",16
+57,"['pipe; smoking equipment', 'pipes (smoking equipment)']",16
+58,['maps'],16
+59,"['etchings (prints)', 'prints']",15
+60,['mugs'],15
+61,['dishes (vessels)'],15
+62,"['shoes, pair of; footwear; accessories worn on the body; female', 'shoes (footwear)']",15
+63,"['dress, 1 piece', 'dress, 1 piece; entire body; main dress; female']",14
+64,"['flatware', 'tongs']",14
+65,"['syrup jar', 'jars']",13
+66,['jugs (vessels)'],13
+67,"['print; intaglio; etching', 'prints']",13
+68,"['watches', 'watch; mechanical, spring driven; pocket watch']",13
+69,"['print; intaglio; mezzotint', 'mezzotints (prints)', 'prints']",13
+70,"['tinder box; fire making apparatus', 'tinderbox']",13
+71,['porringer'],13
+72,"['dishes (vessels)', 'plate']",13
+73,"['flags', 'flag; military; army; streamer']",12
+74,"['button, political']",12
+75,['bows (weapons)'],12
+76,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",12
+77,"['medal; presidential', 'medals']",11
+78,"['note', 'bank note', 'bank note; 1778 09 26']",11
+79,"['andirons', 'andiron']",11
+80,"['bowl, sugar']",11
+81,"['print; intaglio; engraving', 'prints']",11
+82,"['embroidery, sampler', 'samplers (embroidery)']",11
+83,['receipt'],10
+84,"['medal; personal', 'medals']",10
+85,"['medal; personal; commemorative', 'medals']",10
+86,['bed coverings'],10
+87,['button'],10
+88,"['note', 'bank note; 1776 06 19', 'bank note']",9
+89,['guitars'],9
+90,"['note', 'bank note; 1779 01 14', 'bank note']",9
+91,['figures (representations)'],9
+92,['mirrors'],9
+93,['boxes (containers)'],9
+94,['pamphlets'],9
+95,"['breeches (trousers)', 'breeches; lower body; main dress; male']",9
+96,['santo'],9
+97,"['albarello', 'jars']",9
+98,['syrup jar'],9
+99,"['note', 'bank note; 1776 03 25', 'bank note']",9
+100,['flutes (aerophones)'],9
+101,['employee gear'],9
+102,"['watch movement; mechanical, spring driven; pocket watch', 'watch movement']",9
+103,"['note', 'colonial note']",8
+104,"['maps', 'engravings (prints)', 'prints']",8
+105,"['note', 'continental currency']",8
+106,"['fire steel; fire making apparatus', 'firesteel']",8
+107,"['note', 'bank note; 1780 07 01', 'bank note']",8
+108,['pots (containers)'],8
+109,"['note', 'bank note; 1776 00 00', 'bank note']",8
+110,"['prints', 'print; intaglio']",8
+111,"['note', 'bank note; 1776 03 05', 'bank note']",8
+112,"['fabric, fragment, printed']",8
+113,['lottery tickets'],8
+114,"['paintings', 'folk art']",8
+115,"['note', 'paper currency']",8
+116,"['bed coverings', 'coverlet']",8
+117,"[""artists' materials""]",8
+118,['anatomical print'],7
+119,"['mold, cookie']",7
+120,['paper money'],7
+121,['octant'],7
+122,"['syrup jar', 'jar; pharmaceutical container']",7
+123,['violins'],7
+124,"['newspaper; printed', 'newspapers']",7
+125,"['coverlet, geometric']",7
+126,"['medal; commemorative; personal', 'medals']",7
+127,"['plate', 'plate']",7
+128,['forks (flatware)'],7
+129,['lithographs'],7
+130,['tokens'],7
+131,['lace (needlework)'],7
+132,"['money', 'note']",7
+133,['creamers'],7
+134,"['silhouettes', 'silhouette; pictures']",6
+135,['mangle board'],6
+136,"['etching on chine colle', 'prints']",6
+137,"['paintings', 'exterior views']",6
+138,['astrolabe'],6
+139,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",6
+140,"['note', 'bank note', 'bank note; 1780 04 29']",6
+141,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",6
+142,"['fabric; accessories for the manufacturing of clothing', 'cloth']",6
+143,['aquatints'],6
+144,['banners'],6
+145,['basins'],6
+146,"['windsor side chair', 'chair, side', 'chair; side; windsor chair', 'chairs (furniture forms)']",6
+147,['balances (scales)'],6
+148,"['glass, jelly']",6
+149,['works of art'],6
+150,"['note', 'bank note; 1776 06 07', 'bank note']",6
+151,['paper currency'],6
+152,"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",6
+153,['badges'],6
+154,"['check; signature', 'check']",6
+155,"['note', 'bank note; 1780 03 01', 'bank note']",6
+156,"['hook, pot']",6
+157,['microscopes'],6
+158,"['needle, knitting']",6
+159,"['prints', 'print; art objects']",6
+160,"['bucket, fire']",6
+161,['obsolete paper money'],5
+162,"['syrup jar', 'jar; pharmaceutical container', 'jars']",5
+163,"['lace, border', 'lace (needlework)']",5
+164,"['bank note; 1776 02 17', 'note', 'bank note']",5
+165,"['etching and engraving', 'prints']",5
+166,"['coverlet, geometric', 'coverlet']",5
+167,"['newspapers', 'newspaper; print; letterpress']",5
+168,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",5
+169,"['vests (garments)', 'vest; upper body; main dress; male']",5
+170,['skimmers (culinary tools)'],5
+171,"['note', 'bank note; 1777 10 11', 'bank note']",5
+172,"['die, coin.1', 'punch', 'dies (tools)']",5
+173,"['cup, punch']",5
+174,"['crosses (visual works)', 'cross; historical']",5
+175,"['mezzotints (prints)', 'print, mezzotint']",5
+176,"['note', 'bank note', 'bank note; 1777 06 08']",5
+177,"['mirror; furniture', 'mirrors']",5
+178,['candles'],5
+179,"['bayonets', 'bayonet, socket']",5
+180,['mail processing equipment'],5
+181,"['chemise, shift', 'chemise, shift; entire body; underwear; female']",5
+182,"['aprons (main garments)', 'apron; accessories worn on the body; female']",5
+183,"['lace (needlework)', 'lace, border, fragment']",5
+184,['surveying instruments'],5
+185,"['dresses (garments)', 'dress, 2 piece; entire body; main dress; female']",5
+186,['chess sets'],5
+187,['tankard'],5
+188,"['note', 'bank note; 1780 06 01', 'bank note']",5
+189,"['medals', 'tokens']",5
+190,['sundial'],5
+191,"['chair, side']",5
+192,['knives'],5
+193,"['note', 'bank note; 1780 06 28', 'bank note']",5
+194,['mortars (grinding tools)'],5
+195,"['print, fashion plate']",5
+196,"['print; intaglio; stipple', 'engravings (prints)', 'prints']",5
+197,"['flag; flags; military; army; streamer; campaign', 'flags']",5
+198,['sector'],4
+199,['flags'],4
+200,"['chair, side', 'chair; furniture; side']",4
+201,['bells (idiophones)'],4
+202,['dippers (serving utensils)'],4
+203,"['etchings (prints)', 'aquatints', 'prints']",4
+204,['beakers (vessels)'],4
+205,"['box, snuff; smoking equipment', 'box, snuff']",4
+206,['coverlet fragment'],4
+207,"['stays; upper body; underwear; female', 'stays']",4
+208,['teakettles'],4
+209,['tax stamps'],4
+210,"['shoes, pair of; footwear; accessories worn on the body; child', 'shoes (footwear)']",4
+211,"['sheet (paper); manuscript', 'receipt']",4
+212,"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .69 in; smooth bore; muzzle load; sa']",4
+213,['manuscripts'],4
+214,"['reliefs (sculpture)', 'pamphlets', 'prints', 'print; letterpress']",4
+215,['wood block'],4
+216,"['flatware', 'ladles']",4
+217,"['iron, waffle']",4
+218,['tureens'],4
+219,['engravings (prints)'],4
+220,"['note', 'bank note; 1773 10 01', 'bank note']",4
+221,"['waistcoats (garments)', 'upper body', 'main garments', 'male']",4
+222,['waistcoats (garments)'],4
+223,"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']",4
+224,"['muskets', 'musket, flintlock']",4
+225,"['box, snuff; smoking equipment', 'box, tobacco']",4
+226,"['engravings (prints)', 'prints', 'intaglio printing']",4
+227,['snuffbox'],4
+228,"['note', 'bank note', 'bank note; 1781 03 01']",4
+229,['tinderbox'],4
+230,['cases (containers)'],4
+231,['cups'],4
+232,"['newspapers', 'print; letterpress']",4
+233,['coffeepots'],4
+234,"['note', 'bank note', 'bank note; 1776 10 18']",4
+235,['cabinets (case furniture)'],4
+236,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",4
+237,"['shot; underwater', 'shot']",4
+238,"['stockings', 'costume accessories worn', 'footwear']",4
+239,"['warmer, foot']",4
+240,"['note', 'bank note', 'bank note; 1773 04 01']",4
+241,['silk picture'],4
+242,"['engravings (prints)', 'print, engraving']",4
+243,['sauceboat'],4
+244,"['chair, side', 'chair; furniture; side; splat back, pierced', 'chairs (furniture forms)']",4
+245,"['swords', 'sword; edged weapons; army; officer']",4
+246,"['print; engraving', 'prints']",4
+247,['bagpipes'],4
+248,"['note', 'paper money', 'bank note']",3
+249,"['flag, revolutionary war']",3
+250,"['chest; furniture', 'chests']",3
+251,['tile'],3
+252,"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",3
+253,"['flask; jar; pharmaceutical container', 'jars']",3
+254,['trivets'],3
+255,"['knife; personal utensils; cutlery; folding; pocket', 'knife, folding', 'cutlery']",3
+256,['pistols'],3
+257,['toasters (cooking and heating devices)'],3
+258,"['carder, hand']",3
+259,"['lace (needlework)', 'lace, lappet']",3
+260,"['dish, soup']",3
+261,"['rings (object genres)', 'ring; jewelry; accessories worn on the body; female']",3
+262,"['gloves, pair of; handwear; accessories worn on the body; male', 'gloves']",3
+263,"['sword; edged weapons', 'swords']",3
+264,"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa']",3
+265,"['sheet of paper', 'sheet of paper; documents']",3
+266,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",3
+267,['fire hats'],3
+268,"['bayonet; edged weapons; socket', 'bayonets', 'bayonet, socket']",3
+269,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .75 in; smooth bore; muzzle load; sa']",3
+270,"['print; newspaper; letterpress', 'newspapers']",3
+271,"['mirrors', 'prints']",3
+272,"['nails', 'nail; underwater']",3
+273,"['print; mezzotint', 'mezzotints (prints)', 'prints']",3
+274,"['engravings (prints)', 'print; engraving', 'prints']",3
+275,['license plate'],3
+276,"['quilts', 'decorative arts', 'folk art']",3
+277,"['engravings (prints)', 'prints', 'stipple engraving']",3
+278,['hats'],3
+279,['tongs'],3
+280,['chairs (furniture forms)'],3
+281,"['jars', 'jar, albarello']",3
+282,"['shirts', 'shirt; upper body; main dress; male']",3
+283,['belts (costume accessories)'],3
+284,"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",3
+285,"['print; intaglio; mezzotint', 'prints']",3
+286,"['decorative arts', 'folk art']",3
+287,"['mold, butter']",3
+288,['drums (membranophones)'],3
+289,['chests'],3
+290,"['valance, printed']",3
+291,"['note', 'bank note']",3
+292,"['lace (needlework)', 'lace, flounce']",3
+293,"['box, snuff']",3
+294,"['note', 'bank note', 'bank note; 1780 05 05']",3
+295,['horn (animal material)'],3
+296,"['bed valance, printed']",3
+297,['cards (information artifacts)'],3
+298,"['engravings (prints)', 'line engraving', 'prints']",3
+299,"['book; documents', 'books']",3
+300,"['fraktur', 'documents', 'drawings']",3
+301,['pens (drawing and writing)'],3
+302,['shelves'],3
+303,['bond'],3
+304,"['receipt', 'receipt; signature']",3
+305,"['pan, close stool']",3
+306,"['box, tobacco']",3
+307,"['continental currency', 'note', 'bank note; continental currency; 1775 05 10', 'bank note', 'continental currency']",3
+308,"['chair; furniture; side; windsor', 'chairs (furniture forms)']",3
+309,"['bowl, tea', 'saucers (plates)']",3
+310,"['tinder pistol; fire making apparatus', 'tinderbox']",3
+311,"['fraktur', 'documents', 'pen and ink', 'certificates']",3
+312,['funnels'],3
+313,"['note', 'bank note', 'bank note; 1778 04 11']",3
+314,"['weights', 'weights (scale components)']",3
+315,"['note', 'bank note; 1775 05 10', 'bank note']",3
+316,"['battery; electrochemical devices', 'battery']",3
+317,"['note', 'bank note', 'bank note; 1776 04 02']",3
+318,"['oven, dutch']",3
+319,['pitch pipe'],3
+320,"['note', 'bank note; 1775 04 10', 'bank note']",3
+321,"['iron, wafer']",3
+322,['platters'],3
+323,['roasters (cookware)'],3
+324,['broiler'],3
+325,['viols'],3
+326,"['note', 'early american paper money']",3
+327,"['caddy, tea']",3
+328,"['bowl, tea', 'tea bowls']",3
+329,['almanacs'],3
+330,"['note', 'bank note; 1780 07 02', 'bank note']",3
+331,"['card, playing']",3
+332,"['chair, side', 'chair; furniture; side; shield back, open', 'chairs (furniture forms)']",3
+333,['swords'],3
+334,['breeches (trousers)'],3
+335,"['drawing instruments, set of']",3
+336,"['graphic arts', 'maps']",3
+337,"['bell, cow']",3
+338,"['quilts', 'decorative arts', 'crafts (art genres)']",3
+339,"['sheets (paper), set of music manuscripts', 'sheets (paper), set of; sheets (paper), set of music manuscripts; manuscript']",3
+340,['bassoon'],2
+341,"['muskets', 'musket; firearms; flintlock; .80 in; smooth bore; muzzle load; sa']",2
+342,"['coverlet, summer and winter']",2
+343,['harps (chordophones)'],2
+344,"['spinning wheel, flax']",2
+345,['clarinets'],2
+346,['english guitar'],2
+347,"['token, commemorative', 'token, commemorative, lace']",2
+348,"[""viola d'amore""]",2
+349,['fifes'],2
+350,['drum head'],2
+351,"['quilts', ""cribs (children's beds)""]",2
+352,['ribbon (material)'],2
+353,['oboes'],2
+354,['saucers (plates)'],2
+355,"['figurines', 'figurine, animal']",2
+356,"['plate, soup']",2
+357,"['muskets', 'musket, flintlock', 'musket; firearms; caliber .72; center fire']",2
+358,['book pages'],2
+359,"['currency, continental, counterfeit', 'note']",2
+360,"['correspondence', 'manuscripts']",2
+361,"['counterpanes', 'quilts']",2
+362,['pans (containers)'],2
+363,"['hanging, printed']",2
+364,['vases'],2
+365,['desks'],2
+366,['cane (plant material)'],2
+367,['pennants'],2
+368,['medallions (medals)'],2
+369,['sheet music'],2
+370,"['bottle, nursing']",2
+371,"['plate', 'pans (containers)']",2
+372,"['petticoats (underskirts)', 'props']",2
+373,['quilt block'],2
+374,['decanters'],2
+375,['sugar bowls'],2
+376,['broadsides (notices)'],2
+377,['cord (fiber product)'],2
+378,['retablos (panel paintings)'],2
+379,['cello'],2
+380,"['latino, puerto rican, religious', 'santo']",2
+381,"['stamp, butter mold']",2
+382,['matchbook'],2
+383,"['bed coverings', 'coverlets']",2
+384,['flagon'],2
+385,"['shaker', 'casters (vessels)']",2
+386,"['bowl, waste']",2
+387,"['cooler, wine']",2
+388,"['pot, mustard']",2
+389,"['flatware', 'sugar tongs', 'tongs']",2
+390,['skewers'],2
+391,"['flatware', 'spurs (costume accessories)']",2
+392,['snuffers and tray'],2
+393,['salt (inorganic material)'],2
+394,['inkstands'],2
+395,['calendar medal'],2
+396,['cann'],2
+397,"['candleholder', 'candleholders']",2
+398,['backstaff'],2
+399,['highchair'],2
+400,['graters'],2
+401,"['chair, side', 'chair; side']",2
+402,"['pan, frying']",2
+403,"['chair, side', 'chair; furniture; side; shield back, open']",2
+404,"['chair; furniture; side; ladder back', 'chairs (furniture forms)']",2
+405,"['drawing; pictures; pen and ink', 'drawings']",2
+406,"['paintings', 'painting; pictures; watercolor']",2
+407,"['paintings', 'painting; pictures; oil on canvas; portrait']",2
+408,"['wood engraving', 'block, printing']",2
+409,['punch'],2
+410,"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .68 in; smooth bore; muzzle load; sa']",2
+411,['busts'],2
+412,"['stipple engraving', 'prints']",2
+413,['fabric fragment'],2
+414,['fabric sample'],2
+415,"['ships', 'models']",2
+416,"['trumpet, speaking']",2
+417,['engine jack'],2
+418,"['lace, border, fragment']",2
+419,['prescription label'],2
+420,['spherometer'],2
+421,"['jar, apothecary, syrup']",2
+422,['canteens (vessels)'],2
+423,"['paintings', 'portraits']",2
+424,['chemise'],2
+425,['pay order'],2
+426,"['balances (scales)', 'scale rule']",2
+427,"['soda glass, holder', 'holder, soda glass; soda fountain; furnishings', 'holder, soda glass']",2
+428,"['newspapers, set of', 'relief processes']",2
+429,"['sheet (paper)', 'engravings (prints)', 'paper (fiber product)', 'sheet']",2
+430,['orreries'],2
+431,"['mold, butter cheese, part of']",2
+432,"['mold, cheese', 'mold, butter']",2
+433,"['mold, butter, handle']",2
+434,"['engravings (prints)', 'mezzotints (prints)', 'prints']",2
+435,"['figurines', 'figures (representations)']",2
+436,['booklets'],2
+437,"['chair; furniture; side; fancy', 'chair, side', 'chairs (furniture forms)']",2
+438,"['case, pipe; smoking equipment', 'case, pipe']",2
+439,"['box snuff; smoking equipment', 'box, snuff']",2
+440,"['painting, glass transfer', 'painting; reverse on glass']",2
+441,"['galvano', 'medals', 'medal shell']",2
+442,"['eyeglasses; opticals; accessories worn on the body; unknown', 'eyeglasses']",2
+443,"['pendant; jewelry; accessories worn on the body; female', 'pendants (jewelry)']",2
+444,"['entire body', 'dresses (garments)', 'main garments']",2
+445,"['entire body', 'dress, 1 piece', 'dresses (garments)', 'main garments', 'dress, 1 piece; entire body; main dress; female']",2
+446,"['buckles; male', 'buckles']",2
+447,"['stockings; footwear; accessories worn on the body; male', 'stockings']",2
+448,"['fans (costume accessories)', 'fan; accessories carried; female']",2
+449,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",2
+450,"['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",2
+451,"['necklaces', 'necklace; jewelry; accessories worn on the body; female']",2
+452,"['medal; presidential; indian peace', 'medals']",2
+453,"['medal; indian peace; presidential', 'medals']",2
+454,"['neckwear', 'necktie; neckwear; accessories worn on the body; female']",2
+455,['snuffboxes'],2
+456,"['accessories for the manufacturing of clothing', 'buttons; notions; accessories for the manufacturing of clothing', 'buttons', 'notions']",2
+457,"['fashion plate', 'fashion plate; male']",2
+458,"['shoes (footwear)', 'shoes, pair of; footwear; accessories worn on the body']",2
+459,"['horn; accoutrements', 'horn (animal material)', 'powder horns']",2
+460,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .72 in; smooth bore; muzzle load; sa']",2
+461,"['musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",2
+462,['commission'],2
+463,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",2
+464,"['pistols', 'pistol, flintlock']",2
+465,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .54 in; smooth bore; muzzle load; sa']",2
+466,['beam balance'],2
+467,"['pamphlets; manuscript', 'pamphlets', 'manuscripts']",2
+468,['kettles (vessels)'],2
+469,['inkwells'],2
+470,"['reliefs (sculpture)', 'newspapers', 'prints', 'print; letterpress']",2
+471,"['pipe bowl; smoking equipment', 'bowl, pipe']",2
+472,['trays'],2
+473,['baskets (containers)'],2
+474,"['refracting telescope', 'telescope']",2
+475,"['spoons', 'flatware', 'spoons']",2
+476,['spectacles'],2
+477,['sanders (tools)'],2
+478,['hydrometer'],2
+479,['spatulas (culinary tools)'],2
+480,['bellows'],2
+481,"['worker, butter']",2
+482,['trammel'],2
+483,"['pistol; firearms; percussion lock; .54', 'pistols', 'pistol, percussion']",2
+484,['hooks (fasteners)'],2
+485,"['chair; furniture; arm; windsor', 'armchairs']",2
+486,"['mold, gingerbread']",2
+487,"['box, candle']",2
+488,"['button', 'medals']",2
+489,['shovels'],2
+490,['skillets'],2
+491,['griddles'],2
+492,"['lifter, pot']",2
+493,"['handle, door']",2
+494,"['chair; furniture; side; windsor', 'chair, side']",2
+495,"['underwear', 'lower body', 'petticoats (underskirts)', 'petticoat; lower body; underwear; female']",2
+496,['telescope (spyglass)'],2
+497,"['etchings (prints)', 'print; intaglio; engraving', 'prints']",2
+498,"[""publisher's notice""]",2
+499,"['miniatures', 'sculpture']",2
+500,"['print; etching', 'prints']",2
+501,['reliquaries'],2
+502,['jackets (garments)'],2
+503,"['sheet, paper', 'letterpress', 'prints', 'print; letterpress']",2
+504,"['book; bookbinding', 'books']",2
+505,"['print; watercolor; watercolor', 'prints']",2
+506,"['note', 'bank note', 'bank note; 1777 02 26']",2
+507,['watches'],2
+508,"['signs (declaratory or advertising artifacts)', 'shop signs']",2
+509,"['bottle & stopper; bottle; pharmaceutical container', 'bottles']",2
+510,"['apron, fraternal', 'apron, masonic']",2
+511,"['note', 'bank note; 1775 05 25', 'bank note']",2
+512,"['figurine, group']",2
+513,['trunks (containers)'],2
+514,['windows'],2
+515,"['note', 'bank note; 1775 06 01', 'bank note']",2
+516,['pestles'],2
+517,['field telescope and case'],2
+518,"['note', 'bank note; 1774 04 10', 'bank note']",2
+519,['type case'],2
+520,"['bottle; bottle & stopper; pharmaceutical container', 'bottles']",2
+521,"['print; engraving, stipple', 'prints']",2
+522,"['cutlass; edged weapons; navy', 'cutlasses']",2
+523,"['jar, leech, apothecary', 'leech jar; materia medica; containers', 'leech jars']",2
+524,"['print; intaglio; engraving, stipple', 'prints']",2
+525,"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",2
+526,"['sundial', 'sundial, horizontal portable']",2
+527,"['bottles', 'flasks (bottles)']",2
+528,['shields (armor)'],2
+529,['bracelets (jewelry)'],2
+530,"['engine, steam', 'engine, steam, model']",2
+531,['postage stamps'],2
+532,"['cross, rounded', 'cross, rounded; historical']",2
+533,['pantograph'],2
+534,"['note', 'bank note', 'bank note; 1771 12 00']",2
+535,"['medal; indian peace, washington; presidential', 'medals']",2
+536,"['note', 'bank note; 1776 12 23', 'bank note']",2
+537,"['medal; commemorative; personal; comitia americana', 'medals']",2
+538,"['folk art', 'drawings']",2
+539,"['note', 'paper money', 'bank note', 'bank note; 1776 04 02']",2
+540,"['chair, rocking']",2
+541,"['figure, female', 'model, anatomical, fetus in utero', 'models', 'wax obstetric model', 'figure, female; medicine', 'wax']",2
+542,"['uncut sheet', 'note']",1
+543,['school tax record'],1
+544,"['note', 'bank note', 'bank note; 1781 05 07']",1
+545,['rings (object genres)'],1
+546,"['stand, teapot']",1
+547,"['note', 'bank note; 1780 10 16', 'bank note']",1
+548,"['cups', ""cup, child's""]",1
+549,"['note', 'bank note', 'bank note; 1786 05 00']",1
+550,"['stand, cruet']",1
+551,"['sheet, paper', 'broadsides (notices)', 'lithography', 'letterpress', 'shee, paper']",1
+552,"['sheets of paper, set of', 'documents', 'sheets of paper, set of; documents']",1
+553,"['documents', 'pamphlets', 'pamphlet; documents']",1
+554,"['coaster, bottle']",1
+555,"['cup, standing']",1
+556,"['sheet (paper)', 'currency note']",1
+557,"['note', 'bank note; 1780 07 14', 'bank note']",1
+558,"['dish, salt']",1
+559,"['plate; photomechanical intaglio', 'halftone', 'printing plates', 'plate', 'proof', 'prints', 'plate']",1
+560,['washboard'],1
+561,"['note', 'receipt']",1
+562,['signature'],1
+563,['patent license'],1
+564,"['note', 'bank note', 'bank note; 1786 00 00']",1
+565,"['note', 'bank note', 'bank note; 1777 10 20']",1
+566,"['flatware, set, part of', 'ladles']",1
+567,"['note', 'bill of exchange']",1
+568,"['measure', 'measure, pint']",1
+569,['slide rules'],1
+570,"['arm, artificial', 'prosthesis']",1
+571,"['balances (scales)', 'hand balance']",1
+572,['shoes (footwear)'],1
+573,"['measure', 'measure, half pint']",1
+574,"['measure', 'measure, half gill']",1
+575,"['weights', 'balances (scales)', 'balance set with weights']",1
+576,"['chemistry set, portable']",1
+577,"['note', 'bank note', 'bank note; 1779 02 08']",1
+578,['pharmaceutical measure'],1
+579,['revenue measures set'],1
+580,"['weights', 'scientific weight', 'scientific weights']",1
+581,"['balance with weights', 'weights', 'balances (scales)']",1
+582,"['paintings', 'painting, portrait']",1
+583,"['measure', 'measure, quarter gill']",1
+584,"['paintings', 'painting, portrait', 'portraits']",1
+585,"['block', 'block, cut']",1
+586,"['pine tree', 'coverlet, geometric', 'coverlets', 'coverlet', 'snowballs', 'double weave']",1
+587,['protractor and geometric square'],1
+588,"['note', 'bank note', 'bank note; 1778 04 10']",1
+589,"['bed coverings', 'coverlets', 'rose of sharon']",1
+590,"['note', 'bank note', 'bank note; 1775 09 01']",1
+591,"['pipe; smoking equipment', 'pipe, tobacco']",1
+592,"['mold, spoon', 'spoons']",1
+593,"['coverlets', 'coverlet fragment, geometric']",1
+594,"['note', 'bank note; 1775 11 15', 'bank note']",1
+595,"['bed coverings', 'coverlets', 'coverlet', 'coverlet']",1
+596,"['pan, close stool', 'pot, commode']",1
+597,"['pot, hot water', 'hot water pot']",1
+598,"['note', 'bank note', 'bank note; 1775 11 15']",1
+599,"['side chairs', 'sheraton', 'furnishings']",1
+600,"['yardage', 'yardage']",1
+601,"['portrait; medicine', 'portraits', 'portrait, surgeon']",1
+602,"['cap, pipe, tobacco']",1
+603,"['stem, pipe, tobacco']",1
+604,"['bowl, pipe, tobacco']",1
+605,"['hornbooks', 'hornbook']",1
+606,"['designs (concepts)', 'drawing, school plan']",1
+607,['book with box'],1
+608,"['still lifes', 'engravings (prints)', 'prints']",1
+609,"['still lifes', 'mezzotints (prints)', 'prints']",1
+610,"['note; 1793 02 01', 'note']",1
+611,"['note; 1775 08 02', 'note']",1
+612,"['note', 'note; 1776 01 06']",1
+613,"['scabbard, bayonet', 'scabbards']",1
+614,['chemical furnace'],1
+615,"['prints', 'lithographs']",1
+616,['etchings (prints)'],1
+617,"['note; 1789 07 06', 'note']",1
+618,"['pipe, smoking']",1
+619,"['mouthpiece, pipe, tobacco']",1
+620,['thickness gauge'],1
+621,"['fragment, pipe, tobacco']",1
+622,"['bank note; 1808 09 02', 'bank note']",1
+623,['worm'],1
+624,"['page, workbook']",1
+625,"['scale, balance']",1
+626,['distilleries'],1
+627,"['prosthesis', 'hand, artificial']",1
+628,"['materials, construction']",1
+629,"['potsherds', 'sherds, pan, milk']",1
+630,"['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",1
+631,"['deed, land']",1
+632,"['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",1
+633,"['certificate, marriage', 'fraktur', 'pen and ink', 'certificates', 'license, marriage', 'certificate form, marriage']",1
+634,"['fraktur', 'certificates', 'fraktur', 'drawings']",1
+635,"['print, physician']",1
+636,"['note', 'bank note', 'bank note; 1790 00 00']",1
+637,"['note', 'receipt; 1778 03 12', 'receipt']",1
+638,['trough compass'],1
+639,"[""pattern book, weaver's""]",1
+640,"['note', 'note; 1788 03 20']",1
+641,"['note; 1789 12 10', 'note']",1
+642,"['note', 'note; 1788 02 15']",1
+643,"['vessel, with lid']",1
+644,"['note', 'check']",1
+645,"['maps', 'books']",1
+646,"[""check, cashier's""]",1
+647,"['note', 'bank note; 1781 04 20', 'bank note']",1
+648,['geography assignment'],1
+649,"['clock, tall', 'clock, tall case', 'clocks']",1
+650,"['clock, case']",1
+651,"['cannon, revolutionary war']",1
+652,"['milestone, philadelphia pittsburgh']",1
+653,"['button, politcal']",1
+654,"['note', 'note; 1791 12 19']",1
+655,"['note', 'note; 1786 04 01']",1
+656,"['die, coin.1', 'punch']",1
+657,"['sheet (paper)', 'etchings (prints)', 'prints']",1
+658,"['plaques (flat objects)', 'plaq']",1
+659,"['purses (bags)', 'pocketbook, embroidery', 'card case, embroidery']",1
+660,['flasks (bottles)'],1
+661,['oyster jar'],1
+662,['music book'],1
+663,"['semi circle', 'sighting instrument']",1
+664,['sheet(paper)'],1
+665,"['note', 'voucher']",1
+666,['voucher'],1
+667,"['receipt; 1778 02 12', 'receipt']",1
+668,['knife sharperner'],1
+669,['sunglass'],1
+670,['ale bottle'],1
+671,"['note', 'bill of exchange', 'bill of exchange; 178? 00 00']",1
+672,"['note', 'paper currency, united states, 1 3', 'paper currency']",1
+673,"['note', 'bill of exchange', 'note; 178? 00 00']",1
+674,['instrument case'],1
+675,"['notice', 'documents']",1
+676,['chalices'],1
+677,"['box, tobacco', 'box, tobacco']",1
+678,"['table; furniture; tilt top', 'tables (support furniture)']",1
+679,"['chair, side', 'chair; furniture; side; ladder back']",1
+680,"['chair; furniture; arm', 'chair, corner']",1
+681,"['note', 'colonial', 'bank note; colonial; 1773 06 01']",1
+682,"['note', 'bank note; 1777 05 20', 'bank note']",1
+683,"['paintings', 'painting; pictures; watercolor; mourning']",1
+684,"['note', 'bank note; 1776 11 02', 'bank note']",1
+685,"['cutter, quill pen']",1
+686,"['bedwarmer', 'bed warmer']",1
+687,"['painting; portraits', 'drawings']",1
+688,"['paintings', 'painting; pictures; watercolor; landscape']",1
+689,"['paintings', 'painting; pictures; oil on canvas; 392,912; portrait']",1
+690,"['paintings', 'painting; pictures; oil on canvas; 59.316; portrait']",1
+691,"['note', 'bank note', 'bank note; 1776 07 22']",1
+692,"['note', 'bank note; 1776 05 09', 'bank note']",1
+693,"['paintings', 'painting; pictures']",1
+694,"['clock, tall; furniture', 'clocks']",1
+695,"['chest, blanket', 'chest; furniture', 'chests']",1
+696,"['chair, wing', 'chair; furniture; arm']",1
+697,"['canister, tea', 'canisters']",1
+698,"[""cradles (children's beds)"", 'cradle; doll furnishings; toys']",1
+699,"['holder, cigar', 'holder, cigar; smoking equipment']",1
+700,"['balances (scales)', 'beam balance']",1
+701,"['harp, jaw', 'pattern tree']",1
+702,"['mold, button']",1
+703,"['uncut sheet', 'note', 'bank note; 1777 10 11', 'bank note']",1
+704,"['box, alms']",1
+705,"['chair; furniture; arm; rocking; windsor?', 'chair, rocking']",1
+706,"['toasters (cooking and heating devices)', 'roasters (cookware)']",1
+707,"['burner, sulfur']",1
+708,['unidentified'],1
+709,"['paddle, butter']",1
+710,['masticator'],1
+711,"['chair; furniture; side; rocking; ladder back', 'chair, rocking']",1
+712,"['painting; pictures; reverse on glass; portrait', 'painting, glass transfer']",1
+713,"['grater, potato; kitchen utensils', 'graters']",1
+714,"['note', 'bank note', 'bank note; 1780 06 01']",1
+715,"['spigot', 'spigot; kitchen utensils']",1
+716,"['dipper, well']",1
+717,"['case, cigar holder', 'case, pipe; smoking equipment']",1
+718,"['certificates', 'certificate; signature']",1
+719,"['case, pipe; smoking equipment', 'case, holder, cigar']",1
+720,"['box snuff; smoking equipment', 'box snuff', 'box, snuff', 'miniature, portrait']",1
+721,"['box, snuff; smoking equipment', 'boxes (containers)']",1
+722,"['order', 'order']",1
+723,"['medal; indian peace, washington; indian peace medal', 'medals']",1
+724,['churns'],1
+725,"['painting; pictures; oil on board; portrait', 'paintings']",1
+726,"['cutter, cookie']",1
+727,"['andirons', 'andiron', 'andirons']",1
+728,"['dipper, snuff']",1
+729,"['medal; personal; commemorative; comitia americana', 'medals']",1
+730,['retort'],1
+731,"['dippers (serving utensils)', 'cup, drinking']",1
+732,"['sofa', 'sofa; doll house furnishings; toys']",1
+733,"['tinder box; fire making apparatus', 'box, tinder']",1
+734,"[""cradles (children's beds)"", 'cradle; furniture']",1
+735,"['reamer, lemon', 'lemon reamer; kitchen utensils']",1
+736,"['rolling pin; kitchen utensils', 'pin, rolling']",1
+737,"['masher, potato', 'potato masher; kitchen utensils']",1
+738,"['pestle; kitchen utensils', 'pestles']",1
+739,"['cork driver; kitchen utensils', 'corker, bottle']",1
+740,"['bedstead', 'bedstead; furniture; cradle']",1
+741,"[""chair, child's"", 'chair; furniture; child']",1
+742,"['continental currency', 'note', 'continental currency; bank note; 1775 05 10', 'bank note', 'continental currency']",1
+743,"['plate, door']",1
+744,"['lighting devices', 'chandelier, candle', 'candleholder; lighting devices; socket; ceiling; hanging; chandelier', 'candleholders']",1
+745,"['bank note; 1776 02 17', 'note']",1
+746,"['chair; furniture; side; windsor', 'chair, side', 'chairs (furniture forms)']",1
+747,"['chair, arm', 'chair; arm; windsor']",1
+748,"['chair; furniture; arm; rocking; ladder back', 'chairs (furniture forms)', 'chair, rocking']",1
+749,"['tinder pistol; fire making apparatus', 'tinderbox', 'tinderbox, pistol']",1
+750,"['note', 'bank note; 1776 01 01', 'bank note']",1
+751,"['flatware', 'skewers']",1
+752,"['note', 'bank note', 'bank note; 1775 12 07']",1
+753,"['note', 'bank note', 'bank note; 1776 03 05']",1
+754,"['note', 'bank note', 'bank note; 1775 09 02']",1
+755,"['note', 'bank note', 'bank note; 1771 02 16']",1
+756,"['note', 'bank note', 'bank note; 1776 03 25']",1
+757,"['doll, woman']",1
+758,"['note', 'bank note; 1779 00 00', 'bank note']",1
+759,"['box, wall']",1
+760,"['note', 'paper money', 'bank note', 'bank note; 1776 10 18']",1
+761,"['box, dough', 'dough trough table']",1
+762,"['table, small']",1
+763,['armchairs'],1
+764,['cupboards'],1
+765,"['tubs (containers)', '<measuring device classification>']",1
+766,"['rack, hanging']",1
+767,"['tongs, hearth', 'tongs, fire']",1
+768,"['dish, soap']",1
+769,"['note', 'bank note', 'bank note; 1776 08 13']",1
+770,['casters (vessels)'],1
+771,"['flatware', 'sipper']",1
+772,"['note', 'bank note; 1780 05 10', 'bank note']",1
+773,"['note', 'bank note', 'bank note; 1779 05 15']",1
+774,"['note', 'bank note; 1778 08 08', 'bank note']",1
+775,"['knife, serving', 'knives', 'flatware']",1
+776,"['teaspoo', 'flatware']",1
+777,"['flatware', 'medallions (medals)']",1
+778,['dresses (garments)'],1
+779,"['holder, cigar', 'fragments, pipe', 'holder, cigar; smoking equipment']",1
+780,['pap boat'],1
+781,"['note', 'paper money', 'bank note', 'bank note; 1771 12 00']",1
+782,"['glass, soda']",1
+783,"['bowl, covered']",1
+784,"['candlesticks, portable', 'candleholders']",1
+785,"['andiron', 'andiron']",1
+786,"['fork, hearth']",1
+787,"['nippers, sugar']",1
+788,"['note', 'bank note; 1777 00 00', 'bank note']",1
+789,"['double fireplace, delaware log house', 'log house']",1
+790,"['mixer, drink, bow drill']",1
+791,"['pin, rolling']",1
+792,"['holder, whetstone']",1
+793,"['stick, toddy', 'stick, swizzle']",1
+794,"['cutter, cake']",1
+795,['lamps (lighting devices)'],1
+796,"['bed warmer', 'bed warmer']",1
+797,"['lighter; fire making apparatus', 'lighter']",1
+798,"['curfew', 'tinderbox', 'curfew; tinder box; fire making apparatus']",1
+799,"['painting; pictures; watercolor; portrait', 'drawing, watercolor', 'drawings']",1
+800,"['painting; pictures; watercolor', 'drawing, watercolor', 'drawings']",1
+801,"['slant front desk and bookcase', 'desks']",1
+802,['tables (support furniture)'],1
+803,"['bowl, porringer']",1
+804,"['note', 'bank note', 'bank note; 1777 09 10']",1
+805,"['spoons', 'cutlery']",1
+806,"['stick, mixing']",1
+807,['powder horns'],1
+808,"['note', 'bank note', 'bank note; 1776 08 14']",1
+809,"['lamps (lighting devices)', 'lighting devices', '<lamps by fuel>', 'lamp; lighting devices; whale oil']",1
+810,"['masher, potato']",1
+811,"['paddle, stirring']",1
+812,['mallets (tools)'],1
+813,"['strainers (culinary tools)', 'skimmers (culinary tools)']",1
+814,['paddles (watercraft equipment)'],1
+815,"['stove; heating equipment', 'stoves (heating equipment)']",1
+816,"['note', 'bank note; 1777 03 01', 'bank note']",1
+817,"['chest of drawers', 'chests']",1
+818,"['chairs (furniture forms)', 'armchairs']",1
+819,['shears (cutting tools)'],1
+820,"['bags', 'bags (containers)', 'accessories carried', 'pocket book']",1
+821,"['case, pipe']",1
+822,"['box, tobacco; smoking equipment', 'box, tobacco']",1
+823,"['fusil', 'musket, flintlock']",1
+824,"['bank note', 'bank note; 1791 12 03']",1
+825,"['tractors', 'therapeutic device, fraudulent']",1
+826,"['insignias', 'insignia; insignia; army; epaulette; officer']",1
+827,"['medal; medalet; presidential', 'medalet', 'medals']",1
+828,['hanging balance (beam)'],1
+829,"['medicine chest; medicine case', 'medicine case', 'medicine chest']",1
+830,"['counterpanes', 'quilted counterpane; counterpane; household textile', 'quilts']",1
+831,['plate impression for paper currency'],1
+832,"['cup, two handled']",1
+833,"['horn (animal material)', 'horn; general collection']",1
+834,"['finial, altar screen']",1
+835,"['etchings (prints)', 'maps', 'prints']",1
+836,['nipple shield'],1
+837,"['bloodletting', 'lancet, set', 'lancet, set', 'lancet, set; bloodletting instruments; thumb']",1
+838,"['book; relief', 'books']",1
+839,"['wheel cutting engine, clockmaking']",1
+840,"['pamphlet; relief', 'pamphlets']",1
+841,"['warmer, food', 'warmer, foot']",1
+842,"['console; wall consoles, batch of two; furnishings', 'wall consoles, batch of two', 'console']",1
+843,['journals (accounts)'],1
+844,['console'],1
+845,"['cases (containers)', 'case; surgical set']",1
+846,"['manuscript; documents', 'manuscripts']",1
+847,"['obsolete paper money', 'paper money']",1
+848,"[""field hand's call""]",1
+849,"['slave leg irons', 'irons, leg']",1
+850,"['document, broadside']",1
+851,"['sundial, quadrant']",1
+852,"['langrage', 'langrage?; underwater']",1
+853,"['spectacles; vision aids', 'spectacles']",1
+854,['handkerchiefs'],1
+855,"['planisphere', 'maps']",1
+856,"[""cradles (children's beds)""]",1
+857,"['card, prayer']",1
+858,"['chair, side', 'pa side chair', 'chairs (furniture forms)']",1
+859,"['case; bloodletting instruments; spring lancet', 'bloodletting', 'spring lancet, bloodletting', 'lancet, set', 'cases (containers)']",1
+860,"['chair, side', 'chairs (furniture forms)']",1
+861,"['button', 'button; u.s. navy; officer; dress']",1
+862,"['sheet; photomechanical lithography', 'sheet']",1
+863,['musical glasses'],1
+864,['hurdy gurdy'],1
+865,['tabernacle'],1
+866,['lectern'],1
+867,"['note', 'paper money', 'bank note', 'bank note; 1777 06 08']",1
+868,"['hats', 'hat; headwear; accessories worn on the body; woman; 1920 00 00+, 1925 00 00']",1
+869,"['clock, wall, factory']",1
+870,"['newspapers', 'advertisement, william bond watches']",1
+871,"['sheet (paper)', 'sheet; engraving', 'sheet']",1
+872,['prisms'],1
+873,['optical flat'],1
+874,['eyecup'],1
+875,['camera lucida'],1
+876,['syringe'],1
+877,"['medicine chest', 'medical chest']",1
+878,"['reliefs (sculpture)', 'pamphlets']",1
+879,"['reliefs (sculpture)', 'books', 'prints', 'print; letterpress']",1
+880,"['orrery   tellurian', 'orreries']",1
+881,"['bells, goat, pair of']",1
+882,"['lamp, hanging']",1
+883,"['caps (headgear)', 'cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00']",1
+884,['cope'],1
+885,['needleholder pincushion'],1
+886,['vests (garments)'],1
+887,['suspenders (garment supports)'],1
+888,['thermal cycler'],1
+889,['trousers'],1
+890,['nautical compass (tell tale)'],1
+891,"['maritime; navigation', 'octant']",1
+892,['reflecting circle'],1
+893,"['newspapers', 'newspaper; letterpress']",1
+894,"['rifle; firearms; percussion fire; .52', 'rifles (long guns)', 'rifle, flintlock']",1
+895,"['saber; edged weapons', 'saber']",1
+896,"['portraits', 'watercolors (paintings)']",1
+897,['postcards'],1
+898,"['chair, side', 'chair; chair, arm; furnishings', 'chair, arm', 'chairs (furniture forms)']",1
+899,"['neckwear', 'caps (headgear)']",1
+900,"['coins (money)', 'planchet']",1
+901,"['bandages, lint', 'medicine chest', 'medicine chest']",1
+902,"['picture, embroidered']",1
+903,"['props', 'neckcloth']",1
+904,"['side saddle, equestrian', 'saddle, side']",1
+905,"['mould, lead and slug', 'type mould, lead and slug', 'mold, lead and slug']",1
+906,"['archival materials', 'maps']",1
+907,['clock movement in wooden case'],1
+908,"['musket, flintock', 'muskets', 'musket; firearms; caliber .69; flintlock']",1
+909,"['musket; firearms; caliber .78; center fire', 'muskets', 'musket, flintlock']",1
+910,"['pistols', 'pistol, flintlock', 'pistol; firearms; caliber .64; center fire']",1
+911,"['pistol; firearms; caliber .69; center fire', 'pistols', 'pistol, flintlock']",1
+912,"['trepanning set', 'surgical set', 'trepanning set; surgical set; trepanning', 'trephination set']",1
+913,"['surgical set', 'trephanation set', 'surgical set; surgical set; trepanning', 'surgical set']",1
+914,['tablecloths'],1
+915,"['musket; firearms; .78 caliber; flintlock', 'musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa', 'muskets']",1
+916,['sculpture fragment'],1
+917,"['panel, religious']",1
+918,"['legging, lower']",1
+919,['transportation equipment & models'],1
+920,['stockings'],1
+921,"['iron (metal)', 'wafer iron, religious']",1
+922,"['reaper cutter', 'model, cutter for reaper']",1
+923,"['sheets (paper), set of; paper, sheet; manuscript', 'documents', 'paper, sheet']",1
+924,"['ticket, lottery']",1
+925,"['decorative arts', 'crafts (art genres)']",1
+926,"['etching on heavy commercially made laid paper', 'prints']",1
+927,"['printed on chine colle', 'prints']",1
+928,"['photogravures (prints)', 'prints']",1
+929,"['still lifes', 'sheet music', 'decorative arts']",1
+930,"['medal engraving', 'prints']",1
+931,"['still lifes', 'decorative arts']",1
+932,"['engraving & etching', 'prints']",1
+933,"['shift', 'props']",1
+934,"['shortgown', 'props']",1
+935,"['aprons (main garments)', 'props']",1
+936,"['hoop', 'props']",1
+937,"['bustles', 'props']",1
+938,"['statuette, religious']",1
+939,"['pipe, tobacco']",1
+940,"['quilt; household textile', 'quilts']",1
+941,"['1 dollar', 'coins (money)']",1
+942,"['carding machine, part']",1
+943,"['mirrors', 'decorative arts']",1
+944,"['wrought iron bridge spike', 'wrought iron bridge spikes']",1
+945,"['quilts', 'quilt; household textile']",1
+946,"['posters', 'poster; art graphics; marines']",1
+947,"['sampler; ca 1805', 'samplers (embroidery)']",1
+948,"['mitten; clothing; early 19th century', 'mittens (handwear)']",1
+949,"['coins (money)', 'coin; hispanic collection']",1
+950,"['fabric length, plate printed', 'fabric, printed, copperplate']",1
+951,"['coins (money)', 'galvano', 'tokens']",1
+952,"['medal; personal; commemorative', 'medallions (medals)']",1
+953,"['lancet; bloodletting instruments; spring', 'lancet', 'spring lancet', 'bloodletting', 'spring lancet, set']",1
+954,"['medal; commemorative; personal; trial', 'medals']",1
+955,"['silk, embroidery', 'pictures (object genre)']",1
+956,"['coins (money)', 'trial']",1
+957,"['scarificator', 'bloodletting', 'scarificator']",1
+958,['purses (bags)'],1
+959,['terrestrial globe'],1
+960,"['watch, pocket']",1
+961,['celestial globe'],1
+962,"['tall case clock, rittenhouse', 'tall clock, rittenhouse', 'clocks']",1
+963,"['globe, celestial, french, 18th c']",1
+964,"['sampler; 18th century 3rd qtr', 'samplers (embroidery)']",1
+965,"['stamp, butter', 'mold, butter, stamp']",1
+966,"['sheet music', 'prints']",1
+967,"['frame, butter mold']",1
+968,"['mold, cookie', 'mold, cookie']",1
+969,"['mold, sugar']",1
+970,"['molds (shaping tools)', 'mold, butter cheese, part of']",1
+971,"[""feather money, o'o bird; oceania; polynesia, hawaiian islands"", 'alternative currency', ""feather money, o'o bird""]",1
+972,"['mold, cookie', 'board, cookie']",1
+973,"['stirrup, equestrian']",1
+974,['periodicals'],1
+975,"['carbines', 'burnside percussion rifle carbine', 'carbine, percussion', 'burnside percussion rifle carbine; carbine; firearms; percussion fire; .54 in; rifled; 09; 03']",1
+976,['orrery   tellurian'],1
+977,['spurs (costume accessories)'],1
+978,"['window, stained glass', 'windows']",1
+979,['thermometers'],1
+980,"['paperweight, footed', 'paperweights']",1
+981,"['sundial', 'sundial']",1
+982,"['bowl, punch']",1
+983,"['insurance policy, fly']",1
+984,['combs (hair ornaments)'],1
+985,['veils (headcloths)'],1
+986,"['bank note; 1862 12 02', 'bank note']",1
+987,"['iron, branding', 'branding iron']",1
+988,"['bank note', 'bank note; 1808 04 11']",1
+989,"['bank note; 1806 01 06', 'bank note']",1
+990,"['check', 'manuscripts']",1
+991,"['bank note; 1802 07 23', 'bank note']",1
+992,"['watch, ladies', 'watch, ladies, swiss']",1
+993,"['pot, chocolate']",1
+994,"['chocolate pot and cover', 'pot, chocolate']",1
+995,['sticker'],1
+996,"['hatchet, small hand']",1
+997,"['clock, shelf', 'clocks']",1
+998,"['section, water main']",1
+999,"['jars', 'jar, albarello', 'jar; pharmaceutical container']",1
+1000,"['albarello', 'jars', 'jar; pharmaceutical container']",1
+1001,"['jars', 'pharmaceutical container']",1
+1002,['land deed'],1
+1003,['fragrance'],1
+1004,"['token; store card', 'tokens']",1
+1005,"['maagazine cover', 'cartoon', 'magazine cover']",1
+1006,['label'],1
+1007,"['note', 'paper money', 'colonial note']",1
+1008,"['finials', 'clock, tall case']",1
+1009,"['clock movement, tall case']",1
+1010,['dies (tools)'],1
+1011,"['surgical instrument', 'hammers (tools)']",1
+1012,"['pot, milk', 'jug, cream']",1
+1013,"['note', 'bank note', 'bank note; 1775 08 18']",1
+1014,['runic calendar'],1
+1015,['pins (fasteners)'],1
+1016,"['medicine', 'syrup jar', 'jars', 'jar; pharmaceutical container']",1
+1017,"['food warmer', 'infant feeder']",1
+1018,['jesse ramsden (portrait print)'],1
+1019,"['continental currency', 'note']",1
+1020,"['bank note; 1801 01 16', 'bank note']",1
+1021,"['bank note; 1799 06 20', 'bank note']",1
+1022,"['pipe bowl; smoking equipment', 'pipes (smoking equipment)']",1
+1023,"['tool, millinery']",1
+1024,"['ladle, snuff']",1
+1025,"['stipple engraving', 'engraving (stipple)', 'prints', 'stipple engraving']",1
+1026,"['stipple engraving', 'engravings (prints)', 'prints']",1
+1027,"['engravings (prints)', 'print, engraving', 'prints']",1
+1028,"['bowl, pipe', 'bowl, pipe, tobacco', 'bowl, pipe; smoking equipment']",1
+1029,"['engravings (prints)', 'prints', 'engraver']",1
+1030,"['bank note', 'bank note; 1795 03 25']",1
+1031,"['print, line engraving', 'engravings (prints)']",1
+1032,"['bank note; 1797 05 05', 'bank note']",1
+1033,"['holder, cigar']",1
+1034,"['spinning wheels', 'spinning wheel, flax']",1
+1035,['bridge spike'],1
+1036,"['knife and fork, set of; eating utensils', 'cases (containers)', 'cutlery']",1
+1037,"[""weaver's pattern book""]",1
+1038,"['plate, souvenir', 'plate']",1
+1039,"['spoon, souvenir']",1
+1040,['photographs'],1
+1041,"['bank note; 1799 11 10', 'bank note']",1
+1042,"['bloodletting', 'lancet, set']",1
+1043,"['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",1
+1044,"['bank note; 1800 01 30', 'bank note']",1
+1045,"['medal, political']",1
+1046,"['tokens', 'medals']",1
+1047,"['coins (money)', 'medals']",1
+1048,"['cards (information artifacts)', 'certificates', 'certofocate', 'pledge card']",1
+1049,"['bank note', 'bank note; 1791 00 00']",1
+1050,"['spinning wheel, wool']",1
+1051,"['knife and fork, set of; eating utensils', 'forks (flatware)', 'cutlery']",1
+1052,"['pitchers (vessels)', 'jars']",1
+1053,['certificates'],1
+1054,['coquillage'],1
+1055,"['ceramic jar', 'jar, olive, ceramic']",1
+1056,"['syrup jar', 'syrup jar', 'jars']",1
+1057,"['telescope', 'telescope (spyglass)']",1
+1058,"['uncut sheet', 'paper money']",1
+1059,"['john quincy adams', 'check']",1
+1060,"['bottles', 'jar; bottle; pharmaceutical container', 'jar, apothecary']",1
+1061,"['battery', 'voltaic pile']",1
+1062,"['cylinder type frictional electrostatic machine', 'electrostatic generator', 'electrostatic generator component']",1
+1063,"['electrostatic generator', 'revolving doubler', 'influence machine']",1
+1064,['box chronometer'],1
+1065,['box chronometer without case'],1
+1066,['saws'],1
+1067,"['etchings (prints)', 'intaglio prints', 'prints']",1
+1068,"['blunderbuss', 'blunderbuss, flintlock']",1
+1069,"['electrostatic generator', 'frictional cylinder electrostatic machine']",1
+1070,"['photograph, black and white']",1
+1071,"['bottle; jar; pharmaceutical container', 'jars']",1
+1072,"['jar; pharmaceutical container; syrup', 'jars']",1
+1073,['cigarette boxes'],1
+1074,"['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']",1
+1075,"['cabinets (case furniture)', 'counter with drawers, ancient pharmacy']",1
+1076,"['lamps (lighting devices)', 'oil lamps']",1
+1077,"['viewer', 'glass, perspective']",1
+1078,['mills (equipment)'],1
+1079,"['magnifying glasses', 'microscope, hand held, set']",1
+1080,['azimuth circle'],1
+1081,"['vaccination card, commemorative']",1
+1082,"['silver $1 coin, 1799', 'coins (money)']",1
+1083,"['note', 'paper money', 'obsolete bank note']",1
+1084,"['musket, percussion conversion', 'muskets']",1
+1085,"['currency sheet', 'paper money']",1
+1086,['tall case clock'],1
+1087,"['scale, plotting', 'scale rule']",1
+1088,"['bottles', 'jars']",1
+1089,"['sundial, equinoctial']",1
+1090,['franchise'],1
+1091,"['bar shot', 'shot']",1
+1092,"['intaglio prints', 'prints']",1
+1093,"['bottles', 'jars', 'jar; pharmaceutical container']",1
+1094,"['fabric, fragment']",1
+1095,"['dress fragment', 'dress fragment']",1
+1096,['lantern slide'],1
+1097,"['neckwear', 'costume accessories worn']",1
+1098,['counterpanes'],1
+1099,"['bucket, fire', 'buckets (vessels)']",1
+1100,"['bottles', 'jars', 'jar; bottle; pharmaceutical container']",1
+1101,"['yardsticks', 'scrimshaw', 'swrimshaws']",1
+1102,"['jar; bottle; pharmaceutical container', 'jars']",1
+1103,['seam rubber'],1
+1104,"['tr*335662', 'documents']",1
+1105,"['hand pumper', 'model, hand pumper']",1
+1106,"['syrup jar, pitcher', 'jars']",1
+1107,"['flask; pharmaceutical container', 'flasks (bottles)', 'jars']",1
+1108,"['plate, fire engine']",1
+1109,"['fabric,fragment']",1
+1110,"['collotype', 'prints']",1
+1111,"['quilt, wholecloth']",1
+1112,"['etchings (prints)', 'letterpress', 'prints']",1
+1113,"['jars', 'bottle; jar; pharmaceutical container']",1
+1114,"['jars', 'jar; bottle; pharmaceutical container']",1
+1115,"['rifles (long guns)', 'rifle, flintlock']",1
+1116,"['pistols', 'pistol, percussion, mutibarrel', 'pistol; firearms; flintlock; .44 in; rifled']",1
+1117,"['pan, baking']",1
+1118,"['bottle, scent']",1
+1119,"['bottles', 'bottle, case, large']",1
+1120,['muster roll'],1
+1121,['firesteel'],1
+1122,['lanterns (lighting devices)'],1
+1123,"[""rattle, baby's""]",1
+1124,['capes'],1
+1125,"['bottles', 'bottle; pharmaceutical container; pharmaceutical container']",1
+1126,"['needlework, embroidery']",1
+1127,['telescope'],1
+1128,"['print; pictures; engraving', 'prints']",1
+1129,"['correspondence', 'letter; sheet (paper); manuscript']",1
+1130,"['impression', 'impression; trial']",1
+1131,"['caps (headgear)', 'cap; man']",1
+1132,"['prints', 'print; planographic']",1
+1133,"['spear head', 'spear head; edged weapons']",1
+1134,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .73 in; smooth bore; muzzle load; sa']",1
+1135,"['musket; firearms; flintlock; .76 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1
+1136,"['print; intaglio; stipple', 'engravings (prints)', 'mezzotints (prints)', 'stipple', 'prints']",1
+1137,"['carbine, flintlock', 'carbine; firearms; flintlock; .65 in; smooth bore; muzzle load; sa', 'carbines']",1
+1138,"['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",1
+1139,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",1
+1140,"['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",1
+1141,"['carbine, flintlock', 'carbine; firearms; flintlock; .60 in; rifled; muzzle load; sa', 'carbines']",1
+1142,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",1
+1143,"['rifle; firearms; flintlock; .60 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1
+1144,"['rifle; firearms; flintlock; .52 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1
+1145,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .71 in; smooth bore; muzzle load; sa']",1
+1146,"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1
+1147,"['bayonet; edged weapons; army; socket', 'bayonets', 'bayonet, socket']",1
+1148,['sheets (paper)'],1
+1149,"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']",1
+1150,"['grenade; ammunition, artillery; hand', 'grenades']",1
+1151,"['coat; man; officer', 'coats (garments)']",1
+1152,"['saddles (seats)', 'saddle; equipment, horse']",1
+1153,"['flag; military; collar; rgt, ansbach bayreuth', 'flags']",1
+1154,"['coats (garments)', 'coat; man; army; brigadier general; officer']",1
+1155,"['saber', 'saber; edged weapons', 'saber']",1
+1156,"['mace; edged weapons', 'maces']",1
+1157,"['print; relief; wood cut', 'prints']",1
+1158,"['cutlasses', 'cutlass; edged weapons; navy; enlisted man']",1
+1159,"['flag; military', 'flags']",1
+1160,"['pennants', 'guidon; flag; military; army; dragoon, light; rgt 2']",1
+1161,['portraits'],1
+1162,"['booklets', 'booklet; documents']",1
+1163,"['documents', 'correspondence']",1
+1164,"['engravings (prints)', 'prints', 'print; intaglio']",1
+1165,"['streamers, set of', 'flags, set of', 'flags, set of; military; pennant']",1
+1166,"[""' mezzotint"", 'print; intaglio; mezzotint', 'mezzotints (prints)', 'prints']",1
+1167,"['swords', 'sword; edged weapons; navy; small']",1
+1168,"['sword; edged weapons; presentation', 'swords']",1
+1169,['carpet segment'],1
+1170,"['note', 'note; manuscript']",1
+1171,"['documents', 'signature']",1
+1172,"['wood engraving', 'print; relief; wood engraving', 'prints']",1
+1173,"['portable desks', 'writing box']",1
+1174,"['fabric, printed']",1
+1175,['newspaper clipping'],1
+1176,['electoral ticket'],1
+1177,['pocket compass'],1
+1178,['level (wye)'],1
+1179,"['compasses (direction indicators)', 'surveying instruments']",1
+1180,['dispatch case'],1
+1181,['bill of sale'],1
+1182,"['invitation', 'invitation; manuscript, printed']",1
+1183,['games'],1
+1184,"[""surveyor's vernier compass"", ""surveyor's vernier compass""]",1
+1185,['watch fob'],1
+1186,"['print; relief; wood engraving', 'prints']",1
+1187,"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",1
+1188,['tumblers (drinking glasses)'],1
+1189,['lancet'],1
+1190,['building fragment'],1
+1191,['napkins'],1
+1192,"['stipple engraving', 'print; intaglio; stipple', 'prints', 'stipple engraving']",1
+1193,"['engravings (prints)', 'print; intaglio; engraving', 'line engraving', 'prints']",1
+1194,['bumper sticker'],1
+1195,"['print; intaglio; mezzotint', 'intaglio prints', 'prints']",1
+1196,"['engravings (prints)', 'print; intaglio; etching', 'prints']",1
+1197,['newspaper sheet'],1
+1198,"['mezzotints (prints)', 'mezzotint with etching', 'prints']",1
+1199,['rugs'],1
+1200,['quilt model'],1
+1201,['sweat shirts'],1
+1202,"['intaglio prints', 'mezzotints (prints)', 'prints']",1
+1203,"['compass, pocket']",1
+1204,"['shell (animal material)', 'ball, cannon', 'shell; ammunition, artillery; 3 in']",1
+1205,"['axe; edged weapons; belt', 'axes (tools)']",1
+1206,"[""surveyor's vernier compass""]",1
+1207,"['caps (headgear)', 'cap; man; army; grenadier']",1
+1208,"['cap, miter', 'cap; cap, mitre; man; m, newport light infantry', 'mitres']",1
+1209,"['insignias', 'insignia; army; epaulette']",1
+1210,"['flag, japanese', 'flags', 'flag; military; army']",1
+1211,"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",1
+1212,"['bit; equipment, horse; army', 'bit']",1
+1213,"['tent; equipment, individual', 'tents (portable buildings)']",1
+1214,"['stools (seating furniture)', 'stool; equipment, individual']",1
+1215,"['coat; man; army; general officer; officer', 'coats (garments)']",1
+1216,"['swords', 'sword; edged weapons; hunting']",1
+1217,"['mess kit', 'camp chest', 'mess kit; camp chest; equipment, individual']",1
+1218,['sheet of paper'],1
+1219,"['swords', 'sword; edged weapons; army']",1
+1220,"['saber', 'swords', 'sword; edged weapons; army; officer']",1
+1221,"['saber', 'saber; edged weapons; militia; small; officer', 'saber']",1
+1222,"['saber; edged weapons; army; cavalry; officer', 'saber']",1
+1223,"['caps (headgear)', 'cap; man; army; fusileer']",1
+1224,['striker box'],1
+1225,"['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']",1
+1226,['pipe tamper'],1
+1227,"['musket; firearms; percussion converted; .69 in; smooth bore; muzzle load; sa', 'musket, percussion conversion', 'muskets']",1
+1228,"['musket, percussion conversion', 'muskets', 'musket; firearms; percussion converted; .75 in; smooth bore; muzzle load; sa']",1
+1229,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",1
+1230,"['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",1
+1231,"['musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1
+1232,"['musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa', 'muskets']",1
+1233,"['muskets', 'musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",1
+1234,"['franklin press halfpenny token', 'tokens']",1
+1235,"['t. french contract musket m. 1795', 'musket; t. french contract musket m. 1795; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1
+1236,"['print; photogravure', 'photomechanical intaglio processes', 'prints']",1
+1237,"['muskets', 'musket; firearms; flintlock; .46 in; muzzle load; 00; sa']",1
+1238,['bolts (fasteners)'],1
+1239,"['print; photogravure', 'prints']",1
+1240,['oath of allegiance'],1
+1241,"['certificate, discharge']",1
+1242,"['sword; edged weapons; army; long; officer', 'swords']",1
+1243,"['broadsword; edged weapons; army; officer', 'broadswords']",1
+1244,"['sword; edged weapons; commemorative', 'swords']",1
+1245,"['pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1246,"['pistols', 'pistol, flintlock, breech loading', 'pistol; firearms; flintlock; .48 in; smooth bore; breechloader; 03']",1
+1247,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",1
+1248,"['pistols', 'pistol, flintlock', 'pistol; firearms; militia; flintlock; .67 in; smooth bore; muzzle load; sa']",1
+1249,"['print; intaglio; stipple engraving', 'prints']",1
+1250,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa']",1
+1251,"['pistols', 'pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa']",1
+1252,"['pistol; firearms; army; flintlock; .67 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1253,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1
+1254,"['pistols', 'pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa']",1
+1255,"['pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1256,"['pistol; firearms; militia; flintlock; .64 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1257,"['rifle; firearms; army; flintlock; .58 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1
+1258,"['musket; firearms; army; militia; flintlock; .72 in; smooth bore; mr; sa', 'muskets', 'musket, flintlock']",1
+1259,"['muskets', 'musket, flintlock', 'musket; firearms; army; flintlock; .75 in; smooth bore; muzzle load; sa']",1
+1260,"['muskets', 'musket, flintlock', 'musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa']",1
+1261,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .38 in; rifled; muzzle load; sa']",1
+1262,"['pistols', 'pistol; firearms; percussion fire; .50 in; smooth bore; breechloader; 03', 'pistol, percussion, breech loading']",1
+1263,"['carbine, flintlock', 'carbine; firearms; flintlock; .54 in; smooth bore; muzzle load', 'carbines']",1
+1264,"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa']",1
+1265,"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .56 in; smooth bore; muzzle load; sa']",1
+1266,"['print; planographic; lithograph', 'maps', 'prints', 'lithographs']",1
+1267,"['musket, percussion converted', 'musket, percussion conversion', 'muskets', 'musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa']",1
+1268,"['rifle; firearms; army; flintlock; .54 in; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1
+1269,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .64 in; smooth bore; muzzle load; sa']",1
+1270,"['pistol; firearms; army; flintlock; .60 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1271,"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .67 in; smooth bore; muzzle load; sa']",1
+1272,"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .54 in; smooth bore; muzzle load; sa']",1
+1273,"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .69 in; smooth bore; muzzle load; sa']",1
+1274,"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa']",1
+1275,"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .52 in; smooth bore; muzzle load; sa']",1
+1276,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .65 in; smooth bore; muzzle load; sa']",1
+1277,"['pistol; firearms; navy; center fire; .65 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1278,"['pistol; firearms; flintlock; .58 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1
+1279,"['print; portrait', 'prints']",1
+1280,"['painting, portrait']",1
+1281,['bank note'],1
+1282,"['stem, pipe', 'pipe stem; smoking equipment']",1
+1283,"['coverlet, multi harness']",1
+1284,"['coverlet panels, overshot']",1
+1285,"['bed hanging, hosptial', 'bed hanging, hosptial; bed hanging; coverlet; t15059']",1
+1286,['shop signs'],1
+1287,"['coverlet panel, summer and winter', 'coverlet panel']",1
+1288,"['coverlet, twill weave', 'coverlet', 'coverlet, twill']",1
+1289,['handles'],1
+1290,"['coverlet, twill']",1
+1291,"['sheet, linen, hand woven', 'sheet']",1
+1292,['blankets (coverings)'],1
+1293,['towels'],1
+1294,['crests (motifs)'],1
+1295,"['certificate, naturalization']",1
+1296,"['counterpane, printed']",1
+1297,['announcement'],1
+1298,"['lace (needlework)', 'lace, scarf']",1
+1299,"['bed coverings', 'pine bloom', 'coverlet']",1
+1300,"['lace (needlework)', 'lace, lappets']",1
+1301,"['side saddle', 'saddle, side']",1
+1302,"['lace (needlework)', 'lace, sample']",1
+1303,"['etchings (prints)', 'maps', 'sheet', 'sheet, lithograph', 'prints']",1
+1304,"['plane; stonecutter stone dresser; stoneworking; planing tools; hand tools', 'planes (tools)']",1
+1305,"['fabric length, knitted', 'fabric; knitted']",1
+1306,['naturalization certificate'],1
+1307,"['contract, indenture', 'indenture']",1
+1308,['spinning frame'],1
+1309,['application'],1
+1310,"['mauls (striking tools)', 'maul; woodworking; striking & prizing tools; hand tools']",1
+1311,"['entablature fragment, church', 'beam fragment']",1
+1312,['quinton'],1
+1313,"['ceiling ornament, church']",1
+1314,"['sash and pendant', 'emblems (symbols)']",1
+1315,['aprons (main garments)'],1
+1316,"['lace (needlework)', 'lace, trim']",1
+1317,"['lace, collar', 'lace (needlework)']",1
+1318,"['lace (needlework)', 'lace, fragment']",1
+1319,"['chest, blanket']",1
+1320,"['fraktur', 'documents', 'certificates', 'letterpress']",1
+1321,['quilt segment'],1
+1322,"['spinning wheel, flax', 'hand tools']",1
+1323,"['bag, salvage']",1
+1324,['petticoats (underskirts)'],1
+1325,"['bed cover, applique', 'counterpane, embroidered']",1
+1326,"['housewife', 'needlework kit']",1
+1327,"['carpet, fragment', 'picture, woven']",1
+1328,['fliers (printed matter)'],1
+1329,['spindles (textile working equipment)'],1
+1330,"['tape loom', 'loom, tape']",1
+1331,['hackle'],1
+1332,['pins'],1
+1333,"['needle, crochet', 'crochet hooks']",1
+1334,"['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",1
+1335,"['pattern, lace']",1
+1336,"['carding machine, wool, scholfield', 'wool carding machine']",1
+1337,"['spinning wheel, flax', 'spinning wheel, double fyer']",1
+1338,"['vises (gripping tools)', 'vise; blacksmith farrier; metalworking; holding & gripping tools; hand tools']",1
+1339,"['lace (needlework)', 'lace, border fragment', 'lace, border, fragment']",1
+1340,"['beetle', 'beetle; woodworking; striking & prizing tools; hand tools']",1
+1341,"['hanging, printed', 'toile, copperplate']",1
+1342,"['panel, printed']",1
+1343,"['plaque, bas relief']",1
+1344,['amulets'],1
+1345,"['scissors', 'shears (cutting tools)']",1
+1346,"['embroidery, white work', 'pocket, white work']",1
+1347,['adze head'],1
+1348,"['carpet, ingrain', 'carpets', 'carpet, ingrain, length']",1
+1349,['trimming'],1
+1350,"['plane; carpenter joiner cabinetmaker; woodworking; planing tools; hand tools', 'hand tools', 'planes (tools)']",1
+1351,"['embroidery, picture']",1
+1352,"['lace, cap back', 'lace (needlework)']",1
+1353,"['handkerchief, printed, copperplate']",1
+1354,"['cap, lace', 'lace (needlework)']",1
+1355,"['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",1
+1356,"['window, church']",1
+1357,['trumpets (aerophones)'],1
+1358,['circular'],1
+1359,"['vial; containers', 'vials']",1
+1360,"['metallic tractors', ""tractors, perkins', batch of; medicine"", ""tractors, perkins', batch of""]",1
+1361,"['stand, sweetmeat']",1
+1362,"['kit, obstetrical', 'obstetrical kit', 'kit, obstetrical; medicine', 'instrument set, obstetrical']",1
+1363,"['dish, dessert']",1
+1364,"['pitcher, cream', 'milk jug']",1
+1365,"['forceps, hand forged', 'forceps, hand forged; dentistry', 'forceps, dental', 'dental instrument', 'dental forceps']",1
+1366,"['bur thimble', 'socket, ring and drill', 'socket, ring and drill; dentistry', 'dental instrument']",1
+1367,['cup and saucer'],1
+1368,"['nail file', 'personal hygiene product', 'necessaire', 'toothpicks', 'toilet accessory; toothbrush; ""necessaire""; dentistry', 'oral hygiene product', 'toothbrushes', 'ear spoon']",1
+1369,"['cylinder type frictional electrostatic machine; electrostatic devices', 'cylinder type frictional electrostatic machine', 'electrostatic generator']",1
+1370,"['electrostatic generator', 'electrostatic machine; electrostatic devices', 'electrostatic machine']",1
+1371,['figurines'],1
+1372,"['electrostatic device', 'discharge tube', 'electrostatic device', 'discharge tube; electrostatic devices']",1
+1373,"['electrostatic machine', 'electrostatic generator', 'galvanometer; measuring devices', 'galvanometer']",1
+1374,['electrostatic demonstration apparatus'],1
+1375,"['figurine, group', 'figure group']",1
+1376,"['stand, pickle', 'dish, sweetmeat']",1
+1377,"['pitchers (vessels)', 'creamware']",1
+1378,"['jar, butter', 'butter jar', 'jars']",1
+1379,['medalet'],1
+1380,"['figure, female', 'models', 'model, anatomical, female, abdominal organs', 'wax obstetric model', 'figure, female; medicine', 'wax']",1
+1381,"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']",1
+1382,"['figure, female', 'model, anatomical, viscera', 'models', 'wax obstetric model', 'figure, female; medicine', 'wax']",1
+1383,['pillowcases'],1
+1384,"['bottle; containers', 'bottles', 'bottle, apothecary']",1
+1385,['quilted petticoat'],1
+1386,"['quilt, fragment', 'quilts']",1
+1387,"['jelly mold', 'jelly mold core', 'jelly mold core']",1
+1388,"['pot, stew']",1
+1389,['flowerpot'],1
+1390,"['cooler, water']",1
+1391,"['trivet, stacking']",1
+1392,"['pad, kiln']",1
+1393,['chamberpot'],1
+1394,['automaton'],1
+1395,['dividing engine'],1
+1396,"['certificate, fraktur', 'certificate, marriage', 'fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress', 'prints']",1
+1397,"['prints, set of (19)', 'relief processes']",1
+1398,['viola'],1
+1399,['pochette'],1
+1400,['rebec'],1
+1401,['fiddles'],1
+1402,['nyckelharpa'],1
+1403,['banjos'],1
+1404,"['guitars', 'english guitar', 'english guitar']",1
+1405,"['bookplate', 'fraktur', 'documents', 'pen and ink']",1
+1406,['barrel organ'],1
+1407,"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink', 'documents, pair of', 'certificates']",1
+1408,['harpsichord'],1
+1409,['clavichord'],1
+1410,['organ'],1
+1411,['zithers'],1
+1412,['serpent'],1
+1413,['tea bowls & saucers'],1
+1414,"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink']",1
+1415,['molds (shaping tools)'],1
+1416,"['wallet, fishing']",1
+1417,"['us dollar', 'coins (money)']",1
+1418,['punch bowls'],1
+1419,"['sundial, diptych']",1
+1420,"['sundial, horizontal pedestal']",1
+1421,"['bowl, sweemeat', 'bowl, sweetmeat']",1
+1422,"['model, semaphore telegraph', 'semaphore model']",1
+1423,"['electrostatic generator', 'electrostatic machine']",1
+1424,"['furniture, kiln']",1
+1425,"['fragment, pan']",1
+1426,"['fragment, pitcher']",1
+1427,"['pistols', 'pistol, miquelet lock']",1
+1428,"['covers (overlying objects)', 'mantle, torah']",1
+1429,"['fragments, bottle']",1
+1430,['pendants (jewelry)'],1
+1431,['earrings'],1
+1432,"['musket; firearms; percussion converted; .70 in; smooth bore; muzzle load; sa', 'musket, percussion conversion', 'muskets']",1
+1433,"['rifle; firearms; flintlock; .69 in; rifled; 14; 03', 'rifles (long guns)']",1
+1434,"['pistols', 'pistol, flintlock', 'pistol; flintlock; .60 in; smooth bore; muzzle load; 00; sa']",1
+1435,"['dice, ivory', 'ivory (tooth component)', 'dice']",1
+1436,"['bow and arrows; toys', 'bow and arrows, group of']",1
+1437,"['chest; furniture', 'furniture', 'chests']",1
+1438,"['basket, winnowing']",1
+1439,"['plow, carey']",1
+1440,"['clock; mechanical, spring driven', 'clock, mantel', 'clocks']",1
+1441,"['clock; mechanical, weight driven; tall case clock', 'clocks', 'clock, tall case']",1
+1442,"['watch; pocket watch', 'watches']",1
+1443,['safes (storage containers)'],1
+1444,"['watch; mechanical, spring driven; pendant watch', 'watches']",1
+1445,"['chronometer', 'pocket chronometer movement & dial; chronometer; mechanical, spring driven; english chronometer movement']",1
+1446,"['button', 'mold, button', 'mold, button; 41cc, sullivan, michael d']",1
+1447,"['wrench, barrel', 'mold, shot', 'mold, bullet; 41cc, sullivan, michael d']",1
+1448,"['ornament, flagstaff', 'finial, staff; 41cc, sullivan, michael d']",1
+1449,"['knives', 'knife; personal utensils; cutlery; folding; pocket', 'cutlery']",1
+1450,"['knives', 'knife and fork, set of; eating utensils', 'cutlery']",1
+1451,"['stove, miniature']",1
+1452,"['handle, door', 'door hardware']",1
+1453,"['spoons', 'spoon; serving', 'cutlery']",1
+1454,['wimpole'],1
+1455,"['scraper, ivory']",1
+1456,"['fids', 'ivory (tooth component)']",1
+1457,"['hanger, pigeon']",1
+1458,"['hook, shelf']",1
+1459,"['hook, ox yoke']",1
+1460,"['ladle, salting']",1
+1461,['pothook'],1
+1462,"['hook, fireplace']",1
+1463,"['lock, well bucket']",1
+1464,"['tongs, pipe']",1
+1465,"['tongs, fire']",1
+1466,['turner'],1
+1467,['harpoons'],1
+1468,['flails (weapons)'],1
+1469,"['device, lifting']",1
+1470,"['spoons', 'spoon; eating utensils', 'cutlery']",1
+1471,"['knives', 'knife; eating utensils; cutlery; table', 'cutlery']",1
+1472,"['pots (containers)', 'skillets']",1
+1473,"['pistols', 'pistol; firearms; flintlock; .57 in; smooth bore; ml; sa']",1
+1474,"['calipers, linear, set of', 'calipers, venier combined with depth gage']",1
+1475,"['engine, steam, model', 'center square waterworks model', 'water works']",1
+1476,"['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",1
+1477,"['engine, internal combustion, model', 'engine, internal combustion']",1
+1478,"['buckle, knee; jewelry; accessories worn on the body; male', 'buckle, knee']",1
+1479,"['buckle, shoe', 'buckle, shoe; jewelry; accessories worn on the body; male']",1
+1480,"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",1
+1481,"['watch; jewelry; accessories worn on the body; female', 'watches']",1
+1482,"['earrings', 'earrings, pair of', 'jewelry', 'earrings, pair of; female']",1
+1483,"['boiler, steam, model', 'boiler, steam']",1
+1484,"['sunglasses', 'sunglasses; opticals; accessories worn on the body; unknown', 'sunglasses']",1
+1485,"['dress, 4 piece', 'dress, 4 piece; entire body; main dress; female']",1
+1486,"['earrings', 'earrings, pair of', 'earrings, pair of; jewelry; accessories worn on the body; female', 'jewelry']",1
+1487,"['engine, steam, boat']",1
+1488,"['engine, steam, boat', 'engine, steam, boat, model']",1
+1489,"['musket; firearms; flintlock; .70 in; smooth bore; ml; sa', 'muskets']",1
+1490,"['musket; firearms; flintlock; .79 in; smooth bore; ml; sa', 'muskets']",1
+1491,"['fork; eating utensils', 'forks (flatware)', 'cutlery']",1
+1492,"['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",1
+1493,['tower clock movement'],1
+1494,['ledger'],1
+1495,"['tower clock', 'clocks', 'clock; mechanical, weight driven; tower clock']",1
+1496,['steam jack'],1
+1497,"[""lathe, jeweler's"", 'lathes']",1
+1498,"['mirror frame, part of', 'frame, mirror, part of']",1
+1499,"['frame, mirror, parts of']",1
+1500,['mousetraps'],1
+1501,"['table; furniture; drop leaf table', 'tables (support furniture)']",1
+1502,"['chair, side', 'chair; furniture; side chair; windsor']",1
+1503,"['tables (support furniture)', 'table; furniture']",1
+1504,['mortising machine'],1
+1505,"['knife, dinner; cutlery', 'knife, dinner', 'cutlery']",1
+1506,"['fork, dinner', 'fork, dinner; cutlery', 'cutlery']",1
+1507,['patent'],1
+1508,['thimble eye'],1
+1509,['troughs'],1
+1510,"['pistols', 'pistol, flintlock', 'pistol; flintlock; .71 in; smooth bore; muzzle load; 00; sa']",1
+1511,"['scale rule, folding', 'rule, folding']",1
+1512,"['sheet; manuscript', 'valentine']",1
+1513,"['copybooks', 'pamphlet; manuscript', 'manuscripts']",1
+1514,"['sheet (paper)', 'sheet (paper); manuscript']",1
+1515,['set square'],1
+1516,"['protractor', 'protractor and parallel rule', 'protractor; semi circular, with parallel rule']",1
+1517,"['spoon, stirring']",1
+1518,"['stick, swizzle']",1
+1519,['dividers'],1
+1520,['buckets (vessels)'],1
+1521,"['box, wall', 'candle box; lighting accessories']",1
+1522,"['drawing compass', 'compass, drawing']",1
+1523,"['stick, pudding']",1
+1524,['crayon holders'],1
+1525,"['stone, sharpening', 'stone (rock)']",1
+1526,['crayon holder'],1
+1527,"['newspaper page; printed', 'clipping, newspaper']",1
+1528,['fireback'],1
+1529,['weathervanes'],1
+1530,"['shrine, pocket']",1
+1531,"['coin, modified']",1
+1532,['slate (rock)'],1
+1533,"['box, snuff', 'dipper, snuff', 'box, snuff', 'box, snuff; smoking equipment']",1
+1534,"['spoon, snuff', 'box, snuff; smoking equipment', 'box, snuff']",1
+1535,['coin balance'],1
+1536,"['surgical set', ""surgeon's kit""]",1
+1537,"['box, stamp']",1
+1538,"['match box; fire making apparatus', 'matchbox']",1
+1539,"['photographs, set of']",1
+1540,"['sheets, set of']",1
+1541,"['fabric fragment', 'fabric, printed fragment']",1
+1542,"['letter or account', 'account', 'letter; letter or account; sheets (paper); manuscript']",1
+1543,"['correspondence', 'sheets (paper); manuscript']",1
+1544,"['holder, crayon']",1
+1545,"['beads, prayer']",1
+1546,"['box, pipe, tobacco']",1
+1547,"['knife; cutlery; folding?', 'knife, pocket', 'cutlery']",1
+1548,['harrows'],1
+1549,['figure group'],1
+1550,"['cutter, straw', 'fire steel; fire making apparatus']",1
+1551,"['painting, certificate', 'painting; pictures; watercolor; fraktur']",1
+1552,"['paintings', 'sheet (paper); no #020; painting; watercolor; fraktur']",1
+1553,"['textbook', 'books']",1
+1554,"[""chair, child's""]",1
+1555,"['accessories for the selling of clothing', 'boxes (containers)']",1
+1556,"['flatware', 'keys (hardware)']",1
+1557,"['books', 'book; manuscript']",1
+1558,"['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",1
+1559,"['rack, spoon']",1
+1560,"['buckles, shoe', 'costume accessories worn', 'jewelry', 'buckles (strap accessories)']",1
+1561,['ballot box'],1
+1562,"['stand, roaster']",1
+1563,"['suit, 2 piece']",1
+1564,['poker'],1
+1565,"['pipe tongs', 'tongs, pipe', 'pipe tongs; lighting accessories']",1
+1566,"['silhouettes', 'silhouette; pictures; portrait']",1
+1567,"['husker, corn']",1
+1568,"['ecuelle', 'ecuelle stand', 'ecuelle cover', 'stand']",1
+1569,"['icon, crucifix', 'icon']",1
+1570,"['chargers (platters)', 'plate']",1
+1571,"['etchings (prints)', 'book; bookbinding', 'relief processes', 'reliefs (sculpture)', 'books']",1
+1572,"['book; bookbinding', 'reliefs (sculpture)', 'books']",1
+1573,['piggin'],1
+1574,"['sheet (paper); manuscript', 'deed']",1
+1575,"['reciept; sheet (paper); manuscript', 'reciept']",1
+1576,"['printing presses', 'press, printing; printing; relief; flatbed platen']",1
+1577,"['sheet (paper), set of music manuscripts', 'sheet (paper); sheet (paper), set of music manuscripts; manuscript']",1
+1578,"['sheet (paper), set of music manuscripts; sheet (paper); manuscript', 'sheet (paper), set of music manuscripts']",1
+1579,"['sheet (paper), set of music manuscript', 'sheet (paper); sheet (paper), set of music manuscript; manuscript']",1
+1580,['printing presses'],1
+1581,"['sheets (paper), set of music manuscripts', 'pamphlet; sheets (paper), set of music manuscripts; manuscript']",1
+1582,['fashion plate'],1
+1583,"['vests (garments)', 'upper body', 'main garments']",1
+1584,"['dress, 1 piece', 'dress, 1 piece; entire body; main dress; female; wedding']",1
+1585,"['print; mezzotint', 'prints']",1
+1586,"['entire body', 'dresses (garments)', 'main garments', 'dress, 2 piece; entire body; main dress; female']",1
+1587,"['accessories for the care of clothing', 'boxes (containers)']",1
+1588,"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']",1
+1589,"['sheet (paper)', 'prints', 'print; letterpress']",1
+1590,"['slip; entire body; underwear; female', 'slip', 'slip', 'petticoats (underskirts)']",1
+1591,"['muff; accessories carried; female', 'muffs']",1
+1592,"['dress, 1 piece; entire body; main dress; infant', 'dress, 1 piece']",1
+1593,"['frock coats', 'coat; coat, frock; upper body; main dress; male']",1
+1594,"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",1
+1595,"['stays; upper body; underwear; girl', 'stays']",1
+1596,"['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",1
+1597,"['dress, 1 piece, christening', 'dress, 1 piece; entire body; main dress; infant', 'dress, 1 piece']",1
+1598,"['busk', 'busk; underwear; female']",1
+1599,"['suit, 2 piece', 'suit, 2 piece; entire body; main dress; male']",1
+1600,"['newspapers', 'prints', 'newspaper; prints; letterpress']",1
+1601,"['shoe; footwear; accessories worn on the body; female', 'shoes (footwear)']",1
+1602,"['etchings (prints)', 'proof; etching', 'proof', 'prints']",1
+1603,"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",1
+1604,"['book; bookbinding', 'letterpress', 'books']",1
+1605,"['caps (headgear)', 'cap; headwear; accessories worn on the body; male']",1
+1606,"['printing plates', 'prints, set of', 'prints, set of; engraving']",1
+1607,"['veil; headwear; accessories worn on the body; female', 'veils (headcloths)']",1
+1608,"['emblem, radiator; road; automobile', 'emblem, radiator']",1
+1609,"['calash', 'costume accessories worn', 'calash; headwear; accessories worn on the body; female', 'headgear']",1
+1610,"['armchair; chair; furniture; arm', 'armchairs']",1
+1611,"['handwear', 'gloves', 'costume accessories worn', 'gloves, pair of; handwear; accessories worn on the body; female']",1
+1612,"['case clock', 'clock, tall case']",1
+1613,"['bag; bags; accessories carried; female', 'bags', 'purses (bags)', 'accessories carried']",1
+1614,"['booklets', 'reliefs (sculpture)', 'pamphlets']",1
+1615,"['fan, fragment', 'fans (costume accessories)', 'accessories carried', 'fan, fragment; accessories carried; female']",1
+1616,"['maps', 'print; engraving', 'prints']",1
+1617,['sewing case'],1
+1618,"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']",1
+1619,"['prints', 'print; pochoir; engraving']",1
+1620,"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",1
+1621,"['suspenders (garment supports)', 'suspenders; waistwear; accessories worn on the body']",1
+1622,"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",1
+1623,"['calash', 'calash; headwear; accessories worn on the body; female']",1
+1624,"['jacket; upper body; main dress; female', 'jackets (garments)']",1
+1625,"['bullet, mold']",1
+1626,"['axe; camp', 'axes (tools)']",1
+1627,"['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",1
+1628,"['carbine, flintlock', 'carbine; firearms; flintlock; .79 in; smooth bore; muzzle load; sa', 'carbines']",1
+1629,"['cannons (artillery)', 'cannon; firearms; h; 3.50 in; smooth bore; muzzle load; sa']",1
+1630,"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .62 in; smooth bore; muzzle load; 00; sa']",1
+1631,"['pistol; flintlock; .63 in; smooth bore; muzzle load; 00; sa', 'pistols', 'pistol, flintlock']",1
+1632,"['blunderbuss', 'blunderbuss; firearms; flintlock; 1.75 in; smooth bore; muzzle load; sa']",1
+1633,"['blunderbuss; firearms; flintlock; .80 in; smooth bore; muzzle load; sa', 'blunderbuss']",1
+1634,"['rifle; firearms; flintlock; .67 in; rifled; breech load; sa', 'rifles (long guns)', 'rifle, flintlock']",1
+1635,"['rifle; firearms; flintlock; .58 in; rifled; muzzle load; 00; sa; sporting', 'rifles (long guns)', 'rifle, flintlock']",1
+1636,"['rifles (long guns)', 'rifle; firearms; flintlock; .62 in; rifled; muzzle load; sa', 'rifle, flintlock']",1
+1637,"['pistol; flintlock; .41 in; smooth bore; 1a; ta', 'pistols']",1
+1638,"['muskets', 'musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1
+1639,"['musket; firearms; percussion converted; .72 in; smooth bore; muzzle load; sa', 'musket, percussion converted', 'muskets']",1
+1640,"['plate; photomechanical intaglio', 'photogravures (prints)', 'printing plates', 'plate', 'plate']",1
+1641,['powder belt'],1
+1642,"['musket; edged weapons; army; socket', 'muskets', 'musket, flintlock']",1
+1643,"['etchings (prints)', 'print; etching', 'prints']",1
+1644,"['casing; ammunition, artillery; center fire; 25 mm', 'casing']",1
+1645,"['dress, 1 piece; entire body; main dress; female; mourning?', 'dress, 1 piece']",1
+1646,"['dress, 1 piece; dress, 2 piece; entire body; main dress; female', 'dresses (garments)']",1
+1647,"['print; relief', 'wallpapers', 'prints', 'drawings']",1
+1648,"['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",1
+1649,"['petticoats (underskirts)', 'petticoat; lower body; underwear; female']",1
+1650,"['aquatints', 'prints', 'print; aquatint']",1
+1651,"['busk', 'busk; upper body; underwear; female']",1
+1652,"['picture, mourning']",1
+1653,"['relief processes', 'reliefs (sculpture)', 'books']",1
+1654,"['insignias', 'insignia; army; sash; officer']",1
+1655,"['epaulets, pair of', 'epaulets, pair of; insignia; army; holder, epaulet; officer', 'epaulettes, pair of']",1
+1656,"['print; pen and ink', 'prints', 'drawings']",1
+1657,"['prints', 'print; engraving']",1
+1658,"['horn, priming', 'horn (animal material)', 'horn, priming; accoutrements', 'powder horns']",1
+1659,"['flag; army; signal', 'flags']",1
+1660,"['veil; headwear; accessories worn on the body; female; wedding', 'veils (headcloths)']",1
+1661,"['patents', 'patent model, velocipede; tricycle; road', 'models', 'patent model, velocipede']",1
+1662,"['carriage, 1810', 'carriage, 1810; road; coachee', 'shaft, coachee']",1
+1663,"['coats (garments)', 'coat; coat, frock; upper body; main dress; male']",1
+1664,"['stockings, pair of; footwear; accessories worn on the body; female', 'stockings']",1
+1665,"['micrometer, bench', 'lathe, prototype model']",1
+1666,"['shoes; footwear; accessories worn on the body; male', 'shoes (footwear)']",1
+1667,"['neckcloth; neckwear; accessories worn on the body; male', 'neckcloth']",1
+1668,"['machine tool, metalworking, lathe, pole', 'pole lathe']",1
+1669,"['shirt fragments', 'shirt fragments; male']",1
+1670,"['suit, coat; entire body; main dress; male', 'suit, coat']",1
+1671,['precision screw cutting lathe'],1
+1672,"['shoe; footwear; accessories worn on the body; infant', 'shoes (footwear)']",1
+1673,"['shoe; footwear; accessories worn on the body; male', 'shoes (footwear)']",1
+1674,"['buttons; accessories for the manufacturing of clothing', 'buttons']",1
+1675,"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",1
+1676,"['wagon jack; road', 'wagon jack']",1
+1677,"['mitts, pair of; handwear; accessories worn on the body; female', 'mitts, pair of']",1
+1678,"['trousers; lower body; main dress; male', 'trousers']",1
+1679,"['shoes; footwear; accessories worn on the body; girl', 'shoes (footwear)']",1
+1680,"['dress, bodice; entire body; main dress; female', 'dress, bodice']",1
+1681,"['chemise; entire body; underwear; female', 'chemise']",1
+1682,"['swage block; hand tools', 'swage block']",1
+1683,"['jacket; upper body; main dress; female; sport; riding', 'jackets (garments)']",1
+1684,"['short gown; upper body; main dress; female; quaker?', 'short gown']",1
+1685,"['rings (object genres)', 'ring; jewelry; accessories worn on the body; female; mourning']",1
+1686,"['jackets (garments)', 'jacket; upper body; main dress; female?']",1
+1687,"['dress, 1 piece; entire body; main dress; female; quaker?', 'dress, 1 piece']",1
+1688,"['dress 1 piece', 'dress 1 piece; entire body; main dress; female']",1
+1689,"['entire body', 'dress, 1 piece', 'dresses (garments)', 'main garments', 'dress, 1 piece; entire body; main dress; female; wedding']",1
+1690,"['suit, frock, 3 piece', 'suit, frock, 3 piece; entire body; main dress; boy']",1
+1691,"['dress, 3 piece', 'entire body', 'dresses (garments)', 'main garments', 'dress, 3 piece; entire body; main dress; female']",1
+1692,"['jewelry fragments', 'jewelry fragments; male']",1
+1693,"['cuff links', 'cuff links', 'cuff links; jewelry; accessories worn on the body; male']",1
+1694,"['cuff buttons; jewelry; accessories worn on the body; male', 'buttons (fasteners)', 'cuff links']",1
+1695,"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",1
+1696,"['stud', 'stud; jewelry; accessories worn on the body; male']",1
+1697,"['dress, skirt; entire body; main dress; female', 'dress, skirt']",1
+1698,"['drawers; lower body; underwear; male', 'drawers (underpants)']",1
+1699,"['maps', 'map; maritime']",1
+1700,"['wallets', 'bags', 'bags (containers)', 'accessories carried', 'wallet; bags; accessories carried; unknown']",1
+1701,"['wallets', 'bags', 'accessories carried', 'wallet; bags; accessories carried; unknown']",1
+1702,"['dickey; neckwear; accessories worn on the body; male', 'dickeys']",1
+1703,"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",1
+1704,"['hat; headwear; accessories worn on the body; male', 'hats']",1
+1705,"['coats (garments)', 'coat; outerwear; female']",1
+1706,"['cloak; outerwear; female', 'cloaks']",1
+1707,"['shawls', 'shawl; outerwear; female']",1
+1708,"['weight and hooks, codfish; maritime', 'sinkers (fishing)', 'fishhooks']",1
+1709,"['dress, fragments']",1
+1710,"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",1
+1711,"['shirt, collar; upper body; main dress; male', 'shirt, collar']",1
+1712,"['basket; maritime', 'baskets (containers)']",1
+1713,"['aprons (main garments)', 'apron; accessories worn on the body; female', 'costume accessories worn']",1
+1714,"['spade; maritime; boat', 'spade, blubber', 'spade']",1
+1715,"['corset waist; upper body; underwear; female', 'corset waist']",1
+1716,"['harpoon; maritime', 'harpoons']",1
+1717,"['bonnets (hats)', 'bonnet; headwear; accessories worn on the body; female']",1
+1718,"['walking stick; accessories carried; male', 'walking sticks']",1
+1719,"['stamps (tools)', 'scrimshaws', 'scrimshaw', 'scrimshaw; maritime', 'swrimshaws']",1
+1720,"['suits (main garments)', 'suit, 3 piece; entire body; main dress; male', 'suit, 3 piece', 'main garments']",1
+1721,"['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",1
+1722,"['undershirt; upper body; underwear; male', 'undershirts']",1
+1723,"['umbrellas', 'umbrella; parasols; accessories carried; unknown', 'parasols']",1
+1724,"['umbrellas', 'umbrella; parasols; accessories carried; female']",1
+1725,"['handkerchief; accessories carried; female', 'handkerchiefs']",1
+1726,"['handkerchief; accessories carried; female', 'handkerchiefs', 'accessories carried']",1
+1727,"['suit, 2 piece; entire body; main dress; male', 'entire body', 'suits (main garments)', 'suit, 2 piece', 'main garments']",1
+1728,"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",1
+1729,"['suit, 2 piece; entire body; main dress; male', 'suit, 2 piece']",1
+1730,"['suit, 3 piece; entire body; main dress; male', 'suit, 3 piece']",1
+1731,"['coat; upper body; main dress; male', 'coats (garments)']",1
+1732,"['scrimshaws', 'scrimshaw; maritime', 'scrimshaw powder horn', 'scrimshaw', 'swrimshaws']",1
+1733,"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",1
+1734,"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",1
+1735,['scutching knife'],1

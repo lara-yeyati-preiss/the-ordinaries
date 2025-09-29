@@ -1,0 +1,1737 @@
+original_fullcell,frequency,tokens_parsed,chosen_main_token,canonical_plural
+"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",6,fans; fan; accessories carried; female; accessories carried,accessories carried,accessories carrieds
+"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",5,bag; bags; accessories carried; female; bags; bags; accessories carried,accessories carried,accessories carrieds
+"['bags', 'bags (containers)', 'accessories carried', 'pocket book']",1,bags; bags; accessories carried; pocket book,accessories carried,accessories carrieds
+"['bag; bags; accessories carried; female', 'bags', 'purses (bags)', 'accessories carried']",1,bag; bags; accessories carried; female; bags; purses; accessories carried,accessories carried,accessories carrieds
+"['fan, fragment', 'fans (costume accessories)', 'accessories carried', 'fan, fragment; accessories carried; female']",1,"fan, fragment; fans; accessories carried; fan, fragment; accessories carried; female",accessories carried,accessories carrieds
+"['wallets', 'bags', 'bags (containers)', 'accessories carried', 'wallet; bags; accessories carried; unknown']",1,wallets; bags; bags; accessories carried; wallet; bags; accessories carried; unknown,accessories carried,accessories carrieds
+"['wallets', 'bags', 'accessories carried', 'wallet; bags; accessories carried; unknown']",1,wallets; bags; accessories carried; wallet; bags; accessories carried; unknown,accessories carried,accessories carrieds
+"['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",1,"bags; purse; purse, pocketbook; bags; accessories carried; female; purses; accessories carried",accessories carried,accessories carrieds
+"['handkerchief; accessories carried; female', 'handkerchiefs', 'accessories carried']",1,handkerchief; accessories carried; female; handkerchiefs; accessories carried,accessories carried,accessories carrieds
+"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",1,watch paper; watch paper; male; accessories for the care of clothing,accessories for the care of clothing,accessories for the care of clothings
+['adze head'],1,adze head,adze head,adze heads
+['ale bottle'],1,ale bottle,ale bottle,ale bottles
+['almanacs'],3,almanacs,almanacs,almanacs
+['amulets'],1,amulets,amulets,amulets
+['anatomical print'],7,anatomical print,anatomical print,anatomical prints
+['andiron'],19,andiron,andiron,andirons
+"['andirons', 'andiron']",11,andirons; andiron,andiron,andirons
+"['andirons', 'andiron', 'andirons']",1,andirons; andiron; andirons,andiron,andirons
+"['andiron', 'andiron']",1,andiron; andiron,andiron,andirons
+['announcement'],1,announcement,announcement,announcements
+['application'],1,application,application,applications
+"['apron, fraternal', 'apron, masonic']",2,"apron, fraternal; apron, masonic","apron, fraternal","apron, fraternals"
+"['aprons (main garments)', 'apron; accessories worn on the body; female']",5,aprons; apron; accessories worn on the body; female,aprons,aprons
+"['aprons (main garments)', 'props']",1,aprons; props,aprons,aprons
+['aprons (main garments)'],1,aprons,aprons,aprons
+['aquatints'],6,aquatints,aquatints,aquatints
+['archival materials'],27,archival materials,archival materials,archival materials
+"['chair; furniture; arm; windsor', 'armchairs']",2,chair; furniture; arm; windsor; armchairs,armchairs,chairs
+['armchairs'],1,armchairs,armchairs,chairs
+"['armchair; chair; furniture; arm', 'armchairs']",1,armchair; chair; furniture; arm; armchairs,armchairs,chairs
+"[""artists' materials""]",8,artists' materials,artists' materials,artists' materials
+['astrolabe'],6,astrolabe,astrolabe,astrolabes
+['automaton'],1,automaton,automaton,automatons
+"['axe; edged weapons; belt', 'axes (tools)']",1,axe; edged weapons; belt; axes,axes,axes
+"['axe; camp', 'axes (tools)']",1,axe; camp; axes,axes,axes
+['azimuth circle'],1,azimuth circle,azimuth circle,azimuth circles
+['backstaff'],2,backstaff,backstaff,backstafves
+"['badges', 'badge; award']",53,badges; badge; award,badges,badges
+['badges'],6,badges,badges,badges
+"['bag, salvage']",1,"bag, salvage","bag, salvage","bag, salvages"
+['bagpipes'],4,bagpipes,bagpipes,bagpipes
+['balances (scales)'],6,balances,balances,balances
+"['balances (scales)', 'scale rule']",2,balances; scale rule,balances,balances
+"['balances (scales)', 'hand balance']",1,balances; hand balance,balances,balances
+"['weights', 'balances (scales)', 'balance set with weights']",1,weights; balances; balance set with weights,balances,balances
+"['balance with weights', 'weights', 'balances (scales)']",1,balance with weights; weights; balances,balances,balances
+"['balances (scales)', 'beam balance']",1,balances; beam balance,balances,balances
+['ballot box'],1,ballot box,ballot box,ballot boxes
+['banjos'],1,banjos,banjos,banjos
+"['bank note; 1808 09 02', 'bank note']",1,bank note; 1808 09 02; bank note,bank note,bank notes
+"['bank note', 'bank note; 1791 12 03']",1,bank note; bank note; 1791 12 03,bank note,bank notes
+"['bank note; 1862 12 02', 'bank note']",1,bank note; 1862 12 02; bank note,bank note,bank notes
+"['bank note', 'bank note; 1808 04 11']",1,bank note; bank note; 1808 04 11,bank note,bank notes
+"['bank note; 1806 01 06', 'bank note']",1,bank note; 1806 01 06; bank note,bank note,bank notes
+"['bank note; 1802 07 23', 'bank note']",1,bank note; 1802 07 23; bank note,bank note,bank notes
+"['bank note; 1801 01 16', 'bank note']",1,bank note; 1801 01 16; bank note,bank note,bank notes
+"['bank note; 1799 06 20', 'bank note']",1,bank note; 1799 06 20; bank note,bank note,bank notes
+"['bank note', 'bank note; 1795 03 25']",1,bank note; bank note; 1795 03 25,bank note,bank notes
+"['bank note; 1797 05 05', 'bank note']",1,bank note; 1797 05 05; bank note,bank note,bank notes
+"['bank note; 1799 11 10', 'bank note']",1,bank note; 1799 11 10; bank note,bank note,bank notes
+"['bank note; 1800 01 30', 'bank note']",1,bank note; 1800 01 30; bank note,bank note,bank notes
+"['bank note', 'bank note; 1791 00 00']",1,bank note; bank note; 1791 00 00,bank note,bank notes
+['bank note'],1,bank note,bank note,bank notes
+['banners'],6,banners,banners,banners
+['barrel organ'],1,barrel organ,barrel organ,barrel organs
+['basins'],6,basins,basins,basins
+"['basket, winnowing']",1,"basket, winnowing","basket, winnowing","basket, winnowings"
+['baskets (containers)'],2,baskets,baskets,baskets
+"['basket; maritime', 'baskets (containers)']",1,basket; maritime; baskets,baskets,baskets
+['bassoon'],2,bassoon,bassoon,bassoons
+"['battery; electrochemical devices', 'battery']",3,battery; electrochemical devices; battery,battery,batteries
+"['battery', 'voltaic pile']",1,battery; voltaic pile,battery,batteries
+"['bayonets', 'bayonet, socket']",5,"bayonets; bayonet, socket",bayonets,bayonets
+"['bayonet; edged weapons; socket', 'bayonets', 'bayonet, socket']",3,"bayonet; edged weapons; socket; bayonets; bayonet, socket",bayonets,bayonets
+"['bayonet; edged weapons; army; socket', 'bayonets', 'bayonet, socket']",1,"bayonet; edged weapons; army; socket; bayonets; bayonet, socket",bayonets,bayonets
+"['beads, prayer']",1,"beads, prayer","beads, prayer","beads, prayers"
+['beakers (vessels)'],4,beakers,beakers,beakers
+['beam balance'],2,beam balance,beam balance,beam balances
+"['bed cover, applique', 'counterpane, embroidered']",1,"bed cover, applique; counterpane, embroidered","bed cover, applique","bed cover, appliques"
+['bed coverings'],10,bed coverings,bed coverings,bed coverings
+"['bed coverings', 'coverlet']",8,bed coverings; coverlet,bed coverings,bed coverings
+"['bed coverings', 'coverlets']",2,bed coverings; coverlets,bed coverings,bed coverings
+"['bed coverings', 'coverlets', 'rose of sharon']",1,bed coverings; coverlets; rose of sharon,bed coverings,bed coverings
+"['bed coverings', 'coverlets', 'coverlet', 'coverlet']",1,bed coverings; coverlets; coverlet; coverlet,bed coverings,bed coverings
+"['bed coverings', 'pine bloom', 'coverlet']",1,bed coverings; pine bloom; coverlet,bed coverings,bed coverings
+"['bed hanging, hosptial', 'bed hanging, hosptial; bed hanging; coverlet; t15059']",1,"bed hanging, hosptial; bed hanging, hosptial; bed hanging; coverlet; t15059","bed hanging, hosptial","bed hanging, hosptials"
+"['bed valance, printed']",3,"bed valance, printed","bed valance, printed","bed valance, printeds"
+"['bedwarmer', 'bed warmer']",1,bedwarmer; bed warmer,bed warmer,bed warmers
+"['bed warmer', 'bed warmer']",1,bed warmer; bed warmer,bed warmer,bed warmers
+"['bedstead', 'bedstead; furniture; cradle']",1,bedstead; bedstead; furniture; cradle,bedstead,bedsteads
+"['beetle', 'beetle; woodworking; striking & prizing tools; hand tools']",1,beetle; beetle; woodworking; striking & prizing tools; hand tools,beetle,beetles
+"['bell, cow']",3,"bell, cow","bell, cow","bell, cows"
+['bellows'],2,bellows,bellows,bellows
+['bells (idiophones)'],4,bells,bells,bells
+"['bells, goat, pair of']",1,"bells, goat, pair of","bells, goat, pair of","bells, goat, pair oves"
+['belts (costume accessories)'],3,belts,belts,belts
+['bill of exchange'],19,bill of exchange,bill of exchange,bill of exchanges
+['bill of sale'],1,bill of sale,bill of sale,bill of sales
+"['bit; equipment, horse; army', 'bit']",1,"bit; equipment, horse; army; bit","bit; equipment, horse; army","bit; equipment, horse; armies"
+['blankets (coverings)'],1,blankets,blankets,blankets
+"['block', 'block, cut']",1,"block; block, cut",block,blocks
+"['bloodletting', 'lancet, set', 'lancet, set', 'lancet, set; bloodletting instruments; thumb']",1,"bloodletting; lancet, set; lancet, set; lancet, set; bloodletting instruments; thumb",bloodletting,bloodlettings
+"['lancet; bloodletting instruments; spring', 'lancet', 'spring lancet', 'bloodletting', 'spring lancet, set']",1,"lancet; bloodletting instruments; spring; lancet; spring lancet; bloodletting; spring lancet, set",bloodletting,bloodlettings
+"['scarificator', 'bloodletting', 'scarificator']",1,scarificator; bloodletting; scarificator,bloodletting,bloodlettings
+"['bloodletting', 'lancet, set']",1,"bloodletting; lancet, set",bloodletting,bloodlettings
+"['blunderbuss', 'blunderbuss, flintlock']",1,"blunderbuss; blunderbuss, flintlock",blunderbuss,blunderbuss
+"['blunderbuss', 'blunderbuss; firearms; flintlock; 1.75 in; smooth bore; muzzle load; sa']",1,blunderbuss; blunderbuss; firearms; flintlock; 1.75 in; smooth bore; muzzle load; sa,blunderbuss,blunderbuss
+"['blunderbuss; firearms; flintlock; .80 in; smooth bore; muzzle load; sa', 'blunderbuss']",1,blunderbuss; firearms; flintlock; .80 in; smooth bore; muzzle load; sa; blunderbuss,blunderbuss,blunderbuss
+"['boiler, steam, model', 'boiler, steam']",1,"boiler, steam, model; boiler, steam","boiler, steam, model","boiler, steam, models"
+['bolts (fasteners)'],1,bolts,bolts,bolts
+['bond'],3,bond,bond,bonds
+"['bonnets (hats)', 'bonnet; headwear; accessories worn on the body; female']",1,bonnets; bonnet; headwear; accessories worn on the body; female,bonnets,bonnets
+['book pages'],2,book pages,book pages,book pages
+['book with box'],1,book with box,book with box,book with boxes
+['booklets'],2,booklets,booklets,booklets
+"['booklets', 'booklet; documents']",1,booklets; booklet; documents,booklets,booklets
+['books'],71,books,books,books
+"['book; documents', 'books']",3,book; documents; books,books,books
+"['book; bookbinding', 'books']",2,book; bookbinding; books,books,books
+"['maps', 'books']",1,maps; books,books,books
+"['book; relief', 'books']",1,book; relief; books,books,books
+"['textbook', 'books']",1,textbook; books,books,books
+"['books', 'book; manuscript']",1,books; book; manuscript,books,books
+"['etchings (prints)', 'book; bookbinding', 'relief processes', 'reliefs (sculpture)', 'books']",1,etchings; book; bookbinding; relief processes; reliefs; books,books,books
+"['book; bookbinding', 'reliefs (sculpture)', 'books']",1,book; bookbinding; reliefs; books,books,books
+"['book; bookbinding', 'letterpress', 'books']",1,book; bookbinding; letterpress; books,books,books
+"['relief processes', 'reliefs (sculpture)', 'books']",1,relief processes; reliefs; books,books,books
+"['bottle, nursing']",2,"bottle, nursing","bottle, nursing","bottle, nursings"
+"['bottle, scent']",1,"bottle, scent","bottle, scent","bottle, scents"
+"['bottles', 'bottle; pharmaceutical container']",145,bottles; bottle; pharmaceutical container,bottles,bottles
+['bottles'],28,bottles,bottles,bottles
+"['bottle & stopper; bottle; pharmaceutical container', 'bottles']",2,bottle & stopper; bottle; pharmaceutical container; bottles,bottles,bottles
+"['bottle; bottle & stopper; pharmaceutical container', 'bottles']",2,bottle; bottle & stopper; pharmaceutical container; bottles,bottles,bottles
+"['bottles', 'flasks (bottles)']",2,bottles; flasks,bottles,bottles
+"['bottles', 'jar; bottle; pharmaceutical container', 'jar, apothecary']",1,"bottles; jar; bottle; pharmaceutical container; jar, apothecary",bottles,bottles
+"['bottles', 'bottle, case, large']",1,"bottles; bottle, case, large",bottles,bottles
+"['bottles', 'bottle; pharmaceutical container; pharmaceutical container']",1,bottles; bottle; pharmaceutical container; pharmaceutical container,bottles,bottles
+"['bottle; containers', 'bottles', 'bottle, apothecary']",1,"bottle; containers; bottles; bottle, apothecary",bottles,bottles
+"['bow and arrows; toys', 'bow and arrows, group of']",1,"bow and arrows; toys; bow and arrows, group of",bow and arrows; toys,bow and arrows; toys
+"['bowl, covered']",1,"bowl, covered","bowl, covered","bowl, covereds"
+"['bowl, pipe, tobacco']",1,"bowl, pipe, tobacco","bowl, pipe, tobacco",pipes
+"['bowl, pipe', 'bowl, pipe, tobacco', 'bowl, pipe; smoking equipment']",1,"bowl, pipe; bowl, pipe, tobacco; bowl, pipe; smoking equipment","bowl, pipe",pipes
+"['bowl, porringer']",1,"bowl, porringer","bowl, porringer","bowl, porringers"
+"['bowl, punch']",1,"bowl, punch","bowl, punch","bowl, punches"
+"['bowl, sugar']",11,"bowl, sugar","bowl, sugar","bowl, sugars"
+"['bowl, sweemeat', 'bowl, sweetmeat']",1,"bowl, sweemeat; bowl, sweetmeat","bowl, sweemeat","bowl, sweemeats"
+"['bowl, tea', 'tea bowls']",3,"bowl, tea; tea bowls","bowl, tea","bowl, teas"
+"['bowl, waste']",2,"bowl, waste","bowl, waste","bowl, wastes"
+['bowls (vessels)'],17,bowls,bowls,bowls
+['bows (weapons)'],12,bows,bows,bows
+['box chronometer without case'],1,box chronometer without case,box chronometer without case,box chronometer without cases
+['box chronometer'],1,box chronometer,box chronometer,box chronometers
+"['box, alms']",1,"box, alms","box, alms","box, alms"
+"['box, candle']",2,"box, candle","box, candle","box, candles"
+"['box, dough', 'dough trough table']",1,"box, dough; dough trough table","box, dough","box, doughs"
+"['box, pipe, tobacco']",1,"box, pipe, tobacco","box, pipe, tobacco",pipes
+"['box, snuff; smoking equipment', 'box, tobacco']",4,"box, snuff; smoking equipment; box, tobacco","box, snuff; smoking equipment",pipes
+"['box, snuff; smoking equipment', 'box, snuff']",4,"box, snuff; smoking equipment; box, snuff","box, snuff",pipes
+"['box, snuff']",3,"box, snuff","box, snuff","box, snufves"
+"['box snuff; smoking equipment', 'box, snuff']",2,"box snuff; smoking equipment; box, snuff","box, snuff",pipes
+"['box snuff; smoking equipment', 'box snuff', 'box, snuff', 'miniature, portrait']",1,"box snuff; smoking equipment; box snuff; box, snuff; miniature, portrait","box, snuff",pipes
+"['box, snuff', 'dipper, snuff', 'box, snuff', 'box, snuff; smoking equipment']",1,"box, snuff; dipper, snuff; box, snuff; box, snuff; smoking equipment","box, snuff",pipes
+"['spoon, snuff', 'box, snuff; smoking equipment', 'box, snuff']",1,"spoon, snuff; box, snuff; smoking equipment; box, snuff","box, snuff",pipes
+"['box, stamp']",1,"box, stamp","box, stamp","box, stamps"
+"['box, tobacco']",3,"box, tobacco","box, tobacco","box, tobaccos"
+"['box, tobacco', 'box, tobacco']",1,"box, tobacco; box, tobacco","box, tobacco","box, tobaccos"
+"['box, tobacco; smoking equipment', 'box, tobacco']",1,"box, tobacco; smoking equipment; box, tobacco","box, tobacco",pipes
+"['box, wall']",1,"box, wall","box, wall","box, walls"
+"['box, wall', 'candle box; lighting accessories']",1,"box, wall; candle box; lighting accessories","box, wall","box, walls"
+['boxes (containers)'],9,boxes,boxes,boxes
+"['box, snuff; smoking equipment', 'boxes (containers)']",1,"box, snuff; smoking equipment; boxes",boxes,pipes
+"['accessories for the selling of clothing', 'boxes (containers)']",1,accessories for the selling of clothing; boxes,boxes,boxes
+"['accessories for the care of clothing', 'boxes (containers)']",1,accessories for the care of clothing; boxes,boxes,boxes
+['bracelets (jewelry)'],2,bracelets,bracelets,bracelets
+"['breeches (trousers)', 'breeches; lower body; main dress; male']",9,breeches; breeches; lower body; main dress; male,breeches,dresses
+['breeches (trousers)'],3,breeches,breeches,breeches
+['bridge spike'],1,bridge spike,bridge spike,bridge spikes
+['broadsides (notices)'],2,broadsides,broadsides,broadsides
+"['broadsword; edged weapons; army; officer', 'broadswords']",1,broadsword; edged weapons; army; officer; broadswords,broadsword; edged weapons; army; officer,broadsword; edged weapons; army; officers
+['broiler'],3,broiler,broiler,broilers
+"['brooch; jewelry; accessories worn on the body; female', 'brooches']",4,brooch; jewelry; accessories worn on the body; female; brooches,brooch; jewelry; accessories worn on the body; female,brooch; jewelry; accessories worn on the body; females
+"['bucket, fire']",6,"bucket, fire","bucket, fire","bucket, fires"
+"['bucket, fire', 'buckets (vessels)']",1,"bucket, fire; buckets","bucket, fire","bucket, fires"
+['buckets (vessels)'],1,buckets,buckets,buckets
+"['buckle, knee; jewelry; accessories worn on the body; male', 'buckle, knee']",1,"buckle, knee; jewelry; accessories worn on the body; male; buckle, knee","buckle, knee; jewelry; accessories worn on the body; male","buckle, knee; jewelry; accessories worn on the body; males"
+"['buckle, shoe', 'buckle, shoe; jewelry; accessories worn on the body; male']",1,"buckle, shoe; buckle, shoe; jewelry; accessories worn on the body; male","buckle, shoe","buckle, shoes"
+"['buckles; male', 'buckles']",2,buckles; male; buckles,buckles,buckles
+"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']",4,"buckles, shoe, pair of; buckles, shoe, pair of; jewelry; accessories worn on the body; male","buckles, shoe, pair of","buckles, shoe, pair oves"
+['building fragment'],1,building fragment,building fragment,building fragments
+"['bullet, mold']",1,"bullet, mold","bullet, mold","bullet, molds"
+['bumper sticker'],1,bumper sticker,bumper sticker,bumper stickers
+"['burner, sulfur']",1,"burner, sulfur","burner, sulfur","burner, sulfurs"
+"['busk', 'busk; underwear; female']",1,busk; busk; underwear; female,busk,busks
+"['busk', 'busk; upper body; underwear; female']",1,busk; busk; upper body; underwear; female,busk,busks
+['busts'],2,busts,busts,busts
+"['button, politcal']",1,"button, politcal","button, politcal","button, politcals"
+"['button, political']",12,"button, political","button, political","button, politicals"
+['button'],10,button,button,buttons
+"['accessories for the manufacturing of clothing', 'buttons; notions; accessories for the manufacturing of clothing', 'buttons', 'notions']",2,accessories for the manufacturing of clothing; buttons; notions; accessories for the manufacturing of clothing; buttons; notions,buttons,buttons
+"['button', 'button; u.s. navy; officer; dress']",1,button; button; u.s. navy; officer; dress,button,dresses
+"['button', 'mold, button', 'mold, button; 41cc, sullivan, michael d']",1,"button; mold, button; mold, button; 41cc, sullivan, michael d",button,buttons
+"['buttons; accessories for the manufacturing of clothing', 'buttons']",1,buttons; accessories for the manufacturing of clothing; buttons,buttons,buttons
+"['cuff buttons; jewelry; accessories worn on the body; male', 'buttons (fasteners)', 'cuff links']",1,cuff buttons; jewelry; accessories worn on the body; male; buttons; cuff links,buttons,buttons
+['cabinets (case furniture)'],4,cabinets,cabinets,cabinets
+"['cabinets (case furniture)', 'counter with drawers, ancient pharmacy']",1,"cabinets; counter with drawers, ancient pharmacy",cabinets,cabinets
+"['caddy, tea']",3,"caddy, tea","caddy, tea","caddy, teas"
+"['calash', 'calash; headwear; accessories worn on the body; female']",1,calash; calash; headwear; accessories worn on the body; female,calash,calashes
+['calendar medal'],2,calendar medal,calendar medal,calendar medals
+"['calipers, linear, set of', 'calipers, venier combined with depth gage']",1,"calipers, linear, set of; calipers, venier combined with depth gage","calipers, linear, set of","calipers, linear, set oves"
+['camera lucida'],1,camera lucida,camera lucida,camera lucidas
+"['candleholder', 'candleholders']",2,candleholder; candleholders,candleholders,candleholders
+"['lighting devices', 'chandelier, candle', 'candleholder; lighting devices; socket; ceiling; hanging; chandelier', 'candleholders']",1,"lighting devices; chandelier, candle; candleholder; lighting devices; socket; ceiling; hanging; chandelier; candleholders",candleholders,candleholders
+"['candlesticks, portable', 'candleholders']",1,"candlesticks, portable; candleholders",candleholders,candleholders
+['candles'],5,candles,candles,candles
+['cane (plant material)'],2,cane,cane,canes
+"['canister, tea', 'canisters']",1,"canister, tea; canisters","canister, tea","canister, teas"
+"['cannon, revolutionary war']",1,"cannon, revolutionary war","cannon, revolutionary war","cannon, revolutionary wars"
+"['cannons (artillery)', 'cannon; firearms; h; 3.50 in; smooth bore; muzzle load; sa']",1,cannons; cannon; firearms; h; 3.50 in; smooth bore; muzzle load; sa,cannons,cannons
+['cann'],2,cann,cann,canns
+['canteens (vessels)'],2,canteens,canteens,canteens
+"['cap, miter', 'cap; cap, mitre; man; m, newport light infantry', 'mitres']",1,"cap, miter; cap; cap, mitre; man; m, newport light infantry; mitres","cap, miter","cap, miters"
+"['cap, pipe, tobacco']",1,"cap, pipe, tobacco","cap, pipe, tobacco",pipes
+['capes'],1,capes,capes,capes
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",12,caps; cap; headwear; accessories worn on the body; female,caps,caps
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00']",1,"caps; cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00",caps,caps
+"['neckwear', 'caps (headgear)']",1,neckwear; caps,caps,caps
+"['caps (headgear)', 'cap; man']",1,caps; cap; man,caps,caps
+"['caps (headgear)', 'cap; man; army; grenadier']",1,caps; cap; man; army; grenadier,caps,caps
+"['caps (headgear)', 'cap; man; army; fusileer']",1,caps; cap; man; army; fusileer,caps,caps
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; male']",1,caps; cap; headwear; accessories worn on the body; male,caps,caps
+"['carbines', 'burnside percussion rifle carbine', 'carbine, percussion', 'burnside percussion rifle carbine; carbine; firearms; percussion fire; .54 in; rifled; 09; 03']",1,"carbines; burnside percussion rifle carbine; carbine, percussion; burnside percussion rifle carbine; carbine; firearms; percussion fire; .54 in; rifled; 09; 03",carbines,carbines
+"['carbine, flintlock', 'carbine; firearms; flintlock; .65 in; smooth bore; muzzle load; sa', 'carbines']",1,"carbine, flintlock; carbine; firearms; flintlock; .65 in; smooth bore; muzzle load; sa; carbines",carbines,carbines
+"['carbine, flintlock', 'carbine; firearms; flintlock; .60 in; rifled; muzzle load; sa', 'carbines']",1,"carbine, flintlock; carbine; firearms; flintlock; .60 in; rifled; muzzle load; sa; carbines",carbines,carbines
+"['carbine, flintlock', 'carbine; firearms; flintlock; .54 in; smooth bore; muzzle load', 'carbines']",1,"carbine, flintlock; carbine; firearms; flintlock; .54 in; smooth bore; muzzle load; carbines",carbines,carbines
+"['carbine, flintlock', 'carbine; firearms; flintlock; .79 in; smooth bore; muzzle load; sa', 'carbines']",1,"carbine, flintlock; carbine; firearms; flintlock; .79 in; smooth bore; muzzle load; sa; carbines",carbines,carbines
+"['card, playing']",3,"card, playing","card, playing","card, playings"
+"['card, prayer']",1,"card, prayer","card, prayer","card, prayers"
+"['carder, hand']",3,"carder, hand","carder, hand","carder, hands"
+"['carding machine, part']",1,"carding machine, part","carding machine, part","carding machine, parts"
+"['carding machine, wool, scholfield', 'wool carding machine']",1,"carding machine, wool, scholfield; wool carding machine","carding machine, wool, scholfield","carding machine, wool, scholfields"
+['cards (information artifacts)'],3,cards,cards,cards
+['carpet segment'],1,carpet segment,carpet segment,carpet segments
+"['carpet, fragment', 'picture, woven']",1,"carpet, fragment; picture, woven","carpet, fragment","carpet, fragments"
+"['carpet, ingrain', 'carpets', 'carpet, ingrain, length']",1,"carpet, ingrain; carpets; carpet, ingrain, length","carpet, ingrain","carpet, ingrains"
+"['carriage, 1810', 'carriage, 1810; road; coachee', 'shaft, coachee']",1,"carriage, 1810; carriage, 1810; road; coachee; shaft, coachee","carriage, 1810","carriage, 1810s"
+"['case, pipe; smoking equipment', 'case, pipe']",2,"case, pipe; smoking equipment; case, pipe","case, pipe; smoking equipment",pipes
+"['case, cigar holder', 'case, pipe; smoking equipment']",1,"case, cigar holder; case, pipe; smoking equipment","case, pipe; smoking equipment",pipes
+"['case, pipe; smoking equipment', 'case, holder, cigar']",1,"case, pipe; smoking equipment; case, holder, cigar","case, pipe; smoking equipment",pipes
+"['case, pipe']",1,"case, pipe","case, pipe",pipes
+['cases (containers)'],4,cases,cases,cases
+"['cases (containers)', 'case; surgical set']",1,cases; case; surgical set,cases,cases
+"['case; bloodletting instruments; spring lancet', 'bloodletting', 'spring lancet, bloodletting', 'lancet, set', 'cases (containers)']",1,"case; bloodletting instruments; spring lancet; bloodletting; spring lancet, bloodletting; lancet, set; cases",cases,cases
+"['casing; ammunition, artillery; center fire; 25 mm', 'casing']",1,"casing; ammunition, artillery; center fire; 25 mm; casing","casing; ammunition, artillery; center fire; 25 mm","casing; ammunition, artillery; center fire; 25 mms"
+"['shaker', 'casters (vessels)']",2,shaker; casters,casters,casters
+['casters (vessels)'],1,casters,casters,casters
+"['ceiling ornament, church']",1,"ceiling ornament, church","ceiling ornament, church","ceiling ornament, churches"
+['celestial globe'],1,celestial globe,celestial globe,celestial globes
+['cello'],2,cello,cello,cellos
+"['ceramic jar', 'jar, olive, ceramic']",1,"ceramic jar; jar, olive, ceramic",ceramic jar,ceramic jars
+"['certificate, discharge']",1,"certificate, discharge","certificate, discharge","certificate, discharges"
+"['certificate, naturalization']",1,"certificate, naturalization","certificate, naturalization","certificate, naturalizations"
+"['certificates', 'certificate; signature']",1,certificates; certificate; signature,certificates,certificates
+"['cards (information artifacts)', 'certificates', 'certofocate', 'pledge card']",1,cards; certificates; certofocate; pledge card,certificates,certificates
+['certificates'],1,certificates,certificates,certificates
+"['chair, arm', 'chair; arm; windsor']",1,"chair, arm; chair; arm; windsor","chair, arm",chairs
+"[""chair, child's"", 'chair; furniture; child']",1,"chair, child's; chair; furniture; child","chair, child's",chairs
+"[""chair, child's""]",1,"chair, child's","chair, child's",chairs
+"['chair, rocking']",2,"chair, rocking","chair, rocking",chairs
+"['chair; furniture; arm; rocking; windsor?', 'chair, rocking']",1,"chair; furniture; arm; rocking; windsor?; chair, rocking","chair, rocking",chairs
+"['chair; furniture; side; rocking; ladder back', 'chair, rocking']",1,"chair; furniture; side; rocking; ladder back; chair, rocking","chair, rocking",chairs
+"['windsor side chair', 'chair, side', 'chair; side; windsor chair', 'chairs (furniture forms)']",6,"windsor side chair; chair, side; chair; side; windsor chair; chairs","chair, side",chairs
+"['chair, side']",5,"chair, side","chair, side",chairs
+"['chair, side', 'chair; furniture; side']",4,"chair, side; chair; furniture; side","chair, side",chairs
+"['chair, side', 'chair; furniture; side; splat back, pierced', 'chairs (furniture forms)']",4,"chair, side; chair; furniture; side; splat back, pierced; chairs","chair, side",chairs
+"['chair, side', 'chair; furniture; side; shield back, open', 'chairs (furniture forms)']",3,"chair, side; chair; furniture; side; shield back, open; chairs","chair, side",chairs
+"['chair, side', 'chair; side']",2,"chair, side; chair; side","chair, side",chairs
+"['chair, side', 'chair; furniture; side; shield back, open']",2,"chair, side; chair; furniture; side; shield back, open","chair, side",chairs
+"['chair; furniture; side; fancy', 'chair, side', 'chairs (furniture forms)']",2,"chair; furniture; side; fancy; chair, side; chairs","chair, side",chairs
+"['chair; furniture; side; windsor', 'chair, side']",2,"chair; furniture; side; windsor; chair, side","chair, side",chairs
+"['chair, side', 'chair; furniture; side; ladder back']",1,"chair, side; chair; furniture; side; ladder back","chair, side",chairs
+"['chair; furniture; side; windsor', 'chair, side', 'chairs (furniture forms)']",1,"chair; furniture; side; windsor; chair, side; chairs","chair, side",chairs
+"['chair, side', 'pa side chair', 'chairs (furniture forms)']",1,"chair, side; pa side chair; chairs","chair, side",chairs
+"['chair, side', 'chairs (furniture forms)']",1,"chair, side; chairs","chair, side",chairs
+"['chair, side', 'chair; chair, arm; furnishings', 'chair, arm', 'chairs (furniture forms)']",1,"chair, side; chair; chair, arm; furnishings; chair, arm; chairs","chair, side",chairs
+"['chair, side', 'chair; furniture; side chair; windsor']",1,"chair, side; chair; furniture; side chair; windsor","chair, side",chairs
+"['chair; furniture; arm', 'chair, corner']",1,"chair; furniture; arm; chair, corner",chair; furniture; arm,chairs
+"['chair, wing', 'chair; furniture; arm']",1,"chair, wing; chair; furniture; arm",chair; furniture; arm,chairs
+['chairs (furniture forms)'],3,chairs,chairs,chairs
+"['chair; furniture; side; windsor', 'chairs (furniture forms)']",3,chair; furniture; side; windsor; chairs,chairs,chairs
+"['chair; furniture; side; ladder back', 'chairs (furniture forms)']",2,chair; furniture; side; ladder back; chairs,chairs,chairs
+"['chair; furniture; arm; rocking; ladder back', 'chairs (furniture forms)', 'chair, rocking']",1,"chair; furniture; arm; rocking; ladder back; chairs; chair, rocking",chairs,chairs
+"['chairs (furniture forms)', 'armchairs']",1,chairs; armchairs,chairs,chairs
+['chalices'],1,chalices,chalices,chalices
+['chamberpot'],1,chamberpot,chamberpot,chamberpots
+"[""check, cashier's""]",1,"check, cashier's","check, cashier's","check, cashier's"
+['check'],25,check,check,checks
+"['check; signature', 'check']",6,check; signature; check,check,checks
+"['check', 'manuscripts']",1,check; manuscripts,check,checks
+"['john quincy adams', 'check']",1,john quincy adams; check,check,checks
+['chemical furnace'],1,chemical furnace,chemical furnace,chemical furnaces
+"['chemise, shift', 'chemise, shift; entire body; underwear; female']",5,"chemise, shift; chemise, shift; entire body; underwear; female","chemise, shift","chemise, shifts"
+['chemise'],2,chemise,chemise,chemises
+"['chemise; entire body; underwear; female', 'chemise']",1,chemise; entire body; underwear; female; chemise,chemise,chemises
+"['chemistry set, portable']",1,"chemistry set, portable","chemistry set, portable","chemistry set, portables"
+['chess sets'],5,chess sets,chess sets,chess sets
+"['chest, blanket']",1,"chest, blanket","chest, blanket","chest, blankets"
+"['chest; furniture', 'chests']",3,chest; furniture; chests,chests,chests
+['chests'],3,chests,chests,chests
+"['chest, blanket', 'chest; furniture', 'chests']",1,"chest, blanket; chest; furniture; chests",chests,chests
+"['chest of drawers', 'chests']",1,chest of drawers; chests,chests,chests
+"['chest; furniture', 'furniture', 'chests']",1,chest; furniture; furniture; chests,chests,chests
+"['chronometer', 'pocket chronometer movement & dial; chronometer; mechanical, spring driven; english chronometer movement']",1,"chronometer; pocket chronometer movement & dial; chronometer; mechanical, spring driven; english chronometer movement",chronometer,chronometers
+['churns'],1,churns,churns,churns
+['cigarette boxes'],1,cigarette boxes,cigarette boxes,cigarette boxes
+['circular'],1,circular,circular,circulars
+['clarinets'],2,clarinets,clarinets,clarinets
+['clavichord'],1,clavichord,clavichord,clavichords
+"['cloak; outerwear; female', 'cloaks']",1,cloak; outerwear; female; cloaks,cloak; outerwear; female,cloak; outerwear; females
+['clock movement in wooden case'],1,clock movement in wooden case,clock movement in wooden case,clock movement in wooden cases
+"['clock movement, tall case']",1,"clock movement, tall case","clock movement, tall case","clock movement, tall cases"
+"['clock, case']",1,"clock, case","clock, case","clock, cases"
+"['finials', 'clock, tall case']",1,"finials; clock, tall case","clock, tall case","clock, tall cases"
+"['case clock', 'clock, tall case']",1,"case clock; clock, tall case","clock, tall case","clock, tall cases"
+"['clock, wall, factory']",1,"clock, wall, factory","clock, wall, factory","clock, wall, factories"
+"['clock, tall', 'clock, tall case', 'clocks']",1,"clock, tall; clock, tall case; clocks",clocks,clocks
+"['clock, tall; furniture', 'clocks']",1,"clock, tall; furniture; clocks",clocks,clocks
+"['tall case clock, rittenhouse', 'tall clock, rittenhouse', 'clocks']",1,"tall case clock, rittenhouse; tall clock, rittenhouse; clocks",clocks,clocks
+"['clock, shelf', 'clocks']",1,"clock, shelf; clocks",clocks,clocks
+"['clock; mechanical, spring driven', 'clock, mantel', 'clocks']",1,"clock; mechanical, spring driven; clock, mantel; clocks",clocks,clocks
+"['clock; mechanical, weight driven; tall case clock', 'clocks', 'clock, tall case']",1,"clock; mechanical, weight driven; tall case clock; clocks; clock, tall case",clocks,clocks
+"['tower clock', 'clocks', 'clock; mechanical, weight driven; tower clock']",1,"tower clock; clocks; clock; mechanical, weight driven; tower clock",clocks,clocks
+"['coaster, bottle']",1,"coaster, bottle","coaster, bottle","coaster, bottles"
+"['frock coats', 'coat; coat, frock; upper body; main dress; male']",1,"frock coats; coat; coat, frock; upper body; main dress; male","coat; coat, frock; upper body; main dress; male",dresses
+"['coat; man; officer', 'coats (garments)']",1,coat; man; officer; coats,coats,coats
+"['coats (garments)', 'coat; man; army; brigadier general; officer']",1,coats; coat; man; army; brigadier general; officer,coats,coats
+"['coat; man; army; general officer; officer', 'coats (garments)']",1,coat; man; army; general officer; officer; coats,coats,coats
+"['coats (garments)', 'coat; coat, frock; upper body; main dress; male']",1,"coats; coat; coat, frock; upper body; main dress; male",coats,dresses
+"['coats (garments)', 'coat; outerwear; female']",1,coats; coat; outerwear; female,coats,coats
+"['coat; upper body; main dress; male', 'coats (garments)']",1,coat; upper body; main dress; male; coats,coats,dresses
+['coffeepots'],4,coffeepots,coffeepots,coffeepots
+['coin balance'],1,coin balance,coin balance,coin balances
+"['coin, modified']",1,"coin, modified","coin, modified","coin, modifieds"
+['coins (money)'],1075,coins,coins,coins
+"['coins (money)', 'tokens']",39,coins; tokens,coins,coins
+"['coins (money)', 'planchet']",1,coins; planchet,coins,coins
+"['1 dollar', 'coins (money)']",1,1 dollar; coins,coins,coins
+"['coins (money)', 'coin; hispanic collection']",1,coins; coin; hispanic collection,coins,coins
+"['coins (money)', 'galvano', 'tokens']",1,coins; galvano; tokens,coins,coins
+"['coins (money)', 'trial']",1,coins; trial,coins,coins
+"['coins (money)', 'medals']",1,coins; medals,coins,coins
+"['silver $1 coin, 1799', 'coins (money)']",1,"silver $1 coin, 1799; coins",coins,coins
+"['us dollar', 'coins (money)']",1,us dollar; coins,coins,coins
+"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",1,"comb, ornamental; headwear; accessories worn on the body; female; comb, ornamental","comb, ornamental; headwear; accessories worn on the body; female","comb, ornamental; headwear; accessories worn on the body; females"
+['combs (hair ornaments)'],1,combs,combs,combs
+['commission'],2,commission,commission,commissions
+"['compass, pocket']",1,"compass, pocket","compass, pocket","compass, pockets"
+"['console; wall consoles, batch of two; furnishings', 'wall consoles, batch of two', 'console']",1,"console; wall consoles, batch of two; furnishings; wall consoles, batch of two; console",console,consoles
+['console'],1,console,console,consoles
+"['contract, indenture', 'indenture']",1,"contract, indenture; indenture","contract, indenture","contract, indentures"
+"['cooler, water']",1,"cooler, water","cooler, water","cooler, waters"
+"['cooler, wine']",2,"cooler, wine","cooler, wine","cooler, wines"
+['cope'],1,cope,cope,copes
+['coquillage'],1,coquillage,coquillage,coquillages
+['cord (fiber product)'],2,cord,cord,cords
+"['cork driver; kitchen utensils', 'corker, bottle']",1,"cork driver; kitchen utensils; corker, bottle",cork driver; kitchen utensils,cork driver; kitchen utensils
+"['sheet (paper); manuscript', 'correspondence']",95,sheet ; manuscript; correspondence,correspondence,correspondences
+"['correspondence', 'covers & letters']",84,correspondence; covers & letters,correspondence,correspondences
+['correspondence'],20,correspondence,correspondence,correspondences
+"['correspondence', 'manuscripts']",2,correspondence; manuscripts,correspondence,correspondences
+"['correspondence', 'letter; sheet (paper); manuscript']",1,correspondence; letter; sheet ; manuscript,correspondence,correspondences
+"['documents', 'correspondence']",1,documents; correspondence,correspondence,correspondences
+"['correspondence', 'sheets (paper); manuscript']",1,correspondence; sheets ; manuscript,correspondence,correspondences
+"['corset waist; upper body; underwear; female', 'corset waist']",1,corset waist; upper body; underwear; female; corset waist,corset waist; upper body; underwear; female,corset waist; upper body; underwear; females
+"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",6,neckcloth; neckwear; accessories worn on the body; female; neckwear; costume accessories worn; neckcloth,costume accessories worn,costume accessories worns
+"['stockings', 'costume accessories worn', 'footwear']",4,stockings; costume accessories worn; footwear,costume accessories worn,costume accessories worns
+"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",3,"handwear; costume accessories worn; mitts, pair of; handwear; accessories worn on the body; female; mitts; mitts, pair of",costume accessories worn,costume accessories worns
+"['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",2,costume accessories worn; caps; cap; headwear; accessories worn on the body; female; headgear,costume accessories worn,costume accessories worns
+"['neckwear', 'costume accessories worn']",1,neckwear; costume accessories worn,costume accessories worn,costume accessories worns
+"['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",1,costume accessories worn; brooch; jewelry; accessories worn on the body; female; jewelry; brooches,costume accessories worn,costume accessories worns
+"['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",1,"costume accessories worn; jewelry; buckles; buckles, knee",costume accessories worn,costume accessories worns
+"['buckles, shoe', 'costume accessories worn', 'jewelry', 'buckles (strap accessories)']",1,"buckles, shoe; costume accessories worn; jewelry; buckles",costume accessories worn,costume accessories worns
+"['calash', 'costume accessories worn', 'calash; headwear; accessories worn on the body; female', 'headgear']",1,calash; costume accessories worn; calash; headwear; accessories worn on the body; female; headgear,costume accessories worn,costume accessories worns
+"['handwear', 'gloves', 'costume accessories worn', 'gloves, pair of; handwear; accessories worn on the body; female']",1,"handwear; gloves; costume accessories worn; gloves, pair of; handwear; accessories worn on the body; female",costume accessories worn,costume accessories worns
+"['aprons (main garments)', 'apron; accessories worn on the body; female', 'costume accessories worn']",1,aprons; apron; accessories worn on the body; female; costume accessories worn,costume accessories worn,costume accessories worns
+"['counterpane, printed']",1,"counterpane, printed","counterpane, printed","counterpane, printeds"
+['counterpanes'],1,counterpanes,counterpanes,counterpanes
+['coverlet fragment'],4,coverlet fragment,coverlet fragment,coverlet fragments
+"['coverlet panel, summer and winter', 'coverlet panel']",1,"coverlet panel, summer and winter; coverlet panel","coverlet panel, summer and winter","coverlet panel, summer and winters"
+"['coverlet panels, overshot']",1,"coverlet panels, overshot","coverlet panels, overshot","coverlet panels, overshots"
+"['coverlet, geometric']",7,"coverlet, geometric","coverlet, geometric","coverlet, geometrics"
+"['coverlet, multi harness']",1,"coverlet, multi harness","coverlet, multi harness","coverlet, multi harness"
+"['coverlet, summer and winter']",2,"coverlet, summer and winter","coverlet, summer and winter","coverlet, summer and winters"
+"['coverlet, twill']",1,"coverlet, twill","coverlet, twill","coverlet, twills"
+"['coverlet, geometric', 'coverlet']",5,"coverlet, geometric; coverlet",coverlet,coverlets
+"['pine tree', 'coverlet, geometric', 'coverlets', 'coverlet', 'snowballs', 'double weave']",1,"pine tree; coverlet, geometric; coverlets; coverlet; snowballs; double weave",coverlet,coverlets
+"['coverlets', 'coverlet fragment, geometric']",1,"coverlets; coverlet fragment, geometric",coverlets,coverlets
+"['coverlet, twill weave', 'coverlet', 'coverlet, twill']",1,"coverlet, twill weave; coverlet; coverlet, twill",coverlet,coverlets
+"['covers (overlying objects)', 'mantle, torah']",1,"covers; mantle, torah",covers,covers
+"[""cradles (children's beds)"", 'cradle; doll furnishings; toys']",1,cradles; cradle; doll furnishings; toys,cradles,cradles
+"[""cradles (children's beds)"", 'cradle; furniture']",1,cradles; cradle; furniture,cradles,cradles
+"[""cradles (children's beds)""]",1,cradles,cradles,cradles
+['crayon holders'],1,crayon holders,crayon holders,crayon holders
+['crayon holder'],1,crayon holder,crayon holder,crayon holders
+['creamers'],7,creamers,creamers,creamers
+['crests (motifs)'],1,crests,crests,crests
+"['cross, rounded', 'cross, rounded; historical']",2,"cross, rounded; cross, rounded; historical","cross, rounded","cross, roundeds"
+"['crosses (visual works)', 'cross; historical']",5,crosses; cross; historical,crosses,crosses
+"['cuff links', 'cuff links', 'cuff links; jewelry; accessories worn on the body; male']",1,cuff links; cuff links; cuff links; jewelry; accessories worn on the body; male,cuff links,cuff links
+"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']",1,"cuffs, pair of; cuffs, pair of; armwear; accessories worn on the body; female","cuffs, pair of","cuffs, pair oves"
+['cup and saucer'],1,cup and saucer,cup and saucer,cup and saucers
+"['cup, punch']",5,"cup, punch","cup, punch","cup, punches"
+"['cup, standing']",1,"cup, standing","cup, standing","cup, standings"
+"['cup, two handled']",1,"cup, two handled","cup, two handled","cup, two handleds"
+['cupboards'],1,cupboards,cupboards,cupboards
+"['cups', 'saucers (plates)']",29,cups; saucers,cups,cups
+['cups'],4,cups,cups,cups
+"['cups', ""cup, child's""]",1,"cups; cup, child's",cups,cups
+"['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",1,"curfew; curfew; fire making apparatus; lid, tinderbox",curfew,curfews
+"['cutlass; edged weapons; navy', 'cutlasses']",2,cutlass; edged weapons; navy; cutlasses,cutlasses,cutlasses
+"['cutlasses', 'cutlass; edged weapons; navy; enlisted man']",1,cutlasses; cutlass; edged weapons; navy; enlisted man,cutlasses,cutlasses
+"['knife; personal utensils; cutlery; folding; pocket', 'knife, folding', 'cutlery']",3,"knife; personal utensils; cutlery; folding; pocket; knife, folding; cutlery",cutlery,cutleries
+"['knife and fork, set of; eating utensils', 'cases (containers)', 'cutlery']",1,"knife and fork, set of; eating utensils; cases; cutlery",cutlery,cutleries
+"['knife and fork, set of; eating utensils', 'forks (flatware)', 'cutlery']",1,"knife and fork, set of; eating utensils; forks; cutlery",cutlery,cutleries
+"['knives', 'knife; personal utensils; cutlery; folding; pocket', 'cutlery']",1,knives; knife; personal utensils; cutlery; folding; pocket; cutlery,cutlery,cutleries
+"['knives', 'knife and fork, set of; eating utensils', 'cutlery']",1,"knives; knife and fork, set of; eating utensils; cutlery",cutlery,cutleries
+"['knives', 'knife; eating utensils; cutlery; table', 'cutlery']",1,knives; knife; eating utensils; cutlery; table; cutlery,cutlery,cutleries
+"['fork; eating utensils', 'forks (flatware)', 'cutlery']",1,fork; eating utensils; forks; cutlery,cutlery,cutleries
+"['knife, dinner; cutlery', 'knife, dinner', 'cutlery']",1,"knife, dinner; cutlery; knife, dinner; cutlery",cutlery,cutleries
+"['fork, dinner', 'fork, dinner; cutlery', 'cutlery']",1,"fork, dinner; fork, dinner; cutlery; cutlery",cutlery,cutleries
+"['knife; cutlery; folding?', 'knife, pocket', 'cutlery']",1,"knife; cutlery; folding?; knife, pocket; cutlery",cutlery,cutleries
+"['cutter, cake']",1,"cutter, cake","cutter, cake","cutter, cakes"
+"['cutter, cookie']",1,"cutter, cookie","cutter, cookie","cutter, cookies"
+"['cutter, quill pen']",1,"cutter, quill pen","cutter, quill pen","cutter, quill pens"
+['decanters'],2,decanters,decanters,decanters
+['decorative arts'],114,decorative arts,decorative arts,decorative arts
+"['quilts', 'decorative arts', 'folk art']",3,quilts; decorative arts; folk art,decorative arts,decorative arts
+"['decorative arts', 'folk art']",3,decorative arts; folk art,decorative arts,decorative arts
+"['quilts', 'decorative arts', 'crafts (art genres)']",3,quilts; decorative arts; crafts,decorative arts,decorative arts
+"['decorative arts', 'crafts (art genres)']",1,decorative arts; crafts,decorative arts,decorative arts
+"['still lifes', 'sheet music', 'decorative arts']",1,still lifes; sheet music; decorative arts,decorative arts,decorative arts
+"['still lifes', 'decorative arts']",1,still lifes; decorative arts,decorative arts,decorative arts
+"['mirrors', 'decorative arts']",1,mirrors; decorative arts,decorative arts,decorative arts
+"['deed, land']",1,"deed, land","deed, land","deed, lands"
+"['forceps, hand forged', 'forceps, hand forged; dentistry', 'forceps, dental', 'dental instrument', 'dental forceps']",1,"forceps, hand forged; forceps, hand forged; dentistry; forceps, dental; dental instrument; dental forceps",dental instrument,dental instruments
+"['bur thimble', 'socket, ring and drill', 'socket, ring and drill; dentistry', 'dental instrument']",1,"bur thimble; socket, ring and drill; socket, ring and drill; dentistry; dental instrument",dental instrument,dental instruments
+"['designs (concepts)', 'drawing, school plan']",1,"designs; drawing, school plan",designs,designs
+['desks'],2,desks,desks,desks
+"['slant front desk and bookcase', 'desks']",1,slant front desk and bookcase; desks,desks,desks
+"['device, lifting']",1,"device, lifting","device, lifting","device, liftings"
+"['dickey; neckwear; accessories worn on the body; male', 'dickeys']",1,dickey; neckwear; accessories worn on the body; male; dickeys,dickey; neckwear; accessories worn on the body; male,dickey; neckwear; accessories worn on the body; males
+['dies (tools)'],1,dies,dies,dies
+"['dipper, snuff']",1,"dipper, snuff","dipper, snuff","dipper, snufves"
+"['dipper, well']",1,"dipper, well","dipper, well","dipper, wells"
+['dippers (serving utensils)'],4,dippers,dippers,dippers
+"['dippers (serving utensils)', 'cup, drinking']",1,"dippers; cup, drinking",dippers,dippers
+"['dish, dessert']",1,"dish, dessert","dish, dessert","dish, desserts"
+"['dish, salt']",1,"dish, salt","dish, salt","dish, salts"
+"['dish, soap']",1,"dish, soap","dish, soap","dish, soaps"
+"['dish, soup']",3,"dish, soup","dish, soup","dish, soups"
+['dishes (vessels)'],15,dishes,dishes,dishes
+['dispatch case'],1,dispatch case,dispatch case,dispatch cases
+['distilleries'],1,distilleries,distilleries,distilleries
+['dividers'],1,dividers,dividers,dividers
+['dividing engine'],1,dividing engine,dividing engine,dividing engines
+"['document, broadside']",1,"document, broadside","document, broadside","document, broadsides"
+['documents'],18,documents,documents,documents
+"['fraktur', 'documents', 'pen and ink', 'certificates']",3,fraktur; documents; pen and ink; certificates,documents,documents
+"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",2,fraktur; documents; pen and ink; certificates; letterpress,documents,documents
+"['sheets of paper, set of', 'documents', 'sheets of paper, set of; documents']",1,"sheets of paper, set of; documents; sheets of paper, set of; documents",documents,documents
+"['documents', 'pamphlets', 'pamphlet; documents']",1,documents; pamphlets; pamphlet; documents,documents,documents
+"['notice', 'documents']",1,notice; documents,documents,documents
+"['sheets (paper), set of; paper, sheet; manuscript', 'documents', 'paper, sheet']",1,"sheets , set of; paper, sheet; manuscript; documents; paper, sheet",documents,documents
+"['tr*335662', 'documents']",1,tr*335662; documents,documents,documents
+"['documents', 'signature']",1,documents; signature,documents,documents
+"['fraktur', 'documents', 'certificates', 'letterpress']",1,fraktur; documents; certificates; letterpress,documents,documents
+"['bookplate', 'fraktur', 'documents', 'pen and ink']",1,bookplate; fraktur; documents; pen and ink,documents,documents
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink', 'documents, pair of', 'certificates']",1,"fraktur vorschriften; fraktur; documents; pen and ink; documents, pair of; certificates",documents,documents
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink']",1,fraktur vorschriften; fraktur; documents; pen and ink,documents,documents
+"['doll, woman']",1,"doll, woman","doll, woman","doll, women"
+"['double fireplace, delaware log house', 'log house']",1,"double fireplace, delaware log house; log house","double fireplace, delaware log house","double fireplace, delaware log houses"
+"['drawers; lower body; underwear; male', 'drawers (underpants)']",1,drawers; lower body; underwear; male; drawers,drawers; lower body; underwear; male,drawers; lower body; underwear; males
+"['drawing compass', 'compass, drawing']",1,"drawing compass; compass, drawing",drawing compass,drawing compass
+"['drawing instruments, set of']",3,"drawing instruments, set of","drawing instruments, set of","drawing instruments, set oves"
+['drawings'],40,drawings,drawings,drawings
+"['fraktur', 'documents', 'drawings']",3,fraktur; documents; drawings,drawings,drawings
+"['drawing; pictures; pen and ink', 'drawings']",2,drawing; pictures; pen and ink; drawings,drawings,drawings
+"['folk art', 'drawings']",2,folk art; drawings,drawings,drawings
+"['fraktur', 'certificates', 'fraktur', 'drawings']",1,fraktur; certificates; fraktur; drawings,drawings,drawings
+"['painting; portraits', 'drawings']",1,painting; portraits; drawings,drawings,drawings
+"['painting; pictures; watercolor; portrait', 'drawing, watercolor', 'drawings']",1,"painting; pictures; watercolor; portrait; drawing, watercolor; drawings",drawings,drawings
+"['painting; pictures; watercolor', 'drawing, watercolor', 'drawings']",1,"painting; pictures; watercolor; drawing, watercolor; drawings",drawings,drawings
+"['dress 1 piece', 'dress 1 piece; entire body; main dress; female']",1,dress 1 piece; dress 1 piece; entire body; main dress; female,dress 1 piece,dresses
+"['dress fragment', 'dress fragment']",1,dress fragment; dress fragment,dress fragment,dresses
+"['dress, 1 piece', 'dress, 1 piece; entire body; main dress; female']",14,"dress, 1 piece; dress, 1 piece; entire body; main dress; female","dress, 1 piece",dresses
+"['entire body', 'dress, 1 piece', 'dresses (garments)', 'main garments', 'dress, 1 piece; entire body; main dress; female']",2,"entire body; dress, 1 piece; dresses; main garments; dress, 1 piece; entire body; main dress; female","dress, 1 piece",dresses
+"['dress, 1 piece', 'dress, 1 piece; entire body; main dress; female; wedding']",1,"dress, 1 piece; dress, 1 piece; entire body; main dress; female; wedding","dress, 1 piece",dresses
+"['dress, 1 piece; entire body; main dress; infant', 'dress, 1 piece']",1,"dress, 1 piece; entire body; main dress; infant; dress, 1 piece","dress, 1 piece",dresses
+"['dress, 1 piece, christening', 'dress, 1 piece; entire body; main dress; infant', 'dress, 1 piece']",1,"dress, 1 piece, christening; dress, 1 piece; entire body; main dress; infant; dress, 1 piece","dress, 1 piece",dresses
+"['dress, 1 piece; entire body; main dress; female; mourning?', 'dress, 1 piece']",1,"dress, 1 piece; entire body; main dress; female; mourning?; dress, 1 piece","dress, 1 piece",dresses
+"['dress, 1 piece; entire body; main dress; female; quaker?', 'dress, 1 piece']",1,"dress, 1 piece; entire body; main dress; female; quaker?; dress, 1 piece","dress, 1 piece",dresses
+"['entire body', 'dress, 1 piece', 'dresses (garments)', 'main garments', 'dress, 1 piece; entire body; main dress; female; wedding']",1,"entire body; dress, 1 piece; dresses; main garments; dress, 1 piece; entire body; main dress; female; wedding","dress, 1 piece",dresses
+"['dress, 4 piece', 'dress, 4 piece; entire body; main dress; female']",1,"dress, 4 piece; dress, 4 piece; entire body; main dress; female","dress, 4 piece",dresses
+"['dress, bodice; entire body; main dress; female', 'dress, bodice']",1,"dress, bodice; entire body; main dress; female; dress, bodice","dress, bodice; entire body; main dress; female",dresses
+"['dress, fragments']",1,"dress, fragments","dress, fragments",dresses
+"['dress, skirt; entire body; main dress; female', 'dress, skirt']",1,"dress, skirt; entire body; main dress; female; dress, skirt","dress, skirt; entire body; main dress; female",dresses
+"['dresses (garments)', 'dress, 2 piece; entire body; main dress; female']",5,"dresses; dress, 2 piece; entire body; main dress; female",dresses,dresses
+['dresses (garments)'],1,dresses,dresses,dresses
+"['dress, 1 piece; dress, 2 piece; entire body; main dress; female', 'dresses (garments)']",1,"dress, 1 piece; dress, 2 piece; entire body; main dress; female; dresses",dresses,dresses
+['drum head'],2,drum head,drum head,drum heads
+['drums (membranophones)'],3,drums,drums,drums
+['earrings'],1,earrings,earrings,earrings
+"['ecuelle', 'ecuelle stand', 'ecuelle cover', 'stand']",1,ecuelle; ecuelle stand; ecuelle cover; stand,ecuelle,ecuelles
+['electoral ticket'],1,electoral ticket,electoral ticket,electoral tickets
+['electrostatic demonstration apparatus'],1,electrostatic demonstration apparatus,electrostatic demonstration apparatus,electrostatic demonstration apparatuses
+"['electrostatic device', 'discharge tube', 'electrostatic device', 'discharge tube; electrostatic devices']",1,electrostatic device; discharge tube; electrostatic device; discharge tube; electrostatic devices,electrostatic device,electrostatic devices
+"['cylinder type frictional electrostatic machine', 'electrostatic generator', 'electrostatic generator component']",1,cylinder type frictional electrostatic machine; electrostatic generator; electrostatic generator component,electrostatic generator,electrostatic generators
+"['electrostatic generator', 'revolving doubler', 'influence machine']",1,electrostatic generator; revolving doubler; influence machine,electrostatic generator,electrostatic generators
+"['electrostatic generator', 'frictional cylinder electrostatic machine']",1,electrostatic generator; frictional cylinder electrostatic machine,electrostatic generator,electrostatic generators
+"['cylinder type frictional electrostatic machine; electrostatic devices', 'cylinder type frictional electrostatic machine', 'electrostatic generator']",1,cylinder type frictional electrostatic machine; electrostatic devices; cylinder type frictional electrostatic machine; electrostatic generator,electrostatic generator,electrostatic generators
+"['electrostatic generator', 'electrostatic machine; electrostatic devices', 'electrostatic machine']",1,electrostatic generator; electrostatic machine; electrostatic devices; electrostatic machine,electrostatic generator,electrostatic generators
+"['electrostatic machine', 'electrostatic generator', 'galvanometer; measuring devices', 'galvanometer']",1,electrostatic machine; electrostatic generator; galvanometer; measuring devices; galvanometer,electrostatic generator,electrostatic generators
+"['electrostatic generator', 'electrostatic machine']",1,electrostatic generator; electrostatic machine,electrostatic generator,electrostatic generators
+"['emblem, radiator; road; automobile', 'emblem, radiator']",1,"emblem, radiator; road; automobile; emblem, radiator","emblem, radiator; road; automobile","emblem, radiator; road; automobiles"
+"['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",1,"embroidery, lace, ecclesiatical; embroidery, lace, ecclesiastical, table cover; embroidery, lace, ecclesiastical","embroidery, lace, ecclesiatical","embroidery, lace, ecclesiaticals"
+"['embroidery, picture']",1,"embroidery, picture","embroidery, picture","embroidery, pictures"
+"['embroidery, white work', 'pocket, white work']",1,"embroidery, white work; pocket, white work","embroidery, white work","embroidery, white works"
+['employee gear'],9,employee gear,employee gear,employee gears
+['engine jack'],2,engine jack,engine jack,engine jacks
+"['engine, internal combustion, model', 'engine, internal combustion']",1,"engine, internal combustion, model; engine, internal combustion","engine, internal combustion, model","engine, internal combustion, models"
+"['engine, steam, boat']",1,"engine, steam, boat","engine, steam, boat","engine, steam, boats"
+"['engine, steam, boat', 'engine, steam, boat, model']",1,"engine, steam, boat; engine, steam, boat, model","engine, steam, boat","engine, steam, boats"
+"['engine, steam', 'engine, steam, model']",2,"engine, steam; engine, steam, model","engine, steam, model","engine, steam, models"
+"['engine, steam, model', 'center square waterworks model', 'water works']",1,"engine, steam, model; center square waterworks model; water works","engine, steam, model","engine, steam, models"
+['english guitar'],2,english guitar,english guitar,english guitars
+['engravings (prints)'],4,engravings,engravings,engravings
+"['engravings (prints)', 'print, engraving']",4,"engravings; print, engraving",engravings,engravings
+"['sheet (paper)', 'engravings (prints)', 'paper (fiber product)', 'sheet']",2,sheet; engravings; paper; sheet,engravings,engravings
+"['print, line engraving', 'engravings (prints)']",1,"print, line engraving; engravings",engravings,engravings
+"['entablature fragment, church', 'beam fragment']",1,"entablature fragment, church; beam fragment","entablature fragment, church","entablature fragment, churches"
+"['epaulets, pair of', 'epaulets, pair of; insignia; army; holder, epaulet; officer', 'epaulettes, pair of']",1,"epaulets, pair of; epaulets, pair of; insignia; army; holder, epaulet; officer; epaulettes, pair of","epaulets, pair of","epaulets, pair oves"
+['etchings (prints)'],1,etchings,etchings,etchings
+['eyecup'],1,eyecup,eyecup,eyecups
+"['eyeglasses; opticals; accessories worn on the body; unknown', 'eyeglasses']",2,eyeglasses; opticals; accessories worn on the body; unknown; eyeglasses,eyeglasses; opticals; accessories worn on the body; unknown,eyeglasses; opticals; accessories worn on the body; unknowns
+['fabric fragment'],2,fabric fragment,fabric fragment,fabric fragments
+"['fabric fragment', 'fabric, printed fragment']",1,"fabric fragment; fabric, printed fragment",fabric fragment,fabric fragments
+"['fabric length, knitted', 'fabric; knitted']",1,"fabric length, knitted; fabric; knitted","fabric length, knitted","fabric length, knitteds"
+"['fabric length, plate printed', 'fabric, printed, copperplate']",1,"fabric length, plate printed; fabric, printed, copperplate","fabric length, plate printed","fabric length, plate printeds"
+"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",1,fabric pieces; accessories for the manufacturing of clothing; fabric pieces,fabric pieces; accessories for the manufacturing of clothing,fabric pieces; accessories for the manufacturing of clothings
+['fabric sample'],2,fabric sample,fabric sample,fabric samples
+"['fabric, fragment, printed']",8,"fabric, fragment, printed","fabric, fragment, printed","fabric, fragment, printeds"
+"['fabric, fragment']",1,"fabric, fragment","fabric, fragment","fabric, fragments"
+"['fabric, printed']",1,"fabric, printed","fabric, printed","fabric, printeds"
+"['fabric,fragment']",1,"fabric,fragment","fabric,fragment","fabric,fragments"
+"['fabric; accessories for the manufacturing of clothing', 'cloth']",6,fabric; accessories for the manufacturing of clothing; cloth,fabric; accessories for the manufacturing of clothing,fabric; accessories for the manufacturing of clothings
+"['fans (costume accessories)', 'fan; accessories carried; female']",2,fans; fan; accessories carried; female,fans,fans
+"['fashion plate', 'fashion plate; female']",30,fashion plate; fashion plate; female,fashion plate,fashion plates
+"['fashion plate', 'fashion plate; male']",2,fashion plate; fashion plate; male,fashion plate,fashion plates
+['fashion plate'],1,fashion plate,fashion plate,fashion plates
+"[""feather money, o'o bird; oceania; polynesia, hawaiian islands"", 'alternative currency', ""feather money, o'o bird""]",1,"feather money, o'o bird; oceania; polynesia, hawaiian islands; alternative currency; feather money, o'o bird","feather money, o'o bird; oceania; polynesia, hawaiian islands","feather money, o'o bird; oceania; polynesia, hawaiian islands"
+['fiddles'],1,fiddles,fiddles,fiddles
+"[""field hand's call""]",1,field hand's call,field hand's call,field hand's calls
+['field telescope and case'],2,field telescope and case,field telescope and case,field telescope and cases
+['fifes'],2,fifes,fifes,fifes
+['figure group'],1,figure group,figure group,figure groups
+['figures (representations)'],9,figures,figures,figures
+"['figurines', 'figures (representations)']",2,figurines; figures,figures,figures
+"['figurine, group']",2,"figurine, group","figurine, group","figurine, groups"
+"['figurine, group', 'figure group']",1,"figurine, group; figure group","figurine, group","figurine, groups"
+"['figurines', 'figurine, animal']",2,"figurines; figurine, animal",figurines,figurines
+['figurines'],1,figurines,figurines,figurines
+"['finial, altar screen']",1,"finial, altar screen","finial, altar screen","finial, altar screens"
+['fire hats'],3,fire hats,fire hats,fire hats
+['fire mark'],40,fire mark,fire mark,fire marks
+"['fire steel; fire making apparatus', 'firesteel']",8,fire steel; fire making apparatus; firesteel,fire steel; fire making apparatus,fire steel; fire making apparatuses
+"['cutter, straw', 'fire steel; fire making apparatus']",1,"cutter, straw; fire steel; fire making apparatus",fire steel; fire making apparatus,fire steel; fire making apparatuses
+['fireback'],1,fireback,fireback,firebacks
+['firesteel'],1,firesteel,firesteel,firesteels
+"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",1,"flag, fragment of; flag, fragment of; military; army; rgt, 9 virginia continental","flag, fragment of","flag, fragment oves"
+"['flag, revolutionary war']",3,"flag, revolutionary war","flag, revolutionary war","flag, revolutionary wars"
+['flagon'],2,flagon,flagon,flagons
+"['flags', 'flag; military; army; streamer']",12,flags; flag; military; army; streamer,flags,flags
+"['flag; flags; military; army; streamer; campaign', 'flags']",5,flag; flags; military; army; streamer; campaign; flags,flags,flags
+['flags'],4,flags,flags,flags
+"['flag; military; collar; rgt, ansbach bayreuth', 'flags']",1,"flag; military; collar; rgt, ansbach bayreuth; flags",flags,flags
+"['flag; military', 'flags']",1,flag; military; flags,flags,flags
+"['flag, japanese', 'flags', 'flag; military; army']",1,"flag, japanese; flags; flag; military; army",flags,flags
+"['flag; army; signal', 'flags']",1,flag; army; signal; flags,flags,flags
+['flails (weapons)'],1,flails,flails,flails
+['flasks (bottles)'],1,flasks,flasks,flasks
+"['spoons', 'flatware']",191,spoons; flatware,flatware,flatwares
+"['flatware', 'tongs']",14,flatware; tongs,flatware,flatwares
+"['flatware', 'ladles']",4,flatware; ladles,flatware,flatwares
+"['flatware', 'sugar tongs', 'tongs']",2,flatware; sugar tongs; tongs,flatware,flatwares
+"['flatware', 'spurs (costume accessories)']",2,flatware; spurs,flatware,flatwares
+"['spoons', 'flatware', 'spoons']",2,spoons; flatware; spoons,flatware,flatwares
+"['flatware', 'skewers']",1,flatware; skewers,flatware,flatwares
+"['flatware', 'sipper']",1,flatware; sipper,flatware,flatwares
+"['knife, serving', 'knives', 'flatware']",1,"knife, serving; knives; flatware",flatware,flatwares
+"['teaspoo', 'flatware']",1,teaspoo; flatware,flatware,flatwares
+"['flatware', 'medallions (medals)']",1,flatware; medallions,flatware,flatwares
+"['flatware', 'keys (hardware)']",1,flatware; keys,flatware,flatwares
+['fliers (printed matter)'],1,fliers,fliers,fliers
+['flowerpot'],1,flowerpot,flowerpot,flowerpots
+['flutes (aerophones)'],9,flutes,flutes,flutes
+"['food warmer', 'infant feeder']",1,food warmer; infant feeder,food warmer,food warmers
+"['fork, hearth']",1,"fork, hearth","fork, hearth","fork, hearths"
+['forks (flatware)'],7,forks,forks,forks
+"['fragment, pan']",1,"fragment, pan","fragment, pan","fragment, pans"
+"['fragment, pipe, tobacco']",1,"fragment, pipe, tobacco","fragment, pipe, tobacco",pipes
+"['fragment, pitcher']",1,"fragment, pitcher","fragment, pitcher","fragment, pitchers"
+"['fragments, bottle']",1,"fragments, bottle","fragments, bottle","fragments, bottles"
+['fragrance'],1,fragrance,fragrance,fragrances
+"['certificate, marriage', 'fraktur', 'pen and ink', 'certificates', 'license, marriage', 'certificate form, marriage']",1,"certificate, marriage; fraktur; pen and ink; certificates; license, marriage; certificate form, marriage",fraktur,frakturs
+"['frame, butter mold']",1,"frame, butter mold","frame, butter mold","frame, butter molds"
+"['frame, mirror, parts of']",1,"frame, mirror, parts of","frame, mirror, parts of","frame, mirror, parts oves"
+['franchise'],1,franchise,franchise,franchises
+['funnels'],3,funnels,funnels,funnels
+"['furniture, kiln']",1,"furniture, kiln","furniture, kiln","furniture, kilns"
+"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",1,"gaiters, pair of; footwear; accessories worn on the body; male; gaiters, pair of","gaiters, pair of; footwear; accessories worn on the body; male","gaiters, pair of; footwear; accessories worn on the body; males"
+['games'],1,games,games,games
+['geography assignment'],1,geography assignment,geography assignment,geography assignments
+"['glass, jelly']",6,"glass, jelly","glass, jelly","glass, jellies"
+"['glass, soda']",1,"glass, soda","glass, soda","glass, sodas"
+"['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']",1,"glass, soda; glass, soda; glass, soda; soda fountain; furnishings","glass, soda","glass, sodas"
+"['globe, celestial, french, 18th c']",1,"globe, celestial, french, 18th c","globe, celestial, french, 18th c","globe, celestial, french, 18th cs"
+"['gloves, pair of; handwear; accessories worn on the body; male', 'gloves']",3,"gloves, pair of; handwear; accessories worn on the body; male; gloves",gloves,gloves
+['graphic arts'],25,graphic arts,graphic arts,graphic arts
+['graters'],2,graters,graters,graters
+"['grater, potato; kitchen utensils', 'graters']",1,"grater, potato; kitchen utensils; graters",graters,graters
+"['grenade; ammunition, artillery; hand', 'grenades']",1,"grenade; ammunition, artillery; hand; grenades","grenade; ammunition, artillery; hand","grenade; ammunition, artillery; hands"
+['griddles'],2,griddles,griddles,griddles
+['guitars'],9,guitars,guitars,guitars
+"['guitars', 'english guitar', 'english guitar']",1,guitars; english guitar; english guitar,guitars,guitars
+"['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",1,"gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p; firearms; musket, miquelet lock",gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p,gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; ps
+['hackle'],1,hackle,hackle,hackles
+"['hand pumper', 'model, hand pumper']",1,"hand pumper; model, hand pumper",hand pumper,hand pumpers
+"['plane; carpenter joiner cabinetmaker; woodworking; planing tools; hand tools', 'hand tools', 'planes (tools)']",1,plane; carpenter joiner cabinetmaker; woodworking; planing tools; hand tools; hand tools; planes,hand tools,hand tools
+"['handkerchief, printed, copperplate']",1,"handkerchief, printed, copperplate","handkerchief, printed, copperplate","handkerchief, printed, copperplates"
+['handkerchiefs'],1,handkerchiefs,handkerchiefs,handkerchiefs
+"['handkerchief; accessories carried; female', 'handkerchiefs']",1,handkerchief; accessories carried; female; handkerchiefs,handkerchiefs,handkerchiefs
+"['handle, door']",2,"handle, door","handle, door","handle, doors"
+"['handle, door', 'door hardware']",1,"handle, door; door hardware","handle, door","handle, doors"
+['handles'],1,handles,handles,handles
+"['hanger, pigeon']",1,"hanger, pigeon","hanger, pigeon","hanger, pigeons"
+['hanging balance (beam)'],1,hanging balance,hanging balance,hanging balances
+"['hanging, printed']",2,"hanging, printed","hanging, printed","hanging, printeds"
+"['hanging, printed', 'toile, copperplate']",1,"hanging, printed; toile, copperplate","hanging, printed","hanging, printeds"
+"['harp, jaw', 'pattern tree']",1,"harp, jaw; pattern tree","harp, jaw","harp, jaws"
+['harpoons'],1,harpoons,harpoons,harpoons
+"['harpoon; maritime', 'harpoons']",1,harpoon; maritime; harpoons,harpoons,harpoons
+['harps (chordophones)'],2,harps,harps,harps
+['harpsichord'],1,harpsichord,harpsichord,harpsichords
+['harrows'],1,harrows,harrows,harrows
+"['hatchet, small hand']",1,"hatchet, small hand","hatchet, small hand","hatchet, small hands"
+['hats'],3,hats,hats,hats
+"['hats', 'hat; headwear; accessories worn on the body; woman; 1920 00 00+, 1925 00 00']",1,"hats; hat; headwear; accessories worn on the body; woman; 1920 00 00+, 1925 00 00",hats,hats
+"['hat; headwear; accessories worn on the body; male', 'hats']",1,hat; headwear; accessories worn on the body; male; hats,hats,hats
+['highchair'],2,highchair,highchair,highchairs
+"['holder, cigar', 'holder, cigar; smoking equipment']",1,"holder, cigar; holder, cigar; smoking equipment","holder, cigar",pipes
+"['holder, cigar', 'fragments, pipe', 'holder, cigar; smoking equipment']",1,"holder, cigar; fragments, pipe; holder, cigar; smoking equipment","holder, cigar",pipes
+"['holder, cigar']",1,"holder, cigar","holder, cigar","holder, cigars"
+"['holder, crayon']",1,"holder, crayon","holder, crayon","holder, crayons"
+"['holder, whetstone']",1,"holder, whetstone","holder, whetstone","holder, whetstones"
+"['hook, fireplace']",1,"hook, fireplace","hook, fireplace","hook, fireplaces"
+"['hook, ox yoke']",1,"hook, ox yoke","hook, ox yoke","hook, ox yokes"
+"['hook, pot']",6,"hook, pot","hook, pot","hook, pots"
+"['hook, shelf']",1,"hook, shelf","hook, shelf","hook, shelves"
+['hooks (fasteners)'],2,hooks,hooks,hooks
+"['hornbooks', 'hornbook']",1,hornbooks; hornbook,hornbooks,hornbooks
+['horn (animal material)'],3,horn,horn,horns
+"['horn; accoutrements', 'horn (animal material)', 'powder horns']",2,horn; accoutrements; horn; powder horns,horn,horns
+"['horn (animal material)', 'horn; general collection']",1,horn; horn; general collection,horn,horns
+"['horn, priming', 'horn (animal material)', 'horn, priming; accoutrements', 'powder horns']",1,"horn, priming; horn; horn, priming; accoutrements; powder horns",horn,horns
+"['housewife', 'needlework kit']",1,housewife; needlework kit,housewife,housewives
+['hurdy gurdy'],1,hurdy gurdy,hurdy gurdy,hurdy gurdies
+"['husker, corn']",1,"husker, corn","husker, corn","husker, corns"
+['hydrometer'],2,hydrometer,hydrometer,hydrometers
+['icon'],22,icon,icon,icons
+"['icon, crucifix', 'icon']",1,"icon, crucifix; icon",icon,icons
+"['impression', 'impression; trial']",1,impression; impression; trial,impression,impressions
+['inkstands'],2,inkstands,inkstands,inkstands
+['inkwells'],2,inkwells,inkwells,inkwells
+"['insignias', 'insignia; insignia; army; epaulette; officer']",1,insignias; insignia; insignia; army; epaulette; officer,insignias,insignias
+"['insignias', 'insignia; army; epaulette']",1,insignias; insignia; army; epaulette,insignias,insignias
+"['insignias', 'insignia; army; sash; officer']",1,insignias; insignia; army; sash; officer,insignias,insignias
+['instrument case'],1,instrument case,instrument case,instrument cases
+"['insurance policy, fly']",1,"insurance policy, fly","insurance policy, fly","insurance policy, flies"
+"['invitation', 'invitation; manuscript, printed']",1,"invitation; invitation; manuscript, printed",invitation,invitations
+"['iron, branding', 'branding iron']",1,"iron, branding; branding iron","iron, branding","iron, brandings"
+"['iron, wafer']",3,"iron, wafer","iron, wafer","iron, wafers"
+"['iron, waffle']",4,"iron, waffle","iron, waffle","iron, waffles"
+"['iron (metal)', 'wafer iron, religious']",1,"iron; wafer iron, religious",iron,irons
+"['dice, ivory', 'ivory (tooth component)', 'dice']",1,"dice, ivory; ivory; dice",ivory,ivories
+"['fids', 'ivory (tooth component)']",1,fids; ivory,ivory,ivories
+['jackets (garments)'],2,jackets,jackets,jackets
+"['jacket; upper body; main dress; female', 'jackets (garments)']",1,jacket; upper body; main dress; female; jackets,jackets,dresses
+"['jacket; upper body; main dress; female; sport; riding', 'jackets (garments)']",1,jacket; upper body; main dress; female; sport; riding; jackets,jackets,dresses
+"['jackets (garments)', 'jacket; upper body; main dress; female?']",1,jackets; jacket; upper body; main dress; female?,jackets,dresses
+"['jar, apothecary, syrup']",2,"jar, apothecary, syrup","jar, apothecary, syrup","jar, apothecary, syrups"
+"['jar, leech, apothecary', 'leech jar; materia medica; containers', 'leech jars']",2,"jar, leech, apothecary; leech jar; materia medica; containers; leech jars","jar, leech, apothecary","jar, leech, apothecaries"
+"['syrup jar', 'jar; pharmaceutical container']",7,syrup jar; jar; pharmaceutical container,jar; pharmaceutical container,jar; pharmaceutical containers
+"['jars', 'jar; pharmaceutical container']",111,jars; jar; pharmaceutical container,jars,jars
+['jars'],87,jars,jars,jars
+"['jar; pharmaceutical container', 'jars']",32,jar; pharmaceutical container; jars,jars,jars
+"['syrup jar', 'jars']",13,syrup jar; jars,jars,jars
+"['albarello', 'jars']",9,albarello; jars,jars,jars
+"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']",6,jar; pharmaceuticals; containers; pharmaceutical container; jars,jars,jars
+"['syrup jar', 'jar; pharmaceutical container', 'jars']",5,syrup jar; jar; pharmaceutical container; jars,jars,jars
+"['flask; jar; pharmaceutical container', 'jars']",3,flask; jar; pharmaceutical container; jars,jars,jars
+"['jars', 'jar, albarello']",3,"jars; jar, albarello",jars,jars
+"['jars', 'jar, albarello', 'jar; pharmaceutical container']",1,"jars; jar, albarello; jar; pharmaceutical container",jars,jars
+"['albarello', 'jars', 'jar; pharmaceutical container']",1,albarello; jars; jar; pharmaceutical container,jars,jars
+"['jars', 'pharmaceutical container']",1,jars; pharmaceutical container,jars,jars
+"['medicine', 'syrup jar', 'jars', 'jar; pharmaceutical container']",1,medicine; syrup jar; jars; jar; pharmaceutical container,jars,jars
+"['pitchers (vessels)', 'jars']",1,pitchers; jars,jars,jars
+"['syrup jar', 'syrup jar', 'jars']",1,syrup jar; syrup jar; jars,jars,jars
+"['bottle; jar; pharmaceutical container', 'jars']",1,bottle; jar; pharmaceutical container; jars,jars,jars
+"['jar; pharmaceutical container; syrup', 'jars']",1,jar; pharmaceutical container; syrup; jars,jars,jars
+"['bottles', 'jars']",1,bottles; jars,jars,jars
+"['bottles', 'jars', 'jar; pharmaceutical container']",1,bottles; jars; jar; pharmaceutical container,jars,jars
+"['bottles', 'jars', 'jar; bottle; pharmaceutical container']",1,bottles; jars; jar; bottle; pharmaceutical container,jars,jars
+"['jar; bottle; pharmaceutical container', 'jars']",1,jar; bottle; pharmaceutical container; jars,jars,jars
+"['syrup jar, pitcher', 'jars']",1,"syrup jar, pitcher; jars",jars,jars
+"['flask; pharmaceutical container', 'flasks (bottles)', 'jars']",1,flask; pharmaceutical container; flasks; jars,jars,jars
+"['jars', 'bottle; jar; pharmaceutical container']",1,jars; bottle; jar; pharmaceutical container,jars,jars
+"['jars', 'jar; bottle; pharmaceutical container']",1,jars; jar; bottle; pharmaceutical container,jars,jars
+"['jar, butter', 'butter jar', 'jars']",1,"jar, butter; butter jar; jars",jars,jars
+"['jelly mold', 'jelly mold core', 'jelly mold core']",1,jelly mold; jelly mold core; jelly mold core,jelly mold core,jelly mold cores
+['jesse ramsden (portrait print)'],1,jesse ramsden,jesse ramsden,jesse ramsdens
+"['earrings', 'earrings, pair of', 'jewelry', 'earrings, pair of; female']",1,"earrings; earrings, pair of; jewelry; earrings, pair of; female",jewelry,jewelries
+"['earrings', 'earrings, pair of', 'earrings, pair of; jewelry; accessories worn on the body; female', 'jewelry']",1,"earrings; earrings, pair of; earrings, pair of; jewelry; accessories worn on the body; female; jewelry",jewelry,jewelries
+"['jewelry fragments', 'jewelry fragments; male']",1,jewelry fragments; jewelry fragments; male,jewelry fragments,jewelry fragments
+['journals (accounts)'],1,journals,journals,journals
+['jugs (vessels)'],13,jugs,jugs,jugs
+['kettles (vessels)'],2,kettles,kettles,kettles
+"['kit, obstetrical', 'obstetrical kit', 'kit, obstetrical; medicine', 'instrument set, obstetrical']",1,"kit, obstetrical; obstetrical kit; kit, obstetrical; medicine; instrument set, obstetrical","kit, obstetrical","kit, obstetricals"
+['knife sharperner'],1,knife sharperner,knife sharperner,knife sharperners
+['knives'],5,knives,knives,knives
+['label'],1,label,label,labels
+"['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",1,"lace pillow, lace; lace pillow, lace, pattern; pillow, lace","lace pillow, lace","lace pillow, laces"
+"['lace, border, fragment']",2,"lace, border, fragment","lace, border, fragment","lace, border, fragments"
+['lace (needlework)'],7,lace,lace,laces
+"['lace, border', 'lace (needlework)']",5,"lace, border; lace",lace,laces
+"['lace (needlework)', 'lace, border, fragment']",5,"lace; lace, border, fragment",lace,laces
+"['lace (needlework)', 'lace, lappet']",3,"lace; lace, lappet",lace,laces
+"['lace (needlework)', 'lace, flounce']",3,"lace; lace, flounce",lace,laces
+"['lace (needlework)', 'lace, scarf']",1,"lace; lace, scarf",lace,laces
+"['lace (needlework)', 'lace, lappets']",1,"lace; lace, lappets",lace,laces
+"['lace (needlework)', 'lace, sample']",1,"lace; lace, sample",lace,laces
+"['lace (needlework)', 'lace, trim']",1,"lace; lace, trim",lace,laces
+"['lace, collar', 'lace (needlework)']",1,"lace, collar; lace",lace,laces
+"['lace (needlework)', 'lace, fragment']",1,"lace; lace, fragment",lace,laces
+"['lace (needlework)', 'lace, border fragment', 'lace, border, fragment']",1,"lace; lace, border fragment; lace, border, fragment",lace,laces
+"['lace, cap back', 'lace (needlework)']",1,"lace, cap back; lace",lace,laces
+"['cap, lace', 'lace (needlework)']",1,"cap, lace; lace",lace,laces
+"['ladle, salting']",1,"ladle, salting","ladle, salting","ladle, saltings"
+"['ladle, snuff']",1,"ladle, snuff","ladle, snuff","ladle, snufves"
+['ladles'],24,ladles,ladles,ladles
+"['flatware, set, part of', 'ladles']",1,"flatware, set, part of; ladles",ladles,ladles
+"['lamp, hanging']",1,"lamp, hanging","lamp, hanging","lamp, hangings"
+['lamps (lighting devices)'],1,lamps,lamps,lamps
+"['lamps (lighting devices)', 'lighting devices', '<lamps by fuel>', 'lamp; lighting devices; whale oil']",1,lamps; lighting devices; <lamps by fuel>; lamp; lighting devices; whale oil,lamps,lamps
+"['lamps (lighting devices)', 'oil lamps']",1,lamps; oil lamps,lamps,lamps
+['lancet'],1,lancet,lancet,lancets
+['land deed'],1,land deed,land deed,land deeds
+"['langrage', 'langrage?; underwater']",1,langrage; langrage?; underwater,langrage,langrages
+['lantern slide'],1,lantern slide,lantern slide,lantern slides
+['lanterns (lighting devices)'],1,lanterns,lanterns,lanterns
+"[""lathe, jeweler's"", 'lathes']",1,"lathe, jeweler's; lathes","lathe, jeweler's","lathe, jeweler's"
+"['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",1,"launcher, grenade; launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa","launcher, grenade","launcher, grenades"
+['lectern'],1,lectern,lectern,lecterns
+['ledger'],1,ledger,ledger,ledgers
+"['legging, lower']",1,"legging, lower","legging, lower","legging, lowers"
+"['letter or account', 'account', 'letter; letter or account; sheets (paper); manuscript']",1,letter or account; account; letter; letter or account; sheets ; manuscript,letter or account,letter or accounts
+"['sheet, paper', 'broadsides (notices)', 'lithography', 'letterpress', 'shee, paper']",1,"sheet, paper; broadsides; lithography; letterpress; shee, paper",letterpress,letterpress
+['level (wye)'],1,level,level,levels
+['license plate'],3,license plate,license plate,license plates
+"['lifter, pot']",2,"lifter, pot","lifter, pot","lifter, pots"
+"['lighter; fire making apparatus', 'lighter']",1,lighter; fire making apparatus; lighter,lighter; fire making apparatus,lighter; fire making apparatuses
+['lithographs'],7,lithographs,lithographs,lithographs
+"['lock, well bucket']",1,"lock, well bucket","lock, well bucket","lock, well buckets"
+['lottery tickets'],8,lottery tickets,lottery tickets,lottery tickets
+"['maagazine cover', 'cartoon', 'magazine cover']",1,maagazine cover; cartoon; magazine cover,maagazine cover,maagazine covers
+"['mace; edged weapons', 'maces']",1,mace; edged weapons; maces,mace; edged weapons,mace; edged weapons
+"['machine tool, metalworking, lathe, pole', 'pole lathe']",1,"machine tool, metalworking, lathe, pole; pole lathe","machine tool, metalworking, lathe, pole","machine tool, metalworking, lathe, poles"
+"['magnifying glasses', 'microscope, hand held, set']",1,"magnifying glasses; microscope, hand held, set",magnifying glasses,magnifying glasses
+['mail processing equipment'],5,mail processing equipment,mail processing equipment,mail processing equipments
+"['entire body', 'dresses (garments)', 'main garments']",2,entire body; dresses; main garments,main garments,dresses
+"['vests (garments)', 'upper body', 'main garments']",1,vests; upper body; main garments,main garments,main garments
+"['entire body', 'dresses (garments)', 'main garments', 'dress, 2 piece; entire body; main dress; female']",1,"entire body; dresses; main garments; dress, 2 piece; entire body; main dress; female",main garments,dresses
+"['dress, 3 piece', 'entire body', 'dresses (garments)', 'main garments', 'dress, 3 piece; entire body; main dress; female']",1,"dress, 3 piece; entire body; dresses; main garments; dress, 3 piece; entire body; main dress; female",main garments,dresses
+"['suits (main garments)', 'suit, 3 piece; entire body; main dress; male', 'suit, 3 piece', 'main garments']",1,"suits; suit, 3 piece; entire body; main dress; male; suit, 3 piece; main garments",main garments,dresses
+"['suit, 2 piece; entire body; main dress; male', 'entire body', 'suits (main garments)', 'suit, 2 piece', 'main garments']",1,"suit, 2 piece; entire body; main dress; male; entire body; suits; suit, 2 piece; main garments",main garments,dresses
+['mallets (tools)'],1,mallets,mallets,mallets
+['mangle board'],6,mangle board,mangle board,mangle boards
+['manuscripts'],4,manuscripts,manuscripts,manuscripts
+"['manuscript; documents', 'manuscripts']",1,manuscript; documents; manuscripts,manuscripts,manuscripts
+"['copybooks', 'pamphlet; manuscript', 'manuscripts']",1,copybooks; pamphlet; manuscript; manuscripts,manuscripts,manuscripts
+['maps'],16,maps,maps,maps
+"['graphic arts', 'maps']",3,graphic arts; maps,maps,maps
+"['planisphere', 'maps']",1,planisphere; maps,maps,maps
+"['archival materials', 'maps']",1,archival materials; maps,maps,maps
+"['maps', 'map; maritime']",1,maps; map; maritime,maps,maps
+"['masher, potato', 'potato masher; kitchen utensils']",1,"masher, potato; potato masher; kitchen utensils","masher, potato","masher, potatos"
+"['masher, potato']",1,"masher, potato","masher, potato","masher, potatos"
+['masticator'],1,masticator,masticator,masticators
+"['match box; fire making apparatus', 'matchbox']",1,match box; fire making apparatus; matchbox,match box; fire making apparatus,match box; fire making apparatuses
+['matchbook'],2,matchbook,matchbook,matchbooks
+"['materials, construction']",1,"materials, construction","materials, construction","materials, constructions"
+"['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",1,maul club; maul club; woodworking; striking & prizing tools; hand tools,maul club,maul clubs
+"['mauls (striking tools)', 'maul; woodworking; striking & prizing tools; hand tools']",1,mauls; maul; woodworking; striking & prizing tools; hand tools,mauls,mauls
+['measure'],24,measure,measure,measures
+"['measure', 'measure, pint']",1,"measure; measure, pint",measure,measures
+"['measure', 'measure, half pint']",1,"measure; measure, half pint",measure,measures
+"['measure', 'measure, half gill']",1,"measure; measure, half gill",measure,measures
+"['measure', 'measure, quarter gill']",1,"measure; measure, quarter gill",measure,measures
+"['medal, political']",1,"medal, political","medal, political","medal, politicals"
+"['medal; personal; commemorative', 'medallions (medals)']",1,medal; personal; commemorative; medallions,medal; personal; commemorative,medal; personal; commemoratives
+['medalet'],1,medalet,medalet,medalets
+['medallions (medals)'],2,medallions,medallions,medallions
+['medals'],170,medals,medals,medals
+"['medal; commemorative', 'medals']",17,medal; commemorative; medals,medals,medals
+"['medal; presidential', 'medals']",11,medal; presidential; medals,medals,medals
+"['medal; personal', 'medals']",10,medal; personal; medals,medals,medals
+"['medal; personal; commemorative', 'medals']",10,medal; personal; commemorative; medals,medals,medals
+"['medal; commemorative; personal', 'medals']",7,medal; commemorative; personal; medals,medals,medals
+"['medals', 'tokens']",5,medals; tokens,medals,medals
+"['galvano', 'medals', 'medal shell']",2,galvano; medals; medal shell,medals,medals
+"['medal; presidential; indian peace', 'medals']",2,medal; presidential; indian peace; medals,medals,medals
+"['medal; indian peace; presidential', 'medals']",2,medal; indian peace; presidential; medals,medals,medals
+"['button', 'medals']",2,button; medals,medals,medals
+"['medal; indian peace, washington; presidential', 'medals']",2,"medal; indian peace, washington; presidential; medals",medals,medals
+"['medal; commemorative; personal; comitia americana', 'medals']",2,medal; commemorative; personal; comitia americana; medals,medals,medals
+"['medal; indian peace, washington; indian peace medal', 'medals']",1,"medal; indian peace, washington; indian peace medal; medals",medals,medals
+"['medal; personal; commemorative; comitia americana', 'medals']",1,medal; personal; commemorative; comitia americana; medals,medals,medals
+"['medal; medalet; presidential', 'medalet', 'medals']",1,medal; medalet; presidential; medalet; medals,medals,medals
+"['medal; commemorative; personal; trial', 'medals']",1,medal; commemorative; personal; trial; medals,medals,medals
+"['tokens', 'medals']",1,tokens; medals,medals,medals
+"['medicine chest; medicine case', 'medicine case', 'medicine chest']",1,medicine chest; medicine case; medicine case; medicine chest,medicine chest,medicine chests
+"['medicine chest', 'medical chest']",1,medicine chest; medical chest,medicine chest,medicine chests
+"['bandages, lint', 'medicine chest', 'medicine chest']",1,"bandages, lint; medicine chest; medicine chest",medicine chest,medicine chests
+"['mess kit', 'camp chest', 'mess kit; camp chest; equipment, individual']",1,"mess kit; camp chest; mess kit; camp chest; equipment, individual",mess kit,mess kits
+"['metallic tractors', ""tractors, perkins', batch of; medicine"", ""tractors, perkins', batch of""]",1,"metallic tractors; tractors, perkins', batch of; medicine; tractors, perkins', batch of",metallic tractors,metallic tractors
+"['mezzotints (prints)', 'print, mezzotint']",5,"mezzotints; print, mezzotint",mezzotints,mezzotints
+"['micrometer, bench', 'lathe, prototype model']",1,"micrometer, bench; lathe, prototype model","micrometer, bench","micrometer, benches"
+['microscopes'],6,microscopes,microscopes,microscopes
+"['milestone, philadelphia pittsburgh']",1,"milestone, philadelphia pittsburgh","milestone, philadelphia pittsburgh","milestone, philadelphia pittsburghs"
+['mills (equipment)'],1,mills,mills,mills
+"['mirror frame, part of', 'frame, mirror, part of']",1,"mirror frame, part of; frame, mirror, part of","mirror frame, part of","mirror frame, part oves"
+['mirrors'],9,mirrors,mirrors,mirrors
+"['mirror; furniture', 'mirrors']",5,mirror; furniture; mirrors,mirrors,mirrors
+"['mitten; clothing; early 19th century', 'mittens (handwear)']",1,mitten; clothing; early 19th century; mittens,mitten; clothing; early 19th century,mitten; clothing; early 19th centuries
+"['mitts, pair of; handwear; accessories worn on the body; female', 'mitts, pair of']",1,"mitts, pair of; handwear; accessories worn on the body; female; mitts, pair of","mitts, pair of; handwear; accessories worn on the body; female","mitts, pair of; handwear; accessories worn on the body; females"
+"['mixer, drink, bow drill']",1,"mixer, drink, bow drill","mixer, drink, bow drill","mixer, drink, bow drills"
+"['model, semaphore telegraph', 'semaphore model']",1,"model, semaphore telegraph; semaphore model","model, semaphore telegraph","model, semaphore telegraphs"
+"['ships', 'models']",2,ships; models,models,models
+"['figure, female', 'model, anatomical, fetus in utero', 'models', 'wax obstetric model', 'figure, female; medicine', 'wax']",2,"figure, female; model, anatomical, fetus in utero; models; wax obstetric model; figure, female; medicine; wax",models,models
+"['figure, female', 'models', 'model, anatomical, female, abdominal organs', 'wax obstetric model', 'figure, female; medicine', 'wax']",1,"figure, female; models; model, anatomical, female, abdominal organs; wax obstetric model; figure, female; medicine; wax",models,models
+"['figure, female', 'model, anatomical, viscera', 'models', 'wax obstetric model', 'figure, female; medicine', 'wax']",1,"figure, female; model, anatomical, viscera; models; wax obstetric model; figure, female; medicine; wax",models,models
+"['patents', 'patent model, velocipede; tricycle; road', 'models', 'patent model, velocipede']",1,"patents; patent model, velocipede; tricycle; road; models; patent model, velocipede",models,models
+"['mold, butter cheese, part of']",2,"mold, butter cheese, part of","mold, butter cheese, part of","mold, butter cheese, part oves"
+"['molds (shaping tools)', 'mold, butter cheese, part of']",1,"molds; mold, butter cheese, part of","mold, butter cheese, part of","mold, butter cheese, part oves"
+"['mold, butter, handle']",2,"mold, butter, handle","mold, butter, handle","mold, butter, handles"
+"['mold, butter']",3,"mold, butter","mold, butter","mold, butters"
+"['mold, cheese', 'mold, butter']",2,"mold, cheese; mold, butter","mold, butter","mold, butters"
+"['mold, button']",1,"mold, button","mold, button","mold, buttons"
+"['mold, cookie']",7,"mold, cookie","mold, cookie","mold, cookies"
+"['mold, cookie', 'mold, cookie']",1,"mold, cookie; mold, cookie","mold, cookie","mold, cookies"
+"['mold, cookie', 'board, cookie']",1,"mold, cookie; board, cookie","mold, cookie","mold, cookies"
+"['mold, gingerbread']",2,"mold, gingerbread","mold, gingerbread","mold, gingerbreads"
+"['mold, sugar']",1,"mold, sugar","mold, sugar","mold, sugars"
+['molds (shaping tools)'],1,molds,molds,molds
+['mortars (grinding tools)'],5,mortars,mortars,mortars
+"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",3,mortar; manufacturing & dispensing equip.; mortars,mortars,mortars
+['mortising machine'],1,mortising machine,mortising machine,mortising machines
+"['mould, lead and slug', 'type mould, lead and slug', 'mold, lead and slug']",1,"mould, lead and slug; type mould, lead and slug; mold, lead and slug","mould, lead and slug","mould, lead and slugs"
+['mousetraps'],1,mousetraps,mousetraps,mousetraps
+"['mouthpiece, pipe, tobacco']",1,"mouthpiece, pipe, tobacco","mouthpiece, pipe, tobacco",pipes
+"['muff; accessories carried; female', 'muffs']",1,muff; accessories carried; female; muffs,muff; accessories carried; female,muff; accessories carried; females
+['mugs'],15,mugs,mugs,mugs
+['music book'],1,music book,music book,music books
+['musical glasses'],1,musical glasses,musical glasses,musical glasses
+"['fusil', 'musket, flintlock']",1,"fusil; musket, flintlock","musket, flintlock","musket, flintlocks"
+"['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",1,"musket, flintlock; fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa; fussil","musket, flintlock","musket, flintlocks"
+"['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",1,"musket, flintlock; fussil; fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa","musket, flintlock","musket, flintlocks"
+"['muskets', 'musket, flintlock']",4,"muskets; musket, flintlock",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .75 in; smooth bore; muzzle load; sa']",3,"muskets; musket, flintlock; musket; firearms; flintlock; .75 in; smooth bore; muzzle load; sa",muskets,muskets
+"['muskets', 'musket; firearms; flintlock; .80 in; smooth bore; muzzle load; sa']",2,muskets; musket; firearms; flintlock; .80 in; smooth bore; muzzle load; sa,muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; caliber .72; center fire']",2,"muskets; musket, flintlock; musket; firearms; caliber .72; center fire",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .72 in; smooth bore; muzzle load; sa']",2,"muskets; musket, flintlock; musket; firearms; flintlock; .72 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",2,"musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa; muskets; musket, flintlock",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",2,"muskets; musket, flintlock; musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket, flintock', 'muskets', 'musket; firearms; caliber .69; flintlock']",1,"musket, flintock; muskets; musket; firearms; caliber .69; flintlock",muskets,muskets
+"['musket; firearms; caliber .78; center fire', 'muskets', 'musket, flintlock']",1,"musket; firearms; caliber .78; center fire; muskets; musket, flintlock",muskets,muskets
+"['musket; firearms; .78 caliber; flintlock', 'musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa', 'muskets']",1,musket; firearms; .78 caliber; flintlock; musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa; muskets,muskets,muskets
+"['musket, percussion conversion', 'muskets']",1,"musket, percussion conversion; muskets",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .73 in; smooth bore; muzzle load; sa']",1,"muskets; musket, flintlock; musket; firearms; flintlock; .73 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket; firearms; flintlock; .76 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1,"musket; firearms; flintlock; .76 in; smooth bore; muzzle load; sa; muskets; musket, flintlock",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .71 in; smooth bore; muzzle load; sa']",1,"muskets; musket, flintlock; musket; firearms; flintlock; .71 in; smooth bore; muzzle load; sa",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1,"muskets; musket, flintlock; musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket; firearms; percussion converted; .69 in; smooth bore; muzzle load; sa', 'musket, percussion conversion', 'muskets']",1,"musket; firearms; percussion converted; .69 in; smooth bore; muzzle load; sa; musket, percussion conversion; muskets",muskets,muskets
+"['musket, percussion conversion', 'muskets', 'musket; firearms; percussion converted; .75 in; smooth bore; muzzle load; sa']",1,"musket, percussion conversion; muskets; musket; firearms; percussion converted; .75 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1,"musket; firearms; flintlock; .82 in; smooth bore; muzzle load; sa; muskets; musket, flintlock",muskets,muskets
+"['musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa', 'muskets']",1,musket; firearms; flintlock; .78 in; smooth bore; muzzle load; sa; muskets,muskets,muskets
+"['muskets', 'musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",1,muskets; musket; firearms; flintlock; .69 in; smooth bore; muzzle load; sa,muskets,muskets
+"['t. french contract musket m. 1795', 'musket; t. french contract musket m. 1795; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'muskets', 'musket, flintlock']",1,"t. french contract musket m. 1795; musket; t. french contract musket m. 1795; firearms; flintlock; .69 in; smooth bore; muzzle load; sa; muskets; musket, flintlock",muskets,muskets
+"['muskets', 'musket; firearms; flintlock; .46 in; muzzle load; 00; sa']",1,muskets; musket; firearms; flintlock; .46 in; muzzle load; 00; sa,muskets,muskets
+"['musket; firearms; army; militia; flintlock; .72 in; smooth bore; mr; sa', 'muskets', 'musket, flintlock']",1,"musket; firearms; army; militia; flintlock; .72 in; smooth bore; mr; sa; muskets; musket, flintlock",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; army; flintlock; .75 in; smooth bore; muzzle load; sa']",1,"muskets; musket, flintlock; musket; firearms; army; flintlock; .75 in; smooth bore; muzzle load; sa",muskets,muskets
+"['muskets', 'musket, flintlock', 'musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa']",1,"muskets; musket, flintlock; musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket, percussion converted', 'musket, percussion conversion', 'muskets', 'musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa']",1,"musket, percussion converted; musket, percussion conversion; muskets; musket; firearms; army; flintlock; .70 in; smooth bore; muzzle load; sa",muskets,muskets
+"['musket; firearms; percussion converted; .70 in; smooth bore; muzzle load; sa', 'musket, percussion conversion', 'muskets']",1,"musket; firearms; percussion converted; .70 in; smooth bore; muzzle load; sa; musket, percussion conversion; muskets",muskets,muskets
+"['musket; firearms; flintlock; .70 in; smooth bore; ml; sa', 'muskets']",1,musket; firearms; flintlock; .70 in; smooth bore; ml; sa; muskets,muskets,muskets
+"['musket; firearms; flintlock; .79 in; smooth bore; ml; sa', 'muskets']",1,musket; firearms; flintlock; .79 in; smooth bore; ml; sa; muskets,muskets,muskets
+"['muskets', 'musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1,muskets; musket; firearms; flintlock; .70 in; smooth bore; muzzle load; sa,muskets,muskets
+"['musket; firearms; percussion converted; .72 in; smooth bore; muzzle load; sa', 'musket, percussion converted', 'muskets']",1,"musket; firearms; percussion converted; .72 in; smooth bore; muzzle load; sa; musket, percussion converted; muskets",muskets,muskets
+"['musket; edged weapons; army; socket', 'muskets', 'musket, flintlock']",1,"musket; edged weapons; army; socket; muskets; musket, flintlock",muskets,muskets
+['muster roll'],1,muster roll,muster roll,muster rolls
+"['nail file', 'personal hygiene product', 'necessaire', 'toothpicks', 'toilet accessory; toothbrush; ""necessaire""; dentistry', 'oral hygiene product', 'toothbrushes', 'ear spoon']",1,"nail file; personal hygiene product; necessaire; toothpicks; toilet accessory; toothbrush; ""necessaire""; dentistry; oral hygiene product; toothbrushes; ear spoon",nail file,nail files
+"['nails', 'nail; underwater']",3,nails; nail; underwater,nails,nails
+['napkins'],1,napkins,napkins,napkins
+['naturalization certificate'],1,naturalization certificate,naturalization certificate,naturalization certificates
+['nautical compass (tell tale)'],1,nautical compass,nautical compass,nautical compass
+"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",1,neckcloth?; neckwear; accessories worn on the body; female; neckcloth?,neckcloth?; neckwear; accessories worn on the body; female,neckcloth?; neckwear; accessories worn on the body; females
+"['neckcloth; neckwear; accessories worn on the body; male', 'neckcloth']",1,neckcloth; neckwear; accessories worn on the body; male; neckcloth,neckcloth,neckcloths
+"['necklaces', 'necklace; jewelry; accessories worn on the body; female']",2,necklaces; necklace; jewelry; accessories worn on the body; female,necklaces,necklaces
+"['neckwear', 'necktie; neckwear; accessories worn on the body; female']",2,neckwear; necktie; neckwear; accessories worn on the body; female,neckwear,neckwears
+"['needle, crochet', 'crochet hooks']",1,"needle, crochet; crochet hooks","needle, crochet","needle, crochets"
+"['needle, knitting']",6,"needle, knitting","needle, knitting","needle, knittings"
+['needleholder pincushion'],1,needleholder pincushion,needleholder pincushion,needleholder pincushions
+"['needlework, embroidery']",1,"needlework, embroidery","needlework, embroidery","needlework, embroideries"
+['newspaper clipping'],1,newspaper clipping,newspaper clipping,newspaper clippings
+"['newspaper page; printed', 'clipping, newspaper']",1,"newspaper page; printed; clipping, newspaper",newspaper page; printed,newspaper page; printeds
+['newspaper sheet'],1,newspaper sheet,newspaper sheet,newspaper sheets
+['newspapers'],31,newspapers,newspapers,newspapers
+"['newspaper; printed', 'newspapers']",7,newspaper; printed; newspapers,newspapers,newspapers
+"['newspapers', 'newspaper; print; letterpress']",5,newspapers; newspaper; print; letterpress,newspapers,newspapers
+"['newspapers', 'print; letterpress']",4,newspapers; print; letterpress,newspapers,newspapers
+"['print; newspaper; letterpress', 'newspapers']",3,print; newspaper; letterpress; newspapers,newspapers,newspapers
+"['newspapers', 'advertisement, william bond watches']",1,"newspapers; advertisement, william bond watches",newspapers,newspapers
+"['newspapers', 'newspaper; letterpress']",1,newspapers; newspaper; letterpress,newspapers,newspapers
+"['nippers, sugar']",1,"nippers, sugar","nippers, sugar","nippers, sugars"
+['nipple shield'],1,nipple shield,nipple shield,nipple shields
+['note'],2470,note,bank note,bank notes
+"['note', 'paper money']",35,note; paper money,bank note,bank notes
+"['note', 'bank note; 1780 05 05', 'bank note']",16,note; bank note; 1780 05 05; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1778 09 26']",11,note; bank note; bank note; 1778 09 26,bank note,bank notes
+"['note', 'bank note; 1776 06 19', 'bank note']",9,note; bank note; 1776 06 19; bank note,bank note,bank notes
+"['note', 'bank note; 1779 01 14', 'bank note']",9,note; bank note; 1779 01 14; bank note,bank note,bank notes
+"['note', 'bank note; 1776 03 25', 'bank note']",9,note; bank note; 1776 03 25; bank note,bank note,bank notes
+"['note', 'colonial note']",8,note; colonial note,bank note,bank notes
+"['note', 'continental currency']",8,note; continental currency,bank note,bank notes
+"['note', 'bank note; 1780 07 01', 'bank note']",8,note; bank note; 1780 07 01; bank note,bank note,bank notes
+"['note', 'bank note; 1776 00 00', 'bank note']",8,note; bank note; 1776 00 00; bank note,bank note,bank notes
+"['note', 'bank note; 1776 03 05', 'bank note']",8,note; bank note; 1776 03 05; bank note,bank note,bank notes
+"['note', 'paper currency']",8,note; paper currency,bank note,bank notes
+"['money', 'note']",7,money; note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1780 04 29']",6,note; bank note; bank note; 1780 04 29,bank note,bank notes
+"['note', 'bank note; 1776 06 07', 'bank note']",6,note; bank note; 1776 06 07; bank note,bank note,bank notes
+"['note', 'bank note; 1780 03 01', 'bank note']",6,note; bank note; 1780 03 01; bank note,bank note,bank notes
+"['bank note; 1776 02 17', 'note', 'bank note']",5,bank note; 1776 02 17; note; bank note,bank note,bank notes
+"['note', 'bank note; 1777 10 11', 'bank note']",5,note; bank note; 1777 10 11; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1777 06 08']",5,note; bank note; bank note; 1777 06 08,bank note,bank notes
+"['note', 'bank note; 1780 06 01', 'bank note']",5,note; bank note; 1780 06 01; bank note,bank note,bank notes
+"['note', 'bank note; 1780 06 28', 'bank note']",5,note; bank note; 1780 06 28; bank note,bank note,bank notes
+"['note', 'bank note; 1773 10 01', 'bank note']",4,note; bank note; 1773 10 01; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1781 03 01']",4,note; bank note; bank note; 1781 03 01,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 10 18']",4,note; bank note; bank note; 1776 10 18,bank note,bank notes
+"['note', 'bank note', 'bank note; 1773 04 01']",4,note; bank note; bank note; 1773 04 01,bank note,bank notes
+"['note', 'paper money', 'bank note']",3,note; paper money; bank note,bank note,bank notes
+"['note', 'bank note']",3,note; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1780 05 05']",3,note; bank note; bank note; 1780 05 05,bank note,bank notes
+"['continental currency', 'note', 'bank note; continental currency; 1775 05 10', 'bank note', 'continental currency']",3,continental currency; note; bank note; continental currency; 1775 05 10; bank note; continental currency,bank note,bank notes
+"['note', 'bank note', 'bank note; 1778 04 11']",3,note; bank note; bank note; 1778 04 11,bank note,bank notes
+"['note', 'bank note; 1775 05 10', 'bank note']",3,note; bank note; 1775 05 10; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 04 02']",3,note; bank note; bank note; 1776 04 02,bank note,bank notes
+"['note', 'bank note; 1775 04 10', 'bank note']",3,note; bank note; 1775 04 10; bank note,bank note,bank notes
+"['note', 'early american paper money']",3,note; early american paper money,bank note,bank notes
+"['note', 'bank note; 1780 07 02', 'bank note']",3,note; bank note; 1780 07 02; bank note,bank note,bank notes
+"['currency, continental, counterfeit', 'note']",2,"currency, continental, counterfeit; note",bank note,bank notes
+"['note', 'bank note', 'bank note; 1777 02 26']",2,note; bank note; bank note; 1777 02 26,bank note,bank notes
+"['note', 'bank note; 1775 05 25', 'bank note']",2,note; bank note; 1775 05 25; bank note,bank note,bank notes
+"['note', 'bank note; 1775 06 01', 'bank note']",2,note; bank note; 1775 06 01; bank note,bank note,bank notes
+"['note', 'bank note; 1774 04 10', 'bank note']",2,note; bank note; 1774 04 10; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1771 12 00']",2,note; bank note; bank note; 1771 12 00,bank note,bank notes
+"['note', 'bank note; 1776 12 23', 'bank note']",2,note; bank note; 1776 12 23; bank note,bank note,bank notes
+"['note', 'paper money', 'bank note', 'bank note; 1776 04 02']",2,note; paper money; bank note; bank note; 1776 04 02,bank note,bank notes
+"['uncut sheet', 'note']",1,uncut sheet; note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1781 05 07']",1,note; bank note; bank note; 1781 05 07,bank note,bank notes
+"['note', 'bank note; 1780 10 16', 'bank note']",1,note; bank note; 1780 10 16; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1786 05 00']",1,note; bank note; bank note; 1786 05 00,bank note,bank notes
+"['note', 'bank note; 1780 07 14', 'bank note']",1,note; bank note; 1780 07 14; bank note,bank note,bank notes
+"['note', 'receipt']",1,note; receipt,bank note,bank notes
+"['note', 'bank note', 'bank note; 1786 00 00']",1,note; bank note; bank note; 1786 00 00,bank note,bank notes
+"['note', 'bank note', 'bank note; 1777 10 20']",1,note; bank note; bank note; 1777 10 20,bank note,bank notes
+"['note', 'bill of exchange']",1,note; bill of exchange,bank note,bank notes
+"['note', 'bank note', 'bank note; 1779 02 08']",1,note; bank note; bank note; 1779 02 08,bank note,bank notes
+"['note', 'bank note', 'bank note; 1778 04 10']",1,note; bank note; bank note; 1778 04 10,bank note,bank notes
+"['note', 'bank note', 'bank note; 1775 09 01']",1,note; bank note; bank note; 1775 09 01,bank note,bank notes
+"['note', 'bank note; 1775 11 15', 'bank note']",1,note; bank note; 1775 11 15; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1775 11 15']",1,note; bank note; bank note; 1775 11 15,bank note,bank notes
+"['note; 1793 02 01', 'note']",1,note; 1793 02 01; note,bank note,bank notes
+"['note; 1775 08 02', 'note']",1,note; 1775 08 02; note,bank note,bank notes
+"['note', 'note; 1776 01 06']",1,note; note; 1776 01 06,bank note,bank notes
+"['note; 1789 07 06', 'note']",1,note; 1789 07 06; note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1790 00 00']",1,note; bank note; bank note; 1790 00 00,bank note,bank notes
+"['note', 'receipt; 1778 03 12', 'receipt']",1,note; receipt; 1778 03 12; receipt,bank note,bank notes
+"['note', 'note; 1788 03 20']",1,note; note; 1788 03 20,bank note,bank notes
+"['note; 1789 12 10', 'note']",1,note; 1789 12 10; note,bank note,bank notes
+"['note', 'note; 1788 02 15']",1,note; note; 1788 02 15,bank note,bank notes
+"['note', 'check']",1,note; check,bank note,bank notes
+"['note', 'bank note; 1781 04 20', 'bank note']",1,note; bank note; 1781 04 20; bank note,bank note,bank notes
+"['note', 'note; 1791 12 19']",1,note; note; 1791 12 19,bank note,bank notes
+"['note', 'note; 1786 04 01']",1,note; note; 1786 04 01,bank note,bank notes
+"['note', 'voucher']",1,note; voucher,bank note,bank notes
+"['note', 'bill of exchange', 'bill of exchange; 178? 00 00']",1,note; bill of exchange; bill of exchange; 178? 00 00,bank note,bank notes
+"['note', 'paper currency, united states, 1 3', 'paper currency']",1,"note; paper currency, united states, 1 3; paper currency",bank note,bank notes
+"['note', 'bill of exchange', 'note; 178? 00 00']",1,note; bill of exchange; note; 178? 00 00,bank note,bank notes
+"['note', 'colonial', 'bank note; colonial; 1773 06 01']",1,note; colonial; bank note; colonial; 1773 06 01,bank note,bank notes
+"['note', 'bank note; 1777 05 20', 'bank note']",1,note; bank note; 1777 05 20; bank note,bank note,bank notes
+"['note', 'bank note; 1776 11 02', 'bank note']",1,note; bank note; 1776 11 02; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 07 22']",1,note; bank note; bank note; 1776 07 22,bank note,bank notes
+"['note', 'bank note; 1776 05 09', 'bank note']",1,note; bank note; 1776 05 09; bank note,bank note,bank notes
+"['uncut sheet', 'note', 'bank note; 1777 10 11', 'bank note']",1,uncut sheet; note; bank note; 1777 10 11; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1780 06 01']",1,note; bank note; bank note; 1780 06 01,bank note,bank notes
+"['continental currency', 'note', 'continental currency; bank note; 1775 05 10', 'bank note', 'continental currency']",1,continental currency; note; continental currency; bank note; 1775 05 10; bank note; continental currency,bank note,bank notes
+"['bank note; 1776 02 17', 'note']",1,bank note; 1776 02 17; note,bank note,bank notes
+"['note', 'bank note; 1776 01 01', 'bank note']",1,note; bank note; 1776 01 01; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1775 12 07']",1,note; bank note; bank note; 1775 12 07,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 03 05']",1,note; bank note; bank note; 1776 03 05,bank note,bank notes
+"['note', 'bank note', 'bank note; 1775 09 02']",1,note; bank note; bank note; 1775 09 02,bank note,bank notes
+"['note', 'bank note', 'bank note; 1771 02 16']",1,note; bank note; bank note; 1771 02 16,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 03 25']",1,note; bank note; bank note; 1776 03 25,bank note,bank notes
+"['note', 'bank note; 1779 00 00', 'bank note']",1,note; bank note; 1779 00 00; bank note,bank note,bank notes
+"['note', 'paper money', 'bank note', 'bank note; 1776 10 18']",1,note; paper money; bank note; bank note; 1776 10 18,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 08 13']",1,note; bank note; bank note; 1776 08 13,bank note,bank notes
+"['note', 'bank note; 1780 05 10', 'bank note']",1,note; bank note; 1780 05 10; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1779 05 15']",1,note; bank note; bank note; 1779 05 15,bank note,bank notes
+"['note', 'bank note; 1778 08 08', 'bank note']",1,note; bank note; 1778 08 08; bank note,bank note,bank notes
+"['note', 'paper money', 'bank note', 'bank note; 1771 12 00']",1,note; paper money; bank note; bank note; 1771 12 00,bank note,bank notes
+"['note', 'bank note; 1777 00 00', 'bank note']",1,note; bank note; 1777 00 00; bank note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1777 09 10']",1,note; bank note; bank note; 1777 09 10,bank note,bank notes
+"['note', 'bank note', 'bank note; 1776 08 14']",1,note; bank note; bank note; 1776 08 14,bank note,bank notes
+"['note', 'bank note; 1777 03 01', 'bank note']",1,note; bank note; 1777 03 01; bank note,bank note,bank notes
+"['note', 'paper money', 'bank note', 'bank note; 1777 06 08']",1,note; paper money; bank note; bank note; 1777 06 08,bank note,bank notes
+"['note', 'paper money', 'colonial note']",1,note; paper money; colonial note,bank note,bank notes
+"['note', 'bank note', 'bank note; 1775 08 18']",1,note; bank note; bank note; 1775 08 18,bank note,bank notes
+"['continental currency', 'note']",1,continental currency; note,bank note,bank notes
+"['note', 'paper money', 'obsolete bank note']",1,note; paper money; obsolete bank note,bank note,bank notes
+"['note', 'note; manuscript']",1,note; note; manuscript,bank note,bank notes
+['nyckelharpa'],1,nyckelharpa,nyckelharpa,nyckelharpas
+['oath of allegiance'],1,oath of allegiance,oath of allegiance,oath of allegiances
+['oboes'],2,oboes,oboes,oboes
+['obsolete paper money'],5,obsolete paper money,obsolete paper money,obsolete paper moneys
+['octant'],7,octant,octant,octants
+"['maritime; navigation', 'octant']",1,maritime; navigation; octant,octant,octants
+['optical flat'],1,optical flat,optical flat,optical flats
+"['order', 'order']",1,order; order,order,orders
+['organ'],1,organ,organ,organs
+"['ornament, flagstaff', 'finial, staff; 41cc, sullivan, michael d']",1,"ornament, flagstaff; finial, staff; 41cc, sullivan, michael d","ornament, flagstaff","ornament, flagstafves"
+['orreries'],2,orreries,orreries,orreries
+"['orrery   tellurian', 'orreries']",1,orrery tellurian; orreries,orreries,orreries
+['orrery   tellurian'],1,orrery tellurian,orrery tellurian,orrery tellurians
+"['oven, dutch']",3,"oven, dutch","oven, dutch","oven, dutches"
+['oyster jar'],1,oyster jar,oyster jar,oyster jars
+"['pad, kiln']",1,"pad, kiln","pad, kiln","pad, kilns"
+"['paddle, butter']",1,"paddle, butter","paddle, butter","paddle, butters"
+"['paddle, stirring']",1,"paddle, stirring","paddle, stirring","paddle, stirrings"
+['paddles (watercraft equipment)'],1,paddles,paddles,paddles
+"['page, workbook']",1,"page, workbook","page, workbook","page, workbooks"
+"['painting, certificate', 'painting; pictures; watercolor; fraktur']",1,"painting, certificate; painting; pictures; watercolor; fraktur","painting, certificate","painting, certificates"
+"['painting, glass transfer', 'painting; reverse on glass']",2,"painting, glass transfer; painting; reverse on glass","painting, glass transfer","painting, glass transfers"
+"['painting; pictures; reverse on glass; portrait', 'painting, glass transfer']",1,"painting; pictures; reverse on glass; portrait; painting, glass transfer","painting, glass transfer","painting, glass transfers"
+"['painting, portrait']",1,"painting, portrait","painting, portrait","painting, portraits"
+['paintings'],297,paintings,paintings,paintings
+"['miniatures', 'paintings']",20,miniatures; paintings,paintings,paintings
+"['paintings', 'folk art']",8,paintings; folk art,paintings,paintings
+"['paintings', 'exterior views']",6,paintings; exterior views,paintings,paintings
+"['paintings', 'painting; pictures; watercolor']",2,paintings; painting; pictures; watercolor,paintings,paintings
+"['paintings', 'painting; pictures; oil on canvas; portrait']",2,paintings; painting; pictures; oil on canvas; portrait,paintings,paintings
+"['paintings', 'portraits']",2,paintings; portraits,paintings,paintings
+"['paintings', 'painting, portrait']",1,"paintings; painting, portrait",paintings,paintings
+"['paintings', 'painting, portrait', 'portraits']",1,"paintings; painting, portrait; portraits",paintings,paintings
+"['paintings', 'painting; pictures; watercolor; mourning']",1,paintings; painting; pictures; watercolor; mourning,paintings,paintings
+"['paintings', 'painting; pictures; watercolor; landscape']",1,paintings; painting; pictures; watercolor; landscape,paintings,paintings
+"['paintings', 'painting; pictures; oil on canvas; 392,912; portrait']",1,"paintings; painting; pictures; oil on canvas; 392,912; portrait",paintings,paintings
+"['paintings', 'painting; pictures; oil on canvas; 59.316; portrait']",1,paintings; painting; pictures; oil on canvas; 59.316; portrait,paintings,paintings
+"['paintings', 'painting; pictures']",1,paintings; painting; pictures,paintings,paintings
+"['painting; pictures; oil on board; portrait', 'paintings']",1,painting; pictures; oil on board; portrait; paintings,paintings,paintings
+"['paintings', 'sheet (paper); no #020; painting; watercolor; fraktur']",1,paintings; sheet ; no #020; painting; watercolor; fraktur,paintings,paintings
+['pamphlets'],9,pamphlets,pamphlets,pamphlets
+"['pamphlets; manuscript', 'pamphlets', 'manuscripts']",2,pamphlets; manuscript; pamphlets; manuscripts,pamphlets,pamphlets
+"['pamphlet; relief', 'pamphlets']",1,pamphlet; relief; pamphlets,pamphlets,pamphlets
+"['reliefs (sculpture)', 'pamphlets']",1,reliefs; pamphlets,pamphlets,pamphlets
+"['booklets', 'reliefs (sculpture)', 'pamphlets']",1,booklets; reliefs; pamphlets,pamphlets,pamphlets
+"['pan, baking']",1,"pan, baking","pan, baking","pan, bakings"
+"['pan, close stool']",3,"pan, close stool","pan, close stool","pan, close stools"
+"['pan, close stool', 'pot, commode']",1,"pan, close stool; pot, commode","pan, close stool","pan, close stools"
+"['pan, frying']",2,"pan, frying","pan, frying","pan, fryings"
+"['panel, printed']",1,"panel, printed","panel, printed","panel, printeds"
+"['panel, religious']",1,"panel, religious","panel, religious","panel, religiouses"
+['pans (containers)'],2,pans,pans,pans
+['pantograph'],2,pantograph,pantograph,pantographs
+['pap boat'],1,pap boat,pap boat,pap boats
+['paper currency'],6,paper currency,paper currency,paper currencies
+['paper money'],7,paper money,paper money,paper moneys
+"['obsolete paper money', 'paper money']",1,obsolete paper money; paper money,paper money,paper moneys
+"['currency sheet', 'paper money']",1,currency sheet; paper money,paper money,paper moneys
+"['paperweight, footed', 'paperweights']",1,"paperweight, footed; paperweights","paperweight, footed","paperweight, footeds"
+['patent license'],1,patent license,patent license,patent licenses
+['patent'],1,patent,patent,patents
+"[""pattern book, weaver's""]",1,"pattern book, weaver's","pattern book, weaver's","pattern book, weaver's"
+"['pattern, lace']",1,"pattern, lace","pattern, lace","pattern, laces"
+['pay order'],2,pay order,pay order,pay orders
+"['pendant; jewelry; accessories worn on the body; female', 'pendants (jewelry)']",2,pendant; jewelry; accessories worn on the body; female; pendants,pendants,pendants
+['pendants (jewelry)'],1,pendants,pendants,pendants
+['pennants'],2,pennants,pennants,pennants
+"['pennants', 'guidon; flag; military; army; dragoon, light; rgt 2']",1,"pennants; guidon; flag; military; army; dragoon, light; rgt 2",pennants,pennants
+['pens (drawing and writing)'],3,pens,pens,pens
+"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']",1,perfume bottle; cosmetics; accessories for the care of the person; perfume bottle; accessories for care of the person,perfume bottle,perfume bottles
+['periodicals'],1,periodicals,periodicals,periodicals
+['pestles'],2,pestles,pestles,pestles
+"['pestle; kitchen utensils', 'pestles']",1,pestle; kitchen utensils; pestles,pestles,pestles
+"['underwear', 'lower body', 'petticoats (underskirts)', 'petticoat; lower body; underwear; female']",2,underwear; lower body; petticoats; petticoat; lower body; underwear; female,petticoats,petticoats
+['petticoats (underskirts)'],1,petticoats,petticoats,petticoats
+"['slip; entire body; underwear; female', 'slip', 'slip', 'petticoats (underskirts)']",1,slip; entire body; underwear; female; slip; slip; petticoats,petticoats,petticoats
+"['petticoats (underskirts)', 'petticoat; lower body; underwear; female']",1,petticoats; petticoat; lower body; underwear; female,petticoats,petticoats
+['pharmaceutical measure'],1,pharmaceutical measure,pharmaceutical measure,pharmaceutical measures
+"['photograph, black and white']",1,"photograph, black and white","photograph, black and white","photograph, black and whites"
+['photographs'],1,photographs,photographs,photographs
+"['photographs, set of']",1,"photographs, set of","photographs, set of","photographs, set oves"
+['pianos'],43,pianos,pianos,pianos
+"['picture, embroidered']",1,"picture, embroidered","picture, embroidered","picture, embroidereds"
+"['picture, mourning']",1,"picture, mourning","picture, mourning","picture, mournings"
+['piggin'],1,piggin,piggin,piggins
+['pillowcases'],1,pillowcases,pillowcases,pillowcases
+"['rolling pin; kitchen utensils', 'pin, rolling']",1,"rolling pin; kitchen utensils; pin, rolling","pin, rolling","pin, rollings"
+"['pin, rolling']",1,"pin, rolling","pin, rolling","pin, rollings"
+['pins (fasteners)'],1,pins,pins,pins
+['pins'],1,pins,pins,pins
+"['pipe bowl; smoking equipment', 'bowl, pipe']",2,"pipe bowl; smoking equipment; bowl, pipe",pipe bowl; smoking equipment,pipes
+['pipe tamper'],1,pipe tamper,pipe tamper,pipes
+"['pipe, smoking']",1,"pipe, smoking","pipe, smoking",pipes
+"['pipe, tobacco']",1,"pipe, tobacco","pipe, tobacco",pipes
+"['pipe; smoking equipment', 'pipes (smoking equipment)']",16,pipe; smoking equipment; pipes,pipe; smoking equipment,pipes
+"['pipe; smoking equipment', 'pipe, tobacco']",1,"pipe; smoking equipment; pipe, tobacco",pipe; smoking equipment,pipes
+"['pipe bowl; smoking equipment', 'pipes (smoking equipment)']",1,pipe bowl; smoking equipment; pipes,pipes,pipes
+"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",1,pistol sword; pistol sword; flintlock; muzzle load; sa,pistol sword,pistol swords
+"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .69 in; smooth bore; muzzle load; sa']",4,"pistols; pistol, flintlock; pistol; firearms; navy; flintlock; .69 in; smooth bore; muzzle load; sa",pistols,pistols
+['pistols'],3,pistols,pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa']",3,"pistols; pistol, flintlock; pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .69 in; smooth bore; muzzle load; sa']",3,"pistols; pistol, flintlock; pistol; firearms; flintlock; .69 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .68 in; smooth bore; muzzle load; sa']",2,"pistols; pistol, flintlock; pistol; firearms; navy; flintlock; .68 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock']",2,"pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .54 in; smooth bore; muzzle load; sa']",2,"pistols; pistol, flintlock; pistol; firearms; flintlock; .54 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistol; firearms; percussion lock; .54', 'pistols', 'pistol, percussion']",2,"pistol; firearms; percussion lock; .54; pistols; pistol, percussion",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; caliber .64; center fire']",1,"pistols; pistol, flintlock; pistol; firearms; caliber .64; center fire",pistols,pistols
+"['pistol; firearms; caliber .69; center fire', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; caliber .69; center fire; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, percussion, mutibarrel', 'pistol; firearms; flintlock; .44 in; rifled']",1,"pistols; pistol, percussion, mutibarrel; pistol; firearms; flintlock; .44 in; rifled",pistols,pistols
+"['pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, flintlock, breech loading', 'pistol; firearms; flintlock; .48 in; smooth bore; breechloader; 03']",1,"pistols; pistol, flintlock, breech loading; pistol; firearms; flintlock; .48 in; smooth bore; breechloader; 03",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .67 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; militia; flintlock; .67 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; militia; flintlock; .67 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa']",1,pistols; pistol; firearms; army; flintlock; .54 in; smooth bore; muzzle load; sa,pistols,pistols
+"['pistol; firearms; army; flintlock; .67 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; army; flintlock; .67 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .70 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .70 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa']",1,pistols; pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa,pistols,pistols
+"['pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; flintlock; .50 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistol; firearms; militia; flintlock; .64 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; militia; flintlock; .64 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .38 in; rifled; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .38 in; rifled; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol; firearms; percussion fire; .50 in; smooth bore; breechloader; 03', 'pistol, percussion, breech loading']",1,"pistols; pistol; firearms; percussion fire; .50 in; smooth bore; breechloader; 03; pistol, percussion, breech loading",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; army; flintlock; .72 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .56 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; navy; flintlock; .56 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .64 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .64 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistol; firearms; army; flintlock; .60 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; army; flintlock; .60 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .67 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; navy; flintlock; .67 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; navy; flintlock; .54 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; navy; flintlock; .54 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .69 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; army; flintlock; .69 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; army; flintlock; .58 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; army; flintlock; .52 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; army; flintlock; .52 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .65 in; smooth bore; muzzle load; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .65 in; smooth bore; muzzle load; sa",pistols,pistols
+"['pistol; firearms; navy; center fire; .65 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; navy; center fire; .65 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistol; firearms; flintlock; .58 in; smooth bore; muzzle load; sa', 'pistols', 'pistol, flintlock']",1,"pistol; firearms; flintlock; .58 in; smooth bore; muzzle load; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistols', 'pistol, miquelet lock']",1,"pistols; pistol, miquelet lock",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; flintlock; .60 in; smooth bore; muzzle load; 00; sa']",1,"pistols; pistol, flintlock; pistol; flintlock; .60 in; smooth bore; muzzle load; 00; sa",pistols,pistols
+"['pistols', 'pistol; firearms; flintlock; .57 in; smooth bore; ml; sa']",1,pistols; pistol; firearms; flintlock; .57 in; smooth bore; ml; sa,pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; flintlock; .71 in; smooth bore; muzzle load; 00; sa']",1,"pistols; pistol, flintlock; pistol; flintlock; .71 in; smooth bore; muzzle load; 00; sa",pistols,pistols
+"['pistols', 'pistol, flintlock', 'pistol; firearms; flintlock; .62 in; smooth bore; muzzle load; 00; sa']",1,"pistols; pistol, flintlock; pistol; firearms; flintlock; .62 in; smooth bore; muzzle load; 00; sa",pistols,pistols
+"['pistol; flintlock; .63 in; smooth bore; muzzle load; 00; sa', 'pistols', 'pistol, flintlock']",1,"pistol; flintlock; .63 in; smooth bore; muzzle load; 00; sa; pistols; pistol, flintlock",pistols,pistols
+"['pistol; flintlock; .41 in; smooth bore; 1a; ta', 'pistols']",1,pistol; flintlock; .41 in; smooth bore; 1a; ta; pistols,pistols,pistols
+['pitch pipe'],3,pitch pipe,pitch pipe,pipes
+"['pitcher, cream', 'milk jug']",1,"pitcher, cream; milk jug","pitcher, cream","pitcher, creams"
+['pitchers (vessels)'],25,pitchers,pitchers,pitchers
+"['pitchers (vessels)', 'creamware']",1,pitchers; creamware,pitchers,pitchers
+"['plane; stonecutter stone dresser; stoneworking; planing tools; hand tools', 'planes (tools)']",1,plane; stonecutter stone dresser; stoneworking; planing tools; hand tools; planes,planes,planes
+"['plaque, bas relief']",1,"plaque, bas relief","plaque, bas relief","plaque, bas relieves"
+"['plaques (flat objects)', 'plaq']",1,plaques; plaq,plaques,plaques
+['plate impression for paper currency'],1,plate impression for paper currency,plate impression for paper currency,plate impression for paper currencies
+"['plate, door']",1,"plate, door","plate, door","plate, doors"
+"['plate, fire engine']",1,"plate, fire engine","plate, fire engine","plate, fire engines"
+"['plate, soup']",2,"plate, soup","plate, soup","plate, soups"
+['plate'],33,plate,plate,plates
+"['dishes (vessels)', 'plate']",13,dishes; plate,plate,plates
+"['plate', 'plate']",7,plate; plate,plate,plates
+"['plate', 'pans (containers)']",2,plate; pans,plate,plates
+"['plate, souvenir', 'plate']",1,"plate, souvenir; plate",plate,plates
+"['chargers (platters)', 'plate']",1,chargers; plate,plate,plates
+"['plate; photomechanical intaglio', 'photogravures (prints)', 'printing plates', 'plate', 'plate']",1,plate; photomechanical intaglio; photogravures; printing plates; plate; plate,plate,plates
+['platters'],3,platters,platters,platters
+"['plow, carey']",1,"plow, carey","plow, carey","plow, careys"
+['pochette'],1,pochette,pochette,pochettes
+['pocket compass'],1,pocket compass,pocket compass,pocket compass
+['poker'],1,poker,poker,pokers
+['porringer'],13,porringer,porringer,porringers
+"['portable desks', 'writing box']",1,portable desks; writing box,portable desks,portable desks
+"['portrait; medicine', 'portraits', 'portrait, surgeon']",1,"portrait; medicine; portraits; portrait, surgeon",portraits,portraits
+"['portraits', 'watercolors (paintings)']",1,portraits; watercolors,portraits,portraits
+['portraits'],1,portraits,portraits,portraits
+['postage stamps'],2,postage stamps,postage stamps,postage stamps
+['postcards'],1,postcards,postcards,postcards
+['posters'],60,posters,posters,posters
+"['posters', 'poster; art graphics; marines']",1,posters; poster; art graphics; marines,posters,posters
+"['pot, chocolate']",1,"pot, chocolate","pot, chocolate","pot, chocolates"
+"['chocolate pot and cover', 'pot, chocolate']",1,"chocolate pot and cover; pot, chocolate","pot, chocolate","pot, chocolates"
+"['pot, hot water', 'hot water pot']",1,"pot, hot water; hot water pot","pot, hot water","pot, hot waters"
+"['pot, milk', 'jug, cream']",1,"pot, milk; jug, cream","pot, milk","pot, milks"
+"['pot, mustard']",2,"pot, mustard","pot, mustard","pot, mustards"
+"['pot, stew']",1,"pot, stew","pot, stew","pot, stews"
+['pothook'],1,pothook,pothook,pothooks
+['pots (containers)'],8,pots,pots,pots
+"['pots (containers)', 'skillets']",1,pots; skillets,pots,pots
+"['potsherds', 'sherds, pan, milk']",1,"potsherds; sherds, pan, milk",potsherds,potsherds
+['powder belt'],1,powder belt,powder belt,powder belts
+['powder horns'],1,powder horns,powder horns,powder horns
+['precision screw cutting lathe'],1,precision screw cutting lathe,precision screw cutting lathe,precision screw cutting lathes
+['prescription label'],2,prescription label,prescription label,prescription labels
+"['print, fashion plate']",5,"print, fashion plate","print, fashion plate","print, fashion plates"
+"['print, physician']",1,"print, physician","print, physician","print, physicians"
+"['printing plates', 'prints, set of', 'prints, set of; engraving']",1,"printing plates; prints, set of; prints, set of; engraving",printing plates,printing plates
+"['printing presses', 'press, printing; printing; relief; flatbed platen']",1,"printing presses; press, printing; printing; relief; flatbed platen",printing presses,printing presses
+['printing presses'],1,printing presses,printing presses,printing presses
+['prints'],1422,prints,prints,prints
+"['engravings (prints)', 'prints']",82,engravings; prints,prints,prints
+"['exterior views', 'prints']",48,exterior views; prints,prints,prints
+"['maps', 'prints']",47,maps; prints,prints,prints
+"['engravings (prints)', 'print; intaglio; engraving', 'prints']",30,engravings; print; intaglio; engraving; prints,prints,prints
+"['mezzotints (prints)', 'prints']",24,mezzotints; prints,prints,prints
+"['aquatints', 'prints']",19,aquatints; prints,prints,prints
+"['print; water color', 'prints']",17,print; water color; prints,prints,prints
+"['etchings (prints)', 'prints']",15,etchings; prints,prints,prints
+"['print; intaglio; etching', 'prints']",13,print; intaglio; etching; prints,prints,prints
+"['print; intaglio; mezzotint', 'mezzotints (prints)', 'prints']",13,print; intaglio; mezzotint; mezzotints; prints,prints,prints
+"['print; intaglio; engraving', 'prints']",11,print; intaglio; engraving; prints,prints,prints
+"['maps', 'engravings (prints)', 'prints']",8,maps; engravings; prints,prints,prints
+"['prints', 'print; intaglio']",8,prints; print; intaglio,prints,prints
+"['etching on chine colle', 'prints']",6,etching on chine colle; prints,prints,prints
+"['prints', 'print; art objects']",6,prints; print; art objects,prints,prints
+"['etching and engraving', 'prints']",5,etching and engraving; prints,prints,prints
+"['print; intaglio; stipple', 'engravings (prints)', 'prints']",5,print; intaglio; stipple; engravings; prints,prints,prints
+"['etchings (prints)', 'aquatints', 'prints']",4,etchings; aquatints; prints,prints,prints
+"['reliefs (sculpture)', 'pamphlets', 'prints', 'print; letterpress']",4,reliefs; pamphlets; prints; print; letterpress,prints,prints
+"['engravings (prints)', 'prints', 'intaglio printing']",4,engravings; prints; intaglio printing,prints,prints
+"['print; engraving', 'prints']",4,print; engraving; prints,prints,prints
+"['mirrors', 'prints']",3,mirrors; prints,prints,prints
+"['print; mezzotint', 'mezzotints (prints)', 'prints']",3,print; mezzotint; mezzotints; prints,prints,prints
+"['engravings (prints)', 'print; engraving', 'prints']",3,engravings; print; engraving; prints,prints,prints
+"['engravings (prints)', 'prints', 'stipple engraving']",3,engravings; prints; stipple engraving,prints,prints
+"['print; intaglio; mezzotint', 'prints']",3,print; intaglio; mezzotint; prints,prints,prints
+"['engravings (prints)', 'line engraving', 'prints']",3,engravings; line engraving; prints,prints,prints
+"['stipple engraving', 'prints']",2,stipple engraving; prints,prints,prints
+"['engravings (prints)', 'mezzotints (prints)', 'prints']",2,engravings; mezzotints; prints,prints,prints
+"['reliefs (sculpture)', 'newspapers', 'prints', 'print; letterpress']",2,reliefs; newspapers; prints; print; letterpress,prints,prints
+"['etchings (prints)', 'print; intaglio; engraving', 'prints']",2,etchings; print; intaglio; engraving; prints,prints,prints
+"['print; etching', 'prints']",2,print; etching; prints,prints,prints
+"['sheet, paper', 'letterpress', 'prints', 'print; letterpress']",2,"sheet, paper; letterpress; prints; print; letterpress",prints,prints
+"['print; watercolor; watercolor', 'prints']",2,print; watercolor; watercolor; prints,prints,prints
+"['print; engraving, stipple', 'prints']",2,"print; engraving, stipple; prints",prints,prints
+"['print; intaglio; engraving, stipple', 'prints']",2,"print; intaglio; engraving, stipple; prints",prints,prints
+"['plate; photomechanical intaglio', 'halftone', 'printing plates', 'plate', 'proof', 'prints', 'plate']",1,plate; photomechanical intaglio; halftone; printing plates; plate; proof; prints; plate,prints,prints
+"['still lifes', 'engravings (prints)', 'prints']",1,still lifes; engravings; prints,prints,prints
+"['still lifes', 'mezzotints (prints)', 'prints']",1,still lifes; mezzotints; prints,prints,prints
+"['prints', 'lithographs']",1,prints; lithographs,prints,prints
+"['sheet (paper)', 'etchings (prints)', 'prints']",1,sheet; etchings; prints,prints,prints
+"['etchings (prints)', 'maps', 'prints']",1,etchings; maps; prints,prints,prints
+"['reliefs (sculpture)', 'books', 'prints', 'print; letterpress']",1,reliefs; books; prints; print; letterpress,prints,prints
+"['etching on heavy commercially made laid paper', 'prints']",1,etching on heavy commercially made laid paper; prints,prints,prints
+"['printed on chine colle', 'prints']",1,printed on chine colle; prints,prints,prints
+"['photogravures (prints)', 'prints']",1,photogravures; prints,prints,prints
+"['medal engraving', 'prints']",1,medal engraving; prints,prints,prints
+"['engraving & etching', 'prints']",1,engraving & etching; prints,prints,prints
+"['sheet music', 'prints']",1,sheet music; prints,prints,prints
+"['stipple engraving', 'engraving (stipple)', 'prints', 'stipple engraving']",1,stipple engraving; engraving; prints; stipple engraving,prints,prints
+"['stipple engraving', 'engravings (prints)', 'prints']",1,stipple engraving; engravings; prints,prints,prints
+"['engravings (prints)', 'print, engraving', 'prints']",1,"engravings; print, engraving; prints",prints,prints
+"['engravings (prints)', 'prints', 'engraver']",1,engravings; prints; engraver,prints,prints
+"['etchings (prints)', 'intaglio prints', 'prints']",1,etchings; intaglio prints; prints,prints,prints
+"['intaglio prints', 'prints']",1,intaglio prints; prints,prints,prints
+"['collotype', 'prints']",1,collotype; prints,prints,prints
+"['etchings (prints)', 'letterpress', 'prints']",1,etchings; letterpress; prints,prints,prints
+"['print; pictures; engraving', 'prints']",1,print; pictures; engraving; prints,prints,prints
+"['prints', 'print; planographic']",1,prints; print; planographic,prints,prints
+"['print; intaglio; stipple', 'engravings (prints)', 'mezzotints (prints)', 'stipple', 'prints']",1,print; intaglio; stipple; engravings; mezzotints; stipple; prints,prints,prints
+"['print; relief; wood cut', 'prints']",1,print; relief; wood cut; prints,prints,prints
+"['engravings (prints)', 'prints', 'print; intaglio']",1,engravings; prints; print; intaglio,prints,prints
+"[""' mezzotint"", 'print; intaglio; mezzotint', 'mezzotints (prints)', 'prints']",1,' mezzotint; print; intaglio; mezzotint; mezzotints; prints,prints,prints
+"['wood engraving', 'print; relief; wood engraving', 'prints']",1,wood engraving; print; relief; wood engraving; prints,prints,prints
+"['print; relief; wood engraving', 'prints']",1,print; relief; wood engraving; prints,prints,prints
+"['stipple engraving', 'print; intaglio; stipple', 'prints', 'stipple engraving']",1,stipple engraving; print; intaglio; stipple; prints; stipple engraving,prints,prints
+"['engravings (prints)', 'print; intaglio; engraving', 'line engraving', 'prints']",1,engravings; print; intaglio; engraving; line engraving; prints,prints,prints
+"['print; intaglio; mezzotint', 'intaglio prints', 'prints']",1,print; intaglio; mezzotint; intaglio prints; prints,prints,prints
+"['engravings (prints)', 'print; intaglio; etching', 'prints']",1,engravings; print; intaglio; etching; prints,prints,prints
+"['mezzotints (prints)', 'mezzotint with etching', 'prints']",1,mezzotints; mezzotint with etching; prints,prints,prints
+"['intaglio prints', 'mezzotints (prints)', 'prints']",1,intaglio prints; mezzotints; prints,prints,prints
+"['print; photogravure', 'photomechanical intaglio processes', 'prints']",1,print; photogravure; photomechanical intaglio processes; prints,prints,prints
+"['print; photogravure', 'prints']",1,print; photogravure; prints,prints,prints
+"['print; intaglio; stipple engraving', 'prints']",1,print; intaglio; stipple engraving; prints,prints,prints
+"['print; planographic; lithograph', 'maps', 'prints', 'lithographs']",1,print; planographic; lithograph; maps; prints; lithographs,prints,prints
+"['print; portrait', 'prints']",1,print; portrait; prints,prints,prints
+"['etchings (prints)', 'maps', 'sheet', 'sheet, lithograph', 'prints']",1,"etchings; maps; sheet; sheet, lithograph; prints",prints,prints
+"['certificate, fraktur', 'certificate, marriage', 'fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress', 'prints']",1,"certificate, fraktur; certificate, marriage; fraktur; documents; pen and ink; certificates; letterpress; prints",prints,prints
+"['print; mezzotint', 'prints']",1,print; mezzotint; prints,prints,prints
+"['sheet (paper)', 'prints', 'print; letterpress']",1,sheet; prints; print; letterpress,prints,prints
+"['newspapers', 'prints', 'newspaper; prints; letterpress']",1,newspapers; prints; newspaper; prints; letterpress,prints,prints
+"['etchings (prints)', 'proof; etching', 'proof', 'prints']",1,etchings; proof; etching; proof; prints,prints,prints
+"['maps', 'print; engraving', 'prints']",1,maps; print; engraving; prints,prints,prints
+"['prints', 'print; pochoir; engraving']",1,prints; print; pochoir; engraving,prints,prints
+"['etchings (prints)', 'print; etching', 'prints']",1,etchings; print; etching; prints,prints,prints
+"['print; relief', 'wallpapers', 'prints', 'drawings']",1,print; relief; wallpapers; prints; drawings,prints,prints
+"['aquatints', 'prints', 'print; aquatint']",1,aquatints; prints; print; aquatint,prints,prints
+"['print; pen and ink', 'prints', 'drawings']",1,print; pen and ink; prints; drawings,prints,prints
+"['prints', 'print; engraving']",1,prints; print; engraving,prints,prints
+['prisms'],1,prisms,prisms,prisms
+"['petticoats (underskirts)', 'props']",2,petticoats; props,props,props
+"['props', 'neckcloth']",1,props; neckcloth,props,props
+"['shift', 'props']",1,shift; props,props,props
+"['shortgown', 'props']",1,shortgown; props,props,props
+"['hoop', 'props']",1,hoop; props,props,props
+"['bustles', 'props']",1,bustles; props,props,props
+"['arm, artificial', 'prosthesis']",1,"arm, artificial; prosthesis",prosthesis,prosthesis
+"['prosthesis', 'hand, artificial']",1,"prosthesis; hand, artificial",prosthesis,prosthesis
+['protractor and geometric square'],1,protractor and geometric square,protractor and geometric square,protractor and geometric squares
+"['protractor', 'protractor and parallel rule', 'protractor; semi circular, with parallel rule']",1,"protractor; protractor and parallel rule; protractor; semi circular, with parallel rule",protractor,protractors
+"[""publisher's notice""]",2,publisher's notice,publisher's notice,publisher's notices
+['punch bowls'],1,punch bowls,punch bowls,punch bowls
+"['die, coin.1', 'punch', 'dies (tools)']",5,"die, coin.1; punch; dies",punch,punches
+['punch'],2,punch,punch,punches
+"['die, coin.1', 'punch']",1,"die, coin.1; punch",punch,punches
+"['purses (bags)', 'pocketbook, embroidery', 'card case, embroidery']",1,"purses; pocketbook, embroidery; card case, embroidery",purses,purses
+['purses (bags)'],1,purses,purses,purses
+['quilt block'],2,quilt block,quilt block,quilt blocks
+['quilt model'],1,quilt model,quilt model,quilt models
+['quilt segment'],1,quilt segment,quilt segment,quilt segments
+"['quilt, wholecloth']",1,"quilt, wholecloth","quilt, wholecloth","quilt, wholecloths"
+['quilted petticoat'],1,quilted petticoat,quilted petticoat,quilted petticoats
+['quilts'],40,quilts,quilts,quilts
+"['quilts', ""cribs (children's beds)""]",2,quilts; cribs,quilts,quilts
+"['counterpanes', 'quilts']",2,counterpanes; quilts,quilts,quilts
+"['counterpanes', 'quilted counterpane; counterpane; household textile', 'quilts']",1,counterpanes; quilted counterpane; counterpane; household textile; quilts,quilts,quilts
+"['quilt; household textile', 'quilts']",1,quilt; household textile; quilts,quilts,quilts
+"['quilts', 'quilt; household textile']",1,quilts; quilt; household textile,quilts,quilts
+"['quilt, fragment', 'quilts']",1,"quilt, fragment; quilts",quilts,quilts
+['quinton'],1,quinton,quinton,quintons
+"['rack, hanging']",1,"rack, hanging","rack, hanging","rack, hangings"
+"['rack, spoon']",1,"rack, spoon","rack, spoon","rack, spoons"
+"[""rattle, baby's""]",1,"rattle, baby's","rattle, baby's","rattle, baby's"
+"['reamer, lemon', 'lemon reamer; kitchen utensils']",1,"reamer, lemon; lemon reamer; kitchen utensils","reamer, lemon","reamer, lemons"
+"['reaper cutter', 'model, cutter for reaper']",1,"reaper cutter; model, cutter for reaper",reaper cutter,reaper cutters
+['rebec'],1,rebec,rebec,rebecs
+['receipt'],10,receipt,receipt,receipts
+"['receipt', 'receipt; signature']",3,receipt; receipt; signature,receipt,receipts
+"['receipt; 1778 02 12', 'receipt']",1,receipt; 1778 02 12; receipt,receipt,receipts
+"['reciept; sheet (paper); manuscript', 'reciept']",1,reciept; sheet ; manuscript; reciept,reciept; sheet ; manuscript,reciept; sheet ; manuscripts
+['reflecting circle'],1,reflecting circle,reflecting circle,reflecting circles
+"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']",1,"regimental flag, 2nd south carolina regiment; regimental flag, 2nd south carolina regiment; regimental color, 2nd south carolina regiment","regimental flag, 2nd south carolina regiment","regimental flag, 2nd south carolina regiments"
+"['newspapers, set of', 'relief processes']",2,"newspapers, set of; relief processes",relief processes,relief processes
+"['prints, set of (19)', 'relief processes']",1,"prints, set of; relief processes",relief processes,relief processes
+['reliquaries'],2,reliquaries,reliquaries,reliquaries
+['retablos (panel paintings)'],2,retablos,retablos,retablos
+['retort'],1,retort,retort,retorts
+['revenue measures set'],1,revenue measures set,revenue measures set,revenue measures sets
+['ribbon (material)'],2,ribbon,ribbon,ribbons
+"['rifle; firearms; percussion fire; .52', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; percussion fire; .52; rifles; rifle, flintlock",rifles,rifles
+"['rifles (long guns)', 'rifle, flintlock']",1,"rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; flintlock; .60 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; flintlock; .60 in; rifled; muzzle load; sa; rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; flintlock; .52 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; flintlock; .52 in; rifled; muzzle load; sa; rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; army; flintlock; .58 in; rifled; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; army; flintlock; .58 in; rifled; muzzle load; sa; rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; army; flintlock; .54 in; muzzle load; sa', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; army; flintlock; .54 in; muzzle load; sa; rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; flintlock; .69 in; rifled; 14; 03', 'rifles (long guns)']",1,rifle; firearms; flintlock; .69 in; rifled; 14; 03; rifles,rifles,rifles
+"['rifle; firearms; flintlock; .67 in; rifled; breech load; sa', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; flintlock; .67 in; rifled; breech load; sa; rifles; rifle, flintlock",rifles,rifles
+"['rifle; firearms; flintlock; .58 in; rifled; muzzle load; 00; sa; sporting', 'rifles (long guns)', 'rifle, flintlock']",1,"rifle; firearms; flintlock; .58 in; rifled; muzzle load; 00; sa; sporting; rifles; rifle, flintlock",rifles,rifles
+"['rifles (long guns)', 'rifle; firearms; flintlock; .62 in; rifled; muzzle load; sa', 'rifle, flintlock']",1,"rifles; rifle; firearms; flintlock; .62 in; rifled; muzzle load; sa; rifle, flintlock",rifles,rifles
+"['rings (object genres)', 'ring; jewelry; accessories worn on the body; female']",3,rings; ring; jewelry; accessories worn on the body; female,rings,rings
+['rings (object genres)'],1,rings,rings,rings
+"['rings (object genres)', 'ring; jewelry; accessories worn on the body; female; mourning']",1,rings; ring; jewelry; accessories worn on the body; female; mourning,rings,rings
+['roasters (cookware)'],3,roasters,roasters,roasters
+['rugs'],1,rugs,rugs,rugs
+['runic calendar'],1,runic calendar,runic calendar,runic calendars
+"['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']",1,"saber, dragoon; saber; saber, dragoon; edged weapons; army; dragoon","saber, dragoon","saber, dragoons"
+"['saber; edged weapons', 'saber']",1,saber; edged weapons; saber,saber,sabers
+"['saber', 'saber; edged weapons', 'saber']",1,saber; saber; edged weapons; saber,saber,sabers
+"['saber', 'saber; edged weapons; militia; small; officer', 'saber']",1,saber; saber; edged weapons; militia; small; officer; saber,saber,sabers
+"['saber; edged weapons; army; cavalry; officer', 'saber']",1,saber; edged weapons; army; cavalry; officer; saber,saber,sabers
+"['side saddle, equestrian', 'saddle, side']",1,"side saddle, equestrian; saddle, side","saddle, side","saddle, sides"
+"['side saddle', 'saddle, side']",1,"side saddle; saddle, side","saddle, side","saddle, sides"
+"['saddles (seats)', 'saddle; equipment, horse']",1,"saddles; saddle; equipment, horse",saddles,saddles
+['safes (storage containers)'],1,safes,safes,safes
+['salt (inorganic material)'],2,salt,salt,salts
+['samplers (embroidery)'],27,samplers,samplers,samplers
+"['embroidery, sampler', 'samplers (embroidery)']",11,"embroidery, sampler; samplers",samplers,samplers
+"['sampler; ca 1805', 'samplers (embroidery)']",1,sampler; ca 1805; samplers,samplers,samplers
+"['sampler; 18th century 3rd qtr', 'samplers (embroidery)']",1,sampler; 18th century 3rd qtr; samplers,samplers,samplers
+['sanders (tools)'],2,sanders,sanders,sanders
+['santo'],9,santo,santo,santos
+"['latino, puerto rican, religious', 'santo']",2,"latino, puerto rican, religious; santo",santo,santos
+"['sash and pendant', 'emblems (symbols)']",1,sash and pendant; emblems,sash and pendant,sash and pendants
+['sauceboat'],4,sauceboat,sauceboat,sauceboats
+"['bowl, tea', 'saucers (plates)']",3,"bowl, tea; saucers",saucers,saucers
+['saucers (plates)'],2,saucers,saucers,saucers
+['saws'],1,saws,saws,saws
+"['scabbard, bayonet', 'scabbards']",1,"scabbard, bayonet; scabbards","scabbard, bayonet","scabbard, bayonets"
+"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']",1,"scabbard, bayonet; scabbard; edged weapons; militia?; scabbards","scabbard, bayonet","scabbard, bayonets"
+"['scale rule, folding', 'rule, folding']",1,"scale rule, folding; rule, folding","scale rule, folding","scale rule, foldings"
+"['scale, plotting', 'scale rule']",1,"scale, plotting; scale rule",scale rule,scale rules
+"['scale, balance']",1,"scale, balance","scale, balance","scale, balances"
+['school tax record'],1,school tax record,school tax record,school tax records
+"['scraper, ivory']",1,"scraper, ivory","scraper, ivory","scraper, ivories"
+"['yardsticks', 'scrimshaw', 'swrimshaws']",1,yardsticks; scrimshaw; swrimshaws,scrimshaw,scrimshaws
+"['stamps (tools)', 'scrimshaws', 'scrimshaw', 'scrimshaw; maritime', 'swrimshaws']",1,stamps; scrimshaws; scrimshaw; scrimshaw; maritime; swrimshaws,scrimshaw,scrimshaws
+"['scrimshaws', 'scrimshaw; maritime', 'scrimshaw powder horn', 'scrimshaw', 'swrimshaws']",1,scrimshaws; scrimshaw; maritime; scrimshaw powder horn; scrimshaw; swrimshaws,scrimshaw,scrimshaws
+['sculpture fragment'],1,sculpture fragment,sculpture fragment,sculpture fragments
+['sculpture'],22,sculpture,sculpture,sculptures
+"['miniatures', 'sculpture']",2,miniatures; sculpture,sculpture,sculptures
+['scutching knife'],1,scutching knife,scutching knife,scutching knives
+['seam rubber'],1,seam rubber,seam rubber,seam rubbers
+"['section, water main']",1,"section, water main","section, water main","section, water mains"
+['sector'],4,sector,sector,sectors
+"['semi circle', 'sighting instrument']",1,semi circle; sighting instrument,semi circle,semi circles
+['serpent'],1,serpent,serpent,serpents
+['set square'],1,set square,set square,set squares
+['sewing case'],1,sewing case,sewing case,sewing cases
+"['shawls', 'shawl; outerwear; female']",1,shawls; shawl; outerwear; female,shawls,shawls
+['shears (cutting tools)'],1,shears,shears,shears
+"['scissors', 'shears (cutting tools)']",1,scissors; shears,shears,shears
+"['sheet (paper), set of music manuscripts', 'sheet (paper); sheet (paper), set of music manuscripts; manuscript']",1,"sheet , set of music manuscripts; sheet ; sheet , set of music manuscripts; manuscript","sheet , set of music manuscripts","sheet , set of music manuscripts"
+"['sheet (paper), set of music manuscripts; sheet (paper); manuscript', 'sheet (paper), set of music manuscripts']",1,"sheet , set of music manuscripts; sheet ; manuscript; sheet , set of music manuscripts","sheet , set of music manuscripts","sheet , set of music manuscripts"
+"['sheet (paper), set of music manuscript', 'sheet (paper); sheet (paper), set of music manuscript; manuscript']",1,"sheet , set of music manuscript; sheet ; sheet , set of music manuscript; manuscript","sheet , set of music manuscript","sheet , set of music manuscripts"
+"['sheet (paper); manuscript', 'receipt']",4,sheet ; manuscript; receipt,sheet ; manuscript,sheet ; manuscripts
+"['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",1,sheet ; manuscript; invoice; sheet,sheet ; manuscript,sheet ; manuscripts
+"['sheet (paper)', 'sheet (paper); manuscript']",1,sheet; sheet ; manuscript,sheet ; manuscript,sheet ; manuscripts
+"['sheet (paper); manuscript', 'deed']",1,sheet ; manuscript; deed,sheet ; manuscript,sheet ; manuscripts
+"['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",1,sheet; sheet ; manuscript; sheet; manuscripts,sheet ; manuscript,sheet ; manuscripts
+['sheet music'],2,sheet music,sheet music,sheet musics
+"['sheet of paper', 'sheet of paper; documents']",3,sheet of paper; sheet of paper; documents,sheet of paper,sheet of papers
+['sheet of paper'],1,sheet of paper,sheet of paper,sheet of papers
+"['sheet; manuscript', 'valentine']",1,sheet; manuscript; valentine,sheet; manuscript,sheet; manuscripts
+"['sheet (paper)', 'currency note']",1,sheet; currency note,sheet,sheets
+['sheet(paper)'],1,sheet,sheet,sheets
+"['sheet; photomechanical lithography', 'sheet']",1,sheet; photomechanical lithography; sheet,sheet,sheets
+"['sheet (paper)', 'sheet; engraving', 'sheet']",1,sheet; sheet; engraving; sheet,sheet,sheets
+['sheets (paper)'],1,sheets,sheets,sheets
+"['sheet, linen, hand woven', 'sheet']",1,"sheet, linen, hand woven; sheet",sheet,sheets
+"['sheets (paper), set of music manuscripts', 'sheets (paper), set of; sheets (paper), set of music manuscripts; manuscript']",3,"sheets , set of music manuscripts; sheets , set of; sheets , set of music manuscripts; manuscript","sheets , set of music manuscripts","sheets , set of music manuscripts"
+"['sheets (paper), set of music manuscripts', 'pamphlet; sheets (paper), set of music manuscripts; manuscript']",1,"sheets , set of music manuscripts; pamphlet; sheets , set of music manuscripts; manuscript","sheets , set of music manuscripts","sheets , set of music manuscripts"
+"['sheets, set of']",1,"sheets, set of","sheets, set of","sheets, set oves"
+"['shell (animal material)', 'ball, cannon', 'shell; ammunition, artillery; 3 in']",1,"shell; ball, cannon; shell; ammunition, artillery; 3 in",shell,shells
+['shelves'],3,shelves,shelves,shelves
+['shields (armor)'],2,shields,shields,shields
+"['shirt fragments', 'shirt fragments; male']",1,shirt fragments; shirt fragments; male,shirt fragments,shirt fragments
+"['shirt, collar; upper body; main dress; male', 'shirt, collar']",1,"shirt, collar; upper body; main dress; male; shirt, collar","shirt, collar; upper body; main dress; male",dresses
+"['shirts', 'shirt; upper body; main dress; male']",3,shirts; shirt; upper body; main dress; male,shirts,dresses
+"['shoes, pair of; footwear; accessories worn on the body; female', 'shoes (footwear)']",15,"shoes, pair of; footwear; accessories worn on the body; female; shoes",shoes,shoes
+"['shoes, pair of; footwear; accessories worn on the body; child', 'shoes (footwear)']",4,"shoes, pair of; footwear; accessories worn on the body; child; shoes",shoes,shoes
+"['shoes (footwear)', 'shoes, pair of; footwear; accessories worn on the body']",2,"shoes; shoes, pair of; footwear; accessories worn on the body",shoes,shoes
+['shoes (footwear)'],1,shoes,shoes,shoes
+"['shoe; footwear; accessories worn on the body; female', 'shoes (footwear)']",1,shoe; footwear; accessories worn on the body; female; shoes,shoes,shoes
+"['shoes; footwear; accessories worn on the body; male', 'shoes (footwear)']",1,shoes; footwear; accessories worn on the body; male; shoes,shoes,shoes
+"['shoe; footwear; accessories worn on the body; infant', 'shoes (footwear)']",1,shoe; footwear; accessories worn on the body; infant; shoes,shoes,shoes
+"['shoe; footwear; accessories worn on the body; male', 'shoes (footwear)']",1,shoe; footwear; accessories worn on the body; male; shoes,shoes,shoes
+"['shoes; footwear; accessories worn on the body; girl', 'shoes (footwear)']",1,shoes; footwear; accessories worn on the body; girl; shoes,shoes,shoes
+"['signs (declaratory or advertising artifacts)', 'shop signs']",2,signs; shop signs,shop signs,shop signs
+['shop signs'],1,shop signs,shop signs,shop signs
+"['short gown; upper body; main dress; female; quaker?', 'short gown']",1,short gown; upper body; main dress; female; quaker?; short gown,short gown; upper body; main dress; female; quaker?,dresses
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",1,"shotgun, flintlock; shotgun; shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p","shotgun, flintlock","shotgun, flintlocks"
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",1,"shotgun, flintlock; shotgun; shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa","shotgun, flintlock","shotgun, flintlocks"
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",1,"shotgun, flintlock; shotgun; shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa","shotgun, flintlock","shotgun, flintlocks"
+"['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",1,"shotgun, flintlock; fowler; fowler; firearms; flintlock; .50 in; smooth bore; ml; sa","shotgun, flintlock","shotgun, flintlocks"
+"['shot; underwater', 'shot']",4,shot; underwater; shot,shot,shots
+"['bar shot', 'shot']",1,bar shot; shot,shot,shots
+['shovels'],2,shovels,shovels,shovels
+"['shrine, pocket']",1,"shrine, pocket","shrine, pocket","shrine, pockets"
+"['side chairs', 'sheraton', 'furnishings']",1,side chairs; sheraton; furnishings,side chairs,side chairs
+['signature'],1,signature,signature,signatures
+['silhouettes'],1845,silhouettes,silhouettes,silhouettes
+"['silhouettes', 'silhouette; pictures']",6,silhouettes; silhouette; pictures,silhouettes,silhouettes
+"['silhouettes', 'silhouette; pictures; portrait']",1,silhouettes; silhouette; pictures; portrait,silhouettes,silhouettes
+['silk picture'],4,silk picture,silk picture,silk pictures
+"['silk, embroidery', 'pictures (object genre)']",1,"silk, embroidery; pictures","silk, embroidery","silk, embroideries"
+['skewers'],2,skewers,skewers,skewers
+['skillets'],2,skillets,skillets,skillets
+['skimmers (culinary tools)'],5,skimmers,skimmers,skimmers
+"['strainers (culinary tools)', 'skimmers (culinary tools)']",1,strainers; skimmers,skimmers,skimmers
+['slate (rock)'],1,slate,slate,slates
+"['slave leg irons', 'irons, leg']",1,"slave leg irons; irons, leg",slave leg irons,slave leg irons
+['slide rules'],1,slide rules,slide rules,slide rules
+['snuffbox'],4,snuffbox,snuffbox,snuffboxes
+['snuffboxes'],2,snuffboxes,snuffboxes,snuffboxes
+['snuffers and tray'],2,snuffers and tray,snuffers and tray,snuffers and trays
+"['soda glass, holder', 'holder, soda glass; soda fountain; furnishings', 'holder, soda glass']",2,"soda glass, holder; holder, soda glass; soda fountain; furnishings; holder, soda glass","soda glass, holder","soda glass, holders"
+"['sofa', 'sofa; doll house furnishings; toys']",1,sofa; sofa; doll house furnishings; toys,sofa,sofas
+"['spade; maritime; boat', 'spade, blubber', 'spade']",1,"spade; maritime; boat; spade, blubber; spade",spade; maritime; boat,spade; maritime; boats
+['spatulas (culinary tools)'],2,spatulas,spatulas,spatulas
+"['spear head', 'spear head; edged weapons']",1,spear head; spear head; edged weapons,spear head,spear heads
+['spectacles'],2,spectacles,spectacles,spectacles
+"['spectacles; vision aids', 'spectacles']",1,spectacles; vision aids; spectacles,spectacles,spectacles
+['spherometer'],2,spherometer,spherometer,spherometers
+"['spigot', 'spigot; kitchen utensils']",1,spigot; spigot; kitchen utensils,spigot,spigots
+['spindles (textile working equipment)'],1,spindles,spindles,spindles
+['spinning frame'],1,spinning frame,spinning frame,spinning frames
+"['spinning wheel, flax']",2,"spinning wheel, flax","spinning wheel, flax","spinning wheel, flaxes"
+"['spinning wheels', 'spinning wheel, flax']",1,"spinning wheels; spinning wheel, flax","spinning wheel, flax","spinning wheel, flaxes"
+"['spinning wheel, flax', 'hand tools']",1,"spinning wheel, flax; hand tools","spinning wheel, flax","spinning wheel, flaxes"
+"['spinning wheel, flax', 'spinning wheel, double fyer']",1,"spinning wheel, flax; spinning wheel, double fyer","spinning wheel, flax","spinning wheel, flaxes"
+"['spinning wheel, wool']",1,"spinning wheel, wool","spinning wheel, wool","spinning wheel, wools"
+"['spoon, souvenir']",1,"spoon, souvenir","spoon, souvenir","spoon, souvenirs"
+"['spoon, stirring']",1,"spoon, stirring","spoon, stirring","spoon, stirrings"
+['spoons'],20,spoons,spoons,spoons
+"['mold, spoon', 'spoons']",1,"mold, spoon; spoons",spoons,spoons
+"['spoons', 'cutlery']",1,spoons; cutlery,spoons,spoons
+"['spoons', 'spoon; serving', 'cutlery']",1,spoons; spoon; serving; cutlery,spoons,spoons
+"['spoons', 'spoon; eating utensils', 'cutlery']",1,spoons; spoon; eating utensils; cutlery,spoons,spoons
+['spurs (costume accessories)'],1,spurs,spurs,spurs
+"['stamp, butter mold']",2,"stamp, butter mold","stamp, butter mold","stamp, butter molds"
+"['stamp, butter']",26,"stamp, butter","stamp, butter","stamp, butters"
+"['stamp, butter', 'mold, butter, stamp']",1,"stamp, butter; mold, butter, stamp","stamp, butter","stamp, butters"
+"['stand, cruet']",1,"stand, cruet","stand, cruet","stand, cruets"
+"['stand, pickle', 'dish, sweetmeat']",1,"stand, pickle; dish, sweetmeat","stand, pickle","stand, pickles"
+"['stand, roaster']",1,"stand, roaster","stand, roaster","stand, roasters"
+"['stand, sweetmeat']",1,"stand, sweetmeat","stand, sweetmeat","stand, sweetmeats"
+"['stand, teapot']",1,"stand, teapot","stand, teapot","stand, teapots"
+"['statuette, religious']",1,"statuette, religious","statuette, religious","statuette, religiouses"
+"['stays; upper body; underwear; female', 'stays']",4,stays; upper body; underwear; female; stays,stays,stays
+"['stays; upper body; underwear; girl', 'stays']",1,stays; upper body; underwear; girl; stays,stays,stays
+['steam jack'],1,steam jack,steam jack,steam jacks
+"['stem, pipe, tobacco']",1,"stem, pipe, tobacco","stem, pipe, tobacco",pipes
+"['stem, pipe', 'pipe stem; smoking equipment']",1,"stem, pipe; pipe stem; smoking equipment","stem, pipe",pipes
+"['stick, mixing']",1,"stick, mixing","stick, mixing","stick, mixings"
+"['stick, pudding']",1,"stick, pudding","stick, pudding","stick, puddings"
+"['stick, toddy', 'stick, swizzle']",1,"stick, toddy; stick, swizzle","stick, swizzle","stick, swizzles"
+"['stick, swizzle']",1,"stick, swizzle","stick, swizzle","stick, swizzles"
+['sticker'],1,sticker,sticker,stickers
+"['stirrup, equestrian']",1,"stirrup, equestrian","stirrup, equestrian","stirrup, equestrians"
+"['stockings; footwear; accessories worn on the body; male', 'stockings']",2,stockings; footwear; accessories worn on the body; male; stockings,stockings,stockings
+['stockings'],1,stockings,stockings,stockings
+"['stockings, pair of; footwear; accessories worn on the body; female', 'stockings']",1,"stockings, pair of; footwear; accessories worn on the body; female; stockings",stockings,stockings
+"['stone, sharpening', 'stone (rock)']",1,"stone, sharpening; stone","stone, sharpening","stone, sharpenings"
+"['stools (seating furniture)', 'stool; equipment, individual']",1,"stools; stool; equipment, individual",stools,stools
+"['stove, miniature']",1,"stove, miniature","stove, miniature","stove, miniatures"
+"['stove; heating equipment', 'stoves (heating equipment)']",1,stove; heating equipment; stoves,stove; heating equipment,stove; heating equipments
+"['streamers, set of', 'flags, set of', 'flags, set of; military; pennant']",1,"streamers, set of; flags, set of; flags, set of; military; pennant","streamers, set of","streamers, set oves"
+['striker box'],1,striker box,striker box,striker boxes
+"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",1,"stud, collar; stud, collar; jewelry; accessories worn on the body; male","stud, collar","stud, collars"
+"['stud', 'stud; jewelry; accessories worn on the body; male']",1,stud; stud; jewelry; accessories worn on the body; male,stud,studs
+['sugar bowls'],2,sugar bowls,sugar bowls,sugar bowls
+"['suit, 2 piece']",1,"suit, 2 piece","suit, 2 piece","suit, 2 pieces"
+"['suit, 2 piece', 'suit, 2 piece; entire body; main dress; male']",1,"suit, 2 piece; suit, 2 piece; entire body; main dress; male","suit, 2 piece",dresses
+"['suit, 2 piece; entire body; main dress; male', 'suit, 2 piece']",1,"suit, 2 piece; entire body; main dress; male; suit, 2 piece","suit, 2 piece",dresses
+"['suit, 3 piece; entire body; main dress; male', 'suit, 3 piece']",1,"suit, 3 piece; entire body; main dress; male; suit, 3 piece","suit, 3 piece; entire body; main dress; male",dresses
+"['suit, coat; entire body; main dress; male', 'suit, coat']",1,"suit, coat; entire body; main dress; male; suit, coat","suit, coat; entire body; main dress; male",dresses
+"['suit, frock, 3 piece', 'suit, frock, 3 piece; entire body; main dress; boy']",1,"suit, frock, 3 piece; suit, frock, 3 piece; entire body; main dress; boy","suit, frock, 3 piece",dresses
+"['sundial, diptych']",1,"sundial, diptych","sundial, diptych","sundial, diptyches"
+"['sundial, equinoctial']",1,"sundial, equinoctial","sundial, equinoctial","sundial, equinoctials"
+"['sundial, horizontal pedestal']",1,"sundial, horizontal pedestal","sundial, horizontal pedestal","sundial, horizontal pedestals"
+"['sundial, quadrant']",1,"sundial, quadrant","sundial, quadrant","sundial, quadrants"
+['sundial'],5,sundial,sundial,sundials
+"['sundial', 'sundial, horizontal portable']",2,"sundial; sundial, horizontal portable",sundial,sundials
+"['sundial', 'sundial']",1,sundial; sundial,sundial,sundials
+['sunglass'],1,sunglass,sunglass,sunglass
+"['sunglasses', 'sunglasses; opticals; accessories worn on the body; unknown', 'sunglasses']",1,sunglasses; sunglasses; opticals; accessories worn on the body; unknown; sunglasses,sunglasses,sunglasses
+"['surgical instrument', 'hammers (tools)']",1,surgical instrument; hammers,surgical instrument,surgical instruments
+"['trepanning set', 'surgical set', 'trepanning set; surgical set; trepanning', 'trephination set']",1,trepanning set; surgical set; trepanning set; surgical set; trepanning; trephination set,surgical set,surgical sets
+"['surgical set', 'trephanation set', 'surgical set; surgical set; trepanning', 'surgical set']",1,surgical set; trephanation set; surgical set; surgical set; trepanning; surgical set,surgical set,surgical sets
+"['surgical set', ""surgeon's kit""]",1,surgical set; surgeon's kit,surgical set,surgical sets
+['surveying instruments'],5,surveying instruments,surveying instruments,surveying instruments
+"['compasses (direction indicators)', 'surveying instruments']",1,compasses; surveying instruments,surveying instruments,surveying instruments
+"[""surveyor's vernier compass"", ""surveyor's vernier compass""]",1,surveyor's vernier compass; surveyor's vernier compass,surveyor's vernier compass,surveyor's vernier compass
+"[""surveyor's vernier compass""]",1,surveyor's vernier compass,surveyor's vernier compass,surveyor's vernier compass
+['suspenders (garment supports)'],1,suspenders,suspenders,suspenders
+"['suspenders (garment supports)', 'suspenders; waistwear; accessories worn on the body']",1,suspenders; suspenders; waistwear; accessories worn on the body,suspenders,suspenders
+"['swage block; hand tools', 'swage block']",1,swage block; hand tools; swage block,swage block; hand tools,swage block; hand tools
+['sweat shirts'],1,sweat shirts,sweat shirts,sweat shirts
+"['swords', 'sword; edged weapons; army; officer']",4,swords; sword; edged weapons; army; officer,swords,swords
+"['sword; edged weapons', 'swords']",3,sword; edged weapons; swords,swords,swords
+['swords'],3,swords,swords,swords
+"['swords', 'sword; edged weapons; navy; small']",1,swords; sword; edged weapons; navy; small,swords,swords
+"['sword; edged weapons; presentation', 'swords']",1,sword; edged weapons; presentation; swords,swords,swords
+"['swords', 'sword; edged weapons; hunting']",1,swords; sword; edged weapons; hunting,swords,swords
+"['swords', 'sword; edged weapons; army']",1,swords; sword; edged weapons; army,swords,swords
+"['saber', 'swords', 'sword; edged weapons; army; officer']",1,saber; swords; sword; edged weapons; army; officer,swords,swords
+"['sword; edged weapons; army; long; officer', 'swords']",1,sword; edged weapons; army; long; officer; swords,swords,swords
+"['sword; edged weapons; commemorative', 'swords']",1,sword; edged weapons; commemorative; swords,swords,swords
+['syringe'],1,syringe,syringe,syringes
+['syrup jar'],9,syrup jar,syrup jar,syrup jars
+['tabernacle'],1,tabernacle,tabernacle,tabernacles
+"['table, small']",1,"table, small","table, small","table, smalls"
+['tablecloths'],1,tablecloths,tablecloths,tablecloths
+"['table; furniture; tilt top', 'tables (support furniture)']",1,table; furniture; tilt top; tables,tables,tables
+['tables (support furniture)'],1,tables,tables,tables
+"['table; furniture; drop leaf table', 'tables (support furniture)']",1,table; furniture; drop leaf table; tables,tables,tables
+"['tables (support furniture)', 'table; furniture']",1,tables; table; furniture,tables,tables
+['tall case clock'],1,tall case clock,tall case clock,tall case clocks
+['tankard'],5,tankard,tankard,tankards
+"['tape loom', 'loom, tape']",1,"tape loom; loom, tape",tape loom,tape looms
+['tax stamps'],4,tax stamps,tax stamps,tax stamps
+['tea bowls & saucers'],1,tea bowls & saucers,tea bowls & saucers,tea bowls & saucers
+['teakettles'],4,teakettles,teakettles,teakettles
+['teapots'],21,teapots,teapots,teapots
+"['refracting telescope', 'telescope']",2,refracting telescope; telescope,telescope,telescopes
+['telescope (spyglass)'],2,telescope,telescope,telescopes
+"['telescope', 'telescope (spyglass)']",1,telescope; telescope,telescope,telescopes
+['telescope'],1,telescope,telescope,telescopes
+"['tent; equipment, individual', 'tents (portable buildings)']",1,"tent; equipment, individual; tents","tent; equipment, individual","tent; equipment, individuals"
+['terrestrial globe'],1,terrestrial globe,terrestrial globe,terrestrial globes
+['thermal cycler'],1,thermal cycler,thermal cycler,thermal cyclers
+['thermometers'],1,thermometers,thermometers,thermometers
+['thickness gauge'],1,thickness gauge,thickness gauge,thickness gauges
+['thimble eye'],1,thimble eye,thimble eye,thimble eyes
+"['ticket, lottery']",1,"ticket, lottery","ticket, lottery","ticket, lotteries"
+['tile'],3,tile,tile,tiles
+"['tinder box; fire making apparatus', 'box, tinder']",1,"tinder box; fire making apparatus; box, tinder",tinder box; fire making apparatus,tinder box; fire making apparatuses
+"['tinder box; fire making apparatus', 'tinderbox']",13,tinder box; fire making apparatus; tinderbox,tinderbox,tinderboxes
+['tinderbox'],4,tinderbox,tinderbox,tinderboxes
+"['tinder pistol; fire making apparatus', 'tinderbox']",3,tinder pistol; fire making apparatus; tinderbox,tinderbox,tinderboxes
+"['tinder pistol; fire making apparatus', 'tinderbox', 'tinderbox, pistol']",1,"tinder pistol; fire making apparatus; tinderbox; tinderbox, pistol",tinderbox,tinderboxes
+"['curfew', 'tinderbox', 'curfew; tinder box; fire making apparatus']",1,curfew; tinderbox; curfew; tinder box; fire making apparatus,tinderbox,tinderboxes
+['toasters (cooking and heating devices)'],3,toasters,toasters,toasters
+"['toasters (cooking and heating devices)', 'roasters (cookware)']",1,toasters; roasters,toasters,toasters
+"['token, commemorative', 'token, commemorative, lace']",2,"token, commemorative; token, commemorative, lace","token, commemorative","token, commemoratives"
+['tokens'],7,tokens,tokens,tokens
+"['token; store card', 'tokens']",1,token; store card; tokens,tokens,tokens
+"['franklin press halfpenny token', 'tokens']",1,franklin press halfpenny token; tokens,tokens,tokens
+['tongs'],3,tongs,tongs,tongs
+"['tongs, hearth', 'tongs, fire']",1,"tongs, hearth; tongs, fire","tongs, fire","tongs, fires"
+"['tongs, fire']",1,"tongs, fire","tongs, fire","tongs, fires"
+"['tongs, pipe']",1,"tongs, pipe","tongs, pipe",pipes
+"['pipe tongs', 'tongs, pipe', 'pipe tongs; lighting accessories']",1,"pipe tongs; tongs, pipe; pipe tongs; lighting accessories","tongs, pipe",pipes
+"['tool, millinery']",1,"tool, millinery","tool, millinery","tool, millineries"
+['towels'],1,towels,towels,towels
+['tower clock movement'],1,tower clock movement,tower clock movement,tower clock movements
+"['tractors', 'therapeutic device, fraudulent']",1,"tractors; therapeutic device, fraudulent",tractors,tractors
+['trammel'],2,trammel,trammel,trammels
+['transportation equipment & models'],1,transportation equipment & models,transportation equipment & models,transportation equipment & models
+['trays'],2,trays,trays,trays
+['trimming'],1,trimming,trimming,trimmings
+"['trivet, stacking']",1,"trivet, stacking","trivet, stacking","trivet, stackings"
+['trivets'],3,trivets,trivets,trivets
+['trough compass'],1,trough compass,trough compass,trough compass
+['troughs'],1,troughs,troughs,troughs
+['trousers'],1,trousers,trousers,trousers
+"['trousers; lower body; main dress; male', 'trousers']",1,trousers; lower body; main dress; male; trousers,trousers,dresses
+"['trumpet, speaking']",2,"trumpet, speaking","trumpet, speaking","trumpet, speakings"
+['trumpets (aerophones)'],1,trumpets,trumpets,trumpets
+['trunks (containers)'],2,trunks,trunks,trunks
+"['tubs (containers)', '<measuring device classification>']",1,tubs; <measuring device classification>,tubs,tubs
+['tumblers (drinking glasses)'],1,tumblers,tumblers,tumblers
+['tureens'],4,tureens,tureens,tureens
+['turner'],1,turner,turner,turners
+['type case'],2,type case,type case,type cases
+"['umbrellas', 'umbrella; parasols; accessories carried; unknown', 'parasols']",1,umbrellas; umbrella; parasols; accessories carried; unknown; parasols,umbrellas,umbrellas
+"['umbrellas', 'umbrella; parasols; accessories carried; female']",1,umbrellas; umbrella; parasols; accessories carried; female,umbrellas,umbrellas
+['uncut sheet'],52,uncut sheet,uncut sheet,uncut sheets
+"['uncut sheet', 'paper money']",1,uncut sheet; paper money,uncut sheet,uncut sheets
+"['undershirt; upper body; underwear; male', 'undershirts']",1,undershirt; upper body; underwear; male; undershirts,undershirt; upper body; underwear; male,undershirt; upper body; underwear; males
+"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",1,"undersleeves, pair of; undersleeves, pair of; armwear; accessories worn on the body; female","undersleeves, pair of","undersleeves, pair oves"
+['unidentified'],1,unidentified,unidentified,unidentifieds
+"['vaccination card, commemorative']",1,"vaccination card, commemorative","vaccination card, commemorative","vaccination card, commemoratives"
+"['valance, printed']",3,"valance, printed","valance, printed","valance, printeds"
+['vases'],2,vases,vases,vases
+['veils (headcloths)'],1,veils,veils,veils
+"['veil; headwear; accessories worn on the body; female', 'veils (headcloths)']",1,veil; headwear; accessories worn on the body; female; veils,veils,veils
+"['veil; headwear; accessories worn on the body; female; wedding', 'veils (headcloths)']",1,veil; headwear; accessories worn on the body; female; wedding; veils,veils,veils
+"['vessel, with lid']",1,"vessel, with lid","vessel, with lid","vessel, with lids"
+"['vests (garments)', 'vest; upper body; main dress; male']",5,vests; vest; upper body; main dress; male,vests,dresses
+['vests (garments)'],1,vests,vests,vests
+"['vial; containers', 'vials']",1,vial; containers; vials,vial; containers,vial; containers
+"['viewer', 'glass, perspective']",1,"viewer; glass, perspective",viewer,viewers
+"[""viola d'amore""]",2,viola d'amore,viola d'amore,viola d'amores
+['viola'],1,viola,viola,violas
+['violins'],7,violins,violins,violins
+['viols'],3,viols,viols,viols
+"['vises (gripping tools)', 'vise; blacksmith farrier; metalworking; holding & gripping tools; hand tools']",1,vises; vise; blacksmith farrier; metalworking; holding & gripping tools; hand tools,vises,vises
+['voucher'],1,voucher,voucher,vouchers
+"['wagon jack; road', 'wagon jack']",1,wagon jack; road; wagon jack,wagon jack; road,wagon jack; roads
+"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",1,waistcoat ?; entire body; main dress; female; waistcoat ?,waistcoat ?; entire body; main dress; female,dresses
+"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",1,waistcoat fabric; waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male,waistcoat fabric,dresses
+"['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",1,waistcoat fragment; waistcoat fragment; waistcoat; upper body; main dress; male,waistcoat fragment,dresses
+"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",1,waistcoat fragments; upper body; main dress; male; waistcoat fragments,waistcoat fragments; upper body; main dress; male,dresses
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",24,waistcoat; upper body; main dress; male; waistcoats,waistcoats,dresses
+"['waistcoats (garments)', 'upper body', 'main garments', 'male']",4,waistcoats; upper body; main garments; male,waistcoats,waistcoats
+['waistcoats (garments)'],4,waistcoats,waistcoats,waistcoats
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",2,waistcoat; upper body; main dress; male; waistcoats; upper body; main garments,waistcoats,dresses
+"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",1,waistcoats; waistcoat; upper body; main dress; male; army; guard national; officer,waistcoats,dresses
+"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",1,waistcoat fragment; waistcoats; waistcoat fragment; upper body; main dress; male; upper body; main garments,waistcoats,dresses
+"['walking stick; accessories carried; male', 'walking sticks']",1,walking stick; accessories carried; male; walking sticks,walking stick; accessories carried; male,walking stick; accessories carried; males
+"['wallet, fishing']",1,"wallet, fishing","wallet, fishing","wallet, fishings"
+"['warmer, foot']",4,"warmer, foot","warmer, foot","warmer, feet"
+"['warmer, food', 'warmer, foot']",1,"warmer, food; warmer, foot","warmer, foot","warmer, feet"
+['washboard'],1,washboard,washboard,washboards
+['watch fob'],1,watch fob,watch fob,watch fobs
+"['watch movement; mechanical, spring driven; pocket watch', 'watch movement']",9,"watch movement; mechanical, spring driven; pocket watch; watch movement","watch movement; mechanical, spring driven; pocket watch","watch movement; mechanical, spring driven; pocket watches"
+"['watch, ladies', 'watch, ladies, swiss']",1,"watch, ladies; watch, ladies, swiss","watch, ladies","watch, ladies"
+"['watch, pocket']",1,"watch, pocket","watch, pocket","watch, pockets"
+"['watches', 'watch; mechanical, spring driven; pocket watch']",13,"watches; watch; mechanical, spring driven; pocket watch",watches,watches
+['watches'],2,watches,watches,watches
+"['watch; pocket watch', 'watches']",1,watch; pocket watch; watches,watches,watches
+"['watch; mechanical, spring driven; pendant watch', 'watches']",1,"watch; mechanical, spring driven; pendant watch; watches",watches,watches
+"['watch; jewelry; accessories worn on the body; female', 'watches']",1,watch; jewelry; accessories worn on the body; female; watches,watches,watches
+['weathervanes'],1,weathervanes,weathervanes,weathervanes
+"[""weaver's pattern book""]",1,weaver's pattern book,weaver's pattern book,weaver's pattern books
+"['weight and hooks, codfish; maritime', 'sinkers (fishing)', 'fishhooks']",1,"weight and hooks, codfish; maritime; sinkers; fishhooks","weight and hooks, codfish; maritime","weight and hooks, codfish; maritimes"
+"['weights', 'weights (scale components)']",3,weights; weights,weights,weights
+"['weights', 'scientific weight', 'scientific weights']",1,weights; scientific weight; scientific weights,weights,weights
+"['wheel cutting engine, clockmaking']",1,"wheel cutting engine, clockmaking","wheel cutting engine, clockmaking","wheel cutting engine, clockmakings"
+['wimpole'],1,wimpole,wimpole,wimpoles
+"['window, church']",1,"window, church","window, church","window, churches"
+['windows'],2,windows,windows,windows
+"['window, stained glass', 'windows']",1,"window, stained glass; windows",windows,windows
+['wood block'],4,wood block,wood block,wood blocks
+"['wood engraving', 'block, printing']",2,"wood engraving; block, printing",wood engraving,wood engravings
+"['worker, butter']",2,"worker, butter","worker, butter","worker, butters"
+['works of art'],6,works of art,works of art,works of arts
+['worm'],1,worm,worm,worms
+"['wrench, barrel', 'mold, shot', 'mold, bullet; 41cc, sullivan, michael d']",1,"wrench, barrel; mold, shot; mold, bullet; 41cc, sullivan, michael d","wrench, barrel","wrench, barrels"
+"['wrought iron bridge spike', 'wrought iron bridge spikes']",1,wrought iron bridge spike; wrought iron bridge spikes,wrought iron bridge spike,wrought iron bridge spikes
+"['yardage', 'yardage']",1,yardage; yardage,yardage,yardages
+['zithers'],1,zithers,zithers,zithers

@@ -1,0 +1,24 @@
+object_type,previous_action,new_action
+['ale bottle'],"Eat, cook & drink",bottles
+"['bottle, scent']","Eat, cook & drink",Other
+['bows (weapons)'],Fight,Perform music
+"['compasses (direction indicators)', 'surveying instruments']",Perform music,Measure & navigate
+"['fabric fragment', 'fabric, printed fragment']",Other,Textile making
+['fabric fragment'],Other,Textile making
+"['fabric length, knitted', 'fabric; knitted']",Other,Textile making
+"['fabric length, plate printed', 'fabric, printed, copperplate']","Eat, cook & drink",Textile making
+"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",Other,Textile making
+['fabric sample'],Other,Textile making
+"['fabric, fragment']",Other,Textile making
+"['fabric, fragment, printed']",Other,Textile making
+"['fabric,fragment']",Other,Textile making
+"['fabric; accessories for the manufacturing of clothing', 'cloth']",Other,Textile making
+"['frame, butter mold']",Decorate & furnish,"Eat, cook & drink"
+['license plate'],"Eat, cook & drink",Other
+"['magnifying glasses', 'microscope, hand held, set']","Eat, cook & drink",Heal & care
+"['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",Fight,Other
+"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']","Eat, cook & drink",Other
+['shop signs'],Commemorate & symbolize,Other
+"['signs (declaratory or advertising artifacts)', 'shop signs']",Commemorate & symbolize,Other
+['snuffers and tray'],Ignite & manage fire,Other
+['surveying instruments'],Perform music,Measure & navigate
