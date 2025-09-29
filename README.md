@@ -15,10 +15,12 @@ A lower **carousel** highlights selected artifacts.
 - **Carousel:** showcases featured artifacts with images and captions.
 <br> 
 
-<img width="1260" height="788" alt="Treemap overview" src="https://github.com/user-attachments/assets/3d97e1fc-a430-4ea6-8665-a5cbf9a651b0" />
-<img width="1260" height="788" alt="Treemap zoom" src="https://github.com/user-attachments/assets/da49124a-a461-4d7c-bf50-a2efb2d17d25" />
-<img width="1260" height="788" alt="Object panel" src="https://github.com/user-attachments/assets/0146b6bd-fa0a-45c7-90e6-52e8de559487" />
-<img width="1260" height="788" alt="Carousel section" src="https://github.com/user-attachments/assets/50185959-95a3-4474-a7f7-1f2ef724cd6e" />
+<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/c5307a69-fae2-4cc9-ae2d-38319b86441c" />
+<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/0cc6b143-f9be-421f-af34-c789c590622f" />
+<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/440b9e2e-effa-42b6-95f6-a6500649602f" />
+<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/540b502f-7cf5-4996-a930-5f81539fd602" />
+<img width="1260" height="788" alt="image" src="https://github.com/user-attachments/assets/1c8c0fb8-1c74-48d4-a0b4-c292b704da3a" />
+<br> 
 
 ## Data
 - Smithsonian’s *Revolutionary Crossroads* open-access dataset  
