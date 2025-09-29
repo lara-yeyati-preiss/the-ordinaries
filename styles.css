@@ -18,7 +18,7 @@ body{
   flex-wrap: wrap; /* flex items move to a new line if there isn’t enough horizontal space */
   justify-content:space-between; /* pushes text and image to opposite ends of the flex row */
   align-items:flex-start; /* flex items align to the top of the flex container */
-  max-width:1150px; /* keep the header readable on very wide screens */
+  max-width:1000px; /* keep the header readable on very wide screens */
   margin:60px auto 0px; /* centers the header horizontally and gives it space above */
   padding:0 24px; /* side padding so content doesn't touch the edges */
 }
@@ -61,7 +61,7 @@ h1{
 
 .viz-wrap{
   position: relative; /* makes the viz-wrap the positioning reference for all the children that are positioned inside it, like a padding box */
-  max-width: 1150px; /* matches header width */
+  max-width: 1000px; /* matches header width */
   margin: 0 auto 20px; /* centers the block horizontally and gives it space below */
   padding-top: 8px 0; /* small padding on top and bottom */
   border-top: 1px solid #dcd7cd; /* serves as subtle line separating header and viz */
@@ -319,7 +319,7 @@ h1{
 
 /* overall frame for the carousel */
 .carousel-container{
-  max-width: 1150px; /* in sync with .header / .viz-wrap */
+  max-width: 1000px; /* in sync with .header / .viz-wrap */
   margin: 0 auto 64px; /* center + space below */
   position: relative; /* for the nav buttons to anchor to the track */
 }
