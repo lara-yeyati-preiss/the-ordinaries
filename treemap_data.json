@@ -172,7 +172,7 @@
         },
         {
           "name": "laces",
-          "value": 32
+          "value": 34
         },
         {
           "name": "watches",
@@ -183,16 +183,8 @@
           "value": 27
         },
         {
-          "name": "costume accessories worns",
+          "name": "headgear",
           "value": 21
-        },
-        {
-          "name": "accessories carrieds",
-          "value": 18
-        },
-        {
-          "name": "caps",
-          "value": 18
         },
         {
           "name": "buttons",
@@ -204,11 +196,31 @@
         },
         {
           "name": "aprons",
+          "value": 10
+        },
+        {
+          "name": "bags",
+          "value": 10
+        },
+        {
+          "name": "neckwear",
+          "value": 10
+        },
+        {
+          "name": "fans",
           "value": 9
         },
         {
           "name": "chemises",
           "value": 8
+        },
+        {
+          "name": "stockings",
+          "value": 8
+        },
+        {
+          "name": "shoe buckles",
+          "value": 6
         },
         {
           "name": "brooches",
@@ -227,10 +239,6 @@
           "value": 5
         },
         {
-          "name": "shoe buckles",
-          "value": 5
-        },
-        {
           "name": "stays",
           "value": 5
         },
@@ -239,7 +247,11 @@
           "value": 4
         },
         {
-          "name": "stockings",
+          "name": "gloves",
+          "value": 4
+        },
+        {
+          "name": "mitts",
           "value": 4
         },
         {
@@ -255,7 +267,7 @@
           "value": 3
         },
         {
-          "name": "gloves",
+          "name": "handkerchiefs",
           "value": 3
         },
         {
@@ -287,14 +299,6 @@
           "value": 2
         },
         {
-          "name": "fans",
-          "value": 2
-        },
-        {
-          "name": "handkerchiefs",
-          "value": 2
-        },
-        {
           "name": "jackets",
           "value": 2
         },
@@ -303,19 +307,11 @@
           "value": 2
         },
         {
-          "name": "lace, border, fragments",
-          "value": 2
-        },
-        {
-          "name": "neckcloths",
+          "name": "knee buckles",
           "value": 2
         },
         {
           "name": "necklaces",
-          "value": 2
-        },
-        {
-          "name": "neckwears",
           "value": 2
         },
         {
@@ -367,7 +363,7 @@
           "value": 1
         },
         {
-          "name": "cuffs, pair of",
+          "name": "cuffs",
           "value": 1
         },
         {
@@ -391,10 +387,6 @@
           "value": 1
         },
         {
-          "name": "knee buckles",
-          "value": 1
-        },
-        {
           "name": "main garments",
           "value": 1
         },
@@ -407,15 +399,15 @@
           "value": 1
         },
         {
-          "name": "mitts",
-          "value": 1
-        },
-        {
           "name": "molds",
           "value": 1
         },
         {
           "name": "muffs",
+          "value": 1
+        },
+        {
+          "name": "neckcloths",
           "value": 1
         },
         {
@@ -471,7 +463,7 @@
           "value": 1
         },
         {
-          "name": "undersleeves, pair of",
+          "name": "undersleeves",
           "value": 1
         },
         {
@@ -479,7 +471,7 @@
           "value": 1
         },
         {
-          "name": "walking stick",
+          "name": "walking sticks",
           "value": 1
         },
         {
@@ -504,11 +496,11 @@
           "value": 60
         },
         {
-          "name": "cups",
-          "value": 42
+          "name": "bowls",
+          "value": 41
         },
         {
-          "name": "bowls",
+          "name": "cups",
           "value": 41
         },
         {
@@ -892,6 +884,10 @@
         {
           "name": "prosthesis",
           "value": 2
+        },
+        {
+          "name": "bloodletting cups",
+          "value": 1
         },
         {
           "name": "eyecups",
