@@ -13,6 +13,7 @@ A lower **carousel** highlights selected artifacts.
 - **Object panel:** lists the objects in each type with direct links to the Smithsonian catalog.  
   When available, images are fetched from the Smithsonian API and displayed next to each object name.  
 - **Carousel:** showcases featured artifacts with images and captions.
+<br> 
 
 <img width="1260" height="788" alt="Treemap overview" src="https://github.com/user-attachments/assets/3d97e1fc-a430-4ea6-8665-a5cbf9a651b0" />
 <img width="1260" height="788" alt="Treemap zoom" src="https://github.com/user-attachments/assets/da49124a-a461-4d7c-bf50-a2efb2d17d25" />
