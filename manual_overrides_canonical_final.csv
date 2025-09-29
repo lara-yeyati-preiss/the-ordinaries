@@ -56,6 +56,7 @@ original_label,canonical_type_manual
 "['holder, cigar']",cigar holders
 "['holder, crayon']",crayons holders
 "['husker, corn']",corn huskers
+"['invitation', 'invitation; manuscript, printed']",manuscripts
 "['jar, butter', 'butter jar', 'jars']",jars
 "['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",lace pillows
 "['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers

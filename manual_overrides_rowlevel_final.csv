@@ -1,4 +1,19 @@
 EDANurl,object_types_str,canonical_type_auto,action_family_auto,canonical_type_manual,action_family_manual
+edanmdm:npm_2025.2004.5,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.4,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.3,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.2,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2006.30.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2004.6,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2004.13,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.3,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.2,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1984.1127.3,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1984.1127.2,['archival materials'],archival materials,"Read, write & record",broadsides,"Read, write & record"
+edanmdm:npm_0.293996.236,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_0.205561.15,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
 edanmdm:nmah_994435,['boxes (containers)'],boxes (containers),Heal & care,boxes,Smoke
 edanmdm:nmah_994346,"['magnifying glasses', 'microscope, hand held, set']",magnifying glasses,"Eat, cook & drink",magnifying glasses,Heal & care
 edanmdm:nmah_969593,"['cross, rounded', 'cross, rounded; historical']","cross, roundeds",Worship,crosses,Worship
@@ -78,6 +93,7 @@ edanmdm:nmah_572405,"['caddy, tea']","caddies, tea","Eat, cook & drink",tea cadd
 edanmdm:nmah_553221,"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']","regimental flag, 2nd south carolina regiments",Commemorate & symbolize,flags,Commemorate & symbolize
 edanmdm:nmah_547162,['book pages'],book pages,"Read, write & record",books,"Read, write & record"
 edanmdm:nmah_547161,['book pages'],book pages,"Read, write & record",books,"Read, write & record"
+edanmdm:nmah_519730,"['invitation', 'invitation; manuscript, printed']",invitations,"Read, write & record",manuscripts,"Read, write & record"
 edanmdm:nmah_514677,['electoral ticket'],electoral tickets,Perform music,electoral tickets,Other
 edanmdm:nmah_494284,['license plate'],license plates,"Eat, cook & drink",license plates,Other
 edanmdm:nmah_494283,['license plate'],license plates,"Eat, cook & drink",license plates,Other

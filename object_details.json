@@ -17186,7 +17186,7 @@
       "action_family": "Read, write & record"
     }
   ],
-  "correspondences": [
+  "newspapers": [
     {
       "title": "Philadelphia Aurora newspaper",
       "unitCode": "NPM",
@@ -17209,17 +17209,474 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "Folded letter from George Prescott to Charles Potter",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.20",
-      "EDANurl": "edanmdm:npm_2025.2004.20",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Westminster Journal and London Political Miscellany newspaper",
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.2",
       "EDANurl": "edanmdm:npm_2025.2004.2",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Pennsylvania Packet and the General Advertiser newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.1",
+      "EDANurl": "edanmdm:npm_2025.2004.1",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Gazette of the United States newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2006.30.1",
+      "EDANurl": "edanmdm:npm_2024.2006.30.1",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Gazette of the United States newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.6",
+      "EDANurl": "edanmdm:npm_2024.2004.6",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Country Journal or the Craftsman newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.13",
+      "EDANurl": "edanmdm:npm_2024.2004.13",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Baltimore Daily Intelligencer newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.3",
+      "EDANurl": "edanmdm:npm_1989.0718.3",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Baltimore Daily Intelligencer newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.2",
+      "EDANurl": "edanmdm:npm_1989.0718.2",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Baltimore Daily Intelligencer newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.1",
+      "EDANurl": "edanmdm:npm_1989.0718.1",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Publication of William Goddard's plan in the Essex Gazette newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1984.1127.3",
+      "EDANurl": "edanmdm:npm_1984.1127.3",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Post Boy newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.293996.236",
+      "EDANurl": "edanmdm:npm_0.293996.236",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Loyal Protestant and The Domestick Intelligence newspaper",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.205561.15",
+      "EDANurl": "edanmdm:npm_0.205561.15",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Pennsylvania Packet and Daily Advertiser, 1789",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805118",
+      "EDANurl": "edanmdm:nmah_805118",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Connecticut Gazette",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805110",
+      "EDANurl": "edanmdm:nmah_805110",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Weekly Museum, January 1, 1803",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805095",
+      "EDANurl": "edanmdm:nmah_805095",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Boston Gazette & Country Journal, March 12, 1770",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805059",
+      "EDANurl": "edanmdm:nmah_805059",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The New York Spectator, Vol. XIII, No. 1269, February 24, 1810",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805046",
+      "EDANurl": "edanmdm:nmah_805046",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Pennsylvania Gazette, 1798, reproduction",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796998",
+      "EDANurl": "edanmdm:nmah_796998",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Pennsylvania Gazette, 1798",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796997",
+      "EDANurl": "edanmdm:nmah_796997",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "...The Morning Post and Daily Advertiser...",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796024",
+      "EDANurl": "edanmdm:nmah_796024",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Wiener Zeitung, November 13, 1805",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795991",
+      "EDANurl": "edanmdm:nmah_795991",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Massachusetts Spy, or Worcester Gazette, August 6, 1806",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795990",
+      "EDANurl": "edanmdm:nmah_795990",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Washington Federalist, November 19, 1802",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795984",
+      "EDANurl": "edanmdm:nmah_795984",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Norwich Mercury No. 1611, September 29, 1781",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795979",
+      "EDANurl": "edanmdm:nmah_795979",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_550003",
+      "EDANurl": "edanmdm:nmah_550003",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_550002",
+      "EDANurl": "edanmdm:nmah_550002",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_527865",
+      "EDANurl": "edanmdm:nmah_527865",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_527864",
+      "EDANurl": "edanmdm:nmah_527864",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_518898",
+      "EDANurl": "edanmdm:nmah_518898",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_518895",
+      "EDANurl": "edanmdm:nmah_518895",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper clipping",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_513955",
+      "EDANurl": "edanmdm:nmah_513955",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Pennsylvania Packet and Daily Advertiser",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509570",
+      "EDANurl": "edanmdm:nmah_509570",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Independent Chronicle and the Universal Advertiser",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509559",
+      "EDANurl": "edanmdm:nmah_509559",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Virginia Independent Chronicle",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509558",
+      "EDANurl": "edanmdm:nmah_509558",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509553",
+      "EDANurl": "edanmdm:nmah_509553",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509552",
+      "EDANurl": "edanmdm:nmah_509552",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509551",
+      "EDANurl": "edanmdm:nmah_509551",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509550",
+      "EDANurl": "edanmdm:nmah_509550",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509533",
+      "EDANurl": "edanmdm:nmah_509533",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509532",
+      "EDANurl": "edanmdm:nmah_509532",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509527",
+      "EDANurl": "edanmdm:nmah_509527",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509526",
+      "EDANurl": "edanmdm:nmah_509526",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509516",
+      "EDANurl": "edanmdm:nmah_509516",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509515",
+      "EDANurl": "edanmdm:nmah_509515",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509490",
+      "EDANurl": "edanmdm:nmah_509490",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Spectator",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509489",
+      "EDANurl": "edanmdm:nmah_509489",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509487",
+      "EDANurl": "edanmdm:nmah_509487",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Maryland Journal and the Baltimore Advertiser",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509486",
+      "EDANurl": "edanmdm:nmah_509486",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Maryland Journal and the Baltimore Advertiser",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_495954",
+      "EDANurl": "edanmdm:nmah_495954",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper sheet",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_495829",
+      "EDANurl": "edanmdm:nmah_495829",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Jonathan Copp's death announcement",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316258",
+      "EDANurl": "edanmdm:nmah_316258",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Connecticut Gazette and the Universal Intelligencer; 1",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314934",
+      "EDANurl": "edanmdm:nmah_314934",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Boston Gazette and Country Journal",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314933",
+      "EDANurl": "edanmdm:nmah_314933",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "True Republican",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314932",
+      "EDANurl": "edanmdm:nmah_314932",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Rising Sun",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314913",
+      "EDANurl": "edanmdm:nmah_314913",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "American Mercury",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314911",
+      "EDANurl": "edanmdm:nmah_314911",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Massachusetts Centinel and the Republican Journal",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314910",
+      "EDANurl": "edanmdm:nmah_314910",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "True Republican",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314908",
+      "EDANurl": "edanmdm:nmah_314908",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2002942",
+      "EDANurl": "edanmdm:nmah_2002942",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2002828",
+      "EDANurl": "edanmdm:nmah_2002828",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Massachusetts Mercury",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1180771",
+      "EDANurl": "edanmdm:nmah_1180771",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Spectator, New York, Wednesday, April 9, 1800",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1169100",
+      "EDANurl": "edanmdm:nmah_1169100",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162037",
+      "EDANurl": "edanmdm:nmah_1162037",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Continental Journal and Weekly Advertiser",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162035",
+      "EDANurl": "edanmdm:nmah_1162035",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "The Pennsylvania Gazette",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162034",
+      "EDANurl": "edanmdm:nmah_1162034",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Monsters of All Kinds Can Be Destroyed",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1161695",
+      "EDANurl": "edanmdm:nmah_1161695",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "newspaper",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1160740",
+      "EDANurl": "edanmdm:nmah_1160740",
+      "action_family": "Read, write & record"
+    }
+  ],
+  "correspondences": [
+    {
+      "title": "Folded letter from George Prescott to Charles Potter",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.20",
+      "EDANurl": "edanmdm:npm_2025.2004.20",
       "action_family": "Read, write & record"
     },
     {
@@ -17241,13 +17698,6 @@
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.12",
       "EDANurl": "edanmdm:npm_2025.2004.12",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Pennsylvania Packet and the General Advertiser newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2025.2004.1",
-      "EDANurl": "edanmdm:npm_2025.2004.1",
       "action_family": "Read, write & record"
     },
     {
@@ -17307,20 +17757,6 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "Gazette of the United States newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2006.30.1",
-      "EDANurl": "edanmdm:npm_2024.2006.30.1",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Gazette of the United States newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.6",
-      "EDANurl": "edanmdm:npm_2024.2004.6",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Gideon Granger's request for construction proposals",
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.5.1",
@@ -17374,13 +17810,6 @@
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.14",
       "EDANurl": "edanmdm:npm_2024.2004.14",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Country Journal or the Craftsman newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_2024.2004.13",
-      "EDANurl": "edanmdm:npm_2024.2004.13",
       "action_family": "Read, write & record"
     },
     {
@@ -17615,24 +18044,10 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "The Baltimore Daily Intelligencer newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.1",
-      "EDANurl": "edanmdm:npm_1989.0718.1",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Constitutional Post endorsed folded letter",
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1985.0970.1",
       "EDANurl": "edanmdm:npm_1985.0970.1",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Publication of William Goddard's plan in the Essex Gazette newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1984.1127.3",
-      "EDANurl": "edanmdm:npm_1984.1127.3",
       "action_family": "Read, write & record"
     },
     {
@@ -18653,20 +19068,6 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "The Baltimore Daily Intelligencer newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.3",
-      "EDANurl": "edanmdm:npm_1989.0718.3",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Baltimore Daily Intelligencer newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1989.0718.2",
-      "EDANurl": "edanmdm:npm_1989.0718.2",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Wrapper from New Orleans via Fort Stoddert to Jonathan Meredith",
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1987.0096.92",
@@ -18706,13 +19107,6 @@
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1984.1127.4",
       "EDANurl": "edanmdm:npm_1984.1127.4",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Broadside issued by Franklin and Hunter",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1984.1127.2",
-      "EDANurl": "edanmdm:npm_1984.1127.2",
       "action_family": "Read, write & record"
     },
     {
@@ -18758,13 +19152,6 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "The Post Boy newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.293996.236",
-      "EDANurl": "edanmdm:npm_0.293996.236",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Draft regarding Mail Indenture",
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.293996.235",
@@ -18797,13 +19184,6 @@
       "unitCode": "NPM",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.293996.2",
       "EDANurl": "edanmdm:npm_0.293996.2",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Loyal Protestant and The Domestick Intelligence newspaper",
-      "unitCode": "NPM",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.205561.15",
-      "EDANurl": "edanmdm:npm_0.205561.15",
       "action_family": "Read, write & record"
     }
   ],
@@ -18923,6 +19303,36 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_0.283371.1",
       "EDANurl": "edanmdm:npm_0.283371.1",
       "action_family": "Portray, display & decorate"
+    }
+  ],
+  "broadsides": [
+    {
+      "title": "Broadside issued by Franklin and Hunter",
+      "unitCode": "NPM",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npm_1984.1127.2",
+      "EDANurl": "edanmdm:npm_1984.1127.2",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "broadside",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_501626",
+      "EDANurl": "edanmdm:nmah_501626",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "A Proclamation",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2036396",
+      "EDANurl": "edanmdm:nmah_2036396",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "document, broadside",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1110401",
+      "EDANurl": "edanmdm:nmah_1110401",
+      "action_family": "Read, write & record"
     }
   ],
   "tax stamps": [
@@ -72148,6 +72558,13 @@
       "action_family": "Read, write & record"
     },
     {
+      "title": "invitation",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_519730",
+      "EDANurl": "edanmdm:nmah_519730",
+      "action_family": "Read, write & record"
+    },
+    {
       "title": "Receipt from Daniel Copp from Jonathan Copp",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_317176",
@@ -72236,393 +72653,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1127625",
       "EDANurl": "edanmdm:nmah_1127625",
-      "action_family": "Read, write & record"
-    }
-  ],
-  "newspapers": [
-    {
-      "title": "The Pennsylvania Packet and Daily Advertiser, 1789",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805118",
-      "EDANurl": "edanmdm:nmah_805118",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Connecticut Gazette",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805110",
-      "EDANurl": "edanmdm:nmah_805110",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Weekly Museum, January 1, 1803",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805095",
-      "EDANurl": "edanmdm:nmah_805095",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Boston Gazette & Country Journal, March 12, 1770",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805059",
-      "EDANurl": "edanmdm:nmah_805059",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The New York Spectator, Vol. XIII, No. 1269, February 24, 1810",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_805046",
-      "EDANurl": "edanmdm:nmah_805046",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Pennsylvania Gazette, 1798, reproduction",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796998",
-      "EDANurl": "edanmdm:nmah_796998",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Pennsylvania Gazette, 1798",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796997",
-      "EDANurl": "edanmdm:nmah_796997",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "...The Morning Post and Daily Advertiser...",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_796024",
-      "EDANurl": "edanmdm:nmah_796024",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Wiener Zeitung, November 13, 1805",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795991",
-      "EDANurl": "edanmdm:nmah_795991",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Massachusetts Spy, or Worcester Gazette, August 6, 1806",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795990",
-      "EDANurl": "edanmdm:nmah_795990",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Washington Federalist, November 19, 1802",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795984",
-      "EDANurl": "edanmdm:nmah_795984",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Norwich Mercury No. 1611, September 29, 1781",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_795979",
-      "EDANurl": "edanmdm:nmah_795979",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_550003",
-      "EDANurl": "edanmdm:nmah_550003",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_550002",
-      "EDANurl": "edanmdm:nmah_550002",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_527865",
-      "EDANurl": "edanmdm:nmah_527865",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_527864",
-      "EDANurl": "edanmdm:nmah_527864",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_518898",
-      "EDANurl": "edanmdm:nmah_518898",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_518895",
-      "EDANurl": "edanmdm:nmah_518895",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper clipping",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_513955",
-      "EDANurl": "edanmdm:nmah_513955",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Pennsylvania Packet and Daily Advertiser",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509570",
-      "EDANurl": "edanmdm:nmah_509570",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Independent Chronicle and the Universal Advertiser",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509559",
-      "EDANurl": "edanmdm:nmah_509559",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Virginia Independent Chronicle",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509558",
-      "EDANurl": "edanmdm:nmah_509558",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509553",
-      "EDANurl": "edanmdm:nmah_509553",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509552",
-      "EDANurl": "edanmdm:nmah_509552",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509551",
-      "EDANurl": "edanmdm:nmah_509551",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509550",
-      "EDANurl": "edanmdm:nmah_509550",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509533",
-      "EDANurl": "edanmdm:nmah_509533",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509532",
-      "EDANurl": "edanmdm:nmah_509532",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509527",
-      "EDANurl": "edanmdm:nmah_509527",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509526",
-      "EDANurl": "edanmdm:nmah_509526",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509516",
-      "EDANurl": "edanmdm:nmah_509516",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509515",
-      "EDANurl": "edanmdm:nmah_509515",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509490",
-      "EDANurl": "edanmdm:nmah_509490",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Spectator",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509489",
-      "EDANurl": "edanmdm:nmah_509489",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509487",
-      "EDANurl": "edanmdm:nmah_509487",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Maryland Journal and the Baltimore Advertiser",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_509486",
-      "EDANurl": "edanmdm:nmah_509486",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Maryland Journal and the Baltimore Advertiser",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_495954",
-      "EDANurl": "edanmdm:nmah_495954",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper sheet",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_495829",
-      "EDANurl": "edanmdm:nmah_495829",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Jonathan Copp's death announcement",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316258",
-      "EDANurl": "edanmdm:nmah_316258",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Connecticut Gazette and the Universal Intelligencer; 1",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314934",
-      "EDANurl": "edanmdm:nmah_314934",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Boston Gazette and Country Journal",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314933",
-      "EDANurl": "edanmdm:nmah_314933",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "True Republican",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314932",
-      "EDANurl": "edanmdm:nmah_314932",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Rising Sun",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314913",
-      "EDANurl": "edanmdm:nmah_314913",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "American Mercury",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314911",
-      "EDANurl": "edanmdm:nmah_314911",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Massachusetts Centinel and the Republican Journal",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314910",
-      "EDANurl": "edanmdm:nmah_314910",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "True Republican",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_314908",
-      "EDANurl": "edanmdm:nmah_314908",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2002942",
-      "EDANurl": "edanmdm:nmah_2002942",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2002828",
-      "EDANurl": "edanmdm:nmah_2002828",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Massachusetts Mercury",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1180771",
-      "EDANurl": "edanmdm:nmah_1180771",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Spectator, New York, Wednesday, April 9, 1800",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1169100",
-      "EDANurl": "edanmdm:nmah_1169100",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162037",
-      "EDANurl": "edanmdm:nmah_1162037",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Continental Journal and Weekly Advertiser",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162035",
-      "EDANurl": "edanmdm:nmah_1162035",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "The Pennsylvania Gazette",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1162034",
-      "EDANurl": "edanmdm:nmah_1162034",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Monsters of All Kinds Can Be Destroyed",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1161695",
-      "EDANurl": "edanmdm:nmah_1161695",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "newspaper",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1160740",
-      "EDANurl": "edanmdm:nmah_1160740",
       "action_family": "Read, write & record"
     }
   ],
@@ -79563,15 +79593,6 @@
       "action_family": "Play"
     }
   ],
-  "invitations": [
-    {
-      "title": "invitation",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_519730",
-      "EDANurl": "edanmdm:nmah_519730",
-      "action_family": "Read, write & record"
-    }
-  ],
   "bill of sales": [
     {
       "title": "bill of sale",
@@ -79705,29 +79726,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_503418",
       "EDANurl": "edanmdm:nmah_503418",
       "action_family": "Other"
-    }
-  ],
-  "broadsides": [
-    {
-      "title": "broadside",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_501626",
-      "EDANurl": "edanmdm:nmah_501626",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "A Proclamation",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_2036396",
-      "EDANurl": "edanmdm:nmah_2036396",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "document, broadside",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1110401",
-      "EDANurl": "edanmdm:nmah_1110401",
-      "action_family": "Read, write & record"
     }
   ],
   "tumblers": [
