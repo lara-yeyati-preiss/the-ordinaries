@@ -1,46 +1,92 @@
 original_label,canonical_type_manual
 "[""pattern book, weaver's""]",pattern books
 "[""weaver's pattern book""]",pattern books
+['ale bottle'],bottles
+"['apron, fraternal', 'apron, masonic']",aprons
+"['beads, prayer']",prayer beads
 ['book pages'],books
 "['bottle, nursing']",nursing bottles
+"['box, dough', 'dough trough table']",dough boxes
+"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooches
 "['bucket, fire', 'buckets (vessels)']",fire buckets
 "['bucket, fire']",fire buckets
+"['buckle, knee; jewelry; accessories worn on the body; male', 'buckle, knee']",knee buckles
+"['buckle, shoe', 'buckle, shoe; jewelry; accessories worn on the body; male']",shoe buckles
+"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']",shoe buckles
+"['button, politcal']",political buttons
+"['button, political']",political buttons
+"['caddy, tea']",tea caddies
+['calendar medal'],medals
+"['calipers, linear, set of', 'calipers, venier combined with depth gage']",calipers
 "['cannon, revolutionary war']",cannons
+"['cap, miter', 'cap; cap, mitre; man; m, newport light infantry', 'mitres']",miter caps
+"['cases (containers)', 'case; surgical set']",surgical set cases
 "['certificate, discharge']",certificates
 "['certificate, naturalization']",certificates
+"['chemise, shift', 'chemise, shift; entire body; underwear; female']",chemises
+"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",combs
+"['cooler, wine']",wine coolers
+"['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",brooches
 "['cross, rounded', 'cross, rounded; historical']",crosses
 "['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",tinderboxes
 "['cutter, straw', 'fire steel; fire making apparatus']",firesteels
+"['dipper, snuff']",snuff dippers
 "['document, broadside']",broadsides
+"['doll, woman']",dolls
 "['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",embroideries
 "['embroidery, picture']",embroideries
 "['embroidery, white work', 'pocket, white work']",embroideries
+"['finial, altar screen']",altar screens
 "['fire steel; fire making apparatus', 'firesteel']",firesteels
 "['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",flags
 "['flag, revolutionary war']",flags
+"['fork, hearth']",flatwares
+['forks (flatware)'],flatwares
 "['fragment, pan']",pans
 "['fragment, pitcher']",pitchers
 "['fragments, bottle']",bottles
 "['frame, butter mold']",molds
 "['fusil', 'musket, flintlock']",flintlocks
+"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",gaiters
 "['glass, jelly']",glasses
 "['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']",glasses
 "['glass, soda']",glasses
+"['grenade; ammunition, artillery; hand', 'grenades']",grenades
 "['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",muskets
+"['holder, cigar']",cigar holders
+"['holder, crayon']",crayons holders
+"['husker, corn']",corn huskers
 "['jar, butter', 'butter jar', 'jars']",jars
+"['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",lace pillows
 "['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers
+"['lifter, pot']",pot lifters
+"['lighter; fire making apparatus', 'lighter']",lighters
+"['machine tool, metalworking, lathe, pole', 'pole lathe']",machine tools
+"['masher, potato', 'potato masher; kitchen utensils']",mashers
+"['masher, potato']",mashers
 "['medal, political']",medals
 "['medal; personal; commemorative', 'medallions (medals)']",medals
+"['mixer, drink, bow drill']",bow drills
 "['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",flintlocks
 "['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",flintlocks
+"['needle, crochet', 'crochet hooks']",needles
+"['needle, knitting']",needles
+"['needlework, embroidery']",embroideries
 "['oven, dutch']",dutch ovens
 "['pan, baking']",pans
+"['pattern, lace']",lace patterns
+"['pin, rolling']",rolling pins
+"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",pistol-swords
 "['plate, soup']",plates
+"['print, fashion plate']",fashion plates
 ['punch bowls'],bowls
+"['rack, spoon']",spoon racks
 "['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']",flags
+"['rolling pin; kitchen utensils', 'pin, rolling']",rolling pins
 "['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']",sabers
 "['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']",bayonets
 "['scabbard, bayonet', 'scabbards']",bayonets
+"['scale rule, folding', 'rule, folding']",scale rules
 "['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",manuscripts
 "['sheet (paper)', 'sheet (paper); manuscript']",manuscripts
 "['sheet (paper); manuscript', 'deed']",manuscripts
@@ -50,4 +96,10 @@ original_label,canonical_type_manual
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",flintlocks
+"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",collar studs
+"['suit, 2 piece']",suits
 "['tinder box; fire making apparatus', 'box, tinder']",tinderboxes
+"['tool, millinery']",pusher downers
+"['trumpet, speaking']",trumpets
+"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",watch papers
+"['worker, butter']",butter scoops

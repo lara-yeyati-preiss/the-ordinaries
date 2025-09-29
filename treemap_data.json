@@ -6,7 +6,7 @@
       "children": [
         {
           "name": "medals",
-          "value": 250
+          "value": 251
         },
         {
           "name": "badges",
@@ -23,10 +23,6 @@
         {
           "name": "banners",
           "value": 6
-        },
-        {
-          "name": "calendar medals",
-          "value": 1
         }
       ]
     },
@@ -106,7 +102,15 @@
           "value": 1
         },
         {
+          "name": "ceiling ornament, churches",
+          "value": 1
+        },
+        {
           "name": "cups",
+          "value": 1
+        },
+        {
+          "name": "entablature fragment, churches",
           "value": 1
         },
         {
@@ -160,7 +164,7 @@
         },
         {
           "name": "fashion plates",
-          "value": 33
+          "value": 38
         },
         {
           "name": "laces",
@@ -176,7 +180,7 @@
         },
         {
           "name": "costume accessories worns",
-          "value": 22
+          "value": 21
         },
         {
           "name": "accessories carrieds",
@@ -191,19 +195,23 @@
           "value": 15
         },
         {
-          "name": "button, politicals",
-          "value": 12
+          "name": "political buttons",
+          "value": 13
+        },
+        {
+          "name": "aprons",
+          "value": 9
+        },
+        {
+          "name": "chemises",
+          "value": 8
         },
         {
           "name": "waistcoats",
           "value": 8
         },
         {
-          "name": "aprons",
-          "value": 7
-        },
-        {
-          "name": "chemise, shifts",
+          "name": "brooches",
           "value": 5
         },
         {
@@ -215,24 +223,16 @@
           "value": 5
         },
         {
-          "name": "print, fashion plates",
+          "name": "rings",
           "value": 5
         },
         {
-          "name": "rings",
+          "name": "shoe buckles",
           "value": 5
         },
         {
           "name": "stays",
           "value": 5
-        },
-        {
-          "name": "brooch",
-          "value": 4
-        },
-        {
-          "name": "buckles, shoe, pair oves",
-          "value": 4
         },
         {
           "name": "coats",
@@ -248,10 +248,6 @@
         },
         {
           "name": "breeches",
-          "value": 3
-        },
-        {
-          "name": "chemises",
           "value": 3
         },
         {
@@ -271,10 +267,6 @@
           "value": 3
         },
         {
-          "name": "apron, fraternals",
-          "value": 2
-        },
-        {
           "name": "bracelets",
           "value": 2
         },
@@ -284,6 +276,10 @@
         },
         {
           "name": "busks",
+          "value": 2
+        },
+        {
+          "name": "combs",
           "value": 2
         },
         {
@@ -323,10 +319,6 @@
           "value": 2
         },
         {
-          "name": "pin, rollings",
-          "value": 2
-        },
-        {
           "name": "pins",
           "value": 2
         },
@@ -347,31 +339,7 @@
           "value": 2
         },
         {
-          "name": "accessories for the care of clothings",
-          "value": 1
-        },
-        {
-          "name": "bag, salvages",
-          "value": 1
-        },
-        {
-          "name": "beads, prayers",
-          "value": 1
-        },
-        {
           "name": "bonnets",
-          "value": 1
-        },
-        {
-          "name": "buckle, knee",
-          "value": 1
-        },
-        {
-          "name": "buckle, shoes",
-          "value": 1
-        },
-        {
-          "name": "button, politcals",
           "value": 1
         },
         {
@@ -379,15 +347,7 @@
           "value": 1
         },
         {
-          "name": "cap, miters",
-          "value": 1
-        },
-        {
           "name": "capes",
-          "value": 1
-        },
-        {
-          "name": "ceiling ornament, churches",
           "value": 1
         },
         {
@@ -395,11 +355,7 @@
           "value": 1
         },
         {
-          "name": "comb, ornamental",
-          "value": 1
-        },
-        {
-          "name": "combs",
+          "name": "collar studs",
           "value": 1
         },
         {
@@ -427,7 +383,7 @@
           "value": 1
         },
         {
-          "name": "gaiters, pair of",
+          "name": "gaiters",
           "value": 1
         },
         {
@@ -435,7 +391,15 @@
           "value": 1
         },
         {
+          "name": "knee buckles",
+          "value": 1
+        },
+        {
           "name": "main garments",
+          "value": 1
+        },
+        {
+          "name": "miter caps",
           "value": 1
         },
         {
@@ -463,6 +427,10 @@
           "value": 1
         },
         {
+          "name": "prayer beads",
+          "value": 1
+        },
+        {
           "name": "quilts",
           "value": 1
         },
@@ -479,15 +447,11 @@
           "value": 1
         },
         {
-          "name": "stud, collars",
-          "value": 1
-        },
-        {
           "name": "studs",
           "value": 1
         },
         {
-          "name": "suit, 2 pieces",
+          "name": "suits",
           "value": 1
         },
         {
@@ -517,6 +481,10 @@
         {
           "name": "walking stick",
           "value": 1
+        },
+        {
+          "name": "watch papers",
+          "value": 1
         }
       ]
     },
@@ -525,11 +493,11 @@
       "children": [
         {
           "name": "flatwares",
-          "value": 221
+          "value": 229
         },
         {
           "name": "bottles",
-          "value": 184
+          "value": 185
         },
         {
           "name": "plates",
@@ -596,10 +564,6 @@
           "value": 12
         },
         {
-          "name": "forks",
-          "value": 8
-        },
-        {
           "name": "glasses",
           "value": 8
         },
@@ -660,15 +624,7 @@
           "value": 2
         },
         {
-          "name": "caddies, tea",
-          "value": 2
-        },
-        {
           "name": "casters",
-          "value": 2
-        },
-        {
-          "name": "cooler, wines",
           "value": 2
         },
         {
@@ -696,15 +652,19 @@
           "value": 2
         },
         {
-          "name": "lifter, pots",
-          "value": 2
-        },
-        {
-          "name": "masher, potatos",
+          "name": "mashers",
           "value": 2
         },
         {
           "name": "nursing bottles",
+          "value": 2
+        },
+        {
+          "name": "pot lifters",
+          "value": 2
+        },
+        {
+          "name": "rolling pins",
           "value": 2
         },
         {
@@ -720,15 +680,23 @@
           "value": 2
         },
         {
+          "name": "tea caddies",
+          "value": 2
+        },
+        {
           "name": "vases",
           "value": 2
         },
         {
-          "name": "worker, butters",
+          "name": "wine coolers",
           "value": 2
         },
         {
-          "name": "box, dough",
+          "name": "butter scoops",
+          "value": 1
+        },
+        {
+          "name": "butter workers",
           "value": 1
         },
         {
@@ -744,6 +712,14 @@
           "value": 1
         },
         {
+          "name": "corn huskers",
+          "value": 1
+        },
+        {
+          "name": "dough boxes",
+          "value": 1
+        },
+        {
           "name": "ecuelles",
           "value": 1
         },
@@ -753,10 +729,6 @@
         },
         {
           "name": "funnels",
-          "value": 1
-        },
-        {
-          "name": "husker, corns",
           "value": 1
         },
         {
@@ -800,15 +772,15 @@
           "value": 1
         },
         {
-          "name": "rack, spoons",
-          "value": 1
-        },
-        {
           "name": "reamer, lemons",
           "value": 1
         },
         {
           "name": "spigots",
+          "value": 1
+        },
+        {
+          "name": "spoon racks",
           "value": 1
         },
         {
@@ -861,11 +833,11 @@
           "value": 1
         },
         {
-          "name": "grenade",
+          "name": "grenade launchers",
           "value": 1
         },
         {
-          "name": "grenade launchers",
+          "name": "grenades",
           "value": 1
         },
         {
@@ -873,7 +845,7 @@
           "value": 1
         },
         {
-          "name": "pistol swords",
+          "name": "pistol-swords",
           "value": 1
         },
         {
@@ -922,10 +894,6 @@
           "value": 2
         },
         {
-          "name": "case, surgical set",
-          "value": 1
-        },
-        {
           "name": "eyecups",
           "value": 1
         },
@@ -951,6 +919,10 @@
         },
         {
           "name": "surgical instruments",
+          "value": 1
+        },
+        {
+          "name": "surgical set cases",
           "value": 1
         },
         {
@@ -1032,7 +1004,11 @@
           "value": 3
         },
         {
-          "name": "calipers, linear, set oves",
+          "name": "scale rules",
+          "value": 2
+        },
+        {
+          "name": "calipers",
           "value": 1
         },
         {
@@ -1041,14 +1017,6 @@
         },
         {
           "name": "protractors",
-          "value": 1
-        },
-        {
-          "name": "scale rule, foldings",
-          "value": 1
-        },
-        {
-          "name": "scale rules",
           "value": 1
         },
         {
@@ -1489,6 +1457,10 @@
           "value": 1
         },
         {
+          "name": "bag, salvages",
+          "value": 1
+        },
+        {
           "name": "ballot boxes",
           "value": 1
         },
@@ -1665,6 +1637,10 @@
           "value": 1
         },
         {
+          "name": "crayons holders",
+          "value": 1
+        },
+        {
           "name": "crests",
           "value": 1
         },
@@ -1705,6 +1681,10 @@
           "value": 1
         },
         {
+          "name": "electoral tickets",
+          "value": 1
+        },
+        {
           "name": "electrostatic demonstration apparatuses",
           "value": 1
         },
@@ -1718,10 +1698,6 @@
         },
         {
           "name": "engine, internal combustion, models",
-          "value": 1
-        },
-        {
-          "name": "entablature fragment, churches",
           "value": 1
         },
         {
@@ -1810,10 +1786,6 @@
         },
         {
           "name": "hats",
-          "value": 1
-        },
-        {
-          "name": "holder, crayons",
           "value": 1
         },
         {
@@ -2483,6 +2455,10 @@
           "value": 3
         },
         {
+          "name": "trumpets",
+          "value": 3
+        },
+        {
           "name": "viols",
           "value": 3
         },
@@ -2519,10 +2495,6 @@
           "value": 2
         },
         {
-          "name": "trumpet, speakings",
-          "value": 2
-        },
-        {
           "name": "viola d'amores",
           "value": 2
         },
@@ -2547,10 +2519,6 @@
           "value": 1
         },
         {
-          "name": "electoral tickets",
-          "value": 1
-        },
-        {
           "name": "harp, jaws",
           "value": 1
         },
@@ -2568,10 +2536,6 @@
         },
         {
           "name": "pochettes",
-          "value": 1
-        },
-        {
-          "name": "trumpets",
           "value": 1
         },
         {
@@ -2604,7 +2568,7 @@
           "value": 1
         },
         {
-          "name": "doll, women",
+          "name": "dolls",
           "value": 1
         },
         {
@@ -2819,15 +2783,15 @@
           "value": 11
         },
         {
-          "name": "dipper, snufves",
+          "name": "cigar holders",
           "value": 1
         },
         {
-          "name": "holder, cigars",
+          "name": "lighters",
           "value": 1
         },
         {
-          "name": "lighter",
+          "name": "snuff dippers",
           "value": 1
         }
       ]
@@ -2844,35 +2808,27 @@
           "value": 24
         },
         {
-          "name": "needle, knittings",
-          "value": 6
+          "name": "needles",
+          "value": 7
         },
         {
           "name": "embroideries",
-          "value": 3
+          "value": 4
         },
         {
           "name": "pattern books",
           "value": 2
         },
         {
-          "name": "lace pillow, laces",
+          "name": "lace patterns",
           "value": 1
         },
         {
-          "name": "needle, crochets",
+          "name": "lace pillows",
           "value": 1
         },
         {
           "name": "needlework kit",
-          "value": 1
-        },
-        {
-          "name": "needlework, embroideries",
-          "value": 1
-        },
-        {
-          "name": "pattern, laces",
           "value": 1
         },
         {
@@ -2909,6 +2865,10 @@
           "value": 1
         },
         {
+          "name": "bow drills",
+          "value": 1
+        },
+        {
           "name": "hand tools",
           "value": 1
         },
@@ -2917,15 +2877,11 @@
           "value": 1
         },
         {
-          "name": "machine tool, metalworking, lathe, poles",
+          "name": "machine tools",
           "value": 1
         },
         {
           "name": "mallets",
-          "value": 1
-        },
-        {
-          "name": "mixer, drink, bow drills",
           "value": 1
         },
         {
@@ -2941,6 +2897,10 @@
           "value": 1
         },
         {
+          "name": "pusher downers",
+          "value": 1
+        },
+        {
           "name": "saws",
           "value": 1
         },
@@ -2950,10 +2910,6 @@
         },
         {
           "name": "swage block",
-          "value": 1
-        },
-        {
-          "name": "tool, millineries",
           "value": 1
         },
         {
@@ -2974,16 +2930,7 @@
           "value": 7
         },
         {
-          "name": "finial, altar screens",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "bottles",
-      "children": [
-        {
-          "name": "ale bottles",
+          "name": "altar screens",
           "value": 1
         }
       ]

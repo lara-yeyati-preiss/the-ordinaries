@@ -1,8 +1,11 @@
 object_type,previous_action,new_action
-['ale bottle'],"Eat, cook & drink",bottles
+"['bag, salvage']",Dress & accessorize,Other
 "['bottle, scent']","Eat, cook & drink",Other
 ['bows (weapons)'],Fight,Perform music
+"['ceiling ornament, church']",Dress & accessorize,Decorate & furnish
 "['compasses (direction indicators)', 'surveying instruments']",Perform music,Measure & navigate
+['electoral ticket'],Perform music,Other
+"['entablature fragment, church', 'beam fragment']",Other,Decorate & furnish
 "['fabric fragment', 'fabric, printed fragment']",Other,Textile making
 ['fabric fragment'],Other,Textile making
 "['fabric length, knitted', 'fabric; knitted']",Other,Textile making
@@ -18,6 +21,8 @@ object_type,previous_action,new_action
 "['magnifying glasses', 'microscope, hand held, set']","Eat, cook & drink",Heal & care
 "['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",Fight,Other
 "['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']","Eat, cook & drink",Other
+"['pin, rolling']",Dress & accessorize,"Eat, cook & drink"
+"['rolling pin; kitchen utensils', 'pin, rolling']",Dress & accessorize,"Eat, cook & drink"
 ['shop signs'],Commemorate & symbolize,Other
 "['signs (declaratory or advertising artifacts)', 'shop signs']",Commemorate & symbolize,Other
 ['snuffers and tray'],Ignite & manage fire,Other
