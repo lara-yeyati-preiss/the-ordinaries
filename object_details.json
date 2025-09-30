@@ -33641,6 +33641,13 @@
       "action_family": "Commemorate & symbolize"
     },
     {
+      "title": "Benjamin Franklin",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_582893",
+      "EDANurl": "edanmdm:nmah_582893",
+      "action_family": "Commemorate & symbolize"
+    },
+    {
       "title": "medal",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_514832",
@@ -34903,6 +34910,13 @@
     {
       "title": "Fidelity medallion, United States, 1780",
       "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1097201",
+      "EDANurl": "edanmdm:nmah_1097201",
+      "action_family": "Commemorate & symbolize"
+    },
+    {
+      "title": "Fidelity medallion, United States, 1780",
+      "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1097200",
       "EDANurl": "edanmdm:nmah_1097200",
       "action_family": "Commemorate & symbolize"
@@ -35351,7 +35365,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_997122",
       "EDANurl": "edanmdm:nmah_997122",
-      "action_family": "Other"
+      "action_family": "Measure & navigate"
     },
     {
       "title": "Horizontal Sundial",
@@ -35393,7 +35407,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1405255",
       "EDANurl": "edanmdm:nmah_1405255",
-      "action_family": "Other"
+      "action_family": "Measure & navigate"
     },
     {
       "title": "Equinoctial Sundial by Lorenz Graszl",
@@ -35407,21 +35421,21 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1122246",
       "EDANurl": "edanmdm:nmah_1122246",
-      "action_family": "Other"
+      "action_family": "Measure & navigate"
     },
     {
       "title": "Combination Portable Horizontal Sundial and Perpetual Calendar, Perpetual Box-Almanack and Geographical Mirror",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1121869",
       "EDANurl": "edanmdm:nmah_1121869",
-      "action_family": "Other"
+      "action_family": "Measure & navigate"
     },
     {
       "title": "Horizontal Portable Sundial by Thomas Saunders of Dublin",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1121596",
       "EDANurl": "edanmdm:nmah_1121596",
-      "action_family": "Other"
+      "action_family": "Measure & navigate"
     }
   ],
   "astrolabes": [
@@ -39565,6 +39579,13 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1803320",
       "EDANurl": "edanmdm:nmah_1803320",
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Matrass",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1773",
+      "EDANurl": "edanmdm:nmah_1773",
       "action_family": "Eat, cook & drink"
     },
     {
@@ -69127,7 +69148,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1057905",
       "EDANurl": "edanmdm:nmah_1057905",
-      "action_family": "Other"
+      "action_family": "Worship"
     }
   ],
   "scale rules": [
@@ -75823,6 +75844,20 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_371919",
       "EDANurl": "edanmdm:nmah_371919",
       "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "petticoat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1028095",
+      "EDANurl": "edanmdm:nmah_1028095",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "petticoat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1004572",
+      "EDANurl": "edanmdm:nmah_1004572",
+      "action_family": "Dress & accessorize"
     }
   ],
   "spinning wheel, flaxes": [
@@ -77768,7 +77803,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_606036",
       "EDANurl": "edanmdm:nmah_606036",
-      "action_family": "Other"
+      "action_family": "Perform music"
     }
   ],
   "clavichords": [
@@ -78644,7 +78679,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_318378",
       "EDANurl": "edanmdm:nmah_318378",
-      "action_family": "Other"
+      "action_family": "Ignite & manage fire"
     },
     {
       "title": "Candle Chandelier",
@@ -78658,7 +78693,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_307137",
       "EDANurl": "edanmdm:nmah_307137",
-      "action_family": "Other"
+      "action_family": "Ignite & manage fire"
     },
     {
       "title": "candleholder",
@@ -79156,22 +79191,6 @@
       "action_family": "Eat, cook & drink"
     }
   ],
-  "medallions": [
-    {
-      "title": "Benjamin Franklin",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_582893",
-      "EDANurl": "edanmdm:nmah_582893",
-      "action_family": "Other"
-    },
-    {
-      "title": "Fidelity medallion, United States, 1780",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1097201",
-      "EDANurl": "edanmdm:nmah_1097201",
-      "action_family": "Other"
-    }
-  ],
   "vases": [
     {
       "title": "vase",
@@ -79502,13 +79521,27 @@
       "action_family": "Other"
     }
   ],
-  "cooler, waters": [
+  "coolers": [
     {
       "title": "Stoneware water cooler",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_573499",
       "EDANurl": "edanmdm:nmah_573499",
-      "action_family": "Other"
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Wine Cooler",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_301082",
+      "EDANurl": "edanmdm:nmah_301082",
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Wine Cooler",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_301081",
+      "EDANurl": "edanmdm:nmah_301081",
+      "action_family": "Eat, cook & drink"
     }
   ],
   "flowerpots": [
@@ -79639,13 +79672,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1415638",
       "EDANurl": "edanmdm:nmah_1415638",
       "action_family": "Eat, cook & drink"
-    },
-    {
-      "title": "Creamer, 1774",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1396953",
-      "EDANurl": "edanmdm:nmah_1396953",
-      "action_family": "Eat, cook & drink"
     }
   ],
   "jelly mold cores": [
@@ -79766,23 +79792,23 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_515403",
       "EDANurl": "edanmdm:nmah_515403",
-      "action_family": "Other"
+      "action_family": "Dress & accessorize"
     },
     {
       "title": "Cane",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_319099",
       "EDANurl": "edanmdm:nmah_319099",
-      "action_family": "Other"
+      "action_family": "Dress & accessorize"
     }
   ],
-  "sheet music": [
+  "music sheets": [
     {
       "title": "The New Presidents March",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_514896",
       "EDANurl": "edanmdm:nmah_514896",
-      "action_family": "Other"
+      "action_family": "Perform music"
     }
   ],
   "electoral tickets": [
@@ -81019,7 +81045,7 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_414696",
       "EDANurl": "edanmdm:nmah_414696",
-      "action_family": "Other"
+      "action_family": "Fight"
     },
     {
       "title": "cannon, Revolutionary War",
@@ -83109,63 +83135,63 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_319093",
       "EDANurl": "edanmdm:nmah_319093",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_319092",
       "EDANurl": "edanmdm:nmah_319092",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_319091",
       "EDANurl": "edanmdm:nmah_319091",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_312895",
       "EDANurl": "edanmdm:nmah_312895",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "Chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_311219",
       "EDANurl": "edanmdm:nmah_311219",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "chest of drawers",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_306503",
       "EDANurl": "edanmdm:nmah_306503",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "Chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1848369",
       "EDANurl": "edanmdm:nmah_1848369",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "Bridal Chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1190334",
       "EDANurl": "edanmdm:nmah_1190334",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     },
     {
       "title": "Dower Chest",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1190333",
       "EDANurl": "edanmdm:nmah_1190333",
-      "action_family": "Other"
+      "action_family": "Decorate & furnish"
     }
   ],
   "bow and arrows": [
@@ -83923,6 +83949,20 @@
       "action_family": "Eat, cook & drink"
     },
     {
+      "title": "Knife",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303855",
+      "EDANurl": "edanmdm:nmah_303855",
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Knife",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303854",
+      "EDANurl": "edanmdm:nmah_303854",
+      "action_family": "Eat, cook & drink"
+    },
+    {
       "title": "Sugar Tongs",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303824",
@@ -84018,6 +84058,20 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_302732",
       "EDANurl": "edanmdm:nmah_302732",
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Knife",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_302668",
+      "EDANurl": "edanmdm:nmah_302668",
+      "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Knife",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_302667",
+      "EDANurl": "edanmdm:nmah_302667",
       "action_family": "Eat, cook & drink"
     },
     {
@@ -85852,21 +85906,21 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316221",
       "EDANurl": "edanmdm:nmah_316221",
-      "action_family": "Other"
+      "action_family": "Dress & accessorize"
     },
     {
       "title": "Spectacles",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316220",
       "EDANurl": "edanmdm:nmah_316220",
-      "action_family": "Other"
+      "action_family": "Dress & accessorize"
     },
     {
       "title": "spectacles",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1115619",
       "EDANurl": "edanmdm:nmah_1115619",
-      "action_family": "Other"
+      "action_family": "Dress & accesorize"
     }
   ],
   "letter or accounts": [
@@ -86613,50 +86667,6 @@
       "action_family": "Eat, cook & drink"
     }
   ],
-  "knives": [
-    {
-      "title": "Knife",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303855",
-      "EDANurl": "edanmdm:nmah_303855",
-      "action_family": "Other"
-    },
-    {
-      "title": "Knife",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303854",
-      "EDANurl": "edanmdm:nmah_303854",
-      "action_family": "Other"
-    },
-    {
-      "title": "Knife",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_302668",
-      "EDANurl": "edanmdm:nmah_302668",
-      "action_family": "Other"
-    },
-    {
-      "title": "Knife",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_302667",
-      "EDANurl": "edanmdm:nmah_302667",
-      "action_family": "Other"
-    },
-    {
-      "title": "Knife Sharpener",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1811921",
-      "EDANurl": "edanmdm:nmah_1811921",
-      "action_family": "Other"
-    },
-    {
-      "title": "Knife",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1428190",
-      "EDANurl": "edanmdm:nmah_1428190",
-      "action_family": "Other"
-    }
-  ],
   "dolls": [
     {
       "title": "doll, woman",
@@ -86795,6 +86805,13 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_300715",
       "EDANurl": "edanmdm:nmah_300715",
       "action_family": "Eat, cook & drink"
+    },
+    {
+      "title": "Creamer, 1774",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1396953",
+      "EDANurl": "edanmdm:nmah_1396953",
+      "action_family": "Eat, cook & drink"
     }
   ],
   "beakers": [
@@ -86868,22 +86885,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_301099",
       "EDANurl": "edanmdm:nmah_301099",
       "action_family": "Other"
-    }
-  ],
-  "wine coolers": [
-    {
-      "title": "Wine Cooler",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_301082",
-      "EDANurl": "edanmdm:nmah_301082",
-      "action_family": "Eat, cook & drink"
-    },
-    {
-      "title": "Wine Cooler",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_301081",
-      "EDANurl": "edanmdm:nmah_301081",
-      "action_family": "Eat, cook & drink"
     }
   ],
   "flagons": [
@@ -87934,6 +87935,22 @@
       "action_family": "Other"
     }
   ],
+  "knives": [
+    {
+      "title": "Knife Sharpener",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1811921",
+      "EDANurl": "edanmdm:nmah_1811921",
+      "action_family": "Other"
+    },
+    {
+      "title": "Knife",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1428190",
+      "EDANurl": "edanmdm:nmah_1428190",
+      "action_family": "Other"
+    }
+  ],
   "bonds": [
     {
       "title": "John Baxter Allen, Colonial Bond, United States, 1777",
@@ -87990,15 +88007,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1803020",
       "EDANurl": "edanmdm:nmah_1803020",
-      "action_family": "Other"
-    }
-  ],
-  "flasks": [
-    {
-      "title": "Matrass",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1773",
-      "EDANurl": "edanmdm:nmah_1773",
       "action_family": "Other"
     }
   ],
@@ -89241,13 +89249,13 @@
       "action_family": "Other"
     }
   ],
-  "vaccination card, commemoratives": [
+  "vaccination card": [
     {
       "title": "Card Commemorating a Test of the Effectiveness of Vaccination onTwelve Children in Milton, Massachusetts",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1198450",
       "EDANurl": "edanmdm:nmah_1198450",
-      "action_family": "Other"
+      "action_family": "Heal & care"
     }
   ],
   "azimuth circles": [
@@ -89639,7 +89647,7 @@
       "action_family": "Heal & care"
     }
   ],
-  "card, prayers": [
+  "prayer cards": [
     {
       "title": "card, prayer",
       "unitCode": "NMAH",
@@ -89902,13 +89910,6 @@
   ],
   "props": [
     {
-      "title": "petticoat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1028095",
-      "EDANurl": "edanmdm:nmah_1028095",
-      "action_family": "Other"
-    },
-    {
       "title": "neckcloth",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1028094",
@@ -89941,13 +89942,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1004573",
       "EDANurl": "edanmdm:nmah_1004573",
-      "action_family": "Other"
-    },
-    {
-      "title": "petticoat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1004572",
-      "EDANurl": "edanmdm:nmah_1004572",
       "action_family": "Other"
     }
   ],

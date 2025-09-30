@@ -33,12 +33,14 @@ original_label,canonical_type_manual
 "['caps (headgear)', 'cap; man']",headgear
 "['caps (headgear)', 'cap; man; army; fusileer']",headgear
 "['caps (headgear)', 'cap; man; army; grenadier']",headgear
+"['card, prayer']",prayer cards
 "['cases (containers)', 'case; surgical set']",surgical set cases
 "['certificate, discharge']",certificates
 "['certificate, naturalization']",certificates
 "['chemise, shift', 'chemise, shift; entire body; underwear; female']",chemises
 "['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",combs
-"['cooler, wine']",wine coolers
+"['cooler, water']",coolers
+"['cooler, wine']",coolers
 "['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",brooches
 "['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",headgear
 "['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",knee buckles
@@ -58,6 +60,7 @@ original_label,canonical_type_manual
 "['fire steel; fire making apparatus', 'firesteel']",firesteels
 "['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",flags
 "['flag, revolutionary war']",flags
+['flasks (bottles)'],bottles
 "['fork, hearth']",flatwares
 ['forks (flatware)'],flatwares
 "['fragment, pan']",pans
@@ -79,6 +82,7 @@ original_label,canonical_type_manual
 "['husker, corn']",corn huskers
 "['invitation', 'invitation; manuscript, printed']",manuscripts
 "['jar, butter', 'butter jar', 'jars']",jars
+['knives'],flatwares
 "['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",lace pillows
 "['lace, border, fragment']",laces
 "['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers
@@ -89,6 +93,7 @@ original_label,canonical_type_manual
 "['masher, potato']",mashers
 "['medal, political']",medals
 "['medal; personal; commemorative', 'medallions (medals)']",medals
+['medallions (medals)'],medals
 "['mixer, drink, bow drill']",bow drills
 "['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",flintlocks
 "['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",flintlocks
@@ -103,9 +108,11 @@ original_label,canonical_type_manual
 "['oven, dutch']",dutch ovens
 "['pan, baking']",pans
 "['pattern, lace']",lace patterns
+"['petticoats (underskirts)', 'props']",petticoats
 "['pin, rolling']",rolling pins
 "['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",pistol-swords
 "['plate, soup']",plates
+"['pot, milk', 'jug, cream']",creamers
 "['print, fashion plate']",fashion plates
 ['punch bowls'],bowls
 "['rack, spoon']",spoon racks
@@ -120,6 +127,7 @@ original_label,canonical_type_manual
 "['sheet (paper); manuscript', 'deed']",manuscripts
 "['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",manuscripts
 "['sheet (paper); manuscript', 'receipt']",manuscripts
+['sheet music'],music sheets
 "['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
@@ -131,6 +139,7 @@ original_label,canonical_type_manual
 "['tool, millinery']",pusher downers
 "['trumpet, speaking']",trumpets
 "['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",undersleeves
+"['vaccination card, commemorative']",vaccination card
 "['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",waistcoats
 "['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",waistcoats
 "['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",waistcoats

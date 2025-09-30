@@ -6,7 +6,7 @@
       "children": [
         {
           "name": "medals",
-          "value": 251
+          "value": 253
         },
         {
           "name": "badges",
@@ -52,6 +52,10 @@
         {
           "name": "mirrors",
           "value": 14
+        },
+        {
+          "name": "chests",
+          "value": 9
         },
         {
           "name": "clocks",
@@ -156,6 +160,15 @@
       ]
     },
     {
+      "name": "Dress & accesorize",
+      "children": [
+        {
+          "name": "spectacles",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Dress & accessorize",
       "children": [
         {
@@ -219,6 +232,10 @@
           "value": 8
         },
         {
+          "name": "petticoats",
+          "value": 7
+        },
+        {
           "name": "shoe buckles",
           "value": 6
         },
@@ -228,10 +245,6 @@
         },
         {
           "name": "hats",
-          "value": 5
-        },
-        {
-          "name": "petticoats",
           "value": 5
         },
         {
@@ -291,6 +304,10 @@
           "value": 2
         },
         {
+          "name": "canes",
+          "value": 2
+        },
+        {
           "name": "combs",
           "value": 2
         },
@@ -324,6 +341,10 @@
         },
         {
           "name": "ribbons",
+          "value": 2
+        },
+        {
+          "name": "spectacles",
           "value": 2
         },
         {
@@ -485,11 +506,11 @@
       "children": [
         {
           "name": "flatwares",
-          "value": 229
+          "value": 233
         },
         {
           "name": "bottles",
-          "value": 185
+          "value": 186
         },
         {
           "name": "plates",
@@ -537,7 +558,7 @@
         },
         {
           "name": "pots",
-          "value": 17
+          "value": 16
         },
         {
           "name": "mugs",
@@ -556,12 +577,12 @@
           "value": 12
         },
         {
-          "name": "glasses",
+          "name": "creamers",
           "value": 8
         },
         {
-          "name": "creamers",
-          "value": 7
+          "name": "glasses",
+          "value": 8
         },
         {
           "name": "hooks",
@@ -594,6 +615,10 @@
         {
           "name": "toasters",
           "value": 4
+        },
+        {
+          "name": "coolers",
+          "value": 3
         },
         {
           "name": "dippers",
@@ -677,10 +702,6 @@
         },
         {
           "name": "vases",
-          "value": 2
-        },
-        {
-          "name": "wine coolers",
           "value": 2
         },
         {
@@ -817,12 +838,12 @@
           "value": 3
         },
         {
-          "name": "shields",
+          "name": "cannons",
           "value": 2
         },
         {
-          "name": "cannons",
-          "value": 1
+          "name": "shields",
+          "value": 2
         },
         {
           "name": "grenade launchers",
@@ -928,6 +949,10 @@
         {
           "name": "telescopes",
           "value": 1
+        },
+        {
+          "name": "vaccination card",
+          "value": 1
         }
       ]
     },
@@ -944,7 +969,7 @@
         },
         {
           "name": "candleholders",
-          "value": 9
+          "value": 11
         },
         {
           "name": "firesteels",
@@ -976,15 +1001,15 @@
       "name": "Measure & navigate",
       "children": [
         {
+          "name": "sundials",
+          "value": 12
+        },
+        {
           "name": "balances",
           "value": 9
         },
         {
           "name": "compasses",
-          "value": 7
-        },
-        {
-          "name": "sundials",
           "value": 7
         },
         {
@@ -1041,10 +1066,6 @@
           "value": 11
         },
         {
-          "name": "chests",
-          "value": 9
-        },
-        {
           "name": "employee gears",
           "value": 9
         },
@@ -1077,15 +1098,7 @@
           "value": 7
         },
         {
-          "name": "props",
-          "value": 7
-        },
-        {
           "name": "aquatints",
-          "value": 6
-        },
-        {
-          "name": "knives",
           "value": 6
         },
         {
@@ -1105,7 +1118,7 @@
           "value": 5
         },
         {
-          "name": "pans",
+          "name": "props",
           "value": 5
         },
         {
@@ -1114,10 +1127,6 @@
         },
         {
           "name": "spinning wheel, flaxes",
-          "value": 5
-        },
-        {
-          "name": "sundials",
           "value": 5
         },
         {
@@ -1154,6 +1163,10 @@
         },
         {
           "name": "mail processing equipments",
+          "value": 4
+        },
+        {
+          "name": "pans",
           "value": 4
         },
         {
@@ -1269,10 +1282,6 @@
           "value": 3
         },
         {
-          "name": "spectacles",
-          "value": 3
-        },
-        {
           "name": "tiles",
           "value": 3
         },
@@ -1294,14 +1303,6 @@
         },
         {
           "name": "backstafves",
-          "value": 2
-        },
-        {
-          "name": "candleholders",
-          "value": 2
-        },
-        {
-          "name": "canes",
           "value": 2
         },
         {
@@ -1361,11 +1362,11 @@
           "value": 2
         },
         {
-          "name": "matchbooks",
+          "name": "knives",
           "value": 2
         },
         {
-          "name": "medallions",
+          "name": "matchbooks",
           "value": 2
         },
         {
@@ -1537,14 +1538,6 @@
           "value": 1
         },
         {
-          "name": "cannons",
-          "value": 1
-        },
-        {
-          "name": "card, prayers",
-          "value": 1
-        },
-        {
           "name": "carding machine, parts",
           "value": 1
         },
@@ -1606,10 +1599,6 @@
         },
         {
           "name": "contract, indentures",
-          "value": 1
-        },
-        {
-          "name": "cooler, waters",
           "value": 1
         },
         {
@@ -1722,10 +1711,6 @@
         },
         {
           "name": "flails",
-          "value": 1
-        },
-        {
-          "name": "flasks",
           "value": 1
         },
         {
@@ -1937,10 +1922,6 @@
           "value": 1
         },
         {
-          "name": "organs",
-          "value": 1
-        },
-        {
           "name": "orrery tellurians",
           "value": 1
         },
@@ -2029,6 +2010,10 @@
           "value": 1
         },
         {
+          "name": "prayer cards",
+          "value": 1
+        },
+        {
           "name": "prisms",
           "value": 1
         },
@@ -2106,10 +2091,6 @@
         },
         {
           "name": "serpents",
-          "value": 1
-        },
-        {
-          "name": "sheet music",
           "value": 1
         },
         {
@@ -2258,10 +2239,6 @@
         },
         {
           "name": "unidentifieds",
-          "value": 1
-        },
-        {
-          "name": "vaccination card, commemoratives",
           "value": 1
         },
         {
@@ -2528,6 +2505,14 @@
         },
         {
           "name": "music books",
+          "value": 1
+        },
+        {
+          "name": "music sheets",
+          "value": 1
+        },
+        {
+          "name": "organs",
           "value": 1
         },
         {
@@ -2923,6 +2908,10 @@
         },
         {
           "name": "altar screens",
+          "value": 1
+        },
+        {
+          "name": "pans",
           "value": 1
         }
       ]
