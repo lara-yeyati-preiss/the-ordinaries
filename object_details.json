@@ -18191,6 +18191,48 @@
       "action_family": "Read, write & record"
     },
     {
+      "title": "Letter from Joseph Delaplaine to Jacob and Paul Rapelye",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.16",
+      "EDANurl": "edanmdm:npg_AD_NPG.79.16",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Letter from Joseph Delaplaine to Jacob Rapelye",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.15",
+      "EDANurl": "edanmdm:npg_AD_NPG.79.15",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Letter from Joseph Delaplaine to Jacob Rapelye",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.14",
+      "EDANurl": "edanmdm:npg_AD_NPG.79.14",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Letter from Joseph Delaplaine to Messr. Rapelye, Clarke & Co.",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.13",
+      "EDANurl": "edanmdm:npg_AD_NPG.79.13",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Letter from George Washington to Mrs. Penn regarding \"The Vision of Columbus\"",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.78.8",
+      "EDANurl": "edanmdm:npg_AD_NPG.78.8",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Letter from George Washington to Gilbert Stuart",
+      "unitCode": "NPG",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.2022.2",
+      "EDANurl": "edanmdm:npg_AD_NPG.2022.2",
+      "action_family": "Read, write & record"
+    },
+    {
       "title": "letter",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_848173",
@@ -35006,47 +35048,12 @@
       "action_family": "Commemorate & symbolize"
     }
   ],
-  "documents": [
-    {
-      "title": "Letter from Joseph Delaplaine to Jacob and Paul Rapelye",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.16",
-      "EDANurl": "edanmdm:npg_AD_NPG.79.16",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Letter from Joseph Delaplaine to Jacob Rapelye",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.15",
-      "EDANurl": "edanmdm:npg_AD_NPG.79.15",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Letter from Joseph Delaplaine to Jacob Rapelye",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.14",
-      "EDANurl": "edanmdm:npg_AD_NPG.79.14",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Letter from Joseph Delaplaine to Messr. Rapelye, Clarke & Co.",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.79.13",
-      "EDANurl": "edanmdm:npg_AD_NPG.79.13",
-      "action_family": "Read, write & record"
-    },
+  "documents and certificates": [
     {
       "title": "Manuscript for Book VI of Joel Barlow's \"The Columbiad\"",
       "unitCode": "NPG",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.78.9",
       "EDANurl": "edanmdm:npg_AD_NPG.78.9",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Letter from George Washington to Mrs. Penn regarding \"The Vision of Columbus\"",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.78.8",
-      "EDANurl": "edanmdm:npg_AD_NPG.78.8",
       "action_family": "Read, write & record"
     },
     {
@@ -35078,13 +35085,6 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "Letter from George Washington to Gilbert Stuart",
-      "unitCode": "NPG",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.2022.2",
-      "EDANurl": "edanmdm:npg_AD_NPG.2022.2",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Bill of sale for Flora, a woman enslaved in Connecticut",
       "unitCode": "NPG",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:npg_AD_NPG.2021.1",
@@ -35097,6 +35097,13 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_989250",
       "EDANurl": "edanmdm:nmah_989250",
       "action_family": "Read, write & record"
+    },
+    {
+      "title": "4 1/2 Dollars, New York, 1780",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_984746",
+      "EDANurl": "edanmdm:nmah_984746",
+      "action_family": "Pay & exchange"
     },
     {
       "title": "Seizure Order",
@@ -35169,6 +35176,13 @@
       "action_family": "Read, write & record"
     },
     {
+      "title": "naturalization certificate",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_676760",
+      "EDANurl": "edanmdm:nmah_676760",
+      "action_family": "Pay & exchange"
+    },
+    {
       "title": "document",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_546900",
@@ -35180,6 +35194,13 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_510014",
       "EDANurl": "edanmdm:nmah_510014",
+      "action_family": "Read, write & record"
+    },
+    {
+      "title": "Discharge of Benjamin Loring",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_432701",
+      "EDANurl": "edanmdm:nmah_432701",
       "action_family": "Read, write & record"
     },
     {
@@ -35209,6 +35230,20 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1859094",
       "EDANurl": "edanmdm:nmah_1859094",
       "action_family": "Read, write & record"
+    },
+    {
+      "title": "card",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1448509",
+      "EDANurl": "edanmdm:nmah_1448509",
+      "action_family": "Pay & exchange"
+    },
+    {
+      "title": "Membership Certificate, \"Voluntary Aid Franklin Firemen of New York\"",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1359230",
+      "EDANurl": "edanmdm:nmah_1359230",
+      "action_family": "Pay & exchange"
     },
     {
       "title": "British Admiralty Press Warrant, 1794",
@@ -68285,43 +68320,6 @@
       "action_family": "Pay & exchange"
     }
   ],
-  "certificates": [
-    {
-      "title": "4 1/2 Dollars, New York, 1780",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_984746",
-      "EDANurl": "edanmdm:nmah_984746",
-      "action_family": "Pay & exchange"
-    },
-    {
-      "title": "Andrew James Caldwell",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_660352",
-      "EDANurl": "edanmdm:nmah_660352",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "Discharge of Benjamin Loring",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_432701",
-      "EDANurl": "edanmdm:nmah_432701",
-      "action_family": "Read, write & record"
-    },
-    {
-      "title": "card",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1448509",
-      "EDANurl": "edanmdm:nmah_1448509",
-      "action_family": "Pay & exchange"
-    },
-    {
-      "title": "Membership Certificate, \"Voluntary Aid Franklin Firemen of New York\"",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1359230",
-      "EDANurl": "edanmdm:nmah_1359230",
-      "action_family": "Pay & exchange"
-    }
-  ],
   "badges": [
     {
       "title": "badge",
@@ -69142,13 +69140,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1326052",
       "EDANurl": "edanmdm:nmah_1326052",
       "action_family": "Eat, cook & drink"
-    },
-    {
-      "title": "San Jose y el Nino",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1057905",
-      "EDANurl": "edanmdm:nmah_1057905",
-      "action_family": "Worship"
     }
   ],
   "scale rules": [
@@ -73643,15 +73634,6 @@
       "action_family": "Textile making"
     }
   ],
-  "naturalization certificates": [
-    {
-      "title": "naturalization certificate",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_676760",
-      "EDANurl": "edanmdm:nmah_676760",
-      "action_family": "Pay & exchange"
-    }
-  ],
   "contract, indentures": [
     {
       "title": "contract, indenture",
@@ -74653,6 +74635,15 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_661056",
       "EDANurl": "edanmdm:nmah_661056",
       "action_family": "Other"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Andrew James Caldwell",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_660352",
+      "EDANurl": "edanmdm:nmah_660352",
+      "action_family": "Read, write & record"
     }
   ],
   "reliquaries": [
@@ -89865,6 +89856,15 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1058009",
       "EDANurl": "edanmdm:nmah_1058009",
       "action_family": "Other"
+    }
+  ],
+  "religious panels": [
+    {
+      "title": "San Jose y el Nino",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1057905",
+      "EDANurl": "edanmdm:nmah_1057905",
+      "action_family": "Worship"
     }
   ],
   "wood blocks": [

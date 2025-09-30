@@ -2338,11 +2338,11 @@
           "value": 5
         },
         {
-          "name": "bonds",
-          "value": 3
+          "name": "documents and certificates",
+          "value": 4
         },
         {
-          "name": "certificates",
+          "name": "bonds",
           "value": 3
         },
         {
@@ -2363,10 +2363,6 @@
         },
         {
           "name": "feather money, o'o bird",
-          "value": 1
-        },
-        {
-          "name": "naturalization certificates",
           "value": 1
         },
         {
@@ -2647,7 +2643,7 @@
       "children": [
         {
           "name": "correspondences",
-          "value": 194
+          "value": 200
         },
         {
           "name": "books",
@@ -2658,8 +2654,8 @@
           "value": 69
         },
         {
-          "name": "documents",
-          "value": 33
+          "name": "documents and certificates",
+          "value": 28
         },
         {
           "name": "archival materials",
@@ -2686,10 +2682,6 @@
           "value": 3
         },
         {
-          "name": "certificates",
-          "value": 2
-        },
-        {
           "name": "crayon holders",
           "value": 2
         },
@@ -2711,6 +2703,10 @@
         },
         {
           "name": "cutters",
+          "value": 1
+        },
+        {
+          "name": "documents",
           "value": 1
         },
         {
@@ -2898,7 +2894,7 @@
           "value": 1
         },
         {
-          "name": "pans",
+          "name": "religious panels",
           "value": 1
         }
       ]

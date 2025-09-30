@@ -10,6 +10,7 @@ original_label,canonical_type_manual
 "['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",bags
 "['beads, prayer']",prayer beads
 ['book pages'],books
+"['bookplate', 'fraktur', 'documents', 'pen and ink']",documents and certificates
 "['bottle, nursing']",nursing bottles
 "['box, dough', 'dough trough table']",dough boxes
 "['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooches
@@ -34,9 +35,12 @@ original_label,canonical_type_manual
 "['caps (headgear)', 'cap; man; army; fusileer']",headgear
 "['caps (headgear)', 'cap; man; army; grenadier']",headgear
 "['card, prayer']",prayer cards
+"['cards (information artifacts)', 'certificates', 'certofocate', 'pledge card']",documents and certificates
 "['cases (containers)', 'case; surgical set']",surgical set cases
-"['certificate, discharge']",certificates
-"['certificate, naturalization']",certificates
+"['certificate, discharge']",documents and certificates
+"['certificate, naturalization']",documents
+"['certificates', 'certificate; signature']",documents and certificates
+['certificates'],documents and certificates
 "['chemise, shift', 'chemise, shift; entire body; underwear; female']",chemises
 "['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",combs
 "['cooler, water']",coolers
@@ -50,6 +54,9 @@ original_label,canonical_type_manual
 "['cutter, straw', 'fire steel; fire making apparatus']",firesteels
 "['dipper, snuff']",snuff dippers
 "['document, broadside']",broadsides
+"['documents', 'pamphlets', 'pamphlet; documents']",documents and certificates
+"['documents', 'signature']",documents and certificates
+['documents'],documents and certificates
 "['doll, woman']",dolls
 "['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",embroideries
 "['embroidery, picture']",embroideries
@@ -66,6 +73,11 @@ original_label,canonical_type_manual
 "['fragment, pan']",pans
 "['fragment, pitcher']",pitchers
 "['fragments, bottle']",bottles
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink', 'documents, pair of', 'certificates']",documents and certificates
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink']",documents and certificates
+"['fraktur', 'documents', 'certificates', 'letterpress']",documents and certificates
+"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",documents and certificates
+"['fraktur', 'documents', 'pen and ink', 'certificates']",documents and certificates
 "['frame, butter mold']",molds
 "['fusil', 'musket, flintlock']",flintlocks
 "['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",gaiters
@@ -97,6 +109,7 @@ original_label,canonical_type_manual
 "['mixer, drink, bow drill']",bow drills
 "['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",flintlocks
 "['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",flintlocks
+['naturalization certificate'],documents and certificates
 "['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",neckwear
 "['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",neckwear
 "['neckwear', 'caps (headgear)']",headgear
@@ -105,8 +118,10 @@ original_label,canonical_type_manual
 "['needle, crochet', 'crochet hooks']",needles
 "['needle, knitting']",needles
 "['needlework, embroidery']",embroideries
+"['notice', 'documents']",documents and certificates
 "['oven, dutch']",dutch ovens
 "['pan, baking']",pans
+"['panel, religious']",religious panels
 "['pattern, lace']",lace patterns
 "['petticoats (underskirts)', 'props']",petticoats
 "['pin, rolling']",rolling pins
@@ -128,6 +143,8 @@ original_label,canonical_type_manual
 "['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",manuscripts
 "['sheet (paper); manuscript', 'receipt']",manuscripts
 ['sheet music'],music sheets
+"['sheets (paper), set of; paper, sheet; manuscript', 'documents', 'paper, sheet']",documents and certificates
+"['sheets of paper, set of', 'documents', 'sheets of paper, set of; documents']",documents and certificates
 "['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
@@ -139,6 +156,7 @@ original_label,canonical_type_manual
 "['suit, 2 piece']",suits
 "['tinder box; fire making apparatus', 'box, tinder']",tinderboxes
 "['tool, millinery']",pusher downers
+"['tr*335662', 'documents']",documents and certificates
 "['trumpet, speaking']",trumpets
 "['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",undersleeves
 "['vaccination card, commemorative']",vaccination card
