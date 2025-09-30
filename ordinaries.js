@@ -43,7 +43,7 @@ Promise.all([
     // selecting the SVG canvas for the treemap, defined in HTML
     const svg = d3.select(".treemap");
     // using the same size set in the html viewBox (0 0 1000 620) so the layout uses the same internal coordinate system */
-    const width = 1000; 
+    const width = 980; 
     const height = 620;
 
     // appending a group "g" inside the SVG to hold all the tiles and chart elements (like labels)
@@ -598,7 +598,7 @@ Promise.all([
 
           // 3. defining minimum width and height to decide which labels to show
           const minWidth = 70; // too short to display any text
-          const minHeight = 40;  // must be at least this wide to also show labels
+          const minHeight = 30;  // must be at least this wide to also show labels
 
           // 4. if the tile is smaller than the minimums, show no label
           if (w < minWidth || h < minHeight) {
