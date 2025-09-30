@@ -160,15 +160,6 @@
       ]
     },
     {
-      "name": "Dress & accesorize",
-      "children": [
-        {
-          "name": "spectacles",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Dress & accessorize",
       "children": [
         {
@@ -244,6 +235,10 @@
           "value": 5
         },
         {
+          "name": "eyeglasses",
+          "value": 5
+        },
+        {
           "name": "hats",
           "value": 5
         },
@@ -312,10 +307,6 @@
           "value": 2
         },
         {
-          "name": "eyeglasses",
-          "value": 2
-        },
-        {
           "name": "jackets",
           "value": 2
         },
@@ -341,10 +332,6 @@
         },
         {
           "name": "ribbons",
-          "value": 2
-        },
-        {
-          "name": "spectacles",
           "value": 2
         },
         {

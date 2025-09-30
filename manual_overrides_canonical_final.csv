@@ -132,6 +132,8 @@ original_label,canonical_type_manual
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
 "['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",flintlocks
+['spectacles'],eyeglasses
+"['spectacles; vision aids', 'spectacles']",eyeglasses
 "['stockings', 'costume accessories worn', 'footwear']",stockings
 "['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",collar studs
 "['suit, 2 piece']",suits

@@ -42,7 +42,7 @@ object_type,previous_action,new_action
 "['signs (declaratory or advertising artifacts)', 'shop signs']",Commemorate & symbolize,Other
 ['snuffers and tray'],Ignite & manage fire,Other
 ['spectacles'],Other,Dress & accessorize
-"['spectacles; vision aids', 'spectacles']",Other,Dress & accesorize
+"['spectacles; vision aids', 'spectacles']",Other,Dress & accessorize
 "['sundial', 'sundial']",Other,Measure & navigate
 "['sundial', 'sundial, horizontal portable']",Other,Measure & navigate
 ['surveying instruments'],Perform music,Measure & navigate

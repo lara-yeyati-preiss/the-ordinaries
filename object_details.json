@@ -82654,6 +82654,27 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_359214",
       "EDANurl": "edanmdm:nmah_359214",
       "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "Spectacles",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316221",
+      "EDANurl": "edanmdm:nmah_316221",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "Spectacles",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316220",
+      "EDANurl": "edanmdm:nmah_316220",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "spectacles",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1115619",
+      "EDANurl": "edanmdm:nmah_1115619",
+      "action_family": "Dress & accessorize"
     }
   ],
   "combs": [
@@ -85898,29 +85919,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316224",
       "EDANurl": "edanmdm:nmah_316224",
       "action_family": "Other"
-    }
-  ],
-  "spectacles": [
-    {
-      "title": "Spectacles",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316221",
-      "EDANurl": "edanmdm:nmah_316221",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Spectacles",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_316220",
-      "EDANurl": "edanmdm:nmah_316220",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "spectacles",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1115619",
-      "EDANurl": "edanmdm:nmah_1115619",
-      "action_family": "Dress & accesorize"
     }
   ],
   "letter or accounts": [
