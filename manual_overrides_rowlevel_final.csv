@@ -157,10 +157,13 @@ edanmdm:nmah_375348,"['waistcoat; upper body; main dress; male', 'waistcoats (ga
 edanmdm:nmah_374444,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
 edanmdm:nmah_374377,"['caps (headgear)', 'cap; headwear; accessories worn on the body; male']",caps,Dress & accessorize,headgear,Dress & accessorize
 edanmdm:nmah_373980,"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']","gaiters, pair of",Dress & accessorize,gaiters,Dress & accessorize
+edanmdm:nmah_373907,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
 edanmdm:nmah_373634,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_373327,"['suit, 2 piece', 'suit, 2 piece; entire body; main dress; male']",dresses,Dress & accessorize,suits,Dress & accessorize
 edanmdm:nmah_373015,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
 edanmdm:nmah_372549,"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_372413,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_372412,"['frock coats', 'coat; coat, frock; upper body; main dress; male']",dresses,Dress & accessorize,coats,Dress & accessorize
 edanmdm:nmah_371896,"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']",perfume bottles,"Eat, cook & drink",perfume bottles,Other
 edanmdm:nmah_371895,"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",accessories for the care of clothings,Dress & accessorize,watch papers,Dress & accessorize
 edanmdm:nmah_371884,"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",neckcloths,Dress & accessorize,neckwear,Dress & accessorize
@@ -206,10 +209,14 @@ edanmdm:nmah_371680,"['chemise, shift', 'chemise, shift; entire body; underwear;
 edanmdm:nmah_371679,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
 edanmdm:nmah_371661,"['aprons (main garments)', 'apron; accessories worn on the body; female', 'costume accessories worn']",costume accessories worns,Dress & accessorize,aprons,Dress & accessorize
 edanmdm:nmah_371659,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371656,"['shirt, collar; upper body; main dress; male', 'shirt, collar']",dresses,Dress & accessorize,shirts,Dress & accessorize
 edanmdm:nmah_371653,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
 edanmdm:nmah_371652,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
 edanmdm:nmah_371638,"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",fabric fragments,Other,fabric fragments,Textile making
 edanmdm:nmah_371637,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371628,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_371627,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_371622,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
 edanmdm:nmah_370177,"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']","undersleeves, pair of",Dress & accessorize,undersleeves,Dress & accessorize
 edanmdm:nmah_369674,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
 edanmdm:nmah_369673,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
@@ -219,7 +226,15 @@ edanmdm:nmah_369550,"['caps (headgear)', 'cap; headwear; accessories worn on the
 edanmdm:nmah_369546,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
 edanmdm:nmah_368749,"['walking stick; accessories carried; male', 'walking sticks']",walking stick,Dress & accessorize,walking sticks,Dress & accessorize
 edanmdm:nmah_368736,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368729,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368728,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
 edanmdm:nmah_368727,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368725,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368721,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368717,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368715,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368714,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368710,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
 edanmdm:nmah_368707,"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_368706,"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_368705,"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
@@ -238,22 +253,39 @@ edanmdm:nmah_368689,"['waistcoat; upper body; main dress; male', 'waistcoats (ga
 edanmdm:nmah_368688,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_368687,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_368686,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368675,"['coat; upper body; main dress; male', 'coats (garments)']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_368671,"['suit, 3 piece; entire body; main dress; male', 'suit, 3 piece']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368665,"['suit, 2 piece; entire body; main dress; male', 'suit, 2 piece']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368659,"['suit, 2 piece; entire body; main dress; male', 'entire body', 'suits (main garments)', 'suit, 2 piece', 'main garments']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368658,"['suits (main garments)', 'suit, 3 piece; entire body; main dress; male', 'suit, 3 piece', 'main garments']",dresses,Dress & accessorize,suits,Dress & accessorize
 edanmdm:nmah_368346,"['handkerchief; accessories carried; female', 'handkerchiefs', 'accessories carried']",accessories carrieds,Dress & accessorize,handkerchiefs,Dress & accessorize
+edanmdm:nmah_367931,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
 edanmdm:nmah_367868,"['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
 edanmdm:nmah_367568,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
 edanmdm:nmah_367554,"['wallets', 'bags', 'accessories carried', 'wallet; bags; accessories carried; unknown']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
 edanmdm:nmah_367552,"['wallets', 'bags', 'bags (containers)', 'accessories carried', 'wallet; bags; accessories carried; unknown']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
 edanmdm:nmah_366148,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_365922,"['trousers; lower body; main dress; male', 'trousers']",dresses,Dress & accessorize,trousers,Dress & accessorize
 edanmdm:nmah_365333,"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_365332,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_364286,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_364285,"['suit, coat; entire body; main dress; male', 'suit, coat']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_364284,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_363957,"['coats (garments)', 'coat; coat, frock; upper body; main dress; male']",dresses,Dress & accessorize,coats,Dress & accessorize
 edanmdm:nmah_363956,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_363175,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_362529,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
 edanmdm:nmah_362526,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_362043,"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']","stud, collars",Dress & accessorize,collar studs,Dress & accessorize
+edanmdm:nmah_361662,"['suit, frock, 3 piece', 'suit, frock, 3 piece; entire body; main dress; boy']",dresses,Dress & accessorize,suits,Dress & accessorize
 edanmdm:nmah_361588,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_361075,"['jackets (garments)', 'jacket; upper body; main dress; female?']",dresses,Dress & accessorize,jackets,Dress & accessorize
+edanmdm:nmah_360975,"['jacket; upper body; main dress; female; sport; riding', 'jackets (garments)']",dresses,Dress & accessorize,jackets,Dress & accessorize
+edanmdm:nmah_360973,"['jacket; upper body; main dress; female', 'jackets (garments)']",dresses,Dress & accessorize,jackets,Dress & accessorize
 edanmdm:nmah_360128,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
 edanmdm:nmah_359746,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
 edanmdm:nmah_359384,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_359383,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
 edanmdm:nmah_359323,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
 edanmdm:nmah_359089,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
 edanmdm:nmah_357772,"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']","comb, ornamental",Dress & accessorize,combs,Dress & accessorize
@@ -399,6 +431,7 @@ edanmdm:nmah_1174400,"['neckwear', 'caps (headgear)']",caps,Dress & accessorize,
 edanmdm:nmah_1161366,"['caps (headgear)', 'cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00']",caps,Dress & accessorize,headgear,Dress & accessorize
 edanmdm:nmah_1145197,"['finial, altar screen']","finial, altar screens",Worship,altar screens,Worship
 edanmdm:nmah_1129189,"['cases (containers)', 'case; surgical set']","case, surgical set",Heal & care,surgical set cases,Heal & care
+edanmdm:nmah_1125006,"['button', 'button; u.s. navy; officer; dress']",dresses,Dress & accessorize,buttons,Dress & accessorize
 edanmdm:nmah_1122246,['sundial'],sundials,Other,sundials,Measure & navigate
 edanmdm:nmah_1121877,['calendar medal'],calendar medals,Commemorate & symbolize,medals,Commemorate & symbolize
 edanmdm:nmah_1121869,['sundial'],sundials,Other,sundials,Measure & navigate

@@ -164,7 +164,7 @@
       "children": [
         {
           "name": "dresses",
-          "value": 73
+          "value": 40
         },
         {
           "name": "waistcoats",
@@ -192,11 +192,15 @@
         },
         {
           "name": "buttons",
-          "value": 15
+          "value": 16
         },
         {
           "name": "political buttons",
           "value": 13
+        },
+        {
+          "name": "breeches",
+          "value": 12
         },
         {
           "name": "aprons",
@@ -219,6 +223,10 @@
           "value": 8
         },
         {
+          "name": "coats",
+          "value": 8
+        },
+        {
           "name": "stockings",
           "value": 8
         },
@@ -227,7 +235,15 @@
           "value": 7
         },
         {
+          "name": "suits",
+          "value": 7
+        },
+        {
           "name": "shoe buckles",
+          "value": 6
+        },
+        {
+          "name": "vests",
           "value": 6
         },
         {
@@ -243,16 +259,16 @@
           "value": 5
         },
         {
+          "name": "jackets",
+          "value": 5
+        },
+        {
           "name": "rings",
           "value": 5
         },
         {
           "name": "stays",
           "value": 5
-        },
-        {
-          "name": "coats",
-          "value": 4
         },
         {
           "name": "gloves",
@@ -263,11 +279,11 @@
           "value": 4
         },
         {
-          "name": "belts",
-          "value": 3
+          "name": "shirts",
+          "value": 4
         },
         {
-          "name": "breeches",
+          "name": "belts",
           "value": 3
         },
         {
@@ -307,10 +323,6 @@
           "value": 2
         },
         {
-          "name": "jackets",
-          "value": 2
-        },
-        {
           "name": "jewelries",
           "value": 2
         },
@@ -336,6 +348,10 @@
         },
         {
           "name": "suspenders",
+          "value": 2
+        },
+        {
+          "name": "trousers",
           "value": 2
         },
         {
@@ -451,10 +467,6 @@
           "value": 1
         },
         {
-          "name": "suits",
-          "value": 1
-        },
-        {
           "name": "sunglasses",
           "value": 1
         },
@@ -463,19 +475,11 @@
           "value": 1
         },
         {
-          "name": "trousers",
-          "value": 1
-        },
-        {
           "name": "undershirt",
           "value": 1
         },
         {
           "name": "undersleeves",
-          "value": 1
-        },
-        {
-          "name": "vests",
           "value": 1
         },
         {
