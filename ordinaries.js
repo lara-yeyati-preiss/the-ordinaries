@@ -65,7 +65,7 @@ Promise.all([
     // overpower the visualization because either they don't really represent "everyday actions" (like prints and silhouettes) and/or they have very high counts (like bank notes)
     // so they were dropped to allow more interesting families to be seen
     // this editorial choice is specified in the note below the viz
-    const drop_actions = ["portray, display & decorate", "pay & exchange", "other"];
+    const drop_actions = ["portray, display & decorate", "pay & exchange", "commemorate & symbolize", "other"];
     
     // filter out dropped families from the database
     const filtered_data = {

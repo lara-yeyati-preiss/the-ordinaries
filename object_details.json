@@ -68797,13 +68797,6 @@
       "action_family": "Dress & accessorize"
     },
     {
-      "title": "US Out of El Salvador",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535879",
-      "EDANurl": "edanmdm:nmah_535879",
-      "action_family": "Dress & accessorize"
-    },
-    {
       "title": "buttons",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_371902",
@@ -68860,24 +68853,10 @@
       "action_family": "Dress & accessorize"
     },
     {
-      "title": "Betsy Ross House",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1276460",
-      "EDANurl": "edanmdm:nmah_1276460",
-      "action_family": "Dress & accessorize"
-    },
-    {
       "title": "button",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1125006",
       "EDANurl": "edanmdm:nmah_1125006",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Viva La Causa",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1053761",
-      "EDANurl": "edanmdm:nmah_1053761",
       "action_family": "Dress & accessorize"
     }
   ],
