@@ -1,0 +1,438 @@
+EDANurl,object_types_str,canonical_type_auto,action_family_auto,canonical_type_manual,action_family_manual
+edanmdm:npm_2025.2004.5,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.4,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.3,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.2,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2025.2004.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2006.30.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2004.6,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_2024.2004.13,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.3,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.2,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1989.0718.1,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1984.1127.3,"['correspondence', 'covers & letters']",correspondences,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_1984.1127.2,['archival materials'],archival materials,"Read, write & record",broadsides,"Read, write & record"
+edanmdm:npm_0.293996.236,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npm_0.205561.15,['archival materials'],archival materials,"Read, write & record",newspapers,"Read, write & record"
+edanmdm:npg_AD_NPG.79.16,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.79.15,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.79.14,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.79.13,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.78.9,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:npg_AD_NPG.78.8,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.78.10,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:npg_AD_NPG.77.33,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:npg_AD_NPG.77.31,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:npg_AD_NPG.77.29,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:npg_AD_NPG.2022.2,['documents'],documents,"Read, write & record",correspondences,"Read, write & record"
+edanmdm:npg_AD_NPG.2021.1,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_997122,"['sundial', 'sundial, horizontal portable']",sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_994508,['cups'],cups,"Eat, cook & drink",bloodletting cups,Heal & care
+edanmdm:nmah_994435,['boxes (containers)'],boxes (containers),Heal & care,boxes,Smoke
+edanmdm:nmah_994346,"['magnifying glasses', 'microscope, hand held, set']",magnifying glasses,"Eat, cook & drink",magnifying glasses,Heal & care
+edanmdm:nmah_989250,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_984746,"['certificates', 'certificate; signature']",certificates,Pay & exchange,documents and certificates,Pay & exchange
+edanmdm:nmah_969593,"['cross, rounded', 'cross, rounded; historical']","cross, roundeds",Worship,crosses,Worship
+edanmdm:nmah_969592,"['cross, rounded', 'cross, rounded; historical']","cross, roundeds",Worship,crosses,Worship
+edanmdm:nmah_904468,"['scale rule, folding', 'rule, folding']","scale rule, foldings",Measure & navigate,scale rules,Measure & navigate
+edanmdm:nmah_881337,"['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",costume accessories worns,Dress & accessorize,knee buckles,Dress & accessorize
+edanmdm:nmah_881336,"['buckles, shoe', 'costume accessories worn', 'jewelry', 'buckles (strap accessories)']",costume accessories worns,Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_875351,"['suit, 2 piece']","suit, 2 pieces",Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_857426,"['flag, revolutionary war']","flag, revolutionary wars",Commemorate & symbolize,flags,Commemorate & symbolize
+edanmdm:nmah_857425,"['flag, revolutionary war']","flag, revolutionary wars",Commemorate & symbolize,flags,Commemorate & symbolize
+edanmdm:nmah_857424,"['flag, revolutionary war']","flag, revolutionary wars",Commemorate & symbolize,flags,Commemorate & symbolize
+edanmdm:nmah_846401,"['calipers, linear, set of', 'calipers, venier combined with depth gage']","calipers, linear, set oves",Measure & navigate,calipers,Measure & navigate
+edanmdm:nmah_845684,"['machine tool, metalworking, lathe, pole', 'pole lathe']","machine tool, metalworking, lathe, poles",Work & build,machine tools,Work & build
+edanmdm:nmah_843050,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_808115,"['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_747293,['surveying instruments'],surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_747273,"['compasses (direction indicators)', 'surveying instruments']",surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_747173,['surveying instruments'],surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_747153,['surveying instruments'],surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_747113,['surveying instruments'],surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_745644,['surveying instruments'],surveying instruments,Perform music,surveying instruments,Measure & navigate
+edanmdm:nmah_682563,"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682562,"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682561,"['fraktur', 'documents', 'pen and ink', 'certificates']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682560,"['fraktur', 'documents', 'pen and ink', 'certificates']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682559,"['bookplate', 'fraktur', 'documents', 'pen and ink']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682558,"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink', 'documents, pair of', 'certificates']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682557,"['fraktur', 'documents', 'pen and ink', 'certificates']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682555,"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_682554,"['fraktur', 'documents', 'certificates', 'letterpress']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_678236,"['fabric length, knitted', 'fabric; knitted']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_676760,['naturalization certificate'],naturalization certificates,Pay & exchange,documents and certificates,Pay & exchange
+edanmdm:nmah_664275,"['entablature fragment, church', 'beam fragment']","entablature fragment, churches",Other,"entablature fragment, churches",Decorate & furnish
+edanmdm:nmah_664270,"['ceiling ornament, church']","ceiling ornament, churches",Dress & accessorize,"ceiling ornament, churches",Decorate & furnish
+edanmdm:nmah_663437,"['apron, fraternal', 'apron, masonic']","apron, fraternals",Dress & accessorize,aprons,Dress & accessorize
+edanmdm:nmah_663434,"['apron, fraternal', 'apron, masonic']","apron, fraternals",Dress & accessorize,aprons,Dress & accessorize
+edanmdm:nmah_662016,"['signs (declaratory or advertising artifacts)', 'shop signs']",shop signs,Commemorate & symbolize,shop signs,Other
+edanmdm:nmah_662010,['shop signs'],shop signs,Commemorate & symbolize,shop signs,Other
+edanmdm:nmah_661987,"['signs (declaratory or advertising artifacts)', 'shop signs']",shop signs,Commemorate & symbolize,shop signs,Other
+edanmdm:nmah_660352,"['certificate, naturalization']","certificate, naturalizations","Read, write & record",documents,"Read, write & record"
+edanmdm:nmah_656898,"['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",maul clubs,Fight,maul clubs,Other
+edanmdm:nmah_650189,"['bag, salvage']","bag, salvages",Dress & accessorize,"bag, salvages",Other
+edanmdm:nmah_646284,"['fabric fragment', 'fabric, printed fragment']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_645070,"['pattern, lace']","pattern, laces",Textile making,lace patterns,Textile making
+edanmdm:nmah_644978,"['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']","lace pillow, laces",Textile making,lace pillows,Textile making
+edanmdm:nmah_644925,"['needle, crochet', 'crochet hooks']","needle, crochets",Textile making,needles,Textile making
+edanmdm:nmah_639930,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_639241,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_639240,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_639238,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_639237,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_639232,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_639231,"['needle, knitting']","needle, knittings",Textile making,needles,Textile making
+edanmdm:nmah_633599,"['embroidery, picture']","embroidery, pictures",Textile making,embroideries,Textile making
+edanmdm:nmah_628791,"['embroidery, white work', 'pocket, white work']","embroidery, white works",Textile making,embroideries,Textile making
+edanmdm:nmah_625210,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_625203,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_623050,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_623049,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_623047,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_623043,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_623017,"['fabric, fragment, printed']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_607579,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_607564,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_607552,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_607509,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_606161,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_606144,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_606036,['organ'],organs,Other,organs,Perform music
+edanmdm:nmah_605641,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_605595,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_605563,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_605561,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_605560,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_605550,['bows (weapons)'],bows,Fight,bows,Perform music
+edanmdm:nmah_598195,"['fragments, bottle']","fragments, bottles","Eat, cook & drink",bottles,"Eat, cook & drink"
+edanmdm:nmah_596269,"['fragment, pitcher']","fragment, pitchers","Eat, cook & drink",pitchers,"Eat, cook & drink"
+edanmdm:nmah_596093,"['fragment, pan']","fragment, pans",Other,pans,Other
+edanmdm:nmah_589770,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_589769,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_588687,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_588686,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_588685,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_588684,"['glass, jelly']","glass, jellies","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_587683,"['bottle, nursing']","bottle, nursings","Eat, cook & drink",nursing bottles,"Eat, cook & drink"
+edanmdm:nmah_587576,['punch bowls'],punch bowls,"Eat, cook & drink",bowls,"Eat, cook & drink"
+edanmdm:nmah_582893,['medallions (medals)'],medallions,Other,medals,Commemorate & symbolize
+edanmdm:nmah_579340,"['caddy, tea']","caddies, tea","Eat, cook & drink",tea caddies,"Eat, cook & drink"
+edanmdm:nmah_578743,"['plate, soup']","plate, soups","Eat, cook & drink",plates,"Eat, cook & drink"
+edanmdm:nmah_574344,"['jar, butter', 'butter jar', 'jars']",butter jars,"Eat, cook & drink",jars,"Eat, cook & drink"
+edanmdm:nmah_573499,"['cooler, water']","cooler, waters",Other,coolers,"Eat, cook & drink"
+edanmdm:nmah_572405,"['caddy, tea']","caddies, tea","Eat, cook & drink",tea caddies,"Eat, cook & drink"
+edanmdm:nmah_553221,"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']","regimental flag, 2nd south carolina regiments",Commemorate & symbolize,flags,Commemorate & symbolize
+edanmdm:nmah_547162,['book pages'],book pages,"Read, write & record",books,"Read, write & record"
+edanmdm:nmah_547161,['book pages'],book pages,"Read, write & record",books,"Read, write & record"
+edanmdm:nmah_546900,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_519730,"['invitation', 'invitation; manuscript, printed']",invitations,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_515403,['cane (plant material)'],canes,Other,canes,Dress & accessorize
+edanmdm:nmah_514896,['sheet music'],sheet music,Other,music sheets,Perform music
+edanmdm:nmah_514677,['electoral ticket'],electoral tickets,Perform music,electoral tickets,Other
+edanmdm:nmah_510014,"['documents', 'signature']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_472482,"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",pistol swords,Fight,pistol-swords,Fight
+edanmdm:nmah_471208,"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']","scabbard, bayonets",Fight,bayonets,Fight
+edanmdm:nmah_469474,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']","shotgun, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_469453,"['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']","launcher, grenades",Fight,grenade launchers,Fight
+edanmdm:nmah_469442,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']","shotgun, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_469439,"['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']","musket, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_467596,"['caps (headgear)', 'cap; man']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_458176,"['grenade; ammunition, artillery; hand', 'grenades']",grenade,Fight,grenades,Fight
+edanmdm:nmah_438504,"['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']","saber, dragoons",Fight,sabers,Fight
+edanmdm:nmah_433461,"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']","flag, fragment of",Commemorate & symbolize,flags,Commemorate & symbolize
+edanmdm:nmah_433170,"['cap, miter', 'cap; cap, mitre; man; m, newport light infantry', 'mitres']","cap, miters",Dress & accessorize,miter caps,Dress & accessorize
+edanmdm:nmah_433169,"['caps (headgear)', 'cap; man; army; fusileer']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_433168,"['caps (headgear)', 'cap; man; army; grenadier']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_432701,"['certificate, discharge']","certificate, discharges","Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_417564,"['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']","musket, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_417484,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']","shotgun, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_414696,"['cannons (artillery)', 'cannon; firearms; h; 3.50 in; smooth bore; muzzle load; sa']",cannons,Other,cannons,Fight
+edanmdm:nmah_414375,"['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",gun,Fight,muskets,Fight
+edanmdm:nmah_375350,"['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_375349,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_375348,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_374444,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_374377,"['caps (headgear)', 'cap; headwear; accessories worn on the body; male']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_373980,"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']","gaiters, pair of",Dress & accessorize,gaiters,Dress & accessorize
+edanmdm:nmah_373907,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_373634,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_373327,"['suit, 2 piece', 'suit, 2 piece; entire body; main dress; male']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_373015,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
+edanmdm:nmah_372549,"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_372413,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_372412,"['frock coats', 'coat; coat, frock; upper body; main dress; male']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_371896,"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']",perfume bottles,"Eat, cook & drink",perfume bottles,Other
+edanmdm:nmah_371895,"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",accessories for the care of clothings,Dress & accessorize,watch papers,Dress & accessorize
+edanmdm:nmah_371884,"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",neckcloths,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371883,"['neckwear', 'necktie; neckwear; accessories worn on the body; female']",neckwears,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371882,"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']","cuffs, pair of",Dress & accessorize,cuffs,Dress & accessorize
+edanmdm:nmah_371880,"['neckwear', 'necktie; neckwear; accessories worn on the body; female']",neckwears,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371791,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371790,"['fan, fragment', 'fans (costume accessories)', 'accessories carried', 'fan, fragment; accessories carried; female']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371789,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371788,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371787,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371786,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371785,"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",accessories carrieds,Dress & accessorize,fans,Dress & accessorize
+edanmdm:nmah_371784,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_371783,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_371782,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_371777,"['bag; bags; accessories carried; female', 'bags', 'purses (bags)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_371769,"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",costume accessories worns,Dress & accessorize,mitts,Dress & accessorize
+edanmdm:nmah_371768,"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",costume accessories worns,Dress & accessorize,mitts,Dress & accessorize
+edanmdm:nmah_371767,"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",costume accessories worns,Dress & accessorize,mitts,Dress & accessorize
+edanmdm:nmah_371766,"['handwear', 'gloves', 'costume accessories worn', 'gloves, pair of; handwear; accessories worn on the body; female']",costume accessories worns,Dress & accessorize,gloves,Dress & accessorize
+edanmdm:nmah_371760,"['stockings', 'costume accessories worn', 'footwear']",costume accessories worns,Dress & accessorize,stockings,Dress & accessorize
+edanmdm:nmah_371759,"['stockings', 'costume accessories worn', 'footwear']",costume accessories worns,Dress & accessorize,stockings,Dress & accessorize
+edanmdm:nmah_371754,"['stockings', 'costume accessories worn', 'footwear']",costume accessories worns,Dress & accessorize,stockings,Dress & accessorize
+edanmdm:nmah_371753,"['stockings', 'costume accessories worn', 'footwear']",costume accessories worns,Dress & accessorize,stockings,Dress & accessorize
+edanmdm:nmah_371750,"['calash', 'costume accessories worn', 'calash; headwear; accessories worn on the body; female', 'headgear']",costume accessories worns,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371749,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371748,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371747,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371745,"['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",costume accessories worns,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371744,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371742,"['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",costume accessories worns,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371741,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_371709,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371707,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371692,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371691,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371690,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371689,"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_371684,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_371683,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_371680,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_371679,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_371661,"['aprons (main garments)', 'apron; accessories worn on the body; female', 'costume accessories worn']",costume accessories worns,Dress & accessorize,aprons,Dress & accessorize
+edanmdm:nmah_371659,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371656,"['shirt, collar; upper body; main dress; male', 'shirt, collar']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_371653,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371652,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371638,"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371637,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_371628,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_371627,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_371622,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_370177,"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']","undersleeves, pair of",Dress & accessorize,undersleeves,Dress & accessorize
+edanmdm:nmah_369674,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_369673,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_369654,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_369563,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_369550,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_369546,"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_368749,"['walking stick; accessories carried; male', 'walking sticks']",walking stick,Dress & accessorize,walking sticks,Dress & accessorize
+edanmdm:nmah_368736,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368729,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368728,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368727,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368725,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368721,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368717,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368715,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368714,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368710,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_368707,"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368706,"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368705,"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368701,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368700,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368699,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368698,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368697,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368696,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368695,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368694,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368693,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368692,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368690,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368689,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368688,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368687,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368686,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_368675,"['coat; upper body; main dress; male', 'coats (garments)']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_368671,"['suit, 3 piece; entire body; main dress; male', 'suit, 3 piece']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368665,"['suit, 2 piece; entire body; main dress; male', 'suit, 2 piece']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368659,"['suit, 2 piece; entire body; main dress; male', 'entire body', 'suits (main garments)', 'suit, 2 piece', 'main garments']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368658,"['suits (main garments)', 'suit, 3 piece; entire body; main dress; male', 'suit, 3 piece', 'main garments']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_368346,"['handkerchief; accessories carried; female', 'handkerchiefs', 'accessories carried']",accessories carrieds,Dress & accessorize,handkerchiefs,Dress & accessorize
+edanmdm:nmah_367931,"['shirts', 'shirt; upper body; main dress; male']",dresses,Dress & accessorize,shirts,Dress & accessorize
+edanmdm:nmah_367868,"['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_367568,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_367554,"['wallets', 'bags', 'accessories carried', 'wallet; bags; accessories carried; unknown']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_367552,"['wallets', 'bags', 'bags (containers)', 'accessories carried', 'wallet; bags; accessories carried; unknown']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_366148,"['chemise, shift', 'chemise, shift; entire body; underwear; female']","chemise, shifts",Dress & accessorize,chemises,Dress & accessorize
+edanmdm:nmah_365922,"['trousers; lower body; main dress; male', 'trousers']",dresses,Dress & accessorize,trousers,Dress & accessorize
+edanmdm:nmah_365333,"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_365332,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_364286,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_364285,"['suit, coat; entire body; main dress; male', 'suit, coat']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_364284,"['breeches (trousers)', 'breeches; lower body; main dress; male']",dresses,Dress & accessorize,breeches,Dress & accessorize
+edanmdm:nmah_363957,"['coats (garments)', 'coat; coat, frock; upper body; main dress; male']",dresses,Dress & accessorize,coats,Dress & accessorize
+edanmdm:nmah_363956,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_363175,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_362529,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_362526,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_362043,"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']","stud, collars",Dress & accessorize,collar studs,Dress & accessorize
+edanmdm:nmah_361662,"['suit, frock, 3 piece', 'suit, frock, 3 piece; entire body; main dress; boy']",dresses,Dress & accessorize,suits,Dress & accessorize
+edanmdm:nmah_361588,"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_361075,"['jackets (garments)', 'jacket; upper body; main dress; female?']",dresses,Dress & accessorize,jackets,Dress & accessorize
+edanmdm:nmah_360975,"['jacket; upper body; main dress; female; sport; riding', 'jackets (garments)']",dresses,Dress & accessorize,jackets,Dress & accessorize
+edanmdm:nmah_360973,"['jacket; upper body; main dress; female', 'jackets (garments)']",dresses,Dress & accessorize,jackets,Dress & accessorize
+edanmdm:nmah_360128,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
+edanmdm:nmah_359746,"['fabric; accessories for the manufacturing of clothing', 'cloth']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_359384,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_359383,"['vests (garments)', 'vest; upper body; main dress; male']",dresses,Dress & accessorize,vests,Dress & accessorize
+edanmdm:nmah_359323,"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",dresses,Dress & accessorize,waistcoats,Dress & accessorize
+edanmdm:nmah_359089,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
+edanmdm:nmah_357772,"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']","comb, ornamental",Dress & accessorize,combs,Dress & accessorize
+edanmdm:nmah_355839,"['buckle, shoe', 'buckle, shoe; jewelry; accessories worn on the body; male']","buckle, shoes",Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_355833,"['buckle, knee; jewelry; accessories worn on the body; male', 'buckle, knee']","buckle, knee",Dress & accessorize,knee buckles,Dress & accessorize
+edanmdm:nmah_355703,"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']","buckles, shoe, pair oves",Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_355702,"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']","buckles, shoe, pair oves",Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_355701,"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']","buckles, shoe, pair oves",Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_354843,"['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",costume accessories worns,Dress & accessorize,brooches,Dress & accessorize
+edanmdm:nmah_354822,"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooch,Dress & accessorize,brooches,Dress & accessorize
+edanmdm:nmah_350146,"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']","buckles, shoe, pair oves",Dress & accessorize,shoe buckles,Dress & accessorize
+edanmdm:nmah_335046,"['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']","shotgun, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_319099,['cane (plant material)'],canes,Other,canes,Dress & accessorize
+edanmdm:nmah_319093,"['chest; furniture', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_319092,"['chest; furniture', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_319091,"['chest; furniture', 'furniture', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_318697,"['lifter, pot']","lifter, pots","Eat, cook & drink",pot lifters,"Eat, cook & drink"
+edanmdm:nmah_318664,"['oven, dutch']","oven, dutches","Eat, cook & drink",dutch ovens,"Eat, cook & drink"
+edanmdm:nmah_318663,"['oven, dutch']","oven, dutches","Eat, cook & drink",dutch ovens,"Eat, cook & drink"
+edanmdm:nmah_318379,"['rack, spoon']","rack, spoons","Eat, cook & drink",spoon racks,"Eat, cook & drink"
+edanmdm:nmah_318378,"['box, candle']",candleholders,Other,candleholders,Ignite & manage fire
+edanmdm:nmah_317973,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317971,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317970,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317967,"['cutter, straw', 'fire steel; fire making apparatus']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317965,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317961,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317904,"['fire steel; fire making apparatus', 'firesteel']",fire steel,Ignite & manage fire,firesteels,Ignite & manage fire
+edanmdm:nmah_317176,"['sheet (paper); manuscript', 'receipt']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_317175,"['sheet (paper); manuscript', 'receipt']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_317174,"['sheet (paper); manuscript', 'receipt']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_317173,"['sheet (paper); manuscript', 'receipt']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_317167,"['sheet (paper); manuscript', 'deed']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_317096,"['worker, butter']","worker, butters","Eat, cook & drink",butter workers,"Eat, cook & drink"
+edanmdm:nmah_317050,"['husker, corn']","husker, corns","Eat, cook & drink",corn huskers,"Eat, cook & drink"
+edanmdm:nmah_316836,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_316278,"['sheet (paper)', 'sheet (paper); manuscript']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_316231,"['beads, prayer']","beads, prayers",Dress & accessorize,prayer beads,Dress & accessorize
+edanmdm:nmah_316224,"['holder, crayon']","holder, crayons",Other,crayons holders,Other
+edanmdm:nmah_316221,['spectacles'],spectacles,Other,eyeglasses,Dress & accessorize
+edanmdm:nmah_316220,['spectacles'],spectacles,Other,eyeglasses,Dress & accessorize
+edanmdm:nmah_314739,"['dipper, snuff']","dipper, snufves",Smoke,snuff dippers,Smoke
+edanmdm:nmah_313067,"['tinder box; fire making apparatus', 'box, tinder']",boxes,Ignite & manage fire,tinderboxes,Ignite & manage fire
+edanmdm:nmah_312895,"['chest; furniture', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_312138,"['masher, potato', 'potato masher; kitchen utensils']","masher, potatos","Eat, cook & drink",mashers,"Eat, cook & drink"
+edanmdm:nmah_312135,"['rolling pin; kitchen utensils', 'pin, rolling']","pin, rollings",Dress & accessorize,rolling pins,"Eat, cook & drink"
+edanmdm:nmah_311219,"['chest, blanket', 'chest; furniture', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_307142,"['pin, rolling']","pin, rollings",Dress & accessorize,rolling pins,"Eat, cook & drink"
+edanmdm:nmah_307141,"['mixer, drink, bow drill']","mixer, drink, bow drills",Work & build,bow drills,Work & build
+edanmdm:nmah_307137,"['box, candle']",candleholders,Other,candleholders,Ignite & manage fire
+edanmdm:nmah_306515,"['bags', 'bags (containers)', 'accessories carried', 'pocket book']",accessories carrieds,Dress & accessorize,bags,Dress & accessorize
+edanmdm:nmah_306503,"['chest of drawers', 'chests']",chests,Other,chests,Decorate & furnish
+edanmdm:nmah_305360,"['worker, butter']","worker, butters","Eat, cook & drink",butter scoops,"Eat, cook & drink"
+edanmdm:nmah_304692,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_304687,"['masher, potato']","masher, potatos","Eat, cook & drink",mashers,"Eat, cook & drink"
+edanmdm:nmah_304125,"['fork, hearth']",forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_304113,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_304079,"['box, dough', 'dough trough table']","box, dough","Eat, cook & drink",dough boxes,"Eat, cook & drink"
+edanmdm:nmah_303986,"['lifter, pot']","lifter, pots","Eat, cook & drink",pot lifters,"Eat, cook & drink"
+edanmdm:nmah_303857,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_303856,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_303855,['knives'],knives,Other,flatwares,"Eat, cook & drink"
+edanmdm:nmah_303854,['knives'],knives,Other,flatwares,"Eat, cook & drink"
+edanmdm:nmah_303850,"['doll, woman']","doll, women",Play,dolls,Play
+edanmdm:nmah_303814,"['bottle, nursing']","bottle, nursings","Eat, cook & drink",nursing bottles,"Eat, cook & drink"
+edanmdm:nmah_303412,['snuffers and tray'],trays,Ignite & manage fire,trays,Other
+edanmdm:nmah_303406,['snuffers and tray'],trays,Ignite & manage fire,trays,Other
+edanmdm:nmah_302668,['knives'],knives,Other,flatwares,"Eat, cook & drink"
+edanmdm:nmah_302667,['knives'],knives,Other,flatwares,"Eat, cook & drink"
+edanmdm:nmah_302666,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_302665,['forks (flatware)'],forks,"Eat, cook & drink",flatwares,"Eat, cook & drink"
+edanmdm:nmah_301082,"['cooler, wine']","cooler, wines","Eat, cook & drink",coolers,"Eat, cook & drink"
+edanmdm:nmah_301081,"['cooler, wine']","cooler, wines","Eat, cook & drink",coolers,"Eat, cook & drink"
+edanmdm:nmah_2024527,"['sheets of paper, set of', 'documents', 'sheets of paper, set of; documents']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_2022235,"['documents', 'pamphlets', 'pamphlet; documents']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1922648,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1894948,"[""pattern book, weaver's""]","pattern book, weaver's",Textile making,pattern books,Textile making
+edanmdm:nmah_1872989,"['cannon, revolutionary war']","cannon, revolutionary wars",Fight,cannons,Fight
+edanmdm:nmah_1859094,"['notice', 'documents']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1848369,['chests'],chests,Other,chests,Decorate & furnish
+edanmdm:nmah_1825205,['license plate'],license plates,"Eat, cook & drink",license plates,Other
+edanmdm:nmah_1824441,['ale bottle'],ale bottles,"Eat, cook & drink",bottles,"Eat, cook & drink"
+edanmdm:nmah_1773,['flasks (bottles)'],flasks,Other,bottles,"Eat, cook & drink"
+edanmdm:nmah_1757733,"['plate, soup']","plate, soups","Eat, cook & drink",plates,"Eat, cook & drink"
+edanmdm:nmah_1695804,"['scabbard, bayonet', 'scabbards']","scabbard, bayonets",Fight,bayonets,Fight
+edanmdm:nmah_1461574,"['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",music transcripts,"Read, write & record",manuscripts,"Read, write & record"
+edanmdm:nmah_1460810,"['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",curfews,Ignite & manage fire,tinderboxes,Ignite & manage fire
+edanmdm:nmah_1458621,"['fusil', 'musket, flintlock']","musket, flintlocks",Fight,flintlocks,Fight
+edanmdm:nmah_1457126,"['glass, soda']","glass, sodas","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_1452262,"['tool, millinery']","tool, millineries",Work & build,pusher downers,Work & build
+edanmdm:nmah_1449860,"['holder, cigar']","holder, cigars",Smoke,cigar holders,Smoke
+edanmdm:nmah_1448509,"['cards (information artifacts)', 'certificates', 'certofocate', 'pledge card']",certificates,Pay & exchange,documents and certificates,Pay & exchange
+edanmdm:nmah_1447483,"['medal, political']","medal, politicals",Commemorate & symbolize,medals,Commemorate & symbolize
+edanmdm:nmah_1434602,"['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']","embroidery, lace, ecclesiaticals",Textile making,embroideries,Textile making
+edanmdm:nmah_1419026,"[""weaver's pattern book""]",weaver's pattern books,Textile making,pattern books,Textile making
+edanmdm:nmah_1405255,"['sundial', 'sundial']",sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_1396953,"['pot, milk', 'jug, cream']",pots,"Eat, cook & drink",creamers,"Eat, cook & drink"
+edanmdm:nmah_1379091,"['lace, border, fragment']","lace, border, fragments",Dress & accessorize,laces,Dress & accessorize
+edanmdm:nmah_1379090,"['lace, border, fragment']","lace, border, fragments",Dress & accessorize,laces,Dress & accessorize
+edanmdm:nmah_1359230,['certificates'],certificates,Pay & exchange,documents and certificates,Pay & exchange
+edanmdm:nmah_1346396,"['trumpet, speaking']","trumpet, speakings",Perform music,trumpets,Perform music
+edanmdm:nmah_1345142,"['trumpet, speaking']","trumpet, speakings",Perform music,trumpets,Perform music
+edanmdm:nmah_1343167,"['tr*335662', 'documents']",documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1342332,['fabric sample'],fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1340797,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340789,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340788,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340742,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340720,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340630,"['bucket, fire']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1340531,"['bucket, fire', 'buckets (vessels)']","bucket, fires",Ignite & manage fire,fire buckets,Ignite & manage fire
+edanmdm:nmah_1335228,"['neckwear', 'costume accessories worn']",costume accessories worns,Dress & accessorize,neckwear,Dress & accessorize
+edanmdm:nmah_1334639,['fabric fragment'],fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1332546,"['fabric, fragment']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1332545,"['fabric,fragment']",fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1332520,['fabric sample'],fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1332519,['fabric fragment'],fabric fragments,Other,fabric fragments,Textile making
+edanmdm:nmah_1330141,"['needlework, embroidery']","needlework, embroideries",Textile making,embroideries,Textile making
+edanmdm:nmah_1326057,"['bottle, scent']","bottle, scents","Eat, cook & drink","bottle, scents",Other
+edanmdm:nmah_1326052,"['pan, baking']","pan, baking","Eat, cook & drink",pans,"Eat, cook & drink"
+edanmdm:nmah_1289915,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1270712,['documents'],documents,"Read, write & record",documents and certificates,"Read, write & record"
+edanmdm:nmah_1215669,"['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']","glass, sodas","Eat, cook & drink",glasses,"Eat, cook & drink"
+edanmdm:nmah_1213997,['calendar medal'],calendar medals,Commemorate & symbolize,medals,Commemorate & symbolize
+edanmdm:nmah_1198450,"['vaccination card, commemorative']","vaccination card, commemoratives",Other,vaccination card,Heal & care
+edanmdm:nmah_1190334,['chests'],chests,Other,chests,Decorate & furnish
+edanmdm:nmah_1190333,['chests'],chests,Other,chests,Decorate & furnish
+edanmdm:nmah_1174400,"['neckwear', 'caps (headgear)']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_1161366,"['caps (headgear)', 'cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00']",caps,Dress & accessorize,headgear,Dress & accessorize
+edanmdm:nmah_1145197,"['finial, altar screen']","finial, altar screens",Worship,altar screens,Worship
+edanmdm:nmah_1129189,"['cases (containers)', 'case; surgical set']","case, surgical set",Heal & care,surgical set cases,Heal & care
+edanmdm:nmah_1125006,"['button', 'button; u.s. navy; officer; dress']",dresses,Dress & accessorize,buttons,Dress & accessorize
+edanmdm:nmah_1122246,['sundial'],sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_1121877,['calendar medal'],calendar medals,Commemorate & symbolize,medals,Commemorate & symbolize
+edanmdm:nmah_1121869,['sundial'],sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_1121699,"['card, prayer']","card, prayers",Other,prayer cards,Other
+edanmdm:nmah_1121596,"['sundial', 'sundial, horizontal portable']",sundials,Other,sundials,Measure & navigate
+edanmdm:nmah_1115619,"['spectacles; vision aids', 'spectacles']",spectacles,Other,eyeglasses,Dress & accessorize
+edanmdm:nmah_1110401,"['document, broadside']","document, broadsides","Read, write & record",broadsides,"Read, write & record"
+edanmdm:nmah_1101766,"['print, fashion plate']","print, fashion plates",Dress & accessorize,fashion plates,Dress & accessorize
+edanmdm:nmah_1101764,"['print, fashion plate']","print, fashion plates",Dress & accessorize,fashion plates,Dress & accessorize
+edanmdm:nmah_1101760,"['print, fashion plate']","print, fashion plates",Dress & accessorize,fashion plates,Dress & accessorize
+edanmdm:nmah_1101751,"['print, fashion plate']","print, fashion plates",Dress & accessorize,fashion plates,Dress & accessorize
+edanmdm:nmah_1101745,"['print, fashion plate']","print, fashion plates",Dress & accessorize,fashion plates,Dress & accessorize
+edanmdm:nmah_1097201,['medallions (medals)'],medallions,Other,medals,Commemorate & symbolize
+edanmdm:nmah_1097199,"['medal; personal; commemorative', 'medallions (medals)']",medal,Commemorate & symbolize,medals,Commemorate & symbolize
+edanmdm:nmah_1096446,"['fabric length, plate printed', 'fabric, printed, copperplate']",fabric fragments,"Eat, cook & drink",fabric fragments,Textile making
+edanmdm:nmah_1065301,"['frame, butter mold']","frame, butter molds",Decorate & furnish,molds,"Eat, cook & drink"
+edanmdm:nmah_1057905,"['panel, religious']",pans,Other,religious panels,Worship
+edanmdm:nmah_1028095,"['petticoats (underskirts)', 'props']",props,Other,petticoats,Dress & accessorize
+edanmdm:nmah_1004572,"['petticoats (underskirts)', 'props']",props,Other,petticoats,Dress & accessorize
+edanmdm:nmah_1000590,"['sheets (paper), set of; paper, sheet; manuscript', 'documents', 'paper, sheet']",documents,"Read, write & record",documents and certificates,"Read, write & record"

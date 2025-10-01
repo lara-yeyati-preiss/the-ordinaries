@@ -1,0 +1,192 @@
+original_label,canonical_type_manual
+"[""pattern book, weaver's""]",pattern books
+"[""weaver's pattern book""]",pattern books
+['ale bottle'],bottles
+"['apron, fraternal', 'apron, masonic']",aprons
+"['aprons (main garments)', 'apron; accessories worn on the body; female', 'costume accessories worn']",aprons
+"['bag; bags; accessories carried; female', 'bags', 'bags (containers)', 'accessories carried']",bags
+"['bag; bags; accessories carried; female', 'bags', 'purses (bags)', 'accessories carried']",bags
+"['bags', 'bags (containers)', 'accessories carried', 'pocket book']",bags
+"['bags', 'purse; purse, pocketbook; bags; accessories carried; female', 'purses (bags)', 'accessories carried']",bags
+"['beads, prayer']",prayer beads
+['book pages'],books
+"['bookplate', 'fraktur', 'documents', 'pen and ink']",documents and certificates
+"['bottle, nursing']",nursing bottles
+"['box, dough', 'dough trough table']",dough boxes
+"['breeches (trousers)', 'breeches; lower body; main dress; male']",breeches
+"['brooch; jewelry; accessories worn on the body; female', 'brooches']",brooches
+"['bucket, fire', 'buckets (vessels)']",fire buckets
+"['bucket, fire']",fire buckets
+"['buckle, knee; jewelry; accessories worn on the body; male', 'buckle, knee']",knee buckles
+"['buckle, shoe', 'buckle, shoe; jewelry; accessories worn on the body; male']",shoe buckles
+"['buckles, shoe', 'costume accessories worn', 'jewelry', 'buckles (strap accessories)']",shoe buckles
+"['buckles, shoe, pair of', 'buckles, shoe, pair of; jewelry; accessories worn on the body; male']",shoe buckles
+"['button', 'button; u.s. navy; officer; dress']",buttons
+"['caddy, tea']",tea caddies
+"['calash', 'costume accessories worn', 'calash; headwear; accessories worn on the body; female', 'headgear']",headgear
+['calendar medal'],medals
+"['calipers, linear, set of', 'calipers, venier combined with depth gage']",calipers
+"['cannon, revolutionary war']",cannons
+"['cap, miter', 'cap; cap, mitre; man; m, newport light infantry', 'mitres']",miter caps
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; female']",headgear
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; male']",headgear
+"['caps (headgear)', 'cap; headwear; accessories worn on the body; woman; 1800 00 00+, 1809 00 00']",headgear
+"['caps (headgear)', 'cap; man']",headgear
+"['caps (headgear)', 'cap; man; army; fusileer']",headgear
+"['caps (headgear)', 'cap; man; army; grenadier']",headgear
+"['card, prayer']",prayer cards
+"['cards (information artifacts)', 'certificates', 'certofocate', 'pledge card']",documents and certificates
+"['cases (containers)', 'case; surgical set']",surgical set cases
+"['certificate, discharge']",documents and certificates
+"['certificate, naturalization']",documents
+"['certificates', 'certificate; signature']",documents and certificates
+['certificates'],documents and certificates
+"['chemise, shift', 'chemise, shift; entire body; underwear; female']",chemises
+"['coat; upper body; main dress; male', 'coats (garments)']",coats
+"['coats (garments)', 'coat; coat, frock; upper body; main dress; male']",coats
+"['comb, ornamental; headwear; accessories worn on the body; female', 'comb, ornamental']",combs
+"['cooler, water']",coolers
+"['cooler, wine']",coolers
+"['costume accessories worn', 'brooch; jewelry; accessories worn on the body; female', 'jewelry', 'brooches']",brooches
+"['costume accessories worn', 'caps (headgear)', 'cap; headwear; accessories worn on the body; female', 'headgear']",headgear
+"['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",knee buckles
+"['cross, rounded', 'cross, rounded; historical']",crosses
+"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']",cuffs
+['cups'],bloodletting cups
+"['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",tinderboxes
+"['cutter, straw', 'fire steel; fire making apparatus']",firesteels
+"['dipper, snuff']",snuff dippers
+"['document, broadside']",broadsides
+"['documents', 'pamphlets', 'pamphlet; documents']",documents and certificates
+"['documents', 'signature']",documents and certificates
+['documents'],documents and certificates
+"['doll, woman']",dolls
+"['embroidery, lace, ecclesiatical', 'embroidery, lace, ecclesiastical, table cover', 'embroidery, lace, ecclesiastical']",embroideries
+"['embroidery, picture']",embroideries
+"['embroidery, white work', 'pocket, white work']",embroideries
+"['fan, fragment', 'fans (costume accessories)', 'accessories carried', 'fan, fragment; accessories carried; female']",fans
+"['fans (costume accessories)', 'fan; accessories carried; female', 'accessories carried']",fans
+"['finial, altar screen']",altar screens
+"['fire steel; fire making apparatus', 'firesteel']",firesteels
+"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",flags
+"['flag, revolutionary war']",flags
+['flasks (bottles)'],bottles
+"['fork, hearth']",flatwares
+['forks (flatware)'],flatwares
+"['fragment, pan']",pans
+"['fragment, pitcher']",pitchers
+"['fragments, bottle']",bottles
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink', 'documents, pair of', 'certificates']",documents and certificates
+"['fraktur vorschriften', 'fraktur', 'documents', 'pen and ink']",documents and certificates
+"['fraktur', 'documents', 'certificates', 'letterpress']",documents and certificates
+"['fraktur', 'documents', 'pen and ink', 'certificates', 'letterpress']",documents and certificates
+"['fraktur', 'documents', 'pen and ink', 'certificates']",documents and certificates
+"['frame, butter mold']",molds
+"['frock coats', 'coat; coat, frock; upper body; main dress; male']",coats
+"['fusil', 'musket, flintlock']",flintlocks
+"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",gaiters
+"['glass, jelly']",glasses
+"['glass, soda', 'glass, soda', 'glass, soda; soda fountain; furnishings']",glasses
+"['glass, soda']",glasses
+"['grenade; ammunition, artillery; hand', 'grenades']",grenades
+"['gun; firearms; miquelet; .69 in; smooth bore; muzzle load; sa; p', 'firearms', 'musket, miquelet lock']",muskets
+"['handkerchief; accessories carried; female', 'handkerchiefs', 'accessories carried']",handkerchiefs
+"['handwear', 'costume accessories worn', 'mitts, pair of; handwear; accessories worn on the body; female', 'mitts', 'mitts, pair of']",mitts
+"['handwear', 'gloves', 'costume accessories worn', 'gloves, pair of; handwear; accessories worn on the body; female']",gloves
+"['holder, cigar']",cigar holders
+"['holder, crayon']",crayons holders
+"['husker, corn']",corn huskers
+"['invitation', 'invitation; manuscript, printed']",manuscripts
+"['jacket; upper body; main dress; female', 'jackets (garments)']",jackets
+"['jacket; upper body; main dress; female; sport; riding', 'jackets (garments)']",jackets
+"['jackets (garments)', 'jacket; upper body; main dress; female?']",jackets
+"['jar, butter', 'butter jar', 'jars']",jars
+['knives'],flatwares
+"['lace pillow, lace', 'lace pillow, lace, pattern', 'pillow, lace']",lace pillows
+"['lace, border, fragment']",laces
+"['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers
+"['lifter, pot']",pot lifters
+"['machine tool, metalworking, lathe, pole', 'pole lathe']",machine tools
+"['masher, potato', 'potato masher; kitchen utensils']",mashers
+"['masher, potato']",mashers
+"['medal, political']",medals
+"['medal; personal; commemorative', 'medallions (medals)']",medals
+['medallions (medals)'],medals
+"['mixer, drink, bow drill']",bow drills
+"['musket, flintlock', 'fussil', 'fussil; firearms; flintlock; .67 in; smooth bore; muzzle load; sa']",flintlocks
+"['musket, flintlock', 'fussil; firearms; flintlock; .69 in; smooth bore; muzzle load; sa', 'fussil']",flintlocks
+['naturalization certificate'],documents and certificates
+"['neckcloth; neckwear; accessories worn on the body; female', 'neckwear', 'costume accessories worn', 'neckcloth']",neckwear
+"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",neckwear
+"['neckwear', 'caps (headgear)']",headgear
+"['neckwear', 'costume accessories worn']",neckwear
+"['neckwear', 'necktie; neckwear; accessories worn on the body; female']",neckwear
+"['needle, crochet', 'crochet hooks']",needles
+"['needle, knitting']",needles
+"['needlework, embroidery']",embroideries
+"['notice', 'documents']",documents and certificates
+"['oven, dutch']",dutch ovens
+"['pan, baking']",pans
+"['panel, religious']",religious panels
+"['pattern, lace']",lace patterns
+"['petticoats (underskirts)', 'props']",petticoats
+"['pin, rolling']",rolling pins
+"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",pistol-swords
+"['plate, soup']",plates
+"['pot, milk', 'jug, cream']",creamers
+"['print, fashion plate']",fashion plates
+['punch bowls'],bowls
+"['rack, spoon']",spoon racks
+"['regimental flag, 2nd south carolina regiment', 'regimental flag, 2nd south carolina regiment', 'regimental color, 2nd south carolina regiment']",flags
+"['rolling pin; kitchen utensils', 'pin, rolling']",rolling pins
+"['saber, dragoon', 'saber; saber, dragoon; edged weapons; army; dragoon']",sabers
+"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']",bayonets
+"['scabbard, bayonet', 'scabbards']",bayonets
+"['scale rule, folding', 'rule, folding']",scale rules
+"['sheet (paper)', 'sheet (paper); manuscript', 'sheet (paper)', 'manuscripts']",manuscripts
+"['sheet (paper)', 'sheet (paper); manuscript']",manuscripts
+"['sheet (paper); manuscript', 'deed']",manuscripts
+"['sheet (paper); manuscript', 'invoice', 'sheet (paper)']",manuscripts
+"['sheet (paper); manuscript', 'receipt']",manuscripts
+['sheet music'],music sheets
+"['sheets (paper), set of; paper, sheet; manuscript', 'documents', 'paper, sheet']",documents and certificates
+"['sheets of paper, set of', 'documents', 'sheets of paper, set of; documents']",documents and certificates
+"['shirt, collar; upper body; main dress; male', 'shirt, collar']",shirts
+"['shirts', 'shirt; upper body; main dress; male']",shirts
+"['shotgun, flintlock', 'fowler', 'fowler; firearms; flintlock; .50 in; smooth bore; ml; sa']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; .60 in; smooth bore; muzzle load; sa']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 18 ga; smooth bore; muzzle load; sa; p']",flintlocks
+"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']",flintlocks
+['spectacles'],eyeglasses
+"['spectacles; vision aids', 'spectacles']",eyeglasses
+"['stockings', 'costume accessories worn', 'footwear']",stockings
+"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",collar studs
+"['suit, 2 piece', 'suit, 2 piece; entire body; main dress; male']",suits
+"['suit, 2 piece']",suits
+"['suit, 2 piece; entire body; main dress; male', 'entire body', 'suits (main garments)', 'suit, 2 piece', 'main garments']",suits
+"['suit, 2 piece; entire body; main dress; male', 'suit, 2 piece']",suits
+"['suit, 3 piece; entire body; main dress; male', 'suit, 3 piece']",suits
+"['suit, coat; entire body; main dress; male', 'suit, coat']",coats
+"['suit, frock, 3 piece', 'suit, frock, 3 piece; entire body; main dress; boy']",suits
+"['suits (main garments)', 'suit, 3 piece; entire body; main dress; male', 'suit, 3 piece', 'main garments']",suits
+"['tinder box; fire making apparatus', 'box, tinder']",tinderboxes
+"['tool, millinery']",pusher downers
+"['tr*335662', 'documents']",documents and certificates
+"['trousers; lower body; main dress; male', 'trousers']",trousers
+"['trumpet, speaking']",trumpets
+"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",undersleeves
+"['vaccination card, commemorative']",vaccination card
+"['vests (garments)', 'vest; upper body; main dress; male']",vests
+"['waistcoat ?; entire body; main dress; female', 'waistcoat ?']",waistcoats
+"['waistcoat fabric', 'waistcoat fragment; waistcoat fabric; waistcoat fab; upper body; main dress; male']",waistcoats
+"['waistcoat fragment', 'waistcoat fragment; waistcoat; upper body; main dress; male']",waistcoats
+"['waistcoat fragment', 'waistcoats (garments)', 'waistcoat fragment; upper body; main dress; male', 'upper body', 'main garments']",waistcoats
+"['waistcoat fragments; upper body; main dress; male', 'waistcoat fragments']",waistcoats
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)', 'upper body', 'main garments']",waistcoats
+"['waistcoat; upper body; main dress; male', 'waistcoats (garments)']",waistcoats
+"['waistcoats (garments)', 'waistcoat; upper body; main dress; male; army; guard national; officer']",waistcoats
+"['walking stick; accessories carried; male', 'walking sticks']",walking sticks
+"['wallets', 'bags', 'accessories carried', 'wallet; bags; accessories carried; unknown']",bags
+"['wallets', 'bags', 'bags (containers)', 'accessories carried', 'wallet; bags; accessories carried; unknown']",bags
+"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",watch papers
+"['worker, butter']",butter scoops

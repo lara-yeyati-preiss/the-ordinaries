@@ -1,0 +1,163 @@
+object_type,previous_action,new_action
+"['accessories for the care of clothing', 'boxes (containers)']","Contain, store & preserve",Other
+"['accessories for the selling of clothing', 'boxes (containers)']","Contain, store & preserve",Other
+"['albarello', 'jars', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['albarello', 'jars']","Contain, store & preserve",Heal & care
+['astrolabe'],Other,Measure & navigate
+"['balances (scales)', 'beam balance']",Other,Measure & navigate
+"['balances (scales)', 'hand balance']",Other,Measure & navigate
+['balances (scales)'],Other,Measure & navigate
+['ballot box'],"Contain, store & preserve",Other
+"['bandages, lint', 'medicine chest', 'medicine chest']","Contain, store & preserve",Heal & care
+"['bedstead', 'bedstead; furniture; cradle']",Other,Decorate & furnish
+['blankets (coverings)'],Other,Decorate & furnish
+"['booklets', 'booklet; documents']",Other,"Read, write & record"
+"['bottle; jar; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['bottles', 'jars', 'jar; bottle; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['bottles', 'jars', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['bottles', 'jars']","Contain, store & preserve",Heal & care
+"['bowl, tea', 'saucers (plates)']",Other,"Eat, cook & drink"
+['box chronometer'],"Contain, store & preserve",Other
+"['box, alms']","Contain, store & preserve",Other
+"['box, candle']","Contain, store & preserve",Other
+"['box, dough', 'dough trough table']","Contain, store & preserve","Eat, cook & drink"
+"['box, snuff']","Contain, store & preserve",Other
+"['box, stamp']","Contain, store & preserve",Other
+"['box, wall', 'candle box; lighting accessories']","Contain, store & preserve",Other
+"['box, wall']","Contain, store & preserve",Other
+['boxes (containers)'],"Contain, store & preserve",Other
+"['busk', 'busk; underwear; female']",Other,Dress & accessorize
+"['busk', 'busk; upper body; underwear; female']",Other,Dress & accessorize
+"['cabinets (case furniture)', 'counter with drawers, ancient pharmacy']","Contain, store & preserve",Decorate & furnish
+['cabinets (case furniture)'],"Contain, store & preserve",Decorate & furnish
+"['caddy, tea']","Contain, store & preserve","Eat, cook & drink"
+"['calash', 'calash; headwear; accessories worn on the body; female']",Other,Dress & accessorize
+"['canister, tea', 'canisters']","Contain, store & preserve",Other
+"['carpet, fragment', 'picture, woven']",Other,Decorate & furnish
+"['case; bloodletting instruments; spring lancet', 'bloodletting', 'spring lancet, bloodletting', 'lancet, set', 'cases (containers)']","Contain, store & preserve",Heal & care
+"['cases (containers)', 'case; surgical set']","Contain, store & preserve",Heal & care
+['cases (containers)'],"Contain, store & preserve",Other
+"['ceramic jar', 'jar, olive, ceramic']","Contain, store & preserve",Other
+"['chest of drawers', 'chests']","Contain, store & preserve",Other
+"['chest, blanket', 'chest; furniture', 'chests']","Contain, store & preserve",Other
+"['chest, blanket']","Contain, store & preserve",Other
+"['chest; furniture', 'chests']","Contain, store & preserve",Other
+"['chest; furniture', 'furniture', 'chests']","Contain, store & preserve",Other
+['chests'],"Contain, store & preserve",Other
+"['chronometer', 'pocket chronometer movement & dial; chronometer; mechanical, spring driven; english chronometer movement']",Other,Measure & navigate
+['churns'],Other,"Eat, cook & drink"
+"['cooler, wine']",Other,"Eat, cook & drink"
+"['cuff links', 'cuff links', 'cuff links; jewelry; accessories worn on the body; male']",Other,Dress & accessorize
+"['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']",Other,Dress & accessorize
+"['cutlass; edged weapons; navy', 'cutlasses']",Other,Fight
+"['cutlasses', 'cutlass; edged weapons; navy; enlisted man']",Other,Fight
+"['dickey; neckwear; accessories worn on the body; male', 'dickeys']",Other,Dress & accessorize
+"['dippers (serving utensils)', 'cup, drinking']",Other,"Eat, cook & drink"
+['dippers (serving utensils)'],Other,"Eat, cook & drink"
+['dispatch case'],"Contain, store & preserve",Other
+"['ecuelle', 'ecuelle stand', 'ecuelle cover', 'stand']",Other,"Eat, cook & drink"
+['electoral ticket'],Other,Perform music
+['field telescope and case'],"Contain, store & preserve",Other
+"['flag, fragment of', 'flag, fragment of; military; army; rgt, 9 virginia continental']",,Commemorate & symbolize
+['flagon'],Other,"Eat, cook & drink"
+"['flask; jar; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['flask; pharmaceutical container', 'flasks (bottles)', 'jars']","Contain, store & preserve",Heal & care
+"['food warmer', 'infant feeder']",Other,"Eat, cook & drink"
+"['gaiters, pair of; footwear; accessories worn on the body; male', 'gaiters, pair of']",Other,Dress & accessorize
+"['grater, potato; kitchen utensils', 'graters']",Other,"Eat, cook & drink"
+['graters'],Other,"Eat, cook & drink"
+['hanging balance (beam)'],Other,Measure & navigate
+['highchair'],Other,Decorate & furnish
+"['housewife', 'needlework kit']",Other,Textile making
+"['husker, corn']",Other,"Eat, cook & drink"
+"['invitation', 'invitation; manuscript, printed']",Other,"Read, write & record"
+"['jar, apothecary, syrup']","Contain, store & preserve",Heal & care
+"['jar, butter', 'butter jar', 'jars']","Contain, store & preserve","Eat, cook & drink"
+"['jar, leech, apothecary', 'leech jar; materia medica; containers', 'leech jars']","Contain, store & preserve",Heal & care
+"['jar; bottle; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['jar; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['jar; pharmaceutical container; syrup', 'jars']","Contain, store & preserve",Heal & care
+"['jar; pharmaceuticals; containers; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['jars', 'bottle; jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['jars', 'jar, albarello', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['jars', 'jar, albarello']","Contain, store & preserve",Heal & care
+"['jars', 'jar; bottle; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['jars', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['jars', 'pharmaceutical container']","Contain, store & preserve",Heal & care
+['jars'],"Contain, store & preserve",Heal & care
+"['masher, potato', 'potato masher; kitchen utensils']",Other,"Eat, cook & drink"
+"['masher, potato']",Other,"Eat, cook & drink"
+"['medicine chest', 'medical chest']","Contain, store & preserve",Heal & care
+"['medicine chest; medicine case', 'medicine case', 'medicine chest']","Contain, store & preserve",Heal & care
+"['medicine', 'syrup jar', 'jars', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['mitts, pair of; handwear; accessories worn on the body; female', 'mitts, pair of']",Other,Dress & accessorize
+"['mold, butter cheese, part of']",Other,"Eat, cook & drink"
+"['mold, butter, handle']",Other,"Eat, cook & drink"
+"['mold, gingerbread']",Other,"Eat, cook & drink"
+"['mold, sugar']",Other,"Eat, cook & drink"
+"['molds (shaping tools)', 'mold, butter cheese, part of']",Other,"Eat, cook & drink"
+"['mortar; manufacturing & dispensing equip.', 'mortars (grinding tools)']",Other,Heal & care
+"['muff; accessories carried; female', 'muffs']",Other,Dress & accessorize
+['napkins'],Other,"Eat, cook & drink"
+"['neckcloth; neckwear; accessories worn on the body; male', 'neckcloth']",Other,Dress & accessorize
+"['neckcloth?; neckwear; accessories worn on the body; female', 'neckcloth?']",Other,Dress & accessorize
+['oyster jar'],"Contain, store & preserve",Other
+"['pan, baking']",Other,"Eat, cook & drink"
+"['pan, frying']",Other,"Eat, cook & drink"
+"['pendant; jewelry; accessories worn on the body; female', 'pendants (jewelry)']",Other,Dress & accessorize
+['pendants (jewelry)'],Other,Dress & accessorize
+['periodicals'],Other,"Read, write & record"
+"['pestle; kitchen utensils', 'pestles']",Other,"Eat, cook & drink"
+['pestles'],Other,Heal & care
+"['photographs, set of']",Other,"Portray, display & decorate"
+"['pitchers (vessels)', 'jars']","Contain, store & preserve",Heal & care
+['pochette'],Other,Perform music
+"['potsherds', 'sherds, pan, milk']",Other,"Eat, cook & drink"
+"['printing presses', 'press, printing; printing; relief; flatbed platen']",Other,"Read, write & record"
+['printing presses'],Other,"Read, write & record"
+"['protractor', 'protractor and parallel rule', 'protractor; semi circular, with parallel rule']",Other,Measure & navigate
+"['reamer, lemon', 'lemon reamer; kitchen utensils']",Other,"Eat, cook & drink"
+['roasters (cookware)'],Other,"Eat, cook & drink"
+['rugs'],Other,Decorate & furnish
+['salt (inorganic material)'],Other,"Eat, cook & drink"
+['saucers (plates)'],Other,"Eat, cook & drink"
+"['shaker', 'casters (vessels)']",Other,"Eat, cook & drink"
+['skimmers (culinary tools)'],Other,"Eat, cook & drink"
+['snuffboxes'],Other,Smoke
+['spatulas (culinary tools)'],Other,"Eat, cook & drink"
+"['spigot', 'spigot; kitchen utensils']",Other,"Eat, cook & drink"
+"['stamp, butter mold']",Other,"Eat, cook & drink"
+"['stand, pickle', 'dish, sweetmeat']",Other,"Eat, cook & drink"
+"['stand, roaster']",Other,"Eat, cook & drink"
+"['stays; upper body; underwear; female', 'stays']",Other,Dress & accessorize
+"['stays; upper body; underwear; girl', 'stays']",Other,Dress & accessorize
+"['stick, pudding']",Other,"Eat, cook & drink"
+"['strainers (culinary tools)', 'skimmers (culinary tools)']",Other,"Eat, cook & drink"
+['striker box'],"Contain, store & preserve",Other
+"['stud', 'stud; jewelry; accessories worn on the body; male']",Other,Dress & accessorize
+"['stud, collar', 'stud, collar; jewelry; accessories worn on the body; male']",Other,Dress & accessorize
+"['suit, 2 piece']",Other,Dress & accessorize
+['sundial'],Other,Measure & navigate
+"['syrup jar', 'jar; pharmaceutical container', 'jars']","Contain, store & preserve",Heal & care
+"['syrup jar', 'jar; pharmaceutical container']","Contain, store & preserve",Heal & care
+"['syrup jar', 'jars']","Contain, store & preserve",Heal & care
+"['syrup jar', 'syrup jar', 'jars']","Contain, store & preserve",Heal & care
+['syrup jar'],"Contain, store & preserve",Heal & care
+"['syrup jar, pitcher', 'jars']","Contain, store & preserve",Heal & care
+['telescope (spyglass)'],Other,Heal & care
+['trunks (containers)'],"Contain, store & preserve",Other
+['tureens'],Other,"Eat, cook & drink"
+['type case'],"Contain, store & preserve",Other
+"['umbrellas', 'umbrella; parasols; accessories carried; female']",Other,Dress & accessorize
+"['umbrellas', 'umbrella; parasols; accessories carried; unknown', 'parasols']",Other,Dress & accessorize
+"['undersleeves, pair of', 'undersleeves, pair of; armwear; accessories worn on the body; female']",Other,Dress & accessorize
+['vases'],Other,"Eat, cook & drink"
+"['vests (garments)', 'upper body', 'main garments']",Other,Dress & accessorize
+"['vial; containers', 'vials']","Contain, store & preserve",Other
+['viola'],Other,Perform music
+"['walking stick; accessories carried; male', 'walking sticks']",Other,Dress & accessorize
+"['watch paper', 'watch paper; male', 'accessories for the care of clothing']",Other,Dress & accessorize
+"['weights', 'balances (scales)', 'balance set with weights']",Other,Measure & navigate
+"['weights', 'weights (scale components)']",Other,Measure & navigate
+"['worker, butter']",Other,"Eat, cook & drink"
+['works of art'],Other,"Portray, display & decorate"

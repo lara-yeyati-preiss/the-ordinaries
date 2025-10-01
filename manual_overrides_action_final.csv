@@ -1,0 +1,49 @@
+object_type,previous_action,new_action
+"['bag, salvage']",Dress & accessorize,Other
+"['bottle, scent']","Eat, cook & drink",Other
+['bows (weapons)'],Fight,Perform music
+"['box, candle']",Other,Ignite & manage fire
+['cane (plant material)'],Other,Dress & accessorize
+"['cannons (artillery)', 'cannon; firearms; h; 3.50 in; smooth bore; muzzle load; sa']",Other,Fight
+"['ceiling ornament, church']",Dress & accessorize,Decorate & furnish
+"['chest of drawers', 'chests']",Other,Decorate & furnish
+"['chest, blanket', 'chest; furniture', 'chests']",Other,Decorate & furnish
+"['chest; furniture', 'chests']",Other,Decorate & furnish
+"['chest; furniture', 'furniture', 'chests']",Other,Decorate & furnish
+['chests'],Other,Decorate & furnish
+"['compasses (direction indicators)', 'surveying instruments']",Perform music,Measure & navigate
+"['cooler, water']",Other,"Eat, cook & drink"
+['electoral ticket'],Perform music,Other
+"['entablature fragment, church', 'beam fragment']",Other,Decorate & furnish
+"['fabric fragment', 'fabric, printed fragment']",Other,Textile making
+['fabric fragment'],Other,Textile making
+"['fabric length, knitted', 'fabric; knitted']",Other,Textile making
+"['fabric length, plate printed', 'fabric, printed, copperplate']","Eat, cook & drink",Textile making
+"['fabric pieces; accessories for the manufacturing of clothing', 'fabric pieces']",Other,Textile making
+['fabric sample'],Other,Textile making
+"['fabric, fragment']",Other,Textile making
+"['fabric, fragment, printed']",Other,Textile making
+"['fabric,fragment']",Other,Textile making
+"['fabric; accessories for the manufacturing of clothing', 'cloth']",Other,Textile making
+['flasks (bottles)'],Other,"Eat, cook & drink"
+"['frame, butter mold']",Decorate & furnish,"Eat, cook & drink"
+['knives'],Other,"Eat, cook & drink"
+['license plate'],"Eat, cook & drink",Other
+"['magnifying glasses', 'microscope, hand held, set']","Eat, cook & drink",Heal & care
+"['maul club', 'maul club; woodworking; striking & prizing tools; hand tools']",Fight,Other
+['medallions (medals)'],Other,Commemorate & symbolize
+['organ'],Other,Perform music
+"['panel, religious']",Other,Worship
+"['perfume bottle', 'cosmetics', 'accessories for the care of the person', 'perfume bottle; accessories for care of the person']","Eat, cook & drink",Other
+"['petticoats (underskirts)', 'props']",Other,Dress & accessorize
+"['pin, rolling']",Dress & accessorize,"Eat, cook & drink"
+"['rolling pin; kitchen utensils', 'pin, rolling']",Dress & accessorize,"Eat, cook & drink"
+['shop signs'],Commemorate & symbolize,Other
+"['signs (declaratory or advertising artifacts)', 'shop signs']",Commemorate & symbolize,Other
+['snuffers and tray'],Ignite & manage fire,Other
+['spectacles'],Other,Dress & accessorize
+"['spectacles; vision aids', 'spectacles']",Other,Dress & accessorize
+"['sundial', 'sundial']",Other,Measure & navigate
+"['sundial', 'sundial, horizontal portable']",Other,Measure & navigate
+['surveying instruments'],Perform music,Measure & navigate
+"['vaccination card, commemorative']",Other,Heal & care
