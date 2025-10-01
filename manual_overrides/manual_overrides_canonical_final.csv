@@ -54,6 +54,7 @@ original_label,canonical_type_manual
 "['costume accessories worn', 'jewelry', 'buckles (strap accessories)', 'buckles, knee']",knee buckles
 "['cross, rounded', 'cross, rounded; historical']",crosses
 "['cuffs, pair of', 'cuffs, pair of; armwear; accessories worn on the body; female']",cuffs
+['cups'],bloodletting cups
 "['curfew', 'curfew; fire making apparatus', 'lid, tinderbox']",tinderboxes
 "['cutter, straw', 'fire steel; fire making apparatus']",firesteels
 "['dipper, snuff']",snuff dippers
@@ -107,7 +108,6 @@ original_label,canonical_type_manual
 "['lace, border, fragment']",laces
 "['launcher, grenade', 'launcher, grenade; firearms; flintlock; 2.20 in; smooth bore; muzzle load; sa']",grenade launchers
 "['lifter, pot']",pot lifters
-"['lighter; fire making apparatus', 'lighter']",lighters
 "['machine tool, metalworking, lathe, pole', 'pole lathe']",machine tools
 "['masher, potato', 'potato masher; kitchen utensils']",mashers
 "['masher, potato']",mashers

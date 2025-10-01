@@ -6,7 +6,7 @@
       "children": [
         {
           "name": "medals",
-          "value": 253
+          "value": 252
         },
         {
           "name": "badges",
@@ -14,7 +14,7 @@
         },
         {
           "name": "flags",
-          "value": 30
+          "value": 29
         },
         {
           "name": "icons",
@@ -192,7 +192,7 @@
         },
         {
           "name": "buttons",
-          "value": 16
+          "value": 14
         },
         {
           "name": "political buttons",
@@ -255,10 +255,6 @@
           "value": 5
         },
         {
-          "name": "hats",
-          "value": 5
-        },
-        {
           "name": "jackets",
           "value": 5
         },
@@ -272,6 +268,10 @@
         },
         {
           "name": "gloves",
+          "value": 4
+        },
+        {
+          "name": "hats",
           "value": 4
         },
         {
@@ -471,10 +471,6 @@
           "value": 1
         },
         {
-          "name": "sweat shirts",
-          "value": 1
-        },
-        {
           "name": "undershirt",
           "value": 1
         },
@@ -513,7 +509,7 @@
         },
         {
           "name": "cups",
-          "value": 41
+          "value": 39
         },
         {
           "name": "butter stamps",
@@ -745,10 +741,6 @@
         },
         {
           "name": "musical glasses",
-          "value": 1
-        },
-        {
-          "name": "napkins",
           "value": 1
         },
         {
@@ -1113,10 +1105,6 @@
           "value": 5
         },
         {
-          "name": "shots",
-          "value": 5
-        },
-        {
           "name": "spinning wheel, flaxes",
           "value": 5
         },
@@ -1170,10 +1158,6 @@
         },
         {
           "name": "silk pictures",
-          "value": 4
-        },
-        {
-          "name": "sticks",
           "value": 4
         },
         {
@@ -1245,15 +1229,7 @@
           "value": 3
         },
         {
-          "name": "license plates",
-          "value": 3
-        },
-        {
           "name": "orreries",
-          "value": 3
-        },
-        {
-          "name": "pennants",
           "value": 3
         },
         {
@@ -1270,6 +1246,10 @@
         },
         {
           "name": "shop signs",
+          "value": 3
+        },
+        {
+          "name": "sticks",
           "value": 3
         },
         {
@@ -1362,6 +1342,10 @@
         },
         {
           "name": "pay orders",
+          "value": 2
+        },
+        {
+          "name": "pennants",
           "value": 2
         },
         {
@@ -1506,10 +1490,6 @@
         },
         {
           "name": "bullet, molds",
-          "value": 1
-        },
-        {
-          "name": "bumper stickers",
           "value": 1
         },
         {
@@ -1801,10 +1781,6 @@
           "value": 1
         },
         {
-          "name": "langrages",
-          "value": 1
-        },
-        {
           "name": "lathe, jeweler's",
           "value": 1
         },
@@ -1822,6 +1798,10 @@
         },
         {
           "name": "letterpress",
+          "value": 1
+        },
+        {
+          "name": "license plates",
           "value": 1
         },
         {
@@ -2093,6 +2073,10 @@
           "value": 1
         },
         {
+          "name": "shots",
+          "value": 1
+        },
+        {
           "name": "shrine, pockets",
           "value": 1
         },
@@ -2214,10 +2198,6 @@
         },
         {
           "name": "tubs",
-          "value": 1
-        },
-        {
-          "name": "tumblers",
           "value": 1
         },
         {
@@ -2566,7 +2546,7 @@
         },
         {
           "name": "posters",
-          "value": 61
+          "value": 59
         },
         {
           "name": "uncut sheets",
@@ -2667,7 +2647,7 @@
         },
         {
           "name": "maps",
-          "value": 22
+          "value": 21
         },
         {
           "name": "manuscripts",
@@ -2751,10 +2731,6 @@
           "value": 1
         },
         {
-          "name": "lighters",
-          "value": 1
-        },
-        {
           "name": "snuff dippers",
           "value": 1
         }
@@ -2808,10 +2784,6 @@
     {
       "name": "Work & build",
       "children": [
-        {
-          "name": "nails",
-          "value": 3
-        },
         {
           "name": "axes",
           "value": 2

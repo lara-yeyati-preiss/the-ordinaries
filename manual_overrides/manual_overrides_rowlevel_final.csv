@@ -131,8 +131,6 @@ edanmdm:nmah_515403,['cane (plant material)'],canes,Other,canes,Dress & accessor
 edanmdm:nmah_514896,['sheet music'],sheet music,Other,music sheets,Perform music
 edanmdm:nmah_514677,['electoral ticket'],electoral tickets,Perform music,electoral tickets,Other
 edanmdm:nmah_510014,"['documents', 'signature']",documents,"Read, write & record",documents and certificates,"Read, write & record"
-edanmdm:nmah_494284,['license plate'],license plates,"Eat, cook & drink",license plates,Other
-edanmdm:nmah_494283,['license plate'],license plates,"Eat, cook & drink",license plates,Other
 edanmdm:nmah_472482,"['pistol sword', 'pistol sword; flintlock; muzzle load; sa']",pistol swords,Fight,pistol-swords,Fight
 edanmdm:nmah_471208,"['scabbard, bayonet', 'scabbard; edged weapons; militia?', 'scabbards']","scabbard, bayonets",Fight,bayonets,Fight
 edanmdm:nmah_469474,"['shotgun, flintlock', 'shotgun', 'shotgun; firearms; flintlock; 24 ga; smooth bore; muzzle load; sa']","shotgun, flintlocks",Fight,flintlocks,Fight
@@ -333,7 +331,6 @@ edanmdm:nmah_312895,"['chest; furniture', 'chests']",chests,Other,chests,Decorat
 edanmdm:nmah_312138,"['masher, potato', 'potato masher; kitchen utensils']","masher, potatos","Eat, cook & drink",mashers,"Eat, cook & drink"
 edanmdm:nmah_312135,"['rolling pin; kitchen utensils', 'pin, rolling']","pin, rollings",Dress & accessorize,rolling pins,"Eat, cook & drink"
 edanmdm:nmah_311219,"['chest, blanket', 'chest; furniture', 'chests']",chests,Other,chests,Decorate & furnish
-edanmdm:nmah_307746,"['lighter; fire making apparatus', 'lighter']",lighter,Smoke,lighters,Smoke
 edanmdm:nmah_307142,"['pin, rolling']","pin, rollings",Dress & accessorize,rolling pins,"Eat, cook & drink"
 edanmdm:nmah_307141,"['mixer, drink, bow drill']","mixer, drink, bow drills",Work & build,bow drills,Work & build
 edanmdm:nmah_307137,"['box, candle']",candleholders,Other,candleholders,Ignite & manage fire

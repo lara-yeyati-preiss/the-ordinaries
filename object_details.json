@@ -17037,13 +17037,6 @@
       "action_family": "Read, write & record"
     },
     {
-      "title": "map",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_543494",
-      "EDANurl": "edanmdm:nmah_543494",
-      "action_family": "Read, write & record"
-    },
-    {
       "title": "Boston et ses Environs",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_434854",
@@ -33582,13 +33575,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_955870",
       "EDANurl": "edanmdm:nmah_955870",
-      "action_family": "Commemorate & symbolize"
-    },
-    {
-      "title": "medal",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_955863",
-      "EDANurl": "edanmdm:nmah_955863",
       "action_family": "Commemorate & symbolize"
     },
     {
@@ -68811,20 +68797,6 @@
       "action_family": "Dress & accessorize"
     },
     {
-      "title": "Nosotros Venceremos",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535891",
-      "EDANurl": "edanmdm:nmah_535891",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Nosotros Venceremos",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535890",
-      "EDANurl": "edanmdm:nmah_535890",
-      "action_family": "Dress & accessorize"
-    },
-    {
       "title": "US Out of El Salvador",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535879",
@@ -71680,13 +71652,6 @@
       "action_family": "Commemorate & symbolize"
     },
     {
-      "title": "flag",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_411114",
-      "EDANurl": "edanmdm:nmah_411114",
-      "action_family": "Commemorate & symbolize"
-    },
-    {
       "title": "Revolutionary War Campaign",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_407675",
@@ -73785,13 +73750,6 @@
       "action_family": "Portray, display & decorate"
     },
     {
-      "title": "Viva la Revolucion",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_541081",
-      "EDANurl": "edanmdm:nmah_541081",
-      "action_family": "Portray, display & decorate"
-    },
-    {
       "title": "poster",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535445",
@@ -73810,13 +73768,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_535228",
       "EDANurl": "edanmdm:nmah_535228",
-      "action_family": "Portray, display & decorate"
-    },
-    {
-      "title": "Beneficio Para Los Heulgistas de Cesar Chavez",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_529609",
-      "EDANurl": "edanmdm:nmah_529609",
       "action_family": "Portray, display & decorate"
     },
     {
@@ -78711,20 +78662,6 @@
       "action_family": "Eat, cook & drink"
     },
     {
-      "title": "cup",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_491907",
-      "EDANurl": "edanmdm:nmah_491907",
-      "action_family": "Eat, cook & drink"
-    },
-    {
-      "title": "cup",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_491906",
-      "EDANurl": "edanmdm:nmah_491906",
-      "action_family": "Eat, cook & drink"
-    },
-    {
       "title": "cupboard",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_304086",
@@ -80036,68 +79973,6 @@
       "action_family": "Other"
     }
   ],
-  "tumblers": [
-    {
-      "title": "tumbler",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_501304",
-      "EDANurl": "edanmdm:nmah_501304",
-      "action_family": "Other"
-    }
-  ],
-  "hats": [
-    {
-      "title": "hat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_498704",
-      "EDANurl": "edanmdm:nmah_498704",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Black Beaver Top Hat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_370382",
-      "EDANurl": "edanmdm:nmah_370382",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Sam Walton's Hat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1466258",
-      "EDANurl": "edanmdm:nmah_1466258",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "Small Hand Hatchet, \"Union\"",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1399371",
-      "EDANurl": "edanmdm:nmah_1399371",
-      "action_family": "Other"
-    },
-    {
-      "title": "hat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1180288",
-      "EDANurl": "edanmdm:nmah_1180288",
-      "action_family": "Dress & accessorize"
-    },
-    {
-      "title": "hat",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1164943",
-      "EDANurl": "edanmdm:nmah_1164943",
-      "action_family": "Dress & accessorize"
-    }
-  ],
-  "sweat shirts": [
-    {
-      "title": "sweatshirt",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_496839",
-      "EDANurl": "edanmdm:nmah_496839",
-      "action_family": "Dress & accessorize"
-    }
-  ],
   "rugs": [
     {
       "title": "rug",
@@ -80120,29 +79995,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_496379",
       "EDANurl": "edanmdm:nmah_496379",
-      "action_family": "Other"
-    }
-  ],
-  "pennants": [
-    {
-      "title": "pennant",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_495807",
-      "EDANurl": "edanmdm:nmah_495807",
-      "action_family": "Other"
-    },
-    {
-      "title": "Guidon of the Second Regiment Light Dragoons",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_441101",
-      "EDANurl": "edanmdm:nmah_441101",
-      "action_family": "Other"
-    },
-    {
-      "title": "pennant",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1825210",
-      "EDANurl": "edanmdm:nmah_1825210",
       "action_family": "Other"
     }
   ],
@@ -80195,38 +80047,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1363262",
       "EDANurl": "edanmdm:nmah_1363262",
       "action_family": "Portray, display & decorate"
-    }
-  ],
-  "bumper stickers": [
-    {
-      "title": "bumper sticker",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_494597",
-      "EDANurl": "edanmdm:nmah_494597",
-      "action_family": "Other"
-    }
-  ],
-  "license plates": [
-    {
-      "title": "license plate",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_494284",
-      "EDANurl": "edanmdm:nmah_494284",
-      "action_family": "Other"
-    },
-    {
-      "title": "license plate",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_494283",
-      "EDANurl": "edanmdm:nmah_494283",
-      "action_family": "Other"
-    },
-    {
-      "title": "license plate",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1825205",
-      "EDANurl": "edanmdm:nmah_1825205",
-      "action_family": "Other"
     }
   ],
   "spoons": [
@@ -80410,15 +80230,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1146407",
       "EDANurl": "edanmdm:nmah_1146407",
-      "action_family": "Eat, cook & drink"
-    }
-  ],
-  "napkins": [
-    {
-      "title": "napkin",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_492668",
-      "EDANurl": "edanmdm:nmah_492668",
       "action_family": "Eat, cook & drink"
     }
   ],
@@ -80917,6 +80728,22 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1170956",
       "EDANurl": "edanmdm:nmah_1170956",
       "action_family": "Portray, display & decorate"
+    }
+  ],
+  "pennants": [
+    {
+      "title": "Guidon of the Second Regiment Light Dragoons",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_441101",
+      "EDANurl": "edanmdm:nmah_441101",
+      "action_family": "Other"
+    },
+    {
+      "title": "pennant",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1825210",
+      "EDANurl": "edanmdm:nmah_1825210",
+      "action_family": "Other"
     }
   ],
   "mace": [
@@ -82407,6 +82234,43 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_371619",
       "EDANurl": "edanmdm:nmah_371619",
+      "action_family": "Dress & accessorize"
+    }
+  ],
+  "hats": [
+    {
+      "title": "Black Beaver Top Hat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_370382",
+      "EDANurl": "edanmdm:nmah_370382",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "Sam Walton's Hat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1466258",
+      "EDANurl": "edanmdm:nmah_1466258",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "Small Hand Hatchet, \"Union\"",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1399371",
+      "EDANurl": "edanmdm:nmah_1399371",
+      "action_family": "Other"
+    },
+    {
+      "title": "hat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1180288",
+      "EDANurl": "edanmdm:nmah_1180288",
+      "action_family": "Dress & accessorize"
+    },
+    {
+      "title": "hat",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1164943",
+      "EDANurl": "edanmdm:nmah_1164943",
       "action_family": "Dress & accessorize"
     }
   ],
@@ -85862,13 +85726,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_307131",
       "EDANurl": "edanmdm:nmah_307131",
       "action_family": "Other"
-    },
-    {
-      "title": "sticker",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1403942",
-      "EDANurl": "edanmdm:nmah_1403942",
-      "action_family": "Other"
     }
   ],
   "buckets": [
@@ -86548,15 +86405,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_303055",
       "EDANurl": "edanmdm:nmah_303055",
       "action_family": "Ignite & manage fire"
-    }
-  ],
-  "lighters": [
-    {
-      "title": "Tinder Cord Lighter",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_307746",
-      "EDANurl": "edanmdm:nmah_307746",
-      "action_family": "Smoke"
     }
   ],
   "holder, whetstones": [
@@ -87935,6 +87783,15 @@
       "action_family": "Portray, display & decorate"
     }
   ],
+  "license plates": [
+    {
+      "title": "license plate",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1825205",
+      "EDANurl": "edanmdm:nmah_1825205",
+      "action_family": "Other"
+    }
+  ],
   "sunglass": [
     {
       "title": "Sun Glass",
@@ -89148,34 +89005,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301288",
       "EDANurl": "edanmdm:nmah_1301288",
       "action_family": "Other"
-    },
-    {
-      "title": "shot",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111445",
-      "EDANurl": "edanmdm:nmah_1111445",
-      "action_family": "Other"
-    },
-    {
-      "title": "shot",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111444",
-      "EDANurl": "edanmdm:nmah_1111444",
-      "action_family": "Other"
-    },
-    {
-      "title": "shot",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111443",
-      "EDANurl": "edanmdm:nmah_1111443",
-      "action_family": "Other"
-    },
-    {
-      "title": "shot",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111442",
-      "EDANurl": "edanmdm:nmah_1111442",
-      "action_family": "Other"
     }
   ],
   "spherometers": [
@@ -89645,38 +89474,6 @@
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1121699",
       "EDANurl": "edanmdm:nmah_1121699",
       "action_family": "Other"
-    }
-  ],
-  "langrages": [
-    {
-      "title": "langrage",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111441",
-      "EDANurl": "edanmdm:nmah_1111441",
-      "action_family": "Other"
-    }
-  ],
-  "nails": [
-    {
-      "title": "nail",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111440",
-      "EDANurl": "edanmdm:nmah_1111440",
-      "action_family": "Work & build"
-    },
-    {
-      "title": "nail",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111439",
-      "EDANurl": "edanmdm:nmah_1111439",
-      "action_family": "Work & build"
-    },
-    {
-      "title": "nail",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1111438",
-      "EDANurl": "edanmdm:nmah_1111438",
-      "action_family": "Work & build"
     }
   ],
   "slave leg irons": [
