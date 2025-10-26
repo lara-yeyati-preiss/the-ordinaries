@@ -294,7 +294,11 @@ function setupAboutModal() {
   });
 }
 
-
+// hides all floating tooltips when switching steps (to avoid leftover tooltips lingering)
+function hideAllTooltips(){
+  document.getElementById('gridTooltip')?.style?.setProperty('display','none');
+  document.getElementById('treemap-tooltip')?.style?.setProperty('display','none');
+}
 
 // === generating the DOM structure for each narrative step ===================
 
@@ -562,6 +566,11 @@ function updateStepVisibility(t) {
     const stepEl = document.getElementById(`step-${step.id}`);
     stepEl.classList.toggle("active", i === state.activeStepIndex);
   });
+  // hiding tooltips when switching steps:
+  if (state._lastActiveStepIndex !== state.activeStepIndex) {
+    hideAllTooltips();
+    state._lastActiveStepIndex = state.activeStepIndex;
+  }
 }
 
 
