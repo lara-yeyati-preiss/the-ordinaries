@@ -248,30 +248,25 @@ body {
    - snap scrolling makes each image land centered
    - we disable the scale-in animation (always visible on small screens)
 */
-@media (max-width: 720px){
-  .sampler-gallery{
-    display: flex; width: 100%;
-    overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory; gap: 16px; padding: 0 12px;
-    transform: none;               /* undo desktop lift */
-    justify-content: flex-start;   /* left-aligned strip */
-    flex-wrap: nowrap;             /* no wrapping */
+@media (max-width: 720px) {
+  .sampler-gallery {
+    display: flex;
+    width: 100%;
+    overflow: hidden;               /* hide horizontal scroll */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    transform: none;                /* remove translateY lift */
   }
-  .sampler-item{
-    flex: 0 0 85vw;                /* snap card width */
-    scroll-snap-align: center;
-    opacity: 1 !important;         /* visible from start on mobile */
-    transform: none !important;
+
+  .sampler-item {
+    flex: 0 0 100%;
+    display: none !important;       /* hide all by default */
   }
-  .sampler-item img{
-    width: 100%; height: auto; max-height: 54vh; object-fit: contain;
-  }
-  .sampler-intro-card {
-    max-width: 94vw; margin: 0 auto 4vh; font-size: clamp(0.9rem, 3vw, 1.1rem);
-    line-height: 1.45; padding: 1.2rem 1.4rem; border-radius: 12px;
-  }
-  .sampler-intro-step {
-    gap: 1.5vh; margin-top: 6vh;   /* tighten stack */
+
+  .sampler-item:first-child {
+    display: block !important;      /* show only one image */
   }
 }
 
@@ -523,6 +518,7 @@ body {
     flex-direction: column !important;
     gap: 4px;
     margin-top: 0.2rem;
+    margin-left: 16px;
   }
 
   /* put “object” button + chip on the same line */
@@ -530,8 +526,9 @@ body {
     display: inline-flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    justify-content: center;
+    justify-content: flex-start !important;
     gap: 8px;
+  
   }
 
   /* compact, single-line pills */
