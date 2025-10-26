@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <!-- basic meta for proper text rendering + mobile scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- document title shown in the browser tab -->
+    <title>The Ordinaries</title>
+
+    <!-- web fonts: garamond (titles), inter + spectral + pt mono (ui + mono bits) -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:wght@500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
+
+    <!-- main stylesheet: all layout + treemap + scrollytelling styles live here -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- d3 for the treemap and small helpers (loaded once, globally available) -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <!-- internal scroll container; we scroll inside this div, not the page -->
+    <div class="prelude-scrolly-container" id="scrollContainer">
+        <!-- the long runway that JS sizes in vh; steps are mapped onto this track -->
+        <div class="scrolly-track">
+            <!-- sticky viewport: one "frame" that stays pinned while track scrolls beneath -->
+            <div class="scrolly-viewport">
+                <!-- subtle background layer (switches to grid on non-hero scenes) -->
+                <div class="viewport-bg" id="viewportBg"></div>
+
+                <!-- hero section (sits on top of the sticky viewport; fades out on scroll) -->
+                <div class="hero-landing" id="heroSection">
+                    <div class="hero-inner">
+                        <div class="hero-title-row">
+                            <!-- project title (garamond headline) -->
+                            <h1 class="hero-title">The Ordinaries</h1>
+
+                            <!-- small decorative image under the title; soft opacity for tone -->
+                            <div class="hero-image-wrap">
+                                <img
+                                  src="assets/ordinaries.png"
+                                  alt="Embroidered flower motif"
+                                  style="max-width: 70%; margin: 0.5rem auto 1.4rem; opacity: 0.75;">
+                            </div>
+                        </div>
+
+                        <!-- short subtitle: sets context + era -->
+                        <p class="hero-subtitle">
+                          Everyday objects of the American Revolutionary period—built, gambled, mended, mourned.
+                          These are the remnants of the ordinary.
+                        </p>
+
+                        <!-- primary hero actions: jump into objects, open about modal -->
+                        <div class="hero-actions">
+                            <!-- button is enabled by default; app.js also ensures aria state -->
+                            <button class="btn btn-dark" id="heroBtnObjects" aria-disabled="false">Browse the Objects</button>
+                            <!-- opens an accessible modal with project context -->
+                            <button id="aboutBtn" class="btn btn-outline">About This Project</button>
+                        </div>
+
+                        <!-- gentle “scroll to explore” hint; clicking the chevron nudges past hero -->
+                        <div class="scroll-indicator" id="scrollIndicator">
+                            <span class="scroll-text">Scroll to explore</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 stroke="#525252" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- scrollytelling steps mount point; app.js injects all steps here -->
+                <div id="stepsContainer"></div>
+            </div> <!-- end .scrolly-viewport -->
+
+        <!-- accessible modal (hidden by default); opened via “about this project” button -->
+        <div id="aboutModal"
+             class="modal"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="about-title"
+             aria-describedby="about-desc"
+             hidden>
+          <!-- backdrop catches outside clicks to close -->
+          <div class="modal-backdrop" data-close></div>
+
+          <!-- dialog card; role=document for screen readers inside the dialog context -->
+          <div class="modal-card" role="document">
+            <!-- explicit close control (×); also closable by Esc and backdrop -->
+            <button class="modal-close" aria-label="Close" data-close>×</button>
+
+            <div class="modal-body">
+              <!-- left column: title + description + credits -->
+              <div class="modal-text">
+                <h2 id="about-title">About this project</h2>
+                <p id="about-desc">
+                  <em>The Ordinaries</em> examines the American Revolutionary era (1765–1783)
+                  through the material traces of everyday life, drawing on objects from the Smithsonian’s
+                  collections — from cooking pots and card games to stitched samplers and nursing bottles.
+                </p>
+
+                <div class="footer-meta">
+                  <span class="data-badge">
+                    Data source:
+                    <a href="https://www.si.edu/openaccess" target="_blank" rel="noopener">Smithsonian Open Access</a>
+                  </span>
+                </div>
+              </div>
+
+              <!-- right column: decorative image only (aria-hidden to avoid duplicate reading) -->
+              <figure class="modal-figure" aria-hidden="true">
+                <!-- empty alt + role=presentation so screen readers skip the decorative image -->
+                <img src="assets/ordinaries.png" alt="" role="presentation">
+              </figure>
+            </div>
+          </div>
+        </div> <!-- end #aboutModal -->
+        
+    </div> <!-- end .scrolly-track -->
+    </div> <!-- end #scrollContainer (prelude-scrolly-container) -->
+
+    <!-- floating return-to-top button (becomes visible after threshold) -->
+    <button class="sticky-up-arrow" id="upArrow" aria-label="Scroll to top">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- main app bootstrapping and treemap logic.
+         note: treemap.js expects markup injected by app.js (the treemap step). -->
+    <script src="app.js"></script>
+    <script src="treemap.js"></script>
+</body>
+</html>

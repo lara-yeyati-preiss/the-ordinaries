@@ -1,0 +1,1435 @@
+{
+  "name": "root",
+  "children": [
+    {
+      "name": "Decorate & furnish",
+      "children": [
+        {
+          "name": "chairs",
+          "value": 62
+        },
+        {
+          "name": "quilts",
+          "value": 53
+        },
+        {
+          "name": "andirons",
+          "value": 32
+        },
+        {
+          "name": "beds",
+          "value": 31
+        },
+        {
+          "name": "bedcoverings",
+          "value": 25
+        },
+        {
+          "name": "chests",
+          "value": 9
+        },
+        {
+          "name": "clocks",
+          "value": 7
+        },
+        {
+          "name": "tables",
+          "value": 7
+        },
+        {
+          "name": "cabinets",
+          "value": 5
+        },
+        {
+          "name": "cases",
+          "value": 5
+        },
+        {
+          "name": "lamps",
+          "value": 4
+        },
+        {
+          "name": "pans",
+          "value": 4
+        },
+        {
+          "name": "cradles",
+          "value": 3
+        },
+        {
+          "name": "desks",
+          "value": 3
+        },
+        {
+          "name": "shelves",
+          "value": 3
+        },
+        {
+          "name": "lanterns",
+          "value": 2
+        },
+        {
+          "name": "blankets",
+          "value": 1
+        },
+        {
+          "name": "carpet, fragments",
+          "value": 1
+        },
+        {
+          "name": "ceiling ornament, churches",
+          "value": 1
+        },
+        {
+          "name": "cups",
+          "value": 1
+        },
+        {
+          "name": "entablature fragment, churches",
+          "value": 1
+        },
+        {
+          "name": "flowerpots",
+          "value": 1
+        },
+        {
+          "name": "frame, mirror, parts oves",
+          "value": 1
+        },
+        {
+          "name": "furniture, kilns",
+          "value": 1
+        },
+        {
+          "name": "hooks",
+          "value": 1
+        },
+        {
+          "name": "micrometer, benches",
+          "value": 1
+        },
+        {
+          "name": "mirror frame, part oves",
+          "value": 1
+        },
+        {
+          "name": "mirrors",
+          "value": 1
+        },
+        {
+          "name": "rugs",
+          "value": 1
+        },
+        {
+          "name": "sofas",
+          "value": 1
+        },
+        {
+          "name": "spinning frames",
+          "value": 1
+        },
+        {
+          "name": "stools",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dress & accessorize",
+      "children": [
+        {
+          "name": "dresses",
+          "value": 40
+        },
+        {
+          "name": "waistcoats",
+          "value": 40
+        },
+        {
+          "name": "fashion plates",
+          "value": 38
+        },
+        {
+          "name": "laces",
+          "value": 34
+        },
+        {
+          "name": "shoes",
+          "value": 27
+        },
+        {
+          "name": "headgear",
+          "value": 21
+        },
+        {
+          "name": "mirrors",
+          "value": 13
+        },
+        {
+          "name": "breeches",
+          "value": 12
+        },
+        {
+          "name": "buttons",
+          "value": 11
+        },
+        {
+          "name": "aprons",
+          "value": 10
+        },
+        {
+          "name": "bags",
+          "value": 10
+        },
+        {
+          "name": "neckwear",
+          "value": 10
+        },
+        {
+          "name": "fans",
+          "value": 9
+        },
+        {
+          "name": "chemises",
+          "value": 8
+        },
+        {
+          "name": "coats",
+          "value": 8
+        },
+        {
+          "name": "stockings",
+          "value": 8
+        },
+        {
+          "name": "petticoats",
+          "value": 7
+        },
+        {
+          "name": "suits",
+          "value": 7
+        },
+        {
+          "name": "shoe buckles",
+          "value": 6
+        },
+        {
+          "name": "vests",
+          "value": 6
+        },
+        {
+          "name": "brooches",
+          "value": 5
+        },
+        {
+          "name": "eyeglasses",
+          "value": 5
+        },
+        {
+          "name": "jackets",
+          "value": 5
+        },
+        {
+          "name": "rings",
+          "value": 5
+        },
+        {
+          "name": "stays",
+          "value": 5
+        },
+        {
+          "name": "gloves",
+          "value": 4
+        },
+        {
+          "name": "hats",
+          "value": 4
+        },
+        {
+          "name": "mitts",
+          "value": 4
+        },
+        {
+          "name": "shirts",
+          "value": 4
+        },
+        {
+          "name": "belts",
+          "value": 3
+        },
+        {
+          "name": "fire hats",
+          "value": 3
+        },
+        {
+          "name": "handkerchiefs",
+          "value": 3
+        },
+        {
+          "name": "pendants",
+          "value": 3
+        },
+        {
+          "name": "veils",
+          "value": 3
+        },
+        {
+          "name": "buckles",
+          "value": 2
+        },
+        {
+          "name": "busks",
+          "value": 2
+        },
+        {
+          "name": "canes",
+          "value": 2
+        },
+        {
+          "name": "combs",
+          "value": 2
+        },
+        {
+          "name": "jewelries",
+          "value": 2
+        },
+        {
+          "name": "knee buckles",
+          "value": 2
+        },
+        {
+          "name": "necklaces",
+          "value": 2
+        },
+        {
+          "name": "purses",
+          "value": 2
+        },
+        {
+          "name": "ribbons",
+          "value": 2
+        },
+        {
+          "name": "suspenders",
+          "value": 2
+        },
+        {
+          "name": "trousers",
+          "value": 2
+        },
+        {
+          "name": "umbrellas",
+          "value": 2
+        },
+        {
+          "name": "bonnets",
+          "value": 1
+        },
+        {
+          "name": "bracelets",
+          "value": 1
+        },
+        {
+          "name": "calashes",
+          "value": 1
+        },
+        {
+          "name": "capes",
+          "value": 1
+        },
+        {
+          "name": "cloak",
+          "value": 1
+        },
+        {
+          "name": "collar studs",
+          "value": 1
+        },
+        {
+          "name": "corset waist",
+          "value": 1
+        },
+        {
+          "name": "cuff links",
+          "value": 1
+        },
+        {
+          "name": "cuffs",
+          "value": 1
+        },
+        {
+          "name": "dickey",
+          "value": 1
+        },
+        {
+          "name": "drawers",
+          "value": 1
+        },
+        {
+          "name": "earrings",
+          "value": 1
+        },
+        {
+          "name": "gaiters",
+          "value": 1
+        },
+        {
+          "name": "jewelry fragments",
+          "value": 1
+        },
+        {
+          "name": "main garments",
+          "value": 1
+        },
+        {
+          "name": "miter caps",
+          "value": 1
+        },
+        {
+          "name": "mittens",
+          "value": 1
+        },
+        {
+          "name": "molds",
+          "value": 1
+        },
+        {
+          "name": "muffs",
+          "value": 1
+        },
+        {
+          "name": "neckcloths",
+          "value": 1
+        },
+        {
+          "name": "ornament, flagstafves",
+          "value": 1
+        },
+        {
+          "name": "pins",
+          "value": 1
+        },
+        {
+          "name": "powder belts",
+          "value": 1
+        },
+        {
+          "name": "prayer beads",
+          "value": 1
+        },
+        {
+          "name": "quilts",
+          "value": 1
+        },
+        {
+          "name": "sash and pendants",
+          "value": 1
+        },
+        {
+          "name": "shawls",
+          "value": 1
+        },
+        {
+          "name": "shirt fragments",
+          "value": 1
+        },
+        {
+          "name": "studs",
+          "value": 1
+        },
+        {
+          "name": "sunglasses",
+          "value": 1
+        },
+        {
+          "name": "undershirt",
+          "value": 1
+        },
+        {
+          "name": "undersleeves",
+          "value": 1
+        },
+        {
+          "name": "walking sticks",
+          "value": 1
+        },
+        {
+          "name": "watch papers",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Eat, cook & drink",
+      "children": [
+        {
+          "name": "flatwares",
+          "value": 232
+        },
+        {
+          "name": "bottles",
+          "value": 186
+        },
+        {
+          "name": "plates",
+          "value": 60
+        },
+        {
+          "name": "bowls",
+          "value": 41
+        },
+        {
+          "name": "cups",
+          "value": 39
+        },
+        {
+          "name": "butter stamps",
+          "value": 29
+        },
+        {
+          "name": "measures",
+          "value": 28
+        },
+        {
+          "name": "pitchers",
+          "value": 28
+        },
+        {
+          "name": "ladles",
+          "value": 27
+        },
+        {
+          "name": "spoons",
+          "value": 26
+        },
+        {
+          "name": "molds",
+          "value": 23
+        },
+        {
+          "name": "dishes",
+          "value": 21
+        },
+        {
+          "name": "teapots",
+          "value": 20
+        },
+        {
+          "name": "pots",
+          "value": 16
+        },
+        {
+          "name": "mugs",
+          "value": 15
+        },
+        {
+          "name": "jugs",
+          "value": 13
+        },
+        {
+          "name": "porringers",
+          "value": 13
+        },
+        {
+          "name": "cutleries",
+          "value": 12
+        },
+        {
+          "name": "creamers",
+          "value": 8
+        },
+        {
+          "name": "glasses",
+          "value": 8
+        },
+        {
+          "name": "hooks",
+          "value": 6
+        },
+        {
+          "name": "skimmers",
+          "value": 6
+        },
+        {
+          "name": "coffeepots",
+          "value": 5
+        },
+        {
+          "name": "pans",
+          "value": 5
+        },
+        {
+          "name": "saucers",
+          "value": 5
+        },
+        {
+          "name": "tankards",
+          "value": 5
+        },
+        {
+          "name": "teakettles",
+          "value": 4
+        },
+        {
+          "name": "toasters",
+          "value": 4
+        },
+        {
+          "name": "coolers",
+          "value": 3
+        },
+        {
+          "name": "dippers",
+          "value": 3
+        },
+        {
+          "name": "roasters",
+          "value": 3
+        },
+        {
+          "name": "stands",
+          "value": 3
+        },
+        {
+          "name": "tureens",
+          "value": 3
+        },
+        {
+          "name": "basins",
+          "value": 2
+        },
+        {
+          "name": "casters",
+          "value": 2
+        },
+        {
+          "name": "cutters",
+          "value": 2
+        },
+        {
+          "name": "decanters",
+          "value": 2
+        },
+        {
+          "name": "dutch ovens",
+          "value": 2
+        },
+        {
+          "name": "flagons",
+          "value": 2
+        },
+        {
+          "name": "graters",
+          "value": 2
+        },
+        {
+          "name": "kettles",
+          "value": 2
+        },
+        {
+          "name": "mashers",
+          "value": 2
+        },
+        {
+          "name": "nursing bottles",
+          "value": 2
+        },
+        {
+          "name": "pot lifters",
+          "value": 2
+        },
+        {
+          "name": "rolling pins",
+          "value": 2
+        },
+        {
+          "name": "salts",
+          "value": 2
+        },
+        {
+          "name": "soda glass, holders",
+          "value": 2
+        },
+        {
+          "name": "spatulas",
+          "value": 2
+        },
+        {
+          "name": "tea caddies",
+          "value": 2
+        },
+        {
+          "name": "trays",
+          "value": 2
+        },
+        {
+          "name": "vases",
+          "value": 2
+        },
+        {
+          "name": "butter scoops",
+          "value": 1
+        },
+        {
+          "name": "butter workers",
+          "value": 1
+        },
+        {
+          "name": "churns",
+          "value": 1
+        },
+        {
+          "name": "coaster, bottles",
+          "value": 1
+        },
+        {
+          "name": "cork driver",
+          "value": 1
+        },
+        {
+          "name": "corn huskers",
+          "value": 1
+        },
+        {
+          "name": "dough boxes",
+          "value": 1
+        },
+        {
+          "name": "ecuelles",
+          "value": 1
+        },
+        {
+          "name": "food warmers",
+          "value": 1
+        },
+        {
+          "name": "funnels",
+          "value": 1
+        },
+        {
+          "name": "jars",
+          "value": 1
+        },
+        {
+          "name": "mills",
+          "value": 1
+        },
+        {
+          "name": "musical glasses",
+          "value": 1
+        },
+        {
+          "name": "oven, dutches",
+          "value": 1
+        },
+        {
+          "name": "pap boats",
+          "value": 1
+        },
+        {
+          "name": "pestles",
+          "value": 1
+        },
+        {
+          "name": "plate, doors",
+          "value": 1
+        },
+        {
+          "name": "plate, fire engines",
+          "value": 1
+        },
+        {
+          "name": "printing plates",
+          "value": 1
+        },
+        {
+          "name": "reamer, lemons",
+          "value": 1
+        },
+        {
+          "name": "spigots",
+          "value": 1
+        },
+        {
+          "name": "spoon racks",
+          "value": 1
+        },
+        {
+          "name": "sticks",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Fight",
+      "children": [
+        {
+          "name": "pistols",
+          "value": 56
+        },
+        {
+          "name": "muskets",
+          "value": 43
+        },
+        {
+          "name": "swords",
+          "value": 17
+        },
+        {
+          "name": "bayonets",
+          "value": 11
+        },
+        {
+          "name": "rifles",
+          "value": 10
+        },
+        {
+          "name": "flintlocks",
+          "value": 7
+        },
+        {
+          "name": "sabers",
+          "value": 5
+        },
+        {
+          "name": "cutlasses",
+          "value": 3
+        },
+        {
+          "name": "cannons",
+          "value": 2
+        },
+        {
+          "name": "shields",
+          "value": 2
+        },
+        {
+          "name": "grenade launchers",
+          "value": 1
+        },
+        {
+          "name": "grenades",
+          "value": 1
+        },
+        {
+          "name": "mace",
+          "value": 1
+        },
+        {
+          "name": "pistol-swords",
+          "value": 1
+        },
+        {
+          "name": "powder horns",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Heal & care",
+      "children": [
+        {
+          "name": "jars, pharmaceutical containers",
+          "value": 280
+        },
+        {
+          "name": "syrup jars",
+          "value": 7
+        },
+        {
+          "name": "bloodlettings",
+          "value": 5
+        },
+        {
+          "name": "medicine chests",
+          "value": 3
+        },
+        {
+          "name": "mortars",
+          "value": 3
+        },
+        {
+          "name": "surgical sets",
+          "value": 3
+        },
+        {
+          "name": "dental instruments",
+          "value": 2
+        },
+        {
+          "name": "pestles",
+          "value": 2
+        },
+        {
+          "name": "prosthesis",
+          "value": 2
+        },
+        {
+          "name": "bloodletting cups",
+          "value": 1
+        },
+        {
+          "name": "eyecups",
+          "value": 1
+        },
+        {
+          "name": "kit, obstetricals",
+          "value": 1
+        },
+        {
+          "name": "lancets",
+          "value": 1
+        },
+        {
+          "name": "magnifying glasses",
+          "value": 1
+        },
+        {
+          "name": "nipple shields",
+          "value": 1
+        },
+        {
+          "name": "pharmaceutical measures",
+          "value": 1
+        },
+        {
+          "name": "surgical instruments",
+          "value": 1
+        },
+        {
+          "name": "surgical set cases",
+          "value": 1
+        },
+        {
+          "name": "syringes",
+          "value": 1
+        },
+        {
+          "name": "telescopes",
+          "value": 1
+        },
+        {
+          "name": "vaccination card",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ignite & manage fire",
+      "children": [
+        {
+          "name": "fire marks",
+          "value": 40
+        },
+        {
+          "name": "tinderboxes",
+          "value": 24
+        },
+        {
+          "name": "candleholders",
+          "value": 11
+        },
+        {
+          "name": "firesteels",
+          "value": 8
+        },
+        {
+          "name": "fire buckets",
+          "value": 7
+        },
+        {
+          "name": "bellows",
+          "value": 2
+        },
+        {
+          "name": "fire steel",
+          "value": 2
+        },
+        {
+          "name": "snuffer trays",
+          "value": 2
+        },
+        {
+          "name": "tongs",
+          "value": 2
+        },
+        {
+          "name": "firebacks",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Measure & navigate",
+      "children": [
+        {
+          "name": "watches",
+          "value": 29
+        },
+        {
+          "name": "sundials",
+          "value": 12
+        },
+        {
+          "name": "balances",
+          "value": 9
+        },
+        {
+          "name": "compasses",
+          "value": 7
+        },
+        {
+          "name": "astrolabes",
+          "value": 6
+        },
+        {
+          "name": "surveying instruments",
+          "value": 6
+        },
+        {
+          "name": "weights",
+          "value": 3
+        },
+        {
+          "name": "scale rules",
+          "value": 2
+        },
+        {
+          "name": "calipers",
+          "value": 1
+        },
+        {
+          "name": "chronometers",
+          "value": 1
+        },
+        {
+          "name": "protractors",
+          "value": 1
+        },
+        {
+          "name": "thickness gauges",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Perform music",
+      "children": [
+        {
+          "name": "pianos",
+          "value": 43
+        },
+        {
+          "name": "bows",
+          "value": 12
+        },
+        {
+          "name": "guitars",
+          "value": 10
+        },
+        {
+          "name": "flutes",
+          "value": 9
+        },
+        {
+          "name": "music transcripts",
+          "value": 7
+        },
+        {
+          "name": "violins",
+          "value": 7
+        },
+        {
+          "name": "bagpipes",
+          "value": 4
+        },
+        {
+          "name": "drums",
+          "value": 3
+        },
+        {
+          "name": "trumpets",
+          "value": 3
+        },
+        {
+          "name": "viols",
+          "value": 3
+        },
+        {
+          "name": "bassoons",
+          "value": 2
+        },
+        {
+          "name": "cellos",
+          "value": 2
+        },
+        {
+          "name": "clarinets",
+          "value": 2
+        },
+        {
+          "name": "drum heads",
+          "value": 2
+        },
+        {
+          "name": "english guitars",
+          "value": 2
+        },
+        {
+          "name": "fifes",
+          "value": 2
+        },
+        {
+          "name": "harps",
+          "value": 2
+        },
+        {
+          "name": "oboes",
+          "value": 2
+        },
+        {
+          "name": "viola d'amores",
+          "value": 2
+        },
+        {
+          "name": "banjos",
+          "value": 1
+        },
+        {
+          "name": "barrel organs",
+          "value": 1
+        },
+        {
+          "name": "booklets",
+          "value": 1
+        },
+        {
+          "name": "cases",
+          "value": 1
+        },
+        {
+          "name": "clavichords",
+          "value": 1
+        },
+        {
+          "name": "harp, jaws",
+          "value": 1
+        },
+        {
+          "name": "harpsichords",
+          "value": 1
+        },
+        {
+          "name": "hurdy gurdies",
+          "value": 1
+        },
+        {
+          "name": "music books",
+          "value": 1
+        },
+        {
+          "name": "music sheets",
+          "value": 1
+        },
+        {
+          "name": "organs",
+          "value": 1
+        },
+        {
+          "name": "pochettes",
+          "value": 1
+        },
+        {
+          "name": "violas",
+          "value": 1
+        },
+        {
+          "name": "zithers",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Play",
+      "children": [
+        {
+          "name": "chess sets",
+          "value": 5
+        },
+        {
+          "name": "card, playings",
+          "value": 3
+        },
+        {
+          "name": "cards",
+          "value": 3
+        },
+        {
+          "name": "bow and arrows",
+          "value": 1
+        },
+        {
+          "name": "dolls",
+          "value": 1
+        },
+        {
+          "name": "games",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Read, write & record",
+      "children": [
+        {
+          "name": "correspondences",
+          "value": 200
+        },
+        {
+          "name": "books",
+          "value": 86
+        },
+        {
+          "name": "newspapers",
+          "value": 69
+        },
+        {
+          "name": "documents and certificates",
+          "value": 28
+        },
+        {
+          "name": "archival materials",
+          "value": 22
+        },
+        {
+          "name": "maps",
+          "value": 20
+        },
+        {
+          "name": "manuscripts",
+          "value": 15
+        },
+        {
+          "name": "pamphlets",
+          "value": 14
+        },
+        {
+          "name": "mail processing equipments",
+          "value": 5
+        },
+        {
+          "name": "broadsides",
+          "value": 4
+        },
+        {
+          "name": "pens",
+          "value": 3
+        },
+        {
+          "name": "crayon holders",
+          "value": 2
+        },
+        {
+          "name": "inkwells",
+          "value": 2
+        },
+        {
+          "name": "postage stamps",
+          "value": 2
+        },
+        {
+          "name": "printing presses",
+          "value": 2
+        },
+        {
+          "name": "booklets",
+          "value": 1
+        },
+        {
+          "name": "cutters",
+          "value": 1
+        },
+        {
+          "name": "documents",
+          "value": 1
+        },
+        {
+          "name": "journals",
+          "value": 1
+        },
+        {
+          "name": "letter or accounts",
+          "value": 1
+        },
+        {
+          "name": "periodicals",
+          "value": 1
+        },
+        {
+          "name": "postcards",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Smoke",
+      "children": [
+        {
+          "name": "pipes",
+          "value": 58
+        },
+        {
+          "name": "boxes",
+          "value": 11
+        },
+        {
+          "name": "cigar holders",
+          "value": 1
+        },
+        {
+          "name": "snuff dippers",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Textile making",
+      "children": [
+        {
+          "name": "samplers",
+          "value": 40
+        },
+        {
+          "name": "fabric fragments",
+          "value": 24
+        },
+        {
+          "name": "needles",
+          "value": 7
+        },
+        {
+          "name": "embroideries",
+          "value": 4
+        },
+        {
+          "name": "pattern books",
+          "value": 2
+        },
+        {
+          "name": "lace patterns",
+          "value": 1
+        },
+        {
+          "name": "lace pillows",
+          "value": 1
+        },
+        {
+          "name": "needlework kit",
+          "value": 1
+        },
+        {
+          "name": "sewing cases",
+          "value": 1
+        },
+        {
+          "name": "thimble eyes",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Work & build",
+      "children": [
+        {
+          "name": "axes",
+          "value": 2
+        },
+        {
+          "name": "shovels",
+          "value": 2
+        },
+        {
+          "name": "adze heads",
+          "value": 1
+        },
+        {
+          "name": "bolts",
+          "value": 1
+        },
+        {
+          "name": "bow drills",
+          "value": 1
+        },
+        {
+          "name": "hand tools",
+          "value": 1
+        },
+        {
+          "name": "levels",
+          "value": 1
+        },
+        {
+          "name": "machine tools",
+          "value": 1
+        },
+        {
+          "name": "mallets",
+          "value": 1
+        },
+        {
+          "name": "nail files",
+          "value": 1
+        },
+        {
+          "name": "precision screw cutting lathes",
+          "value": 1
+        },
+        {
+          "name": "protractors",
+          "value": 1
+        },
+        {
+          "name": "pusher downers",
+          "value": 1
+        },
+        {
+          "name": "saws",
+          "value": 1
+        },
+        {
+          "name": "set squares",
+          "value": 1
+        },
+        {
+          "name": "swage block",
+          "value": 1
+        },
+        {
+          "name": "vises",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Worship",
+      "children": [
+        {
+          "name": "santos",
+          "value": 11
+        },
+        {
+          "name": "crosses",
+          "value": 7
+        },
+        {
+          "name": "altar screens",
+          "value": 1
+        },
+        {
+          "name": "religious panels",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1100 @@
+/* small helper used in the category list rows (stacked label + editable chip)
+   - desktop: vertical stack (label on one line, chip under it) to keep copy short and legible
+   - mobile override later turns these into inline rows so they sit on one line
+*/
+.category-row {
+  display: flex;
+  flex-direction: column;     /* stack label + chip vertically (desktop) */
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* specific title inside the treemap tooltip (uses garamond to match editorial style)
+   - tooltip body uses Inter; title switches to the display font for hierarchy
+*/
+.treemap-tooltip .tt-title {
+  font-family: "EB Garamond", Garamond, serif;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 0 4px;
+}
+
+
+/* ============================================================================
+   BASE / TOKENS
+   ---------------------------------------------------------------------------
+   - centralize site-wide constants (like a max content width) so wrappers
+     can align. tweak --contentMaxW to widen/narrow the overall page feel.
+   ===========================================================================*/
+:root{
+  --contentMaxW: 1200px;    /* site-wide max content width; used for wrappers */
+}
+
+/* reset-ish: consistent box model and no default gaps from user-agent styles */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* set the rem baseline to 16px for easy type/spacing math */
+html { font-size:16px; }
+
+body {
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background:#f6f3ef; color:#23201d;
+  overflow-x:hidden; /* prevent sideways scroll from sticky/oversized children */
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; letter-spacing:-0.008em;
+}
+
+
+/* ============================================================================
+   SCROLL CONTAINER + TRACK
+   ---------------------------------------------------------------------------
+   layout model:
+   - the page doesn't scroll; the *inner* container scrolls (prelude-scrolly-container)
+   - inside it, .scrolly-track is given a tall min-height by JS (sum of segments)
+   - .scrolly-viewport is sticky and stays pinned while steps fade in/out
+   ===========================================================================*/
+/* main scroller (we scroll inside this container, not the page) */
+.prelude-scrolly-container {
+  height: 100vh;                         /* inner scroller fills viewport */
+  overflow: auto;                        /* enable vertical scroll */
+  overscroll-behavior-y: contain;        /* no rubber-banding to page */
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;     /* momentum on iOS */
+}
+
+/* JS sets the actual height; this just establishes the positioning context */
+.scrolly-track { position:relative; }
+
+/* sticky viewport that holds the “active step”; content swaps by opacity
+   - display:flex centers whatever is currently “active” (cards, galleries, treemap)
+*/
+.scrolly-viewport {
+  position:sticky; top:0; height:100vh;
+  display:flex; align-items:center; justify-content:center; z-index:5;
+}
+
+/* soft parchment background behind the sticky viewport
+   - we toggle .grid-bg to draw a light grid during object-grid scenes
+*/
+.viewport-bg {
+  position:absolute; inset:0;
+  background:#E8E6E1; z-index:-1; transition:background .6s ease; pointer-events:none;
+}
+
+/* grid-like background used during the object-grid scenes
+   - two repeating gradients create 16px-spaced hairlines for a “work surface” feel
+*/
+.viewport-bg.grid-bg {
+  background-color: #f9f8f5;
+  background-image:
+    /* horizontal lines every 16px */
+    repeating-linear-gradient(
+      0deg,
+      rgba(180,200,230,0.05) 0px,
+      rgba(180,200,230,0.05) 1px,
+      transparent 1px,
+      transparent 16px
+    ),
+    /* vertical lines every 16px */
+    repeating-linear-gradient(
+      90deg,
+      rgba(180,200,230,0.05) 0px,
+      rgba(180,200,230,0.05) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+}
+
+
+/* ============================================================================
+   HERO (visible only in 'hero' segment; JS toggles .hidden)
+   ---------------------------------------------------------------------------
+   layout model:
+   - hero is absolutely positioned over the sticky viewport so it can fade out
+   - internal flex column centers title, image, subtitle, ctas
+   tweak:
+   ===========================================================================*/
+.hero-landing{
+  position:absolute; width:100%; min-height:100vh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:clamp(12px,2vh,28px);
+  background:#E4E1DD; transition:opacity .6s ease;
+  /* overlays the sticky viewport; fades out when you leave the hero segment */
+}
+.hero-landing.hidden{ opacity:0; pointer-events:none; }
+
+.hero-inner{
+  width:100%; max-width:720px; padding:0 14px; text-align:center; margin:0 auto;
+  display:flex; flex-direction:column; align-items:center;
+}
+
+.hero-title-row{
+  display:flex; flex-direction:column; align-items:center; gap:.15em;
+  margin-bottom:12px; max-width:640px; margin-inline:auto;
+}
+
+.hero-title {
+  font-family: 'EB Garamond', Garamond, serif;
+  font-weight: 400;
+  font-size: clamp(58px, 7vw, 80px); /* responsive but bounded */
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #1a1a1a;
+  margin-bottom: 0.8rem;
+  cursor: default; /* no text-pointer confusion */
+}
+
+.hero-subtitle {
+  margin: 3.2px 0px 22.4px 0px;
+  max-width: 56ch;             /* readable measure */
+  font-size: 20px; line-height: 1.45; color: #2b2b2b;
+}
+
+/* little “scroll” hint + chevron */
+.scroll-indicator {
+  margin-top: 64px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  opacity: .6; cursor: pointer; transition: opacity .2s ease;
+  border: 0; background: none;
+}
+.scroll-indicator:hover { opacity: 1; }
+
+.scroll-text {
+  font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: #080808;
+}
+
+/* hero cta buttons row
+   - flex-wrap lets buttons wrap on narrow screens without re-styling
+*/
+.hero-actions{
+  display:flex; gap:12px; align-items:center; justify-content:center; flex-wrap:wrap;
+  font-size: 16px; margin: 6.4px 0 0 0;
+}
+
+/* generic button system */
+.btn{
+  appearance:none; border-radius:999px; padding:8px 14px;
+  font-size:15px; letter-spacing:.01em; cursor:pointer;
+  border:1px solid transparent;
+  transition:
+    transform .06s ease,
+    box-shadow .2s ease,
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease;
+}
+.btn-dark{ background:#1f1f1f; color:#fff; border-color:#1f1f1f; text-decoration: none;}
+.btn-dark:hover{ transform:translateY(-1px); }  /* tiny lift */
+.btn-outline{ background:transparent; color:#1f1f1f; border-color:#2c2c2c; }
+.btn-outline:hover{ background:#1f1f1f; color:#fff; }
+.btn[aria-disabled="true"], .btn:disabled{ opacity:.55; cursor:default; pointer-events:none; } /* disabled */
+
+
+/* ============================================================================
+   STEP WRAPPER + CARDS
+   ---------------------------------------------------------------------------
+   layout model:
+   - each step is absolutely positioned to fill the sticky viewport
+   - we fade steps in/out with .active; pointer events disabled when hidden
+   edit flow:
+   - to change transition speed: adjust .6s durations here and in JS timing
+   ===========================================================================*/
+.scrolly-step{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:0 24px;
+  opacity:0; transition:opacity .6s ease; pointer-events:none; /* hidden steps don’t capture clicks */
+}
+.scrolly-step.active{ opacity:1; pointer-events:auto; }
+
+.prelude-card{
+  position:relative; background:#fff; border-radius:8px; max-width:52ch;
+  box-shadow:0 2px 12px rgba(0,0,0,.07); border:1px solid #eceae7; padding:38px 36px;
+  display:flex; flex-direction:column; align-items:center; text-align:center; transition:opacity .6s ease;
+}
+.prelude-card p{ font-size:18px; line-height:1.65; color:#2f2f2f; letter-spacing:-.01em; }
+.card-image{ height:100px; width:auto; opacity:.7; margin-top:2em; display:block; }
+
+
+/* ============================================================================
+   SAMPLER INTRO (image trio + text)
+   ---------------------------------------------------------------------------
+   layout model:
+   - column stack: text card then image gallery
+   - gallery is a wrapping row on desktop; becomes a snapping horizontal scroller on mobile
+   tweak:
+   - adjust the transform translateY to float gallery higher/lower relative to center
+   ===========================================================================*/
+.sampler-intro-step {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  margin-top: 6vh; /* lower the whole scene a touch */
+  gap: 3vh;
+}
+
+/* intro text card spacing */
+.sampler-intro-card { margin-bottom: 10vh; }
+
+/* desktop gallery floats a bit up for balance */
+.sampler-gallery{
+  display:flex; gap:24px; align-items:center; justify-content:center; flex-wrap:wrap; transform:translateY(-8vh);
+}
+.sampler-item{ opacity:0; transform:scale(.8); transition:opacity .6s ease, transform .6s ease; }
+.sampler-item.visible{ opacity:1; transform:scale(1); }
+.sampler-item img{
+  height:clamp(420px,52vh,580px); width:auto; object-fit:contain; display:block;
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.1));
+}
+
+/* --- mobile variant: horizontal swipe, one sampler per “card”
+   - snap scrolling makes each image land centered
+   - we disable the scale-in animation (always visible on small screens)
+*/
+@media (max-width: 720px){
+  .sampler-gallery{
+    display: flex; width: 100%;
+    overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; gap: 16px; padding: 0 12px;
+    transform: none;               /* undo desktop lift */
+    justify-content: flex-start;   /* left-aligned strip */
+    flex-wrap: nowrap;             /* no wrapping */
+  }
+  .sampler-item{
+    flex: 0 0 85vw;                /* snap card width */
+    scroll-snap-align: center;
+    opacity: 1 !important;         /* visible from start on mobile */
+    transform: none !important;
+  }
+  .sampler-item img{
+    width: 100%; height: auto; max-height: 54vh; object-fit: contain;
+  }
+  .sampler-intro-card {
+    max-width: 94vw; margin: 0 auto 4vh; font-size: clamp(0.9rem, 3vw, 1.1rem);
+    line-height: 1.45; padding: 1.2rem 1.4rem; border-radius: 12px;
+  }
+  .sampler-intro-step {
+    gap: 1.5vh; margin-top: 6vh;   /* tighten stack */
+  }
+}
+
+
+/* ============================================================================
+   COMPARTMENT (big image + label + progress)
+   ---------------------------------------------------------------------------
+   layout model:
+   - two-column composition: image stage (flex:1) + text card (fixed ~400px)
+   - stage absolutely stacks images and fades via opacity; label sits over it
+   mobile:
+   - swap to vertical flow: card first (sticky optional), then stage
+   ===========================================================================*/
+.compartment-container{
+  position:absolute; width:100%; height:100%;
+  display:flex; align-items:center; justify-content:center; gap:40px; padding:0 24px; max-width:1400px;
+  /* pinned layout (two columns: image stage + text card) */
+}
+
+.sampler-viewport{
+  flex:1; height:85vh; display:flex; align-items:center; justify-content:center;
+  overflow:hidden; background:#f6f3ef; border-radius:4px; position:relative;
+}
+
+/* stack of absolute images that fade in/out */
+.viewport-image{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  opacity:0; transition:opacity .45s ease;
+}
+
+/* render a touch larger than container to avoid letterboxing on resize */
+.viewport-image img{
+  width:auto; height:100%; max-width:none; max-height:none; object-fit:contain;
+}
+
+/* pill label hovering over the image */
+.viewport-label{
+  position:absolute; bottom:20px; left:50%; transform:translateX(-50%);
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.80);
+  border-radius: 7px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:clamp(15px, 1.2vw, 18px);
+  color:#181818; font-weight:300; letter-spacing:-0.005em;
+  pointer-events:none; white-space:normal; display:inline-block;
+  backdrop-filter:blur(2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 1.5px 6px rgba(139,115,85,0.10);
+}
+
+/* text card at the right */
+.compartment-card{ flex:0 0 400px; max-width:400px; }
+
+/* progress bar mirrors scroll progress inside the step */
+.progress-bar{ margin-top:24px; width:100%; height:2px; background:#e0e0e0; border-radius:1px; overflow:hidden; }
+.progress-fill{ height:100%; background:#bbb9b9; width:0%; transition:width .1s linear; }
+
+/* previous/next arrows over the image */
+.img-arrow{
+  position:absolute; top:50%; transform:translateY(-50%); /* true vertical center */
+  width:42px; height:42px; border-radius:999px;
+  border:1px solid #d0d0d0; background:rgba(255,255,255,.9);
+  color:#1f1f1f; font-size:20px; display:grid; place-items:center;
+  cursor:pointer; opacity:.7; transition:opacity .2s, transform .2s; z-index:5;
+}
+.img-arrow:hover{ opacity:1; transform:translateY(-50%) scale(1.03); }
+.img-arrow-left{ left:12px; }
+.img-arrow-right{ right:12px; }
+
+/* mobile: card on top, image stage below (no JS changes needed) */
+@media (max-width: 780px) {
+  .compartment-container{
+    position: static; display: block; height: auto; max-width: none;
+    padding: 16px 16px 24px; gap: 0;
+  }
+
+  /* card first, optionally sticky so copy stays visible */
+  .compartment-card{
+    flex: none; max-width: none; margin: 0 0 12px;
+    position: sticky; top: 12px; z-index: 2;
+  }
+
+  .sampler-viewport{
+    position: relative; height: 62vh; min-height: 340px;
+    border-radius: 8px; overflow: hidden; background: #f6f3ef; margin-top: 4px;
+  }
+
+  .viewport-image{ position: absolute; inset: 0; }
+  .viewport-image img{ width: 100%; height: 100%; object-fit: contain; }
+
+  .viewport-label{ bottom: 10px; font-size: 14px; }
+  .img-arrow{
+    top: auto; bottom: 8px; transform: none;
+    width: 38px; height: 38px;
+  }
+  .img-arrow-left{ left: 8px; }
+  .img-arrow-right{ right: 8px; }
+
+  .progress-bar{ margin-top: 12px; }
+}
+
+
+/* ============================================================================
+   OBJECT GRID (7 columns × 3 rows) + subtle selector
+   ---------------------------------------------------------------------------
+   layout model:
+   - .grid-wrapper uses a two-column feel: left column (card + categories)
+     plus the image grid to the right; gap controls breathing room
+   - the grid itself is a fixed 4-col template; we cap items to 21 (7×3 feel)
+   tune:
+   - resize tiles via --tileMin/--tileMax; increase columns by changing repeat()
+   ===========================================================================*/
+
+/* outer wrapper controls grid width + left column sizing */
+.object-grid-step .grid-wrapper{
+  position: relative;
+  --tileMin: 110px;
+  --tileMax: 160px;
+  --gap: 18px;
+  max-width: calc(4 * var(--tileMax) + 3 * var(--gap) + 420px); /* 4 columns + left column */
+  min-height: 100vh;
+  display: flex; flex-direction: row; align-items: flex-start; justify-content: center;
+  width: min(98vw, calc(4 * var(--tileMax) + 3 * var(--gap) + 420px));
+  margin: 0 auto 28px; gap: 64px;
+}
+
+/* left column holds the card + category selector
+   - fixed basis keeps a stable rag for the copy regardless of grid width
+*/
+.object-grid-step .grid-left-col {
+  display: flex; flex-direction: column; align-items: stretch;
+  flex: 0 0 400px; min-width: 320px; max-width: 420px; gap: 40px; align-self: flex-start;
+}
+
+/* align the text card to the same width as the left column */
+.object-grid-card{
+  margin: 120px 0 0 0;
+  border-radius: 10px;
+  min-width: 320px; max-width: 400px;
+  flex: 0 0 auto;
+}
+
+/* 4×? grid (capped to 21 items by rule below)
+   - grid-auto-flow:dense fills holes when card counts change
+*/
+#imageGrid{
+  align-self: center; margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(var(--tileMin), var(--tileMax)));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: var(--gap); grid-auto-flow: row dense;
+  flex: 1 1 auto; min-width: 0; max-width: 100%;
+}
+
+.grid-item{
+  aspect-ratio: 1 / 1;        /* perfect squares */
+  border-radius: 8px; overflow: hidden;
+  display:flex; align-items:center; justify-content:center;
+  pointer-events: auto;
+}
+
+.grid-item img{ 
+  width:100%; height:100%; object-fit:contain; display:block;
+  transition:transform .15s ease;
+  filter: saturate(0.80) contrast(0.95);
+  opacity: 80%;
+  pointer-events: none;
+}
+.grid-item img:hover{ transform:scale(1.04); }
+
+/* hard cap to 21 tiles (7×3) */
+#imageGrid > :nth-child(n+22){ display:none; }
+
+/* responsive: tighten at medium screens
+   - reduce max tile size, and collapse to 3 columns when narrow
+*/
+
+.image-grid{ margin-top: 54px; } /* small top breathing room */
+
+
+/* grid tooltip (global, positioned by JS near the cursor)
+   - fixed so it ignores scroll containers and can follow the pointer freely
+*/
+#gridTooltip{
+  position: fixed; display: none; pointer-events: none;
+  max-width: 280px; padding: 12px 14px; border-radius: 10px;
+
+  background: rgba(32, 33, 34, .92); color: #F6F3EF;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,.24);
+  z-index: 99999;
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12.5px; line-height: 1.4; letter-spacing: -0.005em;
+}
+
+#gridTooltip .tt-title{
+  font-family: "EB Garamond", Garamond, serif;
+  font-size: 16px; letter-spacing: -0.01em; color: #fff; margin: 0 0 4px;
+}
+#gridTooltip .tt-title a{ color: inherit; text-decoration: none; }
+#gridTooltip .tt-title a:hover{ border-bottom-color: #fff; }
+#gridTooltip .tt-row{ opacity: .92; margin-top: 2px; }
+
+
+/* ============================================================================
+   MOBILE — enforce column flow: [ card ] → [ 3×3 grid ] → [ categories ]
+   ---------------------------------------------------------------------------
+   layout model:
+   - reflow the parent wrappers into a single column
+   - grid becomes exactly 3×3 (9 items)
+   - categories move below grid as rows of pairs
+   ===========================================================================*/
+@media (max-width: 720px) {
+  /* turn shared parents into a vertical stack; keep gaps modest */
+  .object-grid-step .grid-left-col,
+  .object-grid-step .grid-wrapper,
+  .object-grid-step .left-col {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  /* card on top, centered */
+  .object-grid-card {
+    order: 1 !important;
+    width: min(92%, 36rem);
+    margin: 2rem auto 0;
+    text-align: center;
+  }
+
+  /* grid in the middle: exactly 3×3, cap to 9 */
+  #imageGrid {
+    order: 2 !important;
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+  #imageGrid > *:nth-child(n + 10) { display: none !important; }
+
+  /* categories below the grid */
+  #categorySelector.category-selector {
+    order: 3 !important;
+    position: static !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px;
+    margin-top: 0.2rem;
+  }
+
+  /* put “object” button + chip on the same line */
+  #categorySelector .category-row {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  /* compact, single-line pills */
+  #categorySelector .category-btn,
+  #categorySelector .editable-chip,
+  #categorySelector .family-labels-html {
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 0.35em 0.7em;
+    line-height: 1.1;
+  }
+}
+
+
+/* ============================================================================
+   CATEGORY SELECTOR (vertical list to filter grid)
+   ---------------------------------------------------------------------------
+   layout model:
+   - column of lightweight text buttons; adjacent chip shows the “action family”
+   - active state highlights both the button (bold + border-left) and the chip
+   ===========================================================================*/
+.category-selector .editable-chip { font-size: 14px; }
+
+/* light up the chip next to the currently active category */
+.category-row .category-btn.active + .editable-chip { opacity: 1; }
+
+.category-selector {
+  position: static; margin: 24px 0 0 0;
+  display: flex; flex-direction: column; gap: 14px;
+  background: none; border: none; box-shadow: none; padding: 0;
+  min-width: 180px; align-self: flex-start;
+}
+
+.category-btn {
+  all: unset;                   /* remove default button chrome */
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; color: #4b4743;
+  padding: 4px 6px; letter-spacing: -0.01em;
+  transition: color .2s ease, transform .15s ease;
+  margin-right: 20px; opacity: 0.45;
+}
+.category-btn:hover { color: #000; transform: translateX(2px); opacity: 1; }
+.category-btn.active { color: #000; font-weight: 500; border-left: 1px solid #000; opacity: 1; }
+
+.editable-chip {
+  display: inline-block;
+  background: #fff; color: #222;
+  /* border: 1.5px solid #e0e0e0; */  /* left off; box-shadow gives enough lift */
+  border-radius: 7px; font-size: 16px; padding: 0.25em 1.1em;
+  margin: 0.5em 0.2em 0 1.8em; font-family: inherit; font-weight: 400;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 1.5px 6px rgba(139,115,85,0.10);
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+  vertical-align: middle; opacity: 0.45;
+}
+.editable-chip.active { opacity: 1; }
+
+
+/* ============================================================================
+   STICKY UP ARROW
+   ---------------------------------------------------------------------------
+   - fixed in the viewport; JS toggles .visible after a scroll threshold
+   - hover gives a tiny lift for affordance
+   ===========================================================================*/
+.sticky-up-arrow{
+  position:fixed; right:32px; bottom:32px; z-index:1000;
+  display:flex; align-items:center; justify-content:center;
+  border:2px solid #d0d0d0; background:rgba(248,248,247,.75); border-radius:50%;
+  width:54px; height:54px; padding:10px; cursor:pointer; color:#1d2328; font-size:32px;
+  opacity:0; pointer-events:none; transition:all .3s ease; box-shadow:0 2px 12px rgba(0,0,0,.07);
+}
+.sticky-up-arrow.visible{ opacity:.7; pointer-events:auto; }
+.sticky-up-arrow:hover{ opacity:1; transform:translateY(-2px); }
+
+
+/* ============================================================================
+   MODAL (about dialog)
+   ---------------------------------------------------------------------------
+   layout model:
+   - centered dialog using CSS grid (content + decorative image)
+   - backdrop covers the page; body.modal-open disables background scroll
+   ===========================================================================*/
+.modal[hidden] { display: none !important; }
+
+.modal {
+  position: fixed; inset: 0; z-index: 10000;
+  display: grid; place-items: center;
+}
+
+.modal-backdrop {
+  position: absolute; inset: 0;
+  background: rgba(18, 18, 18, .35);
+  backdrop-filter: blur(2px);
+}
+
+.modal-card {
+  position: relative;
+  width: min(860px, 92vw);
+  background: #fff; border: 1px solid #eceae7; border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.18);
+  padding: clamp(48px, 8vw, 72px);
+  animation: modalIn .18s ease-out;
+}
+
+@keyframes modalIn {
+  from { transform: translateY(6px); opacity: 0; }
+  to   { transform:none; opacity:1; }
+}
+
+.modal-close {
+  position: absolute; top: 8px; right: 10px;
+  border: 0; background: transparent; font-size: 28px; line-height: 1;
+  color: #666; cursor: pointer; padding: 4px 8px; border-radius: 6px;
+}
+.modal-close:hover { background: #f3f3f3; }
+
+.modal-body {
+  display: grid; grid-template-columns: 1.2fr .8fr; align-items: center;
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.modal-text h2{
+  margin:0 0 12px; font-family:"Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight:500; font-size:24px; color:#1a1a1a; letter-spacing:-.02em;
+}
+.modal-text p{
+  margin:0 0 16px; max-width:70ch; color:#2a2a2a; font-weight:400; letter-spacing:-.01em; line-height:1.6;
+}
+.modal-text a{
+  color:#3a3a3a; text-decoration:none; border-bottom:1px solid #8a8a8a; transition:.2s;
+}
+.modal-text a:hover{ color:#1a1a1a; border-bottom-color:#1a1a1a; }
+
+.modal-figure { display:flex; justify-content:flex-end; }
+.modal-figure img {
+  max-width: clamp(160px, 18vw, 240px);
+  max-height: clamp(100px, 18vh, 180px);
+  object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,.08)); opacity: 0.7;
+}
+
+/* stack on mobile */
+@media (max-width: 860px) {
+  .modal-body { grid-template-columns: 1fr; align-items: center; text-align: center; }
+  .modal-figure { justify-content: center; margin-top: 1rem; }
+}
+
+/* prevent background scroll while modal is open */
+body.modal-open { overflow: hidden; }
+
+
+/* ============================================================================
+   TREEMAP: responsive stage + SVG + tooltip
+   ---------------------------------------------------------------------------
+   layout model:
+   - treemap lives inside a sticky section so interactions don’t fight scroll
+   - the SVG fills .treemap-stage; labels (via foreignObject) ride inside it
+   - details panel absolutely overlays the same stage (shared footprint)
+   ===========================================================================*/
+
+/* “layer” concept — not strictly required, but keeps stacking clear */
+.treemap-layer{
+  position:absolute; inset:0;
+  display:flex; flex-direction:column;
+  background:#f6f3ef; /* blends with page bg */
+  z-index: 3;
+}
+
+/* fully remove when hidden so it can’t trap focus or clicks */
+.treemap-layer[hidden]{ display:none !important; }
+
+.scrolly-viewport.show-treemap .steps-layer{ display:none; }
+
+.treemap-section { position: relative; z-index: 20; }
+
+/* sticky section so the SVG remains interactive while you scroll the track */
+.treemap-viewport{
+  position: sticky; top: 0; height: 100vh;
+  display: flex; flex-direction: column;
+}
+
+/* anchor only (kept at 0 offset for now) */
+#treemap-top { scroll-margin-top: 0px; }
+
+/* compact control row above the chart */
+.treemap-controls{
+  display: flex; gap: 10px; align-items: center;
+  margin: 6px 0 10px;
+}
+@media (max-width: 720px){ .treemap-controls{ flex-wrap: wrap; } }
+
+/* breadcrumb-ish chip for current zoom target */
+.zoom-card{
+  display: inline-block; padding: 8px 12px;
+  background: #efece4; color: #2f3e46;
+  border: 1px dashed rgba(47,62,70,.35); border-radius: 3px;
+  font-family: "PT Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 16px;
+}
+.zoom-title{ white-space: nowrap; }
+
+/* back-to-root button */
+.back-to-all{
+  padding: 10px 12px; border-radius: 999px;
+  background: #323435; color: #fff;
+  font-family: "PT Mono", ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: .2px; font-size: 13px; cursor: pointer;
+  border: 1px solid #bdbdbd; box-shadow: 0 2px 3px rgba(0,0,0,.08);
+}
+.back-to-all:hover{ filter: brightness(1.1); }
+
+/* ghosted state toggled by JS during root view */
+.is-ghost{ visibility: hidden; opacity: 0; pointer-events: none; }
+
+/* stage that holds the SVG + details panel overlay
+   - flex:1 lets it expand under the sticky section’s height
+*/
+.treemap-stage {
+  position: relative; width: 100%; display: block; margin: 0; padding: 0;
+  box-sizing: border-box; overflow: visible;
+  flex: 1 1 auto; min-height: 0;  /* let it grow within sticky column */
+}
+
+/* preserve 1000×490 ratio; keep a minimal height
+   - this prevents the SVG from collapsing on short viewports
+*/
+#step-treemap .treemap-stage {
+  aspect-ratio: 1000 / 490;
+  height: auto !important;
+  min-height: 490px;
+}
+
+/* the SVG itself stretches to fill the stage’s size */
+#treemap-svg.treemap {
+  display: block; width: 100%; height: auto; box-sizing: border-box; z-index: 1;
+}
+
+/* the global treemap tooltip (fixed so it can escape scroll containers) */
+.treemap-tooltip{
+  position: fixed; display: none; pointer-events: none;
+  max-width: 280px; padding: 12px 14px; border-radius: 10px;
+  background: rgba(32, 33, 34, .92); color: #F6F3EF;
+  border: 1px solid rgba(255,255,255,.08); box-shadow: 0 8px 24px rgba(0,0,0,.24);
+  z-index: 2147483647; /* high z so it stays above */
+  font-family: "EB Garamond", Garamond, serif; font-size: 16px; line-height: 1.4; letter-spacing: -0.005em;
+}
+
+/* family-level labels (HTML inside foreignObject) */
+.family-labels-html{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(13px, 0.95vw, 16px);
+  color: #181818; white-space: normal; pointer-events: none;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 6px 10px; border-radius: 7px; display: inline-block; border: none;
+  font-weight: 300; letter-spacing: -0.005em; backdrop-filter: blur(2px);
+}
+
+/* object-type labels inside leaf tiles */
+.leaf-html{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(12px, 0.9vw, 15px);
+  line-height: 1.2; color: #ffffff; pointer-events: none;
+  overflow: hidden; text-overflow: ellipsis;
+  font-weight: 300; letter-spacing: -0.005em; opacity: 1;
+}
+.leaf-fo{ pointer-events: none; }   /* pass clicks through to rects */
+
+/* the SVG rect for the background texture (never interactive) */
+.treemap-texture { pointer-events: none; }
+
+
+/* ============================================================================
+   DETAILS PANEL (overlay, matches SVG footprint)
+   ---------------------------------------------------------------------------
+   layout model:
+   - sits on top of the SVG and uses sticky header/subtitle for context
+   - list uses flex rows with optional thumbnail
+   ===========================================================================*/
+#details.details-panel{
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  margin: 0; padding: 0; overflow-y: auto;
+  background: linear-gradient(180deg, #faf8f5 0%, #f6f3ef 100%);
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  box-sizing: border-box;
+}
+
+.details-header{
+  position: sticky; top: 0; display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 20px; margin: 0;
+  background: linear-gradient(180deg, #f8f6f1 0%, #f3f0eb 100%);
+  border-bottom: 1px solid rgba(139, 115, 85, 0.15);
+  box-shadow: 0 1px 2px rgba(139, 115, 85, 0.08);
+  z-index: 20;
+}
+
+.details-close{
+  background: none; border: none; margin: 0; padding: 6px 10px;
+  font-size: 24px; line-height: 1; cursor: pointer; color: #666;
+  border-radius: 4px; transition: background-color 0.15s ease;
+}
+.details-close:hover{ background-color: #f0f0f0; }
+
+.details-title{
+  margin: 0; font-weight: 600; font-size: 20px; color: #3a2e20; letter-spacing: -0.02em;
+}
+
+.details-subtitle{
+  position: sticky; top: 68px; margin: 0; padding: 10px 16px;
+  background: linear-gradient(180deg, #f3f0eb 0%, #ede9e2 100%);
+  color: #5a4a35; font-size: 14px; font-weight: 500;
+  border-bottom: 1px solid rgba(139, 115, 85, 0.2);
+  z-index: 15;
+}
+
+.details-list{ margin: 0; padding: 8px 16px 16px 16px; list-style: none; }
+
+.details-item{
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0; border-bottom: 1px dashed #9a9a91;
+}
+
+.details-thumb{
+  width: 100px; height: 100px; object-fit: cover; border-radius: 3px; flex: 0 0 auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+  transition: opacity .25s ease; display: block; margin-right: 20px;
+}
+
+/* placeholder box for items without a thumbnail yet */
+.details-placeholder{
+  width: 100px; height: 100px; flex-shrink: 0; margin-right: 20px;
+  background: linear-gradient(135deg, #f8f6f1 0%, #f3f0eb 50%, #ede9e2 100%);
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(139, 115, 85, 0.03) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(139, 115, 85, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(139, 115, 85, 0.01) 1px, transparent 1px);
+  background-size: 20px 20px, 30px 30px, 40px 40px;
+  border-radius: 3px; display: flex; align-items: center; justify-content: center; 
+  color: rgba(139, 115, 85, 0.6);
+  transition: background-color 0.2s; border: 1px solid rgba(139, 115, 85, 0.25);
+}
+.details-placeholder svg { width: 32px; height: 32px; }
+
+/* treemap section width + padding inside viewport */
+#step-treemap .viz-wrap{
+  width: min(1400px, 98vw); margin: 0 auto; padding: 0 12px;
+}
+
+/* generous stage height on desktop */
+.treemap-section .treemap-stage{
+  height: clamp(520px, 66vh, 820px);
+  min-height: 620px;   /* floor for short displays */
+}
+
+#treemap-svg.treemap{ width: 100%; height: 100%; } /* fill the stage */
+
+@media (min-height: 950px){
+  #step-treemap .treemap-stage{ height: 72vh; } /* add a bit more space on tall screens */
+}
+
+/* treemap heading hierarchy */
+.section-title{
+  font-family: "EB Garamond", Garamond, serif;
+  font-weight: 500;
+  font-size: clamp(34px, 4vw, 44px);
+  line-height: 1.12;
+  color: #0a0a0a;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px 0;
+}
+
+.viz-hint{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: clamp(16px, 2.2vw, 20px);
+  font-weight: 400; color: #525252; letter-spacing: -0.005em; margin: 10px 0 6px;
+}
+
+.viz-hint-small{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: clamp(13px, 1.8vw, 15px);
+  font-weight: 400; color: #6a6a6a; letter-spacing: -0.005em; margin: 0 0 16px;
+}
+
+
+/* ============================================================================
+   MODE TOGGLE (two-button capsule, positioned over treemap stage)
+   ---------------------------------------------------------------------------
+   layout model:
+   - absolute-positioned pill riding on the treemap stage (desktop)
+   - becomes a fixed, centered pill near the bottom on small devices
+   ===========================================================================*/
+
+/* outer capsule container (positioned absolutely over the treemap stage) */
+.mode-toggle {
+  position: absolute; /* anchored relative to .treemap-stage */
+  top: -9rem;         /* sits above the chart on desktop */
+  right: .8rem;
+  z-index: 3;
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 4px;
+  border: 1px solid rgba(0,0,0,.14);
+  border-radius: 9999px; background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 18px rgba(0,0,0,.05);
+}
+
+/* inner buttons borrow the capsule’s border; we style just padding/shape */
+.mode-toggle button {
+  appearance: none; border: 0; background: transparent;
+  padding: 6px 12px; border-radius: 9999px;
+  font: inherit; line-height: 1; cursor: pointer; white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+
+/* subtle divider between left/right buttons */
+.mode-toggle button + button { position: relative; }
+.mode-toggle button + button::before {
+  content: ""; position: absolute; left: -3px; top: 6px; bottom: 6px; width: 1px;
+  background: rgba(0,0,0,.10); border-radius: 1px;
+}
+
+/* pressed state (aria-pressed = true) */
+.mode-toggle button[aria-pressed="true"] { color: #fff; background: #222; }
+
+/* hover/focus feedback */
+.mode-toggle button:hover { background: rgba(0,0,0,.06); }
+.mode-toggle button[aria-pressed="true"]:hover { background: #1a1a1a; }
+.mode-toggle button:focus-visible { outline: 2px solid #222; outline-offset: 2px; }
+
+/* small inline helper (if you ever show an info pill alongside buttons) */
+.mode-toggle .mode-info {
+  margin-left: 6px; padding: 0 .45rem; border-radius: 999px;
+  line-height: 1.2; font-size: .9rem; opacity: .85;
+}
+
+
+/* ============================================================================
+   MOBILE ADAPTATION (≤ 720px) — treemap section spacing + scale
+   ---------------------------------------------------------------------------
+   - reflow treemap section into a grid: [title] [hint] [controls] [chart]
+   - reduce heights + paddings so chart and copy fit together
+   ===========================================================================*/
+@media (max-width: 720px){
+  /* lay out treemap section rows: title, hint, controls, chart */
+  #treemap-section.viz-wrap{
+    padding: 8px 12px;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    row-gap: 8px;
+  }
+
+  /* scale down headings + hints a touch */
+  #treemap-section .section-title {
+    margin: 0;
+    font-size: clamp(28px, 8vw, 38px);
+    line-height: 1.15;
+  }
+  #treemap-section .viz-hint{
+    font-size: clamp(15px, 4vw, 18px); line-height: 1.35; margin: 4px 0 6px;
+  }
+  #treemap-section .viz-hint-small{
+    font-size: clamp(12px, 3.5vw, 14px); line-height: 1.3; margin: 0 0 8px;
+  }
+
+  /* keep controls visible and non-overlapping */
+  #treemap-section .treemap-controls{
+    position: static; margin: 4px 0 6px; display: flex; gap: 8px; flex-wrap: wrap;
+  }
+  #treemap-section .treemap-controls .chip{
+    padding: 6px 10px; border-radius: 999px;
+  }
+
+  /* tighter chart height in sticky viewport */
+  #treemap-section .treemap-stage{
+    height: min(70vh, 560px); border-radius: 8px; overflow: hidden;
+  }
+  #treemap-section svg.treemap{ width: 100%; height: 100%; }
+}
+
+/* ============================================================================
+   MOBILE (≤ 560px) — consolidated mode-toggle + chip sizing
+   ---------------------------------------------------------------------------
+   - move the capsule to a fixed bottom-center position (thumb reach)
+   - shrink label chips to keep more tiles visible
+   ===========================================================================*/
+@media (max-width: 560px){
+  /* float the mode toggle near the bottom center (thumb reach) */
+  .mode-toggle{
+    position: fixed; left: 50%; right: auto; top: auto;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+    transform: translateX(-50%);
+    padding: 6px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12), 0 2px 8px rgba(0,0,0,.10);
+    background: rgba(255,255,255,.92);
+    backdrop-filter: saturate(1.4) blur(8px);
+    z-index: 60; /* above treemap/details */
+  }
+  .mode-toggle button{ padding: 12px 14px; font-size: 16px; }
+
+  /* shrink chips/labels slightly for smaller screens */
+  #treemap-section .family-labels-html,
+  #treemap-section .chip,
+  #treemap-section .family-chip {
+    font-size: clamp(10px, 2.7vw, 12px);
+    line-height: 1.2; padding: 4px 8px; border-radius: 8px;
+  }
+}
+
+
+/* ===== MOBILE OVERRIDE: put categories BELOW the grid and align LEFT (≤720px) ===== */
+@media (max-width: 720px) {
+
+  .object-grid-step .grid-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* ← align everything to the left */
+    gap: 1.25rem !important;
+  }
+
+  .object-grid-step .grid-left-col {
+    display: contents !important; /* flatten the wrapper */
+  }
+
+  .object-grid-card {
+    order: 1 !important;
+    width: 100% !important;
+    margin: 2rem 0 0 0 !important;
+    text-align: left !important; /* keep text aligned left */
+  }
+
+  #imageGrid {
+    order: 2 !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  #imageGrid > *:nth-child(n + 10) {
+    display: none !important;
+  }
+
+  #categorySelector.category-selector {
+    order: 3 !important;
+    width: 100% !important;
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    margin-top: 0.2rem !important;
+    align-items: flex-start !important; /* ← align categories left */
+  }
+
+  #categorySelector .category-row {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important; /* ← no centering */
+    gap: 8px !important;
+  }
+
+  #categorySelector .category-btn,
+  #categorySelector .editable-chip,
+  #categorySelector .family-labels-html {
+    white-space: nowrap !important;
+    font-size: 13px !important;
+    padding: 0.35em 0.7em !important;
+    line-height: 1.1 !important;
+  }
+}
