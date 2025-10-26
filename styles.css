@@ -120,6 +120,7 @@ body {
   gap:clamp(12px,2vh,28px);
   background:#E4E1DD; transition:opacity .6s ease;
   /* overlays the sticky viewport; fades out when you leave the hero segment */
+  z-index: 20; /* ensure hero is always above the grid/tooltips */
 }
 .hero-landing.hidden{ opacity:0; pointer-events:none; }
 
@@ -1032,69 +1033,5 @@ body.modal-open { overflow: hidden; }
   #treemap-section .family-chip {
     font-size: clamp(10px, 2.7vw, 12px);
     line-height: 1.2; padding: 4px 8px; border-radius: 8px;
-  }
-}
-
-
-/* ===== MOBILE OVERRIDE: put categories BELOW the grid and align LEFT (≤720px) ===== */
-@media (max-width: 720px) {
-
-  .object-grid-step .grid-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important; /* ← align everything to the left */
-    gap: 1.25rem !important;
-  }
-
-  .object-grid-step .grid-left-col {
-    display: contents !important; /* flatten the wrapper */
-  }
-
-  .object-grid-card {
-    order: 1 !important;
-    width: 100% !important;
-    margin: 2rem 0 0 0 !important;
-    text-align: left !important; /* keep text aligned left */
-  }
-
-  #imageGrid {
-    order: 2 !important;
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    grid-template-rows: repeat(3, 1fr) !important;
-    gap: 10px !important;
-  }
-
-  #imageGrid > *:nth-child(n + 10) {
-    display: none !important;
-  }
-
-  #categorySelector.category-selector {
-    order: 3 !important;
-    width: 100% !important;
-    position: static !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 4px !important;
-    margin-top: 0.2rem !important;
-    align-items: flex-start !important; /* ← align categories left */
-  }
-
-  #categorySelector .category-row {
-    display: inline-flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important; /* ← no centering */
-    gap: 8px !important;
-  }
-
-  #categorySelector .category-btn,
-  #categorySelector .editable-chip,
-  #categorySelector .family-labels-html {
-    white-space: nowrap !important;
-    font-size: 13px !important;
-    padding: 0.35em 0.7em !important;
-    line-height: 1.1 !important;
   }
 }
