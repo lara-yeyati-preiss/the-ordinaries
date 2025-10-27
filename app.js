@@ -471,7 +471,7 @@ function renderStepContent(step) {
       '<div class="treemap-step">' +
         '<div class="viz-wrap" id="treemap-section">' +
           '<h2 class="section-title">Traces of an Ordinary Life</h2>' +
-          '<p class="viz-hint">    Browse objects of everyday life in Revolutionary-era America, drawn from the Smithsonian collections.</p>' +
+          '<p class="viz-hint">Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.</p>' +
           '<p class="viz-hint-small">Click on a group to see the objects inside.</p>' +
 
           '<div class="treemap-controls" aria-label="Treemap controls">' +
