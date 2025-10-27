@@ -153,15 +153,16 @@ body {
 
 /* little “scroll” hint + chevron */
 .scroll-indicator {
-  margin-top: 64px;
+  margin-top: 54px;
   display: flex; flex-direction: column; align-items: center; gap: 8px;
-  opacity: .6; cursor: pointer; transition: opacity .2s ease;
+  cursor: pointer; transition: opacity .2s ease;
   border: 0; background: none;
+  opacity: .8;
 }
-.scroll-indicator:hover { opacity: 1; }
+.scroll-indicator:hover { opacity: 1; transform: scale(1.02); }
 
 .scroll-text {
-  font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: #080808;
+  font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: #080808; font-weight: 600;
 }
 
 /* hero cta buttons row
