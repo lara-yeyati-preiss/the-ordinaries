@@ -574,22 +574,23 @@ body {
   align-self: flex-start;
 }
 
-.category-option{
-  position: relative;               /* for the | marker */
+.category-option {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  justify-content: flex-start;      /* <<< was space-between */
+  gap: 48px;
   width: 100%;
-  padding: 2px 0 2px 12px;          /* small left pad so the | has room */
+  padding: 2px 12px 2px 12px;       /* equal padding left/right */
   background: transparent;
   border: none;
   box-shadow: none;
   cursor: pointer;
   text-align: left;
-  opacity: .45;                     /* subtle by default */
+  opacity: .45;
   transition: opacity .15s ease;
 }
+
 
 .category-option:hover{ opacity: .85; }
 .category-option.active{
@@ -607,22 +608,25 @@ body {
   opacity: .7;
 }
 
-.category-selector .editable-chip{
-  display: inline-block;
+.category-selector .editable-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
-  color: inherit;                   /* <<< follows active row color */
+  color: inherit;
   border-radius: 7px;
   font-size: 14px;
   padding: 0.25em 1.1em;
-  /* original had margin-left: 1.8em; we override to push it right: */
-  margin: 0.5em 0.2em 0 auto;       /* <<< pushes chip to the right edge */
+  margin-left: auto;                /* <<< pushes chip to far right */
   font-family: inherit;
   font-weight: 400;
   box-shadow: 0 1.5px 6px rgba(0,0,0,0.08), 0 1px 4px rgba(139,115,85,0.08);
   transition: background .2s, color .2s, opacity .2s;
-  vertical-align: middle;
-  opacity: .45;                     /* base */
+  opacity: .45;
+  line-height: 1.2;
 }
+
+
 .category-option.active .editable-chip{ opacity: 1; }
 
 
