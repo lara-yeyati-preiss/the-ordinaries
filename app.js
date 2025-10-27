@@ -45,7 +45,7 @@ const config = {
       id: "sampler-single",
       type: "sampler-intro-single",
       content: {
-        text: "These embroidered works displayed skill, patience, and diligence. They mirrored the ideals of femininity in the new republic—training women to embody virtue through education, morality, and domestic skill.",
+        text: "These embroidered works displayed patience and skill. They mirrored the ideals of the new republic—training women to embody virtue through education, morality, and domestic order.",
   image: "assets/edanmdm:nmah_639739-details.png",
         alt: "Sampler showing skill, patience, and diligence."
       }
