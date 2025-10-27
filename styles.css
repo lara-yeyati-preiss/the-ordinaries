@@ -556,44 +556,74 @@ body {
    CATEGORY SELECTOR (vertical list to filter grid)
    ---------------------------------------------------------------------------
    layout model:
-   - column of lightweight text buttons; adjacent chip shows the “action family”
-   - active state highlights both the button (bold + border-left) and the chip
+   - "text + chip" rows - entire row is clickable
+   - active row is fully opaque, adopts strong text color, and shows a | marker
    ===========================================================================*/
-.category-selector .editable-chip { font-size: 14px; }
 
-/* light up the chip next to the currently active category */
-.category-row .category-btn.active + .editable-chip { opacity: 1; }
-
-.category-selector {
-  position: static; margin: 24px 0 0 0;
-  display: flex; flex-direction: column; gap: 14px;
-  background: none; border: none; box-shadow: none; padding: 0;
-  min-width: 180px; align-self: flex-start;
+.category-selector{
+  position: static;
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  min-width: 180px;
+  align-self: flex-start;
 }
 
-.category-btn {
-  all: unset;                   /* remove default button chrome */
+.category-option{
+  position: relative;               /* for the | marker */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 2px 0 2px 12px;          /* small left pad so the | has room */
+  background: transparent;
+  border: none;
+  box-shadow: none;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px; color: #4b4743;
-  padding: 4px 6px; letter-spacing: -0.01em;
-  transition: color .2s ease, transform .15s ease;
-  margin-right: 20px; opacity: 0.45;
+  text-align: left;
+  opacity: .45;                     /* subtle by default */
+  transition: opacity .15s ease;
 }
-.category-btn:hover { color: #000; transform: translateX(2px); opacity: 1; }
-.category-btn.active { color: #000; font-weight: 500; border-left: 1px solid #000; opacity: 1; }
 
-.editable-chip {
-  display: inline-block;
-  background: #fff; color: #222;
-  /* border: 1.5px solid #e0e0e0; */  /* left off; box-shadow gives enough lift */
-  border-radius: 7px; font-size: 16px; padding: 0.25em 1.1em;
-  margin: 0.5em 0.2em 0 1.8em; font-family: inherit; font-weight: 400;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 1.5px 6px rgba(139,115,85,0.10);
-  transition: background 0.2s, color 0.2s, opacity 0.2s;
-  vertical-align: middle; opacity: 0.45;
+.category-option:hover{ opacity: .85; }
+.category-option.active{
+  opacity: 1;
+  color: #111;                      /* stronger text for active row */
 }
-.editable-chip.active { opacity: 1; }
+
+.category-option.active::before{
+  content: "│";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  opacity: .7;
+}
+
+.category-selector .editable-chip{
+  display: inline-block;
+  background: #fff;
+  color: inherit;                   /* <<< follows active row color */
+  border-radius: 7px;
+  font-size: 14px;
+  padding: 0.25em 1.1em;
+  /* original had margin-left: 1.8em; we override to push it right: */
+  margin: 0.5em 0.2em 0 auto;       /* <<< pushes chip to the right edge */
+  font-family: inherit;
+  font-weight: 400;
+  box-shadow: 0 1.5px 6px rgba(0,0,0,0.08), 0 1px 4px rgba(139,115,85,0.08);
+  transition: background .2s, color .2s, opacity .2s;
+  vertical-align: middle;
+  opacity: .45;                     /* base */
+}
+.category-option.active .editable-chip{ opacity: 1; }
 
 
 /* ============================================================================

@@ -430,39 +430,52 @@ function renderStepContent(step) {
         );
       }
 
-  // rendering the object grid step with category buttons and an empty grid root
-  if (t === "object-grid") {
-    var og = step.content || {};
-    var ogText = og.text || "";
-    // Editable chip labels for each category
-    var chipLabels = [
-      "Textile Making",
-      "Healing & Caring",
-      "Eating, Cooking & Drinking",
-      "Measuring & Navigating"
-    ];
-    var categories = ["Samplers", "Pharmaceutical jars","Teapots", "Pocket watches"];
-    return (
-      '<div class="object-grid-step">' +
-        '<div class="grid-wrapper">' +
-          '<div class="grid-left-col">' +
-            '<div class="prelude-card object-grid-card"><p>' + ogText + '</p></div>' +
-            '<div class="category-selector" id="categorySelector">' +
-              categories.map(function(cat, i){
-                return (
-                  '<div class="category-row">' +
-                    '<button class="category-btn ' + (i===0?'active':'') + '" data-category="' + i + '">' + cat + '</button>' +
-                    '<span class="family-labels-html editable-chip" data-chip-index="' + i + '">' + chipLabels[i] + '</span>' +
-                  '</div>'
-                );
-              }).join("") +
-            '</div>' +
+// rendering the object grid step with unified, full-row buttons
+if (t === "object-grid") {
+  var og = step.content || {};
+  var ogText = og.text || "";
+
+  // labels for the action chips and object categories
+  var chipLabels = [
+    "Textile Making",
+    "Healing & Caring",
+    "Eating, Cooking & Drinking",
+    "Measuring & Navigating"
+  ];
+  var categories = ["Samplers", "Pharmaceutical jars", "Teapots", "Pocket watches"];
+
+  return (
+    '<div class="object-grid-step">' +
+      '<div class="grid-wrapper">' +
+        '<div class="grid-left-col">' +
+          '<div class="prelude-card object-grid-card"><p>' + ogText + '</p></div>' +
+
+          // one clickable row per object–action pair
+          '<div class="category-selector" id="categorySelector" role="radiogroup" aria-label="Filter by object">' +
+            categories.map(function(cat, i){
+              return (
+                '<button type="button" class="category-option ' + (i===0 ? 'active' : '') + '" ' +
+                        'data-category-index="' + i + '" role="radio" ' +
+                        'aria-checked="' + (i===0 ? 'true' : 'false') + '">' +
+
+                  // object name
+                  '<span class="option-label object-label">' + cat + '</span>' +
+
+                  // action chip
+                  '<span class="option-chip editable-chip family-labels-html">' + chipLabels[i] + '</span>' +
+
+                '</button>'
+              );
+            }).join("") +
           '</div>' +
-          '<div class="image-grid" id="imageGrid"></div>' +
         '</div>' +
-      '</div>'
-    );
-  }
+
+        '<div class="image-grid" id="imageGrid"></div>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
 
   // rendering the treemap container expected by treemap.js (svg + details panel + controls)
   // (the mode toggle buttons are created in JS and positioned over .treemap-stage)
@@ -961,15 +974,12 @@ function renderGridFromPaths(paths, metaIndex = null) {
 function loadCategory(idx) {
   state.objectGridCategory = idx;
 
-    // updating visual state of category pills
-    document.querySelectorAll(".category-btn").forEach((b, k) => {
-    b.classList.toggle("active", k === idx);
-    });
+ document.querySelectorAll(".category-option").forEach((b, k) => {
+  const on = (k === idx);
+  b.classList.toggle("active", on);
+  b.setAttribute("aria-checked", on ? "true" : "false");
+});
 
-    // update chips too (so CSS .editable-chip.active works even if order changes)
-    document.querySelectorAll(".editable-chip").forEach((chip, k) => {
-    chip.classList.toggle("active", k === idx);
-    });
 
   // finding the selected category config (paths + optional csv metadata)
   const cat = GRID_CATEGORIES[idx];
@@ -1007,16 +1017,21 @@ function setupCategoryButtons() {
   if (!sel) return;
 
   sel.addEventListener("click", (e) => {
-    const btn = e.target.closest(".category-btn");
+    const btn = e.target.closest(".category-option");
     if (!btn) return;
-    const idx = +btn.dataset.category;
+    e.preventDefault(); // <-- important with buttons inside scroll contain, so that they don't jump to the hero
+    
+    // reading which category index was clicked
+    const idx = Number(btn.dataset.categoryIndex);
+    if (!Number.isFinite(idx)) return; // safety guard
 
     // nudging local scroll position inside the "rituals" segment to align with the selected bucket
     const seg = segmentOf("rituals");
     const container = document.getElementById("scrollContainer");
     if (seg && container) {
-      const span = seg.end - seg.start;                         // computing segment length (normalized)
-      const local = seg.start + (idx / GRID_CATEGORIES.length) * span; // choosing the quartile start
+      const n     = document.querySelectorAll(".category-option").length || GRID_CATEGORIES.length;
+      const span  = seg.end - seg.start;
+      const local = seg.start + ((idx + 0.5) / n) * span; // bucket CENTER
       const y = local * (container.scrollHeight - container.clientHeight); // converting to pixels
       container.scrollTo({ top: y, behavior: "instant" });      // jumping without animation for snappiness
     }

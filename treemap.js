@@ -250,24 +250,24 @@
       });
 
       // set mode helper: flips aria state, updates svg attr, rebuilds hierarchy, and redraws
-function setMode(mode) {
-  if (mode === currentMode) return;
-  currentMode = mode;
-  svg.attr("data-mode", currentMode);
-  btnUse.attr("aria-pressed", String(mode === "use"));
-  btnMat.attr("aria-pressed", String(mode === "material"));
-  rebuildRootAndReset();
+      function setMode(mode) {
+        if (mode === currentMode) return;
+        currentMode = mode;
+        svg.attr("data-mode", currentMode);
+        btnUse.attr("aria-pressed", String(mode === "use"));
+        btnMat.attr("aria-pressed", String(mode === "material"));
+        rebuildRootAndReset();
 
-  // --- ADD THIS ---
-  const hint = document.querySelector('.viz-hint');
-  if (hint) {
-    if (mode === "use") {
-      hint.textContent = "Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.";
-    } else {
-      hint.textContent = "Explore objects from Revolutionary-era America by what they were made of, drawn from Smithsonian collections.";
-    }
-  }
-}
+        // update the hint text below the viz based on mode
+        const hint = document.querySelector('.viz-hint');
+        if (hint) {
+          if (mode === "use") {
+            hint.textContent = "Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.";
+          } else {
+            hint.textContent = "Explore objects from Revolutionary-era America by what they were made of, drawn from Smithsonian collections.";
+          }
+        }
+      }
 
       // wire the two mode buttons
       btnUse.on("click", () => setMode("use"));
