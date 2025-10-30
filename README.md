@@ -1,8 +1,10 @@
 Live demo: https://lara-yeyati-preiss.github.io/the-ordinaries/
 
+**The Ordinaries** - by Lara Yeyati Preiss
+
 ## Concept
 
-The Ordinaries approaches the American Revolutionary period (1765–1783) by shifting attention from monuments and heroes to the material traces of everyday life.
+This project examines the American Revolutionary period (1765–1783) by shifting attention from monuments and heroes to the material traces of everyday life.
 
 The site opens with a **scrollytelling** sequence that introduces selected objects along with the habits and social roles associated with them, showing how the material remains of daily routines can reveal glimpses of what once constituted a life. Objects are then organized in a **zoomable treemap** that can be explored by **action family** or **material** (toggleable).
 Users can navigate the database from either entry point and open a **details panel** linking directly to the Smithsonian collection for each object.
@@ -16,11 +18,10 @@ Users can navigate the database from either entry point and open a **details pan
 
 <br><br>
 
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/2cac1c49-6fcf-424f-86e7-567352164535" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/c2665aa2-158e-42f2-8ded-0a18e7e26f67" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/edf71201-6093-4ce7-9c5e-5972ddd38405" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/86921941-2989-42b3-aef4-295b8f78e04b" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/e50c4620-b731-4a72-8ca6-b3e061a727fc" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/23203d3d-2763-496c-91ee-ded5c090de6f" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/76f5e024-1fed-4a1d-a5f8-4cf024104dee" />
-<img width="1728" height="899" alt="image" src="https://github.com/user-attachments/assets/5d2377cd-0ea3-469b-a3d7-9f6dc2dd3993" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/15ac2c17-5096-401b-88f4-923391ef4b71" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/7642d6da-6964-4643-89fa-53a7302508d3" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/e1d3274d-01e8-4d32-80b6-b19b84dd3190" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/441aa97d-0b75-4a97-a899-e15d71fcc07b" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/f4f963d9-c775-41a4-9194-83827857d1bc" />
+<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/e4dbf6eb-2ffb-484b-b845-8abbcca349e7" />
+
