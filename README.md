@@ -4,7 +4,7 @@ Live demo: https://lara-yeyati-preiss.github.io/the-ordinaries/
 
 The Ordinaries approaches the American Revolutionary period (1765–1783) by shifting attention from monuments and heroes to the material traces of everyday life.
 
-The site opens with a **scrollytelling** sequence that introduces selected objects along with the habits and social roles associated with them, showing how the material remains of daily routines can reveal glimpses of what once constituted an ordinary life. Objects are then organized in a **zoomable treemap** that can be explored by **action family** or **material** (toggleable).
+The site opens with a **scrollytelling** sequence that introduces selected objects along with the habits and social roles associated with them, showing how the material remains of daily routines can reveal glimpses of what once constituted a life. Objects are then organized in a **zoomable treemap** that can be explored by **action family** or **material** (toggleable).
 Users can navigate the database from either entry point and open a **details panel** linking directly to the Smithsonian collection for each object.
 
 <br>
