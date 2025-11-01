@@ -1015,12 +1015,12 @@ const PHARMA_STORY_STEPS = [
     type: "compartment",
     content: {
       text:
-        "Labels listed contents in Latin abbreviations, forming a code of practice and care: what to take, how to mix, when to apply.",
+        "Labels listed contents forming a code of practice and care: what to take, how to mix, when to apply.",
       compartments: [
-        { image: "assets/mugs/edanmdm:nmah_993951.png", label: "MERCUR VIRID - Mercurius Viridis: “Green Mercury”, a mercury compound used in 18th-century treatments for skin and venereal diseases." },
-        { image: "assets/mugs/edanmdm:nmah_994285.png", label: "MUSCUS HELMINTOCH - Muscus helminthocortos: a mixture of lichen and small marine organisms believed to expel intestinal worms." },
-        { image: "assets/mugs/edanmdm:nmah_994307.png", label: "RAD MEU - Radix Meum: “Meum root,” an aromatic root (related to carrot or parsnip) used as a digestive stimulant." },
-        { image: "assets/mugs/edanmdm:nmah_994323.png", label: "CORAL R PP - Corallium Rubrum Pulvis Preparatus: powdered red coral, thought to stop bleeding, calm fevers, and protect infants." },
+        { image: "assets/mugs/edanmdm:nmah_993951.png", label: "MERCUR VIRID - Mercurius Viridis: 'Green Mercury', a mercury compound used in 18th-century treatments for skin and venereal diseases." },
+        { image: "assets/mugs/edanmdm:nmah_994285.png", label: "MUSCUS HELMINTOCH - Muscus helminthocortos: a mixture of lichen, plants, and zoophytes believed to expel intestinal worms." },
+        { image: "assets/mugs/edanmdm:nmah_994314.png", label: "BALSAMIC PILLS - Defined in J. Worth Estes' Dictionary of Protopharmacology as 'a softening, restoring, healing, and cleansing medicine.'" },
+        { image: "assets/mugs/edanmdm:nmah_994323.png", label: "CORAL R PP - Corallium Rubrum Pulvis Preparatus: powdered red coral, thought to stop bleeding, calm fevers, and protect infants from convulsions." },
       ],
     },
   },
@@ -1073,7 +1073,7 @@ const FIRE_STORY_STEPS = [
     type: "sampler-intro",
     content: {
       text:
-        "Before public fire brigades, insurers marked their policyholders' houses with emblems. When a blaze broke out, fire companies rushed to homes that displayed their mark.",
+        "Before public fire brigades, insurers marked their policyholders' houses with emblems. When a blaze broke out, companies rushed to homes that displayed their mark.",
       samplers: [
         "assets/fire_marks/edanmdm:nmah_1341592.png",
         "assets/fire_marks/edanmdm:nmah_1341904.png",
@@ -1088,11 +1088,10 @@ const FIRE_STORY_STEPS = [
       text:
         "Each emblem carried a promise of protection, mapping systems of responsibility and trust: who owed help to whom, and on what terms.",
       compartments: [
-        { image: "assets/fire_marks/edanmdm:nmah_1341468.png", label: "Hand-in-Hand — America's first fire-insurance mark: four clasped wrists representing mutual aid." },
-        { image: "assets/fire_marks/edanmdm:nmah_1341921.png", label: "Green Tree: Mutual Assurance Company, insuring even houses shaded by trees." },
-        { image: "assets/fire_marks/edanmdm:nmah_1341763.png", label: "Insurance Company of North America's eagle, signaling the rise of modern finance in protection." },
-        { image: "assets/fire_marks/edanmdm:nmah_1343187.png", label: "Sun Fire Office: an English insurer, one of the earliest to use a logo as public branding." },
-        { image: "assets/fire_marks/edanmdm:nmah_1342275.png", label: "Clasped Hands — Baltimore Equitable Society: wood and cast iron mark as proof of coverage." },
+        { image: "assets/fire_marks/edanmdm:nmah_1341468.png", label: "Hand in Hand — Fire mark of the Philadelphia Contributionship, the first successful fire insurance company in America; its clasped hands symbolize their origin as a mutual insurer." },
+        { image: "assets/fire_marks/edanmdm:nmah_1341921.png", label: "Fire mark of the Mutual Assurance Company, founded by former policyholders of the Philadelphia Contributionship to insure houses shaded by trees, after the Contributionship refused them." },
+        { image: "assets/fire_marks/edanmdm:nmah_1341763.png", label: "Insurance Company of North America's eagle, the first joint stock insurance company in America, signaling the rise of modern finance in protection." },
+        { image: "assets/fire_marks/edanmdm:nmah_1342275.png", label: "Baltimore Equitable Society' Sign of the Clasped Hands: wood and cast iron mark as proof of coverage." },
       ],
     },
   },
