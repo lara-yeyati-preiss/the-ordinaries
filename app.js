@@ -1,8 +1,12 @@
-// defining the content configuration for all scrollytelling steps rendered inside the sticky viewport
-// (this drives what we render in the viewport, in which order, and with which fields per step)
+
+/* -------------------------------
+   0) global configuration
+   - the linear narrative rendered inside the scrolly track
+-------------------------------- */
+
 const config = {
   steps: [
-    // defining the first intro card
+    // intro card 1 (text + small illustration)
     {
       id: "intro-1",
       type: "card",
@@ -13,7 +17,8 @@ const config = {
         alt: "Sampler house and trees motif",
       },
     },
-    // second intro card
+
+    // intro card 2
     {
       id: "intro-2",
       type: "card",
@@ -24,686 +29,642 @@ const config = {
         alt: "A small embroidered tree motif",
       },
     },
-    // sampler intro section showing three samplers
-    {
-      id: "sampler-intro",
-      type: "sampler-intro",
-      content: {
-        text:
-          "In Revolutionary-era America, young women stitched samplers—linen squares used to practice letters, numbers, and the discipline of the hand.",
-        samplers: [
-          "assets/samplers/edanmdm:nmah_639698.png",
-          "assets/samplers/edanmdm:nmah_649894.png",
-          "assets/samplers/edanmdm:nmah_1134702.png",
-        ],
-      },
-    },
 
-    // new single-image sampler-intro style step (now placed after sampler-intro)
-    // (same visual language as sampler-intro, but with one large image; text is kept in the card)
-    {
-      id: "sampler-single",
-      type: "sampler-intro-single",
-      content: {
-        text: "These embroidered works displayed patience and skill. They mirrored the ideals of the new republic—training women to embody virtue through education, morality, and domestic order.",
-  image: "assets/edanmdm:nmah_639739-details.png",
-        alt: "Sampler showing skill, patience, and diligence."
-      }
-    },
-    // compartment step that crossfades between sampler images with a label and progress bar
-    // (scroll progress drives the crossfade; arrows also nudge progress)
-    {
-      id: "sampler-compartment",
-      type: "compartment",
-      content: {
-        text:
-          "Each sampler holds its own system.\nAlphabets, houses, verses practiced one stitch at a time.",
-        compartments: [
-          { image: "assets/samplers/edanmdm:nmah_643873.png",  label: "Alphabets" },
-          { image: "assets/samplers/edanmdm:nmah_644829.png",  label: "Alphabets" },
-          { image: "assets/samplers/edanmdm:nmah_1139039.png", label: "Alphabets" },
-          { image: "assets/samplers/edanmdm:nmah_1093871.png", label: "Houses" },
-          { image: "assets/samplers/edanmdm:nmah_1341531.png", label: "Houses" },
-          { image: "assets/samplers/edanmdm:nmah_649885.png",  label: "Houses" },
-          { image: "assets/samplers/edanmdm:nmah_639698.png",  label: "Verses" },
-          { image: "assets/samplers/edanmdm:nmah_1141751.png", label: "Verses" },
-        ],
-      },
-    },
+    /* ----------------------------------------------------------------------
+       note: sampler-specific scenes are shown inside the modal, not on track
+    ---------------------------------------------------------------------- */
 
-    // object grid step (categories rotate as you scroll within the step)
-    // (we’ll load a manifest per category and render a 7×3 grid)
+    // object grid step: category changes as the user scrolls within this step
     {
       id: "rituals",
       type: "object-grid",
       content: {
         text:
-          "These rituals and repetitions extended across other habits, each one revealing glimpses of how life was imagined and ordered.",
+          "Each object belonged to a rhythm of ritual and habit, through which life was imagined and ordered.",
       },
     },
-    // outro card
+
+    // outro card (handoff to treemap)
     {
       id: "outro",
       type: "card",
       content: {
-      text:
-        "From the material remains of everyday actions, a pattern emerges—tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
+        text:
+          "From the material remains of everyday actions, a pattern emerges—tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
       },
     },
 
-    // final step: treemap
-    // (the markup for svg + details panel is injected here; treemap.js binds behavior)
+    // treemap container (svg is injected; behavior is in treemap.js)
     {
       id: "treemap",
       type: "treemap",
-      content: {}
+      content: {},
     },
   ],
 };
 
+/* -------------------------------
+   grid category registry
+   - keys map to "family" stories and to asset/metadata sources
+   - manifest.json files list image filenames; csv provides tooltip metadata
+-------------------------------- */
 
-// defining the object-grid categories, their file roots, manifests, and optional csv metadata
-// (the csv provides tooltip info keyed by EDANurl-derived ids; manifests list image filenames)
 const GRID_CATEGORIES = [
-  { key: "samplers", label: "Samplers", path: "assets/samplers",
+  {
+    key: "samplers",
+    label: "Samplers",
+    path: "assets/samplers",
     manifest: "assets/samplers/manifest.json",
-    csv: "treemap_data/final_database_with_materials.csv" },
-  { key: "mugs",   label: "Mugs",   path: "assets/mugs",
+    csv: "treemap_data/final_database_with_materials.csv",
+  },
+  {
+    key: "mugs",
+    label: "Pharmaceutical jars",
+    path: "assets/mugs",
     manifest: "assets/mugs/manifest.json",
-    csv: "treemap_data/final_database_with_materials.csv" },
-  { key: "teapots",  label: "Teapots",  path: "assets/teapots",
+    csv: "treemap_data/final_database_with_materials.csv",
+  },
+  {
+    key: "teapots",
+    label: "Teapots",
+    path: "assets/teapots",
     manifest: "assets/teapots/manifest.json",
-    csv: "treemap_data/final_database_with_materials.csv" },
-  { key: "pocket watches",    label: "Pocket Watches",    path: "assets/pocket_watches",
-    manifest: "assets/pocket_watches/manifest.json",
-    csv: "treemap_data/final_database_with_materials.csv" },
+    csv: "treemap_data/final_database_with_materials.csv",
+  },
+  {
+    key: "fire marks",
+    label: "Fire Marks",
+    path: "assets/fire_marks",
+    manifest: "assets/fire_marks/manifest.json",
+    csv: "treemap_data/final_database_with_materials.csv",
+  },
 ];
 
+/* -------------------------------
+   1) runtime state
+   - single source of truth for all transient ui variables
+-------------------------------- */
 
-// centralizing runtime state (active step, per-step progress, timeline, etc.)
-// (single source of truth for scroll math + which scene is active)
 let state = {
-  activeStepIndex: -1,    // which step is currently “on screen”, starting at -1 = hero
-  compartmentProgress: 0, // how far through the sampler-compartment we are (0→1) - other code uses this to crossfade images and fill the progress bar
-  samplerIntroProgress: 0,// how far through the sampler-intro (the three big samplers) we are (0→1)
-  objectGridCategory: 0,  // deciding which category to load into the object grid step (defined below, samplers is 0/teapots is 1/books is 2/clocks is 3)
-  segments: []            // precomputed scroll ranges for hero + each step (each item says "this step occupies t from X to Y”)
+  activeStepIndex: -1,      // which track step is active (-1 means hero)
+  compartmentProgress: 0,   // 0..1 position across images in a compartment slide
+  samplerIntroProgress: 0,  // legacy reveal support; harmless if unused
+  objectGridCategory: 0,    // which family is currently shown in the grid
+  segments: [],             // normalized scroll segments (hero + steps)
+  storyIndex: 0,            // active slide index inside the story modal
+  storySlides: [],          // slide configuration array mounted in modal
+  _lastActiveStepIndex: -2, // previous step index to detect boundary crosses
 };
 
+/* -------------------------------
+   2) segment helpers
+   - locate segments by id and map global progress to local step progress
+-------------------------------- */
 
-
-// === helper utilities for segment math and lookup ===========================
-
-// getting the segment object (start, end, height, etc.) that matches a given step id
-// (saves repeated lookups across the code)
-function segmentOf(id) { 
-  return state.segments.find(s => s.id === id);
+function segmentOf(id) {
+  return state.segments.find((s) => s.id === id);
 }
 
-// computing local progress within a step, given global scroll progress t ∈ [0,1]
-// (maps the big 0..1 scroll to the subrange of a specific step, then normalizes)
 function localProgress(t, stepId) {
   const seg = segmentOf(stepId);
   if (!seg) return 0;
-  // converting absolute scroll (t) into normalized progress for this step only
-  // (t - seg.start) moves origin to step start, dividing by step length rescales 0..1
-  // clamp ensures progress never goes below 0 or above 1
   return Math.max(0, Math.min(1, (t - seg.start) / (seg.end - seg.start)));
 }
 
+/* -------------------------------
+   3) timeline setup
+   - stitch vh-length chunks and normalize to [0,1]
+   - ensures scroll pacing is independent of content height
+-------------------------------- */
 
-// === configuring virtual heights for steps (measured in viewport heights) ===
-
-// defining how long each scene should last in scroll distance
-// (each segment’s “h” is in vh units; we sum them to build one large runway)
-const DEFAULT_VH = 120; // standard scene length
+const DEFAULT_VH = 120;
 const PER_STEP_VH = {
-  "sampler-compartment": 200, // even slower scroll for compartment scene
-  "rituals": 280,            // slower scroll for grid section
-  "treemap": 100
+  rituals: 280, // longer runway to make category changes legible
+  treemap: 100, // slightly shorter so the viz enters sooner
 };
 
-
-// === building a normalized scroll timeline for every segment ===============
-
-// builds state.segments with normalized [start,end] ranges that partition t ∈ [0..1]
-// (hero is included as the first “segment”, index 0)
 function buildSegments() {
-  // starting timeline with hero section (treated like a step)
   const segs = [{ id: "hero", h: DEFAULT_VH }];
+  config.steps.forEach((s) => segs.push({ id: s.id, h: PER_STEP_VH[s.id] || DEFAULT_VH }));
 
-  // adding each configured step and assigning its height (default or custom)
-  config.steps.forEach(s => 
-    segs.push({ id: s.id, h: PER_STEP_VH[s.id] || DEFAULT_VH })
-  );
-
-  // summing up total virtual height for all segments (used to normalize 0..1)
   const totalVH = segs.reduce((a, s) => a + s.h, 0);
+  let acc = 0;
 
-  // walking through each segment to assign normalized start/end values
-  let acc = 0; // running accumulator of heights
-  return segs.map(s => {
-    const start = acc / totalVH;       // start position as fraction of total
-    const end = (acc + s.h) / totalVH; // end position as fraction of total
-    acc += s.h;                        // advancing accumulator for next segment
-    // returning the enriched segment with its bounds and totalVH context
+  return segs.map((s) => {
+    const start = acc / totalVH;
+    const end = (acc + s.h) / totalVH;
+    acc += s.h;
     return { ...s, start, end, totalVH };
   });
 }
 
-
-// === setting up the scrollable runway inside the main container =============
-
-// converts the sum of segment heights into a real min-height on the track,
-// which makes the container scrollable through all scenes
 function setTrackHeight() {
   const track = document.querySelector(".scrolly-track");
-  // summing all segment virtual heights
   const total = state.segments.reduce((a, s) => a + s.h, 0);
-  // setting the track’s physical height so all scenes can be scrolled
   if (track) track.style.minHeight = `${total}vh`;
 }
 
+/* -------------------------------
+   4) convenience scroll actions
+   - semantic jumps used by buttons (e.g., jump to treemap)
+-------------------------------- */
 
-// === programmatic scroll jump directly into the treemap scene ===============
-
-// convenience jump used by the hero cta: scrolls just inside the treemap segment
-// (epsilon avoids landing exactly on a boundary due to float rounding)
 function scrollToTreemapStart(behavior = "instant") {
   const container = document.getElementById("scrollContainer");
   const seg = segmentOf("treemap");
   if (!container || !seg) return;
-  const scrollHeight = container.scrollHeight - container.clientHeight;
 
-  // land just INSIDE the START of the treemap segment
+  const scrollHeight = container.scrollHeight - container.clientHeight;
   const epsilon = Math.max(0.0003, (seg.end - seg.start) * 0.02);
   const t = Math.min(1, seg.start + epsilon);
 
   container.scrollTo({ top: Math.round(t * scrollHeight), behavior });
 }
 
+/* -------------------------------
+   5) ui wiring (hero/about)
+   - hero cta jump + reset
+   - simple "about" modal with focus trap and escape to close
+-------------------------------- */
 
-
-// === enabling the hero "Objects by Use" button ==============================
-
-// exposes a low-latency path to the treemap: scrolls, then politely requests a reset
 function setupHeroObjectsButton() {
   const btn = document.getElementById("heroBtnObjects");
   if (!btn) return;
 
-  // removing disabled attributes (for accessibility and visual state)
   btn.removeAttribute("disabled");
   btn.setAttribute("aria-disabled", "false");
 
-  // wiring a click → direct scroll into treemap
-btn.addEventListener("click", () => {
-  // scroll to the START of the treemap segment
-  scrollToTreemapStart("instant");
-
-  // after the layout is in view, force the overview
-  // rAF twice ensures the sticky section has painted before we reset.
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    // 'resetTreemapToOverview' lives in treemap.js; make it global or expose via window.
-    if (window.resetTreemapToOverview) window.resetTreemapToOverview();
-  }));
-});
+  btn.addEventListener("click", () => {
+    scrollToTreemapStart("instant");
+    // reset treemap selection after scroll is applied (double rAF)
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        if (window.resetTreemapToOverview) window.resetTreemapToOverview();
+      })
+    );
+  });
 }
 
-// === About modal: open/close + Esc + backdrop + basic focus trap ===
-// little modal manager: opens on button, closes on backdrop/esc/x, preserves focus
 function setupAboutModal() {
-  const modal   = document.getElementById('aboutModal');
-  const openBtn = document.getElementById('aboutBtn');
+  const modal = document.getElementById("aboutModal");
+  const openBtn = document.getElementById("aboutBtn");
   if (!modal || !openBtn) return;
 
-  const backdrop = modal.querySelector('.modal-backdrop');
-  const closeEls = modal.querySelectorAll('[data-close]');
-
+  const backdrop = modal.querySelector(".modal-backdrop");
+  const closeEls = modal.querySelectorAll("[data-close]");
   let lastFocus = null;
+
   const focusables = () =>
     modal.querySelectorAll('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])');
 
   const open = () => {
     lastFocus = document.activeElement;
-    modal.removeAttribute('hidden');
-    document.body.classList.add('modal-open');
+    modal.removeAttribute("hidden");
+    document.body.classList.add("modal-open");
     const f = focusables()[0] || modal;
-    if (f && f.focus) f.focus({ preventScroll: true });
+    if (f?.focus) f.focus({ preventScroll: true });
   };
 
   const close = () => {
-    modal.setAttribute('hidden', '');
-    document.body.classList.remove('modal-open');
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    modal.setAttribute("hidden", "");
+    document.body.classList.remove("modal-open");
+    lastFocus?.focus?.();
   };
 
-  openBtn.addEventListener('click', (e) => { e.preventDefault(); open(); });
-  backdrop.addEventListener('click', close);
-  closeEls.forEach(el => el.addEventListener('click', close));
+  openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    open();
+  });
 
-  // Esc to close + simple focus trap inside the modal
-  modal.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { e.preventDefault(); close(); return; }
-    if (e.key !== 'Tab') return;
+  backdrop.addEventListener("click", close);
+  closeEls.forEach((el) => el.addEventListener("click", close));
+
+  modal.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      close();
+      return;
+    }
+    if (e.key !== "Tab") return;
 
     const f = Array.from(focusables());
     if (!f.length) return;
+
     const i = f.indexOf(document.activeElement);
-    if (e.shiftKey && (i <= 0 || i === -1)) { e.preventDefault(); f[f.length - 1].focus(); }
-    else if (!e.shiftKey && (i === f.length - 1)) { e.preventDefault(); f[0].focus(); }
+    if (e.shiftKey && (i <= 0 || i === -1)) {
+      e.preventDefault();
+      f[f.length - 1].focus();
+    } else if (!e.shiftKey && i === f.length - 1) {
+      e.preventDefault();
+      f[0].focus();
+    }
   });
 }
 
-// hides all floating tooltips when switching steps (to avoid leftover tooltips lingering)
-function hideAllTooltips(){
-  document.getElementById('gridTooltip')?.style?.setProperty('display','none');
-  document.getElementById('treemap-tooltip')?.style?.setProperty('display','none');
+/* -------------------------------
+   6) tooltip housekeeping
+   - single place to hide tooltips on step changes / global gestures
+-------------------------------- */
+
+function hideAllTooltips() {
+  document.getElementById("gridTooltip")?.style?.setProperty("display", "none");
+  document.getElementById("treemap-tooltip")?.style?.setProperty("display", "none");
 }
 
-// === generating the DOM structure for each narrative step ===================
+/* -------------------------------
+   7) step rendering
+   - template strings per step type; css handles layout
+-------------------------------- */
 
-// injects one wrapper per configured step into #stepsContainer
 function renderSteps() {
   const container = document.getElementById("stepsContainer");
-  container.innerHTML = ""; // clearing any previous content
+  container.innerHTML = "";
 
-  // looping through the step config and rendering one wrapper per step
-  config.steps.forEach(step => {
+  config.steps.forEach((step) => {
     const stepEl = document.createElement("div");
-    stepEl.className = "scrolly-step";       // shared class for scroll logic
-    stepEl.id = `step-${step.id}`;           // unique id for targeting
-    stepEl.innerHTML = renderStepContent(step); // inserting type-specific HTML
-    container.appendChild(stepEl);           // adding to the viewport
+    stepEl.className = "scrolly-step";
+    stepEl.id = `step-${step.id}`;
+    stepEl.innerHTML = renderStepContent(step);
+    container.appendChild(stepEl);
   });
 }
 
-
-// === producing the inner HTML of each step based on its type ================
-
-// returns an innerHTML string tailored to the step.type
 function renderStepContent(step) {
-  // normalizing the type property
-  var t = step && step.type ? step.type : "";
+  const t = step?.type || "";
 
-  // handling the "card" step type (simple text + optional image)
+  // card (intro/outro/default)
   if (t === "card") {
-    var c = step.content || {};
-    var txt = c.text || "";     // main body text
-    var img = c.image || "";    // optional image
-    var alt = c.alt || "";      // alt text for accessibility
+    const c = step.content || {};
+    const txt = c.text || "";
+    const img = c.image || "";
+    const alt = c.alt || "";
 
-    // if this is the outro card, render only the card (no button)
-    if (step.id === "outro") {
-      return (
-        '<div class="prelude-card">' +
-          '<p>' + txt + '</p>' +
-          (img ? '<img class="card-image" src="' + img + '" alt="' + alt + '">' : "") +
-        '</div>'
-      );
-    }
-
-    // if this is the first intro card, set consistent smaller image size and margin
     if (step.id === "intro-1" || step.id === "intro-2") {
       return (
         '<div class="prelude-card">' +
-          '<p>' + txt + '</p>' +
-          (img ? '<img class="card-image" src="' + img + '" alt="' + alt + '" style="height:110px;width:auto;max-width:99vw;object-fit:contain;display:block;margin-top:2em;">' : "") +
-        '</div>'
+        `<p>${txt}</p>` +
+        (img
+          ? `<img class="card-image" src="${img}" alt="${alt}" style="height:110px;width:auto;max-width:99vw;object-fit:contain;display:block;margin-top:2em;">`
+          : "") +
+        "</div>"
       );
     }
 
-    // otherwise, render as usual
+    if (step.id === "outro") {
+      return (
+        '<div class="prelude-card">' +
+        `<p>${txt}</p>` +
+        (img ? `<img class="card-image" src="${img}" alt="${alt}">` : "") +
+        "</div>"
+      );
+    }
+
     return (
       '<div class="prelude-card">' +
-        '<p>' + txt + '</p>' +
-        (img ? '<img class="card-image" src="' + img + '" alt="' + alt + '">' : "") +
-      '</div>'
+      `<p>${txt}</p>` +
+      (img ? `<img class="card-image" src="${img}" alt="${alt}">` : "") +
+      "</div>"
     );
   }
 
-  // rendering the sampler intro with a small gallery
+  // sampler-intro (triptych) — used inside the modal
   if (t === "sampler-intro") {
-    var si = step.content || {};
-    var samplers = Array.isArray(si.samplers) ? si.samplers : [];
+    const si = step.content || {};
+    const samplers = Array.isArray(si.samplers) ? si.samplers : [];
     return (
       '<div class="sampler-intro-step">' +
-        '<div class="prelude-card sampler-intro-card"><p>' + (si.text || "") + '</p></div>' +
-        '<div class="sampler-gallery">' +
-          samplers.map(function(img, i){
-            return (
-              '<div class="sampler-item" data-index="' + i + '">' +
-                '<img src="' + img + '" alt="Sampler ' + (i+1) + '">' +
-              '</div>'
-            );
-          }).join("") +
-        '</div>' +
-      '</div>'
+      '<div class="prelude-card sampler-intro-card"><p>' +
+      (si.text || "") +
+      "</p></div>" +
+      '<div class="sampler-gallery">' +
+      samplers
+        .map((img, i) => {
+          return (
+            `<div class="sampler-item" data-index="${i}">` +
+            `<img src="${img}" alt="Sampler ${i + 1}">` +
+            "</div>"
+          );
+        })
+        .join("") +
+      "</div>" +
+      "</div>"
     );
   }
 
-  // rendering the compartment cross-fade layout with arrows and a dynamic label
+  // sampler-intro-side (large image + card) — used inside the modal
+  if (t === "sampler-intro-side") {
+    const cs = step.content || {};
+    const img = cs.image || "";
+    const alt = cs.alt || "Object";
+    const txt = cs.text || "";
+    return (
+      '<div class="sampler-intro-step side-by-side">' +
+      '<div class="sampler-image-wrap">' +
+      `<img src="${img}" alt="${alt}">` +
+      "</div>" +
+      '<div class="sampler-text-wrap prelude-card sampler-intro-card">' +
+      `<p>${txt}</p>` +
+      "</div>" +
+      "</div>"
+    );
+  }
+
+  // compartment (stacked images cross-faded via normalized progress)
   if (t === "compartment") {
-    var cc = step.content || {};
-    var items = Array.isArray(cc.compartments) ? cc.compartments : [];
-    var firstLabel = items.length ? (items[0].label || "") : "";
+    const cc = step.content || {};
+    const items = Array.isArray(cc.compartments) ? cc.compartments : [];
+    const firstLabel = items.length ? items[0].label || "" : "";
 
     return (
       '<div class="compartment-container">' +
-        '<div class="sampler-viewport">' +
-          items.map(function(comp, i){
-            var src = (comp && comp.image) ? comp.image : "";
-            var lab = (comp && comp.label) ? comp.label : ("Compartment " + (i+1));
-            return (
-              '<div class="viewport-image" data-index="' + i + '">' +
-                '<img src="' + src + '" alt="' + lab + '">' +
-              '</div>'
-            );
-          }).join("") +
-          '<button class="img-arrow img-arrow-left" aria-label="Previous image">&#8592;</button>' +
-          '<button class="img-arrow img-arrow-right" aria-label="Next image">&#8594;</button>' +
-          '<div class="viewport-label" id="viewportLabel">' + firstLabel + '</div>' +
-        '</div>' +
-
-        '<div class="prelude-card compartment-card">' +
-          '<p>' + (cc.text || "") + '</p>' +
-          '<div class="progress-bar"><div class="progress-fill"></div></div>' +
-        '</div>' +
-      '</div>'
+      // visual stage with layered images + arrows + live label
+      '<div class="sampler-viewport">' +
+      items
+        .map((comp, i) => {
+          const src = comp?.image || "";
+          const lab = comp?.label || `Compartment ${i + 1}`;
+          return (
+            `<div class="viewport-image" data-index="${i}">` +
+            `<img src="${src}" alt="${lab}">` +
+            "</div>"
+          );
+        })
+        .join("") +
+      '<button class="img-arrow img-arrow-left" aria-label="Previous image"></button>' +
+      '<button class="img-arrow img-arrow-right" aria-label="Next image"></button>' +
+      `<div class="viewport-label" id="viewportLabel">${firstLabel}</div>` +
+      "</div>" +
+      // caption card with linear progress bar
+      '<div class="prelude-card compartment-card">' +
+      `<p>${cc.text || ""}</p>` +
+      '<div class="progress-bar"><div class="progress-fill"></div></div>' +
+      "</div>" +
+      "</div>"
     );
   }
 
-      // rendering the single-image sampler-intro style step (card above image)
-      if (t === "sampler-intro-single") {
-        var cs = step.content || {};
-        var img = cs.image || "";
-        var alt = cs.alt || "Sampler";
-        var txt = cs.text || "";
-        return (
-            '<div class="sampler-intro-step" style="gap:1.2vh;">' +
-              '<div class="prelude-card sampler-intro-card"><p>' + txt + '</p></div>' +
-              '<div class="sampler-gallery">' +
-                '<div class="sampler-item visible" data-index="0">' +
-                  '<img src="' + img + '" alt="' + alt + '" style="height:clamp(440px,44vh,600px);width:auto;max-width:99vw;object-fit:contain;display:block;">' +
-                '</div>' +
-              '</div>' +
-            '</div>'
-        );
-      }
+  // single hero image + card — used inside the modal
+  if (t === "sampler-intro-single") {
+    const cs = step.content || {};
+    const img = cs.image || "";
+    const alt = cs.alt || "Sampler";
+    const txt = cs.text || "";
+    return (
+      '<div class="sampler-intro-step" style="gap:1.2vh;">' +
+      '<div class="prelude-card sampler-intro-card"><p>' +
+      txt +
+      "</p></div>" +
+      '<div class="sampler-gallery">' +
+      '<div class="sampler-item visible" data-index="0">' +
+      `<img src="${img}" alt="${alt}" style="height:clamp(440px,44vh,600px);width:auto;max-width:99vw;object-fit:contain;display:block;">` +
+      "</div>" +
+      "</div>" +
+      "</div>"
+    );
+  }
 
-// rendering the object grid step with unified, full-row buttons
-if (t === "object-grid") {
-  var og = step.content || {};
-  var ogText = og.text || "";
+  // object grid step (left column: narrative + category selector; right: grid)
+  if (t === "object-grid") {
+    const og = step.content || {};
+    const ogText = og.text || "";
 
-  // labels for the action chips and object categories
-  var chipLabels = [
-    "Textile Making",
-    "Healing & Caring",
-    "Eating, Cooking & Drinking",
-    "Measuring & Navigating"
-  ];
-  var categories = ["Samplers", "Pharmaceutical jars", "Teapots", "Pocket watches"];
+    // labels mirror GRID_CATEGORIES order for clarity
+    const chipLabels = [
+      "Textile Making",
+      "Healing & Caring",
+      "Eating, Cooking & Drinking",
+      "Lighting & Firekeeping",
+    ];
+    const categories = ["Samplers", "Pharmaceutical jars", "Teapots", "Fire marks"];
 
-  return (
-    '<div class="object-grid-step">' +
+    return (
+      '<div class="object-grid-step">' +
       '<div class="grid-wrapper">' +
-        '<div class="grid-left-col">' +
-          '<div class="prelude-card object-grid-card"><p>' + ogText + '</p></div>' +
+      '<div class="grid-left-col">' +
+      `<div class="prelude-card object-grid-card"><p>${ogText}</p></div>` +
+      '<div class="category-selector" id="categorySelector" role="radiogroup" aria-label="Filter by object">' +
+      categories
+        .map((cat, i) => {
+          const storyKey = GRID_CATEGORIES[i]?.key || "";
+          return (
+            `<button type="button" class="category-option ${i === 0 ? "active" : ""}" ` +
+            `data-category-index="${i}" role="radio" aria-checked="${i === 0 ? "true" : "false"}">` +
+            `<span class="option-label object-label">${cat}</span>` +
+            `<span class="option-chip editable-chip family-labels-html">${chipLabels[i]}</span>` +
+            `<span class="view-story-btn category-view" role="button" tabindex="0" data-story="${storyKey}">View story</span>` +
+            "</button>"
+          );
+        })
+        .join("") +
+      "</div>" +
+      "</div>" +
+      '<div class="image-grid" id="imageGrid"></div>' +
+      "</div>" +
+      "</div>"
+    );
+  }
 
-          // one clickable row per object–action pair
-          '<div class="category-selector" id="categorySelector" role="radiogroup" aria-label="Filter by object">' +
-            categories.map(function(cat, i){
-              return (
-                '<button type="button" class="category-option ' + (i===0 ? 'active' : '') + '" ' +
-                        'data-category-index="' + i + '" role="radio" ' +
-                        'aria-checked="' + (i===0 ? 'true' : 'false') + '">' +
-
-                  // object name
-                  '<span class="option-label object-label">' + cat + '</span>' +
-
-                  // action chip
-                  '<span class="option-chip editable-chip family-labels-html">' + chipLabels[i] + '</span>' +
-
-                '</button>'
-              );
-            }).join("") +
-          '</div>' +
-        '</div>' +
-
-        '<div class="image-grid" id="imageGrid"></div>' +
-      '</div>' +
-    '</div>'
-  );
-}
-
-
-  // rendering the treemap container expected by treemap.js (svg + details panel + controls)
-  // (the mode toggle buttons are created in JS and positioned over .treemap-stage)
+  // treemap host structure (expected by treemap.js)
   if (t === "treemap") {
     return (
       '<div class="treemap-step">' +
-        '<div class="viz-wrap" id="treemap-section">' +
-          '<h2 class="section-title">Traces of an Ordinary Life</h2>' +
-          '<p class="viz-hint">Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.</p>' +
-          '<p class="viz-hint-small">Click on a group to see the objects inside.</p>' +
-
-          '<div class="treemap-controls" aria-label="Treemap controls">' +
-            '<div class="zoom-card"><span class="zoom-title">All Actions</span></div>' +
-            '<button class="back-to-all is-ghost">← Back to all actions</button>' +
-          '</div>' +
-
-          '<div class="treemap-stage viz-stage">' +
-            '<svg id="treemap-svg" class="treemap"' +
-              ' viewBox="0 0 1000 490" preserveAspectRatio="none"' +
-              ' role="img" aria-label="Treemap of objects grouped by action"></svg>' +
-
-            '<div id="details" class="details-panel" hidden>' +
-              '<div class="details-header">' +
-                '<h3 id="details-title" class="details-title"></h3>' +
-                '<button class="details-close" aria-label="Close details">×</button>' +
-              '</div>' +
-              '<p class="details-subtitle"></p>' +
-              '<ul id="details-list" class="details-list"></ul>' +
-            '</div>' +
-          '</div>' +
-        '</div>' +
-      '</div>' +
-
-      // defining the singleton global tooltip node for the treemap
+      '<div class="viz-wrap" id="treemap-section">' +
+      '<h2 class="section-title">Traces of an Ordinary Life</h2>' +
+      '<p class="viz-hint">Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.</p>' +
+      '<p class="viz-hint-small">Click on a group to see the objects inside.</p>' +
+      '<div class="treemap-controls" aria-label="Treemap controls">' +
+      '<div class="zoom-card"><span class="zoom-title">All Actions</span></div>' +
+      '<button class="back-to-all is-ghost">← Back to all actions</button>' +
+      "</div>" +
+      '<div class="treemap-stage viz-stage">' +
+      '<svg id="treemap-svg" class="treemap" viewBox="0 0 1000 490" preserveAspectRatio="none" role="img" aria-label="Treemap of objects grouped by action"></svg>' +
+      '<div id="details" class="details-panel" hidden>' +
+      '<div class="details-header">' +
+      '<h3 id="details-title" class="details-title"></h3>' +
+      '<button class="details-close" aria-label="Close details">×</button>' +
+      "</div>" +
+      '<p class="details-subtitle"></p>' +
+      '<ul id="details-list" class="details-list"></ul>' +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      "</div>" +
       '<div class="treemap-tooltip" id="treemap-tooltip" aria-hidden="true"></div>'
     );
   }
 
-  // returning empty string for unknown step types (safe fallback)
+  // unknown type → render nothing
   return "";
 }
 
+/* -------------------------------
+   8) scroll listener + step logic
+   - compute global progress, set active step, and drive per-step updates
+-------------------------------- */
 
-// wiring the scroll listener on the internal scroller and fanning out to per-step updaters
-// (single scroll handler that updates global -> local progress and triggers per-step reactions)
 function setupScrollListener() {
   const container = document.getElementById("scrollContainer");
-  container.addEventListener("scroll", () => {
-    // computing overall progress t ∈ [0..1] and setting which step is active
-    const t = computeProgressAndActive();
+  container.addEventListener(
+    "scroll",
+    () => {
+      const t = computeProgressAndActive();
+      updateStepVisibility(t);
+      updateSamplerIntroReveal(t); // no-op unless that step exists on track
+      updateObjectGridProgress(t);
+      updateUpArrowVisibility();
+      updateViewportBackgroundGrid();
 
-    // updating visibility and per-step visuals based on the new progress
-    updateStepVisibility(t);          // showing either hero or the active step
-    updateCompartmentProgress(t);     // driving the cross-fade in the sampler-compartment
-    updateSamplerIntroReveal(t);      // revealing sampler-intro tiles progressively
-    updateObjectGridProgress(t);      // switching grid category by quartiles
-    updateUpArrowVisibility();        // toggling the return-to-top control
-    updateViewportBackgroundGrid();   // swapping the background to grid outside hero
-    // === prevent scrolling past the treemap ===
-    const maxScroll = container.scrollHeight - container.clientHeight;
-    if (container.scrollTop > maxScroll - 2) {
-      container.scrollTop = maxScroll - 2; // lock at bottom
-    }
-  }, { passive: true });
+      // guard: keep scrollTop within the valid range near the bottom
+      const maxScroll = container.scrollHeight - container.clientHeight;
+      if (container.scrollTop > maxScroll - 2) container.scrollTop = maxScroll - 2;
+    },
+    { passive: true }
+  );
 }
 
-
-// computing 0..1 scroll progress within the internal scroller and setting active step index
-// (maps scrollTop to normalized t; then picks which segment/window contains t)
 function computeProgressAndActive() {
   const container = document.getElementById("scrollContainer");
-  const scrollTop = container.scrollTop;                              // reading current pixel offset
-  const scrollHeight = container.scrollHeight - container.clientHeight; // computing total scrollable pixels
-  const t = scrollHeight > 0 ? scrollTop / scrollHeight : 0;          // normalizing to 0..1
+  const scrollTop = container.scrollTop;
+  const scrollHeight = container.scrollHeight - container.clientHeight;
+  const t = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
 
-  // mapping t to a step index:
-  // segments[0] is the hero, so real steps begin at segments[1]; we store step indices as 0-based
-  let active = -1; // -1 represents "in hero"
+  let active = -1;
   for (let i = 1; i < state.segments.length; i++) {
     const seg = state.segments[i];
-    // checking if t lies inside this segment’s normalized window
-    if (t >= seg.start && t < seg.end) { active = i - 1; break; }
+    if (t >= seg.start && t < seg.end) {
+      active = i - 1; // subtract hero sentinel
+      break;
+    }
   }
-  state.activeStepIndex = active; // persisting which step is currently active
-  return t;                       // returning t so callers can compute local progress
+  state.activeStepIndex = active;
+  return t;
 }
 
-
-// toggling hero visibility and the active class on the currently visible step
-// (hero hides after its segment ends; only the active step gets .active)
 function updateStepVisibility(t) {
   const heroEl = document.getElementById("heroSection");
   const heroSeg = segmentOf("hero");
+  const inHero = heroSeg ? t < heroSeg.end : state.activeStepIndex === -1;
+  heroEl.classList.toggle("hidden", !inHero);
 
-  // deciding if we are still inside the hero’s segment; falling back to index check if needed
-  const inHero = heroSeg ? (t < heroSeg.end) : (state.activeStepIndex === -1);
-  heroEl.classList.toggle("hidden", !inHero); // hiding hero once we leave its segment
-
-  // adding .active only on the step whose index matches state.activeStepIndex
+  // reflect active class per step for css-driven transitions
   config.steps.forEach((step, i) => {
     const stepEl = document.getElementById(`step-${step.id}`);
     stepEl.classList.toggle("active", i === state.activeStepIndex);
   });
-  // hiding tooltips when switching steps:
+
+  // hide tooltips once on boundary crosses
   if (state._lastActiveStepIndex !== state.activeStepIndex) {
     hideAllTooltips();
     state._lastActiveStepIndex = state.activeStepIndex;
   }
 }
 
-
-// switching the viewport background to grid only while inside steps (not in hero)
-// (purely visual cue: gridded bg helps the story feel structured)
+// background grid appears once outside hero
 function updateViewportBackgroundGrid() {
   const viewportBg = document.getElementById("viewportBg");
-  // adding grid when a step is active; removing it in hero for a cleaner landing
   if (state.activeStepIndex >= 0) viewportBg.classList.add("grid-bg");
   else viewportBg.classList.remove("grid-bg");
 }
 
-
-// updating the compartment cross-fade progress and re-rendering the view
-// (reads local progress and pushes it to the compartment renderer)
-function updateCompartmentProgress(totalProgress) {
-  // converting global t into local progress within the sampler-compartment segment
-  state.compartmentProgress = localProgress(totalProgress, "sampler-compartment");
-  updateCompartmentView(); // using the new progress to set opacities/label/progress bar
-}
-
-
-// revealing sampler-intro thumbnails progressively as you scroll through that step
-// (tiles appear one by one as thresholds are crossed)
+// legacy triptych reveal on a track step named "sampler-intro" (harmless if absent)
 function updateSamplerIntroReveal(totalProgress) {
-  const stepIndex = config.steps.findIndex(s => s.id === "sampler-intro");
-  if (state.activeStepIndex !== stepIndex) return; // doing nothing unless that step is active
+  const stepIndex = config.steps.findIndex((s) => s.id === "sampler-intro");
+  if (state.activeStepIndex !== stepIndex) return;
 
-  const p = localProgress(totalProgress, "sampler-intro"); // local 0..1
+  const p = localProgress(totalProgress, "sampler-intro");
   const step = document.getElementById("step-sampler-intro");
   if (!step) return;
 
-  // revealing tiles one by one as p crosses evenly spaced thresholds
   const items = step.querySelectorAll(".sampler-item");
   items.forEach((el, k) => {
-    const threshold = k / items.length;         // distributing thresholds across items
+    const threshold = k / items.length;
     el.classList.toggle("visible", p > threshold);
   });
 }
 
-
-// loading a new category in the object grid whenever the local progress crosses each quartile
-// (grid steps through 4 categories evenly across the segment)
+// inside "rituals", local progress selects a grid category (quarters across 4 bins)
 function updateObjectGridProgress(totalProgress) {
   const stepId = "rituals";
-  const stepIndex = config.steps.findIndex(s => s.id === stepId);
-  if (state.activeStepIndex !== stepIndex) return; // only reacting while in the grid step
+  const stepIndex = config.steps.findIndex((s) => s.id === stepId);
+  if (state.activeStepIndex !== stepIndex) return;
 
-  const p = localProgress(totalProgress, stepId);  // local 0..1 within the grid segment
-  const n = GRID_CATEGORIES.length;                // expected to be 4 categories
-  const idx = Math.min(n - 1, Math.floor(p * n));  // mapping quarters to indices 0..3
-
-  // switching only when the bucket changes to avoid redundant reloads
+  const p = localProgress(totalProgress, stepId);
+  const n = GRID_CATEGORIES.length;
+  const idx = Math.min(n - 1, Math.floor(p * n));
   if (idx !== state.objectGridCategory) {
-    loadCategory(idx); // fetching/caching manifest and rendering the 7×3 grid
+    loadCategory(idx);
   }
 }
 
+/* -------------------------------
+   9) compartment cross-fade
+   - blend adjacent images by computing a floating index from 0..(n-1)
+   - update label (dominant image) and a linear meter
+-------------------------------- */
 
-
-// computing a two-image cross-fade between adjacent sampler images with a 30% blend window
-// (the math here sets opacities for the stacked images and updates label/progress)
 function updateCompartmentView() {
-  // finding the sampler-compartment step and its dom
-  const i = config.steps.findIndex((s) => s.id === "sampler-compartment");
-  const stepEl = document.getElementById("step-sampler-compartment");
-  if (i === -1 || !stepEl) return;
+  // prefer the active slide inside the open modal
+  const slides = document.querySelectorAll(
+    "#storyModal:not([hidden]) .story-track .story-slide"
+  );
+  const activeSlide = slides[state.storyIndex] || null;
 
-  // grabbing data and elements once to avoid repeated lookups inside the loop
-  const items = config.steps[i].content.compartments;   // array of {image, label}
-  const wraps = stepEl.querySelectorAll(".viewport-image"); // each wrap holds one stacked image
-  const labelEl = stepEl.querySelector("#viewportLabel");   // small pill label over the image
-  const fillEl = stepEl.querySelector(".progress-fill");    // progress bar inside the card
+  // fallback: support a legacy in-track compartment if present
+  const stepEl =
+    activeSlide?.querySelector(".compartment-container") ||
+    document.getElementById("step-sampler-compartment");
 
-  // deriving which two images should be blending right now
-  const n = items.length;
-  const local = state.compartmentProgress;    // progress within this step, 0..1
-  const idxFloat = local * (n - 1);           // mapping 0..1 across (n-1) transitions
-  const idx = Math.floor(idxFloat);           // base image index on the left side of the blend
-  const frac = idxFloat - idx;                // fractional progress between idx and idx+1, 0..1
+  if (!stepEl) return;
 
-  // defining the cross-fade window centered around frac = 0.5
-  // example with blend=0.30: active blend window = [0.35 .. 0.65]
-  const blend = 0.30;                         // 30% overlap
-  const start = 0.5 - blend / 2;              // where the fade-out/fade-in begins
-  const end   = 0.5 + blend / 2;              // where the fade finishes
+  // obtain items: strong data reference if set, then data-attr, then config
+  const items =
+    stepEl._compartments ||
+    (() => {
+      const json = stepEl.getAttribute("data-compartments-json");
+      if (json) {
+        try {
+          return JSON.parse(json);
+        } catch (e) {}
+      }
+      const cfg = (config.steps.find((s) => s.id === "sampler-compartment") || {}).content || {};
+      return Array.isArray(cfg.compartments) ? cfg.compartments : [];
+    })();
 
-  // setting opacity for each stacked image:
-  // - image at idx fades out across the window
-  // - image at idx+1 fades in across the same window
-  // - all other images stay hidden
+  const wraps = stepEl.querySelectorAll(".viewport-image");
+  const labelEl = stepEl.querySelector("#viewportLabel");
+  const fillEl = stepEl.querySelector(".progress-fill");
+  const n = items.length || wraps.length;
+  if (!n) return;
+
+  const local = state.compartmentProgress; // 0..1
+  const idxFloat = local * (n - 1);
+  const idx = Math.floor(idxFloat);
+  const frac = idxFloat - idx;
+
+  // blend within a symmetric window centered at 0.5
+  const blend = 0.3;
+  const start = 0.5 - blend / 2;
+  const end = 0.5 + blend / 2;
+
   wraps.forEach((w, k) => {
     let a = 0;
-    if (k === idx) {
-      // left image staying fully visible before the blend,
-      // then linearly fading to 0 across [start..end]
-      a = frac < start ? 1 : frac > end ? 0 : 1 - (frac - start) / blend;
-    } else if (k === idx + 1) {
-      // right image staying at 0 before the blend,
-      // then linearly rising to 1 across [start..end]
-      a = frac < start ? 0 : frac > end ? 1 : (frac - start) / blend;
-    } else a = 0;
+    if (k === idx) a = frac < start ? 1 : frac > end ? 0 : 1 - (frac - start) / blend;
+    else if (k === idx + 1) a = frac < start ? 0 : frac > end ? 1 : (frac - start) / blend;
     w.style.opacity = a;
   });
 
-  // updating the label to describe whichever image is visually dominant:
-  // - before midpoint (frac <= .5): show current idx label
-  // - after midpoint (frac > .5): show next label
   if (labelEl) {
     const showIdx = Math.min(idx + (frac > 0.5 ? 1 : 0), n - 1);
     labelEl.textContent = items[showIdx]?.label || "";
   }
-
-  // updating the progress bar to match overall local progress (not the blend fraction)
   if (fillEl) fillEl.style.width = `${(local * 100).toFixed(1)}%`;
 }
 
+/* -------------------------------
+   10) misc ui affordances
+   - hero down arrow jump and a "back to top" arrow
+-------------------------------- */
 
-
-// simple helper that jumps just past the hero boundary when clicking the chevron
 function setupHeroDownArrow() {
   const arrow = document.getElementById("scrollIndicator");
   const container = document.getElementById("scrollContainer");
@@ -712,24 +673,17 @@ function setupHeroDownArrow() {
 
   arrow.addEventListener("click", () => {
     const scrollHeight = container.scrollHeight - container.clientHeight;
-    // forcing a position just past the hero/first-step boundary so activation logic definitely flips out of "hero"
-    // using ceil() + small extra pixels avoids landing exactly on the boundary (float rounding can keep you in hero)
     const target = Math.ceil(heroSeg.end * scrollHeight) + 2;
     container.scrollTo({ top: target, behavior: "instant" });
   });
 }
 
-// enabling the persistent “up” arrow button to scroll back to top and toggle its visibility
-// (two parts: click handler for smooth scroll; plus a visibility toggle driven by scroll distance)
 function enableUpArrow() {
   const btn = document.getElementById("upArrow");
   const container = document.getElementById("scrollContainer");
   if (!btn || !container) return;
 
-  // scrolling smoothly to the very top of the internal scroller
   btn.addEventListener("click", () => container.scrollTo({ top: 0, behavior: "smooth" }));
-
-  // seeding initial visibility state (also updated on scroll)
   updateUpArrowVisibility();
 }
 
@@ -738,60 +692,23 @@ function updateUpArrowVisibility() {
   const container = document.getElementById("scrollContainer");
   if (!btn || !container) return;
 
-  // showing the button only after user has scrolled roughly 80% of one viewport height
-  // using window.innerHeight keeps the threshold stable across devices
   const show = container.scrollTop > window.innerHeight * 0.8;
   btn.classList.toggle("visible", show);
 }
 
-// toggling whether the compartment carousel loops when navigating via arrows
-// (set to true so left at the first wraps to last, and vice versa)
-const COMPARTMENT_LOOP = true; // setting false disables wrap-around at ends
+/* -------------------------------
+   11) grid data + category logic
+   - manifest.json → list of filenames → absolute paths
+   - optional csv metadata is indexed by EDAN id for tooltips
+   - d3 join renders a fixed-size page of thumbnails for responsiveness
+-------------------------------- */
 
-// delegating click events for the left/right arrows inside the compartment step
-// (listen on document; arrows may be rendered after the first paint)
-function onImageArrowClick(e) {
-  if (!e.target.matches(".img-arrow-left, .img-arrow-right")) return;
-
-  const stepEl = document.getElementById("step-sampler-compartment");
-  if (!stepEl) return;
-
-  // reading how many stacked images are present; needing at least two to step
-  const n = stepEl.querySelectorAll(".viewport-image").length;
-  if (n < 2) return;
-
-  // computing one "step" of progress as the distance between adjacent images
-  const dir = e.target.classList.contains("img-arrow-left") ? -1 : 1;
-  const stepSize = 1 / (n - 1);
-
-  // moving the local progress by one image, either backward or forward
-  let next = state.compartmentProgress + dir * stepSize;
-
-  if (COMPARTMENT_LOOP) {
-    // wrapping around when stepping past either end (creating a loop)
-    if (next < 0) next = 1;
-    if (next > 1) next = 0;
-  } else {
-    // clamping to the ends when looping is disabled
-    next = Math.max(0, Math.min(1, next));
-  }
-
-  // applying the new progress and re-rendering the cross-fade
-  state.compartmentProgress = next;
-  updateCompartmentView();
-}
-
-// caches for grid manifests (image paths) and optional csv metadata
-// (both keyed by category.key; we lazily fetch and then reuse across switches)
 const _gridManifestCache = new Map();
-const _gridMetaCache     = new Map(); // storing per-category Map(id -> metadata row)
+const _gridMetaCache = new Map();
 
-// ensuring a singleton tooltip element for grid cards
-// (created once at first use; keeps DOM stable while hovering many tiles)
-function ensureTooltip(){
+function ensureTooltip() {
   let el = document.getElementById("gridTooltip");
   if (!el) {
-    // creating once and reusing to avoid dom churn during hover
     el = document.createElement("div");
     el.id = "gridTooltip";
     document.body.appendChild(el);
@@ -799,292 +716,719 @@ function ensureTooltip(){
   return el;
 }
 
-// extracting a stable id from a file path for joining with metadata (dropping extension)
-// (e.g., ".../foo/bar/abc_123.jpg" → "abc_123")
-function idFromPath(path){
+function idFromPath(path) {
   return path.split("/").pop().replace(/\.[^.]+$/, "");
 }
 
-// indexing csv rows by the last segment of EDANurl (removing query/hash; decoding safely)
-// this makes tooltip lookup O(1) by the same id scheme we derive from image paths
-function indexMetadata(rows){
+function indexMetadata(rows) {
   const idx = new Map();
-  rows.forEach(r => {
+  rows.forEach((r) => {
     let u = (r.EDANurl || "").trim();
     if (!u) return;
 
-    // selecting the last path piece, then stripping query/hash if present
     let seg = u.split("/").pop() || u;
     seg = seg.split("?")[0].split("#")[0];
 
-    // decoding percent-encoded pieces defensively
-    try { seg = decodeURIComponent(seg); } catch(e) {}
+    try {
+      seg = decodeURIComponent(seg);
+    } catch (e) {}
 
-    // dropping any file extension to align with idFromPath()
     seg = seg.replace(/\.[^.]+$/, "");
-
     if (seg && !idx.has(seg)) idx.set(seg, r);
   });
   return idx;
 }
 
-// choosing the best-available field among a list for the tooltip (first non-empty wins)
 function pick(row, keys) {
-    for (const k of keys) {
-        const v = (row?.[k] ?? "").toString().trim();
-        if (v) return v;
-    }
-    return "";
+  for (const k of keys) {
+    const v = (row?.[k] ?? "").toString().trim();
+    if (v) return v;
+  }
+  return "";
 }
-// filtering out generic titles (keeping the tooltip compact)
+
 function isLowValueTitle(t) {
-        // Only hide if empty
-        return !t || !t.trim();
+  return !t || !t.trim();
 }
 
-// Capitalize first letter if not already uppercase
 function capitalizeFirstLetter(str) {
-        if (!str) return "";
-        return str.charAt(0).toUpperCase() + str.slice(1);
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// constructing tooltip html (favoring title, linking to EDAN when available; date removed)
-// (keeps copy lightweight; adds materials line when present)
-function tooltipHTML(row){
-    if (!row) return "";
+function tooltipHTML(row) {
+  if (!row) return "";
 
-    // choosing fields with a small fallback strategy
-    const titleRaw = pick(row, ["title"]);
-    const materials = pick(row, ["materials"]);
-    const url      = pick(row, ["EDANurl","edanurl","URL","Url"]);
+  const titleRaw = pick(row, ["title"]);
+  const materials = pick(row, ["materials"]);
+  const url = pick(row, ["EDANurl", "edanurl", "URL", "Url"]);
 
-    // capitalize first letter for all tooltip elements
-    const title = capitalizeFirstLetter(titleRaw);
-    const materialsCap = capitalizeFirstLetter(materials);
+  const title = capitalizeFirstLetter(titleRaw);
+  const materialsCap = capitalizeFirstLetter(materials);
 
-    // deciding whether the title adds value (many records use overly generic titles)
-    const showTitle = title && !isLowValueTitle(title);
+  const parts = [];
 
-    // accumulating only meaningful parts, then joining them at the end
-    const parts = [];
-    if (showTitle) {
-        // linking to the EDAN page when available; keeping link noopener for safety
-        parts.push(
-            `<div class="tt-title">${
-                url ? `<a href="${url}" target="_blank" rel="noopener">${title}</a>` : title
-            }</div>`
-        );
-    }
+  if (title && !isLowValueTitle(title)) {
+    parts.push(
+      `<div class="tt-title">${
+        url ? `<a href="${url}" target="_blank" rel="noopener">${title}</a>` : title
+      }</div>`
+    );
+  }
 
-    // falling back to a simple “view record” link if title is empty
-    if (!parts.length && url) {
-        parts.push(`<div class="tt-row"><a href="${url}" target="_blank" rel="noopener">View object record</a></div>`);
-    }
+  if (!parts.length && url) {
+    parts.push(
+      `<div class="tt-row"><a href="${url}" target="_blank" rel="noopener">View object record</a></div>`
+    );
+  }
 
-    // add materials as the last row if present, prefixed with "materials:"
-    if (materialsCap) {
-        parts.push(`<div class="tt-row tt-materials">Materials: ${materialsCap}</div>`);
-    }
+  if (materialsCap) {
+    parts.push(`<div class="tt-row tt-materials">Materials: ${materialsCap}</div>`);
+  }
 
-    return parts.join("");
+  return parts.join("");
 }
 
-// positioning the tooltip near the cursor while avoiding viewport overflow
-// (bottom-right bias; flips when close to edges; stays inside viewport)
-function positionTooltip(el, clientX, clientY){
-  const pad = 12;                            // keeping a small padding from edges
-  el.style.display = "block";                // ensuring layout is measurable
-  el.style.left = "0px"; el.style.top = "0px";
-  const rect = el.getBoundingClientRect();   // measuring tooltip size
+function positionTooltip(el, clientX, clientY) {
+  const pad = 12;
+  el.style.display = "block";
+  el.style.left = "0px";
+  el.style.top = "0px";
 
-  // defaulting to bottom-right offset from the cursor
+  const rect = el.getBoundingClientRect();
   let x = clientX + 14;
   let y = clientY + 14;
 
-  // flipping horizontally if the tooltip would overflow the viewport
-  if (x + rect.width + pad > window.innerWidth)  x = clientX - rect.width - 14;
-  // flipping vertically when necessary
+  if (x + rect.width + pad > window.innerWidth) x = clientX - rect.width - 14;
   if (y + rect.height + pad > window.innerHeight) y = clientY - rect.height - 14;
 
-  // clamping to stay inside the viewport with a small pad
   el.style.left = Math.max(pad, x) + "px";
-  el.style.top  = Math.max(pad, y) + "px";
+  el.style.top = Math.max(pad, y) + "px";
 }
 
-// rendering a 7×3 grid (21 tiles) from a set of image paths, wiring tooltips if metadata is available
-// (data-join keyed by path; handles broken images quietly; lazy loads)
 function renderGridFromPaths(paths, metaIndex = null) {
   const sel = d3.select("#imageGrid");
-  const visible = paths.slice(0, 21); // enforcing 7×3 cap
+  const visible = paths.slice(0, 21); // small page for fast first paint
 
-  // joining data to .grid-item cards (keyed by path so updates map cleanly)
-  const cards = sel.selectAll(".grid-item")
-    .data(visible, d => d)
+  const cards = sel
+    .selectAll(".grid-item")
+    .data(visible, (d) => d) // key by full path
     .join(
-      enter => {
-        // creating a wrapper per tile and adding <img> once
+      (enter) => {
         const g = enter.append("div").attr("class", "grid-item");
         g.append("img");
         return g;
       },
-      update => update,      // keeping existing nodes as-is
-      exit => exit.remove()  // removing tiles that fall out of the 21 cap
+      (update) => update,
+      (exit) => exit.remove()
     );
 
-  // updating the <img> attributes for both enter and update selections
   const imgs = cards.select("img");
   imgs
-    .attr("loading", "lazy")                                  // letting the browser defer offscreen images
-    .attr("src", d => encodeURI(d))                           // encoding any spaces or special chars
-    .attr("alt", (d, i) =>                                    // supplying a simple, indexed alt text
-      `${GRID_CATEGORIES[state.objectGridCategory].label} ${i+1}`
-    )
-    .on("error", function (event, d) {                        // marking broken sources (optional styling hook)
+    .attr("loading", "lazy")
+    .attr("src", (d) => encodeURI(d))
+    .attr("alt", (d, i) => `${GRID_CATEGORIES[state.objectGridCategory].label} ${i + 1}`)
+    .on("error", function (_event, d) {
       this.classList.add("img-broken");
-      console.warn("Image failed:", d);
+      console.warn("image failed:", d);
     });
 
-  // wiring tooltips on the card container for consistent enter/leave behavior
+  // tooltip on hover when metadata is available
   const tip = ensureTooltip();
-
   cards
     .on("mouseenter", function (event, d) {
-      if (!metaIndex) return;                 // skipping tooltips when no metadata is loaded
-      const id  = idFromPath(d);              // extracting id key from path
-      const row = metaIndex.get(id);          // looking up metadata row by id
-      const html = tooltipHTML(row);          // building compact html
+      if (!metaIndex) return;
+      const id = idFromPath(d);
+      const row = metaIndex.get(id);
+      const html = tooltipHTML(row);
       if (!html) return;
-      tip.innerHTML = html;                   // injecting content
-      tip.style.display = "block";            // showing tooltip
+      tip.innerHTML = html;
+      tip.style.display = "block";
       positionTooltip(tip, event.clientX, event.clientY);
     })
     .on("mousemove", function (event) {
-      // updating position only if tooltip is currently visible
-      if (tip.style.display !== "none") {
-        positionTooltip(tip, event.clientX, event.clientY);
-      }
+      if (tip.style.display !== "none") positionTooltip(tip, event.clientX, event.clientY);
     })
     .on("mouseleave", function () {
-      tip.style.display = "none";             // hiding tooltip when leaving the tile
+      tip.style.display = "none";
     });
 }
 
-// fetching the manifest for the selected category, optionally loading csv metadata, then rendering the grid
-// (manifest and metadata are both cached by category.key; failures degrade gracefully)
 function loadCategory(idx) {
   state.objectGridCategory = idx;
 
- document.querySelectorAll(".category-option").forEach((b, k) => {
-  const on = (k === idx);
-  b.classList.toggle("active", on);
-  b.setAttribute("aria-checked", on ? "true" : "false");
-});
+  // update selector state (aria radiogroup)
+  document.querySelectorAll(".category-option").forEach((b, k) => {
+    const on = k === idx;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-checked", on ? "true" : "false");
+  });
 
-
-  // finding the selected category config (paths + optional csv metadata)
   const cat = GRID_CATEGORIES[idx];
   if (!cat) return Promise.resolve();
 
-  // preparing (or loading) the image manifest for this category
+  // manifest list → absolute paths
   const manifestP = _gridManifestCache.has(cat.key)
-    ? Promise.resolve(_gridManifestCache.get(cat.key))     // reusing cached list
-    : d3.json(cat.manifest)                                 // fetching json: ["a.jpg","b.jpg",...]
-        .then((names = []) => names.map(n => `${cat.path}/${n}`))  // resolving to full paths
-        .catch(() => [])                                    // failing gracefully to an empty list
-        .then(paths => { _gridManifestCache.set(cat.key, paths); return paths; });
+    ? Promise.resolve(_gridManifestCache.get(cat.key))
+    : d3
+        .json(cat.manifest)
+        .then((names = []) => names.map((n) => `${cat.path}/${n}`))
+        .catch(() => [])
+        .then((paths) => {
+          _gridManifestCache.set(cat.key, paths);
+          return paths;
+        });
 
-  // preparing (or loading) the metadata index for tooltips (optional)
-  const metaP = (cat.csv
-    ? (_gridMetaCache.has(cat.key)
-        ? Promise.resolve(_gridMetaCache.get(cat.key))      // reusing cached index
-        : d3.csv(cat.csv).then(rows => {
-            const idx = indexMetadata(rows || []);          // building Map(id -> row)
+  // metadata csv → Map index
+  const metaP = cat.csv
+    ? _gridMetaCache.has(cat.key)
+      ? Promise.resolve(_gridMetaCache.get(cat.key))
+      : d3
+          .csv(cat.csv)
+          .then((rows) => {
+            const idx = indexMetadata(rows || []);
             _gridMetaCache.set(cat.key, idx);
             return idx;
-          }).catch(() => null))                              // failing gracefully when csv missing/broken
-    : Promise.resolve(null));
+          })
+          .catch(() => null)
+    : Promise.resolve(null);
 
-  // resolving both in parallel, then updating the grid
   return Promise.all([manifestP, metaP]).then(([paths, metaIndex]) => {
     renderGridFromPaths(paths, metaIndex);
   });
 }
 
-// wiring clicks on the category buttons, nudging scroll to the matching quartile, and loading the category
-// (keeps UX snappy by jumping the scroller to the relevant quarter)
 function setupCategoryButtons() {
   const sel = document.getElementById("categorySelector");
   if (!sel) return;
 
+  // clicks inside the selector
   sel.addEventListener("click", (e) => {
+    // open story modal when clicking "view story"
+    const storyBtn = e.target.closest(".category-view, .view-story-btn");
+    if (storyBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const key = storyBtn.getAttribute("data-story") || "";
+      if (window.openStory) window.openStory(key);
+      return;
+    }
+
+    // change selected category
     const btn = e.target.closest(".category-option");
     if (!btn) return;
-    e.preventDefault(); // <-- important with buttons inside scroll contain, so that they don't jump to the hero
-    
-    // reading which category index was clicked
-    const idx = Number(btn.dataset.categoryIndex);
-    if (!Number.isFinite(idx)) return; // safety guard
 
-    // nudging local scroll position inside the "rituals" segment to align with the selected bucket
+    e.preventDefault();
+    const idx = Number(btn.dataset.categoryIndex);
+    if (!Number.isFinite(idx)) return;
+
+    // align scroll position within the rituals segment to match the selection
     const seg = segmentOf("rituals");
     const container = document.getElementById("scrollContainer");
     if (seg && container) {
-      const n     = document.querySelectorAll(".category-option").length || GRID_CATEGORIES.length;
-      const span  = seg.end - seg.start;
-      const local = seg.start + ((idx + 0.5) / n) * span; // bucket CENTER
-      const y = local * (container.scrollHeight - container.clientHeight); // converting to pixels
-      container.scrollTo({ top: y, behavior: "instant" });      // jumping without animation for snappiness
+      const n = document.querySelectorAll(".category-option").length || GRID_CATEGORIES.length;
+      const span = seg.end - seg.start;
+      const local = seg.start + ((idx + 0.5) / n) * span;
+      const y = local * (container.scrollHeight - container.clientHeight);
+      container.scrollTo({ top: y, behavior: "instant" });
     }
 
-    // loading the chosen category (renders grid; caches manifests/metadata)
     loadCategory(idx);
+  });
+
+  // keyboard activation for the inline "view story" element
+  sel.addEventListener("keydown", (e) => {
+    const storyBtn = e.target.closest(".view-story-btn");
+    if (!storyBtn) return;
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      e.stopPropagation();
+      const key = storyBtn.getAttribute("data-story") || "";
+      if (window.openStory) window.openStory(key);
+    }
   });
 }
 
+/* -------------------------------
+   12) story slide definitions
+   - declarative slide arrays per family (consumed by setupStoryModal)
+-------------------------------- */
 
+// samplers (3 slides)
+const SAMPLER_STORY_STEPS = [
+  {
+    id: "sampler-intro",
+    type: "sampler-intro",
+    content: {
+      text:
+        "In Revolutionary-era America, young women stitched samplers—linen squares used to practice letters, numbers, and the discipline of the hand.",
+      samplers: [
+        "assets/samplers/edanmdm:nmah_649894.png",
+        "assets/samplers/edanmdm:nmah_1134702.png",
+        "assets/samplers/edanmdm:nmah_639698.png",
+      ],
+    },
+  },
+  {
+    id: "sampler-single",
+    type: "sampler-intro-single",
+    content: {
+      text:
+        "These embroidered works displayed patience and skill. They mirrored the ideals of the new republic—training women to embody virtue through education, morality, and domestic order.",
+      image: "assets/edanmdm:nmah_639739-details.png",
+      alt: "Sampler showing skill, patience, and diligence.",
+    },
+  },
+  {
+    id: "sampler-compartment",
+    type: "compartment",
+    content: {
+      text: "Each sampler holds its own system.\nAlphabets, houses, verses practiced one stitch at a time.",
+      compartments: [
+        { image: "assets/samplers/edanmdm:nmah_643873.png", label: "Alphabets" },
+        { image: "assets/samplers/edanmdm:nmah_644829.png", label: "Alphabets" },
+        { image: "assets/samplers/edanmdm:nmah_1139039.png", label: "Alphabets" },
+        { image: "assets/samplers/edanmdm:nmah_1093871.png", label: "Houses" },
+        { image: "assets/samplers/edanmdm:nmah_1341531.png", label: "Houses" },
+        { image: "assets/samplers/edanmdm:nmah_649885.png", label: "Houses" },
+        { image: "assets/samplers/edanmdm:nmah_639698.png", label: "Verses" },
+        { image: "assets/samplers/edanmdm:nmah_1141751.png", label: "Verses" },
+      ],
+    },
+  },
+];
 
-// initializing the whole experience: building timeline, rendering, wiring listeners, and seeding first frame
-// (single entry point; called on DOMContentLoaded at the bottom)
+// pharma mugs (2 slides)
+const PHARMA_STORY_STEPS = [
+  {
+    id: "pharma-intro",
+    type: "sampler-intro-side",
+    content: {
+      image: "assets/mugs/edanmdm:nmah_993952.png",
+      alt: "Apothecary jar on a shelf",
+      text:
+        "In cupboards and shop shelves, jars kept remedies within reach. Dried leaves, powders, syrups, and salves measured and stored for daily use.",
+    },
+  },
+  {
+    id: "pharma-inscriptions",
+    type: "compartment",
+    content: {
+      text:
+        "Labels listed contents in Latin abbreviations, forming a code of practice and care: what to take, how to mix, when to apply.",
+      compartments: [
+        { image: "assets/mugs/edanmdm:nmah_993951.png", label: "MERCUR VIRID - Mercurius Viridis: “Green Mercury”, a mercury compound used in 18th-century treatments for skin and venereal diseases." },
+        { image: "assets/mugs/edanmdm:nmah_994285.png", label: "MUSCUS HELMINTOCH - Muscus helminthocortos: a mixture of lichen and small marine organisms believed to expel intestinal worms." },
+        { image: "assets/mugs/edanmdm:nmah_994307.png", label: "RAD MEU - Radix Meum: “Meum root,” an aromatic root (related to carrot or parsnip) used as a digestive stimulant." },
+        { image: "assets/mugs/edanmdm:nmah_994323.png", label: "CORAL R PP - Corallium Rubrum Pulvis Preparatus: powdered red coral, thought to stop bleeding, calm fevers, and protect infants." },
+      ],
+    },
+  },
+];
+
+// teapots (3 slides)
+const TEAPOTS_STORY_STEPS = [
+  {
+    id: "teapots-intro",
+    type: "sampler-intro",
+    content: {
+      text:
+        "Tea arrived in the colonies as an imported habit — exotic, expensive, and carefully performed. The teapot sat at the center of this ritual.",
+      samplers: [
+        "assets/teapots/edanmdm:nmah_580942.png",
+        "assets/teapots/edanmdm:nmah_579617.png",
+        "assets/teapots/edanmdm:nmah_580955.png",
+      ],
+    },
+  },
+  {
+    id: "teapots-middle",
+    type: "sampler-intro-side",
+    content: {
+      image: "assets/teapots/edanmdm:nmah_580938.png",
+      alt: "Sèvres teapot with liberty emblems (Phrygian cap and fasces), 1795",
+      text:
+        "Around the turn of the century, even decorative objects began to echo the language of change, adapting emblems of liberty and reform.",
+    },
+  },
+  {
+    id: "teapots-common-ceremony",
+    type: "sampler-intro",
+    content: {
+      text:
+        "By the end of the century, tea was no longer a luxury and had become an emblem of domestic order and social aspiration.",
+      samplers: [
+        "assets/teapots/edanmdm:nmah_303591.png",
+        "assets/teapots/edanmdm:nmah_303408.png",
+        "assets/teapots/edanmdm:nmah_303459.png",
+      ],
+    },
+  },
+];
+
+// fire marks (2 slides)
+const FIRE_STORY_STEPS = [
+  {
+    id: "fire-marks-intro",
+    type: "sampler-intro",
+    content: {
+      text:
+        "Before public fire brigades, insurers marked their policyholders' houses with emblems. When a blaze broke out, fire companies rushed to homes that displayed their mark.",
+      samplers: [
+        "assets/fire_marks/edanmdm:nmah_1341592.png",
+        "assets/fire_marks/edanmdm:nmah_1341904.png",
+        "assets/fire_marks/edanmdm:nmah_1341930.png",
+      ],
+    },
+  },
+  {
+    id: "fire-marks-overview",
+    type: "compartment",
+    content: {
+      text:
+        "Each emblem carried a promise of protection, mapping systems of responsibility and trust: who owed help to whom, and on what terms.",
+      compartments: [
+        { image: "assets/fire_marks/edanmdm:nmah_1341468.png", label: "Hand-in-Hand — America's first fire-insurance mark: four clasped wrists representing mutual aid." },
+        { image: "assets/fire_marks/edanmdm:nmah_1341921.png", label: "Green Tree: Mutual Assurance Company, insuring even houses shaded by trees." },
+        { image: "assets/fire_marks/edanmdm:nmah_1341763.png", label: "Insurance Company of North America's eagle, signaling the rise of modern finance in protection." },
+        { image: "assets/fire_marks/edanmdm:nmah_1343187.png", label: "Sun Fire Office: an English insurer, one of the earliest to use a logo as public branding." },
+        { image: "assets/fire_marks/edanmdm:nmah_1342275.png", label: "Clasped Hands — Baltimore Equitable Society: wood and cast iron mark as proof of coverage." },
+      ],
+    },
+  },
+];
+
+function getStorySlidesForKey(key) {
+  switch (key) {
+    case "samplers":
+      return SAMPLER_STORY_STEPS;
+    case "mugs":
+      return PHARMA_STORY_STEPS;
+    case "teapots":
+      return TEAPOTS_STORY_STEPS;
+    case "fire marks":
+      return FIRE_STORY_STEPS;
+    default:
+      return [];
+  }
+}
+
+/* -------------------------------
+   13) story modal: setup + scope
+   - scope class per family (e.g., story--teapots)
+   - gestures: arrows, dots, swipe, wheel
+-------------------------------- */
+
+const COMPARTMENT_LOOP = true; // wrap around when arrowing past ends
+
+function setStoryScope(key) {
+  const modalEl = document.getElementById("storyModal");
+  if (!modalEl) return;
+
+  // drop any previous story--* scope
+  [...modalEl.classList].forEach((cls) => {
+    if (cls.startsWith("story--")) modalEl.classList.remove(cls);
+  });
+
+  modalEl.classList.add(`story--${key.replace(/\s+/g, "-")}`);
+}
+
+function setupStoryModal() {
+  // core elements
+  const modal = d3.select("#storyModal");
+  const track = modal.select(".story-track");
+  const dots = modal.select(".story-dots");
+  const prevBtn = modal.select("[data-prev]");
+  const nextBtn = modal.select("[data-next]");
+  const backdrop = modal.select(".modal-backdrop");
+  const closeEl = modal.selectAll("[data-close]");
+
+  // gesture tuning
+  const SWIPE_THRESHOLD = 80;
+  const WHEEL_STEP = 220;
+  const WHEEL_COOLDOWN = 320;
+
+  let lastFocus = null;
+  state.storyIndex = 0;
+  state.storySlides = [];
+
+  // mount slides + dots
+  function renderSlides(slides) {
+    const sel = track
+      .selectAll("section.story-slide")
+      .data(slides, (d) => d.id);
+
+    const enter = sel
+      .enter()
+      .append("section")
+      .attr("class", "story-slide")
+      .attr("id", (d) => d.id)
+      .html((d) => {
+        let html = renderStepContent(d);
+        if (d.type === "compartment" && d.content?.compartments) {
+          html = html.replace(
+            '<div class="compartment-container">',
+            `<div class="compartment-container" data-compartments-json='${JSON.stringify(
+              d.content.compartments
+            ).replace(/'/g, "&apos;")}'>`
+          );
+        }
+        return html;
+      });
+
+    // attach strong reference to avoid reparsing json later
+    enter.each(function (d) {
+      if (d.type === "compartment" && d.content?.compartments) {
+        const node = this.querySelector(".compartment-container");
+        if (node) node._compartments = d.content.compartments;
+      }
+    });
+
+    sel.exit().remove();
+
+    // load images
+    track
+      .selectAll("img")
+      .attr("loading", "eager")
+      .attr("decoding", "async")
+      .style("max-width", "100%")
+      .style("max-height", "100%");
+
+    // dots (tablist semantics)
+    dots
+      .selectAll("button")
+      .data(slides, (d) => d.id)
+      .join("button")
+      .attr("role", "tab")
+      .attr("aria-controls", (d) => d.id)
+      .attr("aria-label", (_d, i) => `go to slide ${i + 1}`)
+      .attr("data-index", (_d, i) => i)
+      .on("click", function () {
+        go(+this.dataset.index);
+      });
+  }
+
+  // update chrome after index changes
+  function updateChrome() {
+    modal.style("--story-i", state.storyIndex);
+
+    const N = state.storySlides.length;
+    prevBtn.property("disabled", state.storyIndex === 0);
+    nextBtn.property("disabled", state.storyIndex === N - 1);
+
+    dots.selectAll("button").each(function (_d, i) {
+      if (i === state.storyIndex) {
+        this.setAttribute("aria-selected", "true");
+        this.tabIndex = 0;
+      } else {
+        this.removeAttribute("aria-selected");
+        this.tabIndex = -1;
+      }
+    });
+  }
+
+  // move to target slide; seed compartment state if present
+  function go(i) {
+    const N = state.storySlides.length;
+    state.storyIndex = Math.max(0, Math.min(N - 1, i));
+    updateChrome();
+
+    const activeSlide = track.selectAll(".story-slide").nodes()[state.storyIndex];
+    if (activeSlide && activeSlide.querySelector(".compartment-container")) {
+      state.compartmentProgress = 0;
+      requestAnimationFrame(() => {
+        wireCompartmentArrows();
+        updateCompartmentView();
+      });
+    }
+  }
+
+  // swipe nav (ignore drags starting on interactive controls)
+  let swipeX0 = null;
+
+  track.on("pointerdown", (event) => {
+    const interactive = event.target.closest(
+      '.img-arrow, .story-nav, button, a, input, textarea, [role="tab"], [data-close]'
+    );
+    if (interactive) return;
+
+    swipeX0 = event.clientX;
+    track.node().setPointerCapture(event.pointerId);
+  });
+
+  track.on("pointerup", (event) => {
+    if (swipeX0 == null) return;
+    const dx = event.clientX - swipeX0;
+    if (Math.abs(dx) > SWIPE_THRESHOLD) go(state.storyIndex + (dx < 0 ? 1 : -1));
+    swipeX0 = null;
+  });
+
+  // wheel/trackpad nav with throttle to prevent overshoot
+  (function addWheelNav() {
+    const cardEl = modal.select(".story-card").node();
+    if (!cardEl) return;
+
+    let acc = 0;
+    let last = 0;
+
+    cardEl.addEventListener(
+      "wheel",
+      (e) => {
+        const dx =
+          Math.abs(e.deltaX) >= Math.abs(e.deltaY) ? e.deltaX : e.shiftKey ? e.deltaY : 0;
+        if (!dx) return;
+
+        e.preventDefault();
+        const now = performance.now();
+        if (now - last < WHEEL_COOLDOWN) return;
+
+        acc += dx;
+
+        if (acc > WHEEL_STEP) {
+          go(state.storyIndex + 1);
+          acc = 0;
+          last = now;
+        }
+        if (acc < -WHEEL_STEP) {
+          go(state.storyIndex - 1);
+          acc = 0;
+          last = now;
+        }
+      },
+      { passive: false }
+    );
+  })();
+
+  // keep chrome correct on resize/orientation while open
+  const onResize = () => {
+    if (!modal.node().hasAttribute("hidden")) updateChrome();
+  };
+
+  // open/close modal
+  function open() {
+    lastFocus = document.activeElement;
+    renderSlides(state.storySlides);
+
+    requestAnimationFrame(() => {
+      go(0);
+      modal.attr("hidden", null);
+      d3.select("body").classed("modal-open", true);
+      modal.select(".story-card").node()?.focus?.({ preventScroll: true });
+      window.addEventListener("resize", onResize);
+      window.addEventListener("orientationchange", onResize);
+    });
+  }
+
+  function close() {
+    modal.attr("hidden", "");
+    d3.select("body").classed("modal-open", false);
+    track.selectAll("*").remove();
+    dots.selectAll("*").remove();
+    window.removeEventListener("resize", onResize);
+    window.removeEventListener("orientationchange", onResize);
+    lastFocus?.focus?.();
+  }
+
+// public api: open a family story and scope styles
+window.openStory = (key) => {
+  // look up the array of slide configs for this story key (e.g., "teapots")
+  const slides = getStorySlidesForKey(key);
+  // guard: if nothing came back, bail quietly
+  if (!slides?.length) return;
+  // stash a copy into whatever reactive/app state you use to render the track
+  state.storySlides = slides.slice();
+  // add a CSS body class like story--teapots so styles can scope to this story
+  setStoryScope(key);
+  // actually open the wide “stage” modal (adds aria attrs, focus trap, etc.)
+  open();
+};
+
+  // outer nav/close affordances
+  prevBtn.on("click", () => go(state.storyIndex - 1));
+  nextBtn.on("click", () => go(state.storyIndex + 1));
+  backdrop.on("click", close);
+  closeEl.on("click", close);
+
+  // bind arrows for the active compartment slide only
+  window.wireCompartmentArrows = function wireCompartmentArrows() {
+    const active = track.selectAll(".story-slide").nodes()[state.storyIndex];
+    if (!active) return;
+
+    const container = d3.select(active).select(".compartment-container");
+    if (container.empty()) return;
+
+    const n = container.selectAll(".viewport-image").size();
+    if (n < 2) return;
+
+    const stepSize = 1 / (n - 1);
+
+    // remove any prior click handlers before re-attaching
+    container.selectAll(".img-arrow").on("click", null);
+
+    container.selectAll(".img-arrow").on("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const isLeft = d3.select(event.currentTarget).classed("img-arrow-left");
+      const dir = isLeft ? -1 : 1;
+
+      let next = state.compartmentProgress + dir * stepSize;
+      if (COMPARTMENT_LOOP) {
+        if (next < 0) next = 1;
+        if (next > 1) next = 0;
+      } else {
+        next = Math.max(0, Math.min(1, next));
+      }
+
+      state.compartmentProgress = next;
+      updateCompartmentView();
+    });
+  };
+}
+
+/* -------------------------------
+   14) init
+   - hide tooltips on global wheel/touch
+   - after DOM is ready: build segments, render steps, wire ui and scroll
+-------------------------------- */
+
+(function attachTooltipAutohide() {
+  const hide = () => {
+    const g = document.getElementById("gridTooltip");
+    if (g) g.style.display = "none";
+    const t = document.getElementById("treemap-tooltip");
+    if (t) t.style.display = "none";
+  };
+  document.addEventListener("wheel", hide, { passive: true });
+  document.addEventListener("touchmove", hide, { passive: true });
+})();
+
+window.addEventListener("DOMContentLoaded", init);
+
 function init() {
+  // layout + first render
   state.segments = buildSegments();
   renderSteps();
-  updateCompartmentView();   // seeding first frame so the first image is visible
+  updateCompartmentView(); // safe no-op unless a compartment is visible
+
+  // wire ui affordances
   setupCategoryButtons();
-  loadCategory(0);           // showing Samplers immediately
+  loadCategory(0);
   setupHeroObjectsButton();
   setupAboutModal();
-// Wiring the "Explore other objects by use" button in the outro card to scroll to treemap
+  setupStoryModal();
 
+  // scroll mechanics + arrows
   setTrackHeight();
   setupScrollListener();
-  setupHeroDownArrow();      // note: this earlier version is overridden by the later duplicate
+  setupHeroDownArrow();
   enableUpArrow();
 
+  // paint once with correct state
   const t0 = computeProgressAndActive();
   updateStepVisibility(t0);
-  updateCompartmentProgress(t0);
   updateSamplerIntroReveal(t0);
   updateObjectGridProgress(t0);
   updateUpArrowVisibility();
   updateViewportBackgroundGrid();
-
-  document.addEventListener("click", onImageArrowClick);
 }
-
-// auto-hiding floating tooltips whenever the user scrolls or touches
-// (prevents stickiness when user moves around quickly)
-(function attachTooltipAutohide(){
-  const hide = () => {
-    const g = document.getElementById('gridTooltip'); if (g) g.style.display = 'none';
-    const t = document.getElementById('treemap-tooltip'); if (t) t.style.display = 'none';
-  };
-  document.addEventListener('wheel', hide, { passive: true });
-  document.addEventListener('touchmove', hide, { passive: true });
-  // if desired, scoping to the scroller instead of the whole document:
-  // document.getElementById('scrollContainer')?.addEventListener('scroll', hide, { passive: true });
-})();
-
-
-// bootstrapping when the dom is ready (treemap.js loads after this and binds to injected markup)
-// (order note: app.js builds the steps markup, then treemap.js selects #treemap-svg etc.)
-window.addEventListener("DOMContentLoaded", init);

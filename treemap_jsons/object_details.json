@@ -14057,7 +14057,7 @@
       "main_material": "cotton"
     }
   ],
-  "beds": [
+  "bedcoverings": [
     {
       "title": "counterpane, embroidered",
       "unitCode": "NMAH",
@@ -14115,6 +14115,62 @@
       "main_material": "wool, cotton"
     },
     {
+      "title": "Corner of a twill weave \"diaper\" coverlet; before 1832, Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621957",
+      "EDANurl": "edanmdm:nmah_621957",
+      "action_family": "Decorate & furnish",
+      "main_material": "Unknown"
+    },
+    {
+      "title": "Bowe family Coverlet fragment; Maine; ca. 1800",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621759",
+      "EDANurl": "edanmdm:nmah_621759",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Coverlet fragment; ca. 1773",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621753",
+      "EDANurl": "edanmdm:nmah_621753",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Overshot coverlet fragment; late 18th C.?",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621531",
+      "EDANurl": "edanmdm:nmah_621531",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "geometric double-cloth coverlet; 1800-1850, Virginia",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621363",
+      "EDANurl": "edanmdm:nmah_621363",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "coverlet; geometric, double-cloth; c. 1800-1850; likely Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621362",
+      "EDANurl": "edanmdm:nmah_621362",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Parker-Ellis Family, geometric double-cloth coverlet, c.1790-1820; Ohio",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621360",
+      "EDANurl": "edanmdm:nmah_621360",
+      "action_family": "Decorate & furnish",
+      "main_material": "cotton, wood, wool"
+    },
+    {
       "title": "\"Queen's Delight;\" coverlet; overshot; c.1800-1825; New York",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621356",
@@ -14147,6 +14203,22 @@
       "main_material": "cotton"
     },
     {
+      "title": "coverlet; turned twill; 19th century; possibly Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620617",
+      "EDANurl": "edanmdm:nmah_620617",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Geometric Double-Cloth Coverlet; Pennsylvania, 1789",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620613",
+      "EDANurl": "edanmdm:nmah_620613",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
       "title": "Copp Family Overshot Coverlet; Connecticut; c. 1790-1800",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620558",
@@ -14171,12 +14243,108 @@
       "main_material": "wool, linen"
     },
     {
+      "title": "Coverlet; turned twill; 19th century",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620551",
+      "EDANurl": "edanmdm:nmah_620551",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Elizabeth Johnstone; coverlet panel; Summer-and-Winter weave; c. 1770-1790; Connecticut",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620550",
+      "EDANurl": "edanmdm:nmah_620550",
+      "action_family": "Decorate & furnish",
+      "main_material": "cotton, wool"
+    },
+    {
+      "title": "Summer-and-Winter Coverlet; New York; 1800-1850",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620549",
+      "EDANurl": "edanmdm:nmah_620549",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Geometric double-cloth coverlet; 1800-1825; Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620545",
+      "EDANurl": "edanmdm:nmah_620545",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen"
+    },
+    {
+      "title": "Geometric double-cloth coverlet; 1800-1850; Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620544",
+      "EDANurl": "edanmdm:nmah_620544",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen"
+    },
+    {
+      "title": "\"Nine Snowball and Pine Tree\" coverlet; geometric double-cloth; 1800-1825",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620542",
+      "EDANurl": "edanmdm:nmah_620542",
+      "action_family": "Decorate & furnish",
+      "main_material": "cotton"
+    },
+    {
+      "title": "Geometric Double-cloth Coverlet; Pennsylvania, 1800-1850",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620541",
+      "EDANurl": "edanmdm:nmah_620541",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Geometric Double-cloth \"Snowball Tree\" Coverlet, 1800-1850",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620535",
+      "EDANurl": "edanmdm:nmah_620535",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "\"Washington Beauty\" Geometric Double-cloth Coverlet; 1800-1850",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620534",
+      "EDANurl": "edanmdm:nmah_620534",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool, cotton"
+    },
+    {
+      "title": "\"Snowballs and Pine Tree\" Geometric double-cloth coverlet; 1800-1830",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620528",
+      "EDANurl": "edanmdm:nmah_620528",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Geometric Double-cloth coverlet; 1790-1820",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620527",
+      "EDANurl": "edanmdm:nmah_620527",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
       "title": "bed hanging, hosptial",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620462",
       "EDANurl": "edanmdm:nmah_620462",
       "action_family": "Decorate & furnish",
       "main_material": "Unknown"
+    },
+    {
+      "title": "Overshot coverlet panels, Catalpa Flower; New York, first half 19th century",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620434",
+      "EDANurl": "edanmdm:nmah_620434",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
     },
     {
       "title": "Abbie Corey Bracket overshot coverlet; Connecticut; early 19th C.",
@@ -14211,6 +14379,14 @@
       "main_material": "cotton"
     },
     {
+      "title": "\"Star and Diamond\" multi-harness coverlet; c. 1790-1840; Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620385",
+      "EDANurl": "edanmdm:nmah_620385",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool, cotton"
+    },
+    {
       "title": "Copp Family Overshot Coverlet; Connecticut; c. 1790-1820",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620384",
@@ -14227,28 +14403,12 @@
       "main_material": "cotton, wool"
     },
     {
-      "title": "bedstead",
+      "title": "Geometric double-cloth coverlet; Single Snowball , Pine Tree, 1800-1850",
       "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_312869",
-      "EDANurl": "edanmdm:nmah_312869",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214217",
+      "EDANurl": "edanmdm:nmah_214217",
       "action_family": "Decorate & furnish",
-      "main_material": "Unknown"
-    },
-    {
-      "title": "Bed Warmer",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_311574",
-      "EDANurl": "edanmdm:nmah_311574",
-      "action_family": "Decorate & furnish",
-      "main_material": "brass, wood"
-    },
-    {
-      "title": "bed warmer",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_307604",
-      "EDANurl": "edanmdm:nmah_307604",
-      "action_family": "Decorate & furnish",
-      "main_material": "brass, copper, iron, wood"
+      "main_material": "wool"
     },
     {
       "title": "Coverlet, overshot, \"Double Chariot Wheel;\" 1790-1825",
@@ -14259,28 +14419,20 @@
       "main_material": "wool"
     },
     {
-      "title": "Elizabeth Deuel (Devel); coverlet; overshot; 1790; New York",
+      "title": "Fragment of a geometric double woven coverlet, 1800-1850",
       "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214179",
-      "EDANurl": "edanmdm:nmah_214179",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen"
-    },
-    {
-      "title": "Albany weaver; overshot coverlet; 1795; New York",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214130",
-      "EDANurl": "edanmdm:nmah_214130",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen, wool"
-    },
-    {
-      "title": "Overshot Coverlet; 1787; New York",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1462930",
-      "EDANurl": "edanmdm:nmah_1462930",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214175",
+      "EDANurl": "edanmdm:nmah_214175",
       "action_family": "Decorate & furnish",
       "main_material": "wool"
+    },
+    {
+      "title": "Summer-and-Winter coverlet; c. 1800-1830; likely Pennsylvania",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1333637",
+      "EDANurl": "edanmdm:nmah_1333637",
+      "action_family": "Decorate & furnish",
+      "main_material": "cotton"
     },
     {
       "title": "\"Catalpa Flower;\" coverlet,; overshot; c.1790-1820; South Carolina",
@@ -14295,14 +14447,6 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301459",
       "EDANurl": "edanmdm:nmah_1301459",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "\"Stars and Tables\" Overshot Coverlet, 1784",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301458",
-      "EDANurl": "edanmdm:nmah_1301458",
       "action_family": "Decorate & furnish",
       "main_material": "wool"
     }
@@ -14671,208 +14815,6 @@
       "EDANurl": "edanmdm:nmah_1330141",
       "action_family": "Textile making",
       "main_material": "silk"
-    }
-  ],
-  "bedcoverings": [
-    {
-      "title": "Corner of a twill weave \"diaper\" coverlet; before 1832, Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621957",
-      "EDANurl": "edanmdm:nmah_621957",
-      "action_family": "Decorate & furnish",
-      "main_material": "Unknown"
-    },
-    {
-      "title": "Bowe family Coverlet fragment; Maine; ca. 1800",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621759",
-      "EDANurl": "edanmdm:nmah_621759",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Coverlet fragment; ca. 1773",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621753",
-      "EDANurl": "edanmdm:nmah_621753",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Overshot coverlet fragment; late 18th C.?",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621531",
-      "EDANurl": "edanmdm:nmah_621531",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "geometric double-cloth coverlet; 1800-1850, Virginia",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621363",
-      "EDANurl": "edanmdm:nmah_621363",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "coverlet; geometric, double-cloth; c. 1800-1850; likely Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621362",
-      "EDANurl": "edanmdm:nmah_621362",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Parker-Ellis Family, geometric double-cloth coverlet, c.1790-1820; Ohio",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_621360",
-      "EDANurl": "edanmdm:nmah_621360",
-      "action_family": "Decorate & furnish",
-      "main_material": "cotton, wood, wool"
-    },
-    {
-      "title": "coverlet; turned twill; 19th century; possibly Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620617",
-      "EDANurl": "edanmdm:nmah_620617",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Geometric Double-Cloth Coverlet; Pennsylvania, 1789",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620613",
-      "EDANurl": "edanmdm:nmah_620613",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Coverlet; turned twill; 19th century",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620551",
-      "EDANurl": "edanmdm:nmah_620551",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Elizabeth Johnstone; coverlet panel; Summer-and-Winter weave; c. 1770-1790; Connecticut",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620550",
-      "EDANurl": "edanmdm:nmah_620550",
-      "action_family": "Decorate & furnish",
-      "main_material": "cotton, wool"
-    },
-    {
-      "title": "Summer-and-Winter Coverlet; New York; 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620549",
-      "EDANurl": "edanmdm:nmah_620549",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Geometric double-cloth coverlet; 1800-1825; Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620545",
-      "EDANurl": "edanmdm:nmah_620545",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen"
-    },
-    {
-      "title": "Geometric double-cloth coverlet; 1800-1850; Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620544",
-      "EDANurl": "edanmdm:nmah_620544",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen"
-    },
-    {
-      "title": "\"Nine Snowball and Pine Tree\" coverlet; geometric double-cloth; 1800-1825",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620542",
-      "EDANurl": "edanmdm:nmah_620542",
-      "action_family": "Decorate & furnish",
-      "main_material": "cotton"
-    },
-    {
-      "title": "Geometric Double-cloth Coverlet; Pennsylvania, 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620541",
-      "EDANurl": "edanmdm:nmah_620541",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Geometric Double-cloth \"Snowball Tree\" Coverlet, 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620535",
-      "EDANurl": "edanmdm:nmah_620535",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "\"Washington Beauty\" Geometric Double-cloth Coverlet; 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620534",
-      "EDANurl": "edanmdm:nmah_620534",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool, cotton"
-    },
-    {
-      "title": "\"Snowballs and Pine Tree\" Geometric double-cloth coverlet; 1800-1830",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620528",
-      "EDANurl": "edanmdm:nmah_620528",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Geometric Double-cloth coverlet; 1790-1820",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620527",
-      "EDANurl": "edanmdm:nmah_620527",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Overshot coverlet panels, Catalpa Flower; New York, first half 19th century",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620434",
-      "EDANurl": "edanmdm:nmah_620434",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "\"Star and Diamond\" multi-harness coverlet; c. 1790-1840; Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_620385",
-      "EDANurl": "edanmdm:nmah_620385",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool, cotton"
-    },
-    {
-      "title": "Geometric double-cloth coverlet; Single Snowball , Pine Tree, 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214217",
-      "EDANurl": "edanmdm:nmah_214217",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Fragment of a geometric double woven coverlet, 1800-1850",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214175",
-      "EDANurl": "edanmdm:nmah_214175",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "Summer-and-Winter coverlet; c. 1800-1830; likely Pennsylvania",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1333637",
-      "EDANurl": "edanmdm:nmah_1333637",
-      "action_family": "Decorate & furnish",
-      "main_material": "cotton"
     }
   ],
   "blankets": [
@@ -24103,6 +24045,16 @@
       "main_material": "brass"
     }
   ],
+  "bedsteads": [
+    {
+      "title": "bedstead",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_312869",
+      "EDANurl": "edanmdm:nmah_312869",
+      "action_family": "Decorate & furnish",
+      "main_material": "Unknown"
+    }
+  ],
   "cork driver": [
     {
       "title": "Wooden Bottle Corker",
@@ -24185,6 +24137,24 @@
       "EDANurl": "edanmdm:nmah_302718",
       "action_family": "Eat, cook & drink",
       "main_material": "silver"
+    }
+  ],
+  "bed warmers": [
+    {
+      "title": "Bed Warmer",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_311574",
+      "EDANurl": "edanmdm:nmah_311574",
+      "action_family": "Decorate & furnish",
+      "main_material": "brass, wood"
+    },
+    {
+      "title": "bed warmer",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_307604",
+      "EDANurl": "edanmdm:nmah_307604",
+      "action_family": "Decorate & furnish",
+      "main_material": "brass, copper, iron, wood"
     }
   ],
   "molds": [
@@ -24975,6 +24945,40 @@
       "EDANurl": "edanmdm:nmah_2435",
       "action_family": "Heal & care",
       "main_material": "Unknown"
+    }
+  ],
+  "bedcovering": [
+    {
+      "title": "Elizabeth Deuel (Devel); coverlet; overshot; 1790; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214179",
+      "EDANurl": "edanmdm:nmah_214179",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen"
+    },
+    {
+      "title": "Albany weaver; overshot coverlet; 1795; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214130",
+      "EDANurl": "edanmdm:nmah_214130",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen, wool"
+    },
+    {
+      "title": "Overshot Coverlet; 1787; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1462930",
+      "EDANurl": "edanmdm:nmah_1462930",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "\"Stars and Tables\" Overshot Coverlet, 1784",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301458",
+      "EDANurl": "edanmdm:nmah_1301458",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
     }
   ],
   "prosthesis": [

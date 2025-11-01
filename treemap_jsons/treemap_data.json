@@ -13,16 +13,12 @@
           "value": 53
         },
         {
+          "name": "bedcoverings",
+          "value": 49
+        },
+        {
           "name": "andirons",
           "value": 32
-        },
-        {
-          "name": "beds",
-          "value": 31
-        },
-        {
-          "name": "bedcoverings",
-          "value": 25
         },
         {
           "name": "chests",
@@ -45,6 +41,10 @@
           "value": 5
         },
         {
+          "name": "bedcovering",
+          "value": 4
+        },
+        {
           "name": "lamps",
           "value": 4
         },
@@ -65,8 +65,16 @@
           "value": 3
         },
         {
+          "name": "bed warmers",
+          "value": 2
+        },
+        {
           "name": "lanterns",
           "value": 2
+        },
+        {
+          "name": "bedsteads",
+          "value": 1
         },
         {
           "name": "blankets",

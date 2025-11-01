@@ -115,6 +115,34 @@
             </div>
           </div>
         </div> <!-- end #aboutModal -->
+
+        <!-- WIDE / STAGE MODAL (micro-stories) -->
+        <div id="storyModal"
+             class="modal modal--stage"
+             role="dialog"
+             aria-modal="true"
+             aria-label="Micro-story"
+             hidden>
+          <!-- backdrop catches outside clicks to close -->
+          <div class="modal-backdrop" data-close></div>
+
+          <!-- stage card; content (slides) injected by app.js -->
+          <div class="modal-card story-card" role="document">
+            <!-- explicit close control (×); also closable by Esc and backdrop -->
+            <button class="modal-close" aria-label="Close" data-close>×</button>
+
+          <!-- mid-vertical nav arrows -->
+          <button class="story-arrow story-nav story-arrow--left"  data-prev aria-label="Previous slide"></button>
+          <button class="story-arrow story-nav story-arrow--right" data-next aria-label="Next slide"></button>
+
+          <!-- preserved progress dots (bottom center) -->
+          <div class="story-dots" role="tablist" aria-label="Slide progress"></div>
+
+
+            <!-- horizontal track where slides are rendered -->
+            <section class="story-track" aria-live="polite"></section>
+          </div>
+        </div> <!-- end #storyModal -->
         
     </div> <!-- end .scrolly-track -->
     </div> <!-- end #scrollContainer (prelude-scrolly-container) -->
