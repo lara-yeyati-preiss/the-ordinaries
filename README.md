@@ -18,10 +18,12 @@ Users can navigate the database from either entry point and open a **details pan
 
 <br><br>
 
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/15ac2c17-5096-401b-88f4-923391ef4b71" />
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/7642d6da-6964-4643-89fa-53a7302508d3" />
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/e1d3274d-01e8-4d32-80b6-b19b84dd3190" />
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/441aa97d-0b75-4a97-a899-e15d71fcc07b" />
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/f4f963d9-c775-41a4-9194-83827857d1bc" />
-<img width="1692" height="896" alt="image" src="https://github.com/user-attachments/assets/e4dbf6eb-2ffb-484b-b845-8abbcca349e7" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/02621f76-5e23-4392-a032-e60f20d297a7" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/573b99df-6920-4969-bd9c-f8ab23314900" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/b5a9efc7-0c8f-4162-bf4a-3a993509af72" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/6a026bbc-e7d9-4e9a-9983-15f0b39a2c40" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/b58edecd-369a-4798-a078-47c29a743692" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/1ded78d2-946f-4829-9e30-0aba11d706c1" />
+<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/fd67ce3d-d23e-4105-b9f6-2fc09187f07e" />
+
 
