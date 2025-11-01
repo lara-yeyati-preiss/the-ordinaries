@@ -50,7 +50,7 @@ const config = {
       type: "card",
       content: {
         text:
-          "From the material remains of everyday actions, a pattern emerges—tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
+          "From the material remains of everyday actions, patterns emerge—tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
       },
     },
 
