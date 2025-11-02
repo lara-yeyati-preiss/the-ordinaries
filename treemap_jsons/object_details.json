@@ -14419,10 +14419,34 @@
       "main_material": "wool"
     },
     {
+      "title": "Elizabeth Deuel (Devel); coverlet; overshot; 1790; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214179",
+      "EDANurl": "edanmdm:nmah_214179",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen"
+    },
+    {
       "title": "Fragment of a geometric double woven coverlet, 1800-1850",
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214175",
       "EDANurl": "edanmdm:nmah_214175",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "Albany weaver; overshot coverlet; 1795; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214130",
+      "EDANurl": "edanmdm:nmah_214130",
+      "action_family": "Decorate & furnish",
+      "main_material": "linen, wool"
+    },
+    {
+      "title": "Overshot Coverlet; 1787; New York",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1462930",
+      "EDANurl": "edanmdm:nmah_1462930",
       "action_family": "Decorate & furnish",
       "main_material": "wool"
     },
@@ -14447,6 +14471,14 @@
       "unitCode": "NMAH",
       "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301459",
       "EDANurl": "edanmdm:nmah_1301459",
+      "action_family": "Decorate & furnish",
+      "main_material": "wool"
+    },
+    {
+      "title": "\"Stars and Tables\" Overshot Coverlet, 1784",
+      "unitCode": "NMAH",
+      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301458",
+      "EDANurl": "edanmdm:nmah_1301458",
       "action_family": "Decorate & furnish",
       "main_material": "wool"
     }
@@ -24945,40 +24977,6 @@
       "EDANurl": "edanmdm:nmah_2435",
       "action_family": "Heal & care",
       "main_material": "Unknown"
-    }
-  ],
-  "bedcovering": [
-    {
-      "title": "Elizabeth Deuel (Devel); coverlet; overshot; 1790; New York",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214179",
-      "EDANurl": "edanmdm:nmah_214179",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen"
-    },
-    {
-      "title": "Albany weaver; overshot coverlet; 1795; New York",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_214130",
-      "EDANurl": "edanmdm:nmah_214130",
-      "action_family": "Decorate & furnish",
-      "main_material": "linen, wool"
-    },
-    {
-      "title": "Overshot Coverlet; 1787; New York",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1462930",
-      "EDANurl": "edanmdm:nmah_1462930",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
-    },
-    {
-      "title": "\"Stars and Tables\" Overshot Coverlet, 1784",
-      "unitCode": "NMAH",
-      "collectionsURL": "https://collections.si.edu/search/detail/edanmdm:nmah_1301458",
-      "EDANurl": "edanmdm:nmah_1301458",
-      "action_family": "Decorate & furnish",
-      "main_material": "wool"
     }
   ],
   "prosthesis": [

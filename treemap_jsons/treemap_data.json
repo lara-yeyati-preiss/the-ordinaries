@@ -9,12 +9,12 @@
           "value": 62
         },
         {
-          "name": "quilts",
+          "name": "bedcoverings",
           "value": 53
         },
         {
-          "name": "bedcoverings",
-          "value": 49
+          "name": "quilts",
+          "value": 53
         },
         {
           "name": "andirons",
@@ -39,10 +39,6 @@
         {
           "name": "cases",
           "value": 5
-        },
-        {
-          "name": "bedcovering",
-          "value": 4
         },
         {
           "name": "lamps",
