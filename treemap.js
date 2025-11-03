@@ -1040,7 +1040,7 @@
         if (!stageEl) return;
         const { width } = stageEl.getBoundingClientRect();
         const mobile = window.innerWidth <= 780;
-        const height = Math.round(width * (mobile ? 4 / 3 : 520 / 1000));
+        const height = Math.round(width * (mobile ? 4 / 3 : 480 / 1000)); // reduced from 520 to 480
 
         // update the svg viewBox so d3.treemap can lay out in screen coords directly
         svg.attr("viewBox", `0 0 ${width} ${height}`);
@@ -1048,7 +1048,7 @@
         // run the treemap layout for the active root at the chosen size
         d3.treemap().size([width, height]).paddingInner(1)(root);
 
-        // scales: make the currently focused node’s box fill the viewport
+        // scales: make the currently focused node's box fill the viewport
         sx.range([0, width]).domain([current.x0, current.x1]);
         sy.range([0, height]).domain([current.y0, current.y1]);
 
