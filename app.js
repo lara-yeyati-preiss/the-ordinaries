@@ -435,7 +435,7 @@ function renderStepContent(step) {
       "Eating, Cooking & Drinking",
       "Lighting & Firekeeping",
     ];
-    const categories = ["Samplers", "Pharmaceutical jars", "Teapots", "Fire marks"];
+    const categories = ["Samplers", "Apothecary jars", "Teapots", "Fire marks"];
 
     return (
       '<div class="object-grid-step">' +
@@ -445,18 +445,17 @@ function renderStepContent(step) {
       '<div class="category-selector" id="categorySelector" role="radiogroup" aria-label="Filter by object">' +
       categories
         .map((cat, i) => {
-          const storyKey = GRID_CATEGORIES[i]?.key || "";
           return (
             `<button type="button" class="category-option ${i === 0 ? "active" : ""}" ` +
             `data-category-index="${i}" role="radio" aria-checked="${i === 0 ? "true" : "false"}">` +
-            `<span class="option-label object-label">${cat}</span>` +
             `<span class="option-chip editable-chip family-labels-html">${chipLabels[i]}</span>` +
-            `<span class="view-story-btn category-view" role="button" tabindex="0" data-story="${storyKey}">View story</span>` +
+            `<span class="option-label object-label">${cat}</span>` +
             "</button>"
           );
         })
         .join("") +
       "</div>" +
+      '<button class="view-story-btn" id="viewStoryBtn" data-story="">View Samplers Story</button>' +
       "</div>" +
       '<div class="image-grid" id="imageGrid"></div>' +
       "</div>" +
@@ -864,6 +863,17 @@ function loadCategory(idx) {
     b.setAttribute("aria-checked", on ? "true" : "false");
   });
 
+  // update view story button text and data attribute
+  const viewStoryBtn = document.getElementById("viewStoryBtn");
+  if (viewStoryBtn) {
+    const cat = GRID_CATEGORIES[idx];
+    const categories = ["Samplers", "Apothecary Jars", "Teapots", "Fire Marks"];
+    if (cat) {
+      viewStoryBtn.setAttribute("data-story", cat.key);
+      viewStoryBtn.textContent = `View ${categories[idx]} Story`;
+    }
+  }
+
   const cat = GRID_CATEGORIES[idx];
   if (!cat) return Promise.resolve();
 
@@ -902,19 +912,8 @@ function setupCategoryButtons() {
   const sel = document.getElementById("categorySelector");
   if (!sel) return;
 
-  // clicks inside the selector
+  // clicks inside the selector - change selected category
   sel.addEventListener("click", (e) => {
-    // open story modal when clicking "view story"
-    const storyBtn = e.target.closest(".category-view, .view-story-btn");
-    if (storyBtn) {
-      e.preventDefault();
-      e.stopPropagation();
-      const key = storyBtn.getAttribute("data-story") || "";
-      if (window.openStory) window.openStory(key);
-      return;
-    }
-
-    // change selected category
     const btn = e.target.closest(".category-option");
     if (!btn) return;
 
@@ -936,17 +935,15 @@ function setupCategoryButtons() {
     loadCategory(idx);
   });
 
-  // keyboard activation for the inline "view story" element
-  sel.addEventListener("keydown", (e) => {
-    const storyBtn = e.target.closest(".view-story-btn");
-    if (!storyBtn) return;
-    if (e.key === "Enter" || e.key === " ") {
+  // view story button click handler
+  const viewStoryBtn = document.getElementById("viewStoryBtn");
+  if (viewStoryBtn) {
+    viewStoryBtn.addEventListener("click", (e) => {
       e.preventDefault();
-      e.stopPropagation();
-      const key = storyBtn.getAttribute("data-story") || "";
-      if (window.openStory) window.openStory(key);
-    }
-  });
+      const key = viewStoryBtn.getAttribute("data-story") || "";
+      if (window.openStory && key) window.openStory(key);
+    });
+  }
 }
 
 /* -------------------------------

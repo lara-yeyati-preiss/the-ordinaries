@@ -179,7 +179,7 @@ body{
   #categorySelector.category-selector{ order: 3 !important; position: static !important; width: 100%; display: flex !important; flex-direction: column !important; gap: 4px; margin-top: .2rem; margin-left: 16px; }
   #categorySelector .category-btn,
   #categorySelector .editable-chip,
-  #categorySelector .family-labels-html{ white-space: nowrap; font-size: 13px; padding: .35em .7em; line-height: 1.1; }
+  #categorySelector .family-labels-html{ white-space: nowrap; font-size: 16px; padding: .35em .7em; line-height: 1.1; }
 }
 
 .category-row{
@@ -200,16 +200,16 @@ body{
 }
 .category-option{
   position: relative; display: grid;
-  grid-template-columns: 1fr max-content; grid-template-rows: auto auto;
+  grid-template-columns: max-content 1fr; grid-template-rows: auto auto;
   align-items: center; column-gap: 18px; row-gap: 6px;
   width: 100%; padding: 2px 0; background: transparent; border: none; box-shadow: none;
   cursor: pointer; text-align: left; opacity: .45; transition: opacity .15s ease; /* muted until selected/hovered */
 }
 .category-option:hover{ opacity: .85; }
 .category-option.active{ opacity: 1; color: #111; }
-.category-option .option-label{ grid-column: 1; grid-row: 1; position: relative; font-size: 16px; }
+.category-option .option-label{ grid-column: 2; grid-row: 1; position: relative; font-size: 16px; text-align: right; }
 .category-selector .editable-chip{
-  grid-column: 2; grid-row: 1; justify-self: end; align-self: center;
+  grid-column: 1; grid-row: 1; justify-self: start; align-self: center;
   display: flex; align-items: center; justify-content: center; background: #fff; color: inherit;
   border-radius: 7px; font-size: 15px; padding: .25em 1.1em; font-family: inherit; font-weight: 400;
   box-shadow: 0 1.5px 6px rgba(0,0,0,.08), 0 1px 4px rgba(139,115,85,.08);
@@ -217,10 +217,10 @@ body{
 }
 .category-option.active .editable-chip{ opacity: 1; }
 .view-story-btn{
-  grid-column: 2; grid-row: 2; justify-self: end; display: none; white-space: nowrap;
-  padding: 8px 16px; border-radius: 999px; border: 1px solid #1f1f1f; background: #1f1f1f; color: #fff;
-  font-size: 14px; line-height: 1.1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  transition: transform .06s ease, filter .15s ease; pointer-events: none;
+  display: inline-flex; align-items: center; justify-content: center; white-space: nowrap;
+  padding: 10px 20px; margin-top: 24px; margin-left: auto; border-radius: 999px; border: 1px solid #1f1f1f; 
+  background: #1f1f1f; color: #fff; font-size: 15px; line-height: 1.1; cursor: pointer; 
+  box-shadow: 0 2px 8px rgba(0,0,0,.08); transition: transform .06s ease, filter .15s ease;
 }
 .category-option.active .view-story-btn{ display: inline-flex; pointer-events: auto; }
 .category-option.active .view-story-btn:hover{ filter: brightness(1.08); transform: translateY(-1px); }
