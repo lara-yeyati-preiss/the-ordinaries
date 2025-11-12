@@ -430,7 +430,7 @@ body.modal-open{ overflow: hidden; } /* lock page behind modal for scroll hygien
    ========================================================================== */
 .lightbox{
   position: fixed; inset: 0; z-index: 10500; display: none; place-items: center;
-  background: rgba(18,18,18,.85); backdrop-filter: blur(4px);
+  background: rgba(246,243,239,.94); backdrop-filter: blur(3px);
 }
 .lightbox.visible{ display: grid; }
 .lightbox-content{
@@ -457,9 +457,9 @@ body.modal-open{ overflow: hidden; } /* lock page behind modal for scroll hygien
 }
 .lightbox-close{
   position: absolute; top: 16px; right: 16px; width: 40px; height: 40px;
-  border: 0; border-radius: 50%; background: rgba(255,255,255,.92);
+  border: 1px solid #d0d0d0; border-radius: 50%; background: rgba(255,255,255,.96);
   color: #333; font-size: 24px; line-height: 1; cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,.2); transition: transform .15s, background .15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12); transition: transform .15s, background .15s;
 }
 .lightbox-close:hover{ background: #fff; transform: scale(1.05); }
 
