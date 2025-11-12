@@ -144,7 +144,7 @@ body{
   grid-template-rows: repeat(4, minmax(0, 1fr));
   gap: var(--gap); grid-auto-flow: row dense; flex: 1 1 auto; min-width: 0; max-width: 100%;
 }
-.grid-item{ aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; pointer-events: auto; }
+.grid-item{ aspect-ratio: 1 / 1; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; pointer-events: auto; cursor: pointer;}
 .grid-item img{
   width: 100%; height: 100%; object-fit: contain; display: block; transition: transform .15s ease;
   filter: saturate(.85) contrast(.95); opacity: 90%; pointer-events: none; /* images don’t steal hover; parent handles tooltip triggers */
@@ -422,6 +422,46 @@ body{
   #aboutModal .modal-figure{ justify-content: center; margin-top: 1rem; }
 }
 body.modal-open{ overflow: hidden; } /* lock page behind modal for scroll hygiene */
+
+
+/* ============================================================================
+   LIGHTBOX (GRID IMAGE VIEWER)
+   - elegant overlay for viewing grid images in detail
+   ========================================================================== */
+.lightbox{
+  position: fixed; inset: 0; z-index: 10500; display: none; place-items: center;
+  background: rgba(18,18,18,.85); backdrop-filter: blur(4px);
+}
+.lightbox.visible{ display: grid; }
+.lightbox-content{
+  position: relative; max-width: min(90vw, 1200px); max-height: 90vh;
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+  padding: 40px 24px 24px;
+}
+.lightbox-image{
+  max-width: 100%; max-height: 70vh; object-fit: contain; display: block;
+  border-radius: 4px; box-shadow: 0 8px 32px rgba(0,0,0,.3);
+}
+.lightbox-info{
+  background: rgba(255,255,255,.96); backdrop-filter: blur(2px);
+  border-radius: 8px; padding: 20px 24px; max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+}
+.lightbox-title{
+  font-family: "EB Garamond", Garamond, serif; font-size: 22px; font-weight: 500;
+  color: #1a1a1a; letter-spacing: -0.01em; margin: 0 0 8px;
+}
+.lightbox-materials{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px; color: #525252; line-height: 1.5; margin: 0;
+}
+.lightbox-close{
+  position: absolute; top: 16px; right: 16px; width: 40px; height: 40px;
+  border: 0; border-radius: 50%; background: rgba(255,255,255,.92);
+  color: #333; font-size: 24px; line-height: 1; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2); transition: transform .15s, background .15s;
+}
+.lightbox-close:hover{ background: #fff; transform: scale(1.05); }
 
 
 /* ============================================================================

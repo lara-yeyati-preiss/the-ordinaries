@@ -850,6 +850,13 @@ function renderGridFromPaths(paths, metaIndex = null) {
     })
     .on("mouseleave", function () {
       tip.style.display = "none";
+    })
+    .on("click", function (event, d) {
+      event.preventDefault();
+      if (!metaIndex) return;
+      const id = idFromPath(d);
+      const row = metaIndex.get(id);
+      openLightbox(d, row);
     });
 }
 
@@ -947,7 +954,79 @@ function setupCategoryButtons() {
 }
 
 /* -------------------------------
-   12) story slide definitions
+   12) lightbox
+   - simple overlay for viewing grid images in detail
+-------------------------------- */
+
+function ensureLightbox() {
+  let el = document.getElementById("lightbox");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "lightbox";
+    el.className = "lightbox";
+    el.innerHTML = `
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close">×</button>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-info">
+          <h3 class="lightbox-title"></h3>
+          <p class="lightbox-materials"></p>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(el);
+
+    // close on backdrop click
+    el.addEventListener("click", (e) => {
+      if (e.target === el) closeLightbox();
+    });
+
+    // close button
+    el.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+
+    // escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && el.classList.contains("visible")) {
+        closeLightbox();
+      }
+    });
+  }
+  return el;
+}
+
+function openLightbox(imageSrc, metadata) {
+  const lightbox = ensureLightbox();
+  const img = lightbox.querySelector(".lightbox-image");
+  const titleEl = lightbox.querySelector(".lightbox-title");
+  const materialsEl = lightbox.querySelector(".lightbox-materials");
+
+  img.src = imageSrc;
+  img.alt = metadata?.title || "Object";
+
+  const title = capitalizeFirstLetter(pick(metadata, ["title"]) || "");
+  const materials = capitalizeFirstLetter(pick(metadata, ["materials"]) || "");
+
+  titleEl.textContent = title || "Object";
+  materialsEl.textContent = materials ? `Materials: ${materials}` : "";
+
+  lightbox.classList.add("visible");
+  document.body.style.overflow = "hidden";
+
+  // hide tooltip if open
+  const tooltip = document.getElementById("gridTooltip");
+  if (tooltip) tooltip.style.display = "none";
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
+    lightbox.classList.remove("visible");
+    document.body.style.overflow = "";
+  }
+}
+
+/* -------------------------------
+   13) story slide definitions
    - declarative slide arrays per family (consumed by setupStoryModal)
 -------------------------------- */
 
@@ -1110,7 +1189,7 @@ function getStorySlidesForKey(key) {
 }
 
 /* -------------------------------
-   13) story modal: setup + scope
+   14) story modal: setup + scope
    - scope class per family (e.g., story--teapots)
    - gestures: arrows, dots, swipe, wheel
 -------------------------------- */
@@ -1383,7 +1462,7 @@ window.openStory = (key) => {
 }
 
 /* -------------------------------
-   14) init
+   15) init
    - hide tooltips on global wheel/touch
    - after DOM is ready: build segments, render steps, wire ui and scroll
 -------------------------------- */
