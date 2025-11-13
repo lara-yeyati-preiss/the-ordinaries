@@ -1,31 +1,20 @@
-
 (function () {
-  // wrap everything in an iife so we don’t leak variables into the global scope
-  // (this is especially important on pages that load multiple scripts)
   document.addEventListener("DOMContentLoaded", () => {
-    // =========================================================
-    // 1) LOAD DATA (hierarchy + details)
-    // =========================================================
-    // we wait until the DOM is ready, then load both data files in parallel.
-    //  - treemap_data.json → hierarchical counts for the treemap layout
-    //  - object_details.json → per-type arrays with fields (title, unitCode, materials, urls, etc.)
-    // once both are ready, we destructure the results into [treemapdata, detailsdata]
     Promise.all([
-      d3.json("treemap_jsons/treemap_data.json"),   // families → types → value
-      d3.json("treemap_jsons/object_details.json"), // { [typeName]: [record, ...] }
-    ]).then(([treemapdata, detailsdata]) => {
-      // keep raw handles to the two datasets; we’ll transform them further below
+      d3.json("treemap_jsons/treemap_data.json"),
+      d3.json("treemap_jsons/object_details.json"),
+      d3.csv("treemap_data/final_database_with_materials_enriched_places.csv").catch(() => []),
+    ]).then(([treemapdata, detailsdata, placesData]) => {
       const rawdata = treemapdata;
       const details = detailsdata;
+      const placesRows = Array.isArray(placesData) ? placesData : [];
+            const metadataMap = new Map();
+      placesRows.forEach(row => {
+        if (row.EDANurl) {
+          metadataMap.set(row.EDANurl, row);
+        }
+      });
 
-      // =========================================================
-      // 2) HELPERS / CONSTANTS
-      // =========================================================
-      // normalize a string for safe matching:
-      //  - default to "" if null/undefined
-      //  - lowercase
-      //  - collapse whitespace (including nbsp)
-      //  - trim edges
       const norm = (s) => (s || "").toLowerCase().replace(/[\s\u00A0]+/g, " ").trim();
 
       // canonical keys for the two “other …” buckets we synthesize
@@ -41,7 +30,6 @@
       };
 
       // list of families we want to group under “other actions” at the overview.
-      // (editorial choice to keep the top view readable.)
       const outside_actions = ["work & build", "play", "worship", "smoke"];
 
       // friendly display names for families (so the UI reads well)
@@ -63,13 +51,9 @@
         "worship": "Worshipping",
         "other actions": "Other Actions",
       };
-      // wrapper that falls back to the raw name if we don’t have a pretty mapping
       const displayFamily = (name) => display_family[norm(name)] || name;
 
-      // turn a raw material token into something nice to read:
-      //  - replace separators with spaces
-      //  - collapse spaces
-      //  - title-case each word
+
       function displayMaterial(name) {
         return (name || "")
           .replace(/[-_]+/g, " ")
@@ -78,7 +62,6 @@
           .replace(/\b\w/g, (c) => c.toUpperCase());
       }
 
-      // friendly names for museum unit codes (for details list)
       const display_unitcodes = {
         AAA: "Archives of American Art",
         ACM: "Anacostia Community Museum",
@@ -92,12 +75,10 @@
         NPM: "National Postal Museum",
         SAAM: "Smithsonian American Art Museum",
         SIL: "Smithsonian Libraries",
-        // ... (you can add more codes as needed)
       };
       const displayMuseum = (unit) => display_unitcodes[unit] || "";
 
       // === Weighted-total explainer (used by the info icon) =======================
-      // explains the difference between true object counts (details) vs weighted totals (materials overview)
       const MATERIAL_WEIGHT_EXPLAIN = `
         <div class="tt-title">Counts vs. weighted totals</div>
         <div>
@@ -115,6 +96,142 @@
         </div>
       `;
 
+      // helper to compute top 3 places for a given action family
+      function getTopPlacesForFamily(familyName) {
+        // guard: if no places data loaded, return empty
+        if (!placesRows || placesRows.length === 0) return [];
+
+        const normalizedFamily = norm(familyName);
+        const placeCounts = new Map();
+
+        // filter rows by action_family and count places
+        placesRows.forEach(row => {
+          const rowFamily = norm(row.action_family || "");
+          if (rowFamily !== normalizedFamily) return;
+
+          const placesRaw = (row.places_made_for_sentence || "").trim();
+          if (!placesRaw || placesRaw.toLowerCase() === "unknown") return;
+
+          // split by | to handle multi-place objects
+          const places = placesRaw.split("|").map(p => p.trim()).filter(Boolean);
+          places.forEach(place => {
+            placeCounts.set(place, (placeCounts.get(place) || 0) + 1);
+          });
+        });
+
+        // sort by count descending and take top 3
+        const sorted = Array.from(placeCounts.entries())
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 3);
+
+        const cleaned = sorted.map(([place]) => {
+          const match = place.match(/^United States \(([^)]+)\)$/i);
+          return match ? match[1] : place;
+        });
+
+        const hasUSState = sorted.some(([place]) => /^United States \([^)]+\)$/i.test(place));
+        
+        if (hasUSState) {
+          return cleaned.filter(place => place.toLowerCase() !== "united states");
+        }
+
+        return cleaned;
+      }
+
+      // helper to compute top 3 places for a given material
+      function getTopPlacesForMaterial(materialName) {
+        // guard: if no places data loaded, return empty
+        if (!placesRows || placesRows.length === 0) return [];
+
+        const normalizedMaterial = norm(materialName);
+        const placeCounts = new Map();
+
+        // filter rows by main_material and count places
+        placesRows.forEach(row => {
+          const raw = (row.main_material || "").toLowerCase();
+          if (!raw || raw === "unknown") return;
+          
+          // split materials by common separators
+          const toks = raw
+            .split(/[,/&;]|\sand\s|\+|\|/g)
+            .map((t) => t.trim())
+            .filter(Boolean);
+          
+          // check if this material is in the object's materials
+          if (!new Set(toks).has(normalizedMaterial)) return;
+
+          const placesRaw = (row.places_made_for_sentence || "").trim();
+          if (!placesRaw || placesRaw.toLowerCase() === "unknown") return;
+
+          // split by | to handle multi-place objects
+          const places = placesRaw.split("|").map(p => p.trim()).filter(Boolean);
+          places.forEach(place => {
+            placeCounts.set(place, (placeCounts.get(place) || 0) + 1);
+          });
+        });
+
+        // sort by count descending and take top 3
+        const sorted = Array.from(placeCounts.entries())
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 3);
+
+        // clean up place names
+        const cleaned = sorted.map(([place]) => {
+          const match = place.match(/^United States \(([^)]+)\)$/i);
+          return match ? match[1] : place;
+        });
+
+        // check if any place is a US state
+        const hasUSState = sorted.some(([place]) => /^United States \([^)]+\)$/i.test(place));
+        
+        // if there are US states, filter out generic "United States"
+        if (hasUSState) {
+          return cleaned.filter(place => place.toLowerCase() !== "united states");
+        }
+
+        return cleaned;
+      }
+
+      // update place hint based on current zoom node
+      function updatePlaceHint(node) {
+        if (!placeHint.node()) return;
+
+        // only show hint when zoomed into a specific family/material (not at root, not in "other" buckets)
+        if (node === root || isOtherCombined(node)) {
+          placeHint.classed("visible", false).text("");
+          return;
+        }
+
+        const nodeName = node?.data?.name || "";
+        let topPlaces = [];
+        
+        if (currentMode === "use") {
+          topPlaces = getTopPlacesForFamily(nodeName);
+        } else if (currentMode === "material") {
+          topPlaces = getTopPlacesForMaterial(nodeName);
+        } else {
+          // hide hint for any other mode
+          placeHint.classed("visible", false).text("");
+          return;
+        }
+        
+        if (topPlaces.length === 0) {
+          placeHint.classed("visible", false).text("");
+        } else if (topPlaces.length === 1) {
+          const groupType = currentMode === "material" ? "material family" : "action family";
+          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces[0]}.`);
+        } else if (topPlaces.length === 2) {
+          const groupType = currentMode === "material" ? "material family" : "action family";
+          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces.join(" and ")}.`);
+        } else {
+          // 3 places: use Oxford comma
+          const groupType = currentMode === "material" ? "material family" : "action family";
+          const lastPlace = topPlaces[topPlaces.length - 1];
+          const otherPlaces = topPlaces.slice(0, -1).join(", ");
+          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${otherPlaces}, and ${lastPlace}.`);
+        }
+      }
+
       // =========================================================
       // 3) DOM / D3 REFERENCES
       // =========================================================
@@ -129,6 +246,7 @@
       // controls + details panel bits
       const back_button = d3.select(".back-to-all");
       const zoom_card = d3.select(".zoom-card");
+      const placeHint = d3.select("#placeHint");
       const detailsPanel = d3.select("#details");
       const detailsTitle = d3.select("#details-title");
       const detailsList = d3.select("#details-list");
@@ -252,6 +370,12 @@
       // set mode helper: flips aria state, updates svg attr, rebuilds hierarchy, and redraws
       function setMode(mode) {
         if (mode === currentMode) return;
+        
+        // CRITICAL: hide place hint BEFORE changing mode
+        if (placeHint && placeHint.node()) {
+          placeHint.classed("visible", false).text("");
+        }
+        
         currentMode = mode;
         svg.attr("data-mode", currentMode);
         btnUse.attr("aria-pressed", String(mode === "use"));
@@ -285,7 +409,7 @@
         const b = parseInt(v.slice(4,6), 16);
         return [r, g, b];
       }
-      // lightweight perceived luminance estimator (good enough for choosing black/white text)
+      // lightweight perceived luminance estimator
       function luminanceFromHex(hex) {
         const [r,g,b] = hexToRGB(hex);
         return (0.299*r + 0.587*g + 0.114*b) / 255;
@@ -299,7 +423,6 @@
       // 4) ACTIONS DATA SHAPING (keep “Other Actions”)
       // =========================================================
       // groups any families in `cats` into a single “Other Actions” node at root.
-      // returns a new tree { name, children: [...] } so we don’t mutate the original.
       function regroup_by_category(data, cats) {
         const families = Array.isArray(data?.children) ? data.children : [];
         const main = [];
@@ -466,8 +589,118 @@
               <div class="details-text">
                 <strong>${r.title || "(Untitled)"}</strong>${unitHTML}
               </div>
+              <button class="metadata-chip" data-edan="${r.EDANurl}" aria-label="View details">details</button>
             `;
           });
+        
+        // attach hover handlers for metadata chips
+        detailsList.selectAll(".metadata-chip").on("mouseenter", function(ev) {
+          const edanUrl = this.getAttribute("data-edan");
+          const metadata = metadataMap.get(edanUrl);
+          if (!metadata) return;
+          
+          // helper to parse and normalize date
+          function parseDate(rawDate) {
+            if (!rawDate) return null;
+            
+            // if it's a JSON string, parse it first
+            let dateValue = rawDate;
+            if (typeof rawDate === 'string' && (rawDate.startsWith('{') || rawDate.startsWith('['))) {
+              try {
+                const parsed = JSON.parse(rawDate);
+                // extract the actual date value from the parsed object
+                if (parsed && typeof parsed === 'object') {
+                  dateValue = parsed['Date made'] || parsed['Date'] || parsed['date made'] || parsed.date || rawDate;
+                }
+              } catch (e) {
+                // if parsing fails, use as-is
+                dateValue = rawDate;
+              }
+            }
+            
+            // trim and normalize
+            let cleaned = String(dateValue).trim()
+              .replace(/\s+/g, ' ')
+              .replace(/\s*-\s*|–/g, '-')
+              .replace(/,(\d{4})/g, ', $1') // fix "January 1,1813" → "January 1, 1813"
+              .replace(/Jauary/gi, 'January')
+              .replace(/dentury/gi, 'century');
+            
+            return cleaned;
+          }
+          
+          // build tooltip HTML
+          let html = '<div class="metadata-tooltip-content">';
+          
+          // name
+          if (metadata.title) {
+            html += `<div class="meta-row"><strong>Name:</strong> ${metadata.title}</div>`;
+          }
+          
+          // materials
+          if (metadata.main_material && metadata.main_material.toLowerCase() !== "unknown") {
+            html += `<div class="meta-row"><strong>Materials:</strong> ${metadata.main_material}</div>`;
+          }
+          
+          // date - choose most specific date field
+          let dateDisplay = null;
+          if (metadata.date && String(metadata.date).trim()) {
+            dateDisplay = metadata.date;
+          } else if (metadata.Date && String(metadata.Date).trim()) {
+            dateDisplay = metadata.Date;
+          } else if (metadata["Date made"] && String(metadata["Date made"]).trim()) {
+            dateDisplay = metadata["Date made"];
+          } else if (metadata["date made"] && String(metadata["date made"]).trim()) {
+            dateDisplay = metadata["date made"];
+          }
+          
+          // if date has multiple values separated by \n, pick the better one
+          if (dateDisplay && String(dateDisplay).includes('\n')) {
+            const parts = String(dateDisplay).split('\n').map(p => p.trim()).filter(Boolean);
+            // prefer the one with more detail (has month/day) or earlier year
+            dateDisplay = parts.sort((a, b) => {
+              const hasDetailA = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(a);
+              const hasDetailB = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(b);
+              if (hasDetailA && !hasDetailB) return -1;
+              if (!hasDetailA && hasDetailB) return 1;
+              return 0;
+            })[0];
+          }
+          
+          if (dateDisplay) {
+            const parsed = parseDate(dateDisplay);
+            if (parsed) {
+              html += `<div class="meta-row"><strong>Associated date:</strong> ${parsed}</div>`;
+            }
+          }
+          
+          // place made - parse places_made_for_sentence
+          const placesRaw = (metadata.places_made_for_sentence || "").trim();
+          if (placesRaw && placesRaw.toLowerCase() !== "unknown") {
+            // split by | to get individual countries/regions
+            const countries = placesRaw.split("|").map(c => c.trim()).filter(Boolean);
+            
+            const placeStrings = [];
+            countries.forEach(country => {
+              // check if this is United States with states
+              const usMatch = country.match(/^United States\s*\(([^)]+)\)$/i);
+              if (usMatch) {
+                // extract states from parentheses and split by |
+                const states = usMatch[1].split("|").map(s => s.trim()).filter(Boolean);
+                placeStrings.push(`United States (${states.join(", ")})`);
+              } else {
+                // regular country
+                placeStrings.push(country);
+              }
+            });
+            
+            html += `<div class="meta-row"><strong>Place made:</strong> ${placeStrings.join("; ")}</div>`;
+          }
+          
+          html += '</div>';
+          
+          showTooltip(ev, html);
+        }).on("mouseleave", hideTooltip);
 
         // try to fetch thumbs for the first N rows; as images arrive, we replace the placeholder and mark the row
         const cap = 50;
@@ -598,7 +831,7 @@
       // cache the prebuilt materials tree (grouped by threshold) so we can switch modes instantly
       let material_data = regroupMaterialsByThreshold(buildMaterialHierarchy(details), 0.02, []);
 
-      // build the actions hierarchy (by-use) once; we’ll rebuild on mode change
+      // build the actions hierarchy (by-use) once
       let root = d3
         .hierarchy(viz_data)
         .sum((d) => d.value || 0)
@@ -955,13 +1188,14 @@
 
         if (at_root) hideDetails();
 
-        // header + back label states
+        // header + back label states + place hint
         if (at_root) {
           back_button.classed("is-ghost", true);
           zoom_card
             .classed("is-ghost", false)
             .select(".zoom-title")
             .text(currentMode === "material" ? "All Materials" : "All Actions");
+          updatePlaceHint(node);
         } else {
           back_button
             .classed("is-ghost", false)
@@ -971,6 +1205,7 @@
               ? displayMaterial(node?.data?.name || "")
               : displayFamily(node?.data?.name || "");
           zoom_card.classed("is-ghost", false).select(".zoom-title").text(title);
+          updatePlaceHint(node);
         }
 
         // “camera” is the scale domain: focus the selected node’s box to the full viewport

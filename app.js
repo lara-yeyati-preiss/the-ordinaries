@@ -375,9 +375,24 @@ function renderStepContent(step) {
     const items = Array.isArray(cc.compartments) ? cc.compartments : [];
     const firstLabel = items.length ? items[0].label || "" : "";
 
+    // helper to convert number to Roman numeral
+    const toRoman = (num) => {
+      const lookup = [
+        ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]
+      ];
+      let result = '';
+      for (const [roman, value] of lookup) {
+        while (num >= value) {
+          result += roman;
+          num -= value;
+        }
+      }
+      return result;
+    };
+
     return (
       '<div class="compartment-container">' +
-      // visual stage with layered images + arrows + live label
+      // visual stage with layered images + numbered indicators + live label
       '<div class="sampler-viewport">' +
       items
         .map((comp, i) => {
@@ -390,9 +405,14 @@ function renderStepContent(step) {
           );
         })
         .join("") +
-      '<button class="img-arrow img-arrow-left" aria-label="Previous image"></button>' +
-      '<button class="img-arrow img-arrow-right" aria-label="Next image"></button>' +
       `<div class="viewport-label" id="viewportLabel">${firstLabel}</div>` +
+      '<div class="viewport-indicators">' +
+      items
+        .map((comp, i) => {
+          return `<button class="viewport-indicator ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="View image ${i + 1}">${toRoman(i + 1)}</button>`;
+        })
+        .join("") +
+      '</div>' +
       "</div>" +
       // caption card with linear progress bar
       '<div class="prelude-card compartment-card">' +
@@ -474,6 +494,7 @@ function renderStepContent(step) {
       '<div class="treemap-controls" aria-label="Treemap controls">' +
       '<div class="zoom-card"><span class="zoom-title">All Actions</span></div>' +
       '<button class="back-to-all is-ghost">← Back to all actions</button>' +
+      '<span class="place-hint" id="placeHint"></span>' +
       "</div>" +
       '<div class="treemap-stage viz-stage">' +
       '<svg id="treemap-svg" class="treemap" viewBox="0 0 1000 490" preserveAspectRatio="none" role="img" aria-label="Treemap of objects grouped by action"></svg>' +
@@ -632,6 +653,7 @@ function updateCompartmentView() {
   const wraps = stepEl.querySelectorAll(".viewport-image");
   const labelEl = stepEl.querySelector("#viewportLabel");
   const fillEl = stepEl.querySelector(".progress-fill");
+  const indicators = stepEl.querySelectorAll(".viewport-indicator");
   const n = items.length || wraps.length;
   if (!n) return;
 
@@ -657,6 +679,14 @@ function updateCompartmentView() {
     labelEl.textContent = items[showIdx]?.label || "";
   }
   if (fillEl) fillEl.style.width = `${(local * 100).toFixed(1)}%`;
+  
+  // update active indicator
+  if (indicators.length) {
+    const activeIdx = Math.round(local * (n - 1));
+    indicators.forEach((ind, k) => {
+      ind.classList.toggle('active', k === activeIdx);
+    });
+  }
 }
 
 /* -------------------------------
@@ -1410,7 +1440,6 @@ window.openStory = (key) => {
   const slides = getStorySlidesForKey(key);
   // guard: if nothing came back, bail quietly
   if (!slides?.length) return;
-  // stash a copy into whatever reactive/app state you use to render the track
   state.storySlides = slides.slice();
   // add a CSS body class like story--teapots so styles can scope to this story
   setStoryScope(key);
@@ -1424,7 +1453,7 @@ window.openStory = (key) => {
   backdrop.on("click", close);
   closeEl.on("click", close);
 
-  // bind arrows for the active compartment slide only
+  // bind numbered indicators for the active compartment slide only
   window.wireCompartmentArrows = function wireCompartmentArrows() {
     const active = track.selectAll(".story-slide").nodes()[state.storyIndex];
     if (!active) return;
@@ -1432,30 +1461,24 @@ window.openStory = (key) => {
     const container = d3.select(active).select(".compartment-container");
     if (container.empty()) return;
 
+    const viewport = container.select(".sampler-viewport");
+    if (viewport.empty()) return;
+
     const n = container.selectAll(".viewport-image").size();
     if (n < 2) return;
 
     const stepSize = 1 / (n - 1);
 
-    // remove any prior click handlers before re-attaching
-    container.selectAll(".img-arrow").on("click", null);
+    // remove any prior handlers before re-attaching
+    container.selectAll(".viewport-indicator").on("click", null);
 
-    container.selectAll(".img-arrow").on("click", (event) => {
+    // numbered indicator clicks
+    container.selectAll(".viewport-indicator").on("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
 
-      const isLeft = d3.select(event.currentTarget).classed("img-arrow-left");
-      const dir = isLeft ? -1 : 1;
-
-      let next = state.compartmentProgress + dir * stepSize;
-      if (COMPARTMENT_LOOP) {
-        if (next < 0) next = 1;
-        if (next > 1) next = 0;
-      } else {
-        next = Math.max(0, Math.min(1, next));
-      }
-
-      state.compartmentProgress = next;
+      const idx = +d3.select(event.currentTarget).attr("data-index");
+      state.compartmentProgress = idx * stepSize;
       updateCompartmentView();
     });
   };
