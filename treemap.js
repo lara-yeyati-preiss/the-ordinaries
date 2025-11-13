@@ -218,14 +218,14 @@
         if (topPlaces.length === 0) {
           placeHint.classed("visible", false).text("");
         } else if (topPlaces.length === 1) {
-          const groupType = currentMode === "material" ? "material family" : "action family";
+          const groupType = currentMode === "material" ? "material grouping" : "action grouping";
           placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces[0]}.`);
         } else if (topPlaces.length === 2) {
-          const groupType = currentMode === "material" ? "material family" : "action family";
+          const groupType = currentMode === "material" ? "material grouping" : "action grouping";
           placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces.join(" and ")}.`);
         } else {
           // 3 places: use Oxford comma
-          const groupType = currentMode === "material" ? "material family" : "action family";
+          const groupType = currentMode === "material" ? "material grouping" : "action grouping";
           const lastPlace = topPlaces[topPlaces.length - 1];
           const otherPlaces = topPlaces.slice(0, -1).join(", ");
           placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${otherPlaces}, and ${lastPlace}.`);
@@ -311,7 +311,7 @@
 
         // set html, show, and switch to fixed positioning so we can place it in viewport coords
         tooltipSel
-          .html(MATERIAL_WEIGHT_EXPLAIN)        // your explainer HTML
+          .html(MATERIAL_WEIGHT_EXPLAIN)  
           .style("position", "fixed")
           .style("display", "block")
           .attr("aria-hidden", "false");
@@ -564,143 +564,155 @@
         detailsPanel.attr("hidden", null);
         const nPanel = detailsPanel.node();
         if (nPanel) nPanel.scrollTop = 0;
+        
+        // Hide place hint when details panel opens
+        if (placeHint && placeHint.node()) {
+          placeHint.classed("visible", false).text("");
+        }
 
         // data join (key by EDANurl to keep identity stable)
         const items = detailsList.selectAll("li").data(rows, (d) => d.EDANurl);
         items.exit().remove();
-        items
+        const itemsEnter = items
           .enter()
           .append("li")
-          .merge(items)
-          .attr("class", "details-item")
-          .html((r) => {
-            const unit = (r.unitCode || "").trim();
-            const full = displayMuseum(unit);
-            const unitHTML = unit
-              ? ` — <em>${full ? `${full} <span class="unitcode">(${unit})</span>` : unit}</em>`
-              : "";
-            return `
-              <a href="${r.collectionsURL}" target="_blank" rel="noopener" class="details-placeholder">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                </svg>
-              </a>
-              <div class="details-text">
-                <strong>${r.title || "(Untitled)"}</strong>${unitHTML}
-              </div>
-              <button class="metadata-chip" data-edan="${r.EDANurl}" aria-label="View details">details</button>
-            `;
-          });
+          .attr("class", "details-item");
         
-        // attach hover handlers for metadata chips
-        detailsList.selectAll(".metadata-chip").on("mouseenter", function(ev) {
-          const edanUrl = this.getAttribute("data-edan");
-          const metadata = metadataMap.get(edanUrl);
-          if (!metadata) return;
+        itemsEnter.each(function(r) {
+          const li = d3.select(this);
+          const unit = (r.unitCode || "").trim();
+          const full = displayMuseum(unit);
+          const unitHTML = unit
+            ? ` — <em>${full ? `${full} <span class="unitcode">(${unit})</span>` : unit}</em>`
+            : "";
           
-          // helper to parse and normalize date
-          function parseDate(rawDate) {
-            if (!rawDate) return null;
+          // Placeholder link
+          li.append("a")
+            .attr("href", r.collectionsURL)
+            .attr("target", "_blank")
+            .attr("rel", "noopener")
+            .attr("class", "details-placeholder")
+            .html(`
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            `);
+          
+          // Text container
+          li.append("div")
+            .attr("class", "details-text")
+            .html(`<strong>${r.title || "(Untitled)"}</strong>${unitHTML}`);
+          
+          // Metadata chips container (hidden by default)
+          const chipsContainer = li.append("div")
+            .attr("class", "metadata-chips-container")
+            .style("opacity", "0")
+            .style("pointer-events", "none");
+          
+          // Get metadata for this item
+          const metadata = metadataMap.get(r.EDANurl);
+          if (metadata) {
+            // Material chip
+            if (metadata.main_material && metadata.main_material.toLowerCase() !== "unknown") {
+              const materials = metadata.main_material.split(/[,/&;]|\sand\s|\+|\|/g).map(t => t.trim()).filter(Boolean);
+              const label = materials.length > 1 ? "Materials:" : "Material:";
+              chipsContainer.append("span")
+                .attr("class", "inline-metadata-chip")
+                .text(`${label} ${metadata.main_material}`);
+            }
             
-            // if it's a JSON string, parse it first
-            let dateValue = rawDate;
-            if (typeof rawDate === 'string' && (rawDate.startsWith('{') || rawDate.startsWith('['))) {
-              try {
-                const parsed = JSON.parse(rawDate);
-                // extract the actual date value from the parsed object
-                if (parsed && typeof parsed === 'object') {
-                  dateValue = parsed['Date made'] || parsed['Date'] || parsed['date made'] || parsed.date || rawDate;
+            // Date chip
+            let dateDisplay = null;
+            if (metadata.date && String(metadata.date).trim()) {
+              dateDisplay = metadata.date;
+            } else if (metadata.Date && String(metadata.Date).trim()) {
+              dateDisplay = metadata.Date;
+            } else if (metadata["Date made"] && String(metadata["Date made"]).trim()) {
+              dateDisplay = metadata["Date made"];
+            } else if (metadata["date made"] && String(metadata["date made"]).trim()) {
+              dateDisplay = metadata["date made"];
+            }
+            
+            if (dateDisplay) {
+              // Parse date
+              let dateValue = dateDisplay;
+              if (typeof dateDisplay === 'string' && (dateDisplay.startsWith('{') || dateDisplay.startsWith('['))) {
+                try {
+                  const parsed = JSON.parse(dateDisplay);
+                  if (parsed && typeof parsed === 'object') {
+                    dateValue = parsed['Date made'] || parsed['Date'] || parsed['date made'] || parsed.date || dateDisplay;
+                  }
+                } catch (e) {
+                  dateValue = dateDisplay;
                 }
-              } catch (e) {
-                // if parsing fails, use as-is
-                dateValue = rawDate;
+              }
+              
+              if (String(dateValue).includes('\n')) {
+                const parts = String(dateValue).split('\n').map(p => p.trim()).filter(Boolean);
+                dateValue = parts.sort((a, b) => {
+                  const hasDetailA = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(a);
+                  const hasDetailB = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(b);
+                  if (hasDetailA && !hasDetailB) return -1;
+                  if (!hasDetailA && hasDetailB) return 1;
+                  return 0;
+                })[0];
+              }
+              
+              const cleaned = String(dateValue).trim()
+                .replace(/\s+/g, ' ')
+                .replace(/\s*-\s*|–/g, '-')
+                .replace(/,(\d{4})/g, ', $1')
+                .replace(/Jauary/gi, 'January')
+                .replace(/dentury/gi, 'century');
+              
+              if (cleaned) {
+                chipsContainer.append("span")
+                  .attr("class", "inline-metadata-chip")
+                  .text(`Date: ${cleaned}`);
               }
             }
             
-            // trim and normalize
-            let cleaned = String(dateValue).trim()
-              .replace(/\s+/g, ' ')
-              .replace(/\s*-\s*|–/g, '-')
-              .replace(/,(\d{4})/g, ', $1') // fix "January 1,1813" → "January 1, 1813"
-              .replace(/Jauary/gi, 'January')
-              .replace(/dentury/gi, 'century');
-            
-            return cleaned;
-          }
-          
-          // build tooltip HTML
-          let html = '<div class="metadata-tooltip-content">';
-          
-          // name
-          if (metadata.title) {
-            html += `<div class="meta-row"><strong>Name:</strong> ${metadata.title}</div>`;
-          }
-          
-          // materials
-          if (metadata.main_material && metadata.main_material.toLowerCase() !== "unknown") {
-            html += `<div class="meta-row"><strong>Materials:</strong> ${metadata.main_material}</div>`;
-          }
-          
-          // date - choose most specific date field
-          let dateDisplay = null;
-          if (metadata.date && String(metadata.date).trim()) {
-            dateDisplay = metadata.date;
-          } else if (metadata.Date && String(metadata.Date).trim()) {
-            dateDisplay = metadata.Date;
-          } else if (metadata["Date made"] && String(metadata["Date made"]).trim()) {
-            dateDisplay = metadata["Date made"];
-          } else if (metadata["date made"] && String(metadata["date made"]).trim()) {
-            dateDisplay = metadata["date made"];
-          }
-          
-          // if date has multiple values separated by \n, pick the better one
-          if (dateDisplay && String(dateDisplay).includes('\n')) {
-            const parts = String(dateDisplay).split('\n').map(p => p.trim()).filter(Boolean);
-            // prefer the one with more detail (has month/day) or earlier year
-            dateDisplay = parts.sort((a, b) => {
-              const hasDetailA = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(a);
-              const hasDetailB = /january|february|march|april|may|june|july|august|september|october|november|december/i.test(b);
-              if (hasDetailA && !hasDetailB) return -1;
-              if (!hasDetailA && hasDetailB) return 1;
-              return 0;
-            })[0];
-          }
-          
-          if (dateDisplay) {
-            const parsed = parseDate(dateDisplay);
-            if (parsed) {
-              html += `<div class="meta-row"><strong>Associated date:</strong> ${parsed}</div>`;
+            // Place chip
+            const placesRaw = (metadata.places_made_for_sentence || "").trim();
+            if (placesRaw && placesRaw.toLowerCase() !== "unknown") {
+              const countries = placesRaw.split("|").map(c => c.trim()).filter(Boolean);
+              const placeStrings = [];
+              countries.forEach(country => {
+                const usMatch = country.match(/^United States\s*\(([^)]+)\)$/i);
+                if (usMatch) {
+                  const states = usMatch[1].split("|").map(s => s.trim()).filter(Boolean);
+                  placeStrings.push(`${states.join(", ")}`);
+                } else {
+                  placeStrings.push(country);
+                }
+              });
+              
+              const finalPlaceString = placeStrings.join(", ");
+              const placeCount = placeStrings.length;
+              const label = placeCount > 1 ? "Places made:" : "Place made:";
+              
+              chipsContainer.append("span")
+                .attr("class", "inline-metadata-chip")
+                .text(`${label} ${finalPlaceString}`);
             }
           }
-          
-          // place made - parse places_made_for_sentence
-          const placesRaw = (metadata.places_made_for_sentence || "").trim();
-          if (placesRaw && placesRaw.toLowerCase() !== "unknown") {
-            // split by | to get individual countries/regions
-            const countries = placesRaw.split("|").map(c => c.trim()).filter(Boolean);
-            
-            const placeStrings = [];
-            countries.forEach(country => {
-              // check if this is United States with states
-              const usMatch = country.match(/^United States\s*\(([^)]+)\)$/i);
-              if (usMatch) {
-                // extract states from parentheses and split by |
-                const states = usMatch[1].split("|").map(s => s.trim()).filter(Boolean);
-                placeStrings.push(`United States (${states.join(", ")})`);
-              } else {
-                // regular country
-                placeStrings.push(country);
-              }
-            });
-            
-            html += `<div class="meta-row"><strong>Place made:</strong> ${placeStrings.join("; ")}</div>`;
-          }
-          
-          html += '</div>';
-          
-          showTooltip(ev, html);
-        }).on("mouseleave", hideTooltip);
+        });
+        
+        const itemsAll = itemsEnter.merge(items);
+        
+        // Add hover handlers to show/hide chips
+        itemsAll
+          .on("mouseenter", function() {
+            d3.select(this).select(".metadata-chips-container")
+              .style("opacity", "1")
+              .style("pointer-events", "auto");
+          })
+          .on("mouseleave", function() {
+            d3.select(this).select(".metadata-chips-container")
+              .style("opacity", "0")
+              .style("pointer-events", "none");
+          });
 
         // try to fetch thumbs for the first N rows; as images arrive, we replace the placeholder and mark the row
         const cap = 50;
@@ -746,6 +758,11 @@
         if (n) n.scrollTop = 0;
         detailsList.selectAll("li").remove();
         detailsSubtitle.text("");
+        
+        // Restore place hint when closing details panel (if we're not at root)
+        if (current && current !== root && !isOtherCombined(current)) {
+          updatePlaceHint(current);
+        }
       }
       d3.select(".details-close").on("click", hideDetails);
 
@@ -854,35 +871,59 @@
       // =========================================================
       // draw the chip-style labels at overview (both modes). they hide while zoomed.
       function draw_family_labels_all() {
-        if (current !== root) {
+        const showChips = current === root || isOtherCombined(current);
+        
+        if (!showChips) {
           gFamilyChips.attr("display", "none").style("opacity", 0);
           return;
         }
         gFamilyChips.attr("display", null).style("opacity", 1);
 
-        const topLevel = root.children || [];
+        // Determine which level to show labels for
+        let topLevel;
+        if (current === root) {
+          // At root: show all top-level families/materials (including "Other Actions/Materials")
+          topLevel = root.children || [];
+        } else if (isOtherCombined(current)) {
+          // Inside "Other Actions/Materials": show only the children of THIS bucket
+          topLevel = current.children || [];
+        } else {
+          // Inside a specific family/material: no chips
+          topLevel = [];
+        }
 
         const chips = gFamilyChips
           .selectAll("g.family-chip")
           .data(topLevel, d => d.data.name);
 
+        chips.exit().remove();
+
         const chipsEnter = chips.enter()
           .append("g")
           .attr("class", "family-chip")
-          .on("click", (_, d) => zoom_to(d));  // click a chip → zoom to that group
+          .on("click", (_, d) => {
+            // When inside "other" bucket, clicking a chip zooms to that child
+            if (isOtherCombined(current)) {
+              zoom_to(d);
+            }
+          });
 
         chipsEnter.append("foreignObject")
           .attr("class", "chip-fo")
-          .style("pointer-events", "auto")
+          .style("pointer-events", isOtherCombined(current) ? "auto" : "none")
           .append("xhtml:div")
           .attr("class", "family-labels-html");
 
         const chipsAll = chipsEnter.merge(chips);
 
+        // Update pointer-events for existing chips
+        chipsAll.select("foreignObject.chip-fo")
+          .style("pointer-events", isOtherCombined(current) ? "auto" : "none");
+
         // layout: up to 2 lines, shallow height so tiles still get hover
         const MAX_LINES = 2;
-        const LINE_H = 18;   // rough line-height in px (keep in sync with CSS if you tweak)
-        const PAD_V   = 8;   // vertical padding inside the chip
+        const LINE_H = 18;
+        const PAD_V   = 8;
 
         chipsAll.select("foreignObject.chip-fo")
           .attr("x", d => sx(d.x0) + 8)
@@ -900,8 +941,6 @@
             ? displayMaterial(d.data.name)
             : displayFamily(d.data.name)
           );
-
-        chips.exit().remove();
       }
 
       // =========================================================
@@ -1138,11 +1177,15 @@
           .attr("y", d => sy(d.y0) + 6)
           .attr("width", d => Math.max(0, sx(d.x1) - sx(d.x0) - 12))
           .attr("height", d => Math.max(0, sy(d.y1) - sy(d.y0) - 12))
-          .style("display", current === root ? "none" : "block");
+          .style("display", (current === root || isOtherCombined(current)) ? "none" : "block");
 
         // fill label text depending on mode + zoom state
         cells.select("div.leaf-html").each(function (d) {
-          if (current === root) { this.textContent = ""; return; }
+          // Hide labels at root or inside "other" buckets (chips handle those)
+          if (current === root || isOtherCombined(current)) { 
+            this.textContent = ""; 
+            return; 
+          }
           const w = sx(d.x1) - sx(d.x0);
           const h = sy(d.y1) - sy(d.y0);
           if (w < 70 || h < 30) { this.textContent = ""; return; }
@@ -1222,12 +1265,19 @@
           .attr("width", (d) => Math.max(0, sx(d.x1) - sx(d.x0)))
           .attr("height", (d) => Math.max(0, sy(d.y1) - sy(d.y0)));
 
-        // chips are shown only at overview (regardless of mode)
-        if (at_root) gFamilyChips.attr("display", null).style("opacity", 1);
-        else gFamilyChips.attr("display", "none").style("opacity", 0);
+        // chips are shown at overview and inside "other" buckets
+        const showChips = at_root || isOtherCombined(node);
+        if (showChips) {
+          gFamilyChips.attr("display", null).style("opacity", 1);
+        } else {
+          gFamilyChips.attr("display", "none").style("opacity", 0);
+        }
 
-        // when transition completes, run a fresh draw for the new focus level
-        t.on("end", () => draw(node));
+        // when transition completes, run a fresh draw for the new focus level AND redraw chips
+        t.on("end", () => {
+          draw(node);
+          draw_family_labels_all();
+        });
       }
 
       // =========================================================
