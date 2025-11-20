@@ -366,7 +366,7 @@ body {
 }
 
 #treemap-top{ scroll-margin-top: 0; } 
-.treemap-controls{ display: flex; gap: 10px; align-items: center; margin: 20px 0 10px; flex-wrap: wrap; }
+.treemap-controls{ display: flex; gap: 10px; align-items: center; margin: 25px 0 10px; flex-wrap: wrap; }
 @media (max-width: 720px){ .treemap-controls{ flex-wrap: wrap; } }
 
 .place-hint{
