@@ -1324,7 +1324,7 @@
         if (!stageEl) return;
         const { width } = stageEl.getBoundingClientRect();
         const mobile = window.innerWidth <= 780;
-        const height = Math.round(width * (mobile ? 4 / 3 : 480 / 1000)); // reduced from 520 to 480
+        const height = Math.round(width * (mobile ? 4 / 3 : 460 / 1000)); // reduced from 520 to 470
 
         // update the svg viewBox so d3.treemap can lay out in screen coords directly
         svg.attr("viewBox", `0 0 ${width} ${height}`);
