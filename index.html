@@ -94,7 +94,7 @@
               <div class="modal-text">
                 <h2 id="about-title">About this project</h2>
                 <p id="about-desc">
-                  <em>The Ordinaries</em> examines the American Revolutionary era (1765–1783)
+                  The Ordinaries examines the American Revolutionary era (1765–1783)
                   through the material traces of everyday life, drawing on objects from the Smithsonian’s
                   collections — from cooking pots and card games to stitched samplers and nursing bottles.
                 </p>
@@ -143,7 +143,76 @@
             <section class="story-track" aria-live="polite"></section>
           </div>
         </div> <!-- end #storyModal -->
-        
+    
+    <!-- SAMPLER INTRO (TRIPTYCH) TEMPLATE -->
+    <template id="sampler-intro-template">
+      <div class="sampler-intro-step">
+        <div class="prelude-card sampler-intro-card">
+          <p data-role="sampler-text"></p>
+        </div>
+
+        <div class="sampler-gallery" data-role="sampler-gallery">
+          <!-- JS will inject .sampler-item elements here -->
+        </div>
+      </div>
+    </template>
+
+    <!-- SAMPLER INTRO SIDE TEMPLATE -->
+    <template id="sampler-intro-side-template">
+      <div class="sampler-intro-step side-by-side">
+        <div class="sampler-image-wrap">
+          <img data-role="sampler-image" alt="">
+        </div>
+
+        <div class="sampler-text-wrap prelude-card sampler-intro-card">
+          <p data-role="sampler-text"></p>
+        </div>
+      </div>
+    </template>
+
+    <!-- SAMPLER INTRO SINGLE TEMPLATE -->
+    <template id="sampler-intro-single-template">
+      <div class="sampler-intro-step" style="gap:1.2vh;">
+        <div class="prelude-card sampler-intro-card">
+          <p data-role="sampler-text"></p>
+        </div>
+
+        <div class="sampler-gallery">
+          <div class="sampler-item visible" data-index="0">
+            <img
+              data-role="sampler-image"
+              style="height:clamp(440px,44vh,600px);width:auto;max-width:99vw;object-fit:contain;display:block;"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </template>
+
+        <!-- COMPARTMENT STEP TEMPLATE -->
+    <template id="compartment-step-template">
+      <div class="compartment-container">
+        <!-- visual stage with layered images + label + indicators -->
+        <div class="sampler-viewport">
+          <!-- JS will inject .viewport-image items here -->
+          <div class="viewport-images" data-role="viewport-images"></div>
+
+          <!-- label chip (ID kept for updateCompartmentView) -->
+          <div class="viewport-label" id="viewportLabel" data-role="viewport-label"></div>
+
+          <!-- numbered indicators (I, II, III, ...) -->
+          <div class="viewport-indicators" data-role="viewport-indicators"></div>
+        </div>
+
+        <!-- caption card with linear progress bar -->
+        <div class="prelude-card compartment-card">
+          <p data-role="compartment-text"></p>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+      </div>
+    </template>
+
     </div> <!-- end .scrolly-track -->
     </div> <!-- end #scrollContainer (prelude-scrolly-container) -->
 
@@ -155,8 +224,273 @@
         </svg>
     </button>
 
-    <!-- main app bootstrapping and treemap logic.
-         note: treemap.js expects markup injected by app.js (the treemap step). -->
+        <!-- CARD STEP TEMPLATE (intro / outro cards) -->
+    <template id="card-step-template">
+      <div class="prelude-card">
+        <p class="card-text"></p>
+        <img
+          class="card-image"
+          alt=""
+          style="height:110px;width:auto;max-width:99vw;object-fit:contain;display:block;margin-top:2em;opacity:0.7;">
+      </div>
+    </template>
+    <!-- END CARD STEP TEMPLATE -->
+
+    <!-- OBJECT GRID STEP TEMPLATE -->
+<template id="object-grid-step-template">
+  <div class="object-grid-step">
+    <div class="grid-wrapper">
+
+      <!-- LEFT COLUMN -->
+      <div class="grid-left-col">
+        <div class="prelude-card object-grid-card">
+          <p>
+            Each object belonged to a rhythm of ritual and habit, through which
+            life was imagined and ordered.
+          </p>
+        </div>
+
+        <div
+          class="category-selector"
+          id="categorySelector"
+          role="radiogroup"
+          aria-label="Filter by object"
+        >
+          <button
+            type="button"
+            class="category-option active"
+            data-category-index="0"
+            role="radio"
+            aria-checked="true"
+          >
+            <span class="option-chip editable-chip family-labels-html">
+              Textile Making
+            </span>
+            <span class="option-label object-label">Samplers</span>
+          </button>
+
+          <button
+            type="button"
+            class="category-option"
+            data-category-index="1"
+            role="radio"
+            aria-checked="false"
+          >
+            <span class="option-chip editable-chip family-labels-html">
+              Healing &amp; Caring
+            </span>
+            <span class="option-label object-label">Apothecary jars</span>
+          </button>
+
+          <button
+            type="button"
+            class="category-option"
+            data-category-index="2"
+            role="radio"
+            aria-checked="false"
+          >
+            <span class="option-chip editable-chip family-labels-html">
+              Eating, Cooking &amp; Drinking
+            </span>
+            <span class="option-label object-label">Teapots</span>
+          </button>
+
+          <button
+            type="button"
+            class="category-option"
+            data-category-index="3"
+            role="radio"
+            aria-checked="false"
+          >
+            <span class="option-chip editable-chip family-labels-html">
+              Lighting &amp; Firekeeping
+            </span>
+            <span class="option-label object-label">Fire marks</span>
+          </button>
+        </div>
+
+        <button
+          class="view-story-btn"
+          id="viewStoryBtn"
+          data-story=""
+        >
+          View Samplers Story
+        </button>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="image-grid" id="imageGrid"></div>
+    </div>
+  </div>
+</template>
+<!-- END OBJECT GRID TEMPLATE -->
+
+<!-- Lightbox overlay for object grid -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lightbox-content">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-info">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-materials"></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- FLOOR PLAN STEP TEMPLATE -->
+    <template id="floor-plan-step-template">
+      <div class="floor-plan-step">
+        <div class="grid-wrapper">
+          <div class="grid-left-col">
+            <div class="prelude-card floor-plan-card">
+              <p>
+                But objects gain meaning only in place: a home, a room, a drawer —
+                as they pass from life to life.
+              </p>
+            </div>
+
+            <p class="floor-plan-hint">
+              Explore the rooms to see what might have been kept within a home.
+            </p>
+
+            <div class="floor-plan-container">
+              <div class="floor-plan-svg-wrapper">
+                <object
+                  type="image/svg+xml"
+                  data="floor_plan.svg"
+                  class="floor-plan-svg"
+                  id="floorPlanSvg">
+                </object>
+
+                <div class="floor-plan-house-wrapper">
+                  <img
+                    src="assets/house.png"
+                    alt=""
+                    class="floor-plan-house"
+                    aria-hidden="true">
+
+                  <button class="floor-plan-info-icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle
+                        cx="8"
+                        cy="8"
+                        r="7"
+                        stroke="currentColor"
+                        stroke-width="1.5" />
+                      <path
+                        d="M8 7V11M8 5V5.5"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round" />
+                    </svg>
+                  </button>
+
+                  <div class="floor-plan-info-tooltip" role="tooltip">
+                    Plan of a late-19th-century American home, adapted from
+                    <em>The Home: Its Work and Influence</em>, Library of Useful Knowledge,
+                    ed. Richard S. Peale (1888).
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="floor-plan-deselect"
+                id="floorPlanDeselect"
+                aria-label="Clear room selection"
+                style="display:none;">
+                ×
+              </button>
+            </div>
+          </div>
+
+          <div class="image-grid floor-plan-grid" id="floorPlanGrid"></div>
+        </div>
+      </div>
+    </template>
+    <!-- END FLOOR PLAN TEMPLATE -->
+
+    <!-- TREEMAP STEP TEMPLATE -->
+<template id="treemap-step-template">
+  <div class="treemap-step">
+    <div class="viz-wrap" id="treemap-section">
+      <h2 class="section-title">Traces of an Ordinary Life</h2>
+      <p class="viz-hint">
+        Explore objects from Revolutionary-era America by how they were used, drawn
+        from the Smithsonian collections.
+      </p>
+      <p class="viz-hint-small">Click on a group to see the objects inside.</p>
+
+      <div class="treemap-controls" aria-label="Treemap controls">
+        <div class="zoom-card"><span class="zoom-title">All Actions</span></div>
+        <button class="back-to-all is-ghost">← Back to all actions</button>
+        <span class="place-hint" id="placeHint"></span>
+      </div>
+
+      <div class="treemap-stage viz-stage">
+        <svg
+          id="treemap-svg"
+          class="treemap"
+          viewBox="0 0 1000 480"
+          preserveAspectRatio="none"
+          role="img"
+          aria-label="Treemap of objects grouped by action">
+        </svg>
+
+        <div id="details" class="details-panel" hidden>
+          <div class="details-header">
+            <h3 id="details-title" class="details-title"></h3>
+            <button class="details-close" aria-label="Close details">×</button>
+          </div>
+          <p class="details-subtitle"></p>
+          <ul id="details-list" class="details-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="treemap-tooltip" id="treemap-tooltip" aria-hidden="true"></div>
+</template>
+<!-- END TREEMAP TEMPLATE -->
+
+    <!-- FOOTER TEMPLATE -->
+    <template id="footer-step-template">
+      <footer id="about" class="site-footer" aria-labelledby="about-footer-title">
+        <div class="footer-container">
+          <div class="footer-inner">
+            <div class="footer-text">
+              <h2 id="about-footer-title">About this project</h2>
+              <p>
+                The Ordinaries examines the American Revolutionary era (1765–1783)
+                through the material traces of everyday life, drawing on objects from the
+                Smithsonian’s collections — from cooking pots and card games to stitched
+                samplers and nursing bottles.
+              </p>
+
+              <div class="footer-meta">
+                Data source:
+                <a href="https://www.si.edu/openaccess"
+                   target="_blank" rel="noopener">
+                  Smithsonian Open Access
+                </a>
+              </div>
+            </div>
+
+            <figure class="footer-figure" aria-hidden="true">
+              <img src="assets/ordinaries.png" alt="" role="presentation">
+            </figure>
+          </div>
+        </div>
+      </footer>
+    </template>
+<!-- END FOOTER TEMPLATE -->
+
+
     <script src="app.js"></script>
     <script src="treemap.js"></script>
 </body>

@@ -9,16 +9,20 @@
           "value": 62
         },
         {
-          "name": "bedcoverings",
-          "value": 53
-        },
-        {
           "name": "quilts",
           "value": 53
         },
         {
           "name": "andirons",
           "value": 32
+        },
+        {
+          "name": "beds",
+          "value": 31
+        },
+        {
+          "name": "bedcoverings",
+          "value": 25
         },
         {
           "name": "chests",
@@ -57,20 +61,16 @@
           "value": 3
         },
         {
+          "name": "mirrors",
+          "value": 3
+        },
+        {
           "name": "shelves",
           "value": 3
         },
         {
-          "name": "bed warmers",
-          "value": 2
-        },
-        {
           "name": "lanterns",
           "value": 2
-        },
-        {
-          "name": "bedsteads",
-          "value": 1
         },
         {
           "name": "blankets",
@@ -97,10 +97,6 @@
           "value": 1
         },
         {
-          "name": "frame, mirror, parts oves",
-          "value": 1
-        },
-        {
           "name": "furniture, kilns",
           "value": 1
         },
@@ -110,14 +106,6 @@
         },
         {
           "name": "micrometer, benches",
-          "value": 1
-        },
-        {
-          "name": "mirror frame, part oves",
-          "value": 1
-        },
-        {
-          "name": "mirrors",
           "value": 1
         },
         {
@@ -246,10 +234,6 @@
           "value": 4
         },
         {
-          "name": "hats",
-          "value": 4
-        },
-        {
           "name": "mitts",
           "value": 4
         },
@@ -267,6 +251,10 @@
         },
         {
           "name": "handkerchiefs",
+          "value": 3
+        },
+        {
+          "name": "hats",
           "value": 3
         },
         {
@@ -406,7 +394,7 @@
           "value": 1
         },
         {
-          "name": "ornament, flagstafves",
+          "name": "ornament, flagstaffs",
           "value": 1
         },
         {
@@ -931,7 +919,7 @@
         },
         {
           "name": "candleholders",
-          "value": 11
+          "value": 9
         },
         {
           "name": "firesteels",
@@ -1284,7 +1272,7 @@
         },
         {
           "name": "boxes",
-          "value": 11
+          "value": 10
         },
         {
           "name": "cigar holders",

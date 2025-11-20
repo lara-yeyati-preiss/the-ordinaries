@@ -50,7 +50,7 @@ const config = {
       type: "card",
       content: {
         text:
-          "From the material remains of everyday actions, patterns emerge—tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
+          "From the material remains of everyday actions, patterns emerge, tracing the outlines of what once was ordinary life.<br><br><em>Browse the full collection below.</em>",
       },
     },
 
@@ -59,6 +59,23 @@ const config = {
       id: "treemap",
       type: "treemap",
       content: {},
+    },
+
+    // floor plan scene (card + 3×3 grid + svg)
+    {
+      id: "floor-plan",
+      type: "floor-plan",
+      content: {
+        text:
+          "But objects gain meaning only in place: a home, a room, a drawer — as they pass from life to life.",
+      },
+    },
+
+    // final footer scene
+    {
+      id: "about-footer",
+      type: "footer",
+      content: {}, 
     },
   ],
 };
@@ -140,7 +157,8 @@ function localProgress(t, stepId) {
 const DEFAULT_VH = 120;
 const PER_STEP_VH = {
   rituals: 280, // longer runway to make category changes legible
-  treemap: 100, // slightly shorter so the viz enters sooner
+  treemap: 140, // slightly shorter so the viz enters sooner
+  "floor-plan": 220, // moderate length to explore rooms
 };
 
 function buildSegments() {
@@ -299,88 +317,113 @@ function renderStepContent(step) {
     const img = c.image || "";
     const alt = c.alt || "";
 
-    if (step.id === "intro-1" || step.id === "intro-2") {
-      return (
-        '<div class="prelude-card">' +
-        `<p>${txt}</p>` +
-        (img
-          ? `<img class="card-image" src="${img}" alt="${alt}" style="height:110px;width:auto;max-width:99vw;object-fit:contain;display:block;margin-top:2em;">`
-          : "") +
-        "</div>"
-      );
+    const tpl = document.getElementById("card-step-template");
+    if (!tpl) return "";
+
+    // clone template content
+    const fragment = tpl.content.cloneNode(true);
+    const wrapper = document.createElement("div");
+    wrapper.appendChild(fragment);
+
+    const cardEl = wrapper.firstElementChild;
+
+    // inject text (supports inline <br> etc.)
+    const pEl = cardEl.querySelector(".card-text");
+    if (pEl) pEl.innerHTML = txt;
+
+    const imgEl = cardEl.querySelector(".card-image");
+
+    if (img) {
+      // if there is an image in config, use it
+      imgEl.src = img;
+      imgEl.alt = alt || "";
+    } else {
+      // no image for this card (e.g. outro) → remove img node
+      imgEl.remove();
     }
 
-    if (step.id === "outro") {
-      return (
-        '<div class="prelude-card">' +
-        `<p>${txt}</p>` +
-        (img ? `<img class="card-image" src="${img}" alt="${alt}">` : "") +
-        "</div>"
-      );
-    }
-
-    return (
-      '<div class="prelude-card">' +
-      `<p>${txt}</p>` +
-      (img ? `<img class="card-image" src="${img}" alt="${alt}">` : "") +
-      "</div>"
-    );
+    // return the final markup as a string
+    return wrapper.innerHTML;
   }
 
   // sampler-intro (triptych) — used inside the modal
   if (t === "sampler-intro") {
     const si = step.content || {};
     const samplers = Array.isArray(si.samplers) ? si.samplers : [];
-    return (
-      '<div class="sampler-intro-step">' +
-      '<div class="prelude-card sampler-intro-card"><p>' +
-      (si.text || "") +
-      "</p></div>" +
-      '<div class="sampler-gallery">' +
-      samplers
-        .map((img, i) => {
-          return (
-            `<div class="sampler-item" data-index="${i}">` +
-            `<img src="${img}" alt="Sampler ${i + 1}">` +
-            "</div>"
-          );
-        })
-        .join("") +
-      "</div>" +
-      "</div>"
-    );
+
+    const tpl = document.getElementById("sampler-intro-template");
+    if (!tpl) return "";
+
+    const frag = tpl.content.cloneNode(true);
+    const wrapper = document.createElement("div");
+    wrapper.appendChild(frag);
+
+    const textEl = wrapper.querySelector('[data-role="sampler-text"]');
+    if (textEl) {
+      textEl.innerHTML = si.text || "";
+    }
+
+    const galleryEl = wrapper.querySelector('[data-role="sampler-gallery"]');
+    if (galleryEl) {
+      samplers.forEach((src, i) => {
+        const item = document.createElement("div");
+        item.className = "sampler-item";
+        item.dataset.index = String(i);
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `Sampler ${i + 1}`;
+
+        item.appendChild(img);
+        galleryEl.appendChild(item);
+      });
+    }
+
+    return wrapper.innerHTML;
   }
+
 
   // sampler-intro-side (large image + card) — used inside the modal
   if (t === "sampler-intro-side") {
     const cs = step.content || {};
-    const img = cs.image || "";
-    const alt = cs.alt || "Object";
-    const txt = cs.text || "";
-    return (
-      '<div class="sampler-intro-step side-by-side">' +
-      '<div class="sampler-image-wrap">' +
-      `<img src="${img}" alt="${alt}">` +
-      "</div>" +
-      '<div class="sampler-text-wrap prelude-card sampler-intro-card">' +
-      `<p>${txt}</p>` +
-      "</div>" +
-      "</div>"
-    );
+
+    const tpl = document.getElementById("sampler-intro-side-template");
+    if (!tpl) return "";
+
+    const frag = tpl.content.cloneNode(true);
+    const wrapper = document.createElement("div");
+    wrapper.appendChild(frag);
+
+    const imgEl = wrapper.querySelector('[data-role="sampler-image"]');
+    if (imgEl) {
+      imgEl.src = cs.image || "";
+      imgEl.alt = cs.alt || "Object";
+    }
+
+    const textEl = wrapper.querySelector('[data-role="sampler-text"]');
+    if (textEl) {
+      textEl.innerHTML = cs.text || "";
+    }
+
+    return wrapper.innerHTML;
   }
+
 
   // compartment (stacked images cross-faded via normalized progress)
   if (t === "compartment") {
     const cc = step.content || {};
     const items = Array.isArray(cc.compartments) ? cc.compartments : [];
-    const firstLabel = items.length ? items[0].label || "" : "";
 
     // helper to convert number to Roman numeral
     const toRoman = (num) => {
       const lookup = [
-        ['X', 10], ['IX', 9], ['V', 5], ['IV', 4], ['I', 1]
+        ["X", 10],
+        ["IX", 9],
+        ["V", 5],
+        ["IV", 4],
+        ["I", 1],
       ];
-      let result = '';
+      let result = "";
       for (const [roman, value] of lookup) {
         while (num >= value) {
           result += roman;
@@ -390,132 +433,123 @@ function renderStepContent(step) {
       return result;
     };
 
-    return (
-      '<div class="compartment-container">' +
-      // visual stage with layered images + numbered indicators + live label
-      '<div class="sampler-viewport">' +
-      items
-        .map((comp, i) => {
-          const src = comp?.image || "";
-          const lab = comp?.label || `Compartment ${i + 1}`;
-          return (
-            `<div class="viewport-image" data-index="${i}">` +
-            `<img src="${src}" alt="${lab}">` +
-            "</div>"
-          );
-        })
-        .join("") +
-      `<div class="viewport-label" id="viewportLabel">${firstLabel}</div>` +
-      '<div class="viewport-indicators">' +
-      items
-        .map((comp, i) => {
-          return `<button class="viewport-indicator ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="View image ${i + 1}">${toRoman(i + 1)}</button>`;
-        })
-        .join("") +
-      '</div>' +
-      "</div>" +
-      // caption card with linear progress bar
-      '<div class="prelude-card compartment-card">' +
-      `<p>${cc.text || ""}</p>` +
-      '<div class="progress-bar"><div class="progress-fill"></div></div>' +
-      "</div>" +
-      "</div>"
+    const tpl = document.getElementById("compartment-step-template");
+    if (!tpl) return "";
+
+    const frag = tpl.content.cloneNode(true);
+    const wrapper = document.createElement("div");
+    wrapper.appendChild(frag);
+
+    const root = wrapper.firstElementChild;
+
+    // label: first compartment’s label (or fallback)
+    const firstLabel = items.length ? items[0].label || "" : "";
+    const labelEl = root.querySelector('[data-role="viewport-label"]');
+    if (labelEl) {
+      labelEl.textContent = firstLabel;
+    }
+
+    // images: create .viewport-image wrappers
+    const imagesContainer = root.querySelector('[data-role="viewport-images"]');
+    if (imagesContainer) {
+      items.forEach((comp, i) => {
+        const src = comp?.image || "";
+        const lab = comp?.label || `Compartment ${i + 1}`;
+
+        const wrap = document.createElement("div");
+        wrap.className = "viewport-image";
+        wrap.dataset.index = String(i);
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = lab;
+
+        wrap.appendChild(img);
+        imagesContainer.appendChild(wrap);
+      });
+    }
+
+    // indicators: Roman numerals I, II, III, ...
+    const indicatorsContainer = root.querySelector(
+      '[data-role="viewport-indicators"]'
     );
+    if (indicatorsContainer) {
+      items.forEach((comp, i) => {
+        const btn = document.createElement("button");
+        btn.className = "viewport-indicator" + (i === 0 ? " active" : "");
+        btn.dataset.index = String(i);
+        btn.setAttribute("aria-label", `View image ${i + 1}`);
+        btn.textContent = toRoman(i + 1);
+        indicatorsContainer.appendChild(btn);
+      });
+    }
+
+    // caption text + progress bar (structure is already in template)
+    const textEl = root.querySelector('[data-role="compartment-text"]');
+    if (textEl) {
+      textEl.innerHTML = cc.text || "";
+    }
+
+    return wrapper.innerHTML;
   }
+
 
   // single hero image + card — used inside the modal
   if (t === "sampler-intro-single") {
     const cs = step.content || {};
-    const img = cs.image || "";
-    const alt = cs.alt || "Sampler";
-    const txt = cs.text || "";
-    return (
-      '<div class="sampler-intro-step" style="gap:1.2vh;">' +
-      '<div class="prelude-card sampler-intro-card"><p>' +
-      txt +
-      "</p></div>" +
-      '<div class="sampler-gallery">' +
-      '<div class="sampler-item visible" data-index="0">' +
-      `<img src="${img}" alt="${alt}" style="height:clamp(440px,44vh,600px);width:auto;max-width:99vw;object-fit:contain;display:block;">` +
-      "</div>" +
-      "</div>" +
-      "</div>"
-    );
+
+    const tpl = document.getElementById("sampler-intro-single-template");
+    if (!tpl) return "";
+
+    const frag = tpl.content.cloneNode(true);
+    const wrapper = document.createElement("div");
+    wrapper.appendChild(frag);
+
+    const imgEl = wrapper.querySelector('[data-role="sampler-image"]');
+    if (imgEl) {
+      imgEl.src = cs.image || "";
+      imgEl.alt = cs.alt || "Sampler";
+    }
+
+    const textEl = wrapper.querySelector('[data-role="sampler-text"]');
+    if (textEl) {
+      textEl.innerHTML = cs.text || "";
+    }
+
+    return wrapper.innerHTML;
   }
+
 
   // object grid step (left column: narrative + category selector; right: grid)
   if (t === "object-grid") {
-    const og = step.content || {};
-    const ogText = og.text || "";
-
-    // labels mirror GRID_CATEGORIES order for clarity
-    const chipLabels = [
-      "Textile Making",
-      "Healing & Caring",
-      "Eating, Cooking & Drinking",
-      "Lighting & Firekeeping",
-    ];
-    const categories = ["Samplers", "Apothecary jars", "Teapots", "Fire marks"];
-
-    return (
-      '<div class="object-grid-step">' +
-      '<div class="grid-wrapper">' +
-      '<div class="grid-left-col">' +
-      `<div class="prelude-card object-grid-card"><p>${ogText}</p></div>` +
-      '<div class="category-selector" id="categorySelector" role="radiogroup" aria-label="Filter by object">' +
-      categories
-        .map((cat, i) => {
-          return (
-            `<button type="button" class="category-option ${i === 0 ? "active" : ""}" ` +
-            `data-category-index="${i}" role="radio" aria-checked="${i === 0 ? "true" : "false"}">` +
-            `<span class="option-chip editable-chip family-labels-html">${chipLabels[i]}</span>` +
-            `<span class="option-label object-label">${cat}</span>` +
-            "</button>"
-          );
-        })
-        .join("") +
-      "</div>" +
-      '<button class="view-story-btn" id="viewStoryBtn" data-story="">View Samplers Story</button>' +
-      "</div>" +
-      '<div class="image-grid" id="imageGrid"></div>' +
-      "</div>" +
-      "</div>"
-    );
+    const tpl = document.getElementById("object-grid-step-template");
+    return tpl ? tpl.innerHTML : "";
   }
 
-  // treemap host structure (expected by treemap.js)
+
+  // treemap host structure (template-based)
   if (t === "treemap") {
-    return (
-      '<div class="treemap-step">' +
-      '<div class="viz-wrap" id="treemap-section">' +
-      '<h2 class="section-title">Traces of an Ordinary Life</h2>' +
-      '<p class="viz-hint">Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.</p>' +
-      '<p class="viz-hint-small">Click on a group to see the objects inside.</p>' +
-      '<div class="treemap-controls" aria-label="Treemap controls">' +
-      '<div class="zoom-card"><span class="zoom-title">All Actions</span></div>' +
-      '<button class="back-to-all is-ghost">← Back to all actions</button>' +
-      '<span class="place-hint" id="placeHint"></span>' +
-      "</div>" +
-      '<div class="treemap-stage viz-stage">' +
-      '<svg id="treemap-svg" class="treemap" viewBox="0 0 1000 490" preserveAspectRatio="none" role="img" aria-label="Treemap of objects grouped by action"></svg>' +
-      '<div id="details" class="details-panel" hidden>' +
-      '<div class="details-header">' +
-      '<h3 id="details-title" class="details-title"></h3>' +
-      '<button class="details-close" aria-label="Close details">×</button>' +
-      "</div>" +
-      '<p class="details-subtitle"></p>' +
-      '<ul id="details-list" class="details-list"></ul>' +
-      "</div>" +
-      "</div>" +
-      "</div>" +
-      "</div>" +
-      '<div class="treemap-tooltip" id="treemap-tooltip" aria-hidden="true"></div>'
-    );
+    const tpl = document.getElementById("treemap-step-template");
+    return tpl ? tpl.innerHTML : "";
   }
 
-  // unknown type → render nothing
-  return "";
-}
+
+    // floor plan scene (card + 3×3 grid + floor plan svg)
+    if (t === "floor-plan") {
+      const tpl = document.getElementById("floor-plan-step-template");
+      return tpl ? tpl.innerHTML : "";
+    }
+
+
+    // final footer scene
+    if (t === "footer") {
+      const tpl = document.getElementById("footer-step-template");
+      return tpl ? tpl.innerHTML : "";
+    }
+
+    // unknown type → render nothing
+    return "";
+  }
 
 /* -------------------------------
    8) scroll listener + step logic
@@ -529,8 +563,8 @@ function setupScrollListener() {
     () => {
       const t = computeProgressAndActive();
       updateStepVisibility(t);
-      updateSamplerIntroReveal(t); // no-op unless that step exists on track
       updateObjectGridProgress(t);
+      updateFloorPlanGrid(); // populate floor plan grid when step is active
       updateUpArrowVisibility();
       updateViewportBackgroundGrid();
 
@@ -582,25 +616,19 @@ function updateStepVisibility(t) {
 // background grid appears once outside hero
 function updateViewportBackgroundGrid() {
   const viewportBg = document.getElementById("viewportBg");
-  if (state.activeStepIndex >= 0) viewportBg.classList.add("grid-bg");
+
+  // figure out which step is active, if any
+  const step =
+    state.activeStepIndex >= 0 ? config.steps[state.activeStepIndex] : null;
+
+  // use grid for all “inner” scenes except the final footer
+  const shouldGrid =
+    step && step.type !== "footer" && step.id !== "about-footer";
+
+  if (shouldGrid) viewportBg.classList.add("grid-bg");
   else viewportBg.classList.remove("grid-bg");
 }
 
-// legacy triptych reveal on a track step named "sampler-intro" (harmless if absent)
-function updateSamplerIntroReveal(totalProgress) {
-  const stepIndex = config.steps.findIndex((s) => s.id === "sampler-intro");
-  if (state.activeStepIndex !== stepIndex) return;
-
-  const p = localProgress(totalProgress, "sampler-intro");
-  const step = document.getElementById("step-sampler-intro");
-  if (!step) return;
-
-  const items = step.querySelectorAll(".sampler-item");
-  items.forEach((el, k) => {
-    const threshold = k / items.length;
-    el.classList.toggle("visible", p > threshold);
-  });
-}
 
 // inside "rituals", local progress selects a grid category (quarters across 4 bins)
 function updateObjectGridProgress(totalProgress) {
@@ -613,6 +641,390 @@ function updateObjectGridProgress(totalProgress) {
   const idx = Math.min(n - 1, Math.floor(p * n));
   if (idx !== state.objectGridCategory) {
     loadCategory(idx);
+  }
+}
+
+// populate floor plan grid when floor-plan step becomes active
+let floorPlanState = {
+  svgObject: null,
+  currentRoom: null,
+  isHovering: false,
+  initialized: false,
+  metaIndex: null // store metadata index for floor plan
+};
+
+function updateFloorPlanGrid() {
+  const stepIndex = config.steps.findIndex((s) => s.id === "floor-plan");
+  if (state.activeStepIndex !== stepIndex) return;
+
+  const grid = document.getElementById("floorPlanGrid");
+  const svgObject = document.getElementById("floorPlanSvg");
+  const deselectBtn = document.getElementById("floorPlanDeselect");
+  
+  if (!grid || !svgObject) return;
+  
+  // only initialize once
+  if (floorPlanState.initialized) return;
+  floorPlanState.initialized = true;
+  
+  // store reference for pulse function
+  floorPlanState.svgObject = svgObject;
+
+  // load metadata CSV for floor plan
+  if (!floorPlanState.metaIndex) {
+    d3.csv("treemap_data/final_database_with_materials_enriched_places.csv")
+      .then((rows) => {
+        floorPlanState.metaIndex = indexMetadata(rows || []);
+      })
+      .catch(() => {
+        console.warn("Failed to load floor plan metadata");
+        floorPlanState.metaIndex = new Map();
+      });
+  }
+
+  // room-specific image sets
+  const roomImages = {
+    kitchen: [
+      "assets/kitchen/edanmdm:nmah_300463.png",
+      "assets/kitchen/edanmdm:nmah_302668.png",
+      "assets/kitchen/edanmdm:nmah_303591.png",
+      "assets/kitchen/edanmdm:nmah_304687.png",
+      "assets/kitchen/edanmdm:nmah_307137.png",
+      "assets/kitchen/edanmdm:nmah_310953.png",
+      "assets/kitchen/edanmdm:nmah_573189.png",
+      "assets/kitchen/edanmdm:nmah_588685.png",
+      "assets/kitchen/edanmdm:nmah_319699.png"
+    ],
+    pantry: [
+      "assets/pantry/edanmdm:nmah_300188.png",
+      "assets/pantry/edanmdm:nmah_307142.png",
+      "assets/pantry/edanmdm:nmah_300372.png",
+      "assets/pantry/edanmdm:nmah_309551.png",
+      "assets/pantry/edanmdm:nmah_318649.png",
+      "assets/pantry/edanmdm:nmah_307151.png",
+      "assets/pantry/edanmdm:nmah_574272.png",
+      "assets/pantry/edanmdm:nmah_1065301.png",
+      "assets/pantry/edanmdm:nmah_579919.png"
+    ],
+    bedroom: [
+      "assets/bedroom/edanmdm:nmah_303814.png",
+      "assets/bedroom/edanmdm:nmah_307604.png",
+      "assets/bedroom/edanmdm:nmah_308141.png",
+      "assets/bedroom/edanmdm:nmah_316221.png",
+      "assets/bedroom/edanmdm:nmah_371747.png",
+      "assets/bedroom/edanmdm:nmah_597629.png",
+      "assets/bedroom/edanmdm:nmah_994616.png",
+      "assets/bedroom/edanmdm:nmah_620527.png",
+      "assets/bedroom/edanmdm:nmah_994619.png",
+    ],
+    living: [
+      "assets/living/edanmdm:nmah_306570.png",
+      "assets/living/edanmdm:nmah_1464379.png",
+      "assets/living/edanmdm:nmah_308606.png",
+      "assets/living/edanmdm:nmah_609222.png",
+      "assets/living/edanmdm:saam_1972.85.17A.png",
+      "assets/living/edanmdm:nmah_994614.png",
+      "assets/living/edanmdm:nmah_318378.png",
+      "assets/living/edanmdm:nmah_319092.png",    
+      "assets/living/edanmdm:nmah_308263.png"
+    ],
+    parlor: [
+      "assets/parlor/edanmdm:nmah_303782.png",
+      "assets/parlor/edanmdm:nmah_303412.png",
+      "assets/parlor/edanmdm:nmah_324279.png",
+      "assets/parlor/edanmdm:nmah_322908.png",
+      "assets/parlor/edanmdm:nmah_663562.png",
+      "assets/parlor/edanmdm:nmah_577385.png",
+      "assets/parlor/edanmdm:nmah_579032.png",
+      "assets/parlor/edanmdm:nmah_1189272.png",
+      "assets/parlor/edanmdm:nmah_1415726.png"
+    ],
+    outside: [
+      "assets/outside/edanmdm:nmah_300582.png",
+      "assets/outside/edanmdm:nmah_308546.png",
+      "assets/outside/edanmdm:nmah_303055.png",
+      "assets/outside/edanmdm:nmah_313067.png",
+      "assets/outside/edanmdm:nmah_304081.png",
+      "assets/outside/edanmdm:nmah_1341763.png",
+      "assets/outside/edanmdm:nmah_1458761.png",
+      "assets/outside/edanmdm:nmah_573197.png",
+      "assets/outside/edanmdm:nmah_311178.png"
+    ]
+  };
+
+  function populateGrid(room, isPreview = false) {
+    grid.innerHTML = ""; // clear existing items
+    
+    if (!room) {
+      // show placeholders when no room is selected
+      for (let i = 0; i < 9; i++) {
+        const item = document.createElement("div");
+        item.className = "grid-item floor-plan-placeholder loaded";
+        item.innerHTML = '<div class="placeholder-content"></div>';
+        
+        // add click handler to pulse all room rectangles as a hint
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          pulseAllRooms();
+        });
+        
+        grid.appendChild(item);
+      }
+      // hide deselect button
+      if (deselectBtn) deselectBtn.style.display = "none";
+      return;
+    }
+    
+    const images = roomImages[room] || [];
+    
+    images.forEach((src, i) => {
+      const item = document.createElement("div");
+      item.className = "grid-item";
+      if (isPreview) {
+        item.classList.add("preview-mode");
+      }
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = `${room} object ${i + 1}`;
+      img.loading = "lazy";
+      
+      item.appendChild(img);
+      
+      // add tooltip on hover
+      const tip = ensureTooltip();
+      item.addEventListener("mouseenter", (e) => {
+        if (!floorPlanState.metaIndex) return;
+        const id = idFromPath(src);
+        const row = floorPlanState.metaIndex.get(id);
+        const html = tooltipHTML(row);
+        if (!html) return;
+        tip.innerHTML = html;
+        tip.style.display = "block";
+        positionTooltip(tip, e.clientX, e.clientY);
+      });
+      
+      item.addEventListener("mousemove", (e) => {
+        if (tip.style.display !== "none") {
+          positionTooltip(tip, e.clientX, e.clientY);
+        }
+      });
+      
+      item.addEventListener("mouseleave", () => {
+        tip.style.display = "none";
+      });
+      
+      // add click handler for lightbox with metadata lookup
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        // extract ID from image path and lookup metadata
+        const id = idFromPath(src);
+        const metadata = floorPlanState.metaIndex ? floorPlanState.metaIndex.get(id) : null;
+        openLightbox(src, metadata);
+      });
+      
+      grid.appendChild(item);
+    });
+
+    // add loaded class to all items at once after a brief delay
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        grid.querySelectorAll('.grid-item:not(.floor-plan-placeholder)').forEach(item => {
+          item.classList.add('loaded');
+        });
+      });
+    });
+
+    // show deselect button only when a room is permanently selected (not preview)
+    if (deselectBtn) {
+      deselectBtn.style.display = isPreview ? "none" : "flex";
+    }
+  }
+
+  // function to pulse all room rectangles as a visual hint
+  function pulseAllRooms() {
+    console.log("pulseAllRooms called");
+    if (!floorPlanState.svgObject) {
+      console.log("No svgObject");
+      return;
+    }
+    const svgDoc = floorPlanState.svgObject.contentDocument;
+    if (!svgDoc) {
+      console.log("No contentDocument");
+      return;
+    }
+
+    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "balcony", "pantry"];
+    
+    rooms.forEach((roomName) => {
+      const roomGroup = svgDoc.getElementById(`room-${roomName}`);
+      if (!roomGroup) {
+        console.log(`No room group for ${roomName}`);
+        return;
+      }
+
+      const rects = roomGroup.querySelectorAll("rect");
+      console.log(`Found ${rects.length} rects for ${roomName}`);
+      rects.forEach((rect) => {
+        // apply inline animation instead of class - match hover opacity
+        rect.style.animation = "roomPulse 0.4s ease-in-out 1";
+        rect.style.fill = "rgba(218, 203, 178, 0.45)"; // same as hover
+        
+        // remove animation after it completes (1 cycle × 0.4s = 400ms)
+        setTimeout(() => {
+          rect.style.animation = "";
+          // reset to transparent if not selected
+          if (roomName !== floorPlanState.currentRoom) {
+            rect.style.fill = "transparent";
+          } else {
+            rect.style.fill = "rgba(218, 203, 178, 0.65)";
+          }
+        }, 400);
+      });
+    });
+  }
+
+  // initialize with placeholders (no room selected)
+  if (grid.children.length === 0) {
+    populateGrid(null);
+  }
+
+  // function to attach room listeners
+  function attachRoomListeners() {
+    const svgDoc = svgObject.contentDocument;
+    if (!svgDoc) {
+      console.warn("SVG document not loaded yet");
+      return;
+    }
+
+    // style the SVG paths with dark gray color
+    const svgRoot = svgDoc.documentElement;
+    if (svgRoot) {
+      // remove any filters that might be causing grayscale conversion
+      svgRoot.style.filter = "none";
+
+      // apply color to all paths and lines in the SVG
+      const paths = svgDoc.querySelectorAll("path, line, polyline, polygon");
+      paths.forEach(el => {
+        // set fill
+        const currentFill = el.getAttribute("fill");
+        if (!currentFill || currentFill === "none" || currentFill === "#000" || currentFill === "#000000" || currentFill === "black") {
+          el.setAttribute("fill", currentFill === "none" ? "none" : "#2f2f2f");
+        } else if (currentFill !== "transparent") {
+          el.setAttribute("fill", "#2f2f2f");
+        }
+        
+        // set stroke
+        const currentStroke = el.getAttribute("stroke");
+        if (currentStroke && currentStroke !== "none") {
+          el.setAttribute("stroke", "#2f2f2f");
+        }
+        
+        // ensure paths are rendered above rectangles
+        el.style.pointerEvents = "none";
+      });
+    }
+
+    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "balcony", "pantry"];
+    
+    rooms.forEach((roomName) => {
+      const roomGroup = svgDoc.getElementById(`room-${roomName}`);
+      if (!roomGroup) {
+        console.warn(`Room group not found: room-${roomName}`);
+        return;
+      }
+
+      // all rectangles for this room (porch+balcony group will have 3 here)
+      const rects = Array.from(roomGroup.querySelectorAll("rect"));
+      if (!rects.length) {
+        console.warn(`Rectangle(s) not found in room-${roomName}`);
+        return;
+      }
+
+      // shared helper to set fill for all rects in this room
+      const setRoomFill = (fill) => {
+        rects.forEach((r) => {
+          r.style.fill = fill;
+        });
+      };
+
+      rects.forEach((rect) => {
+        rect.style.cursor = "pointer";
+        rect.style.fill = "transparent";
+        rect.style.transition = "fill 0.2s ease";
+        rect.style.filter = "none";
+
+        const parent = rect.parentElement;
+        if (parent) parent.insertBefore(rect, parent.firstChild);
+
+        // hover: apply to all rects in the room
+        rect.addEventListener("mouseenter", () => {
+          setRoomFill("rgba(218, 203, 178, 0.45)"); // highlight whole group
+
+          if (!floorPlanState.currentRoom) {
+            floorPlanState.isHovering = true;
+            populateGrid(roomName, true); // preview mode
+          }
+        });
+
+        rect.addEventListener("mouseleave", () => {
+          const isSelected = roomName === floorPlanState.currentRoom;
+          setRoomFill(isSelected ? "rgba(218, 203, 178, 0.65)" : "transparent");
+
+          if (floorPlanState.isHovering && !floorPlanState.currentRoom) {
+            floorPlanState.isHovering = false;
+            populateGrid(null); // restore placeholders
+          }
+        });
+
+        // click handler: permanent selection
+        rect.addEventListener("click", () => {
+          floorPlanState.currentRoom = roomName;
+          floorPlanState.isHovering = false;
+          populateGrid(roomName, false); // permanent selection
+
+          // visual feedback: highlight only this room's rects, clear others
+          rooms.forEach((r) => {
+            const rg = svgDoc.getElementById(`room-${r}`);
+            if (!rg) return;
+            const rRects = rg.querySelectorAll("rect");
+            rRects.forEach((rRect) => {
+              rRect.style.fill =
+                r === roomName ? "rgba(218, 203, 178, 0.65)" : "transparent";
+            });
+          });
+        });
+      });
+    });
+
+    // no default room selected - all rectangles start transparent
+
+    // deselect button handler
+    if (deselectBtn) {
+      deselectBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        floorPlanState.currentRoom = null;
+        populateGrid(null);
+        
+        // clear all room highlights
+        rooms.forEach((r) => {
+          const rg = svgDoc.getElementById(`room-${r}`);
+          if (rg) {
+            const rRects = rg.querySelectorAll("rect");
+            rRects.forEach((rRect) => {
+              rRect.style.fill = "transparent";
+            });
+          }
+        });
+      });
+    }
+  }
+
+  // wait for SVG to load
+  if (svgObject.contentDocument) {
+    attachRoomListeners();
+  } else {
+    svgObject.addEventListener("load", attachRoomListeners);
   }
 }
 
@@ -746,7 +1158,11 @@ function ensureTooltip() {
 }
 
 function idFromPath(path) {
-  return path.split("/").pop().replace(/\.[^.]+$/, "");
+  // get filename from path
+  const filename = path.split("/").pop();
+  // remove only the final extension (.png, .jpg, etc.)
+  // this preserves dots in the ID like "saam_1972.85.17A"
+  return filename.replace(/\.(png|jpg|jpeg|gif|svg|webp)$/i, "");
 }
 
 function indexMetadata(rows) {
@@ -755,14 +1171,16 @@ function indexMetadata(rows) {
     let u = (r.EDANurl || "").trim();
     if (!u) return;
 
-    let seg = u.split("/").pop() || u;
+    // if it's already just an ID (no slashes), use it directly
+    let seg = u.includes("/") ? (u.split("/").pop() || u) : u;
     seg = seg.split("?")[0].split("#")[0];
 
     try {
       seg = decodeURIComponent(seg);
     } catch (e) {}
 
-    seg = seg.replace(/\.[^.]+$/, "");
+    // don't remove dots from the segment - only remove file extensions if present
+    seg = seg.replace(/\.(png|jpg|jpeg|gif|svg|webp)$/i, "");
     if (seg && !idx.has(seg)) idx.set(seg, r);
   });
   return idx;
@@ -989,30 +1407,21 @@ function setupCategoryButtons() {
 -------------------------------- */
 
 function ensureLightbox() {
-  let el = document.getElementById("lightbox");
-  if (!el) {
-    el = document.createElement("div");
-    el.id = "lightbox";
-    el.className = "lightbox";
-    el.innerHTML = `
-      <div class="lightbox-content">
-        <button class="lightbox-close" aria-label="Close">×</button>
-        <img class="lightbox-image" src="" alt="">
-        <div class="lightbox-info">
-          <h3 class="lightbox-title"></h3>
-          <p class="lightbox-materials"></p>
-        </div>
-      </div>
-    `;
-    document.body.appendChild(el);
+  const el = document.getElementById("lightbox");
+  if (!el) return null;
 
+  // only wire events once
+  if (!el.dataset.initialized) {
     // close on backdrop click
     el.addEventListener("click", (e) => {
       if (e.target === el) closeLightbox();
     });
 
     // close button
-    el.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
+    const closeBtn = el.querySelector(".lightbox-close");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeLightbox);
+    }
 
     // escape key
     document.addEventListener("keydown", (e) => {
@@ -1020,9 +1429,13 @@ function ensureLightbox() {
         closeLightbox();
       }
     });
+
+    el.dataset.initialized = "true";
   }
+
   return el;
 }
+
 
 function openLightbox(imageSrc, metadata) {
   const lightbox = ensureLightbox();

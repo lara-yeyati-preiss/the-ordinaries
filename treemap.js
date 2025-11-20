@@ -78,7 +78,7 @@
       };
       const displayMuseum = (unit) => display_unitcodes[unit] || "";
 
-      // === Weighted-total explainer (used by the info icon) =======================
+      // === weighted-total explainer (used by the info icon) =======================
       const MATERIAL_WEIGHT_EXPLAIN = `
         <div class="tt-title">Counts vs. weighted totals</div>
         <div>
@@ -235,7 +235,7 @@
       // =========================================================
       // 3) DOM / D3 REFERENCES
       // =========================================================
-      // cache all the core nodes we’ll touch frequently:
+      // cache all the core nodes:
       //  - the main svg (#treemap-svg.treemap)
       //  - a group for tiles + text (g)
       //  - a group dedicated to chip-style labels at overview (g.family-labels)
@@ -252,8 +252,8 @@
       const detailsList = d3.select("#details-list");
       const detailsSubtitle = d3.select(".details-subtitle");
 
-      // === Mode toggle UI =======================================================
-      // default mode: “use” (families). we reflect the mode as an attribute on <svg> so CSS can react if needed.
+      // === mode toggle UI =======================================================
+      // default mode: “use” (families). We reflect the mode as an attribute on <svg> so CSS can react if needed.
       let currentMode = "use";
       svg.attr("data-mode", currentMode);
 
@@ -297,7 +297,7 @@
           </svg>
         `);
 
-      // the treemap tooltip is a single shared node. we select it once and reuse it.
+      // the treemap tooltip is a single shared node. We select it once and reuse it.
       const tooltipNode = d3.select("#treemap-tooltip");
 
       // small helper to open the (i) explainer near the button, clamped to viewport
@@ -371,7 +371,7 @@
       function setMode(mode) {
         if (mode === currentMode) return;
         
-        // CRITICAL: hide place hint BEFORE changing mode
+        // hide place hint before changing mode
         if (placeHint && placeHint.node()) {
           placeHint.classed("visible", false).text("");
         }
@@ -420,7 +420,7 @@
       }
 
       // =========================================================
-      // 4) ACTIONS DATA SHAPING (keep “Other Actions”)
+      // 4) ACTIONS DATA SHAPING
       // =========================================================
       // groups any families in `cats` into a single “Other Actions” node at root.
       function regroup_by_category(data, cats) {
@@ -445,7 +445,7 @@
       // =========================================================
       // 5) COLOR PALETTES
       // =========================================================
-      // palette for families (by-use mode). note we keep a neutral for “other actions”.
+      // palette for families (by-use mode)
       const familyColors = {
         "eat, cook & drink": "#868D7A",
         "heal & care": "#9C9C80",
@@ -462,7 +462,7 @@
       };
       const color = (fam) => familyColors[norm(fam)] || "#999";
 
-      // palette for materials (by-material mode). muted, earthy tones to match the design.
+      // palette for materials (by-material mode)
       const materialColors = {
         wood: "#C2B9A3",
         iron: "#A4A4A4",
@@ -505,7 +505,7 @@
       // =========================================================
       // 6) DETAILS PANEL (Open Access API thumbs)
       // =========================================================
-      // small, careful image loader that:
+      // image loader:
       //  - fetches a SI record by EDAN id
       //  - extracts the first media url (if any)
       //  - caches results to avoid repeated requests
@@ -564,8 +564,8 @@
         detailsPanel.attr("hidden", null);
         const nPanel = detailsPanel.node();
         if (nPanel) nPanel.scrollTop = 0;
-        
-        // Hide place hint when details panel opens
+
+        // hide place hint when details panel opens
         if (placeHint && placeHint.node()) {
           placeHint.classed("visible", false).text("");
         }
@@ -583,10 +583,10 @@
           const unit = (r.unitCode || "").trim();
           const full = displayMuseum(unit);
           const unitHTML = unit
-            ? ` — <em>${full ? `${full} <span class="unitcode">(${unit})</span>` : unit}</em>`
+            ? `<em>${full ? `${full} <span class="unitcode">(${unit})</span>` : unit}</em>`
             : "";
           
-          // Placeholder link
+          // placeholder link
           li.append("a")
             .attr("href", r.collectionsURL)
             .attr("target", "_blank")
@@ -599,21 +599,21 @@
               </svg>
             `);
           
-          // Text container
+          // text container
           li.append("div")
             .attr("class", "details-text")
             .html(`<strong>${r.title || "(Untitled)"}</strong>${unitHTML}`);
           
-          // Metadata chips container (hidden by default)
+          // metadata chips container (hidden by default)
           const chipsContainer = li.append("div")
             .attr("class", "metadata-chips-container")
             .style("opacity", "0")
             .style("pointer-events", "none");
           
-          // Get metadata for this item
+          // get metadata for this item
           const metadata = metadataMap.get(r.EDANurl);
           if (metadata) {
-            // Material chip
+            // material chip
             if (metadata.main_material && metadata.main_material.toLowerCase() !== "unknown") {
               const materials = metadata.main_material.split(/[,/&;]|\sand\s|\+|\|/g).map(t => t.trim()).filter(Boolean);
               const label = materials.length > 1 ? "Materials:" : "Material:";
@@ -622,7 +622,7 @@
                 .text(`${label} ${metadata.main_material}`);
             }
             
-            // Date chip
+            // date chip
             let dateDisplay = null;
             if (metadata.date && String(metadata.date).trim()) {
               dateDisplay = metadata.date;
@@ -635,7 +635,7 @@
             }
             
             if (dateDisplay) {
-              // Parse date
+              // parse date
               let dateValue = dateDisplay;
               if (typeof dateDisplay === 'string' && (dateDisplay.startsWith('{') || dateDisplay.startsWith('['))) {
                 try {
@@ -673,7 +673,7 @@
               }
             }
             
-            // Place chip
+            // place chip
             const placesRaw = (metadata.places_made_for_sentence || "").trim();
             if (placesRaw && placesRaw.toLowerCase() !== "unknown") {
               const countries = placesRaw.split("|").map(c => c.trim()).filter(Boolean);
@@ -701,7 +701,7 @@
         
         const itemsAll = itemsEnter.merge(items);
         
-        // Add hover handlers to show/hide chips
+        // add hover handlers to show/hide chips
         itemsAll
           .on("mouseenter", function() {
             d3.select(this).select(".metadata-chips-container")
@@ -737,7 +737,7 @@
           }
         }
 
-        // one-time reorder: put rows with thumbnails on top for a nicer first impression
+        // one-time reorder: put rows with thumbnails on top
         const ul = detailsList.node();
         if (ul) {
           const liArray = Array.from(ul.children);
@@ -769,8 +769,8 @@
       // =========================================================
       // 7) HIERARCHY + CAMERA SCALES
       // =========================================================
-      // build a materials hierarchy on the fly from the details file.
-      // important: parent totals are weighted by how many materials each object lists.
+      // build a materials hierarchy from the details file
+      // important: parent totals are weighted by how many materials each object lists
       function buildMaterialHierarchy(detailsByType) {
         const root = { name: "Materials", children: [] };
         const matMap = new Map(); // mat -> Map(type -> weightedSum)
@@ -797,7 +797,7 @@
           }
         }
 
-        // convert the nested map structure into a d3-friendly hierarchy
+        // convert the nested map structure into a hierarchy
         for (const [mat, byType] of matMap.entries()) {
           const children = Array.from(byType.entries()).map(([type, value]) => ({
             name: type,
@@ -838,7 +838,7 @@
         const out = { name: materialRoot.name, children: [...keep] };
         if (small.length) out.children.push({ name: "Other Materials", children: small });
 
-        // cosmetic: ensure “other materials” is the last child
+        // ensure “other materials” is the last child
         const i = out.children.findIndex((c) => norm(c.name) === OTHER_MAT_KEY);
         if (i > -1) out.children.push(...out.children.splice(i, 1));
 
@@ -879,16 +879,16 @@
         }
         gFamilyChips.attr("display", null).style("opacity", 1);
 
-        // Determine which level to show labels for
+        // determine which level to show labels for
         let topLevel;
         if (current === root) {
-          // At root: show all top-level families/materials (including "Other Actions/Materials")
+          // at root: show all top-level families/materials (including "Other Actions/Materials")
           topLevel = root.children || [];
         } else if (isOtherCombined(current)) {
-          // Inside "Other Actions/Materials": show only the children of THIS bucket
+          // inside "Other Actions/Materials": show only the children of this bucket
           topLevel = current.children || [];
         } else {
-          // Inside a specific family/material: no chips
+          // inside a specific family/material: no chips
           topLevel = [];
         }
 
@@ -902,7 +902,7 @@
           .append("g")
           .attr("class", "family-chip")
           .on("click", (_, d) => {
-            // When inside "other" bucket, clicking a chip zooms to that child
+            // when inside "other" bucket, clicking a chip zooms to that child
             if (isOtherCombined(current)) {
               zoom_to(d);
             }
@@ -916,7 +916,7 @@
 
         const chipsAll = chipsEnter.merge(chips);
 
-        // Update pointer-events for existing chips
+        // update pointer-events for existing chips
         chipsAll.select("foreignObject.chip-fo")
           .style("pointer-events", isOtherCombined(current) ? "auto" : "none");
 
@@ -946,7 +946,6 @@
       // =========================================================
       // 9) TEXTURE + BODY TOOLTIP
       // =========================================================
-      // soft background texture to add a subtle material feel (weave-like pattern)
       const defs = svg.append("defs");
       const weave = defs
         .append("pattern")
@@ -1039,7 +1038,7 @@
             return cell;
           });
 
-        // color chooser by mode. neutralize “other …” buckets so they stand out softly.
+        // color chooser by mode
         function fillFor(d) {
           if (currentMode === "use") {
             if (norm(d.data?.name) === OTHER_KEY) return OTHER_COLOR;
@@ -1122,7 +1121,7 @@
               : displayFamily(d.parent?.data?.name ?? "—");
 
             if (currentMode === "material") {
-              // inside one material, children are types. compute *true* object count for this type under that material.
+              // inside one material, children are types. Compute true object count for this type under that material.
               const typeName = d.data.name;
               const rows = details[typeName] || details[norm(typeName)] || [];
               const mat = norm(node?.data?.name || "");
@@ -1155,7 +1154,7 @@
           .on("mouseleave", hideTooltip)
           .on("click", (ev, d) => {
             if (current === root) {
-              // overview: click any leaf → zoom to its parent (family or material). if leaf lives under an “other …” group, zoom to that group.
+              // overview: click any leaf → zoom to its parent (family or material). If leaf lives under an “other …” group, zoom to that group.
               const ocAction = d.ancestors().find(a => norm(a.data?.name) === OTHER_KEY);
               const ocMat   = d.ancestors().find(a => norm(a.data?.name) === OTHER_MAT_KEY);
               zoom_to(ocAction || ocMat ? (ocAction || ocMat) : d.parent);
@@ -1181,10 +1180,10 @@
 
         // fill label text depending on mode + zoom state
         cells.select("div.leaf-html").each(function (d) {
-          // Hide labels at root or inside "other" buckets (chips handle those)
-          if (current === root || isOtherCombined(current)) { 
-            this.textContent = ""; 
-            return; 
+          // hide labels at root or inside "other" buckets (chips handle those)
+          if (current === root || isOtherCombined(current)) {
+            this.textContent = "";
+            return;
           }
           const w = sx(d.x1) - sx(d.x0);
           const h = sy(d.y1) - sy(d.y0);
@@ -1196,7 +1195,7 @@
               this.textContent = displayMaterial(d.data.name);
               return;
             }
-            // otherwise we’re inside a specific material bucket, children are TYPES → show TRUE object count per type
+            // otherwise we’re inside a specific material bucket, children are types → show true object count per type
             const base = d.data.name;
             const rows = details[base] || details[norm(base)] || [];
             const mat = norm(current?.data?.name || "");
@@ -1273,7 +1272,7 @@
           gFamilyChips.attr("display", "none").style("opacity", 0);
         }
 
-        // when transition completes, run a fresh draw for the new focus level AND redraw chips
+        // when transition completes, run a fresh draw for the new focus level and redraw chips
         t.on("end", () => {
           draw(node);
           draw_family_labels_all();
