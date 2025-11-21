@@ -613,8 +613,8 @@ body {
 /* Dialog card */
 #aboutModal .modal-card {
   position: relative;
-  width: min(800px, 95vw);
-  padding: clamp(24px, 4vw, 36px);
+  width: min(700px, 92vw);
+  padding: clamp(32px, 5vw, 48px);
   background: #fff;
   border: 1px solid #eceae7;
   border-radius: 4px;
@@ -657,7 +657,7 @@ body {
   margin: 0 0 14px;
   font-family: "EB Garamond", Garamond, serif;
   font-weight: 500;
-  font-size: clamp(26px, 3vw, 30px);  /* goes from 26 → 30 */
+  font-size: clamp(26px, 3vw, 30px); 
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: #1a1a1a;
@@ -668,7 +668,7 @@ body {
   margin: 0 0 16px;
   max-width: 65ch;
   color: #2a2a2a;
-  font-size: 15.5px;              /* was 16px equivalent */
+  font-size: 15.5px;           
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.55;
