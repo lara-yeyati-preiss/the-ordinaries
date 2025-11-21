@@ -405,7 +405,7 @@ body {
   flex: 1 1 auto;
 }
 
-#step-treemap .treemap-stage{ aspect-ratio: 1000 / 460; height: auto !important; min-height: 460px; } 
+#step-treemap .treemap-stage{ aspect-ratio: 1000 / 450; height: auto !important; min-height: 450px; } 
 
 #treemap-svg.treemap {
   width: 100%;
