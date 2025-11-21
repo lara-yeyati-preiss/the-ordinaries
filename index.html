@@ -94,24 +94,20 @@
               <div class="modal-text">
                 <h2 id="about-title">About This Project</h2>
                 <p id="about-desc">
-                  The Ordinaries examines the American Revolutionary era (1765–1783)
+                  The Ordinaries examines the American Revolutionary era
                   through the material traces of everyday life, drawing on objects from the Smithsonian’s
                   collections — from cooking pots and card games to stitched samplers and nursing bottles.
+                  <br><br>
+                  This project was created as part of a Parsons × Smithsonian partnership. <br> It is built using the Smithsonian American Revolutionary Era Collections dataset (Revolution Crossroads, CC0).
                 </p>
 
                 <div class="footer-meta">
                   <span class="data-badge">
                     Data source:
-                    <a href="https://www.si.edu/openaccess" target="_blank" rel="noopener">Smithsonian Open Access</a>
+                    <a href="https://huggingface.co/RevolutionCrossroads" target="_blank" rel="noopener">Smithsonian American Revolutionary Era dataset</a>
                   </span>
                 </div>
               </div>
-
-              <!-- right column: decorative image only (aria-hidden to avoid duplicate reading) -->
-              <figure class="modal-figure" aria-hidden="true">
-                <!-- empty alt + role=presentation so screen readers skip the decorative image -->
-                <img src="assets/ordinaries.png" alt="" role="presentation">
-              </figure>
             </div>
           </div>
         </div> <!-- end #aboutModal -->
@@ -462,37 +458,49 @@
 </template>
 <!-- END TREEMAP TEMPLATE -->
 
-    <!-- FOOTER TEMPLATE -->
-    <template id="footer-step-template">
-      <footer id="about" class="site-footer" aria-labelledby="about-footer-title">
-        <div class="footer-container">
-          <div class="footer-inner">
-            <div class="footer-text">
-              <h2 id="about-footer-title">About This Project</h2>
-              <p>
-                The Ordinaries examines the American Revolutionary era (1765–1783)
-                through the material traces of everyday life, drawing on objects from the
-                Smithsonian’s collections — from cooking pots and card games to stitched
-                samplers and nursing bottles.
-              </p>
+<!-- FOOTER TEMPLATE -->
+<template id="footer-step-template">
+  <footer id="about" class="site-footer" aria-labelledby="about-footer-title">
+    <div class="footer-container">
+      <div class="footer-inner">
+        <div class="footer-text">
+          <h2 id="about-footer-title">About This Project</h2>
 
-              <div class="footer-meta">
-                Data source:
-                <a href="https://www.si.edu/openaccess"
-                   target="_blank" rel="noopener">
-                  Smithsonian Open Access
-                </a>
-              </div>
-            </div>
+          <p>
+            The Ordinaries examines the American Revolutionary era
+            through the material traces of everyday life, drawing on objects from the
+            Smithsonian’s collections — from cooking pots and card games to stitched
+            samplers and nursing bottles.
+            <br><br>
+          </p>
+          <p>
+            <strong><em>Data &amp; Sources</em></strong>
+            <br>
+            This project uses the <em>Smithsonian American Revolutionary Era Collections</em>
+            dataset (Revolution Crossroads, CC0-1.0), a curated corpus of 12,667 object
+            records and nearly 4,000 images dating roughly to 1770–1810 and drawn from
+            four Smithsonian museums: the National Museum of American History, National
+            Postal Museum, Smithsonian American Art Museum, and National Portrait Gallery.
+          </p>
 
-            <figure class="footer-figure" aria-hidden="true">
-              <img src="assets/ordinaries.png" alt="" role="presentation">
-            </figure>
+          <div class="footer-meta">
+            Dataset:
+            <a href="https://huggingface.co/RevolutionCrossroads"
+               target="_blank" rel="noopener">
+              Smithsonian American Revolutionary Era Collections
+            </a>
           </div>
         </div>
-      </footer>
-    </template>
+
+        <figure class="footer-figure" aria-hidden="true">
+          <img src="assets/ordinaries.png" alt="" role="presentation">
+        </figure>
+      </div>
+    </div>
+  </footer>
+</template>
 <!-- END FOOTER TEMPLATE -->
+
 
 
     <script src="app.js"></script>
