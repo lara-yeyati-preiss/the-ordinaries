@@ -1114,10 +1114,9 @@ body.modal-open {
 .floor-plan-info-tooltip:hover {
   opacity: 1;
 }
-
 /* ============================================================================
-   FINAL FOOTER SCENE — cohesive, clean, centered
-   ========================================================================== */
+  FINAL FOOTER SCENE
+  ========================================================================== */
 
 /* Footer block inside scrollytelling step */
 .scrolly-step .site-footer {
@@ -1130,7 +1129,7 @@ body.modal-open {
   box-shadow: none;
 }
 
-/* Soft container — echoes modal, but lighter and flatter */
+/* Soft container*/
 .site-footer .footer-container {
   width: min(860px, 92vw);                  
   padding: clamp(32px, 5vw, 44px);
@@ -1145,10 +1144,10 @@ body.modal-open {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: clamp(18px, 3vw, 28px);
-  align-items: center;
+  align-items: end; 
 }
 
-/* Title — same hierarchy as modal title */
+/* Title */
 .site-footer h2 {
   margin: 0 0 12px;
   font-family: "EB Garamond", Garamond, serif;
@@ -1192,6 +1191,7 @@ body.modal-open {
 .footer-figure {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end; 
   padding-top: 6px;
 }
 
@@ -1204,22 +1204,24 @@ body.modal-open {
 /* Responsive */
 @media (max-width: 720px) {
   .footer-container {
-    padding: 26px 24px 30px;
+   padding: 26px 24px 30px;
   }
 
   .footer-inner {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: left;
+   grid-template-columns: 1fr;
+   gap: 20px;
+   text-align: left;
+   align-items: start; 
   }
 
   .footer-figure {
-    justify-content: flex-start;
-    padding-top: 0;
+   justify-content: flex-start;
+   align-items: flex-start; 
+   padding-top: 0;
   }
 
   .footer-figure img {
-    max-width: 140px;
+   max-width: 140px;
   }
 }
 
