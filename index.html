@@ -224,6 +224,19 @@
         </svg>
     </button>
 
+<!-- breadcrumb for story progress -->
+<nav class="chapter-rail" aria-label="Story progress">
+  <ol class="chapter-rail-steps">
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+    <li class="chapter-rail-step"><span class="chapter-rail-bar"></span></li>
+  </ol>
+</nav>
+
         <!-- CARD STEP TEMPLATE (intro / outro cards) -->
     <template id="card-step-template">
       <div class="prelude-card">
@@ -398,14 +411,6 @@
                   </div>
                 </div>
               </div>
-
-              <button
-                class="floor-plan-deselect"
-                id="floorPlanDeselect"
-                aria-label="Clear room selection"
-                style="display:none;">
-                ×
-              </button>
             </div>
           </div>
 
@@ -444,7 +449,7 @@
         <div id="details" class="details-panel" hidden>
           <div class="details-header">
             <h3 id="details-title" class="details-title"></h3>
-            <button class="details-close" aria-label="Close details">×</button>
+            <button class="details-close" aria-label="Close panel">×</button>
           </div>
           <p class="details-subtitle"></p>
           <ul id="details-list" class="details-list"></ul>

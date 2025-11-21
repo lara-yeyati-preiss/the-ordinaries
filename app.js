@@ -133,6 +133,11 @@ let state = {
   _lastActiveStepIndex: -2, // previous step index to detect boundary crosses
 };
 
+// breadcrumb (vertical chapter rail) state
+let chapterRail = null;
+let chapterRailSteps = [];
+
+
 /* -------------------------------
    2) segment helpers
    - locate segments by id and map global progress to local step progress
@@ -158,7 +163,7 @@ const DEFAULT_VH = 120;
 const PER_STEP_VH = {
   rituals: 280, // longer runway to make category changes legible
   treemap: 140, // slightly shorter so the viz enters sooner
-  "floor-plan": 220, // moderate length to explore rooms
+  "floor-plan": 180, // moderate length to explore rooms
 };
 
 function buildSegments() {
@@ -556,6 +561,57 @@ function renderStepContent(step) {
    - compute global progress, set active step, and drive per-step updates
 -------------------------------- */
 
+function setupChapterRail() {
+  chapterRail = document.querySelector(".chapter-rail");
+  if (!chapterRail) return;
+
+  chapterRailSteps = Array.from(
+    chapterRail.querySelectorAll(".chapter-rail-step")
+  );
+
+  // start hidden in the hero
+  chapterRail.classList.add("chapter-rail--hidden");
+
+  // clear any hardcoded state
+  chapterRailSteps.forEach((el) => {
+    el.classList.remove("is-current", "is-complete");
+  });
+}
+
+/**
+ * update which segment is highlighted + whether the rail is visible.
+ * t is the global scroll progress 0..1 from computeProgressAndActive().
+ */
+function updateChapterRail(t) {
+  if (!chapterRail || !chapterRailSteps.length) return;
+
+  const heroSeg = segmentOf("hero");
+  const inHero = heroSeg ? t < heroSeg.end : state.activeStepIndex === -1;
+
+  // hide rail in hero; show after
+  chapterRail.classList.toggle("chapter-rail--hidden", inHero);
+
+  if (inHero) return; // don't highlight anything yet
+
+  // map activeStepIndex (0..6) → one of the 7 segments
+  const idx = Math.max(
+    0,
+    Math.min(config.steps.length - 1, state.activeStepIndex)
+  );
+
+  chapterRailSteps.forEach((stepEl, i) => {
+    // current section
+    stepEl.classList.toggle("is-current", i === idx);
+    // everything before current is "complete"
+    stepEl.classList.toggle("is-complete", i < idx);
+    // everything after has neither class
+    if (i > idx) {
+      stepEl.classList.remove("is-complete");
+    }
+  });
+}
+
+
 function setupScrollListener() {
   const container = document.getElementById("scrollContainer");
   container.addEventListener(
@@ -567,6 +623,7 @@ function setupScrollListener() {
       updateFloorPlanGrid(); // populate floor plan grid when step is active
       updateUpArrowVisibility();
       updateViewportBackgroundGrid();
+      updateChapterRail(t);
 
       // guard: keep scrollTop within the valid range near the bottom
       const maxScroll = container.scrollHeight - container.clientHeight;
@@ -770,9 +827,6 @@ function updateFloorPlanGrid() {
         
         grid.appendChild(item);
       }
-      // hide deselect button
-      if (deselectBtn) deselectBtn.style.display = "none";
-      return;
     }
     
     const images = roomImages[room] || [];
@@ -833,10 +887,29 @@ function updateFloorPlanGrid() {
         });
       });
     });
+  }
+  function clearRoomSelection() {
+    if (!floorPlanState.currentRoom) return;
 
-    // show deselect button only when a room is permanently selected (not preview)
-    if (deselectBtn) {
-      deselectBtn.style.display = isPreview ? "none" : "flex";
+    // reset state
+    floorPlanState.currentRoom = null;
+    floorPlanState.isHovering = false;
+
+    // restore placeholders in the grid
+    populateGrid(null);
+
+    // clear fills from all rooms in the SVG
+    if (floorPlanState.svgObject && floorPlanState.svgObject.contentDocument) {
+      const svgDoc = floorPlanState.svgObject.contentDocument;
+      const rooms = ["kitchen", "pantry", "bedroom", "living", "parlor", "balcony", "outside"];
+
+      rooms.forEach((name) => {
+        const group = svgDoc.getElementById(`room-${name}`);
+        if (!group) return;
+        group.querySelectorAll("rect").forEach((rect) => {
+          rect.style.fill = "transparent";
+        });
+      });
     }
   }
 
@@ -867,7 +940,7 @@ function updateFloorPlanGrid() {
       rects.forEach((rect) => {
         // apply inline animation instead of class - match hover opacity
         rect.style.animation = "roomPulse 0.4s ease-in-out 1";
-        rect.style.fill = "rgba(218, 203, 178, 0.45)"; // same as hover
+        rect.style.fill = "rgba(218, 203, 178, 0.45)";
         
         // remove animation after it completes (1 cycle × 0.4s = 400ms)
         setTimeout(() => {
@@ -1018,6 +1091,19 @@ function updateFloorPlanGrid() {
         });
       });
     }
+  }
+  // allow deselecting the current room by clicking anywhere in this step
+  const stepEl = grid.closest(".floor-plan-step");
+  if (stepEl) {
+    stepEl.addEventListener("click", (event) => {
+      // nothing selected → nothing to clear
+      if (!floorPlanState.currentRoom) return;
+
+      // don't clear when clicking inside the object grid
+      if (grid.contains(event.target)) return;
+
+      clearRoomSelection();
+    });
   }
 
   // wait for SVG to load
@@ -1934,6 +2020,7 @@ function init() {
   setupScrollListener();
   setupHeroDownArrow();
   enableUpArrow();
+  setupChapterRail();
 
   // paint once with correct state
   const t0 = computeProgressAndActive();

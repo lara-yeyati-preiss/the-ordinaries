@@ -478,12 +478,28 @@ body {
   box-shadow: 0 1px 2px rgba(139, 115, 85, 0.08);
   z-index: 20; 
 }
-.details-close{
-  background: none; border: none; margin: 0; padding: 6px 10px;
-  font-size: 24px; line-height: 1; cursor: pointer; color: #666;
-  border-radius: 4px; transition: background-color 0.15s ease;
+.details-close {
+  background: rgba(0,0,0,0.03);   
+  border: 1px solid rgba(0,0,0,0.12); 
+  padding: 4px 8px;
+  cursor: pointer;
+
+  font-size: 22px;     
+  line-height: 1;
+  color: rgba(0,0,0,0.55);   
+  border-radius: 6px;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
-.details-close:hover{ background-color: #f0f0f0; }
+
+.details-close:hover {
+  background-color: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.18);
+  color: rgba(0,0,0,0.80);       
+}
 
 .details-title{
   margin: 0; font-weight: 600; font-size: 20px; color: #3a2e20; letter-spacing: -0.02em;
@@ -493,7 +509,7 @@ body {
   display: flex; flex-direction: column; gap: 12px;
 }
 .details-subtitle{
-  position: sticky; top: 68px; margin: 0; padding: 10px 16px;
+  position: sticky; top: 69px; margin: 0; padding: 10px 16px;
   background: linear-gradient(180deg, #f3f0eb 0%, #ede9e2 100%);
   color: #5a4a35; font-size: 14px; font-weight: 500;
   border-bottom: 1px solid rgba(139, 115, 85, 0.2);
@@ -860,7 +876,6 @@ body.modal-open {
 .modal.modal--stage .sampler-intro-step .sampler-gallery img{
   height: 40vh; width: auto; object-fit: contain; display: block; 
 }
-.modal.modal--stage .sampler-intro-step .sampler-gallery img:hover{ transform: translateY(-2px); }
 
 .modal.modal--stage .prelude-card.sampler-intro-card{
   margin-left: auto; margin-right: auto; text-align: center; max-width: 560px; margin-bottom: 2vh;
@@ -1233,3 +1248,75 @@ body.modal-open {
   }
 }
 
+/* ============================================================================
+   ACCESSIBILITY HELPER (keep if you use it elsewhere)
+   ========================================================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ============================================================================
+   CHAPTER RAIL — final version: pure vertical pills (no numbers)
+   ========================================================================== */
+
+/* fixed rail on the right */
+.chapter-rail {
+  position: fixed;
+  top: 4.5rem;
+  right: 5rem;              /* right margin from the viewport edge */
+  z-index: 40;
+  pointer-events: none;        /* never blocks interactions */
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* vertical stack of pills */
+.chapter-rail-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;                 /* vertical spacing between pills */
+}
+
+/* each step just wraps a pill */
+.chapter-rail-step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the pill itself */
+.chapter-rail-bar {
+  width: 6px;         
+  height: 22px;        
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);  /* upcoming sections */
+  flex-shrink: 0;
+}
+
+/* sections that are already passed */
+.chapter-rail-step.is-complete .chapter-rail-bar {
+  background: rgba(0, 0, 0, 0.20);
+}
+
+/* current section */
+.chapter-rail-step.is-current .chapter-rail-bar {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* hidden state in the hero */
+.chapter-rail--hidden {
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+}
