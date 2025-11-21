@@ -1233,7 +1233,7 @@ body.modal-open {
 .chapter-rail {
   position: fixed;
   top: 4.5rem;
-  right: 5rem;              /* right margin from the viewport edge */
+  right: 3rem;              /* right margin from the viewport edge */
   z-index: 40;
   pointer-events: none;        /* never blocks interactions */
   opacity: 1;
