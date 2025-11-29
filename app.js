@@ -1,3 +1,10 @@
+/**
+ * app.js — orchestrates the main scrollytelling experience:
+ * - builds the step track from HTML templates and config.steps
+ * - wires scroll progress to hero, object grid, floor plan, treemap and footer
+ * - manages modals (about, stories) and lightbox interactions
+ */
+
 
 /* -------------------------------
    0) global configuration
@@ -86,6 +93,7 @@ const config = {
    - manifest.json files list image filenames; csv provides tooltip metadata
 -------------------------------- */
 
+// the order of these categories must stay in sync with #categorySelector buttons in index.html
 const GRID_CATEGORIES = [
   {
     key: "samplers",
@@ -96,7 +104,7 @@ const GRID_CATEGORIES = [
   },
   {
     key: "mugs",
-    label: "Pharmaceutical jars",
+    label: "Apothecary jars",
     path: "assets/mugs",
     manifest: "assets/mugs/manifest.json",
     csv: "treemap_data/final_database_with_materials.csv",
@@ -125,7 +133,6 @@ const GRID_CATEGORIES = [
 let state = {
   activeStepIndex: -1,      // which track step is active (-1 means hero)
   compartmentProgress: 0,   // 0..1 position across images in a compartment slide
-  samplerIntroProgress: 0,  // legacy reveal support; harmless if unused
   objectGridCategory: 0,    // which family is currently shown in the grid
   segments: [],             // normalized scroll segments (hero + steps)
   storyIndex: 0,            // active slide index inside the story modal
@@ -915,14 +922,11 @@ function updateFloorPlanGrid() {
 
   // function to pulse all room rectangles as a visual hint
   function pulseAllRooms() {
-    console.log("pulseAllRooms called");
     if (!floorPlanState.svgObject) {
-      console.log("No svgObject");
       return;
     }
     const svgDoc = floorPlanState.svgObject.contentDocument;
     if (!svgDoc) {
-      console.log("No contentDocument");
       return;
     }
 
@@ -931,12 +935,10 @@ function updateFloorPlanGrid() {
     rooms.forEach((roomName) => {
       const roomGroup = svgDoc.getElementById(`room-${roomName}`);
       if (!roomGroup) {
-        console.log(`No room group for ${roomName}`);
         return;
       }
 
       const rects = roomGroup.querySelectorAll("rect");
-      console.log(`Found ${rects.length} rects for ${roomName}`);
       rects.forEach((rect) => {
         // apply inline animation instead of class - match hover opacity
         rect.style.animation = "roomPulse 0.4s ease-in-out 1";
@@ -1238,10 +1240,15 @@ function ensureTooltip() {
   if (!el) {
     el = document.createElement("div");
     el.id = "gridTooltip";
+    el.className = "tooltip-panel";      // 🔴 add the shared look
     document.body.appendChild(el);
+  } else {
+    // in case it already existed before you added this code
+    el.classList.add("tooltip-panel");
   }
   return el;
 }
+
 
 function idFromPath(path) {
   // get filename from path
@@ -1404,19 +1411,17 @@ function loadCategory(idx) {
     b.setAttribute("aria-checked", on ? "true" : "false");
   });
 
-  // update view story button text and data attribute
-  const viewStoryBtn = document.getElementById("viewStoryBtn");
-  if (viewStoryBtn) {
-    const cat = GRID_CATEGORIES[idx];
-    const categories = ["Samplers", "Apothecary Jars", "Teapots", "Fire Marks"];
-    if (cat) {
-      viewStoryBtn.setAttribute("data-story", cat.key);
-      viewStoryBtn.textContent = `View ${categories[idx]} Story`;
-    }
-  }
+// update view story button text and data attribute
+const viewStoryBtn = document.getElementById("viewStoryBtn");
+const cat = GRID_CATEGORIES[idx];   // declare cat ONCE
 
-  const cat = GRID_CATEGORIES[idx];
-  if (!cat) return Promise.resolve();
+if (!cat) return Promise.resolve();
+
+if (viewStoryBtn) {
+  const categories = ["Samplers", "Apothecary Jars", "Teapots", "Fire Marks"];
+  viewStoryBtn.setAttribute("data-story", cat.key);
+  viewStoryBtn.textContent = `View ${categories[idx]} Story`;
+}
 
   // manifest list → absolute paths
   const manifestP = _gridManifestCache.has(cat.key)
@@ -2025,7 +2030,6 @@ function init() {
   // paint once with correct state
   const t0 = computeProgressAndActive();
   updateStepVisibility(t0);
-  updateSamplerIntroReveal(t0);
   updateObjectGridProgress(t0);
   updateUpArrowVisibility();
   updateViewportBackgroundGrid();

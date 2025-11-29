@@ -1,3 +1,11 @@
+/**
+ * treemap.js — renders the Actions/Materials treemap for "The Ordinaries"
+ * - load treemap + object detail data
+ * - render a responsive, zoomable treemap (action / material modes)
+ * - display tooltips, details panel, and contextual place hints
+ */
+
+
 (function () {
   document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
@@ -42,7 +50,7 @@
         "commemorate & symbolize": "Commemorating & Symbolizing",
         "decorate & furnish": "Decorating & Furnishing",
         "fight": "Fighting & Hunting",
-        "ignite & manage fire": "Lighting & Firekeeping",
+        "light & manage fire": "Lighting & Firekeeping",
         "measure & navigate": "Measuring & Navigating",
         "perform music": "Performing Music",
         "play": "Playing",
@@ -80,19 +88,12 @@
 
       // === weighted-total explainer (used by the info icon) =======================
       const MATERIAL_WEIGHT_EXPLAIN = `
-        <div class="tt-title">Counts vs. weighted totals</div>
+        <div class="tt-title">About material counts</div>
         <div>
-          <strong>By Use</strong> overview shows the <strong>number of objects</strong> in each group.<br>
-          <strong>By Material</strong> overview shows <strong>weighted totals</strong>.
+          In the materials view, some objects appear under more than one material.
         </div>
         <div style="margin-top:.4rem">
-          In both views, when you click into a group (selecting an action or material), the counts shown are the
-          <strong>number of objects</strong>.
-        </div>
-        <div style="margin-top:.6rem">
-          <strong>How weighted totals work:</strong> <br>If an object lists multiple main materials,
-          it contributes a fractional share to each. For example, if the main materials are linen and cotton,
-          it counts as 0.5 toward each.
+          When an object lists several main materials, it contributes a proportional share to each one.
         </div>
       `;
 
@@ -283,19 +284,22 @@
         .attr("aria-pressed", "false")
         .text("By Material");
 
-      // info (i) button explaining weighted totals
-      const infoBtn = toggle
-        .append("button")
-        .attr("type", "button")
-        .attr("class", "info-btn")
-        .attr("aria-label", "How weighted totals work")
+      // i icon inside the treemap-controls row, pushed to the right
+      const infoHover = d3.select(".treemap-controls")
+        .append("div")
+        .attr("class", "info-hover-icon")
+        .style("display", currentMode === "material" ? "flex" : "none") // only for materials
         .html(`
-          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"></circle>
-            <circle cx="12" cy="7" r="1.5" fill="currentColor"></circle>
-            <rect x="11" y="10" width="2" height="8" rx="1" fill="currentColor"></rect>
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4" fill="none"></circle>
+            <circle cx="12" cy="8" r="1.3" fill="currentColor"></circle>
+            <rect x="11" y="10.5" width="2" height="7.5" rx="1" fill="currentColor"></rect>
           </svg>
         `);
+
+      infoHover
+        .on("mouseenter", (ev) => showInfo(ev))
+        .on("mouseleave", hideInfo);
 
       // the treemap tooltip is a single shared node. We select it once and reuse it.
       const tooltipNode = d3.select("#treemap-tooltip");
@@ -350,14 +354,6 @@
           .html("");
       }
 
-      // click to toggle the (i) panel; stop propagation so it doesn’t conflict with background handlers
-      infoBtn.on("click", (ev) => {
-        ev.stopPropagation();
-        const visible = tooltipNode.style("display") !== "none";
-        if (visible) hideInfo();
-        else showInfo(ev);
-      });
-
       // click anywhere outside the toggle → close the (i) panel; esc also closes
       d3.select(document).on("click.info", (ev) => {
         const t = ev.target;
@@ -367,31 +363,43 @@
         if (ev.key === "Escape") hideInfo();
       });
 
-      // set mode helper: flips aria state, updates svg attr, rebuilds hierarchy, and redraws
-      function setMode(mode) {
-        if (mode === currentMode) return;
-        
-        // hide place hint before changing mode
-        if (placeHint && placeHint.node()) {
-          placeHint.classed("visible", false).text("");
-        }
-        
-        currentMode = mode;
-        svg.attr("data-mode", currentMode);
-        btnUse.attr("aria-pressed", String(mode === "use"));
-        btnMat.attr("aria-pressed", String(mode === "material"));
-        rebuildRootAndReset();
+// set mode helper: flips aria state, updates svg attr, rebuilds hierarchy, and redraws
+function setMode(mode) {
+  if (mode === currentMode) return;
 
-        // update the hint text below the viz based on mode
-        const hint = document.querySelector('.viz-hint');
-        if (hint) {
-          if (mode === "use") {
-            hint.textContent = "Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.";
-          } else {
-            hint.textContent = "Explore objects from Revolutionary-era America by what they were made of, drawn from Smithsonian collections.";
-          }
-        }
-      }
+  // hide place hint before changing mode
+  if (placeHint && placeHint.node()) {
+    placeHint.classed("visible", false).text("");
+  }
+
+  // update the mode
+  currentMode = mode;
+
+  // 🔹 show or hide the info icon depending on mode
+  infoHover.style("display", mode === "material" ? "inline-flex" : "none");
+
+  // reflect mode in svg for CSS if needed
+  svg.attr("data-mode", currentMode);
+
+  // update toggle button aria state
+  btnUse.attr("aria-pressed", String(mode === "use"));
+  btnMat.attr("aria-pressed", String(mode === "material"));
+
+  // rebuild hierarchy + redraw treemap
+  rebuildRootAndReset();
+
+  // update the hint text below the viz based on mode
+  const hint = document.querySelector(".viz-hint");
+  if (hint) {
+    if (mode === "use") {
+      hint.textContent =
+        "Explore objects from Revolutionary-era America by how they were used, drawn from the Smithsonian collections.";
+    } else {
+      hint.textContent =
+        "Explore objects from Revolutionary-era America by what they were made of, drawn from Smithsonian collections.";
+    }
+  }
+}
 
       // wire the two mode buttons
       btnUse.on("click", () => setMode("use"));
@@ -449,7 +457,7 @@
       const familyColors = {
         "eat, cook & drink": "#868D7A",
         "heal & care": "#9C9C80",
-        "ignite & manage fire": "#8D927C",
+        "light & manage fire": "#8D927C",
         "textile making": "#8F8C81",
         "dress & accessorize": "#8F8C81",
         "decorate & furnish": "#7A7875",
@@ -974,17 +982,22 @@
       gFamilyChips.raise();
 
       // guarantee a single #treemap-tooltip in <body>; create it if missing or wrongly placed
-      (function ensureTreemapTooltip() {
-        let tEl = document.getElementById("treemap-tooltip");
-        if (!tEl) {
-          tEl = document.createElement("div");
-          tEl.id = "treemap-tooltip";
-          tEl.className = "treemap-tooltip";
-          document.body.appendChild(tEl);
-        } else if (tEl.parentNode !== document.body) {
-          document.body.appendChild(tEl);
-        }
-      })();
+(function ensureTreemapTooltip() {
+  let tEl = document.getElementById("treemap-tooltip");
+  if (!tEl) {
+    tEl = document.createElement("div");
+    tEl.id = "treemap-tooltip";
+    tEl.className = "treemap-tooltip tooltip-panel"; // 🔴 add shared class
+    document.body.appendChild(tEl);
+  } else {
+    // keep it in <body> and make sure it has both classes
+    tEl.classList.add("treemap-tooltip", "tooltip-panel");
+    if (tEl.parentNode !== document.body) {
+      document.body.appendChild(tEl);
+    }
+  }
+})();
+
 
       // micro tooltip helpers used for hover when moving the mouse
       const tooltip = d3.select("#treemap-tooltip");
@@ -1083,75 +1096,125 @@
           d3.select(this).select(".leaf-html").style("color", color);
         });
 
-        // --------------------------
-        // Hover (tooltips)
-        // --------------------------
-        cells
-          .on("mousemove", (ev, d) => {
-            // 1) overview (root): hovering a leaf shows its parent bucket summary
-            if (node === root) {
-              const parentNode = d.parent;
-              const name = (currentMode === "material")
-                ? displayMaterial(parentNode?.data?.name || "")
-                : displayFamily(parentNode?.data?.name || "");
-              const total = parentNode ? (parentNode.value || 0) : (d.value || 0);
-              const totalText = (currentMode === "material")
-                ? `Weighted total: ${Math.round(total)}`
-                : `Total objects: ${total}`;
-              showTooltip(ev, `<div class="tt-title">${name}</div><div>${totalText}</div>`);
-              return;
-            }
+// --------------------------
+// Hover (tooltips)
+// --------------------------
 
-            // 2) inside an “other …” bucket: show the child bucket + matching total label
-            if (isOtherCombined(node)) {
-              const label = (currentMode === "material")
-                ? displayMaterial(d.data.name || "")
-                : displayFamily(d.data.name || "");
-              const val = Math.round(d.value || 0);
-              const line = (currentMode === "material")
-                ? `Weighted total: ${val}`   // note: weighted at this parent level
-                : `Total: ${val}`;
-              showTooltip(ev, `<div class="tt-title">${label}</div><div>${line}</div>`);
-              return;
-            }
+// helper: count true number of objects that include a given material name
+function countObjectsForMaterial(materialName) {
+  const mat = norm(materialName || "");
+  if (!mat) return 0;
 
-            // 3) inside a specific bucket (family or material)
-            const bucketLabel = (currentMode === "material")
-              ? displayMaterial(d.parent?.data?.name ?? "—")
-              : displayFamily(d.parent?.data?.name ?? "—");
+  let count = 0;
 
-            if (currentMode === "material") {
-              // inside one material, children are types. Compute true object count for this type under that material.
-              const typeName = d.data.name;
-              const rows = details[typeName] || details[norm(typeName)] || [];
-              const mat = norm(node?.data?.name || "");
-              let count = 0;
-              for (const r of rows) {
-                const raw = (r.main_material || "").toLowerCase();
-                if (!raw || raw === "unknown") continue;
-                const toks = raw
-                  .split(/[,/&;]|\sand\s|\+|\|/g)
-                  .map(t => t.trim())
-                  .filter(Boolean);
-                if (new Set(toks).has(mat)) count += 1;
-              }
-              showTooltip(
-                ev,
-                `<div class="tt-title">${typeName}</div>
-                 <div>Material: ${bucketLabel}</div>
-                 <div>Total objects: ${count}</div>`
-              );
-            } else {
-              // by-use: show the object type within the chosen family, with its count
-              showTooltip(
-                ev,
-                `<div class="tt-title">${d.data.name}</div>
-                 <div>Family: ${bucketLabel}</div>
-                 <div>Count: ${d.value || 0}</div>`
-              );
-            }
-          })
-          .on("mouseleave", hideTooltip)
+  // details is a map: typeName -> array of rows (one row per object)
+  for (const rows of Object.values(details)) {
+    for (const r of rows) {
+      const raw = (r.main_material || "").toLowerCase();
+      if (!raw || raw === "unknown") continue;
+
+      const toks = raw
+        .split(/[,/&;]|\sand\s|\+|\|/g)
+        .map(t => t.trim())
+        .filter(Boolean);
+
+      if (new Set(toks).has(mat)) {
+        count += 1;
+      }
+    }
+  }
+
+  return count;
+}
+
+cells
+  .on("mousemove", (ev, d) => {
+    // 1) overview (root): hovering a leaf shows its parent bucket summary
+    if (node === root) {
+      const parentNode = d.parent;
+
+      if (currentMode === "material") {
+        // at the overview, show TRUE number of objects containing this material
+        const matName = parentNode?.data?.name || "";
+        const name = displayMaterial(matName);
+        const totalObjects = countObjectsForMaterial(matName);
+
+        showTooltip(
+          ev,
+          `<div class="tt-title">${name}</div>
+           <div>Objects made partly or entirely of this material: ${totalObjects}</div>`
+        );
+        return;
+      }
+
+      // by-use overview stays using the treemap value
+      const name = displayFamily(parentNode?.data?.name || "");
+      const total = parentNode ? (parentNode.value || 0) : (d.value || 0);
+      const totalText = `Total objects: ${total}`;
+      showTooltip(ev, `<div class="tt-title">${name}</div><div>${totalText}</div>`);
+      return;
+    }
+
+    // 2) inside an “other …” bucket (overview level):
+    // show the child bucket + matching total label
+    if (isOtherCombined(node)) {
+      if (currentMode === "material") {
+        // again, use TRUE object count for that material
+        const label = displayMaterial(d.data.name || "");
+        const totalObjects = countObjectsForMaterial(d.data.name || "");
+        showTooltip(
+          ev,
+          `<div class="tt-title">${label}</div>
+           <div>Objects made partly or entirely of this material: ${totalObjects}</div>`
+        );
+      } else {
+        const label = displayFamily(d.data.name || "");
+        const val = Math.round(d.value || 0);
+        const line = `Total: ${val}`;
+        showTooltip(ev, `<div class="tt-title">${label}</div><div>${line}</div>`);
+      }
+      return;
+    }
+
+    // 3) inside a specific bucket (family or material)
+    const bucketLabel = (currentMode === "material")
+      ? displayMaterial(d.parent?.data?.name ?? "—")
+      : displayFamily(d.parent?.data?.name ?? "—");
+
+    if (currentMode === "material") {
+      // inside one material, children are types. Compute true object count
+      // for this type under that material (this is the code you already had).
+      const typeName = d.data.name;
+      const rows = details[typeName] || details[norm(typeName)] || [];
+      const mat = norm(node?.data?.name || "");
+      let count = 0;
+      for (const r of rows) {
+        const raw = (r.main_material || "").toLowerCase();
+        if (!raw || raw === "unknown") continue;
+        const toks = raw
+          .split(/[,/&;]|\sand\s|\+|\|/g)
+          .map(t => t.trim())
+          .filter(Boolean);
+        if (new Set(toks).has(mat)) count += 1;
+      }
+      showTooltip(
+        ev,
+        `<div class="tt-title">${typeName}</div>
+         <div>Material: ${bucketLabel}</div>
+         <div>Total objects: ${count}</div>`
+      );
+    } else {
+      // by-use: show the object type within the chosen family, with its count
+      showTooltip(
+        ev,
+        `<div class="tt-title">${d.data.name}</div>
+         <div>Family: ${bucketLabel}</div>
+         <div>Count: ${d.value || 0}</div>`
+      );
+    }
+  })
+  .on("mouseleave", hideTooltip)
+
           .on("click", (ev, d) => {
             if (current === root) {
               // overview: click any leaf → zoom to its parent (family or material). If leaf lives under an “other …” group, zoom to that group.

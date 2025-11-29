@@ -13,10 +13,6 @@
           "value": 53
         },
         {
-          "name": "andirons",
-          "value": 32
-        },
-        {
           "name": "beds",
           "value": 31
         },
@@ -45,10 +41,6 @@
           "value": 5
         },
         {
-          "name": "lamps",
-          "value": 4
-        },
-        {
           "name": "pans",
           "value": 4
         },
@@ -67,10 +59,6 @@
         {
           "name": "shelves",
           "value": 3
-        },
-        {
-          "name": "lanterns",
-          "value": 2
         },
         {
           "name": "blankets",
@@ -455,12 +443,8 @@
       "name": "Eat, cook & drink",
       "children": [
         {
-          "name": "flatwares",
-          "value": 232
-        },
-        {
-          "name": "bottles",
-          "value": 186
+          "name": "flatware",
+          "value": 270
         },
         {
           "name": "plates",
@@ -491,10 +475,6 @@
           "value": 27
         },
         {
-          "name": "spoons",
-          "value": 26
-        },
-        {
           "name": "molds",
           "value": 23
         },
@@ -521,10 +501,6 @@
         {
           "name": "porringers",
           "value": 13
-        },
-        {
-          "name": "cutleries",
-          "value": 12
         },
         {
           "name": "creamers",
@@ -821,8 +797,8 @@
       "name": "Heal & care",
       "children": [
         {
-          "name": "jars, pharmaceutical containers",
-          "value": 280
+          "name": "apothecary jars",
+          "value": 466
         },
         {
           "name": "syrup jars",
@@ -907,11 +883,15 @@
       ]
     },
     {
-      "name": "Ignite & manage fire",
+      "name": "Light & manage fire",
       "children": [
         {
           "name": "fire marks",
           "value": 40
+        },
+        {
+          "name": "andirons",
+          "value": 32
         },
         {
           "name": "tinderboxes",
@@ -930,11 +910,19 @@
           "value": 7
         },
         {
+          "name": "lamps",
+          "value": 4
+        },
+        {
           "name": "bellows",
           "value": 2
         },
         {
           "name": "fire steel",
+          "value": 2
+        },
+        {
+          "name": "lanterns",
           "value": 2
         },
         {
