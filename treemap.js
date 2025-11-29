@@ -90,10 +90,13 @@
       const MATERIAL_WEIGHT_EXPLAIN = `
         <div class="tt-title">About material counts</div>
         <div>
-          In the materials view, some objects appear under more than one material.
+          In the materials view, some objects are counted under more than one material.
         </div>
         <div style="margin-top:.4rem">
-          When an object lists several main materials, it contributes a proportional share to each one.
+          When an object is made of multiple materials, it contributes a proportional share to each one.
+        </div>
+        <div style="margin-top:.4rem">
+          Because of this weighted approach, the sizes of the treemap tiles reflect the distributed counts per material, which may not match the raw number of objects that include that material in whole or in part.
         </div>
       `;
 
@@ -291,15 +294,22 @@
         .style("display", currentMode === "material" ? "flex" : "none") // only for materials
         .html(`
           <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4" fill="none"></circle>
-            <circle cx="12" cy="8" r="1.3" fill="currentColor"></circle>
-            <rect x="11" y="10.5" width="2" height="7.5" rx="1" fill="currentColor"></rect>
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4" fill="none"></circle>
+        <circle cx="12" cy="8" r="1.3" fill="currentColor"></circle>
+        <rect x="11" y="10.5" width="2" height="7.5" rx="1" fill="currentColor"></rect>
           </svg>
         `);
 
-      infoHover
-        .on("mouseenter", (ev) => showInfo(ev))
-        .on("mouseleave", hideInfo);
+      // show info on hover for desktop, on click for mobile
+      const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
+      if (isMobile) {
+        infoHover.on("click", (ev) => showInfo(ev));
+      } else {
+        infoHover
+          .on("mouseenter", (ev) => showInfo(ev))
+          .on("mouseleave", hideInfo);
+      }
 
       // the treemap tooltip is a single shared node. We select it once and reuse it.
       const tooltipNode = d3.select("#treemap-tooltip");
@@ -1142,7 +1152,7 @@ cells
         showTooltip(
           ev,
           `<div class="tt-title">${name}</div>
-           <div>Objects made partly or entirely of this material: ${totalObjects}</div>`
+           <div>Objects made partly or entirely of this material: <strong>${totalObjects}</strong></div>`
         );
         return;
       }
@@ -1150,7 +1160,7 @@ cells
       // by-use overview stays using the treemap value
       const name = displayFamily(parentNode?.data?.name || "");
       const total = parentNode ? (parentNode.value || 0) : (d.value || 0);
-      const totalText = `Total objects: ${total}`;
+      const totalText = `Total objects: <strong>${total}</strong>`;
       showTooltip(ev, `<div class="tt-title">${name}</div><div>${totalText}</div>`);
       return;
     }

@@ -146,7 +146,7 @@ body {
   .object-grid-step .left-col{
     display: flex !important; flex-direction: column !important; align-items: center; gap: 1.25rem; /* stack into single column */
   }
-  .object-grid-card{ order: 1 !important; width: min(92%, 36rem); margin: 2rem auto 0; text-align: center; min-width: 0; max-width: none; }
+  .object-grid-card{ order: 1 !important; margin: 2rem auto 0; text-align: center; min-width: 0; }
   #imageGrid{ order: 2 !important; width: 100%; display: grid !important; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 10px; }
   #imageGrid > *:nth-child(n + 10){ display: none !important; } 
   #categorySelector.category-selector{ order: 3 !important; position: static !important; width: 100%; display: flex !important; flex-direction: column !important; gap: 4px; margin-top: .2rem; margin-left: 16px; }
@@ -629,6 +629,14 @@ body {
   animation: about-modal-in 0.18s ease-out;
 }
 
+/* make modal card scrollable on mobile */
+@media (max-width: 900px) {
+  #aboutModal .modal-card {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
 @keyframes about-modal-in {
   from {
     transform: translateY(6px);
@@ -692,14 +700,6 @@ body {
   border-bottom-color: #1a1a1a;
 }
 
-/* responsive */
-@media (max-width: 860px) {
-  #aboutModal .modal-body {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-}
 
 /* lock scroll when modal is open */
 body.modal-open {
@@ -1159,7 +1159,7 @@ body.modal-open {
 
 .footer-figure {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end; 
   padding-top: 6px;
 }
@@ -1325,7 +1325,9 @@ body.modal-open {
    ========================================================================== */
 @media (max-width: 900px) {
 
-  /* page shell */
+  /* --------------------------
+     page shell / scrollytelling
+     -------------------------- */
 
   html,
   body {
@@ -1353,7 +1355,7 @@ body.modal-open {
     position: static;
     top: auto;
     height: auto;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: block;
   }
 
@@ -1379,21 +1381,16 @@ body.modal-open {
     padding-bottom: 24px;
   }
 
-  .scrolly-step .prelude-card {
-    width: min(640px, 100% - 32px);
-    max-width: 640px;
-    margin-inline: auto;
-    padding: 24px 20px;
-  }
 
-
-  /* hero */
+  /* --------------------------
+     hero
+     -------------------------- */
 
   .hero-landing {
     position: static;
     width: 100%;
-    min-height: auto;
-    padding: 64px 16px 40px;
+    min-height: 100dvh;
+    padding: 80px 16px 56px;
     background: #E4E1DD;
   }
 
@@ -1404,7 +1401,7 @@ body.modal-open {
   }
 
   .scroll-indicator {
-    margin-top: 32px;
+    display: none !important;
   }
 
   #heroBtnObjects {
@@ -1412,7 +1409,9 @@ body.modal-open {
   }
 
 
-  /* object grid */
+  /* --------------------------
+     object grid scene
+     -------------------------- */
 
   .object-grid-step .grid-wrapper {
     min-height: auto;
@@ -1421,7 +1420,7 @@ body.modal-open {
     gap: 24px;
     width: 100%;
     max-width: 100%;
-    padding-inline: 16px;
+    padding-inline: 0;
     margin: 0 auto 32px;
     box-sizing: border-box;
   }
@@ -1431,12 +1430,7 @@ body.modal-open {
     max-width: 640px;
     width: 100%;
     min-width: 0;
-  }
-
-  .object-grid-card {
-    width: 100%;
-    max-width: 640px;
-    margin: 24px auto 0;
+    margin-inline: auto;
   }
 
   #imageGrid {
@@ -1467,7 +1461,18 @@ body.modal-open {
   }
 
 
-  /* floor plan */
+  /* --------------------------
+     floor plan scene
+     -------------------------- */
+
+  .floor-plan-hint {
+    max-width: 35ch;
+    margin: 0 auto 16px;
+  }
+
+  .floor-plan-svg-wrapper {
+    gap: 0;
+  }
 
   .floor-plan-step .grid-wrapper {
     min-height: auto;
@@ -1476,7 +1481,7 @@ body.modal-open {
     gap: 32px;
     width: 100%;
     max-width: 100%;
-    padding-inline: 16px;
+    padding-inline: 0;
     margin: 0 auto 32px;
     box-sizing: border-box;
   }
@@ -1484,17 +1489,11 @@ body.modal-open {
   .floor-plan-step .grid-left-col {
     flex: 0 0 auto;
     min-width: 0;
-    max-width: 560px;
     width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
     align-items: center;
-  }
-
-  .floor-plan-card {
-    margin-top: 34px;
-    min-width: 0;
-    max-width: min(640px, 100% - 32px);
-    width: 100%;
-    margin-inline: auto;
   }
 
   .floor-plan-container {
@@ -1516,14 +1515,20 @@ body.modal-open {
     order: 2;
     display: grid !important;
     width: 100%;
-    max-width: 560px;
+    max-width: 350px;
     margin: 8px auto 24px;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 
+  .floor-plan-house {
+    max-width: 180px;
+  }
 
-  /* treemap */
+
+  /* --------------------------
+     treemap scene
+     -------------------------- */
 
   .treemap-viewport {
     position: static;
@@ -1556,7 +1561,9 @@ body.modal-open {
   }
 
 
-  /* lightbox */
+  /* --------------------------
+     lightbox
+     -------------------------- */
 
   .lightbox-content {
     max-width: 92vw;
@@ -1570,7 +1577,9 @@ body.modal-open {
   }
 
 
-  /* reduced chrome */
+  /* --------------------------
+     reduced chrome on mobile
+     -------------------------- */
 
   .sticky-up-arrow,
   .chapter-rail,
@@ -1580,7 +1589,9 @@ body.modal-open {
   }
 
 
-  /* footer */
+  /* --------------------------
+     footer scene
+     -------------------------- */
 
   .scrolly-step .site-footer {
     padding-inline: 16px;
@@ -1604,12 +1615,21 @@ body.modal-open {
     max-width: 100%;
   }
 
+  .footer-figure {
+    justify-content: center;
+    padding-top: 0;
+    width: 100%;
+  }
+
   .footer-figure img {
     max-width: 140px;
+    display: block;
   }
 
 
-  /* details panel */
+  /* --------------------------
+     details panel (treemap overlay)
+     -------------------------- */
 
   #detailPanel {
     width: min(640px, 100% - 32px);
@@ -1660,18 +1680,12 @@ body.modal-open {
   }
 
 
-  /* card typography */
-
-  .prelude-card,
-  .scrolly-step .prelude-card {
-    font-size: 15px;
-    line-height: 1.45;
-  }
+  /* --------------------------
+     card typography
+     -------------------------- */
 
   .prelude-card h2,
-  .prelude-card h3,
-  .scrolly-step .prelude-card h2,
-  .scrolly-step .prelude-card h3 {
+  .prelude-card h3 {
     font-size: 19px;
     line-height: 1.3;
     margin-bottom: 12px;
@@ -1682,4 +1696,24 @@ body.modal-open {
     font-size: 13px;
     line-height: 1.4;
   }
+
+
+  /* --------------------------
+     unified mobile card layout
+     (intro, object-grid, floor-plan)
+     -------------------------- */
+
+  .prelude-card,
+  .prelude-card.object-grid-card,
+  .prelude-card.floor-plan-card {
+    box-sizing: border-box;
+    width: min(640px, 100% - 32px);
+    max-width: 640px;
+    min-width: 0;
+    margin: 40px auto;
+    padding: 24px 20px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
 }

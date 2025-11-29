@@ -714,19 +714,21 @@ let floorPlanState = {
   currentRoom: null,
   isHovering: false,
   initialized: false,
-  metaIndex: null // store metadata index for floor plan
+  metaIndex: null
 };
 
 function updateFloorPlanGrid() {
   const stepIndex = config.steps.findIndex((s) => s.id === "floor-plan");
-  if (state.activeStepIndex !== stepIndex) return;
+  const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+  if (!isMobile && state.activeStepIndex !== stepIndex) return;
 
   const grid = document.getElementById("floorPlanGrid");
   const svgObject = document.getElementById("floorPlanSvg");
   const deselectBtn = document.getElementById("floorPlanDeselect");
-  
+
   if (!grid || !svgObject) return;
-  
+
   // only initialize once
   if (floorPlanState.initialized) return;
   floorPlanState.initialized = true;
@@ -966,8 +968,16 @@ function updateFloorPlanGrid() {
   // function to attach room listeners
   function attachRoomListeners() {
     const svgDoc = svgObject.contentDocument;
+  // if the external SVG isn't ready yet, wait for it and retry once
     if (!svgDoc) {
-      console.warn("SVG document not loaded yet");
+      svgObject.addEventListener(
+        "load",
+        () => {
+          attachRoomListeners();   // wire up the rooms
+          updateFloorPlanGrid();   // then populate the 3×3 grid
+        },
+        { once: true }             // avoid duplicate listeners
+      );
       return;
     }
 
@@ -2011,6 +2021,7 @@ function init() {
   // layout + first render
   state.segments = buildSegments();
   renderSteps();
+  updateFloorPlanGrid();
   updateCompartmentView(); // safe no-op unless a compartment is visible
 
   // wire ui affordances
