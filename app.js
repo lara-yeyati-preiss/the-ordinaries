@@ -718,11 +718,6 @@ let floorPlanState = {
 };
 
 function updateFloorPlanGrid() {
-  const stepIndex = config.steps.findIndex((s) => s.id === "floor-plan");
-  const isMobile = window.matchMedia("(max-width: 900px)").matches;
-
-  if (!isMobile && state.activeStepIndex !== stepIndex) return;
-
   const grid = document.getElementById("floorPlanGrid");
   const svgObject = document.getElementById("floorPlanSvg");
   const deselectBtn = document.getElementById("floorPlanDeselect");
@@ -910,7 +905,7 @@ function updateFloorPlanGrid() {
     // clear fills from all rooms in the SVG
     if (floorPlanState.svgObject && floorPlanState.svgObject.contentDocument) {
       const svgDoc = floorPlanState.svgObject.contentDocument;
-      const rooms = ["kitchen", "pantry", "bedroom", "living", "parlor", "balcony", "outside"];
+      const rooms = ["kitchen", "pantry", "bedroom", "living", "parlor", "outside"];
 
       rooms.forEach((name) => {
         const group = svgDoc.getElementById(`room-${name}`);
@@ -932,7 +927,7 @@ function updateFloorPlanGrid() {
       return;
     }
 
-    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "balcony", "pantry"];
+    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "pantry"];
     
     rooms.forEach((roomName) => {
       const roomGroup = svgDoc.getElementById(`room-${roomName}`);
@@ -965,52 +960,44 @@ function updateFloorPlanGrid() {
     populateGrid(null);
   }
 
-  // function to attach room listeners
+  // function to attach room listeners (desktop + mobile)
   function attachRoomListeners() {
-    const svgDoc = svgObject.contentDocument;
-  // if the external SVG isn't ready yet, wait for it and retry once
-    if (!svgDoc) {
-      svgObject.addEventListener(
-        "load",
-        () => {
-          attachRoomListeners();   // wire up the rooms
-          updateFloorPlanGrid();   // then populate the 3×3 grid
-        },
-        { once: true }             // avoid duplicate listeners
-      );
-      return;
-    }
+    const svgObj = floorPlanState.svgObject || document.getElementById("floorPlanSvg");
+    if (!svgObj) return;
 
-    // style the SVG paths with dark gray color
+    const svgDoc = svgObj.contentDocument;
+    if (!svgDoc || !svgDoc.documentElement) return;
+
     const svgRoot = svgDoc.documentElement;
     if (svgRoot) {
-      // remove any filters that might be causing grayscale conversion
       svgRoot.style.filter = "none";
 
-      // apply color to all paths and lines in the SVG
       const paths = svgDoc.querySelectorAll("path, line, polyline, polygon");
-      paths.forEach(el => {
-        // set fill
+      paths.forEach((el) => {
         const currentFill = el.getAttribute("fill");
-        if (!currentFill || currentFill === "none" || currentFill === "#000" || currentFill === "#000000" || currentFill === "black") {
+        if (
+          !currentFill ||
+          currentFill === "none" ||
+          currentFill === "#000" ||
+          currentFill === "#000000" ||
+          currentFill === "black"
+        ) {
           el.setAttribute("fill", currentFill === "none" ? "none" : "#2f2f2f");
         } else if (currentFill !== "transparent") {
           el.setAttribute("fill", "#2f2f2f");
         }
-        
-        // set stroke
+
         const currentStroke = el.getAttribute("stroke");
         if (currentStroke && currentStroke !== "none") {
           el.setAttribute("stroke", "#2f2f2f");
         }
-        
-        // ensure paths are rendered above rectangles
+
         el.style.pointerEvents = "none";
       });
     }
 
-    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "balcony", "pantry"];
-    
+    const rooms = ["kitchen", "living", "bedroom", "parlor", "outside", "pantry"];
+
     rooms.forEach((roomName) => {
       const roomGroup = svgDoc.getElementById(`room-${roomName}`);
       if (!roomGroup) {
@@ -1018,14 +1005,12 @@ function updateFloorPlanGrid() {
         return;
       }
 
-      // all rectangles for this room (porch+balcony group will have 3 here)
       const rects = Array.from(roomGroup.querySelectorAll("rect"));
       if (!rects.length) {
         console.warn(`Rectangle(s) not found in room-${roomName}`);
         return;
       }
 
-      // shared helper to set fill for all rects in this room
       const setRoomFill = (fill) => {
         rects.forEach((r) => {
           r.style.fill = fill;
@@ -1041,17 +1026,16 @@ function updateFloorPlanGrid() {
         const parent = rect.parentElement;
         if (parent) parent.insertBefore(rect, parent.firstChild);
 
-        // hover: apply to all rects in the room
-        rect.addEventListener("mouseenter", () => {
-          setRoomFill("rgba(218, 203, 178, 0.45)"); // highlight whole group
+        const handleMouseEnter = () => {
+          setRoomFill("rgba(218, 203, 178, 0.45)"); 
 
           if (!floorPlanState.currentRoom) {
             floorPlanState.isHovering = true;
             populateGrid(roomName, true); // preview mode
           }
-        });
+        };
 
-        rect.addEventListener("mouseleave", () => {
+        const handleMouseLeave = () => {
           const isSelected = roomName === floorPlanState.currentRoom;
           setRoomFill(isSelected ? "rgba(218, 203, 178, 0.65)" : "transparent");
 
@@ -1059,13 +1043,18 @@ function updateFloorPlanGrid() {
             floorPlanState.isHovering = false;
             populateGrid(null); // restore placeholders
           }
-        });
+        };
 
-        // click handler: permanent selection
-        rect.addEventListener("click", () => {
+        // shared activation handler (click / tap)
+        const handleActivate = (evt) => {
+          if (evt) {
+            evt.preventDefault();
+            evt.stopPropagation();
+          }
+
           floorPlanState.currentRoom = roomName;
           floorPlanState.isHovering = false;
-          populateGrid(roomName, false); // permanent selection
+          populateGrid(roomName, false);
 
           // visual feedback: highlight only this room's rects, clear others
           rooms.forEach((r) => {
@@ -1077,11 +1066,18 @@ function updateFloorPlanGrid() {
                 r === roomName ? "rgba(218, 203, 178, 0.65)" : "transparent";
             });
           });
-        });
+        };
+
+        rect.addEventListener("mouseenter", handleMouseEnter);
+        rect.addEventListener("mouseleave", handleMouseLeave);
+
+        // desktop click
+        rect.addEventListener("click", handleActivate);
+
+        // mobile tap support
+        rect.addEventListener("touchstart", handleActivate, { passive: false });
       });
     });
-
-    // no default room selected - all rectangles start transparent
 
     // deselect button handler
     if (deselectBtn) {
@@ -1090,7 +1086,7 @@ function updateFloorPlanGrid() {
         e.stopPropagation();
         floorPlanState.currentRoom = null;
         populateGrid(null);
-        
+
         // clear all room highlights
         rooms.forEach((r) => {
           const rg = svgDoc.getElementById(`room-${r}`);
@@ -1104,27 +1100,33 @@ function updateFloorPlanGrid() {
       });
     }
   }
+
   // allow deselecting the current room by clicking anywhere in this step
   const stepEl = grid.closest(".floor-plan-step");
   if (stepEl) {
     stepEl.addEventListener("click", (event) => {
-      // nothing selected → nothing to clear
       if (!floorPlanState.currentRoom) return;
-
-      // don't clear when clicking inside the object grid
       if (grid.contains(event.target)) return;
 
       clearRoomSelection();
     });
   }
 
-  // wait for SVG to load
-  if (svgObject.contentDocument) {
+  // wait for SVG to finish loading, then wire listeners once
+  const doc = svgObject.contentDocument;
+  if (doc && doc.getElementById("room-kitchen")) {
     attachRoomListeners();
   } else {
-    svgObject.addEventListener("load", attachRoomListeners);
+    svgObject.addEventListener(
+      "load",
+      () => {
+        attachRoomListeners();
+      },
+      { once: true }
+    );
   }
 }
+
 
 /* -------------------------------
    9) compartment cross-fade
@@ -1998,6 +2000,58 @@ window.openStory = (key) => {
   };
 }
 
+function setupInfoTooltips() {
+  // only treemap info icons need JS; floor-plan icon is desktop-hover only
+  const icons = document.querySelectorAll(".info-hover-icon");
+  if (!icons.length) return;
+
+  const wireIcon = (icon) => {
+    const tooltip = icon.nextElementSibling;
+    if (!tooltip || !tooltip.classList.contains("tooltip-panel")) return;
+
+    // avoid double-wiring the same icon
+    if (icon.dataset.hasInfoHandler === "true") return;
+    icon.dataset.hasInfoHandler = "true";
+
+    const toggle = (evt) => {
+      // only use click/tap behavior on small screens
+      if (window.matchMedia("(max-width: 900px)").matches) {
+        evt.preventDefault();
+        evt.stopPropagation();
+
+        const isOpen = tooltip.classList.contains("is-open");
+
+        // close any other open treemap tooltips
+        document
+          .querySelectorAll(".tooltip-panel.is-open")
+          .forEach((el) => {
+            if (el !== tooltip) el.classList.remove("is-open");
+          });
+
+        if (!isOpen) {
+          tooltip.classList.add("is-open");
+        } else {
+          tooltip.classList.remove("is-open");
+        }
+      }
+    };
+
+    icon.addEventListener("click", toggle);
+    icon.addEventListener("touchstart", toggle, { passive: false });
+  };
+
+  icons.forEach(wireIcon);
+
+  // close treemap tooltips when clicking anywhere outside (mobile)
+  document.addEventListener("click", (evt) => {
+    if (evt.target.closest(".info-hover-icon, .tooltip-panel")) return;
+    document
+      .querySelectorAll(".tooltip-panel.is-open")
+      .forEach((el) => el.classList.remove("is-open"));
+  });
+}
+
+
 /* -------------------------------
    15) init
    - hide tooltips on global wheel/touch
@@ -2010,6 +2064,11 @@ window.openStory = (key) => {
     if (g) g.style.display = "none";
     const t = document.getElementById("treemap-tooltip");
     if (t) t.style.display = "none";
+
+    // close any info tooltips that are open
+    document
+      .querySelectorAll(".tooltip-panel.is-open, .floor-plan-info-tooltip.is-open")
+      .forEach((el) => el.classList.remove("is-open"));
   };
   document.addEventListener("wheel", hide, { passive: true });
   document.addEventListener("touchmove", hide, { passive: true });
@@ -2030,6 +2089,7 @@ function init() {
   setupHeroObjectsButton();
   setupAboutModal();
   setupStoryModal();
+  setupInfoTooltips()
 
   // scroll mechanics + arrows
   setTrackHeight();

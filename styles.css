@@ -354,17 +354,16 @@ body {
 @media (max-width: 720px){ .treemap-controls{ flex-wrap: wrap; } }
 
 .treemap-controls .info-hover-icon {
-  margin-left: auto;           
+  margin-left: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px; 
+  width: 26px;
   height: 26px;
   color: #666;
-  cursor: default;
   padding: 0;
-  background: transparent; 
-  border: none;        
+  background: transparent;
+  border: none;
 }
 
 .treemap-controls .info-hover-icon svg {
@@ -372,9 +371,30 @@ body {
   height: 20px;
 }
 
-.treemap-controls .info-hover-icon:hover {
-  color: #333;     
+  .treemap-controls .info-hover-icon:hover {
+    color: #333;
+  }
+
+  /* show the tooltip on hover (desktop only) */
+  .info-hover-icon:hover + .tooltip-panel,
+  .info-hover-icon:focus + .tooltip-panel,
+  .tooltip-panel:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+
 }
+
+@media (max-width: 900px) {
+  .tooltip-panel.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
 
 
 .place-hint{
@@ -517,6 +537,10 @@ body {
 .details-text{
   display: flex; flex-direction: column; gap: 12px;
 }
+
+.details-text em{
+  font-size: 14px;
+}
 .details-subtitle{
   position: sticky; top: 69px; margin: 0; padding: 10px 16px;
   background: linear-gradient(180deg, #f3f0eb 0%, #ede9e2 100%);
@@ -556,6 +580,14 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 780px) {
+  .inline-metadata-chip,
+  .metadata-chips-container {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    margin-left: 0;
+  }
+}
 
 .metadata-tooltip-content .meta-row{
   margin-bottom: 6px;
@@ -1050,7 +1082,7 @@ body.modal-open {
 }
 
 .floor-plan-info-wrap {
-  position: relative;           
+  position: relative;
   display: inline-flex;
   align-items: center;
 }
@@ -1067,6 +1099,7 @@ body.modal-open {
   justify-content: center;
   cursor: default;
 }
+
 .floor-plan-info-icon svg {
   width: 20px;
   height: 20px;
@@ -1075,7 +1108,7 @@ body.modal-open {
 .floor-plan-info-tooltip {
   position: absolute;
   top: 50%;
-  left: calc(100% + 10px);   
+  left: calc(100% + 10px);
   transform: translateY(-50%);
   width: 260px;
   pointer-events: none;
@@ -1088,7 +1121,16 @@ body.modal-open {
 .floor-plan-info-icon:hover + .floor-plan-info-tooltip,
 .floor-plan-info-tooltip:hover {
   opacity: 1;
+  pointer-events: auto;
 }
+
+@media (max-width: 900px) {
+  .floor-plan-info-wrap {
+    display: none;
+  }
+}
+
+
 
 /* ============================================================================
   FINAL FOOTER SCENE
@@ -1467,7 +1509,7 @@ body.modal-open {
 
   .floor-plan-hint {
     max-width: 35ch;
-    margin: 0 auto 16px;
+    margin: 0 auto 10px;
   }
 
   .floor-plan-svg-wrapper {
@@ -1525,6 +1567,9 @@ body.modal-open {
     max-width: 180px;
   }
 
+  .floor-plan-info-wrap {
+    display: none;
+  }
 
   /* --------------------------
      treemap scene
@@ -1636,48 +1681,52 @@ body.modal-open {
     margin-inline: auto;
     padding: 16px 14px;
     border-radius: 12px;
+    overflow-x: hidden;
   }
 
   #detailPanel h2,
-  #detailPanel .detail-title {
-    font-size: 22px;
+  .details-title {
+    font-size: 16px;
     line-height: 1.25;
     margin-bottom: 10px;
   }
 
-  #detailPanel .detail-count {
+  .detail-count {
     font-size: 14px;
     margin-bottom: 10px;
   }
 
-  #detailPanel .detail-item {
+  .detail-item {
     padding: 12px 10px;
     display: flex;
     gap: 12px;
+    min-width: 0; 
   }
 
-  #detailPanel .detail-item .thumb-box {
+  .detail-item .thumb-box {
     width: 52px;
     height: 52px;
     padding: 4px;
+    min-width: 0; 
   }
 
-  #detailPanel .detail-item .item-title {
+  .detail-item .item-title {
     font-size: 15.5px;
     line-height: 1.33;
     margin-bottom: 2px;
   }
 
-  #detailPanel .detail-item .item-metadata {
+  .detail-item .item-metadata {
     font-size: 13.5px;
     line-height: 1.33;
   }
 
-  #detailPanel .detail-close-btn {
+  .detail-close-btn {
     width: 32px;
     height: 32px;
     font-size: 16px;
   }
+ 
 
 
   /* --------------------------
@@ -1714,6 +1763,9 @@ body.modal-open {
     padding: 24px 20px;
     font-size: 15px;
     line-height: 1.45;
+  }
+  .prelude-card.floor-plan-card {
+    margin-top: 80px;
   }
 
 }
