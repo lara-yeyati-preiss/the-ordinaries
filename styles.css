@@ -307,7 +307,7 @@ body {
 }
 .category-option:hover{ opacity: .85; }
 .category-option.active{ opacity: 1; color: #111; }
-.category-option .option-label{ grid-column: 2; grid-row: 1; position: relative; font-size: 16px; text-align: right; color: #9b9b9b;}
+.category-option .option-label{ grid-column: 2; grid-row: 1; position: relative; font-size: 16px; text-align: right; color: #2f2f2f;}
 .category-selector .editable-chip{
   grid-column: 1; grid-row: 1; justify-self: start; align-self: center;
   display: flex; align-items: center; justify-content: center; background: #fff; color: inherit;
