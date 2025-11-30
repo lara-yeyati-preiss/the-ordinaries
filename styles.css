@@ -364,6 +364,7 @@ body {
   padding: 0;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .treemap-controls .info-hover-icon svg {
@@ -1604,7 +1605,6 @@ body.modal-open {
     bottom: -4rem;
     transform: translateX(-50%);
   }
-
 
   /* --------------------------
      lightbox

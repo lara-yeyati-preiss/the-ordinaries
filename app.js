@@ -2001,7 +2001,6 @@ window.openStory = (key) => {
 }
 
 function setupInfoTooltips() {
-  // only treemap info icons need JS; floor-plan icon is desktop-hover only
   const icons = document.querySelectorAll(".info-hover-icon");
   if (!icons.length) return;
 
@@ -2009,19 +2008,16 @@ function setupInfoTooltips() {
     const tooltip = icon.nextElementSibling;
     if (!tooltip || !tooltip.classList.contains("tooltip-panel")) return;
 
-    // avoid double-wiring the same icon
     if (icon.dataset.hasInfoHandler === "true") return;
     icon.dataset.hasInfoHandler = "true";
 
     const toggle = (evt) => {
-      // only use click/tap behavior on small screens
       if (window.matchMedia("(max-width: 900px)").matches) {
         evt.preventDefault();
         evt.stopPropagation();
 
         const isOpen = tooltip.classList.contains("is-open");
 
-        // close any other open treemap tooltips
         document
           .querySelectorAll(".tooltip-panel.is-open")
           .forEach((el) => {
@@ -2042,7 +2038,6 @@ function setupInfoTooltips() {
 
   icons.forEach(wireIcon);
 
-  // close treemap tooltips when clicking anywhere outside (mobile)
   document.addEventListener("click", (evt) => {
     if (evt.target.closest(".info-hover-icon, .tooltip-panel")) return;
     document

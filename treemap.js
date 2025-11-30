@@ -301,15 +301,24 @@
         `);
 
       // show info on hover for desktop, on click for mobile
-      const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+      infoHover
+        .on("mouseenter", (ev) => {
+          if (!window.matchMedia("(hover: none)").matches) showInfo(ev);
+        })
+        .on("mouseleave", () => {
+          if (!window.matchMedia("(hover: none)").matches) hideInfo();
+        });
 
-      if (isMobile) {
-        infoHover.on("click", (ev) => showInfo(ev));
-      } else {
-        infoHover
-          .on("mouseenter", (ev) => showInfo(ev))
-          .on("mouseleave", hideInfo);
-      }
+      infoHover.on("click", (ev) => {
+        ev.stopPropagation();
+        const t = document.getElementById("treemap-tooltip");
+        if (t.style.display === "block") {
+          hideInfo();
+        } else {
+          showInfo(ev);
+        }
+      });
+
 
       // the treemap tooltip is a single shared node. We select it once and reuse it.
       const tooltipNode = d3.select("#treemap-tooltip");
