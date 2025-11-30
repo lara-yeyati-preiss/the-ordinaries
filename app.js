@@ -823,7 +823,7 @@ function updateFloorPlanGrid() {
         item.className = "grid-item floor-plan-placeholder loaded";
         item.innerHTML = '<div class="placeholder-content"></div>';
         
-        // add click handler to pulse all room rectangles as a hint
+        // click handler to pulse all room rectangles as a hint
         item.addEventListener("click", (e) => {
           e.preventDefault();
           pulseAllRooms();
@@ -847,36 +847,43 @@ function updateFloorPlanGrid() {
       img.loading = "lazy";
       
       item.appendChild(img);
-      
-      // add tooltip on hover
-      const tip = ensureTooltip();
-      item.addEventListener("mouseenter", (e) => {
-        if (!floorPlanState.metaIndex) return;
-        const id = idFromPath(src);
-        const row = floorPlanState.metaIndex.get(id);
-        const html = tooltipHTML(row);
-        if (!html) return;
-        tip.innerHTML = html;
-        tip.style.display = "block";
-        positionTooltip(tip, e.clientX, e.clientY);
-      });
-      
-      item.addEventListener("mousemove", (e) => {
-        if (tip.style.display !== "none") {
+
+      const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+      // desktop: tooltip on hover
+      if (!isMobile) {
+        const tip = ensureTooltip();
+
+        item.addEventListener("mouseenter", (e) => {
+          if (!floorPlanState.metaIndex) return;
+          const id = idFromPath(src);
+          const row = floorPlanState.metaIndex.get(id);
+          const html = tooltipHTML(row);
+          if (!html) return;
+          tip.innerHTML = html;
+          tip.style.display = "block";
           positionTooltip(tip, e.clientX, e.clientY);
-        }
-      });
-      
-      item.addEventListener("mouseleave", () => {
-        tip.style.display = "none";
-      });
-      
+        });
+
+        item.addEventListener("mousemove", (e) => {
+          if (tip.style.display !== "none") {
+            positionTooltip(tip, e.clientX, e.clientY);
+          }
+        });
+
+        item.addEventListener("mouseleave", () => {
+          tip.style.display = "none";
+        });
+      }
+
       // add click handler for lightbox with metadata lookup
       item.addEventListener("click", (e) => {
         e.preventDefault();
         // extract ID from image path and lookup metadata
         const id = idFromPath(src);
-        const metadata = floorPlanState.metaIndex ? floorPlanState.metaIndex.get(id) : null;
+        const metadata = floorPlanState.metaIndex
+          ? floorPlanState.metaIndex.get(id)
+          : null;
         openLightbox(src, metadata);
       });
       
@@ -1385,32 +1392,46 @@ function renderGridFromPaths(paths, metaIndex = null) {
       console.warn("image failed:", d);
     });
 
-  // tooltip on hover when metadata is available
-  const tip = ensureTooltip();
-  cards
-    .on("mouseenter", function (event, d) {
-      if (!metaIndex) return;
-      const id = idFromPath(d);
-      const row = metaIndex.get(id);
-      const html = tooltipHTML(row);
-      if (!html) return;
-      tip.innerHTML = html;
-      tip.style.display = "block";
-      positionTooltip(tip, event.clientX, event.clientY);
-    })
-    .on("mousemove", function (event) {
-      if (tip.style.display !== "none") positionTooltip(tip, event.clientX, event.clientY);
-    })
-    .on("mouseleave", function () {
-      tip.style.display = "none";
-    })
-    .on("click", function (event, d) {
-      event.preventDefault();
-      if (!metaIndex) return;
-      const id = idFromPath(d);
-      const row = metaIndex.get(id);
-      openLightbox(d, row);
-    });
+  // desktop: tooltip on hover when metadata is available
+  const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+  if (!isMobile) {
+    const tip = ensureTooltip();
+    cards
+      .on("mouseenter", function (event, d) {
+        if (!metaIndex) return;
+        const id = idFromPath(d);
+        const row = metaIndex.get(id);
+        const html = tooltipHTML(row);
+        if (!html) return;
+        tip.innerHTML = html;
+        tip.style.display = "block";
+        positionTooltip(tip, event.clientX, event.clientY);
+      })
+      .on("mousemove", function (event) {
+        if (tip.style.display !== "none") {
+          positionTooltip(tip, event.clientX, event.clientY);
+        }
+      })
+      .on("mouseleave", function () {
+        tip.style.display = "none";
+      });
+  } else {
+    // on mobile, ensure we have no hover handlers
+    cards
+      .on("mouseenter", null)
+      .on("mousemove", null)
+      .on("mouseleave", null);
+  }
+
+  // click: always open lightbox (desktop + mobile)
+  cards.on("click", function (event, d) {
+    event.preventDefault();
+    if (!metaIndex) return;
+    const id = idFromPath(d);
+    const row = metaIndex.get(id);
+    openLightbox(d, row);
+  });
 }
 
 function loadCategory(idx) {
