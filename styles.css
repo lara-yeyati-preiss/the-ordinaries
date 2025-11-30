@@ -303,11 +303,11 @@ body {
   grid-template-columns: max-content 1fr; grid-template-rows: auto auto;
   align-items: center; column-gap: 18px; row-gap: 6px;
   width: 100%; padding: 2px 0; background: transparent; border: none; box-shadow: none;
-  cursor: pointer; text-align: left; opacity: .45; transition: opacity .15s ease;
+  cursor: pointer; text-align: left; opacity: .45; transition: opacity .15s ease; color: #9b9b9b; 
 }
 .category-option:hover{ opacity: .85; }
 .category-option.active{ opacity: 1; color: #111; }
-.category-option .option-label{ grid-column: 2; grid-row: 1; position: relative; font-size: 16px; text-align: right; }
+.category-option .option-label{ grid-column: 2; grid-row: 1; position: relative; font-size: 16px; text-align: right; color: #9b9b9b;}
 .category-selector .editable-chip{
   grid-column: 1; grid-row: 1; justify-self: start; align-self: center;
   display: flex; align-items: center; justify-content: center; background: #fff; color: inherit;
@@ -1041,7 +1041,7 @@ body.modal-open {
 }
 .mode-toggle button{
   appearance: none; border: 0; background: transparent; padding: 6px 12px; border-radius: 9999px; font: inherit; line-height: 1; cursor: pointer; white-space: nowrap;
-  transition: background .15s ease, color .15s ease;
+  transition: background .15s ease, color .15s ease; -webkit-appearance: none; color: #555;
 }
 .mode-toggle button + button{ position: relative; }
 .mode-toggle button + button::before{ content: ""; position: absolute; left: -3px; top: 6px; bottom: 6px; width: 1px; background: rgba(0,0,0,.10); border-radius: 1px; }
