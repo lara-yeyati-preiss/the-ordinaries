@@ -4,12 +4,10 @@ Live demo: https://lara-yeyati-preiss.github.io/the-ordinaries/
 
 ## Concept
 
-This project examines the American Revolutionary period (1765–1783) by shifting attention from monuments and heroes to the material traces of everyday life.
-
-The site opens with a **scrollytelling** sequence that introduces selected objects along with the habits and social roles associated with them, showing how the material remains of daily routines can reveal glimpses of what once constituted a life. Objects are then organized in a **zoomable treemap** that can be explored by **action family** or **material** (toggleable).
-Users can navigate the database from either entry point and open a **details panel** linking directly to the Smithsonian collection for each object.
-
+The Ordinaries explores the American Revolutionary era through the material traces of daily life, drawing on objects from the Smithsonian’s collections—from cooking pots and card games to stitched samplers and nursing bottles. The things that people handled every day, what they crafted, traded, or cared for, offer a glimpse into how their world was imagined and ordered.
 <br>
+The site offers two complementary ways to navigate this universe of objects. A curated selection situates specific artifacts within the rhythms of ritual and habit they belonged to. An interactive treemap allows visitors to explore the full database by action family or material—a taxonomy of the ordinary, made visible.
+
 
 ## Data & Methods
 - **Data source**: Smithsonian’s Revolutionary Crossroads open-access dataset.
