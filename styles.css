@@ -300,7 +300,7 @@ body {
 }
 .category-option{
   position: relative; display: grid;
-  grid-template-columns: max-content 1fr; grid-template-rows: auto auto;
+  grid-template-columns: max-content 1fr; grid-template-rows: auto auto auto;
   align-items: center; column-gap: 18px; row-gap: 6px;
   width: 100%; padding: 2px 0; background: transparent; border: none; box-shadow: none;
   cursor: pointer; text-align: left; opacity: .45; transition: opacity .15s ease; color: #9b9b9b; 
@@ -318,9 +318,10 @@ body {
 .category-option.active .editable-chip{ opacity: 1; }
 .view-story-btn{
   display: inline-flex; align-items: center; justify-content: center; white-space: nowrap;
-  padding: 10px 20px; margin-top: 24px; margin-left: auto; border-radius: 999px; border: 1px solid #1f1f1f; 
+  padding: 10px 20px; margin-top: 24px; margin-left: 0; border-radius: 999px; border: 1px solid #1f1f1f; 
   background: #1f1f1f; color: #fff; font-size: 15px; line-height: 1.1; cursor: pointer; 
   box-shadow: 0 2px 8px rgba(0,0,0,.08); transition: transform .06s ease, filter .15s ease;
+  width: fit-content; grid-column: 1; grid-row: 3;
 }
 .category-option.active .view-story-btn{ display: inline-flex; pointer-events: auto; }
 .category-option.active .view-story-btn:hover{ filter: brightness(1.08); transform: translateY(-1px); }
@@ -434,7 +435,7 @@ body {
   flex: 1 1 auto;
 }
 
-#step-treemap .treemap-stage{ aspect-ratio: 1000 / 450; height: auto !important; min-height: 450px; } 
+#step-treemap .treemap-stage{ aspect-ratio: 1000 / 440; height: auto !important; min-height: 440px; } 
 
 #treemap-svg.treemap {
   width: 100%;
@@ -755,7 +756,7 @@ body.modal-open {
 }
 .lightbox-image{
   max-width: 100%; max-height: 70vh; object-fit: contain; display: block;
-  border-radius: 4px; box-shadow: 0 8px 32px rgba(0,0,0,.3); padding: 30px; background: rgba(255,255,255)
+  border-radius: 8px; box-shadow: 0 8px 32px rgba(0,0,0,.3); padding: 30px; background: rgba(255,255,255)
 }
 .lightbox-info{
   background: rgba(255,255,255); backdrop-filter: blur(2px);
@@ -1031,6 +1032,13 @@ body.modal-open {
 .sticky-up-arrow.visible{ opacity: .7; pointer-events: auto; }
 .sticky-up-arrow:hover{ opacity: 1; transform: translateY(-2px); }
 
+/* nudge sticky arrow outward on mid-size laptop widths */
+@media (max-width: 1440px) and (min-width: 901px) {
+  .sticky-up-arrow {
+    right: 1.25rem;
+  }
+}
+
 
 /* ============================================================================
    15) MODE TOGGLE
@@ -1288,10 +1296,6 @@ body.modal-open {
   pointer-events: none;
 }
 
-/* ------------------------------------------------------
-   nudge chapter rail outward on mid-size laptop widths
-   so it doesn't sit on top of the treemap tiles
-   ------------------------------------------------------ */
 @media (max-width: 1440px) and (min-width: 901px) {
   .chapter-rail {
     right: 1.25rem;
