@@ -1150,27 +1150,55 @@ cells
   .on("mousemove", (ev, d) => {
     // 1) overview (root): hovering a leaf shows its parent bucket summary
     if (node === root) {
-      const parentNode = d.parent;
+      // find the immediate parent (could be a family/material or an "Other" bucket)
+      const immediateParent = d.parent;
+      
+      // check if we're inside an "Other" bucket (one level up the tree)
+      const otherAncestor = d.ancestors().find(a => isOtherCombined(a) && a !== root);
+      const isInOtherBucket = !!otherAncestor;
+      
+      // determine which node to use for display
+      const displayNode = isInOtherBucket ? otherAncestor : immediateParent;
+      const displayName = displayNode?.data?.name || "";
 
       if (currentMode === "material") {
-        // at the overview, show TRUE number of objects containing this material
-        const matName = parentNode?.data?.name || "";
-        const name = displayMaterial(matName);
-        const totalObjects = countObjectsForMaterial(matName);
-
-        showTooltip(
-          ev,
-          `<div class="tt-title">${name}</div>
-           <div>Objects made partly or entirely of this material: <strong>${totalObjects}</strong></div>`
-        );
+        // at the overview, show number of objects containing this material
+        if (isInOtherBucket) {
+          // aggregate: sum of all materials in the "Other Materials" bucket
+          let totalObjects = 0;
+          for (const child of (otherAncestor.children || [])) {
+            totalObjects += countObjectsForMaterial(child.data.name);
+          }
+          showTooltip(
+            ev,
+            `<div class="tt-title">${displayMaterial(displayName)}</div>
+             <div>Objects made partly or entirely of these materials: <strong>${totalObjects}</strong></div>`
+          );
+        } else {
+          const matName = displayName;
+          const name = displayMaterial(matName);
+          const totalObjects = countObjectsForMaterial(matName);
+          showTooltip(
+            ev,
+            `<div class="tt-title">${name}</div>
+             <div>Objects made partly or entirely of this material: <strong>${totalObjects}</strong></div>`
+          );
+        }
         return;
       }
 
       // by-use overview stays using the treemap value
-      const name = displayFamily(parentNode?.data?.name || "");
-      const total = parentNode ? (parentNode.value || 0) : (d.value || 0);
-      const totalText = `Total objects: <strong>${total}</strong>`;
-      showTooltip(ev, `<div class="tt-title">${name}</div><div>${totalText}</div>`);
+      if (isInOtherBucket) {
+        // aggregate: sum of all families in the "Other Actions" bucket
+        const aggregateTotal = d3.sum(otherAncestor.children || [], (c) => c.value || 0);
+        const totalText = `Total objects: <strong>${aggregateTotal}</strong>`;
+        showTooltip(ev, `<div class="tt-title">${displayFamily(displayName)}</div><div>${totalText}</div>`);
+      } else {
+        const name = displayFamily(displayName);
+        const total = displayNode ? (displayNode.value || 0) : (d.value || 0);
+        const totalText = `Total objects: <strong>${total}</strong>`;
+        showTooltip(ev, `<div class="tt-title">${name}</div><div>${totalText}</div>`);
+      }
       return;
     }
 
