@@ -17,13 +17,13 @@ Users can navigate the database from either entry point and open a **details pan
 - **Images**: Fetched dynamically from the [Smithsonian Open Access API](https://www.si.edu/openaccess)
 
 <br><br>
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/5a211f71-4a86-48dd-9731-c90678c01a19" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/a2ce2bc7-6b2c-4172-bd83-10d2b2242630" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/8d2403b6-4a09-43df-9fee-dc0dd37c81e6" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/3e827189-2922-4f08-a144-13f3232c1aa0" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/1ef16509-784a-4b0d-adb3-d45026b28c57" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/cfe9c7cd-db12-4d51-9e98-bf8101177b12" />
+<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/e5fc62a5-7ca0-45c8-84ee-964c9c9552fd" />
 
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/02621f76-5e23-4392-a032-e60f20d297a7" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/573b99df-6920-4969-bd9c-f8ab23314900" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/b5a9efc7-0c8f-4162-bf4a-3a993509af72" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/6a026bbc-e7d9-4e9a-9983-15f0b39a2c40" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/b58edecd-369a-4798-a078-47c29a743692" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/1ded78d2-946f-4829-9e30-0aba11d706c1" />
-<img width="1678" height="846" alt="image" src="https://github.com/user-attachments/assets/fd67ce3d-d23e-4105-b9f6-2fc09187f07e" />
 
 
