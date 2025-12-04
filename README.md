@@ -4,7 +4,7 @@ Live demo: https://lara-yeyati-preiss.github.io/the-ordinaries/
 
 ## Concept
 
-The Ordinaries explores the American Revolutionary era through the material traces of daily life, drawing on objects from the Smithsonian’s collections. The things people handled every day—what they crafted, traded, or cared for—offer a glimpse into how their world was imagined and ordered.
+The Ordinaries explores the American Revolutionary era through the material traces of daily life, drawing on objects from the Smithsonian’s collections. The things people handled every day—what they crafted, traded, cared for—offer a glimpse into how their world was imagined and ordered.
 <br><br>
 The site offers two complementary ways to navigate this universe of objects. A curated selection situates specific artifacts within the rhythms of ritual and habit to which they belonged, from teapots and samplers to apothecary jars and fire marks. An interactive treemap allows visitors to explore the full database by action family or material. A taxonomy of the ordinary, made visible.
 
