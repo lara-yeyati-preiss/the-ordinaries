@@ -15,13 +15,14 @@ The site offers two complementary ways to navigate this universe of objects. A c
 - **Images**: Fetched dynamically from the [Smithsonian Open Access API](https://www.si.edu/openaccess)
 
 <br><br>
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/5a211f71-4a86-48dd-9731-c90678c01a19" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/a2ce2bc7-6b2c-4172-bd83-10d2b2242630" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/8d2403b6-4a09-43df-9fee-dc0dd37c81e6" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/3e827189-2922-4f08-a144-13f3232c1aa0" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/1ef16509-784a-4b0d-adb3-d45026b28c57" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/cfe9c7cd-db12-4d51-9e98-bf8101177b12" />
-<img width="1689" height="877" alt="image" src="https://github.com/user-attachments/assets/e5fc62a5-7ca0-45c8-84ee-964c9c9552fd" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/afc56f55-03fb-4e60-a458-be90a12693da" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/ed9bff8d-8185-4f10-a82f-be524f592c3f" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/dcf8fa87-e752-4e79-ba2d-46625c62f1d0" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/cd21f3f8-ac3a-443b-a63b-fed9283eac5d" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/dfae2541-f1f1-4ded-be2c-3162a2c12bd8" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/85f4a75b-bebe-48ed-a26d-edad0869fb92" />
+<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/64a342a0-3bd3-471d-b175-294ead720d16" />
+
 
 
 
