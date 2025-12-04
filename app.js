@@ -831,6 +831,7 @@ function updateFloorPlanGrid() {
         
         grid.appendChild(item);
       }
+      return; // exit early if no room
     }
     
     const images = roomImages[room] || [];
@@ -962,9 +963,10 @@ function updateFloorPlanGrid() {
     });
   }
 
-  // initialize with placeholders (no room selected)
+  // initialize with bedroom selected by default
   if (grid.children.length === 0) {
-    populateGrid(null);
+    floorPlanState.currentRoom = "bedroom";
+    populateGrid("bedroom");
   }
 
   // function to attach room listeners (desktop + mobile)
@@ -1085,6 +1087,17 @@ function updateFloorPlanGrid() {
         rect.addEventListener("touchstart", handleActivate, { passive: false });
       });
     });
+
+    // highlight bedroom by default on initial load
+    if (floorPlanState.currentRoom === "bedroom") {
+      const bedroomGroup = svgDoc.getElementById("room-bedroom");
+      if (bedroomGroup) {
+        const bedroomRects = bedroomGroup.querySelectorAll("rect");
+        bedroomRects.forEach((rect) => {
+          rect.style.fill = "rgba(218, 203, 178, 0.65)";
+        });
+      }
+    }
 
     // deselect button handler
     if (deselectBtn) {
