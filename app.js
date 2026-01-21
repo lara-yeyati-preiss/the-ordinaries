@@ -19,7 +19,7 @@ const config = {
       type: "card",
       content: {
         text:
-          "History isn't only carved in bronze and stone. It survives in the fragments of the everyday—in the small habits that built a life, and then, a world.",
+          "History isn't only carved in bronze and stone. It survives in the fragments of the everyday: in the small habits that built a life, and then, a world.",
         image: "assets/treesandhouse.png",
         alt: "Sampler house and trees motif",
       },
