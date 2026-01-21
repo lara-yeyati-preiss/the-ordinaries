@@ -74,7 +74,7 @@ const config = {
       type: "floor-plan",
       content: {
         text:
-          "But objects gain meaning only in place: a home, a room, a drawer — as they pass from life to life.",
+          "But objects gain meaning only in place: a home, a room, a drawer—as they pass from life to life.",
       },
     },
 
