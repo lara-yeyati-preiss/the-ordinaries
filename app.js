@@ -1617,7 +1617,7 @@ const SAMPLER_STORY_STEPS = [
     type: "sampler-intro",
     content: {
       text:
-        "In Revolutionary-era America, young women stitched samplers—linen squares used to practice letters, numbers, and the discipline of the hand.",
+        "In Revolutionary-era America, young women stitched samplers: linen squares used to practice letters, numbers, and the discipline of the hand.",
       samplers: [
         "assets/samplers/edanmdm:nmah_649894.png",
         "assets/samplers/edanmdm:nmah_1134702.png",
@@ -1630,7 +1630,7 @@ const SAMPLER_STORY_STEPS = [
     type: "sampler-intro-single",
     content: {
       text:
-        "These embroidered works displayed patience and skill. They mirrored the ideals of the new republic—training women to embody virtue through education, morality, and domestic order.",
+        "These embroidered works displayed patience and skill. They mirrored the ideals of the new republic, training women to embody virtue through education, morality, and domestic order.",
       image: "assets/edanmdm:nmah_639739-details.png",
       alt: "Sampler showing skill, patience, and diligence.",
     },
@@ -1689,7 +1689,7 @@ const TEAPOTS_STORY_STEPS = [
     type: "sampler-intro",
     content: {
       text:
-        "Tea arrived in the colonies as an imported habit — exotic, expensive, and carefully performed. The teapot sat at the center of this ritual.",
+        "Tea arrived in the colonies as an imported habit—exotic, expensive, and carefully performed. The teapot sat at the center of this ritual.",
       samplers: [
         "assets/teapots/edanmdm:nmah_580942.png",
         "assets/teapots/edanmdm:nmah_579617.png",
