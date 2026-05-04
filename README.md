@@ -17,7 +17,6 @@ The site offers two complementary ways to navigate this universe of objects. A c
 <br><br>
 <img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/afc56f55-03fb-4e60-a458-be90a12693da" />
 <img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/ed9bff8d-8185-4f10-a82f-be524f592c3f" />
-<img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/dcf8fa87-e752-4e79-ba2d-46625c62f1d0" />
 <img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/cd21f3f8-ac3a-443b-a63b-fed9283eac5d" />
 <img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/dfae2541-f1f1-4ded-be2c-3162a2c12bd8" />
 <img width="1728" height="883" alt="image" src="https://github.com/user-attachments/assets/85f4a75b-bebe-48ed-a26d-edad0869fb92" />
