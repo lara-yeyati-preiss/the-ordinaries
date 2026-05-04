@@ -1458,16 +1458,10 @@ function loadCategory(idx) {
   });
 
 // update view story button text and data attribute
-const viewStoryBtn = document.getElementById("viewStoryBtn");
 const cat = GRID_CATEGORIES[idx];   // declare cat ONCE
 
 if (!cat) return Promise.resolve();
 
-if (viewStoryBtn) {
-  const categories = ["Samplers", "Apothecary Jars", "Teapots", "Fire Marks"];
-  viewStoryBtn.setAttribute("data-story", cat.key);
-  viewStoryBtn.textContent = `View ${categories[idx]} Story`;
-}
 
   // manifest list → absolute paths
   const manifestP = _gridManifestCache.has(cat.key)
@@ -1527,15 +1521,6 @@ function setupCategoryButtons() {
     loadCategory(idx);
   });
 
-  // view story button click handler
-  const viewStoryBtn = document.getElementById("viewStoryBtn");
-  if (viewStoryBtn) {
-    viewStoryBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const key = viewStoryBtn.getAttribute("data-story") || "";
-      if (window.openStory && key) window.openStory(key);
-    });
-  }
 }
 
 /* -------------------------------
