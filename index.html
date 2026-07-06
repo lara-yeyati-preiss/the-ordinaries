@@ -1,10 +1,7 @@
 <html lang="en">
 <head>
-    <!-- basic meta for proper text rendering + mobile scaling -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- document title shown in the browser tab -->
     <title>The Ordinaries</title>
     <link rel="icon" href="assets/ordinaries.png" type="image/png">
     <meta property="og:title" content="The Ordinaries">
@@ -26,23 +23,16 @@
 </head>
 
 <body>
-    <!-- internal scroll container; we scroll inside this div, not the page -->
     <div class="prelude-scrolly-container" id="scrollContainer">
-        <!-- the long runway that JS sizes in vh; steps are mapped onto this track -->
         <div class="scrolly-track">
-            <!-- sticky viewport: one "frame" that stays pinned while track scrolls beneath -->
             <div class="scrolly-viewport">
-                <!-- subtle background layer (switches to grid on non-hero scenes) -->
                 <div class="viewport-bg" id="viewportBg"></div>
 
-                <!-- hero section (sits on top of the sticky viewport; fades out on scroll) -->
                 <div class="hero-landing" id="heroSection">
                     <div class="hero-inner">
                         <div class="hero-title-row">
-                            <!-- project title (garamond headline) -->
                             <h1 class="hero-title">The Ordinaries</h1>
 
-                            <!-- small decorative image under the title; soft opacity for tone -->
                             <div class="hero-image-wrap">
                                 <img
                                   src="assets/ordinaries.png"
@@ -51,21 +41,16 @@
                             </div>
                         </div>
 
-                        <!-- short subtitle: sets context + era -->
                         <p class="hero-subtitle">
                           Everyday objects of the American Revolutionary period—built, gambled, mended, mourned.
                           These are the remnants of the ordinary.
                         </p>
 
-                        <!-- primary hero actions: jump into objects, open about modal -->
                         <div class="hero-actions">
-                            <!-- opens an accessible modal with project context -->
                             <button id="aboutBtn" class="btn btn-outline">About This Project</button>
-                            <!-- button is enabled by default; app.js also ensures aria state -->
                             <button class="btn btn-dark" id="heroBtnObjects" aria-disabled="false">Browse the Objects</button>
                         </div>
 
-                        <!-- gentle “scroll to explore” hint; clicking the chevron nudges past hero -->
                         <div class="scroll-indicator" id="scrollIndicator">
                             <span class="scroll-text">Scroll to explore</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -76,11 +61,9 @@
                     </div>
                 </div>
 
-                <!-- scrollytelling steps mount point; app.js injects all steps here -->
                 <div id="stepsContainer"></div>
-            </div> <!-- end .scrolly-viewport -->
+            </div>
 
-        <!-- accessible modal (hidden by default); opened via “about this project” button -->
         <div id="aboutModal"
              class="modal"
              role="dialog"
@@ -88,16 +71,12 @@
              aria-labelledby="about-title"
              aria-describedby="about-desc"
              hidden>
-          <!-- backdrop catches outside clicks to close -->
           <div class="modal-backdrop" data-close></div>
 
-          <!-- dialog card; role=document for screen readers inside the dialog context -->
           <div class="modal-card" role="document">
-            <!-- explicit close control (×); also closable by Esc and backdrop -->
             <button class="modal-close" aria-label="Close" data-close>×</button>
 
             <div class="modal-body">
-              <!-- left column: title + description + credits -->
               <div class="modal-text">
                 <h2 id="about-title">About This Project</h2>
                 <p id="about-desc">

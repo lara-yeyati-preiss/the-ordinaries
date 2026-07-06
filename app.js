@@ -41,7 +41,6 @@ const config = {
        note: sampler-specific scenes are shown inside the modal, not on track
     ---------------------------------------------------------------------- */
 
-    // object grid step: category changes as the user scrolls within this step
     {
       id: "rituals",
       type: "object-grid",
@@ -68,7 +67,6 @@ const config = {
       content: {},
     },
 
-    // floor plan scene (card + 3×3 grid + svg)
     {
       id: "floor-plan",
       type: "floor-plan",
@@ -86,6 +84,43 @@ const config = {
     },
   ],
 };
+
+const MOBILE_BREAKPOINT = "(max-width: 900px)";
+
+const MOBILE_INTRO_STEPS = {
+  rituals: {
+    id: "rituals-intro",
+    type: "card",
+    content: {
+      text:
+        "Each object belonged to a rhythm of ritual and habit, through which life was imagined and ordered.",
+    },
+  },
+  "floor-plan": {
+    id: "floor-plan-intro",
+    type: "card",
+    content: {
+      text:
+        "But objects gain meaning only in place: a home, a room, a drawer—as they pass from life to life.",
+    },
+  },
+};
+
+function isMobileLayout() {
+  return window.matchMedia(MOBILE_BREAKPOINT).matches;
+}
+
+function getActiveSteps() {
+  if (!isMobileLayout()) return config.steps;
+
+  const steps = [];
+  for (const step of config.steps) {
+    const intro = MOBILE_INTRO_STEPS[step.id];
+    if (intro) steps.push(intro);
+    steps.push(step);
+  }
+  return steps;
+}
 
 /* -------------------------------
    grid category registry
@@ -134,6 +169,7 @@ let state = {
   activeStepIndex: -1,      // which track step is active (-1 means hero)
   compartmentProgress: 0,   // 0..1 position across images in a compartment slide
   objectGridCategory: 0,    // which family is currently shown in the grid
+  objectGridLoadToken: 0,   // invalidates stale async category renders
   segments: [],             // normalized scroll segments (hero + steps)
   storyIndex: 0,            // active slide index inside the story modal
   storySlides: [],          // slide configuration array mounted in modal
@@ -175,7 +211,7 @@ const PER_STEP_VH = {
 
 function buildSegments() {
   const segs = [{ id: "hero", h: DEFAULT_VH }];
-  config.steps.forEach((s) => segs.push({ id: s.id, h: PER_STEP_VH[s.id] || DEFAULT_VH }));
+  getActiveSteps().forEach((s) => segs.push({ id: s.id, h: PER_STEP_VH[s.id] || DEFAULT_VH }));
 
   const totalVH = segs.reduce((a, s) => a + s.h, 0);
   let acc = 0;
@@ -226,7 +262,6 @@ function setupHeroObjectsButton() {
 
   btn.addEventListener("click", () => {
     scrollToTreemapStart("instant");
-    // reset treemap selection after scroll is applied (double rAF)
     requestAnimationFrame(() =>
       requestAnimationFrame(() => {
         if (window.resetTreemapToOverview) window.resetTreemapToOverview();
@@ -310,7 +345,7 @@ function renderSteps() {
   const container = document.getElementById("stepsContainer");
   container.innerHTML = "";
 
-  config.steps.forEach((step) => {
+  getActiveSteps().forEach((step) => {
     const stepEl = document.createElement("div");
     stepEl.className = "scrolly-step";
     stepEl.id = `step-${step.id}`;
@@ -603,7 +638,7 @@ function updateChapterRail(t) {
   // map activeStepIndex (0..6) → one of the 7 segments
   const idx = Math.max(
     0,
-    Math.min(config.steps.length - 1, state.activeStepIndex)
+    Math.min(getActiveSteps().length - 1, state.activeStepIndex)
   );
 
   chapterRailSteps.forEach((stepEl, i) => {
@@ -664,10 +699,9 @@ function updateStepVisibility(t) {
   const inHero = heroSeg ? t < heroSeg.end : state.activeStepIndex === -1;
   heroEl.classList.toggle("hidden", !inHero);
 
-  // reflect active class per step for css-driven transitions
-  config.steps.forEach((step, i) => {
+  getActiveSteps().forEach((step, i) => {
     const stepEl = document.getElementById(`step-${step.id}`);
-    stepEl.classList.toggle("active", i === state.activeStepIndex);
+    if (stepEl) stepEl.classList.toggle("active", i === state.activeStepIndex);
   });
 
   // hide tooltips once on boundary crosses
@@ -683,7 +717,7 @@ function updateViewportBackgroundGrid() {
 
   // figure out which step is active, if any
   const step =
-    state.activeStepIndex >= 0 ? config.steps[state.activeStepIndex] : null;
+    state.activeStepIndex >= 0 ? getActiveSteps()[state.activeStepIndex] : null;
 
   // use grid for all “inner” scenes except the final footer
   const shouldGrid =
@@ -697,7 +731,7 @@ function updateViewportBackgroundGrid() {
 // inside "rituals", local progress selects a grid category (quarters across 4 bins)
 function updateObjectGridProgress(totalProgress) {
   const stepId = "rituals";
-  const stepIndex = config.steps.findIndex((s) => s.id === stepId);
+  const stepIndex = getActiveSteps().findIndex((s) => s.id === stepId);
   if (state.activeStepIndex !== stepIndex) return;
 
   const p = localProgress(totalProgress, stepId);
@@ -949,7 +983,6 @@ function updateFloorPlanGrid() {
         rect.style.animation = "roomPulse 0.4s ease-in-out 1";
         rect.style.fill = "rgba(218, 203, 178, 0.45)";
         
-        // remove animation after it completes (1 cycle × 0.4s = 400ms)
         setTimeout(() => {
           rect.style.animation = "";
           // reset to transparent if not selected
@@ -1272,10 +1305,9 @@ function ensureTooltip() {
   if (!el) {
     el = document.createElement("div");
     el.id = "gridTooltip";
-    el.className = "tooltip-panel";      // 🔴 add the shared look
+    el.className = "tooltip-panel";
     document.body.appendChild(el);
   } else {
-    // in case it already existed before you added this code
     el.classList.add("tooltip-panel");
   }
   return el;
@@ -1448,6 +1480,7 @@ function renderGridFromPaths(paths, metaIndex = null) {
 }
 
 function loadCategory(idx) {
+  const token = ++state.objectGridLoadToken;
   state.objectGridCategory = idx;
 
   // update selector state (aria radiogroup)
@@ -1457,8 +1490,7 @@ function loadCategory(idx) {
     b.setAttribute("aria-checked", on ? "true" : "false");
   });
 
-// update view story button text and data attribute
-const cat = GRID_CATEGORIES[idx];   // declare cat ONCE
+const cat = GRID_CATEGORIES[idx];
 
 if (!cat) return Promise.resolve();
 
@@ -1490,6 +1522,7 @@ if (!cat) return Promise.resolve();
     : Promise.resolve(null);
 
   return Promise.all([manifestP, metaP]).then(([paths, metaIndex]) => {
+    if (token !== state.objectGridLoadToken) return;
     renderGridFromPaths(paths, metaIndex);
   });
 }
@@ -2020,7 +2053,7 @@ window.openStory = (key) => {
 }
 
 function setupInfoTooltips() {
-  const icons = document.querySelectorAll(".info-hover-icon");
+  const icons = document.querySelectorAll(".info-hover-icon, .floor-plan-info-icon");
   if (!icons.length) return;
 
   const wireIcon = (icon) => {
@@ -2038,7 +2071,7 @@ function setupInfoTooltips() {
         const isOpen = tooltip.classList.contains("is-open");
 
         document
-          .querySelectorAll(".tooltip-panel.is-open")
+          .querySelectorAll(".tooltip-panel.is-open, .floor-plan-info-tooltip.is-open")
           .forEach((el) => {
             if (el !== tooltip) el.classList.remove("is-open");
           });
@@ -2058,9 +2091,9 @@ function setupInfoTooltips() {
   icons.forEach(wireIcon);
 
   document.addEventListener("click", (evt) => {
-    if (evt.target.closest(".info-hover-icon, .tooltip-panel")) return;
+    if (evt.target.closest(".info-hover-icon, .floor-plan-info-icon, .tooltip-panel")) return;
     document
-      .querySelectorAll(".tooltip-panel.is-open")
+      .querySelectorAll(".tooltip-panel.is-open, .floor-plan-info-tooltip.is-open")
       .forEach((el) => el.classList.remove("is-open"));
   });
 }
@@ -2095,7 +2128,7 @@ function init() {
   state.segments = buildSegments();
   renderSteps();
   updateFloorPlanGrid();
-  updateCompartmentView(); // safe no-op unless a compartment is visible
+  updateCompartmentView();
 
   // wire ui affordances
   setupCategoryButtons();

@@ -202,7 +202,7 @@
 
         // only show hint when zoomed into a specific family/material (not at root, not in "other" buckets)
         if (node === root || isOtherCombined(node)) {
-          placeHint.classed("visible", false).text("");
+          setPlaceHintVisible(false, "");
           return;
         }
 
@@ -215,24 +215,24 @@
           topPlaces = getTopPlacesForMaterial(nodeName);
         } else {
           // hide hint for any other mode
-          placeHint.classed("visible", false).text("");
+          setPlaceHintVisible(false, "");
           return;
         }
         
         if (topPlaces.length === 0) {
-          placeHint.classed("visible", false).text("");
+          setPlaceHintVisible(false, "");
         } else if (topPlaces.length === 1) {
           const groupType = currentMode === "material" ? "material grouping" : "action grouping";
-          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces[0]}.`);
+          setPlaceHintVisible(true, `Most objects in this ${groupType} were made in ${topPlaces[0]}.`);
         } else if (topPlaces.length === 2) {
           const groupType = currentMode === "material" ? "material grouping" : "action grouping";
-          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${topPlaces.join(" and ")}.`);
+          setPlaceHintVisible(true, `Most objects in this ${groupType} were made in ${topPlaces.join(" and ")}.`);
         } else {
           // 3 places: use Oxford comma
           const groupType = currentMode === "material" ? "material grouping" : "action grouping";
           const lastPlace = topPlaces[topPlaces.length - 1];
           const otherPlaces = topPlaces.slice(0, -1).join(", ");
-          placeHint.classed("visible", true).text(`Most objects in this ${groupType} were made in ${otherPlaces}, and ${lastPlace}.`);
+          setPlaceHintVisible(true, `Most objects in this ${groupType} were made in ${otherPlaces}, and ${lastPlace}.`);
         }
       }
 
@@ -251,10 +251,20 @@
       const back_button = d3.select(".back-to-all");
       const zoom_card = d3.select(".zoom-card");
       const placeHint = d3.select("#placeHint");
+      const treemapStep = document.getElementById("step-treemap");
       const detailsPanel = d3.select("#details");
       const detailsTitle = d3.select("#details-title");
       const detailsList = d3.select("#details-list");
       const detailsSubtitle = d3.select(".details-subtitle");
+
+      const setPlaceHintVisible = (visible, text = "") => {
+        if (placeHint.node()) {
+          placeHint.classed("visible", visible).text(text);
+        }
+        if (treemapStep) {
+          treemapStep.classList.toggle("has-place-hint", visible);
+        }
+      };
 
       // === mode toggle UI =======================================================
       // default mode: “use” (families). We reflect the mode as an attribute on <svg> so CSS can react if needed.
@@ -268,56 +278,86 @@
           ? d3.select(".treemap-wrapper")
           : d3.select(".treemap-stage");  // this exists and is position:relative in CSS
 
-      // create the mode toggle container directly in the DOM so it participates in layout + tab/reading order
+      const modeBar = d3
+        .select("#treemap-section .viz-wrap")
+        .append("div")
+        .attr("class", "treemap-mode-bar");
+
       const toggle = host
         .append("div")
         .attr("class", "mode-toggle");
 
-      // “By Use” button — starts pressed
       const btnUse = toggle
         .append("button")
         .attr("type", "button")
         .attr("aria-pressed", "true")
         .text("By Use");
 
-      // “By Material” button — starts not pressed
       const btnMat = toggle
         .append("button")
         .attr("type", "button")
         .attr("aria-pressed", "false")
         .text("By Material");
 
-      // i icon inside the treemap-controls row, pushed to the right
-      const infoHover = d3.select(".treemap-controls")
-        .append("div")
-        .attr("class", "info-hover-icon")
-        .style("display", currentMode === "material" ? "flex" : "none") // only for materials
-        .html(`
+      const INFO_ICON_HTML = `
           <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.4" fill="none"></circle>
         <circle cx="12" cy="8" r="1.3" fill="currentColor"></circle>
         <rect x="11" y="10.5" width="2" height="7.5" rx="1" fill="currentColor"></rect>
           </svg>
-        `);
+        `;
 
-      // show info on hover for desktop, on click for mobile
-      infoHover
-        .on("mouseenter", (ev) => {
-          if (!window.matchMedia("(hover: none)").matches) showInfo(ev);
-        })
-        .on("mouseleave", () => {
-          if (!window.matchMedia("(hover: none)").matches) hideInfo();
-        });
+      function wireInfoIcon(sel) {
+        sel
+          .on("mouseenter", (ev) => {
+            if (!window.matchMedia("(hover: none)").matches) showInfo(ev);
+          })
+          .on("mouseleave", () => {
+            if (!window.matchMedia("(hover: none)").matches) hideInfo();
+          })
+          .on("click", (ev) => {
+            ev.stopPropagation();
+            const t = document.getElementById("treemap-tooltip");
+            if (t.style.display === "block") hideInfo();
+            else showInfo(ev);
+          });
+      }
 
-      infoHover.on("click", (ev) => {
-        ev.stopPropagation();
-        const t = document.getElementById("treemap-tooltip");
-        if (t.style.display === "block") {
-          hideInfo();
+      const infoDesktop = d3
+        .select(".treemap-controls")
+        .append("div")
+        .attr("class", "info-hover-icon treemap-info-desktop")
+        .html(INFO_ICON_HTML);
+      wireInfoIcon(infoDesktop);
+
+      const infoMobile = modeBar
+        .append("div")
+        .attr("class", "info-hover-icon treemap-info-mobile")
+        .html(INFO_ICON_HTML);
+      wireInfoIcon(infoMobile);
+
+      function syncInfoIcons() {
+        const show = currentMode === "material" ? "inline-flex" : "none";
+        infoDesktop.style("display", show);
+        infoMobile.style("display", show);
+      }
+
+      function placeToggle() {
+        const mobile = window.matchMedia("(max-width: 900px)").matches;
+        const toggleNode = toggle.node();
+        const barNode = modeBar.node();
+        const stageNode = host.node();
+        if (!toggleNode || !barNode || !stageNode) return;
+        if (mobile) {
+          barNode.insertBefore(toggleNode, infoMobile.node());
         } else {
-          showInfo(ev);
+          stageNode.appendChild(toggleNode);
         }
-      });
+      }
+
+      placeToggle();
+      window.addEventListener("resize", placeToggle);
+      syncInfoIcons();
 
 
       // the treemap tooltip is a single shared node. We select it once and reuse it.
@@ -329,32 +369,40 @@
         if (typeof hideTooltip === "function") hideTooltip();
 
         const btnRect = ev.currentTarget.getBoundingClientRect();
-        const margin = 12; // spacing from edges and from the button
+        const margin = 12;
         const tooltipSel = d3.select("#treemap-tooltip");
+        const isMobile = window.matchMedia("(max-width: 900px)").matches;
 
-        // set html, show, and switch to fixed positioning so we can place it in viewport coords
         tooltipSel
           .html(MATERIAL_WEIGHT_EXPLAIN)  
           .style("position", "fixed")
           .style("display", "block")
+          .style("pointer-events", "auto")
           .attr("aria-hidden", "false");
 
-        // measure the tooltip after content is set to get its true size
         const tooltipEl = tooltipSel.node();
         const ttRect = tooltipEl.getBoundingClientRect();
 
-        // default placement: to the right of the button, aligned with its top
-        let left = btnRect.right + margin;
-        let top  = btnRect.top;
+        let left;
+        let top;
 
-        // if it would overflow the right edge, flip it to the left side
-        if (left + ttRect.width > window.innerWidth - margin) {
-          left = btnRect.left - ttRect.width - margin;
+        if (isMobile) {
+          left = btnRect.left + btnRect.width / 2 - ttRect.width / 2;
+          top = btnRect.top - ttRect.height - margin;
+          if (top < margin) top = btnRect.bottom + margin;
+        } else {
+          left = btnRect.right + margin;
+          top = btnRect.top;
+          if (left + ttRect.width > window.innerWidth - margin) {
+            left = btnRect.left - ttRect.width - margin;
+          }
         }
-        // clamp horizontally just in case
-        if (left < margin) left = margin;
 
-        // vertically clamp inside the viewport (avoid running off top/bottom)
+        if (left < margin) left = margin;
+        if (left + ttRect.width > window.innerWidth - margin) {
+          left = window.innerWidth - ttRect.width - margin;
+        }
+
         const maxTop = window.innerHeight - ttRect.height - margin;
         if (top > maxTop) top = maxTop;
         if (top < margin) top = margin;
@@ -369,6 +417,7 @@
       function hideInfo() {
         d3.select("#treemap-tooltip")
           .style("display", "none")
+          .style("pointer-events", null)
           .attr("aria-hidden", "true")
           .html("");
       }
@@ -376,7 +425,12 @@
       // click anywhere outside the toggle → close the (i) panel; esc also closes
       d3.select(document).on("click.info", (ev) => {
         const t = ev.target;
-        if (!t.closest || !t.closest(".mode-toggle")) hideInfo();
+        if (
+          !t.closest ||
+          !t.closest(".mode-toggle, .info-hover-icon, #treemap-tooltip")
+        ) {
+          hideInfo();
+        }
       });
       d3.select(document).on("keydown.info", (ev) => {
         if (ev.key === "Escape") hideInfo();
@@ -387,15 +441,12 @@ function setMode(mode) {
   if (mode === currentMode) return;
 
   // hide place hint before changing mode
-  if (placeHint && placeHint.node()) {
-    placeHint.classed("visible", false).text("");
-  }
+  setPlaceHintVisible(false, "");
 
   // update the mode
   currentMode = mode;
 
-  // 🔹 show or hide the info icon depending on mode
-  infoHover.style("display", mode === "material" ? "inline-flex" : "none");
+  syncInfoIcons();
 
   // reflect mode in svg for CSS if needed
   svg.attr("data-mode", currentMode);
@@ -593,9 +644,7 @@ function setMode(mode) {
         if (nPanel) nPanel.scrollTop = 0;
 
         // hide place hint when details panel opens
-        if (placeHint && placeHint.node()) {
-          placeHint.classed("visible", false).text("");
-        }
+        setPlaceHintVisible(false, "");
 
         // data join (key by EDANurl to keep identity stable)
         const items = detailsList.selectAll("li").data(rows, (d) => d.EDANurl);
@@ -1000,13 +1049,12 @@ function setMode(mode) {
       textureRect.raise();
       gFamilyChips.raise();
 
-      // guarantee a single #treemap-tooltip in <body>; create it if missing or wrongly placed
-(function ensureTreemapTooltip() {
+      (function ensureTreemapTooltip() {
   let tEl = document.getElementById("treemap-tooltip");
   if (!tEl) {
     tEl = document.createElement("div");
     tEl.id = "treemap-tooltip";
-    tEl.className = "treemap-tooltip tooltip-panel"; // 🔴 add shared class
+    tEl.className = "treemap-tooltip tooltip-panel";
     document.body.appendChild(tEl);
   } else {
     // keep it in <body> and make sure it has both classes
@@ -1229,8 +1277,6 @@ cells
       : displayFamily(d.parent?.data?.name ?? "—");
 
     if (currentMode === "material") {
-      // inside one material, children are types. Compute true object count
-      // for this type under that material (this is the code you already had).
       const typeName = d.data.name;
       const rows = details[typeName] || details[norm(typeName)] || [];
       const mat = norm(node?.data?.name || "");
@@ -1335,8 +1381,14 @@ cells
       function zoom_to(node) {
         if (!node || node === current) return;
 
+        // stop any in-flight redraws before starting a new zoom animation
+        svg.interrupt();
+        g.selectAll("g.cell").interrupt();
+        gFamilyChips.selectAll("g.family-chip").interrupt();
+
         current = node;
         const at_root = node === root;
+        const mobile = window.matchMedia("(max-width: 900px)").matches;
 
         if (at_root) hideDetails();
 
@@ -1363,6 +1415,27 @@ cells
         // “camera” is the scale domain: focus the selected node’s box to the full viewport
         sx.domain([node.x0, node.x1]);
         sy.domain([node.y0, node.y1]);
+
+        // mobile: keep the interaction simple and redraw immediately to avoid stale tile/label states
+        if (mobile) {
+          g.selectAll("g.cell")
+            .select("rect")
+            .attr("x", (d) => sx(d.x0))
+            .attr("y", (d) => sy(d.y0))
+            .attr("width", (d) => Math.max(0, sx(d.x1) - sx(d.x0)))
+            .attr("height", (d) => Math.max(0, sy(d.y1) - sy(d.y0)));
+
+          const showChips = at_root || isOtherCombined(node);
+          if (showChips) {
+            gFamilyChips.attr("display", null).style("opacity", 1);
+          } else {
+            gFamilyChips.attr("display", "none").style("opacity", 0);
+          }
+
+          draw(node);
+          draw_family_labels_all();
+          return;
+        }
 
         // animate rect positions for a smooth zoom
         const t = svg.transition().duration(550);
@@ -1432,9 +1505,18 @@ cells
 
       function relayoutAndDraw() {
         if (!stageEl) return;
-        const { width } = stageEl.getBoundingClientRect();
+
+        // size changes can happen while a zoom transition is running; stop it first
+        svg.interrupt();
+        g.selectAll("g.cell").interrupt();
+        gFamilyChips.selectAll("g.family-chip").interrupt();
+
+        const rect = stageEl.getBoundingClientRect();
+        const width = Math.max(0, Math.round(rect.width));
         const mobile = window.innerWidth <= 780;
-        const height = Math.round(width * (mobile ? 4 / 3 : 450 / 1000));
+        const aspectHeight = Math.round(width * (mobile ? 4 / 3 : 450 / 1000));
+        const measuredHeight = Math.round(rect.height);
+        const height = Math.max(1, measuredHeight > 0 ? measuredHeight : aspectHeight);
 
         // update the svg viewBox so d3.treemap can lay out in screen coords directly
         svg.attr("viewBox", `0 0 ${width} ${height}`);

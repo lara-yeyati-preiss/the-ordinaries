@@ -107,7 +107,7 @@ body {
 .object-grid-step .grid-wrapper{
   position: relative;
   --tileMin: 95px; --tileMax: 130px; --gap: 18px;
-  max-width: calc(4 * var(--tileMax) + 3 * var(--gap) + 420px + 80px); /* 4 cols + 3 gaps + left column width + gap between columns */
+  max-width: calc(4 * var(--tileMax) + 3 * var(--gap) + 420px + 80px);
   min-height: 100vh;
   display: flex; flex-direction: row; align-items: flex-start; justify-content: center;
   width: min(98vw, calc(4 * var(--tileMax) + 3 * var(--gap) + 420px + 80px));
@@ -149,12 +149,12 @@ body {
   .object-grid-step .grid-left-col,
   .object-grid-step .grid-wrapper,
   .object-grid-step .left-col{
-    display: flex !important; flex-direction: column !important; align-items: center; gap: 1.25rem; /* stack into single column */
+    display: flex !important; flex-direction: column !important; align-items: center; justify-content: center; gap: 1.25rem;
   }
   .object-grid-card{ order: 1 !important; margin: 2rem auto 0; text-align: center; min-width: 0; }
+  #categorySelector.category-selector{ order: 1 !important; position: static !important; width: 100%; display: flex !important; flex-direction: column !important; gap: 4px; margin-top: 0; margin-left: 0; }
   #imageGrid{ order: 2 !important; width: 100%; display: grid !important; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 10px; }
-  #imageGrid > *:nth-child(n + 10){ display: none !important; } 
-  #categorySelector.category-selector{ order: 3 !important; position: static !important; width: 100%; display: flex !important; flex-direction: column !important; gap: 4px; margin-top: .2rem; margin-left: 16px; }
+  #imageGrid > *:nth-child(n + 10){ display: none !important; }
   #categorySelector .category-btn,
   #categorySelector .editable-chip,
   #categorySelector .family-labels-html{ white-space: nowrap; font-size: 16px; padding: .35em .7em; line-height: 1.1; }
@@ -171,7 +171,7 @@ body {
 .floor-plan-step .grid-wrapper{
   position: relative;
   --tileMin: 105px; --tileMax: 150px; --gap: 18px;
-  max-width: calc(3 * var(--tileMax) + 2 * var(--gap) + 420px + 120px); /* 3 cols + 2 gaps + left column width + gap between columns */
+  max-width: calc(3 * var(--tileMax) + 2 * var(--gap) + 420px + 120px);
   min-height: 100vh;
   display: flex; flex-direction: row; align-items: flex-start; justify-content: center;
   width: min(98vw, calc(3 * var(--tileMax) + 2 * var(--gap) + 420px + 120px));
@@ -378,19 +378,25 @@ body {
   height: 20px;
 }
 
-  .treemap-controls .info-hover-icon:hover {
-    color: #333;
-  }
+.treemap-controls .info-hover-icon:hover {
+  color: #333;
+}
 
-  /* show the tooltip on hover (desktop only) */
-  .info-hover-icon:hover + .tooltip-panel,
-  .info-hover-icon:focus + .tooltip-panel,
-  .tooltip-panel:hover {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
+.treemap-mode-bar {
+  display: none;
+}
 
+.treemap-info-mobile {
+  display: none;
+}
+
+.info-hover-icon:hover + .tooltip-panel,
+.info-hover-icon:focus + .tooltip-panel,
+.tooltip-panel:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 @media (max-width: 900px) {
@@ -472,15 +478,215 @@ body {
 #step-treemap .viz-wrap{ width: min(1400px, 98vw); margin: 0 auto; padding: 0 12px; } 
 
 @media (max-width: 900px) {
-  .treemap-stage {
-    min-height: 320px;
-    max-height: 100vh;
-    height: 100vh;
+  .object-grid-card,
+  .floor-plan-card {
+    display: none !important;
   }
-  #treemap-section .viz-wrap {
-    max-height: 90vh;
-    height: 90vh;
+
+  .object-grid-step,
+  .floor-plan-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  .scrolly-step:has(.treemap-step) {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
     overflow-y: auto;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .treemap-step {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+
+  #treemap-section .viz-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 1 1 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-inline: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  #step-treemap .viz-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 0;
+    padding-top: clamp(4px, 1.2dvh, 12px);
+  }
+
+  .treemap-step .section-title {
+    flex-shrink: 0;
+    font-size: clamp(26px, 6.5vw, 34px);
+    margin-bottom: 4px;
+  }
+
+  .treemap-step .viz-hint {
+    flex-shrink: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 4px 0 10px;
+    color: #444;
+  }
+
+  .treemap-controls .zoom-card {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .treemap-controls .place-hint {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-left: 0;
+  }
+
+  .treemap-controls .place-hint.visible {
+    display: block;
+    width: 100%;
+    flex-basis: 100%;
+    margin-top: 4px;
+  }
+
+  #step-treemap.has-place-hint {
+    --treemap-stage-offset: calc(clamp(250px, 38dvh, 340px) + 52px);
+  }
+
+  .treemap-controls {
+    flex-shrink: 0;
+    margin: 4px 0 10px;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .treemap-controls .back-to-all.is-ghost {
+    display: none;
+  }
+
+  .treemap-controls .place-hint:not(.visible) {
+    display: none;
+  }
+
+  .treemap-controls .treemap-info-desktop {
+    display: none !important;
+  }
+
+  #step-treemap {
+    --treemap-stage-offset: clamp(250px, 38dvh, 340px);
+  }
+
+  #step-treemap .treemap-stage {
+    flex: 1 1 0;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    aspect-ratio: auto;
+    height: calc(100dvh - var(--treemap-stage-offset)) !important;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .treemap-mode-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+    margin-bottom: clamp(16px, 2.6dvh, 24px);
+    flex-shrink: 0;
+  }
+
+  .treemap-mode-bar .mode-toggle {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 0 12px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 18px rgba(0,0,0,.05);
+    background: #fff;
+    backdrop-filter: none;
+  }
+
+  .treemap-info-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    color: #666;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .treemap-info-mobile svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .treemap-info-mobile:hover {
+    color: #333;
+  }
+
+  @media (max-height: 680px) {
+    #step-treemap.has-place-hint {
+      --treemap-stage-offset: calc(clamp(270px, 42dvh, 360px) + 52px);
+    }
+
+    #step-treemap {
+      --treemap-stage-offset: clamp(270px, 42dvh, 360px);
+    }
+
+    .treemap-step .section-title {
+      font-size: clamp(22px, 6vw, 28px);
+      margin-bottom: 2px;
+    }
+
+    .treemap-step .viz-hint {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 2px 0 6px;
+    }
+
+    .treemap-controls {
+      margin: 2px 0 6px;
+    }
+
+    .treemap-mode-bar {
+      margin-top: 10px;
+      margin-bottom: clamp(18px, 3dvh, 28px);
+    }
   }
 }
 
@@ -1062,15 +1268,25 @@ body.modal-open {
 .mode-toggle button:hover{ background: rgba(0,0,0,.06); }
 .mode-toggle button[aria-pressed="true"]:hover{ background: #1a1a1a; }
 .mode-toggle button:focus-visible{ outline: 2px solid #222; outline-offset: 2px; }
-.mode-toggle .mode-info{ margin-left: 6px; padding: 0 .45rem; border-radius: 999px; line-height: 1.2; font-size: .9rem; opacity: .85; }
+.mode-toggle .mode-info{ margin-left: 2px; padding: 0 .45rem; border-radius: 999px; line-height: 1.2; font-size: .9rem; opacity: .85; }
 
 @media (max-width: 560px){
   .mode-toggle{
-    position: fixed; left: 50%; right: auto; top: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+    position: fixed; left: 50%; right: auto; top: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 28px);
     transform: translateX(-50%); padding: 6px; box-shadow: 0 6px 24px rgba(0,0,0,.12), 0 2px 8px rgba(0,0,0,.10);
     background: rgba(255,255,255,.92); backdrop-filter: saturate(1.4) blur(8px); z-index: 60;
   }
-  .mode-toggle button{ padding: 12px 14px; font-size: 16px; }
+  .treemap-mode-bar .mode-toggle {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    background: #fff;
+    backdrop-filter: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 4px 18px rgba(0,0,0,.05);
+  }
+  .mode-toggle button{ padding: 10px 12px; font-size: 15px;}
   #treemap-section .family-labels-html,
   #treemap-section .chip,
   #treemap-section .family-chip{ font-size: clamp(10px, 2.7vw, 12px); line-height: 1.2; padding: 4px 8px; border-radius: 8px; }
@@ -1377,79 +1593,108 @@ body.modal-open {
    ========================================================================== */
 @media (max-width: 900px) {
 
-  /* --------------------------
-     page shell / scrollytelling
-     -------------------------- */
-
   html,
   body {
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-  }
-
-  body {
-    overflow-y: auto;
+    height: 100%;
+    overflow: hidden;
   }
 
   .prelude-scrolly-container {
-    height: auto;
-    min-height: 100vh;
-    overflow: visible;
+    height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .scrolly-track {
-    position: static;
-    min-height: auto !important;
+    position: relative;
   }
 
   .scrolly-viewport {
-    position: static;
-    top: auto;
-    height: auto;
-    min-height: 100dvh;
-    display: block;
-  }
-
-  .steps-layer {
-    position: static;
-  }
-
-  .scrolly-step {
-    position: static;
-    inset: auto;
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto;
-    height: auto !important;
-    min-height: auto !important;
-    padding: 32px 16px;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .scrolly-step:last-of-type {
-    padding-bottom: 24px;
+  .scrolly-step {
+    padding: 0 20px;
   }
 
+  .scrolly-step:has(.object-grid-step) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding-block: clamp(12px, 2dvh, 20px);
+  }
 
-  /* --------------------------
-     hero
-     -------------------------- */
+  .scrolly-step:has(.floor-plan-step) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    padding-block: clamp(12px, 2dvh, 20px);
+    padding-inline: 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrolly-step:has(.treemap-step) {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .scrolly-step:has(.site-footer) {
+    overflow-y: auto;
+    align-items: flex-start;
+    padding-block: 20px;
+  }
+
+  .floor-plan-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .object-grid-step .grid-wrapper {
+    min-height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 2.5dvh, 20px);
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 
   .hero-landing {
-    position: static;
-    width: 100%;
-    min-height: 100dvh;
-    padding: 80px 16px 56px;
-    background: #E4E1DD;
+    padding: 0 20px;
   }
 
   .hero-inner {
-    max-width: 640px;
-    margin: 0 auto;
+    max-width: 100%;
     padding-inline: 0;
+  }
+
+  .hero-subtitle {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 34ch;
   }
 
   .scroll-indicator {
@@ -1460,51 +1705,35 @@ body.modal-open {
     display: none !important;
   }
 
-
-  /* --------------------------
-     object grid scene
-     -------------------------- */
-
-  .object-grid-step .grid-wrapper {
-    min-height: auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-    max-width: 100%;
-    padding-inline: 0;
-    margin: 0 auto 32px;
-    box-sizing: border-box;
-  }
-
   .object-grid-step .grid-left-col {
     flex: 0 0 auto;
-    max-width: 640px;
+    max-width: 100%;
     width: 100%;
     min-width: 0;
     margin-inline: auto;
+    gap: 12px;
   }
 
   #imageGrid {
     width: 100%;
-    max-width: 640px;
-    margin: 24px auto 0;
+    max-width: 100%;
+    margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
-    gap: 10px;
+    gap: clamp(6px, 2vw, 10px);
   }
 
   .image-grid {
     width: 100%;
-    max-width: 640px;
-    margin: 24px auto 0;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   #categorySelector.category-selector {
-    align-self: center;
+    align-self: stretch;
     width: 100%;
-    max-width: 640px;
-    padding-inline: 16px;
+    max-width: 100%;
+    padding-inline: 0;
     margin-left: 0;
   }
 
@@ -1512,29 +1741,48 @@ body.modal-open {
     text-align: left;
   }
 
-
-  /* --------------------------
-     floor plan scene
-     -------------------------- */
-
   .floor-plan-hint {
-    max-width: 35ch;
-    margin: 0 auto 10px;
+    align-self: flex-start;
+    max-width: 32ch;
+    margin: 0 0 8px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.45;
+    padding: 0;
   }
 
   .floor-plan-svg-wrapper {
-    gap: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .floor-plan-house {
+    display: none !important;
+  }
+
+  .floor-plan-house-wrapper {
+    order: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: flex-end;
   }
 
   .floor-plan-step .grid-wrapper {
     min-height: auto;
     flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    width: 100%;
-    max-width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: clamp(10px, 2dvh, 16px);
+    width: min(300px, 92vw);
+    max-width: min(300px, 92vw);
     padding-inline: 0;
-    margin: 0 auto 32px;
+    padding-bottom: 16px;
+    margin: 0 auto;
     box-sizing: border-box;
   }
 
@@ -1542,82 +1790,63 @@ body.modal-open {
     flex: 0 0 auto;
     min-width: 0;
     width: 100%;
-    max-width: 640px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .floor-plan-container {
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
   }
 
   .floor-plan-svg {
-    width: 70% !important;
-    max-width: 440px !important;
-    margin-inline: auto;
+    width: auto !important;
+    max-width: 210px !important;
+    margin-inline: 0;
     display: block;
-  }
-
-  .floor-plan-caption {
-    margin-bottom: 16px;
+    flex: 0 1 auto;
   }
 
   .floor-plan-grid {
     order: 2;
     display: grid !important;
     width: 100%;
-    max-width: 350px;
-    margin: 8px auto 24px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-
-  .floor-plan-house {
-    max-width: 180px;
-  }
-
-  .floor-plan-info-wrap {
-    display: none;
-  }
-
-  /* --------------------------
-     treemap scene
-     -------------------------- */
-
-  .treemap-viewport {
-    position: static;
-    top: auto;
-    height: auto;
-    max-height: none;
-    min-height: 0;
-  }
-
-  .treemap-stage {
-    height: auto;
-    min-height: 320px;
-    max-height: none;
-  }
-
-  .treemap-step .viz-wrap {
-    width: 100%;
     max-width: 100%;
-    padding-inline: 16px;
-    margin: 0 auto 36px;
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(6px, 2vw, 10px);
   }
 
-  .treemap-stage .mode-toggle {
-    position: absolute;
+  .floor-plan-grid .grid-item img {
+    padding: 4px;
+  }
+
+  .floor-plan-info-icon {
+    position: static;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .floor-plan-info-tooltip {
+    top: calc(100% + 6px);
     left: 50%;
     right: auto;
-    top: auto;
-    bottom: -4rem;
     transform: translateX(-50%);
+    width: min(260px, calc(100vw - 40px));
+    max-width: min(280px, calc(100vw - 40px));
   }
 
-  /* --------------------------
-     lightbox
-     -------------------------- */
+  .floor-plan-info-icon:hover + .floor-plan-info-tooltip,
+  .floor-plan-info-tooltip:hover,
+  .floor-plan-info-tooltip.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
   .lightbox-content {
     max-width: 92vw;
@@ -1630,11 +1859,6 @@ body.modal-open {
     padding: 16px;
   }
 
-
-  /* --------------------------
-     reduced chrome on mobile
-     -------------------------- */
-
   .sticky-up-arrow,
   .chapter-rail,
   #storyModal,
@@ -1642,13 +1866,8 @@ body.modal-open {
     display: none !important;
   }
 
-
-  /* --------------------------
-     footer scene
-     -------------------------- */
-
   .scrolly-step .site-footer {
-    padding-inline: 16px;
+    padding-inline: 20px;
   }
 
   .site-footer .footer-container {
@@ -1680,67 +1899,78 @@ body.modal-open {
     display: block;
   }
 
-
-  /* --------------------------
-     details panel (treemap overlay)
-     -------------------------- */
-
-  #detailPanel {
-    width: min(640px, 100% - 32px);
-    margin-inline: auto;
-    padding: 16px 14px;
-    border-radius: 12px;
-    overflow-x: hidden;
+  #details.details-panel {
+    border-radius: 8px;
   }
 
-  #detailPanel h2,
+  .details-header {
+    padding: 14px 16px;
+  }
+
   .details-title {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.25;
-    margin-bottom: 10px;
   }
 
-  .detail-count {
-    font-size: 14px;
-    margin-bottom: 10px;
+  .details-subtitle {
+    top: 53px;
+    padding: 8px 16px;
+    font-size: 13px;
   }
 
-  .detail-item {
-    padding: 12px 10px;
-    display: flex;
-    gap: 12px;
-    min-width: 0; 
+  .details-item {
+    padding: 14px 16px;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
-  .detail-item .thumb-box {
-    width: 52px;
-    height: 52px;
-    padding: 4px;
-    min-width: 0; 
+  .details-thumb,
+  .details-placeholder {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    flex-shrink: 0;
   }
 
-  .detail-item .item-title {
-    font-size: 15.5px;
-    line-height: 1.33;
-    margin-bottom: 2px;
+  .details-placeholder svg {
+    width: 22px;
+    height: 22px;
   }
 
-  .detail-item .item-metadata {
-    font-size: 13.5px;
-    line-height: 1.33;
+  .details-text {
+    flex: 1;
+    min-width: 0;
   }
 
-  .detail-close-btn {
+  .details-text strong {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .details-text em {
+    font-size: 12px;
+  }
+
+  .inline-metadata-chip {
+    font-size: 11px;
+    padding: 4px 8px;
+    white-space: normal;
+  }
+
+  .metadata-chips-container {
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 60px;
+    flex-wrap: wrap;
+  }
+
+  .details-close {
     width: 32px;
     height: 32px;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 2px 6px;
   }
- 
-
-
-  /* --------------------------
-     card typography
-     -------------------------- */
 
   .prelude-card h2,
   .prelude-card h3 {
@@ -1755,26 +1985,21 @@ body.modal-open {
     line-height: 1.4;
   }
 
-
-  /* --------------------------
-     unified mobile card layout
-     (intro, object-grid, floor-plan)
-     -------------------------- */
-
   .prelude-card,
   .prelude-card.object-grid-card,
   .prelude-card.floor-plan-card {
     box-sizing: border-box;
-    width: min(640px, 100% - 32px);
-    max-width: 640px;
+    width: min(52ch, 100%);
+    max-width: 100%;
     min-width: 0;
-    margin: 40px auto;
-    padding: 24px 20px;
+    margin: 0 auto;
+    padding: 26px 22px;
     font-size: 15px;
-    line-height: 1.45;
+    line-height: 1.5;
   }
-  .prelude-card.floor-plan-card {
-    margin-top: 80px;
+
+  .section-title {
+    font-size: clamp(28px, 7vw, 36px);
   }
 
 }
